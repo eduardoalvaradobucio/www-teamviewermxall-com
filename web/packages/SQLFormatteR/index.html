@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package SQLFormatteR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=SQLFormatteR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Format SQL Queries [R package SQLFormatteR version 0.0.2]">
+<meta name="citation_author1" content="Morgan Durand">
+<meta name="citation_author2" content="Authors of the dependent Rust crates">
+<meta name="citation_publication_date" content="2025-04-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SQLFormatteR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SQLFormatteR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="SQLFormatteR: Format SQL Queries">
+<meta property="og:description" content="A convenient interface for formatting 'SQL' queries directly within 'R'. It acts as a wrapper around the 'sql_format' Rust crate. The package allows you to format 'SQL' code with customizable options, including indentation, case formatting, and more, ensuring your 'SQL' queries are clean, readable, and consistent.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=SQLFormatteR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>SQLFormatteR: Format SQL Queries</h2>
+<p>A convenient interface for formatting 'SQL' queries directly
+    within 'R'. It acts as a wrapper around the 'sql_format' Rust crate.
+    The package allows you to format 'SQL' code with customizable options,
+    including indentation, case formatting, and more, ensuring your 'SQL'
+    queries are clean, readable, and consistent.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html"><span class="CRAN">assertthat</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a> (&ge; 3.6.4), <a href="../docopt/index.html"><span class="CRAN">docopt</span></a> (&ge; 0.7.1), <a href="../git2r/index.html"><span class="CRAN">git2r</span></a> (&ge; 0.35.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.8.9), <a href="../lintr/index.html"><span class="CRAN">lintr</span></a> (&ge; 3.1.2), <a href="../optparse/index.html"><span class="CRAN">optparse</span></a> (&ge; 1.7.5), <a href="../precommit/index.html"><span class="CRAN">precommit</span></a> (&ge; 0.4.3), <a href="../rextendr/index.html"><span class="CRAN">rextendr</span></a> (&ge; 0.3.1), <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a> (&ge; 7.3.2), <a href="../styler/index.html"><span class="CRAN">styler</span></a> (&ge; 1.10.3), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-04-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.SQLFormatteR">10.32614/CRAN.package.SQLFormatteR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Morgan Durand [aut, cre, cph],
+  Authors of the dependent Rust crates [aut] (see AUTHORS file)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Morgan Durand  &#x3c;&#x6d;&#x6f;&#x72;&#x67;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x64;&#x61;&#x74;&#x61;&#x75;&#x70;&#x73;&#x75;&#x72;&#x67;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dataupsurge/SQLFormatteR/issues" target="_top"><span class="GitHub">https://github.com/dataupsurge/SQLFormatteR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://dataupsurge.github.io/SQLFormatteR/" target="_top"><span class="GitHub">https://dataupsurge.github.io/SQLFormatteR/</span></a>,
+<a href="https://github.com/dataupsurge/SQLFormatteR" target="_top"><span class="GitHub">https://github.com/dataupsurge/SQLFormatteR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Cargo (Rust's package manager), rustc &gt;= 1.78.0</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SQLFormatteR.html"><span class="CRAN">SQLFormatteR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/SQLFormatteR.html"><span class="CRAN">SQLFormatteR.html</span></a> ,  <a href="SQLFormatteR.pdf"><span class="CRAN">SQLFormatteR.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SQLFormatteR_0.0.2.tar.gz"> <span class="CRAN"> SQLFormatteR_0.0.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/SQLFormatteR_0.0.2.zip"><span class="CRAN">SQLFormatteR_0.0.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/SQLFormatteR_0.0.2.zip"><span class="CRAN">SQLFormatteR_0.0.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/SQLFormatteR_0.0.2.zip"><span class="CRAN">SQLFormatteR_0.0.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/SQLFormatteR_0.0.2.tgz"><span class="CRAN">SQLFormatteR_0.0.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/SQLFormatteR_0.0.2.tgz"><span class="CRAN">SQLFormatteR_0.0.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/SQLFormatteR_0.0.2.tgz"><span class="CRAN">SQLFormatteR_0.0.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/SQLFormatteR_0.0.2.tgz"><span class="CRAN">SQLFormatteR_0.0.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SQLFormatteR"> <span class="CRAN"> SQLFormatteR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SQLFormatteR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=SQLFormatteR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

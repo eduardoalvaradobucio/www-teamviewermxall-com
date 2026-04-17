@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package codemetar</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=codemetar">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Generate 'CodeMeta' Metadata for R Packages [R package codemetar version 0.3.7]">
+<meta name="citation_author1" content="Carl Boettiger">
+<meta name="citation_author2" content="Maëlle Salmon">
+<meta name="citation_publication_date" content="2026-02-11">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=codemetar">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=codemetar">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="codemetar: Generate 'CodeMeta' Metadata for R Packages">
+<meta property="og:description" content="The 'Codemeta' Project defines a 'JSON-LD' format for describing software metadata, as detailed at &amp;lt;&lt;a href=&quot;https://codemeta.github.io&quot; target=&quot;_top&quot;&gt;https://codemeta.github.io&lt;/a&gt;&amp;gt;. This package provides utilities to generate, parse, and modify 'codemeta.json' files automatically for R packages, as well as tools and examples for working with 'codemeta.json' 'JSON-LD' more generally.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=codemetar">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>codemetar: Generate 'CodeMeta' Metadata for R Packages</h2>
+<p>The 'Codemeta' Project defines a 'JSON-LD' format
+    for describing software metadata, as detailed at
+    &lt;<a href="https://codemeta.github.io" target="_top">https://codemeta.github.io</a>&gt;. This package provides utilities to
+    generate, parse, and modify 'codemeta.json' files automatically for R
+    packages, as well as tools and examples for working with
+    'codemeta.json' 'JSON-LD' more generally.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../commonmark/index.html"><span class="CRAN">commonmark</span></a>, <a href="../crul/index.html"><span class="CRAN">crul</span></a>, <a href="../desc/index.html"><span class="CRAN">desc</span></a>, <a href="../gert/index.html"><span class="CRAN">gert</span></a>, <a href="../gh/index.html"><span class="CRAN">gh</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.6), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../memoise/index.html"><span class="CRAN">memoise</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../pingr/index.html"><span class="CRAN">pingr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../remotes/index.html"><span class="CRAN">remotes</span></a>, <a href="../sessioninfo/index.html"><span class="CRAN">sessioninfo</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../urltools/index.html"><span class="CRAN">urltools</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../codemeta/index.html"><span class="CRAN">codemeta</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../details/index.html"><span class="CRAN">details</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 0.7.0), <a href="../jsonld/index.html"><span class="CRAN">jsonld</span></a>, <a href="../jsonvalidate/index.html"><span class="CRAN">jsonvalidate</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../printr/index.html"><span class="CRAN">printr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../usethis/index.html"><span class="CRAN">usethis</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-11</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.codemetar">10.32614/CRAN.package.codemetar</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Carl Boettiger <a href="https://orcid.org/0000-0002-1642-628X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph],
+  Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [rev, ctb],
+  Toph Allen <a href="https://orcid.org/0000-0003-4580-091X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [rev],
+  Maëlle Salmon <a href="https://orcid.org/0000-0002-2815-0399" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb, aut],
+  rOpenSci <a href="https://ror.org/019jywm96" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [fnd],
+  Katrin Leinweber <a href="https://orcid.org/0000-0001-5135-5758" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Noam Ross <a href="https://orcid.org/0000-0002-2136-0000" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Arfon Smith [ctb],
+  Jeroen Ooms <a href="https://orcid.org/0000-0002-4035-0289" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Sebastian Meyer <a href="https://orcid.org/0000-0002-1791-9449" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Michael Rustler <a href="https://orcid.org/0000-0003-0647-7726" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Hauke Sonnenberg <a href="https://orcid.org/0000-0001-9134-2871" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Sebastian Kreutzer
+    <a href="https://orcid.org/0000-0002-0734-2199" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Thierry Onkelinx <a href="https://orcid.org/0000-0001-8804-4216" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Carl Boettiger  &#x3c;&#x63;&#x62;&#x6f;&#x65;&#x74;&#x74;&#x69;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/codemetar/issues" target="_top"><span class="GitHub">https://github.com/ropensci/codemetar/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/codemetar" target="_top"><span class="GitHub">https://github.com/ropensci/codemetar</span></a>,
+<a href="https://docs.ropensci.org/codemetar/" target="_top">https://docs.ropensci.org/codemetar/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_codemetar.html"><span class="CRAN">codemetar results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/codemetar.html"><span class="CRAN">codemetar.html</span></a> ,  <a href="codemetar.pdf"><span class="CRAN">codemetar.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/codemetar.html"><span class="CRAN">Intro to codemetar, Codemeta creator for R packages</span></a> (<a href="vignettes/codemetar.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/codemetar.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/codemetar_0.3.7.tar.gz"> <span class="CRAN"> codemetar_0.3.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/codemetar_0.3.7.zip"><span class="CRAN">codemetar_0.3.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/codemetar_0.3.7.zip"><span class="CRAN">codemetar_0.3.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/codemetar_0.3.7.zip"><span class="CRAN">codemetar_0.3.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/codemetar_0.3.7.tgz"><span class="CRAN">codemetar_0.3.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/codemetar_0.3.7.tgz"><span class="CRAN">codemetar_0.3.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/codemetar_0.3.7.tgz"><span class="CRAN">codemetar_0.3.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/codemetar_0.3.7.tgz"><span class="CRAN">codemetar_0.3.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/codemetar"> <span class="CRAN"> codemetar archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../rcompendium/index.html"><span class="CRAN">rcompendium</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../daiquiri/index.html"><span class="CRAN">daiquiri</span></a>, <a href="../mantis/index.html"><span class="CRAN">mantis</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=codemetar"><span class="CRAN"><samp>https://CRAN.R-project.org/package=codemetar</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package laminr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=laminr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Client for 'LaminDB' [R package laminr version 1.3.0]">
+<meta name="citation_author1" content="Robrecht Cannoodt">
+<meta name="citation_author2" content="Luke Zappia">
+<meta name="citation_author3" content="Data Intuitive">
+<meta name="citation_author4" content="Lamin Labs">
+<meta name="citation_publication_date" content="2026-03-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=laminr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=laminr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="laminr: Client for 'LaminDB'">
+<meta property="og:description" content="Interact with 'LaminDB'. 'LaminDB' is an open-source data framework for biology. This package allows you to query and download data from 'LaminDB' instances.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=laminr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>laminr: Client for 'LaminDB'</h2>
+<p>Interact with 'LaminDB'. 'LaminDB' is an open-source data
+    framework for biology. This package allows you to query and download
+    data from 'LaminDB' instances.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../pkgload/index.html"><span class="CRAN">pkgload</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a> (&ge; 1.41.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../sessioninfo/index.html"><span class="CRAN">sessioninfo</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../anndata/index.html"><span class="CRAN">anndata</span></a>, <a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../IRkernel/index.html"><span class="CRAN">IRkernel</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../rsvg/index.html"><span class="CRAN">rsvg</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.laminr">10.32614/CRAN.package.laminr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robrecht Cannoodt <a href="https://orcid.org/0000-0003-3641-729X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Luke Zappia <a href="https://orcid.org/0000-0001-7744-8565" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Data Intuitive [aut],
+  Lamin Labs [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Robrecht Cannoodt  &#x3c;&#x72;&#x6f;&#x62;&#x72;&#x65;&#x63;&#x68;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x61;&#x69;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/laminlabs/laminr/issues" target="_top"><span class="GitHub">https://github.com/laminlabs/laminr/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://laminr.lamin.ai" target="_top">https://laminr.lamin.ai</a>, <a href="https://github.com/laminlabs/laminr" target="_top"><span class="GitHub">https://github.com/laminlabs/laminr</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_laminr.html"><span class="CRAN">laminr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/laminr.html"><span class="CRAN">laminr.html</span></a> ,  <a href="laminr.pdf"><span class="CRAN">laminr.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/welcome.html"><span class="CRAN">Welcome to laminr</span></a> (<a href="vignettes/welcome.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/laminr_1.3.0.tar.gz"> <span class="CRAN"> laminr_1.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/laminr_1.3.0.zip"><span class="CRAN">laminr_1.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/laminr_1.3.0.zip"><span class="CRAN">laminr_1.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/laminr_1.3.0.zip"><span class="CRAN">laminr_1.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/laminr_1.3.0.tgz"><span class="CRAN">laminr_1.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/laminr_1.3.0.tgz"><span class="CRAN">laminr_1.3.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/laminr_1.3.0.tgz"><span class="CRAN">laminr_1.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/laminr_1.3.0.tgz"><span class="CRAN">laminr_1.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/laminr"> <span class="CRAN"> laminr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=laminr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=laminr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

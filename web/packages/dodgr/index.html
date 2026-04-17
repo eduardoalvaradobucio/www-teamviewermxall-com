@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package dodgr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=dodgr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Distances on Directed Graphs [R package dodgr version 0.4.3]">
+<meta name="citation_author1" content="Mark Padgham">
+<meta name="citation_author2" content="Andreas Petutschnig">
+<meta name="citation_author3" content="David Cooley">
+<meta name="citation_publication_date" content="2025-09-01">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dodgr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dodgr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="dodgr: Distances on Directed Graphs">
+<meta property="og:description" content="Distances on dual-weighted directed graphs using priority-queue shortest paths (Padgham (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.32866%2F6945&quot; target=&quot;_top&quot;&gt;doi:10.32866/6945&lt;/a&gt;&amp;gt;). Weighted directed graphs have weights from A to B which may differ from those from B to A. Dual-weighted directed graphs have two sets of such weights. A canonical example is a street network to be used for routing in which routes are calculated by weighting distances according to the type of way and mode of transport, yet lengths of routes must be calculated from direct distances.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=dodgr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>dodgr: Distances on Directed Graphs</h2>
+<p>Distances on dual-weighted directed graphs using
+    priority-queue shortest paths (Padgham (2019) &lt;<a href="https://doi.org/10.32866%2F6945" target="_top">doi:10.32866/6945</a>&gt;).
+    Weighted directed graphs have weights from A to B which may differ
+    from those from B to A.  Dual-weighted directed graphs have two sets
+    of such weights. A canonical example is a street network to be used
+    for routing in which routes are calculated by weighting distances
+    according to the type of way and mode of transport, yet lengths of
+    routes must be calculated from direct distances.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../geodist/index.html"><span class="CRAN">geodist</span></a> (&ge; 0.1.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../memoise/index.html"><span class="CRAN">memoise</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../osmdata/index.html"><span class="CRAN">osmdata</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 0.12.6), <a href="../RcppParallel/index.html"><span class="CRAN">RcppParallel</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppParallel/index.html"><span class="CRAN">RcppParallel</span></a>, <a href="../RcppThread/index.html"><span class="CRAN">RcppThread</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bench/index.html"><span class="CRAN">bench</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../igraphdata/index.html"><span class="CRAN">igraphdata</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.6), <a href="../tidygraph/index.html"><span class="CRAN">tidygraph</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-09-01</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.dodgr">10.32614/CRAN.package.dodgr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mark Padgham [aut, cre],
+  Andreas Petutschnig [aut],
+  David Cooley [aut],
+  Robin Lovelace [ctb],
+  Andrew Smith [ctb],
+  Malcolm Morgan [ctb],
+  Andrea Gilardi <a href="https://orcid.org/0000-0002-9424-7439" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Eduardo Leoni <a href="https://orcid.org/0000-0003-0955-5232" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Shane Saunders [cph] (Original author of included code for priority
+    heaps),
+  Stanislaw Adaszewski [cph] (author of include concaveman-cpp code)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mark Padgham  &#x3c;&#x6d;&#x61;&#x72;&#x6b;&#x2e;&#x70;&#x61;&#x64;&#x67;&#x68;&#x61;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x65;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/UrbanAnalyst/dodgr/issues" target="_top"><span class="GitHub">https://github.com/UrbanAnalyst/dodgr/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://UrbanAnalyst.github.io/dodgr/" target="_top"><span class="GitHub">https://UrbanAnalyst.github.io/dodgr/</span></a>,
+<a href="https://github.com/UrbanAnalyst/dodgr" target="_top"><span class="GitHub">https://github.com/UrbanAnalyst/dodgr</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">dodgr citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dodgr.html"><span class="CRAN">dodgr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/dodgr.html"><span class="CRAN">dodgr.html</span></a> ,  <a href="dodgr.pdf"><span class="CRAN">dodgr.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dists-categorical.html"><span class="CRAN">4 dodgr_dists_categorical</span></a> (<a href="vignettes/dists-categorical.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/dists-categorical.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/dodgr.html"><span class="CRAN">1 dodgr</span></a> (<a href="vignettes/dodgr.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/dodgr.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/flows.html"><span class="CRAN">3 dodgr-flows</span></a> (<a href="vignettes/flows.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/flows.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/parallel.html"><span class="CRAN">5 parallel</span></a> (<a href="vignettes/parallel.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/parallel.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/times.html"><span class="CRAN">2 dodgr_times</span></a> (<a href="vignettes/times.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/times.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dodgr_0.4.3.tar.gz"> <span class="CRAN"> dodgr_0.4.3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/dodgr_0.4.3.zip"><span class="CRAN">dodgr_0.4.3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/dodgr_0.4.3.zip"><span class="CRAN">dodgr_0.4.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/dodgr_0.4.3.zip"><span class="CRAN">dodgr_0.4.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/dodgr_0.4.3.tgz"><span class="CRAN">dodgr_0.4.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/dodgr_0.4.3.tgz"><span class="CRAN">dodgr_0.4.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/dodgr_0.4.3.tgz"><span class="CRAN">dodgr_0.4.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/dodgr_0.4.2.tgz"><span class="CRAN">dodgr_0.4.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dodgr"> <span class="CRAN"> dodgr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../riverconn/index.html"><span class="CRAN">riverconn</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../gtfsrouter/index.html"><span class="CRAN">gtfsrouter</span></a>, <a href="../stplanr/index.html"><span class="CRAN">stplanr</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dodgr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=dodgr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

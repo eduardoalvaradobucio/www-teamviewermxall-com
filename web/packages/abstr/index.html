@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package abstr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=abstr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="R Interface to the A/B Street Transport System Simulation Software [R package abstr version 0.4.2]">
+<meta name="citation_author1" content="Robin Lovelace">
+<meta name="citation_author2" content="Nathanael Sheehan">
+<meta name="citation_author3" content="Trevor Nederlof">
+<meta name="citation_author4" content="Dustin Carlino">
+<meta name="citation_publication_date" content="2025-09-17">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=abstr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=abstr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="abstr: R Interface to the A/B Street Transport System Simulation Software">
+<meta property="og:description" content="Provides functions to convert origin-destination data, represented as straight 'desire lines' in the 'sf' Simple Features class system, into JSON files that can be directly imported into A/B Street &amp;lt;&lt;a href=&quot;https://www.abstreet.org&quot; target=&quot;_top&quot;&gt;https://www.abstreet.org&lt;/a&gt;&amp;gt;, a free and open source tool for simulating urban transport systems and scenarios of change &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10109-020-00342-2&quot; target=&quot;_top&quot;&gt;doi:10.1007/s10109-020-00342-2&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=abstr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>abstr: R Interface to the A/B Street Transport System Simulation
+Software</h2>
+<p>Provides functions to convert origin-destination data,
+    represented as straight 'desire lines' in the 'sf' Simple Features
+    class system, into JSON files that can be directly imported into
+    A/B Street &lt;<a href="https://www.abstreet.org" target="_top">https://www.abstreet.org</a>&gt;, a free and open source tool
+    for simulating urban transport systems and scenarios of change
+    &lt;<a href="https://doi.org/10.1007%2Fs10109-020-00342-2" target="_top">doi:10.1007/s10109-020-00342-2</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.7.2), <a href="../lwgeom/index.html"><span class="CRAN">lwgeom</span></a> (&ge; 0.2.5), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.1), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../od/index.html"><span class="CRAN">od</span></a> (&ge; 0.3.1), <a href="../sf/index.html"><span class="CRAN">sf</span></a> (&ge; 1.0.1), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.0.6), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.1.3)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../tmap/index.html"><span class="CRAN">tmap</span></a>, <a href="../pct/index.html"><span class="CRAN">pct</span></a>, <a href="../foreign/index.html"><span class="CRAN">foreign</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-09-17</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.abstr">10.32614/CRAN.package.abstr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robin Lovelace <a href="https://orcid.org/0000-0001-5679-6536" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Nathanael Sheehan <a href="https://orcid.org/0000-0002-2779-0976" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Trevor Nederlof [aut],
+  Lucas Dias [ctb],
+  Dustin Carlino [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Robin Lovelace  &#x3c;&#x72;&#x6f;&#x62;&#x30;&#x30;&#x78;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/a-b-street/abstr/issues" target="_top"><span class="GitHub">https://github.com/a-b-street/abstr/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/a-b-street/abstr" target="_top"><span class="GitHub">https://github.com/a-b-street/abstr</span></a>,
+<a href="https://a-b-street.github.io/abstr/" target="_top"><span class="GitHub">https://a-b-street.github.io/abstr/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_abstr.html"><span class="CRAN">abstr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/abstr.html"><span class="CRAN">abstr.html</span></a> ,  <a href="abstr.pdf"><span class="CRAN">abstr.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/abstr.html"><span class="CRAN">Get started with abstr</span></a> (<a href="vignettes/abstr.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/abstr.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/activity.html"><span class="CRAN">Multi-trip activity models</span></a> (<a href="vignettes/activity.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/activity.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/montlake.html"><span class="CRAN">Reproducing Montlake Eastside Seattle, US</span></a> (<a href="vignettes/montlake.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/montlake.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/pct_to_abstr.html"><span class="CRAN">Visualising cycling potential with A/B Street</span></a> (<a href="vignettes/pct_to_abstr.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/pct_to_abstr.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/abstr_0.4.2.tar.gz"> <span class="CRAN"> abstr_0.4.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/abstr_0.4.2.zip"><span class="CRAN">abstr_0.4.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/abstr_0.4.2.zip"><span class="CRAN">abstr_0.4.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/abstr_0.4.2.zip"><span class="CRAN">abstr_0.4.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/abstr_0.4.2.tgz"><span class="CRAN">abstr_0.4.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/abstr_0.4.2.tgz"><span class="CRAN">abstr_0.4.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/abstr_0.4.2.tgz"><span class="CRAN">abstr_0.4.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/abstr_0.4.2.tgz"><span class="CRAN">abstr_0.4.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/abstr"> <span class="CRAN"> abstr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=abstr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=abstr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

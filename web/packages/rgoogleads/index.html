@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rgoogleads</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rgoogleads">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Loading Data from 'Google Ads API' [R package rgoogleads version 0.14.1]">
+<meta name="citation_author" content="Alexey Seleznev">
+<meta name="citation_publication_date" content="2026-04-16">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rgoogleads">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rgoogleads">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rgoogleads: Loading Data from 'Google Ads API'">
+<meta property="og:description" content="Interface for loading data from 'Google Ads API', see &amp;lt;&lt;a href=&quot;https://developers.google.com/google-ads/api/docs/start&quot; target=&quot;_top&quot;&gt;https://developers.google.com/google-ads/api/docs/start&lt;/a&gt;&amp;gt;. Package provide function for authorization and loading reports.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rgoogleads">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rgoogleads: Loading Data from 'Google Ads API'</h2>
+<p>Interface for loading data from 'Google Ads API', 
+    see &lt;<a href="https://developers.google.com/google-ads/api/docs/start" target="_top">https://developers.google.com/google-ads/api/docs/start</a>&gt;. 
+    Package provide function for authorization and loading reports.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.14.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../gargle/index.html"><span class="CRAN">gargle</span></a> (&ge; 1.2.0), <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.0), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.0.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../snakecase/index.html"><span class="CRAN">snakecase</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.0.0), <a href="../pbapply/index.html"><span class="CRAN">pbapply</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../rlist/index.html"><span class="CRAN">rlist</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a> (&ge; 1.0.0), <a href="../memoise/index.html"><span class="CRAN">memoise</span></a>, <a href="../cachem/index.html"><span class="CRAN">cachem</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-16</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rgoogleads">10.32614/CRAN.package.rgoogleads</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexey Seleznev <a href="https://orcid.org/0000-0003-0410-7385" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Netpeak [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexey Seleznev  &#x3c;&#x73;&#x65;&#x6c;&#x65;&#x73;&#x6e;&#x6f;&#x77;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/selesnow/rgoogleads/issues" target="_top"><span class="GitHub">https://github.com/selesnow/rgoogleads/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://selesnow.github.io/rgoogleads/" target="_top"><span class="GitHub">https://selesnow.github.io/rgoogleads/</span></a>,
+<a href="https://selesnow.github.io/rgoogleads/docs/" target="_top"><span class="GitHub">https://selesnow.github.io/rgoogleads/docs/</span></a>,
+<a href="https://github.com/selesnow/rgoogleads" target="_top"><span class="GitHub">https://github.com/selesnow/rgoogleads</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rgoogleads.html"><span class="CRAN">rgoogleads results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rgoogleads.html"><span class="CRAN">rgoogleads.html</span></a> ,  <a href="rgoogleads.pdf"><span class="CRAN">rgoogleads.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/migrate_from_radrowds_us.html"><span class="CRAN">Migrate from RAdwords to rgoogleads</span></a> (<a href="vignettes/migrate_from_radrowds_us.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/migrate_from_radrowds_us.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/migrate_from_radwords_ru.html"><span class="CRAN">Миграция с RAdwords на rgoogleads</span></a> (<a href="vignettes/migrate_from_radwords_ru.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/migrate_from_radwords_ru.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rgoogleads_0.14.1.tar.gz"> <span class="CRAN"> rgoogleads_0.14.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rgoogleads_0.14.1.zip"><span class="CRAN">rgoogleads_0.14.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rgoogleads_0.13.3.zip"><span class="CRAN">rgoogleads_0.13.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rgoogleads_0.13.3.zip"><span class="CRAN">rgoogleads_0.13.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rgoogleads_0.13.3.tgz"><span class="CRAN">rgoogleads_0.13.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rgoogleads_0.13.3.tgz"><span class="CRAN">rgoogleads_0.13.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rgoogleads_0.13.3.tgz"><span class="CRAN">rgoogleads_0.13.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rgoogleads_0.14.1.tgz"><span class="CRAN">rgoogleads_0.14.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rgoogleads"> <span class="CRAN"> rgoogleads archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../galigor/index.html"><span class="CRAN">galigor</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rgoogleads"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rgoogleads</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

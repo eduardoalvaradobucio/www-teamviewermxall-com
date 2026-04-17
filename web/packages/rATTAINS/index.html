@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rATTAINS</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rATTAINS">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Access EPA 'ATTAINS' Data [R package rATTAINS version 1.1.0]">
+<meta name="citation_author" content="Michael Schramm">
+<meta name="citation_publication_date" content="2025-12-10">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rATTAINS">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rATTAINS">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rATTAINS: Access EPA 'ATTAINS' Data">
+<meta property="og:description" content="An R interface to United States Environmental Protection Agency (EPA) Assessment, Total Maximum Daily Load (TMDL) Tracking and Implementation System ('ATTAINS') data. 'ATTAINS' is the EPA database used to track information provided by states about water quality assessments conducted under federal Clean Water Act requirements. ATTAINS information and API information is available at &amp;lt;&lt;a href=&quot;https://www.epa.gov/waterdata/attains&quot; target=&quot;_top&quot;&gt;https://www.epa.gov/waterdata/attains&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rATTAINS">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rATTAINS: Access EPA 'ATTAINS' Data</h2>
+<p>An R interface to United States Environmental Protection Agency (EPA)  
+    Assessment, Total Maximum Daily Load (TMDL) Tracking and Implementation System 
+    ('ATTAINS') data. 'ATTAINS' is the EPA database used to track information 
+    provided by states about water quality assessments conducted under federal 
+    Clean Water Act requirements. ATTAINS information and API information is available at &lt;<a href="https://www.epa.gov/waterdata/attains" target="_top">https://www.epa.gov/waterdata/attains</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../crul/index.html"><span class="CRAN">crul</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../fauxpas/index.html"><span class="CRAN">fauxpas</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../rlist/index.html"><span class="CRAN">rlist</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../vcr/index.html"><span class="CRAN">vcr</span></a> (&ge; 0.6.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../webmockr/index.html"><span class="CRAN">webmockr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-10</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rATTAINS">10.32614/CRAN.package.rATTAINS</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Schramm <a href="https://orcid.org/0000-0003-1876-6592" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Schramm  &#x3c;&#x6d;&#x70;&#x73;&#x63;&#x68;&#x72;&#x61;&#x6d;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mps9506/rATTAINS/issues" target="_top"><span class="GitHub">https://github.com/mps9506/rATTAINS/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mps9506/rATTAINS" target="_top"><span class="GitHub">https://github.com/mps9506/rATTAINS</span></a>,
+<a href="https://mps9506.github.io/rATTAINS/" target="_top"><span class="GitHub">https://mps9506.github.io/rATTAINS/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rATTAINS citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rATTAINS.html"><span class="CRAN">rATTAINS results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rATTAINS.html"><span class="CRAN">rATTAINS.html</span></a> ,  <a href="rATTAINS.pdf"><span class="CRAN">rATTAINS.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Introduction.html"><span class="CRAN">Introduction</span></a> (<a href="vignettes/Introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rATTAINS_1.1.0.tar.gz"> <span class="CRAN"> rATTAINS_1.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rATTAINS_1.1.0.zip"><span class="CRAN">rATTAINS_1.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rATTAINS_1.1.0.zip"><span class="CRAN">rATTAINS_1.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rATTAINS_1.1.0.zip"><span class="CRAN">rATTAINS_1.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rATTAINS_1.1.0.tgz"><span class="CRAN">rATTAINS_1.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rATTAINS_1.1.0.tgz"><span class="CRAN">rATTAINS_1.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rATTAINS_1.1.0.tgz"><span class="CRAN">rATTAINS_1.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rATTAINS_1.1.0.tgz"><span class="CRAN">rATTAINS_1.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rATTAINS"> <span class="CRAN"> rATTAINS archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rATTAINS"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rATTAINS</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

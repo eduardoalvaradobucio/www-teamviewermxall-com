@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package WebGestaltR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=WebGestaltR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Gene Set Analysis Toolkit WebGestaltR [R package WebGestaltR version 0.4.6]">
+<meta name="citation_author1" content="Jing Wang">
+<meta name="citation_author2" content="Yuxing Liao">
+<meta name="citation_publication_date" content="2023-06-01">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=WebGestaltR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=WebGestaltR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="WebGestaltR: Gene Set Analysis Toolkit WebGestaltR">
+<meta property="og:description" content="The web version WebGestalt &amp;lt;&lt;a href=&quot;https://www.webgestalt.org&quot; target=&quot;_top&quot;&gt;https://www.webgestalt.org&lt;/a&gt;&amp;gt; supports 12 organisms, 354 gene identifiers and 321,251 function categories. Users can upload the data and functional categories with their own gene identifiers. In addition to the Over-Representation Analysis, WebGestalt also supports Gene Set Enrichment Analysis and Network Topology Analysis. The user-friendly output report allows interactive and efficient exploration of enrichment results. The WebGestaltR package not only supports all above functions but also can be integrated into other pipeline or simultaneously analyze multiple gene lists.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=WebGestaltR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>WebGestaltR: Gene Set Analysis Toolkit WebGestaltR</h2>
+<p>The web version WebGestalt &lt;<a href="https://www.webgestalt.org" target="_top">https://www.webgestalt.org</a>&gt; supports 12 organisms, 354 gene identifiers and 321,251 function categories. Users can upload the data and functional categories with their own gene identifiers. In addition to the Over-Representation Analysis, WebGestalt also supports Gene Set Enrichment Analysis and Network Topology Analysis. The user-friendly output report allows interactive and efficient exploration of enrichment results. The WebGestaltR package not only supports all above functions but also can be integrated into other pipeline or simultaneously analyze multiple gene lists.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../doRNG/index.html"><span class="CRAN">doRNG</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a> (&ge; 3.3.2), <a href="../doParallel/index.html"><span class="CRAN">doParallel</span></a> (&ge; 1.0.10), <a href="../foreach/index.html"><span class="CRAN">foreach</span></a> (&ge; 1.4.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../svglite/index.html"><span class="CRAN">svglite</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../whisker/index.html"><span class="CRAN">whisker</span></a>, <a href="../apcluster/index.html"><span class="CRAN">apcluster</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2023-06-01</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.WebGestaltR">10.32614/CRAN.package.WebGestaltR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jing Wang [aut],
+  Yuxing Liao [aut, cre],
+  Eric Jaehnig [ctb],
+  Zhiao Shi [ctb],
+  Quanhu Sheng [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yuxing Liao  &#x3c;&#x79;&#x75;&#x78;&#x69;&#x6e;&#x67;&#x6c;&#x69;&#x61;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-2"><span class="CRAN">LGPL-2</span></a> | <a href="../../licenses/LGPL-2.1"><span class="CRAN">LGPL-2.1</span></a> | <a href="../../licenses/LGPL-3"><span class="CRAN">LGPL-3</span></a> [expanded from: LGPL]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bzhanglab/WebGestaltR" target="_top"><span class="GitHub">https://github.com/bzhanglab/WebGestaltR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Omics.html"><span class="CRAN">Omics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_WebGestaltR.html"><span class="CRAN">WebGestaltR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/WebGestaltR.html"><span class="CRAN">WebGestaltR.html</span></a> ,  <a href="WebGestaltR.pdf"><span class="CRAN">WebGestaltR.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/WebGestaltR_0.4.6.tar.gz"> <span class="CRAN"> WebGestaltR_0.4.6.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/WebGestaltR_0.4.6.zip"><span class="CRAN">WebGestaltR_0.4.6.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/WebGestaltR_0.4.6.zip"><span class="CRAN">WebGestaltR_0.4.6.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/WebGestaltR_0.4.6.zip"><span class="CRAN">WebGestaltR_0.4.6.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/WebGestaltR_0.4.6.tgz"><span class="CRAN">WebGestaltR_0.4.6.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/WebGestaltR_0.4.6.tgz"><span class="CRAN">WebGestaltR_0.4.6.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/WebGestaltR_0.4.6.tgz"><span class="CRAN">WebGestaltR_0.4.6.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/WebGestaltR_0.4.6.tgz"><span class="CRAN">WebGestaltR_0.4.6.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/WebGestaltR"> <span class="CRAN"> WebGestaltR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=WebGestaltR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=WebGestaltR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

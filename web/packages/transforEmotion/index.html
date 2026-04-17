@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package transforEmotion</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=transforEmotion">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Sentiment Analysis for Text, Image and Video using Transformer Models [R package transforEmotion version 0.1.7]">
+<meta name="citation_author1" content="Alexander Christensen">
+<meta name="citation_author2" content="Hudson Golino">
+<meta name="citation_author3" content="Aleksandar Tomašević">
+<meta name="citation_publication_date" content="2026-01-08">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=transforEmotion">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=transforEmotion">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="transforEmotion: Sentiment Analysis for Text, Image and Video using Transformer Models">
+<meta property="og:description" content="Implements sentiment analysis using huggingface &amp;lt;&lt;a href=&quot;https://huggingface.co&quot; target=&quot;_top&quot;&gt;https://huggingface.co&lt;/a&gt;&amp;gt; transformer zero-shot classification model pipelines for text and image data. The default text pipeline is Cross-Encoder's DistilRoBERTa &amp;lt;&lt;a href=&quot;https://huggingface.co/cross-encoder/nli-distilroberta-base&quot; target=&quot;_top&quot;&gt;https://huggingface.co/cross-encoder/nli-distilroberta-base&lt;/a&gt;&amp;gt; and default image/video pipeline is Open AI's CLIP &amp;lt;&lt;a href=&quot;https://huggingface.co/openai/clip-vit-base-patch32&quot; target=&quot;_top&quot;&gt;https://huggingface.co/openai/clip-vit-base-patch32&lt;/a&gt;&amp;gt;. All other zero-shot classification model pipelines can be implemented using their model name from &amp;lt;&lt;a href=&quot;https://huggingface.co/models?pipeline_tag=zero-shot-classification&quot; target=&quot;_top&quot;&gt;https://huggingface.co/models?pipeline_tag=zero-shot-classification&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=transforEmotion">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>transforEmotion: Sentiment Analysis for Text, Image and Video using Transformer
+Models</h2>
+<p>Implements sentiment analysis using huggingface &lt;<a href="https://huggingface.co" target="_top">https://huggingface.co</a>&gt; transformer zero-shot classification model pipelines for text and image data. The default text pipeline is Cross-Encoder's DistilRoBERTa &lt;<a href="https://huggingface.co/cross-encoder/nli-distilroberta-base" target="_top">https://huggingface.co/cross-encoder/nli-distilroberta-base</a>&gt; and default image/video pipeline is Open AI's CLIP  &lt;<a href="https://huggingface.co/openai/clip-vit-base-patch32" target="_top">https://huggingface.co/openai/clip-vit-base-patch32</a>&gt;. All other zero-shot classification model pipelines can be implemented using their model name from &lt;<a href="https://huggingface.co/models?pipeline_tag=zero-shot-classification" target="_top">https://huggingface.co/models?pipeline_tag=zero-shot-classification</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../googledrive/index.html"><span class="CRAN">googledrive</span></a>, <a href="../LSAfun/index.html"><span class="CRAN">LSAfun</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../pbapply/index.html"><span class="CRAN">pbapply</span></a>, <a href="../remotes/index.html"><span class="CRAN">remotes</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a>, <a href="../textdata/index.html"><span class="CRAN">textdata</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../reshape2/index.html"><span class="CRAN">reshape2</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-08</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.transforEmotion">10.32614/CRAN.package.transforEmotion</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexander Christensen
+    <a href="https://orcid.org/0000-0002-9798-7037" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Hudson Golino <a href="https://orcid.org/0000-0002-1601-1447" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Aleksandar Tomašević
+    <a href="https://orcid.org/0000-0003-4863-6051" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Aleksandar Tomašević  &#x3c;&#x61;&#x74;&#x6f;&#x6d;&#x61;&#x73;&#x68;&#x65;&#x76;&#x69;&#x63;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3.0)</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">transforEmotion citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="NEWS"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_transforEmotion.html"><span class="CRAN">transforEmotion results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/transforEmotion.html"><span class="CRAN">transforEmotion.html</span></a> ,  <a href="transforEmotion.pdf"><span class="CRAN">transforEmotion.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Setup.pdf"><span class="CRAN">Setup and Tutorial</span></a> (<a href="vignettes/Setup.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Setup.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/evaluate_emotions.html"><span class="CRAN">Evaluating Emotion Classification with evaluate_emotions()</span></a> (<a href="vignettes/evaluate_emotions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/evaluate_emotions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/transforEmotion_0.1.7.tar.gz"> <span class="CRAN"> transforEmotion_0.1.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/transforEmotion_0.1.7.zip"><span class="CRAN">transforEmotion_0.1.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/transforEmotion_0.1.7.zip"><span class="CRAN">transforEmotion_0.1.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/transforEmotion_0.1.7.zip"><span class="CRAN">transforEmotion_0.1.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/transforEmotion_0.1.7.tgz"><span class="CRAN">transforEmotion_0.1.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/transforEmotion_0.1.7.tgz"><span class="CRAN">transforEmotion_0.1.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/transforEmotion_0.1.7.tgz"><span class="CRAN">transforEmotion_0.1.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/transforEmotion_0.1.7.tgz"><span class="CRAN">transforEmotion_0.1.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/transforEmotion"> <span class="CRAN"> transforEmotion archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=transforEmotion"><span class="CRAN"><samp>https://CRAN.R-project.org/package=transforEmotion</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

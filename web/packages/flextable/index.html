@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package flextable</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=flextable">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Functions for Tabular Reporting [R package flextable version 0.9.11]">
+<meta name="citation_author1" content="David Gohel">
+<meta name="citation_author2" content="Panagiotis Skintzos">
+<meta name="citation_publication_date" content="2026-02-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=flextable">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=flextable">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="flextable: Functions for Tabular Reporting">
+<meta property="og:description" content="Use a grammar for creating and customizing pretty tables. The following formats are supported: 'HTML', 'PDF', 'RTF', 'Microsoft Word', 'Microsoft PowerPoint', R 'Grid Graphics' and 'patchwork'. 'R Markdown', 'Quarto' and the package 'officer' can be used to produce the result files. The syntax is the same for the user regardless of the type of output to be produced. A set of functions allows the creation, definition of cell arrangement, addition of headers or footers, formatting and definition of cell content with text and or images. The package also offers a set of high-level functions that allow tabular reporting of statistical models and the creation of complex cross tabulations.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=flextable">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>flextable: Functions for Tabular Reporting</h2>
+<p>Use a grammar for creating and customizing pretty tables.
+    The following formats are supported: 'HTML', 'PDF', 'RTF', 'Microsoft
+    Word', 'Microsoft PowerPoint', R 'Grid Graphics' and 'patchwork'.
+    'R Markdown', 'Quarto' and the package 'officer' can be used to
+    produce the result files. The syntax is the same for the user
+    regardless of the type of output to be produced. A set of functions
+    allows the creation, definition of cell arrangement, addition of
+    headers or footers, formatting and definition of cell content with
+    text and or images. The package also offers a set of high-level
+    functions that allow tabular reporting of statistical models and the
+    creation of complex cross tabulations.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.9.11</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.13.0), <a href="../gdtools/index.html"><span class="CRAN">gdtools</span></a> (&ge; 0.5.0), <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../officer/index.html"><span class="CRAN">officer</span></a> (&ge; 0.7.3), <a href="../ragg/index.html"><span class="CRAN">ragg</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.0), <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../uuid/index.html"><span class="CRAN">uuid</span></a> (&ge; 0.1-4), <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bookdown/index.html"><span class="CRAN">bookdown</span></a> (&ge; 0.40), <a href="../broom/index.html"><span class="CRAN">broom</span></a>, <a href="../broom.mixed/index.html"><span class="CRAN">broom.mixed</span></a>, <a href="../chromote/index.html"><span class="CRAN">chromote</span></a>, <a href="../cluster/index.html"><span class="CRAN">cluster</span></a>, <a href="../commonmark/index.html"><span class="CRAN">commonmark</span></a>, <a href="../doconv/index.html"><span class="CRAN">doconv</span></a> (&ge; 0.3.0), <a href="../equatags/index.html"><span class="CRAN">equatags</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../gtable/index.html"><span class="CRAN">gtable</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lme4/index.html"><span class="CRAN">lme4</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../nlme/index.html"><span class="CRAN">nlme</span></a>, <a href="../officedown/index.html"><span class="CRAN">officedown</span></a>, <a href="../patchwork/index.html"><span class="CRAN">patchwork</span></a>, <a href="../pdftools/index.html"><span class="CRAN">pdftools</span></a>, <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a> (&ge; 2.0.0), <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../svglite/index.html"><span class="CRAN">svglite</span></a>, <a href="../tables/index.html"><span class="CRAN">tables</span></a> (&ge;
+0.9.17), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../webshot2/index.html"><span class="CRAN">webshot2</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../xtable/index.html"><span class="CRAN">xtable</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.flextable">10.32614/CRAN.package.flextable</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Gohel [aut, cre],
+  ArData [cph],
+  Clementine Jager [ctb],
+  Eli Daniels [ctb],
+  Panagiotis Skintzos [aut],
+  Quentin Fazilleau [ctb],
+  Maxim Nazarov [ctb],
+  Titouan Robert [ctb],
+  Michael Barrowman [ctb],
+  Atsushi Yasumoto [ctb],
+  Paul Julian [ctb],
+  Sean Browning [ctb],
+  Rémi Thériault <a href="https://orcid.org/0000-0003-4315-6788" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Samuel Jobert [ctb],
+  Keith Newman [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Gohel  &#x3c;&#x64;&#x61;&#x76;&#x69;&#x64;&#x2e;&#x67;&#x6f;&#x68;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x61;&#x72;&#x64;&#x61;&#x74;&#x61;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/davidgohel/flextable/issues" target="_top"><span class="GitHub">https://github.com/davidgohel/flextable/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ardata-fr.github.io/flextable-book/" target="_top"><span class="GitHub">https://ardata-fr.github.io/flextable-book/</span></a>,
+<a href="https://davidgohel.github.io/flextable/" target="_top"><span class="GitHub">https://davidgohel.github.io/flextable/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html"><span class="CRAN">ReproducibleResearch</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_flextable.html"><span class="CRAN">flextable results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/flextable.html"><span class="CRAN">flextable.html</span></a> ,  <a href="flextable.pdf"><span class="CRAN">flextable.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/overview.html"><span class="CRAN">Using flextable</span></a> (<a href="vignettes/overview.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/flextable_0.9.11.tar.gz"> <span class="CRAN"> flextable_0.9.11.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/flextable_0.9.11.zip"><span class="CRAN">flextable_0.9.11.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/flextable_0.9.11.zip"><span class="CRAN">flextable_0.9.11.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/flextable_0.9.11.zip"><span class="CRAN">flextable_0.9.11.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/flextable_0.9.11.tgz"><span class="CRAN">flextable_0.9.11.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/flextable_0.9.11.tgz"><span class="CRAN">flextable_0.9.11.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/flextable_0.9.11.tgz"><span class="CRAN">flextable_0.9.11.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/flextable_0.9.11.tgz"><span class="CRAN">flextable_0.9.11.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/flextable"> <span class="CRAN"> flextable archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../activAnalyzer/index.html"><span class="CRAN">activAnalyzer</span></a>, <a href="../AeroSampleR/index.html"><span class="CRAN">AeroSampleR</span></a>, <a href="../aNCA/index.html"><span class="CRAN">aNCA</span></a>, <a href="../apa7/index.html"><span class="CRAN">apa7</span></a>, <a href="../apmx/index.html"><span class="CRAN">apmx</span></a>, <a href="../assertHE/index.html"><span class="CRAN">assertHE</span></a>, <a href="../autoReg/index.html"><span class="CRAN">autoReg</span></a>, <a href="../autoslider.core/index.html"><span class="CRAN">autoslider.core</span></a>, <a href="../boot.pval/index.html"><span class="CRAN">boot.pval</span></a>, <a href="../Certara.DarwinReporter/index.html"><span class="CRAN">Certara.DarwinReporter</span></a>, <a href="../Certara.ModelResults/index.html"><span class="CRAN">Certara.ModelResults</span></a>, <a href="../clinify/index.html"><span class="CRAN">clinify</span></a>, <a href="../codebookr/index.html"><span class="CRAN">codebookr</span></a>, <a href="../compareGroups/index.html"><span class="CRAN">compareGroups</span></a>, <a href="../crane/index.html"><span class="CRAN">crane</span></a>, <a href="../crosstable/index.html"><span class="CRAN">crosstable</span></a>, <a href="../DemographicTable/index.html"><span class="CRAN">DemographicTable</span></a>, <a href="../dentomedical/index.html"><span class="CRAN">dentomedical</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/DspikeIn.html" target="_top"><span class="BioC">DspikeIn</span></a>, <a href="../edar/index.html"><span class="CRAN">edar</span></a>, <a href="../eoffice/index.html"><span class="CRAN">eoffice</span></a>, <a href="../epiR/index.html"><span class="CRAN">epiR</span></a>, <a href="../EpiReport/index.html"><span class="CRAN">EpiReport</span></a>, <a href="../examly/index.html"><span class="CRAN">examly</span></a>, <a href="../export/index.html"><span class="CRAN">export</span></a>, <a href="../fitODBODRshiny/index.html"><span class="CRAN">fitODBODRshiny</span></a>, <a href="../ftExtra/index.html"><span class="CRAN">ftExtra</span></a>, <a href="../furniture/index.html"><span class="CRAN">furniture</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/GenomicSuperSignature.html" target="_top"><span class="BioC">GenomicSuperSignature</span></a>, <a href="../glioblastomaEHRsData/index.html"><span class="CRAN">glioblastomaEHRsData</span></a>, <a href="../GrowthCurveME/index.html"><span class="CRAN">GrowthCurveME</span></a>, <a href="../GRShiny/index.html"><span class="CRAN">GRShiny</span></a>, <a href="../gtregression/index.html"><span class="CRAN">gtregression</span></a>, <a href="../interactionR/index.html"><span class="CRAN">interactionR</span></a>, <a href="../interpretCI/index.html"><span class="CRAN">interpretCI</span></a>, <a href="../inTextSummaryTable/index.html"><span class="CRAN">inTextSummaryTable</span></a>, <a href="../ivo.table/index.html"><span class="CRAN">ivo.table</span></a>, <a href="../jsmodule/index.html"><span class="CRAN">jsmodule</span></a>, <a href="../junco/index.html"><span class="CRAN">junco</span></a>, <a href="../kfa/index.html"><span class="CRAN">kfa</span></a>, <a href="../ladder/index.html"><span class="CRAN">ladder</span></a>, <a href="../MAGMA.R/index.html"><span class="CRAN">MAGMA.R</span></a>, <a href="../manymome.table/index.html"><span class="CRAN">manymome.table</span></a>, <a href="../MassWateR/index.html"><span class="CRAN">MassWateR</span></a>, <a href="../MCPModPack/index.html"><span class="CRAN">MCPModPack</span></a>, <a href="../MedianaDesigner/index.html"><span class="CRAN">MedianaDesigner</span></a>, <a href="../microplot/index.html"><span class="CRAN">microplot</span></a>, <a href="../MultiResponseR/index.html"><span class="CRAN">MultiResponseR</span></a>, <a href="../munch/index.html"><span class="CRAN">munch</span></a>, <a href="../nlmixr2rpt/index.html"><span class="CRAN">nlmixr2rpt</span></a>, <a href="../onbrand/index.html"><span class="CRAN">onbrand</span></a>, <a href="../ordPanel/index.html"><span class="CRAN">ordPanel</span></a>, <a href="../pmxcode/index.html"><span class="CRAN">pmxcode</span></a>, <a href="../presenter/index.html"><span class="CRAN">presenter</span></a>, <a href="../pwrFDR/index.html"><span class="CRAN">pwrFDR</span></a>, <a href="../Rbearcat/index.html"><span class="CRAN">Rbearcat</span></a>, <a href="../reappraised/index.html"><span class="CRAN">reappraised</span></a>, <a href="../relMix/index.html"><span class="CRAN">relMix</span></a>, <a href="../repmod/index.html"><span class="CRAN">repmod</span></a>, <a href="../robmedExtra/index.html"><span class="CRAN">robmedExtra</span></a>, <a href="../Rrepest/index.html"><span class="CRAN">Rrepest</span></a>, <a href="../rrtable/index.html"><span class="CRAN">rrtable</span></a>, <a href="../rsides/index.html"><span class="CRAN">rsides</span></a>, <a href="../rtables.officer/index.html"><span class="CRAN">rtables.officer</span></a>, <a href="../ruminate/index.html"><span class="CRAN">ruminate</span></a>, <a href="../scaledescr/index.html"><span class="CRAN">scaledescr</span></a>, <a href="../shinySbm/index.html"><span class="CRAN">shinySbm</span></a>, <a href="../SimtablR/index.html"><span class="CRAN">SimtablR</span></a>, <a href="../smallsets/index.html"><span class="CRAN">smallsets</span></a>, <a href="../sMSROC/index.html"><span class="CRAN">sMSROC</span></a>, <a href="../statAPA/index.html"><span class="CRAN">statAPA</span></a>, <a href="../StepReg/index.html"><span class="CRAN">StepReg</span></a>, <a href="../StepRegShiny/index.html"><span class="CRAN">StepRegShiny</span></a>, <a href="../summarySCI/index.html"><span class="CRAN">summarySCI</span></a>, <a href="../SurveyDefense/index.html"><span class="CRAN">SurveyDefense</span></a>, <a href="../teal.reporter/index.html"><span class="CRAN">teal.reporter</span></a>, <a href="../TernTables/index.html"><span class="CRAN">TernTables</span></a>, <a href="../TestAnaAPP/index.html"><span class="CRAN">TestAnaAPP</span></a>, <a href="../toxSummary/index.html"><span class="CRAN">toxSummary</span></a>, <a href="../tracee/index.html"><span class="CRAN">tracee</span></a>, <a href="../tsgarch/index.html"><span class="CRAN">tsgarch</span></a>, <a href="../tsissm/index.html"><span class="CRAN">tsissm</span></a>, <a href="../tstests/index.html"><span class="CRAN">tstests</span></a>, <a href="../ubiquity/index.html"><span class="CRAN">ubiquity</span></a>, <a href="../VisualizeSimon2Stage/index.html"><span class="CRAN">VisualizeSimon2Stage</span></a>, <a href="../visvaR/index.html"><span class="CRAN">visvaR</span></a>, <a href="../warabandi/index.html"><span class="CRAN">warabandi</span></a>, <a href="../washi/index.html"><span class="CRAN">washi</span></a>, <a href="../webr/index.html"><span class="CRAN">webr</span></a>, <a href="../WordR/index.html"><span class="CRAN">WordR</span></a>, <a href="../wrappedtools/index.html"><span class="CRAN">wrappedtools</span></a>, <a href="../ztable/index.html"><span class="CRAN">ztable</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../accessr/index.html"><span class="CRAN">accessr</span></a>, <a href="../autostats/index.html"><span class="CRAN">autostats</span></a>, <a href="../basictabler/index.html"><span class="CRAN">basictabler</span></a>, <a href="../bayesMeanScale/index.html"><span class="CRAN">bayesMeanScale</span></a>, <a href="../brand.yml/index.html"><span class="CRAN">brand.yml</span></a>, <a href="../clinUtils/index.html"><span class="CRAN">clinUtils</span></a>, <a href="../CodelistGenerator/index.html"><span class="CRAN">CodelistGenerator</span></a>, <a href="../CohortCharacteristics/index.html"><span class="CRAN">CohortCharacteristics</span></a>, <a href="../CohortSurvival/index.html"><span class="CRAN">CohortSurvival</span></a>, <a href="../CohortSymmetry/index.html"><span class="CRAN">CohortSymmetry</span></a>, <a href="../doconv/index.html"><span class="CRAN">doconv</span></a>, <a href="../DrugUtilisation/index.html"><span class="CRAN">DrugUtilisation</span></a>, <a href="../fitODBOD/index.html"><span class="CRAN">fitODBOD</span></a>, <a href="../flexlsx/index.html"><span class="CRAN">flexlsx</span></a>, <a href="../formods/index.html"><span class="CRAN">formods</span></a>, <a href="../GLMMcosinor/index.html"><span class="CRAN">GLMMcosinor</span></a>, <a href="../gridify/index.html"><span class="CRAN">gridify</span></a>, <a href="../gtsummary/index.html"><span class="CRAN">gtsummary</span></a>, <a href="../huxtable/index.html"><span class="CRAN">huxtable</span></a>, <a href="../IncidencePrevalence/index.html"><span class="CRAN">IncidencePrevalence</span></a>, <a href="../invitroTKstats/index.html"><span class="CRAN">invitroTKstats</span></a>, <a href="../irtrees/index.html"><span class="CRAN">irtrees</span></a>, <a href="../kardl/index.html"><span class="CRAN">kardl</span></a>, <a href="../lavaanExtra/index.html"><span class="CRAN">lavaanExtra</span></a>, <a href="../LightLogR/index.html"><span class="CRAN">LightLogR</span></a>, <a href="../MeasurementDiagnostics/index.html"><span class="CRAN">MeasurementDiagnostics</span></a>, <a href="../Mediana/index.html"><span class="CRAN">Mediana</span></a>, <a href="../MIC/index.html"><span class="CRAN">MIC</span></a>, <a href="../mitey/index.html"><span class="CRAN">mitey</span></a>, <a href="../modelsummary/index.html"><span class="CRAN">modelsummary</span></a>, <a href="../mpwR/index.html"><span class="CRAN">mpwR</span></a>, <a href="../multitool/index.html"><span class="CRAN">multitool</span></a>, <a href="../munsellinterpol/index.html"><span class="CRAN">munsellinterpol</span></a>, <a href="../officedown/index.html"><span class="CRAN">officedown</span></a>, <a href="../OmopSketch/index.html"><span class="CRAN">OmopSketch</span></a>, <a href="../performance/index.html"><span class="CRAN">performance</span></a>, <a href="../phsmethods/index.html"><span class="CRAN">phsmethods</span></a>, <a href="../polarzonoid/index.html"><span class="CRAN">polarzonoid</span></a>, <a href="../predictNMB/index.html"><span class="CRAN">predictNMB</span></a>, <a href="../prismadiagramR/index.html"><span class="CRAN">prismadiagramR</span></a>, <a href="../quartabs/index.html"><span class="CRAN">quartabs</span></a>, <a href="../quarto/index.html"><span class="CRAN">quarto</span></a>, <a href="../r4ss/index.html"><span class="CRAN">r4ss</span></a>, <a href="../rempsyc/index.html"><span class="CRAN">rempsyc</span></a>, <a href="../reservr/index.html"><span class="CRAN">reservr</span></a>, <a href="../rice/index.html"><span class="CRAN">rice</span></a>, <a href="../rmsMD/index.html"><span class="CRAN">rmsMD</span></a>, <a href="../sitrep/index.html"><span class="CRAN">sitrep</span></a>, <a href="../Slick/index.html"><span class="CRAN">Slick</span></a>, <a href="../spicy/index.html"><span class="CRAN">spicy</span></a>, <a href="../statAfrikR/index.html"><span class="CRAN">statAfrikR</span></a>, <a href="../strand/index.html"><span class="CRAN">strand</span></a>, <a href="../summata/index.html"><span class="CRAN">summata</span></a>, <a href="../SUMO/index.html"><span class="CRAN">SUMO</span></a>, <a href="../table1/index.html"><span class="CRAN">table1</span></a>, <a href="../visOmopResults/index.html"><span class="CRAN">visOmopResults</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=flextable"><span class="CRAN"><samp>https://CRAN.R-project.org/package=flextable</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

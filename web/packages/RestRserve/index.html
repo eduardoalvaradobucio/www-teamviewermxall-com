@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package RestRserve</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=RestRserve">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="A Framework for Building HTTP API [R package RestRserve version 1.2.4]">
+<meta name="citation_author1" content="Dmitry Selivanov">
+<meta name="citation_author2" content="Artem Klevtsov">
+<meta name="citation_publication_date" content="2025-03-14">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RestRserve">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RestRserve">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="RestRserve: A Framework for Building HTTP API">
+<meta property="og:description" content=" Allows to easily create high-performance full featured HTTP APIs from R functions. Provides high-level classes such as 'Request', 'Response', 'Application', 'Middleware' in order to streamline server side application development. Out of the box allows to serve requests using 'Rserve' package, but flexible enough to integrate with other HTTP servers such as 'httpuv'.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=RestRserve">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>RestRserve: A Framework for Building HTTP API</h2>
+<p>
+  Allows to easily create high-performance full featured HTTP APIs from R
+  functions. Provides high-level classes such as 'Request', 'Response',
+  'Application', 'Middleware' in order to streamline server side
+  application development. Out of the box allows to serve requests using
+  'Rserve' package, but flexible enough to integrate with other HTTP servers
+  such as 'httpuv'.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../Rserve/index.html"><span class="CRAN">Rserve</span></a> (&ge; 1.7.3), <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.3), <a href="../R6/index.html"><span class="CRAN">R6</span></a> (&ge;
+2.4.0), <a href="../uuid/index.html"><span class="CRAN">uuid</span></a> (&ge; 0.1-2), <a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a> (&ge; 1.9.4), <a href="../mime/index.html"><span class="CRAN">mime</span></a> (&ge; 0.7), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.6), <a href="../digest/index.html"><span class="CRAN">digest</span></a> (&ge; 0.6.29)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tinytest/index.html"><span class="CRAN">tinytest</span></a> (&ge; 1.0.0), <a href="../lgr/index.html"><span class="CRAN">lgr</span></a> (&ge; 0.3.2), <a href="../lintr/index.html"><span class="CRAN">lintr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../sys/index.html"><span class="CRAN">sys</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-03-14</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.RestRserve">10.32614/CRAN.package.RestRserve</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dmitry Selivanov <a href="https://orcid.org/0000-0001-5413-1506" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Artem Klevtsov <a href="https://orcid.org/0000-0003-0492-6647" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  David Zimmermann [ctb],
+  rexy.ai [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dmitry Selivanov  &#x3c;&#x73;&#x65;&#x6c;&#x69;&#x76;&#x61;&#x6e;&#x6f;&#x76;&#x2e;&#x64;&#x6d;&#x69;&#x74;&#x72;&#x69;&#x79;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rexyai/RestRserve/issues" target="_top"><span class="GitHub">https://github.com/rexyai/RestRserve/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2"><span class="CRAN">GPL-2</span></a> | <a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://restrserve.org" target="_top">https://restrserve.org</a>, <a href="https://github.com/rexyai/RestRserve" target="_top"><span class="GitHub">https://github.com/rexyai/RestRserve</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ModelDeployment.html"><span class="CRAN">ModelDeployment</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RestRserve.html"><span class="CRAN">RestRserve results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/RestRserve.html"><span class="CRAN">RestRserve.html</span></a> ,  <a href="RestRserve.pdf"><span class="CRAN">RestRserve.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Authentication.html"><span class="CRAN">Authentication</span></a> (<a href="vignettes/Authentication.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Authentication.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ContentHandlers.html"><span class="CRAN">Body encoding and decoding</span></a> (<a href="vignettes/ContentHandlers.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ContentHandlers.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Logging.html"><span class="CRAN">Logging</span></a> (<a href="vignettes/Logging.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Logging.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Middleware.html"><span class="CRAN">Middleware</span></a> (<a href="vignettes/Middleware.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Middleware.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/RestRserve.html"><span class="CRAN">Quick Start Guide</span></a> (<a href="vignettes/RestRserve.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/RestRserve.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RestRserve_1.2.4.tar.gz"> <span class="CRAN"> RestRserve_1.2.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/RestRserve_1.2.4.zip"><span class="CRAN">RestRserve_1.2.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/RestRserve_1.2.4.zip"><span class="CRAN">RestRserve_1.2.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/RestRserve_1.2.4.zip"><span class="CRAN">RestRserve_1.2.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/RestRserve_1.2.4.tgz"><span class="CRAN">RestRserve_1.2.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/RestRserve_1.2.4.tgz"><span class="CRAN">RestRserve_1.2.4.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/RestRserve_1.2.4.tgz"><span class="CRAN">RestRserve_1.2.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/RestRserve_1.2.4.tgz"><span class="CRAN">RestRserve_1.2.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RestRserve"> <span class="CRAN"> RestRserve archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../acumos/index.html"><span class="CRAN">acumos</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AzureContainers/index.html"><span class="CRAN">AzureContainers</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RestRserve"><span class="CRAN"><samp>https://CRAN.R-project.org/package=RestRserve</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

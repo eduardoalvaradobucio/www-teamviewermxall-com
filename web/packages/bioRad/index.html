@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package bioRad</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=bioRad">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Biological Analysis and Visualization of Weather Radar Data [R package bioRad version 0.11.0]">
+<meta name="citation_author1" content="Adriaan M. Dokter">
+<meta name="citation_author2" content="Peter Desmet">
+<meta name="citation_author3" content="Bart Kranstauber">
+<meta name="citation_author4" content="Cecilia Nilsson">
+<meta name="citation_author5" content="Alexander Tedeschi">
+<meta name="citation_author6" content="Stijn Van Hoey">
+<meta name="citation_publication_date" content="2025-08-29">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bioRad">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bioRad">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="bioRad: Biological Analysis and Visualization of Weather Radar Data">
+<meta property="og:description" content="Extract, visualize and summarize aerial movements of birds and insects from weather radar data. See Dokter, A. M. et al. (2018) &quot;bioRad: biological analysis and visualization of weather radar data&quot; &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fecog.04028&quot; target=&quot;_top&quot;&gt;doi:10.1111/ecog.04028&lt;/a&gt;&amp;gt; for a software paper describing package and methodologies.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=bioRad">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>bioRad: Biological Analysis and Visualization of Weather Radar Data</h2>
+<p>Extract, visualize and summarize aerial movements of birds and
+    insects from weather radar data. See Dokter, A. M. et al. (2018) 
+    "bioRad: biological analysis and visualization of weather radar data" &lt;<a href="https://doi.org/10.1111%2Fecog.04028" target="_top">doi:10.1111/ecog.04028</a>&gt;
+    for a software paper describing package and methodologies.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.11.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html"><span class="CRAN">assertthat</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.0), <a href="../fields/index.html"><span class="CRAN">fields</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../lutz/index.html"><span class="CRAN">lutz</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../raster/index.html"><span class="CRAN">raster</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/rhdf5.html" target="_top"><span class="BioC">rhdf5</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../suntools/index.html"><span class="CRAN">suntools</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../viridis/index.html"><span class="CRAN">viridis</span></a>, <a href="../viridisLite/index.html"><span class="CRAN">viridisLite</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../getRad/index.html"><span class="CRAN">getRad</span></a>, <a href="../ggspatial/index.html"><span class="CRAN">ggspatial</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../prettymapr/index.html"><span class="CRAN">prettymapr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rosm/index.html"><span class="CRAN">rosm</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../vol2birdR/index.html"><span class="CRAN">vol2birdR</span></a> (&ge; 1.1.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-29</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.bioRad">10.32614/CRAN.package.bioRad</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adriaan M. Dokter <a href="https://orcid.org/0000-0001-6573-066X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Peter Desmet <a href="https://orcid.org/0000-0002-8442-8025" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Bart Kranstauber <a href="https://orcid.org/0000-0001-8303-780X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Cecilia Nilsson <a href="https://orcid.org/0000-0001-8957-4411" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Alexander Tedeschi
+    <a href="https://orcid.org/0000-0003-0772-6931" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Stijn Van Hoey <a href="https://orcid.org/0000-0001-6413-3185" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Bart Hoekstra <a href="https://orcid.org/0000-0002-7085-3805" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Pieter Huybrechts <a href="https://orcid.org/0000-0002-6658-6062" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Hidde Leijnse <a href="https://orcid.org/0000-0001-7835-4480" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Nicolas Noé <a href="https://orcid.org/0000-0002-9503-4750" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Raphaël Nussbaumer
+    <a href="https://orcid.org/0000-0002-8185-1020" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Jurriaan Spaaks [ctb],
+  Lourens Veen [ctb],
+  Liesbeth Verlinden
+    <a href="https://orcid.org/0000-0003-1744-9325" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adriaan M. Dokter  &#x3c;&#x62;&#x69;&#x6f;&#x72;&#x61;&#x64;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x72;&#x6e;&#x65;&#x6c;&#x6c;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/adokter/bioRad/issues" target="_top"><span class="GitHub">https://github.com/adokter/bioRad/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/adokter/bioRad/" target="_top"><span class="GitHub">https://github.com/adokter/bioRad/</span></a>,
+<a href="https://adriaandokter.com/bioRad/" target="_top">https://adriaandokter.com/bioRad/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">bioRad citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bioRad.html"><span class="CRAN">bioRad results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/bioRad.html"><span class="CRAN">bioRad.html</span></a> ,  <a href="bioRad.pdf"><span class="CRAN">bioRad.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bioRad.html"><span class="CRAN">Introduction to bioRad</span></a> (<a href="vignettes/bioRad.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/rad_aero_22.html"><span class="CRAN">Introductory exercises with bioRad</span></a> (<a href="vignettes/rad_aero_22.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rad_aero_22.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/range_correction.html"><span class="CRAN">Correction for range effects</span></a> (<a href="vignettes/range_correction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/range_correction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bioRad_0.11.0.tar.gz"> <span class="CRAN"> bioRad_0.11.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/bioRad_0.11.0.zip"><span class="CRAN">bioRad_0.11.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/bioRad_0.11.0.zip"><span class="CRAN">bioRad_0.11.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/bioRad_0.11.0.zip"><span class="CRAN">bioRad_0.11.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/bioRad_0.11.0.tgz"><span class="CRAN">bioRad_0.11.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/bioRad_0.11.0.tgz"><span class="CRAN">bioRad_0.11.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/bioRad_0.11.0.tgz"><span class="CRAN">bioRad_0.11.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/bioRad_0.11.0.tgz"><span class="CRAN">bioRad_0.11.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bioRad"> <span class="CRAN"> bioRad archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../getRad/index.html"><span class="CRAN">getRad</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bioRad"><span class="CRAN"><samp>https://CRAN.R-project.org/package=bioRad</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

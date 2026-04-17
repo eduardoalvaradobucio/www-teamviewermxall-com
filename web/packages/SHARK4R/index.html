@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package SHARK4R</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=SHARK4R">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Accessing and Validating Marine Environmental Data from 'SHARK' and Related Databases [R package SHARK4R version 1.1.1]">
+<meta name="citation_author1" content="Markus Lindh">
+<meta name="citation_author2" content="Anders Torstensson">
+<meta name="citation_publication_date" content="2026-03-12">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SHARK4R">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SHARK4R">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="SHARK4R: Accessing and Validating Marine Environmental Data from 'SHARK' and Related Databases">
+<meta property="og:description" content="Provides functions to retrieve, process, analyze, and quality-control marine physical, chemical, and biological data. The main focus is on Swedish monitoring data available through the 'SHARK' database &amp;lt;&lt;a href=&quot;https://shark.smhi.se/en/&quot; target=&quot;_top&quot;&gt;https://shark.smhi.se/en/&lt;/a&gt;&amp;gt;, with additional API support for 'Nordic Microalgae' &amp;lt;&lt;a href=&quot;https://nordicmicroalgae.org/&quot; target=&quot;_top&quot;&gt;https://nordicmicroalgae.org/&lt;/a&gt;&amp;gt;, 'Dyntaxa' &amp;lt;&lt;a href=&quot;https://artfakta.se/&quot; target=&quot;_top&quot;&gt;https://artfakta.se/&lt;/a&gt;&amp;gt;, World Register of Marine Species ('WoRMS') &amp;lt;&lt;a href=&quot;https://www.marinespecies.org&quot; target=&quot;_top&quot;&gt;https://www.marinespecies.org&lt;/a&gt;&amp;gt;, 'AlgaeBase' &amp;lt;&lt;a href=&quot;https://www.algaebase.org&quot; target=&quot;_top&quot;&gt;https://www.algaebase.org&lt;/a&gt;&amp;gt;, OBIS 'xylookup' web service &amp;lt;&lt;a href=&quot;https://iobis.github.io/xylookup/&quot; target=&quot;_top&quot;&gt;https://iobis.github.io/xylookup/&lt;/a&gt;&amp;gt; and Intergovernmental Oceanographic Commission (IOC) - UNESCO databases on harmful algae &amp;lt;&lt;a href=&quot;https://www.marinespecies.org/hab/&quot; target=&quot;_top&quot;&gt;https://www.marinespecies.org/hab/&lt;/a&gt;&amp;gt; and toxins &amp;lt;&lt;a href=&quot;https://toxins.hais.ioc-unesco.org/&quot; target=&quot;_top&quot;&gt;https://toxins.hais.ioc-unesco.org/&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=SHARK4R">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>SHARK4R: Accessing and Validating Marine Environmental Data from 'SHARK'
+and Related Databases</h2>
+<p>Provides functions to retrieve, process, analyze, and
+    quality-control marine physical, chemical, and biological data. The
+    main focus is on Swedish monitoring data available through the 'SHARK'
+    database &lt;<a href="https://shark.smhi.se/en/" target="_top">https://shark.smhi.se/en/</a>&gt;, with additional API support for 'Nordic
+    Microalgae' &lt;<a href="https://nordicmicroalgae.org/" target="_top">https://nordicmicroalgae.org/</a>&gt;, 'Dyntaxa'
+    &lt;<a href="https://artfakta.se/" target="_top">https://artfakta.se/</a>&gt;, World Register of Marine Species ('WoRMS') &lt;<a href="https://www.marinespecies.org" target="_top">https://www.marinespecies.org</a>&gt;,
+    'AlgaeBase' &lt;<a href="https://www.algaebase.org" target="_top">https://www.algaebase.org</a>&gt;, OBIS 'xylookup' web service 
+    &lt;<a href="https://iobis.github.io/xylookup/" target="_top">https://iobis.github.io/xylookup/</a>&gt; and Intergovernmental Oceanographic Commission (IOC) - 
+    UNESCO databases on harmful algae  &lt;<a href="https://www.marinespecies.org/hab/" target="_top">https://www.marinespecies.org/hab/</a>&gt; and toxins
+    &lt;<a href="https://toxins.hais.ioc-unesco.org/" target="_top">https://toxins.hais.ioc-unesco.org/</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../vroom/index.html"><span class="CRAN">vroom</span></a>, <a href="../worrms/index.html"><span class="CRAN">worrms</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../iRfcb/index.html"><span class="CRAN">iRfcb</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../skimr/index.html"><span class="CRAN">skimr</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinythemes/index.html"><span class="CRAN">shinythemes</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-12</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.SHARK4R">10.32614/CRAN.package.SHARK4R</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Markus Lindh <a href="https://orcid.org/0000-0002-7120-4145" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut] (Swedish Meteorological and Hydrological Institute),
+  Anders Torstensson
+    <a href="https://orcid.org/0000-0002-8283-656X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]
+    (Swedish Meteorological and Hydrological Institute),
+  Mikael Hedblom <a href="https://orcid.org/0009-0007-5124-9956" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Swedish Meteorological and Hydrological Institute),
+  Bengt Karlson <a href="https://orcid.org/0000-0002-7524-3504" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Swedish Meteorological and Hydrological Institute),
+  SHARK [cph],
+  SBDI [fnd] (Swedish Research Council, 2019-00242)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anders Torstensson  &#x3c;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x2e;&#x74;&#x6f;&#x72;&#x73;&#x74;&#x65;&#x6e;&#x73;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x73;&#x6d;&#x68;&#x69;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sharksmhi/SHARK4R/issues" target="_top"><span class="GitHub">https://github.com/sharksmhi/SHARK4R/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://sharksmhi.github.io/SHARK4R/" target="_top"><span class="GitHub">https://sharksmhi.github.io/SHARK4R/</span></a>,
+<a href="https://github.com/sharksmhi/SHARK4R" target="_top"><span class="GitHub">https://github.com/sharksmhi/SHARK4R</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">SHARK4R citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SHARK4R.html"><span class="CRAN">SHARK4R results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/SHARK4R.html"><span class="CRAN">SHARK4R.html</span></a> ,  <a href="SHARK4R.pdf"><span class="CRAN">SHARK4R.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/quality_control.html"><span class="CRAN">Quality Control of SHARK Data</span></a> (<a href="vignettes/quality_control.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quality_control.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/retrieve_hab_data.html"><span class="CRAN">Retrieve HAB Data From IOC-UNESCO Databases</span></a> (<a href="vignettes/retrieve_hab_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/retrieve_hab_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/retrieve_nordic_microalgae_data.html"><span class="CRAN">Retrieve Data From Nordic Microalgae</span></a> (<a href="vignettes/retrieve_nordic_microalgae_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/retrieve_nordic_microalgae_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/retrieve_shark_data.html"><span class="CRAN">Retrieve Data From SHARK</span></a> (<a href="vignettes/retrieve_shark_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/retrieve_shark_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/retrieve_worms_data.html"><span class="CRAN">Retrieve Taxonomic Data From WoRMS</span></a> (<a href="vignettes/retrieve_worms_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/retrieve_worms_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SHARK4R_1.1.1.tar.gz"> <span class="CRAN"> SHARK4R_1.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/SHARK4R_1.1.1.zip"><span class="CRAN">SHARK4R_1.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/SHARK4R_1.1.1.zip"><span class="CRAN">SHARK4R_1.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/SHARK4R_1.1.1.zip"><span class="CRAN">SHARK4R_1.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/SHARK4R_1.1.1.tgz"><span class="CRAN">SHARK4R_1.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/SHARK4R_1.1.1.tgz"><span class="CRAN">SHARK4R_1.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/SHARK4R_1.1.1.tgz"><span class="CRAN">SHARK4R_1.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/SHARK4R_1.1.1.tgz"><span class="CRAN">SHARK4R_1.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SHARK4R"> <span class="CRAN"> SHARK4R archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SHARK4R"><span class="CRAN"><samp>https://CRAN.R-project.org/package=SHARK4R</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

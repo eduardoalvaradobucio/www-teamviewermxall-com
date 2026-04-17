@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package mapSpain</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=mapSpain">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Administrative Boundaries of Spain [R package mapSpain version 1.1.0]">
+<meta name="citation_author" content="Diego Hernangómez">
+<meta name="citation_publication_date" content="2026-03-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mapSpain">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mapSpain">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="mapSpain: Administrative Boundaries of Spain">
+<meta property="og:description" content="Administrative Boundaries of Spain at several levels (Autonomous Communities, Provinces, Municipalities) based on the 'GISCO' 'Eurostat' database &amp;lt;&lt;a href=&quot;https://ec.europa.eu/eurostat/web/gisco&quot; target=&quot;_top&quot;&gt;https://ec.europa.eu/eurostat/web/gisco&lt;/a&gt;&amp;gt; and 'CartoBase SIANE' from 'Instituto Geografico Nacional' &amp;lt;&lt;a href=&quot;https://www.ign.es/&quot; target=&quot;_top&quot;&gt;https://www.ign.es/&lt;/a&gt;&amp;gt;. It also provides a 'leaflet' plugin and the ability of downloading and processing static tiles.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=mapSpain">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>mapSpain: Administrative Boundaries of Spain</h2>
+<p>Administrative Boundaries of Spain at several levels
+    (Autonomous Communities, Provinces, Municipalities) based on the
+    'GISCO' 'Eurostat' database &lt;<a href="https://ec.europa.eu/eurostat/web/gisco" target="_top">https://ec.europa.eu/eurostat/web/gisco</a>&gt;
+    and 'CartoBase SIANE' from 'Instituto Geografico Nacional'
+    &lt;<a href="https://www.ign.es/" target="_top">https://www.ign.es/</a>&gt;.  It also provides a 'leaflet' plugin and the
+    ability of downloading and processing static tiles.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.6.0), <a href="../countrycode/index.html"><span class="CRAN">countrycode</span></a> (&ge; 1.2.0), <a href="../giscoR/index.html"><span class="CRAN">giscoR</span></a> (&ge; 1.0.0), <a href="../httr2/index.html"><span class="CRAN">httr2</span></a> (&ge; 1.2.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a> (&ge; 2.0.0), <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a> (&ge; 0.3.0), <a href="../sf/index.html"><span class="CRAN">sf</span></a> (&ge; 1.0.0), <a href="../terra/index.html"><span class="CRAN">terra</span></a> (&ge; 1.1-4), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.5.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../quarto/index.html"><span class="CRAN">quarto</span></a>, <a href="../tidyterra/index.html"><span class="CRAN">tidyterra</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.mapSpain">10.32614/CRAN.package.mapSpain</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Diego Hernangómez <a href="https://orcid.org/0000-0001-8457-4658" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph],
+  Eurostat <a href="https://ror.org/033d3q980" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph],
+  Instituto Geográfico Nacional <a href="https://ror.org/03yycdv57" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cph],
+  Francisco J. Goerlich
+    <a href="https://orcid.org/0000-0003-1626-525X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Diego Hernangómez  &#x3c;&#x64;&#x69;&#x65;&#x67;&#x6f;&#x2e;&#x68;&#x65;&#x72;&#x6e;&#x61;&#x6e;&#x67;&#x6f;&#x6d;&#x65;&#x7a;&#x68;&#x65;&#x72;&#x72;&#x65;&#x72;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rOpenSpain/mapSpain/issues" target="_top"><span class="GitHub">https://github.com/rOpenSpain/mapSpain/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>© EuroGeographics for the administrative boundaries. Atlas
+Nacional de España (ANE) CC BY 4.0 &lt;http://www.ign.es&gt;. INE
+&lt;https://www.ine.es/en/index.htm&gt; <br>  <a href="COPYRIGHTS"><span class="CRAN">mapSpain copyright details</span></a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ropenspain.github.io/mapSpain/" target="_top"><span class="GitHub">https://ropenspain.github.io/mapSpain/</span></a>,
+<a href="https://github.com/rOpenSpain/mapSpain" target="_top"><span class="GitHub">https://github.com/rOpenSpain/mapSpain</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">mapSpain citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mapSpain.html"><span class="CRAN">mapSpain results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/mapSpain.html"><span class="CRAN">mapSpain.html</span></a> ,  <a href="mapSpain.pdf"><span class="CRAN">mapSpain.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/imagery.html"><span class="CRAN">Imagery and mapSpain</span></a> (<a href="vignettes/imagery.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/mapSpain.html"><span class="CRAN">Get Started</span></a> (<a href="vignettes/mapSpain.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mapSpain_1.1.0.tar.gz"> <span class="CRAN"> mapSpain_1.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/mapSpain_1.1.0.zip"><span class="CRAN">mapSpain_1.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/mapSpain_1.1.0.zip"><span class="CRAN">mapSpain_1.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/mapSpain_1.1.0.zip"><span class="CRAN">mapSpain_1.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/mapSpain_1.1.0.tgz"><span class="CRAN">mapSpain_1.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/mapSpain_1.0.0.tgz"><span class="CRAN">mapSpain_1.0.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/mapSpain_1.1.0.tgz"><span class="CRAN">mapSpain_1.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/mapSpain_1.1.0.tgz"><span class="CRAN">mapSpain_1.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mapSpain"> <span class="CRAN"> mapSpain archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../CatastRo/index.html"><span class="CRAN">CatastRo</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../climaemet/index.html"><span class="CRAN">climaemet</span></a>, <a href="../ineAtlas/index.html"><span class="CRAN">ineAtlas</span></a>, <a href="../spanishoddata/index.html"><span class="CRAN">spanishoddata</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mapSpain"><span class="CRAN"><samp>https://CRAN.R-project.org/package=mapSpain</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

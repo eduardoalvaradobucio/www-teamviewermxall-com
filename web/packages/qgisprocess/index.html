@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package qgisprocess</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=qgisprocess">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Use 'QGIS' Processing Algorithms [R package qgisprocess version 0.4.2]">
+<meta name="citation_author1" content="Dewey Dunnington">
+<meta name="citation_author2" content="Floris Vanderhaeghe">
+<meta name="citation_author3" content="Jan Caha">
+<meta name="citation_author4" content="Jannes Muenchow">
+<meta name="citation_publication_date" content="2026-03-22">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=qgisprocess">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=qgisprocess">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="qgisprocess: Use 'QGIS' Processing Algorithms">
+<meta property="og:description" content="Provides seamless access to the 'QGIS' (&amp;lt;&lt;a href=&quot;https://qgis.org&quot; target=&quot;_top&quot;&gt;https://qgis.org&lt;/a&gt;&amp;gt;) processing toolbox using the standalone 'qgis_process' command-line utility. Both native and third-party (plugin) processing providers are supported. Beside referring data sources from file, also common objects from 'sf', 'terra' and 'stars' are supported. The native processing algorithms are documented by QGIS.org (2024) &amp;lt;&lt;a href=&quot;https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/&quot; target=&quot;_top&quot;&gt;https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=qgisprocess">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>qgisprocess: Use 'QGIS' Processing Algorithms</h2>
+<p>Provides seamless access to the 'QGIS'
+    (&lt;<a href="https://qgis.org" target="_top">https://qgis.org</a>&gt;) processing toolbox using the standalone
+    'qgis_process' command-line utility.  Both native and third-party
+    (plugin) processing providers are supported.  Beside referring data
+    sources from file, also common objects from 'sf', 'terra' and 'stars'
+    are supported. The native processing algorithms are documented by QGIS.org 
+    (2024) &lt;<a href="https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/" target="_top">https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html"><span class="CRAN">assertthat</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a> (&ge; 3.5.2), <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mapview/index.html"><span class="CRAN">mapview</span></a>, <a href="../raster/index.html"><span class="CRAN">raster</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rprojroot/index.html"><span class="CRAN">rprojroot</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, spDataLarge, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-22</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.qgisprocess">10.32614/CRAN.package.qgisprocess</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dewey Dunnington <a href="https://orcid.org/0000-0002-9415-4582" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut] (affiliation: Voltron Data),
+  Floris Vanderhaeghe
+    <a href="https://orcid.org/0000-0002-6378-6229" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]
+    (affiliation: Research Institute for Nature and Forest (INBO)),
+  Jan Caha <a href="https://orcid.org/0000-0003-0165-0606" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Jannes Muenchow <a href="https://orcid.org/0000-0001-7834-4717" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Antony Barja <a href="https://orcid.org/0000-0001-5921-2858" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Robin Lovelace <a href="https://orcid.org/0000-0001-5679-6536" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Jakub Nowosad <a href="https://orcid.org/0000-0002-1057-3721" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Research Institute for Nature and Forest (INBO) [cph, fnd]
+    (https://www.inbo.be/en/)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Floris Vanderhaeghe  &#x3c;&#x66;&#x6c;&#x6f;&#x72;&#x69;&#x73;&#x2e;&#x76;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x68;&#x61;&#x65;&#x67;&#x68;&#x65;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6e;&#x62;&#x6f;&#x2e;&#x62;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-spatial/qgisprocess/issues" target="_top"><span class="GitHub">https://github.com/r-spatial/qgisprocess/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-spatial.github.io/qgisprocess/" target="_top"><span class="GitHub">https://r-spatial.github.io/qgisprocess/</span></a>,
+<a href="https://github.com/r-spatial/qgisprocess" target="_top"><span class="GitHub">https://github.com/r-spatial/qgisprocess</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>'QGIS' latest or long-term release currently
+supported according to the 'QGIS' release schedule
+(&lt;https://www.qgis.org/en/site/getinvolved/development/roadmap.html&gt;).
+Older 'QGIS' releases are not officially supported, but may
+work since 'QGIS' 3.16.</td>
+</tr>
+<tr>
+<td>Additional_repositories:</td>
+<td><a href="https://geocompx.r-universe.dev" target="_top">https://geocompx.r-universe.dev</a></td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">qgisprocess citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_qgisprocess.html"><span class="CRAN">qgisprocess results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/qgisprocess.html"><span class="CRAN">qgisprocess.html</span></a> ,  <a href="qgisprocess.pdf"><span class="CRAN">qgisprocess.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cheatsheet_en.html"><span class="CRAN">Cheat Sheet (English)</span></a> (<a href="vignettes/cheatsheet_en.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/cheatsheet_es.html"><span class="CRAN">Cheat Sheet (español)</span></a> (<a href="vignettes/cheatsheet_es.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/options.html"><span class="CRAN">Configuration with options or environment variables</span></a> (<a href="vignettes/options.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/options.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/qgis_arguments.html"><span class="CRAN">Passing R objects as algorithm arguments</span></a> (<a href="vignettes/qgis_arguments.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/qgis_arguments.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/qgis_expressions.html"><span class="CRAN">How to use QGIS expressions in qgisprocess?</span></a> (<a href="vignettes/qgis_expressions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/qgis_expressions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/qgisprocess.html"><span class="CRAN">Basic usage of qgisprocess</span></a> (<a href="vignettes/qgisprocess.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/qgisprocess.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/qgisprocess_0.4.2.tar.gz"> <span class="CRAN"> qgisprocess_0.4.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/qgisprocess_0.4.2.zip"><span class="CRAN">qgisprocess_0.4.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/qgisprocess_0.4.2.zip"><span class="CRAN">qgisprocess_0.4.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/qgisprocess_0.4.2.zip"><span class="CRAN">qgisprocess_0.4.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/qgisprocess_0.4.2.tgz"><span class="CRAN">qgisprocess_0.4.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/qgisprocess_0.4.1.tgz"><span class="CRAN">qgisprocess_0.4.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/qgisprocess_0.4.2.tgz"><span class="CRAN">qgisprocess_0.4.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/qgisprocess_0.4.2.tgz"><span class="CRAN">qgisprocess_0.4.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/qgisprocess"> <span class="CRAN"> qgisprocess archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=qgisprocess"><span class="CRAN"><samp>https://CRAN.R-project.org/package=qgisprocess</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

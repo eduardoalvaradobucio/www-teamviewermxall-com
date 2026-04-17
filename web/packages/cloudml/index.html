@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package cloudml</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=cloudml">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interface to the Google Cloud Machine Learning Platform [R package cloudml version 0.7.1]">
+<meta name="citation_author1" content="Daniel Falbel">
+<meta name="citation_author2" content="Javier Luraschi">
+<meta name="citation_author3" content="JJ Allaire">
+<meta name="citation_author4" content="Kevin Ushey">
+<meta name="citation_publication_date" content="2025-08-18">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cloudml">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cloudml">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="cloudml: Interface to the Google Cloud Machine Learning Platform">
+<meta property="og:description" content="Interface to the Google Cloud Machine Learning Platform &amp;lt;&lt;a href=&quot;https://cloud.google.com/vertex-ai&quot; target=&quot;_top&quot;&gt;https://cloud.google.com/vertex-ai&lt;/a&gt;&amp;gt;, which provides cloud tools for training machine learning models.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=cloudml">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>cloudml: Interface to the Google Cloud Machine Learning Platform</h2>
+<p>Interface to the Google Cloud Machine Learning Platform
+  &lt;<a href="https://cloud.google.com/vertex-ai" target="_top">https://cloud.google.com/vertex-ai</a>&gt;, which provides cloud tools for training machine
+  learning models.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.7.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../tfruns/index.html"><span class="CRAN">tfruns</span></a> (&ge; 1.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../config/index.html"><span class="CRAN">config</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../packrat/index.html"><span class="CRAN">packrat</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a>, <a href="../rprojroot/index.html"><span class="CRAN">rprojroot</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tensorflow/index.html"><span class="CRAN">tensorflow</span></a> (&ge; 1.4.2), <a href="../keras/index.html"><span class="CRAN">keras</span></a> (&ge; 2.1.2), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-18</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.cloudml">10.32614/CRAN.package.cloudml</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tomasz Kalinowski [cre],
+  Daniel Falbel [aut],
+  Javier Luraschi [aut],
+  JJ Allaire [aut],
+  Kevin Ushey [aut],
+  RStudio [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tomasz Kalinowski  &#x3c;&#x74;&#x6f;&#x6d;&#x61;&#x73;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rstudio/cloudml/issues" target="_top"><span class="GitHub">https://github.com/rstudio/cloudml/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License 2.0</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rstudio/cloudml" target="_top"><span class="GitHub">https://github.com/rstudio/cloudml</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Python (&gt;= 2.7.0)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ModelDeployment.html"><span class="CRAN">ModelDeployment</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cloudml.html"><span class="CRAN">cloudml results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/cloudml.html"><span class="CRAN">cloudml.html</span></a> ,  <a href="cloudml.pdf"><span class="CRAN">cloudml.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/deployment.html"><span class="CRAN">Deploying Models</span></a> (<a href="vignettes/deployment.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/deployment.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting_started.html"><span class="CRAN">Getting Started</span></a> (<a href="vignettes/getting_started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting_started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/storage.html"><span class="CRAN">Google Cloud Storage</span></a> (<a href="vignettes/storage.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/storage.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/training.html"><span class="CRAN">Training with CloudML</span></a> (<a href="vignettes/training.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/training.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/tuning.html"><span class="CRAN">Hyperparameter Tuning</span></a> (<a href="vignettes/tuning.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/tuning.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cloudml_0.7.1.tar.gz"> <span class="CRAN"> cloudml_0.7.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/cloudml_0.7.1.zip"><span class="CRAN">cloudml_0.7.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/cloudml_0.7.1.zip"><span class="CRAN">cloudml_0.7.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/cloudml_0.7.1.zip"><span class="CRAN">cloudml_0.7.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/cloudml_0.7.1.tgz"><span class="CRAN">cloudml_0.7.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/cloudml_0.7.1.tgz"><span class="CRAN">cloudml_0.7.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/cloudml_0.7.1.tgz"><span class="CRAN">cloudml_0.7.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/cloudml_0.7.1.tgz"><span class="CRAN">cloudml_0.7.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cloudml"> <span class="CRAN"> cloudml archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../tfdeploy/index.html"><span class="CRAN">tfdeploy</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cloudml"><span class="CRAN"><samp>https://CRAN.R-project.org/package=cloudml</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package torch</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=torch">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Tensors and Neural Networks with 'GPU' Acceleration [R package torch version 0.17.0]">
+<meta name="citation_author1" content="Daniel Falbel">
+<meta name="citation_author2" content="Javier Luraschi">
+<meta name="citation_publication_date" content="2026-04-11">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=torch">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=torch">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="torch: Tensors and Neural Networks with 'GPU' Acceleration">
+<meta property="og:description" content="Provides functionality to define and train neural networks similar to 'PyTorch' by Paszke et al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.48550%2FarXiv.1912.01703&quot; target=&quot;_top&quot;&gt;doi:10.48550/arXiv.1912.01703&lt;/a&gt;&amp;gt; but written entirely in R using the 'libtorch' library. Also supports low-level tensor operations and 'GPU' acceleration.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=torch">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>torch: Tensors and Neural Networks with 'GPU' Acceleration</h2>
+<p>Provides functionality to define and train neural networks similar to
+    'PyTorch' by Paszke et al (2019) &lt;<a href="https://doi.org/10.48550%2FarXiv.1912.01703" target="_top">doi:10.48550/arXiv.1912.01703</a>&gt; but written entirely in R
+    using the 'libtorch' library. Also supports low-level tensor operations and
+    'GPU' acceleration.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.17.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.0.0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../bit64/index.html"><span class="CRAN">bit64</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../coro/index.html"><span class="CRAN">coro</span></a> (&ge; 1.0.2), <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.0.0), <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../desc/index.html"><span class="CRAN">desc</span></a>, <a href="../safetensors/index.html"><span class="CRAN">safetensors</span></a> (&ge; 0.1.1), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.36), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../palmerpenguins/index.html"><span class="CRAN">palmerpenguins</span></a>, <a href="../mvtnorm/index.html"><span class="CRAN">mvtnorm</span></a>, <a href="../numDeriv/index.html"><span class="CRAN">numDeriv</span></a>, <a href="../katex/index.html"><span class="CRAN">katex</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-11</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.torch">10.32614/CRAN.package.torch</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tomasz Kalinowski [ctb, cre],
+  Daniel Falbel [aut, cph],
+  Javier Luraschi [aut],
+  Dmitriy Selivanov [ctb],
+  Athos Damiani [ctb],
+  Christophe Regouby [ctb],
+  Krzysztof Joachimiak [ctb],
+  Hamada S. Badr [ctb],
+  Sebastian Fischer [ctb],
+  Maximilian Pichler [ctb],
+  RStudio [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tomasz Kalinowski  &#x3c;&#x74;&#x6f;&#x6d;&#x61;&#x73;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mlverse/torch/issues" target="_top"><span class="GitHub">https://github.com/mlverse/torch/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://torch.mlverse.org/docs" target="_top">https://torch.mlverse.org/docs</a>, <a href="https://github.com/mlverse/torch" target="_top"><span class="GitHub">https://github.com/mlverse/torch</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>LibTorch (https://pytorch.org/); Only x86_64
+platforms are currently supported except for ARM system running
+macOS.</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MachineLearning.html"><span class="CRAN">MachineLearning</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_torch.html"><span class="CRAN">torch results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/torch.html"><span class="CRAN">torch.html</span></a> ,  <a href="torch.pdf"><span class="CRAN">torch.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/installation.html"><span class="CRAN">Installation</span></a> (<a href="vignettes/installation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/installation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/torch_0.17.0.tar.gz"> <span class="CRAN"> torch_0.17.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/torch_0.17.0.zip"><span class="CRAN">torch_0.17.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/torch_0.17.0.zip"><span class="CRAN">torch_0.17.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/torch_0.17.0.zip"><span class="CRAN">torch_0.17.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/torch_0.17.0.tgz"><span class="CRAN">torch_0.17.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/torch_0.16.3.tgz"><span class="CRAN">torch_0.16.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/torch_0.17.0.tgz"><span class="CRAN">torch_0.17.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/torch_0.17.0.tgz"><span class="CRAN">torch_0.17.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/torch"> <span class="CRAN"> torch archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../mlr3torch/index.html"><span class="CRAN">mlr3torch</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BKTR/index.html"><span class="CRAN">BKTR</span></a>, <a href="../brulee/index.html"><span class="CRAN">brulee</span></a>, <a href="../causalOT/index.html"><span class="CRAN">causalOT</span></a>, <a href="../circlus/index.html"><span class="CRAN">circlus</span></a>, <a href="../cito/index.html"><span class="CRAN">cito</span></a>, <a href="../crumble/index.html"><span class="CRAN">crumble</span></a>, <a href="../engression/index.html"><span class="CRAN">engression</span></a>, <a href="../EQRN/index.html"><span class="CRAN">EQRN</span></a>, <a href="../genderBR/index.html"><span class="CRAN">genderBR</span></a>, <a href="../geodl/index.html"><span class="CRAN">geodl</span></a>, <a href="../glmnetr/index.html"><span class="CRAN">glmnetr</span></a>, <a href="../innsight/index.html"><span class="CRAN">innsight</span></a>, <a href="../kindling/index.html"><span class="CRAN">kindling</span></a>, <a href="../lambdaTS/index.html"><span class="CRAN">lambdaTS</span></a>, <a href="../LBBNN/index.html"><span class="CRAN">LBBNN</span></a>, <a href="../luz/index.html"><span class="CRAN">luz</span></a>, <a href="../madgrad/index.html"><span class="CRAN">madgrad</span></a>, <a href="../nFunNN/index.html"><span class="CRAN">nFunNN</span></a>, <a href="../NNMoMo/index.html"><span class="CRAN">NNMoMo</span></a>, <a href="../PLNmodels/index.html"><span class="CRAN">PLNmodels</span></a>, <a href="../proteus/index.html"><span class="CRAN">proteus</span></a>, <a href="../RGAN/index.html"><span class="CRAN">RGAN</span></a>, <a href="../scDHA/index.html"><span class="CRAN">scDHA</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/SCFA.html" target="_top"><span class="BioC">SCFA</span></a>, <a href="../SEMdeep/index.html"><span class="CRAN">SEMdeep</span></a>, <a href="../shrinkGPR/index.html"><span class="CRAN">shrinkGPR</span></a>, <a href="../sits/index.html"><span class="CRAN">sits</span></a>, <a href="../spinner/index.html"><span class="CRAN">spinner</span></a>, <a href="../survdnn/index.html"><span class="CRAN">survdnn</span></a>, <a href="../tabnet/index.html"><span class="CRAN">tabnet</span></a>, <a href="../temper/index.html"><span class="CRAN">temper</span></a>, <a href="../topicmodels.etm/index.html"><span class="CRAN">topicmodels.etm</span></a>, <a href="../torchdatasets/index.html"><span class="CRAN">torchdatasets</span></a>, <a href="../torchMAUM/index.html"><span class="CRAN">torchMAUM</span></a>, <a href="../torchopt/index.html"><span class="CRAN">torchopt</span></a>, <a href="../torchvision/index.html"><span class="CRAN">torchvision</span></a>, <a href="../torchvisionlib/index.html"><span class="CRAN">torchvisionlib</span></a>, <a href="../unfold/index.html"><span class="CRAN">unfold</span></a>, <a href="../whisper/index.html"><span class="CRAN">whisper</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../causalOT/index.html"><span class="CRAN">causalOT</span></a>, <a href="../torchvisionlib/index.html"><span class="CRAN">torchvisionlib</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../aisdk/index.html"><span class="CRAN">aisdk</span></a>, <a href="../biomod2/index.html"><span class="CRAN">biomod2</span></a>, <a href="../bundle/index.html"><span class="CRAN">bundle</span></a>, <a href="../butcher/index.html"><span class="CRAN">butcher</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/COTAN.html" target="_top"><span class="BioC">COTAN</span></a>, <a href="../DistributionIV/index.html"><span class="CRAN">DistributionIV</span></a>, <a href="../einops/index.html"><span class="CRAN">einops</span></a>, <a href="../fairGATE/index.html"><span class="CRAN">fairGATE</span></a>, <a href="../fairGNN/index.html"><span class="CRAN">fairGNN</span></a>, <a href="../gofigR/index.html"><span class="CRAN">gofigR</span></a>, <a href="../GPUmatrix/index.html"><span class="CRAN">GPUmatrix</span></a>, <a href="../mlr3resampling/index.html"><span class="CRAN">mlr3resampling</span></a>, <a href="../MLwrap/index.html"><span class="CRAN">MLwrap</span></a>, <a href="../nn2poly/index.html"><span class="CRAN">nn2poly</span></a>, <a href="../quanteda/index.html"><span class="CRAN">quanteda</span></a>, <a href="../rtemis/index.html"><span class="CRAN">rtemis</span></a>, <a href="../safetensors/index.html"><span class="CRAN">safetensors</span></a>, <a href="../shapr/index.html"><span class="CRAN">shapr</span></a>, <a href="../svrep/index.html"><span class="CRAN">svrep</span></a>, <a href="../targets/index.html"><span class="CRAN">targets</span></a>, <a href="../vetiver/index.html"><span class="CRAN">vetiver</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=torch"><span class="CRAN"><samp>https://CRAN.R-project.org/package=torch</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
