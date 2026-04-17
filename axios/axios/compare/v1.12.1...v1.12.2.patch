@@ -1,0 +1,599 @@
+From 19f9f36850210511445c67c865466156d6d1dee2 Mon Sep 17 00:00:00 2001
+From: Dmitriy Mozgovoy <robotshara@gmail.com>
+Date: Sat, 13 Sep 2025 17:40:04 +0300
+Subject: [PATCH 1/6] docs(readme): add custom fetch section; (#7024)
+
+---
+ README.md | 74 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 74 insertions(+)
+
+diff --git a/README.md b/README.md
+index 1e72b6d98f..8cf834c575 100644
+--- a/README.md
++++ b/README.md
+@@ -83,6 +83,9 @@
+   - [🆕 Rate limiting](#-progress-capturing)
+   - [🆕 AxiosHeaders](#-axiosheaders)
+   - [🔥 Fetch adapter](#-fetch-adapter)
++    - [🔥 Custom fetch](#-custom-fetch)
++      - [🔥 Using with Tauri](#-using-with-tauri)
++      - [🔥 Using with SvelteKit](#-using-with-sveltekit-)
+   - [Semver](#semver)
+   - [Promises](#promises)
+   - [TypeScript](#typescript)
+@@ -1626,6 +1629,77 @@ const {data} = fetchAxios.get(url);
+ The adapter supports the same functionality as `xhr` adapter, **including upload and download progress capturing**. 
+ Also, it supports additional response types such as `stream` and `formdata` (if supported by the environment).
+ 
++### 🔥 Custom fetch
++
++Starting from `v1.12.0`, you can customize the fetch adapter to use a custom fetch API instead of environment globals.
++You can pass a custom `fetch` function, `Request`, and `Response` constructors via env config.
++This can be helpful in case of custom environments & app frameworks.
++
++Also, when using a custom fetch, you may need to set custom Request and Response too. If you don't set them, global objects will be used.
++If your custom fetch api does not have these objects, and the globals are incompatible with a custom fetch,
++you must disable their use inside the fetch adapter by passing null.
++
++> Note: Setting `Request` & `Response` to `null` will make it impossible for the fetch adapter to capture the upload & download progress.
++
++Basic example:
++
++```js
++import customFetchFunction from 'customFetchModule';
++
++const instance = axios.create({
++  adapter: 'fetch',
++  onDownloadProgress(e) {
++    console.log('downloadProgress', e);
++  },
++  env: {
++    fetch: customFetchFunction,
++    Request: null, // undefined -> use the global constructor
++    Response: null
++  }
++});
++```
++
++#### 🔥 Using with Tauri
++
++A minimal example of setting up Axios for use in a [Tauri](https://tauri.app/plugin/http-client/) app with a platform fetch function that ignores CORS policy for requests.
++
++```js
++import { fetch } from "@tauri-apps/plugin-http";
++import axios from "axios";
++
++const instance = axios.create({
++  adapter: 'fetch',
++  onDownloadProgress(e) {
++    console.log('downloadProgress', e);
++  },
++  env: {
++    fetch
++  }
++});
++
++ const {data} = await instance.get("https://google.com");
++```
++
++#### 🔥 Using with SvelteKit 
++
++[SvelteKit](https://svelte.dev/docs/kit/web-standards#Fetch-APIs) framework has a custom implementation of the fetch function for server rendering (so called `load` functions), and also uses relative paths,
++which makes it incompatible with the standard URL API. So, Axios must be configured to use the custom fetch API:
++
++```js
++export async function load({ fetch }) {
++  const {data: post} = await axios.get('https://jsonplaceholder.typicode.com/posts/1', {
++    adapter: 'fetch',
++    env: {
++      fetch,
++      Request: null,
++      Response: null
++    }
++  });
++
++  return { post };
++}
++```
++
+ ## Semver
+ 
+ Since Axios has reached a `v.1.0.0` we will fully embrace semver as per the spec [here](https://semver.org/)
+
+From 9fb41a8fcd6f698ee82175c0d9e654b4b0a7081c Mon Sep 17 00:00:00 2001
+From: Dmitriy Mozgovoy <robotshara@gmail.com>
+Date: Sat, 13 Sep 2025 17:50:32 +0300
+Subject: [PATCH 2/6] chore(ci): add local HTTP server for Karma tests; (#7022)
+
+---
+ .github/workflows/ci.yml    |  9 ++++-
+ bin/run-karma-tests.js      | 46 ++++++++++++++++++++++++
+ package.json                |  9 +++--
+ test/helpers/server.js      | 70 +++++++++++++++++++++++++++++++++++++
+ test/specs/__helpers.js     |  2 ++
+ test/specs/formdata.spec.js |  2 +-
+ 6 files changed, 133 insertions(+), 5 deletions(-)
+ create mode 100644 bin/run-karma-tests.js
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 29d21e3d74..08617cf684 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -59,5 +59,12 @@ jobs:
+         if: steps.changed-ignored.outputs.only_modified == 'false'
+       - run: npm run build
+         if: steps.changed-ignored.outputs.only_modified == 'false'
+-      - run: npm test
++      - name: Run Server tests
++        run: npm run test:node
+         if: steps.changed-ignored.outputs.only_modified == 'false'
++    # We run browser tests only on one version of the node, since client tests do not depend on the server environment.
++      - name: Run browser tests
++        run: npm run test:browser
++        if: steps.changed-ignored.outputs.only_modified == 'false' && matrix.node-version == '22.x'
++      - name: Run package tests
++        run: npm run test:package
+diff --git a/bin/run-karma-tests.js b/bin/run-karma-tests.js
+new file mode 100644
+index 0000000000..afa7e148a3
+--- /dev/null
++++ b/bin/run-karma-tests.js
+@@ -0,0 +1,46 @@
++import { startTestServer, stopHTTPServer } from '../test/helpers/server.js';
++import { spawn } from 'child_process';
++import chalk from "chalk";
++
++let server;
++
++async function run() {
++
++  console.log(chalk.red.bold(`[ Starting HTTP server... ]`));
++
++  server = await startTestServer(3000);
++
++  await new Promise((resolve, reject) => {
++    console.log('Starting karma runner...');
++
++    const karma = spawn(
++      'npx',
++      ['karma', 'start', 'karma.conf.cjs', '--single-run'],
++      {
++        stdio: 'inherit',
++        shell: true,
++        env: { ...process.env, LISTEN_ADDR: '0.0.0.0' },
++      });
++
++    karma.on('exit', (code) => {
++      code ? reject(new Error(`Karma tests failed with exit code ${code}`)) : resolve();
++    });
++  });
++
++}
++
++
++
++(async() => {
++  try {
++    await run();
++  } finally {
++    if (server) {
++      console.log(chalk.red.bold(`[ Terminating HTTP server... ]`));
++
++      await stopHTTPServer(server);
++    }
++  }
++})();
++
++
+diff --git a/package.json b/package.json
+index 6859515fd1..06ad8ff2b2 100644
+--- a/package.json
++++ b/package.json
+@@ -40,12 +40,15 @@
+   "type": "module",
+   "types": "index.d.ts",
+   "scripts": {
+-    "test": "npm run test:eslint && npm run test:mocha && npm run test:karma && npm run test:dtslint && npm run test:exports",
++    "test": "npm run test:node && npm run test:browser && npm run test:package",
++    "test:node": "npm run test:mocha",
++    "test:browser": "npm run test:karma",
++    "test:package": "npm run test:eslint && npm run test:dtslint && npm run test:exports",
+     "test:eslint": "node bin/ssl_hotfix.js eslint lib/**/*.js",
+     "test:dtslint": "dtslint --localTs node_modules/typescript/lib",
+     "test:mocha": "node bin/ssl_hotfix.js mocha test/unit/**/*.js --timeout 30000 --exit",
+     "test:exports": "node bin/ssl_hotfix.js mocha test/module/test.js --timeout 30000 --exit",
+-    "test:karma": "node bin/ssl_hotfix.js cross-env LISTEN_ADDR=:: karma start karma.conf.cjs --single-run",
++    "test:karma": "node ./bin/run-karma-tests.js",
+     "test:karma:firefox": "node bin/ssl_hotfix.js cross-env LISTEN_ADDR=:: Browsers=Firefox karma start karma.conf.cjs --single-run",
+     "test:karma:server": "node bin/ssl_hotfix.js cross-env karma start karma.conf.cjs",
+     "test:build:version": "node ./bin/check-build-version.js",
+@@ -228,4 +231,4 @@
+       "@commitlint/config-conventional"
+     ]
+   }
+-}
+\ No newline at end of file
++}
+diff --git a/test/helpers/server.js b/test/helpers/server.js
+index e6c57f1681..1eb1534bb8 100644
+--- a/test/helpers/server.js
++++ b/test/helpers/server.js
+@@ -4,6 +4,7 @@ import getStream from "get-stream";
+ import {Throttle} from "stream-throttle";
+ import formidable from "formidable";
+ 
++
+ export const LOCAL_SERVER_URL = 'http://localhost:4444';
+ 
+ export const SERVER_HANDLER_STREAM_ECHO = (req, res) => req.pipe(res);
+@@ -115,3 +116,72 @@ export const makeEchoStream = (echo) => new WritableStream({
+     echo && console.log(`Echo chunk`, chunk);
+   }
+ })
++
++
++export const startTestServer = async (port) => {
++  const handler = async (req) => {
++    const parsed = new URL(req.url, `http://localhost:${port}`);
++
++    const params = Object.fromEntries(parsed.searchParams);
++
++    let response = {
++      url: req.url,
++      pathname: parsed.pathname,
++      params,
++      method: req.method,
++      headers: req.headers,
++    }
++
++    const contentType = req.headers['content-type'] || '';
++
++    const {delay = 0} = params;
++
++    if (+delay) {
++      await setTimeoutAsync(+delay);
++    }
++
++    switch (parsed.pathname.replace(/\/$/, '')) {
++      case '/echo/json':
++      default:
++        if (contentType.startsWith('multipart/')) {
++          let {fields, files} = await handleFormData(req);
++          response.form = fields;
++          response.files = files;
++        } else {
++          response.body = (await getStream(req, {encoding: 'buffer'})).toString('hex');
++        }
++
++        return {
++          body: response
++        }
++    }
++  };
++
++  return await startHTTPServer((req, res) => {
++    // Set CORS headers
++    res.setHeader('Access-Control-Allow-Origin', `*`); // Allows all origins, or specify a domain like 'http://example.com'
++    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Allowed HTTP methods
++    res.setHeader('Access-Control-Allow-Headers', '*'); // Allowed request headers
++    res.setHeader('Access-Control-Max-Age', '86400'); // Cache preflight requests for 24 hours
++
++    // Handle preflight requests (OPTIONS method)
++    if (req.method === 'OPTIONS') {
++      res.writeHead(204); // No content
++      res.end();
++      return;
++    }
++
++    Promise.resolve(handler(req, res)).then(response=>{
++      const {status = 200, headers = {}, body} = response || {};
++
++
++      res.statusCode = status;
++
++      Object.entries(headers).forEach((header, value) => {
++        res.setHeader(header, value);
++      });
++
++      res.end(JSON.stringify(body, null, 2))
++    })
++  }, {port});
++}
+diff --git a/test/specs/__helpers.js b/test/specs/__helpers.js
+index c2d14c5026..235f858913 100644
+--- a/test/specs/__helpers.js
++++ b/test/specs/__helpers.js
+@@ -6,6 +6,8 @@ window.axios = _axios;
+ jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
+ jasmine.getEnv().defaultTimeoutInterval = 60000;
+ 
++window.TEST_SERVER_URL = "http://localhost:3000";
++
+ // Get Ajax request using an increasing timeout to retry
+ window.getAjaxRequest = (function () {
+   let attempts = 0;
+diff --git a/test/specs/formdata.spec.js b/test/specs/formdata.spec.js
+index b43fdef629..a0dffe995d 100644
+--- a/test/specs/formdata.spec.js
++++ b/test/specs/formdata.spec.js
+@@ -3,7 +3,7 @@ import {retryNetwork} from "../helpers/retry.js";
+ describe('FormData', function() {
+   it('should allow FormData posting', async () => {
+     await retryNetwork(() => {
+-      return axios.postForm('http://httpbin.org/post', {
++      return axios.postForm(TEST_SERVER_URL, {
+         a: 'foo',
+         b: 'bar'
+       }).then(({data}) => {
+
+From c26d00f451949306f708aa78d1e9f12b9eb6ff4b Mon Sep 17 00:00:00 2001
+From: Noritaka Kobayashi <arukimedesu1166777@gmail.com>
+Date: Sun, 14 Sep 2025 04:10:51 +0900
+Subject: [PATCH 3/6] refactor: remove redundant assignment (#7029)
+
+---
+ lib/core/Axios.js | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/lib/core/Axios.js b/lib/core/Axios.js
+index 67ba0e72ed..a5649270fa 100644
+--- a/lib/core/Axios.js
++++ b/lib/core/Axios.js
+@@ -170,8 +170,6 @@ class Axios {
+ 
+     let newConfig = config;
+ 
+-    i = 0;
+-
+     while (i < len) {
+       const onFulfilled = requestInterceptorChain[i++];
+       const onRejected = requestInterceptorChain[i++];
+
+From cf78825e1229b60d1629ad0bbc8a752ff43c3f53 Mon Sep 17 00:00:00 2001
+From: Dmitriy Mozgovoy <robotshara@gmail.com>
+Date: Sat, 13 Sep 2025 23:24:16 +0300
+Subject: [PATCH 4/6] fix(fetch): use current global fetch instead of cached
+ one when env fetch is not specified to keep MSW support; (#7030)
+
+---
+ lib/adapters/fetch.js       | 24 +++++++++++++-----------
+ test/unit/adapters/fetch.js | 27 +++++++++++++++++++++++++++
+ 2 files changed, 40 insertions(+), 11 deletions(-)
+
+diff --git a/lib/adapters/fetch.js b/lib/adapters/fetch.js
+index 574117bb9a..8893b7b993 100644
+--- a/lib/adapters/fetch.js
++++ b/lib/adapters/fetch.js
+@@ -12,9 +12,9 @@ const DEFAULT_CHUNK_SIZE = 64 * 1024;
+ 
+ const {isFunction} = utils;
+ 
+-const globalFetchAPI = (({fetch, Request, Response}) => ({
+-    fetch, Request, Response
+-  }))(utils.global);
++const globalFetchAPI = (({Request, Response}) => ({
++  Request, Response
++}))(utils.global);
+ 
+ const {
+   ReadableStream, TextEncoder
+@@ -30,8 +30,12 @@ const test = (fn, ...args) => {
+ }
+ 
+ const factory = (env) => {
+-  const {fetch, Request, Response} = Object.assign({}, globalFetchAPI, env);
+-  const isFetchSupported = isFunction(fetch);
++  env = utils.merge.call({
++    skipUndefined: true
++  }, globalFetchAPI, env);
++
++  const {fetch: envFetch, Request, Response} = env;
++  const isFetchSupported = envFetch ? isFunction(envFetch) : typeof fetch === 'function';
+   const isRequestSupported = isFunction(Request);
+   const isResponseSupported = isFunction(Response);
+ 
+@@ -134,6 +138,8 @@ const factory = (env) => {
+       fetchOptions
+     } = resolveConfig(config);
+ 
++    let _fetch = envFetch || fetch;
++
+     responseType = responseType ? (responseType + '').toLowerCase() : 'text';
+ 
+     let composedSignal = composeSignals([signal, cancelToken && cancelToken.toAbortSignal()], timeout);
+@@ -193,7 +199,7 @@ const factory = (env) => {
+ 
+       request = isRequestSupported && new Request(url, resolvedOptions);
+ 
+-      let response = await (isRequestSupported ? fetch(request, fetchOptions) : fetch(url, resolvedOptions));
++      let response = await (isRequestSupported ? _fetch(request, fetchOptions) : _fetch(url, resolvedOptions));
+ 
+       const isStreamResponse = supportsResponseStream && (responseType === 'stream' || responseType === 'response');
+ 
+@@ -256,12 +262,8 @@ const factory = (env) => {
+ const seedCache = new Map();
+ 
+ export const getFetch = (config) => {
+-  let env = utils.merge.call({
+-    skipUndefined: true
+-  }, globalFetchAPI, config ? config.env : null);
+-
++  let env = config ? config.env : {};
+   const {fetch, Request, Response} = env;
+-
+   const seeds = [
+     Request, Response, fetch
+   ];
+diff --git a/test/unit/adapters/fetch.js b/test/unit/adapters/fetch.js
+index c221d0b946..e7f000f80b 100644
+--- a/test/unit/adapters/fetch.js
++++ b/test/unit/adapters/fetch.js
+@@ -489,5 +489,32 @@ describe('supports fetch with nodejs', function () {
+ 
+       assert.strictEqual(data, 'OK');
+     });
++
++    it('should use current global fetch when env fetch is not specified', async() => {
++      const globalFetch = fetch;
++
++      fetch = async () => {
++        return {
++          headers: {
++            foo: '1'
++          },
++          text: async () => 'global'
++        }
++      };
++
++      try {
++        server = await startHTTPServer((req, res) => res.end('OK'));
++
++        const {data} = await fetchAxios.get('/', {
++          env: {
++            fetch: undefined
++          }
++        });
++
++        assert.strictEqual(data, 'global');
++      } finally {
++        fetch = globalFetch;
++      }
++    });
+   });
+ });
+
+From 38726c7586c6a2583b7e7dcdce0c4fedd013055d Mon Sep 17 00:00:00 2001
+From: Noritaka Kobayashi <arukimedesu1166777@gmail.com>
+Date: Sun, 14 Sep 2025 18:53:01 +0900
+Subject: [PATCH 5/6] refactor: change if in else to else if (#7028)
+
+Co-authored-by: Jay <jasonsaayman@gmail.com>
+---
+ lib/utils.js | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/lib/utils.js b/lib/utils.js
+index 0ef9366152..ade8309206 100644
+--- a/lib/utils.js
++++ b/lib/utils.js
+@@ -351,10 +351,8 @@ function merge(/* obj1, obj2, obj3, ... */) {
+       result[targetKey] = merge({}, val);
+     } else if (isArray(val)) {
+       result[targetKey] = val.slice();
+-    } else {
+-      if (!skipUndefined || !isUndefined(val)) {
+-        result[targetKey] = val;
+-      }
++    } else if (!skipUndefined || !isUndefined(val)) {
++      result[targetKey] = val;
+     }
+   }
+ 
+
+From e5a33366d75b65f88052b230b103731eb7dcb793 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]"
+ <41898282+github-actions[bot]@users.noreply.github.com>
+Date: Sun, 14 Sep 2025 15:58:39 +0300
+Subject: [PATCH 6/6] chore(release): v1.12.2 (#7031)
+
+Co-authored-by: DigitalBrainJS <12586868+DigitalBrainJS@users.noreply.github.com>
+---
+ CHANGELOG.md      | 12 ++++++++++++
+ bower.json        |  2 +-
+ lib/env/data.js   |  2 +-
+ package-lock.json |  4 ++--
+ package.json      |  6 +++---
+ 5 files changed, 19 insertions(+), 7 deletions(-)
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 54e5d8e4d2..d06400b621 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,17 @@
+ # Changelog
+ 
++## [1.12.2](https://github.com/axios/axios/compare/v1.12.1...v1.12.2) (2025-09-14)
++
++
++### Bug Fixes
++
++* **fetch:** use current global fetch instead of cached one when env fetch is not specified to keep MSW support; ([#7030](https://github.com/axios/axios/issues/7030)) ([cf78825](https://github.com/axios/axios/commit/cf78825e1229b60d1629ad0bbc8a752ff43c3f53))
++
++### Contributors to this release
++
++- <img src="https://avatars.githubusercontent.com/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Dmitriy Mozgovoy](https://github.com/DigitalBrainJS "+247/-16 (#7030 #7022 #7024 )")
++- <img src="https://avatars.githubusercontent.com/u/189505037?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Noritaka Kobayashi](https://github.com/noritaka1166 "+2/-6 (#7028 #7029 )")
++
+ ## [1.12.1](https://github.com/axios/axios/compare/v1.12.0...v1.12.1) (2025-09-12)
+ 
+ 
+diff --git a/bower.json b/bower.json
+index 81e3a601b5..f280b33620 100644
+--- a/bower.json
++++ b/bower.json
+@@ -1,7 +1,7 @@
+ {
+   "name": "axios",
+   "main": "./dist/axios.js",
+-  "version": "1.12.1",
++  "version": "1.12.2",
+   "homepage": "https://axios-http.com",
+   "authors": [
+     "Matt Zabriskie"
+diff --git a/lib/env/data.js b/lib/env/data.js
+index 2202a3e04f..89b13cecae 100644
+--- a/lib/env/data.js
++++ b/lib/env/data.js
+@@ -1 +1 @@
+-export const VERSION = "1.12.1";
+\ No newline at end of file
++export const VERSION = "1.12.2";
+\ No newline at end of file
+diff --git a/package-lock.json b/package-lock.json
+index 5d1a17c050..c895ad33c6 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "axios",
+-  "version": "1.12.1",
++  "version": "1.12.2",
+   "lockfileVersion": 2,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "axios",
+-      "version": "1.12.1",
++      "version": "1.12.2",
+       "license": "MIT",
+       "dependencies": {
+         "follow-redirects": "^1.15.6",
+diff --git a/package.json b/package.json
+index 06ad8ff2b2..abc314e97a 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "axios",
+-  "version": "1.12.1",
++  "version": "1.12.2",
+   "description": "Promise based HTTP client for the browser and node.js",
+   "main": "index.js",
+   "exports": {
+@@ -174,8 +174,8 @@
+   ],
+   "contributors": [
+     "Matt Zabriskie (https://github.com/mzabriskie)",
+-    "Nick Uraltsev (https://github.com/nickuraltsev)",
+     "Dmitriy Mozgovoy (https://github.com/DigitalBrainJS)",
++    "Nick Uraltsev (https://github.com/nickuraltsev)",
+     "Jay (https://github.com/jasonsaayman)",
+     "Emily Morehouse (https://github.com/emilyemorehouse)",
+     "Rubén Norte (https://github.com/rubennorte)",
+@@ -231,4 +231,4 @@
+       "@commitlint/config-conventional"
+     ]
+   }
+-}
++}
+\ No newline at end of file
