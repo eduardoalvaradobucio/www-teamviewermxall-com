@@ -117,20 +117,20 @@
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/notifications-subscriptions-menu.bd6c994adeb63adb.module.css" />
 
 
-  <title>Comparing v1.8.3...v1.8.4 · axios/axios · GitHub</title>
+  <title>Comparing v1.5.1...v1.6.0 · axios/axios · GitHub</title>
 
 
 
   <meta name="route-pattern" content="/:user_id/:repository/compare/:range" data-turbo-transient>
   <meta name="route-controller" content="compare" data-turbo-transient>
   <meta name="route-action" content="show" data-turbo-transient>
-  <meta name="fetch-nonce" content="v2:d0f7a2c5-4239-00db-391b-e4e478436b29">
+  <meta name="fetch-nonce" content="v2:11c7e628-d628-e9cd-71ad-43cfa90550e9">
 
     
   <meta name="current-catalog-service-hash" content="ae870bc5e265a340912cde392f23dad3671a0a881730ffdadd82f2f57d81641b">
 
 
-  <meta name="request-id" content="04D6:B3D73:79AEC6:7C06E3:69E23E1E" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2ecd4474895f97e137cf2afaf63b17e5f64e4bf2f909b46748bb5025578c1d87" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNEQ2OkIzRDczOjc5QUVDNjo3QzA2RTM6NjlFMjNFMUUiLCJ2aXNpdG9yX2lkIjoiMTAyOTM0ODQxNTU0Nzc5Mzg5IiwicmVnaW9uX2VkZ2UiOiJzZWEiLCJyZWdpb25fcmVuZGVyIjoic2VhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="8f18844c0cebf1ee9904359a5f84f2ed26827d25f6944e9ec2bad329988d34a8" data-pjax-transient="true"/>
+  <meta name="request-id" content="04D6:B3D73:79E2F9:7C3C3B:69E23E28" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2ecd4474895f97e137cf2afaf63b17e5f64e4bf2f909b46748bb5025578c1d87" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNEQ2OkIzRDczOjc5RTJGOTo3QzNDM0I6NjlFMjNFMjgiLCJ2aXNpdG9yX2lkIjoiMTAyOTM0ODQxNTU0Nzc5Mzg5IiwicmVnaW9uX2VkZ2UiOiJzZWEiLCJyZWdpb25fcmVuZGVyIjoic2VhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="ed4c467ee4c573defa854dbc9f071a33080e6e9e77cfbb9b29a771d5b57fd219" data-pjax-transient="true"/>
 
 
     <meta name="hovercard-subject-tag" content="repository:23088740" data-turbo-transient>
@@ -165,16 +165,16 @@
 
     
 
-      <meta name="description" content="Promise based HTTP client for the browser and node.js - Comparing v1.8.3...v1.8.4 · axios/axios">
+      <meta name="description" content="Promise based HTTP client for the browser and node.js - Comparing v1.5.1...v1.6.0 · axios/axios">
 
       <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
 
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
     <meta property="fb:app_id" content="1401488693436528">
-    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/axios/axios/compare/v1.8.3...v1.8.4" />
+    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/axios/axios/compare/v1.5.1...v1.6.0" />
 
-      <meta name="twitter:image" content="https://opengraph.githubassets.com/5c8b7d77ce88d8199a1b7775c8ca74db12b9da7eb1be543c706b38c5f3ab0ca5/axios/axios" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Comparing v1.8.3...v1.8.4 · axios/axios" /><meta name="twitter:description" content="Promise based HTTP client for the browser and node.js - Comparing v1.8.3...v1.8.4 · axios/axios" />
-  <meta property="og:image" content="https://opengraph.githubassets.com/5c8b7d77ce88d8199a1b7775c8ca74db12b9da7eb1be543c706b38c5f3ab0ca5/axios/axios" /><meta property="og:image:alt" content="Promise based HTTP client for the browser and node.js - Comparing v1.8.3...v1.8.4 · axios/axios" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Comparing v1.8.3...v1.8.4 · axios/axios" /><meta property="og:url" content="https://github.com/axios/axios" /><meta property="og:description" content="Promise based HTTP client for the browser and node.js - Comparing v1.8.3...v1.8.4 · axios/axios" />
+      <meta name="twitter:image" content="https://opengraph.githubassets.com/5c8b7d77ce88d8199a1b7775c8ca74db12b9da7eb1be543c706b38c5f3ab0ca5/axios/axios" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Comparing v1.5.1...v1.6.0 · axios/axios" /><meta name="twitter:description" content="Promise based HTTP client for the browser and node.js - Comparing v1.5.1...v1.6.0 · axios/axios" />
+  <meta property="og:image" content="https://opengraph.githubassets.com/5c8b7d77ce88d8199a1b7775c8ca74db12b9da7eb1be543c706b38c5f3ab0ca5/axios/axios" /><meta property="og:image:alt" content="Promise based HTTP client for the browser and node.js - Comparing v1.5.1...v1.6.0 · axios/axios" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Comparing v1.5.1...v1.6.0 · axios/axios" /><meta property="og:url" content="https://github.com/axios/axios" /><meta property="og:description" content="Promise based HTTP client for the browser and node.js - Comparing v1.5.1...v1.6.0 · axios/axios" />
   
 
 
@@ -194,8 +194,8 @@
 
   <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
 
-      <link data-turbo-transient rel='alternate' type='text/x-diff' href='/axios/axios/compare/v1.8.3...v1.8.4.diff'>
-  <link data-turbo-transient rel='alternate' type='text/x-patch' href='/axios/axios/compare/v1.8.3...v1.8.4.patch'>
+      <link data-turbo-transient rel='alternate' type='text/x-diff' href='/axios/axios/compare/v1.5.1...v1.6.0.diff'>
+  <link data-turbo-transient rel='alternate' type='text/x-patch' href='/axios/axios/compare/v1.5.1...v1.6.0.patch'>
 
   <meta name="session-resume-id"
         content="/axios/axios/compare"
@@ -307,19 +307,19 @@
 
       <div class="d-flex flex-1 flex-order-2 text-right d-lg-none gap-2 flex-justify-end">
           <a
-            href="/login?return_to=https%3A%2F%2Fgithub.com%2Faxios%2Faxios%2Fcompare%2Fv1.8.3...v1.8.4"
+            href="/login?return_to=https%3A%2F%2Fgithub.com%2Faxios%2Faxios%2Fcompare%2Fv1.5.1...v1.6.0"
             class="HeaderMenu-link HeaderMenu-button d-inline-flex f5 no-underline border color-border-default rounded-2 px-2 py-1 color-fg-inherit js-prevent-focus-on-mobile-nav"
-            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="079800e3642e49086f32d301a7faf42bacd021ac71bf0363be9a7b64730c33fb"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="340b15979cd1194c3f20b3977903c6272e9d7b3984354b9eec925beaa8d9a0ad"
             data-analytics-event="{&quot;category&quot;:&quot;Marketing nav&quot;,&quot;action&quot;:&quot;click to Sign in&quot;,&quot;label&quot;:&quot;ref_page:Marketing;ref_cta:Sign in;ref_loc:Header&quot;}"
           >
             Sign in
           </a>
               <div class="AppHeader-appearanceSettings">
     <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-c6462a28-1c7f-4b08-9c27-f8f21b00a718" aria-labelledby="tooltip-92f482b5-e900-48a4-9173-6901beb45249" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
+      <button data-target="react-partial-anchor.anchor" id="icon-button-06cf0406-38cd-4ca1-b440-c383876813c1" aria-labelledby="tooltip-3a5cee22-152a-458e-b7c9-509f962fe4ca" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
     <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
 </svg>
-</button><tool-tip id="tooltip-92f482b5-e900-48a4-9173-6901beb45249" for="icon-button-c6462a28-1c7f-4b08-9c27-f8f21b00a718" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
+</button><tool-tip id="tooltip-3a5cee22-152a-458e-b7c9-509f962fe4ca" for="icon-button-06cf0406-38cd-4ca1-b440-c383876813c1" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
 
       <template data-target="react-partial-anchor.template">
         <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.8a057b98cd8a150b.module.css" />
@@ -367,7 +367,7 @@
                 
 
 
-<qbsearch-input class="search-input" data-scope="repo:axios/axios" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="STcreeXKfBKWrd2_8pXj-FETbFdKOqZbYfu2VQgSdwZ5PjtMwRSkDzu0JpYHa-qOcq1yhDsGl1Q5eViam6t3Kg" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="axios/axios" data-current-org="axios" data-current-owner="" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
+<qbsearch-input class="search-input" data-scope="repo:axios/axios" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="RQ1dZigpFBnyhcen80su0QljSZe25ah7XrJteDfECA60IY53sXDcAW56mKioPlGRy0Kc_t_zaFDVFHcZgO7vPA" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="axios/axios" data-current-org="axios" data-current-owner="" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
   <div
     class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center tmp-mr-4 rounded"
     data-action="click:qbsearch-input#searchInputContainerClicked"
@@ -431,7 +431,7 @@
           ></div>
           <div class="QueryBuilder-InputWrapper">
             <div aria-hidden="true" class="QueryBuilder-Sizer" data-target="query-builder.sizer"></div>
-            <input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" role="combobox" spellcheck="false" aria-expanded="false" aria-describedby="validation-a097cc66-db5b-4cbc-aae1-9701b7fad4b3" data-target="query-builder.input" data-action="
+            <input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" role="combobox" spellcheck="false" aria-expanded="false" aria-describedby="validation-2c086fa6-0402-45d7-afc4-289076294150" data-target="query-builder.input" data-action="
           input:query-builder#inputChange
           blur:query-builder#inputBlur
           keydown:query-builder#inputKeydown
@@ -672,7 +672,7 @@
             ></ul>
 
         </div>
-      <div class="FormControl-inlineValidation" id="validation-a097cc66-db5b-4cbc-aae1-9701b7fad4b3" hidden="hidden">
+      <div class="FormControl-inlineValidation" id="validation-2c086fa6-0402-45d7-afc4-289076294150" hidden="hidden">
         <span class="FormControl-inlineValidation--visual">
           <svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
     <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
@@ -713,7 +713,7 @@
   
 </div>
       <scrollable-region data-labelled-by="feedback-dialog-title">
-        <div data-view-component="true" class="Overlay-body">        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="code-search-feedback-form" data-turbo="false" action="/search/feedback" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="a3duJ6S4gF0T7b7PCBqXvf5YzUXlAEiF7sKlosGmErskQc4WvhdSYF444dcSwO1bseZ8T6DeL5ERAbkUXFCbbA==" />
+        <div data-view-component="true" class="Overlay-body">        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="code-search-feedback-form" data-turbo="false" action="/search/feedback" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="WG3/hFYHU/t2Of+rE7WtftPl+d4ZhMR57aYqvt5IvLUXW1+1TKiBxjvsoLMJb9eYnFtI1Fxao20SZTYIQ741Yg==" />
           <p>We read every piece of feedback, and take your input very seriously.</p>
           <textarea name="feedback" class="form-control width-full mb-2" style="height: 120px" id="feedback"></textarea>
           <input name="include_email" id="include_email" aria-label="Include my email address so I can be contacted" class="form-control mr-2" type="checkbox">
@@ -751,7 +751,7 @@
         <div data-view-component="true" class="Overlay-body">        <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
 
         <div hidden class="create-custom-scope-form" data-target="custom-scopes.createCustomScopeForm">
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="custom-scopes-dialog-form" data-turbo="false" action="/search/custom_scopes" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="IU0K1HDBSdD0gHwcp4UaSgHXicj8fBlufBZxrx8bevN3s4oSG/ie9e9pU0c5qnV1pSm+dd1kznvA4LIMybXN1Q==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="custom-scopes-dialog-form" data-turbo="false" action="/search/custom_scopes" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="oEz2/UP4x1+iMo4IPylw2mLyOwHfrpFhqleEIxHKMen2snY7KMEQernboVOhBh/lxgwMvP62RnQWoUeAx2SGzw==" />
           <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
 
           <input type="hidden" id="custom_scope_id" name="custom_scope_id" data-target="custom-scopes.customScopesIdField">
@@ -769,7 +769,7 @@
                 placeholder="github-ruby"
                 required
                 maxlength="50">
-              <input type="hidden" data-csrf="true" value="KRE5EUZ/L4YyNRiuCUpLKjiGX6ScXtBh+i6LU1Jos/G9p6l0iHhCsab/kICRqyo6pBy6onuuRhykN6OutkKgvA==" />
+              <input type="hidden" data-csrf="true" value="ObvBYGv09YzWSnrBRRMM+wE+243WO+AB9GFTd8eIht2tDVEFpfOYu0KA8u/d8m3rnaQ+izHLdnyqeHuKI6KVkA==" />
             </auto-check>
           </div>
 
@@ -811,10 +811,10 @@
 
             <div class="position-relative HeaderMenu-link-wrap d-lg-inline-block">
               <a
-                href="/login?return_to=https%3A%2F%2Fgithub.com%2Faxios%2Faxios%2Fcompare%2Fv1.8.3...v1.8.4"
+                href="/login?return_to=https%3A%2F%2Fgithub.com%2Faxios%2Faxios%2Fcompare%2Fv1.5.1...v1.6.0"
                 class="HeaderMenu-link HeaderMenu-link--sign-in HeaderMenu-button flex-shrink-0 no-underline d-none d-lg-inline-flex border border-lg-0 rounded px-2 py-1"
                 style="margin-left: 12px;"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="079800e3642e49086f32d301a7faf42bacd021ac71bf0363be9a7b64730c33fb"
+                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="340b15979cd1194c3f20b3977903c6272e9d7b3984354b9eec925beaa8d9a0ad"
                 data-analytics-event="{&quot;category&quot;:&quot;Marketing nav&quot;,&quot;action&quot;:&quot;click to go to homepage&quot;,&quot;label&quot;:&quot;ref_page:Marketing;ref_cta:Sign in;ref_loc:Header&quot;}"
               >
                 Sign in
@@ -823,7 +823,7 @@
 
               <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fcompare%2Fshow&amp;source=header-repo&amp;source_repo=axios%2Faxios"
                 class="HeaderMenu-link HeaderMenu-link--sign-up HeaderMenu-button flex-shrink-0 d-flex d-lg-inline-flex no-underline border color-border-default rounded px-2 py-1"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="079800e3642e49086f32d301a7faf42bacd021ac71bf0363be9a7b64730c33fb"
+                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="340b15979cd1194c3f20b3977903c6272e9d7b3984354b9eec925beaa8d9a0ad"
                 data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/&lt;user-name&gt;/&lt;repo-name&gt;/compare/show;ref_cta:Sign up;ref_loc:header logged out&quot;}"
               >
                 Sign up
@@ -831,10 +831,10 @@
 
                 <div class="AppHeader-appearanceSettings">
     <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-ccb43fd5-ae45-443a-a3ce-10f1ecd0dc49" aria-labelledby="tooltip-f06bdd9e-ddc0-4c15-9193-9971ef941aaf" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
+      <button data-target="react-partial-anchor.anchor" id="icon-button-37bb03a9-d30b-4fe6-9ba5-ec9310dfac22" aria-labelledby="tooltip-00bf05bd-1309-4caf-897a-e13ca3f6521d" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
     <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
 </svg>
-</button><tool-tip id="tooltip-f06bdd9e-ddc0-4c15-9193-9971ef941aaf" for="icon-button-ccb43fd5-ae45-443a-a3ce-10f1ecd0dc49" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
+</button><tool-tip id="tooltip-00bf05bd-1309-4caf-897a-e13ca3f6521d" for="icon-button-37bb03a9-d30b-4fe6-9ba5-ec9310dfac22" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
 
       <template data-target="react-partial-anchor.template">
         <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.8a057b98cd8a150b.module.css" />
@@ -872,10 +872,10 @@
         <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
         <span class="js-stale-session-flash-switched" hidden>You switched accounts on another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
 
-    <button id="icon-button-9fa12419-1e51-446d-acb0-157ff585f052" aria-labelledby="tooltip-4f2c5d2b-027c-4313-ba42-18f0514687d8" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
+    <button id="icon-button-53abf269-283b-4a46-ba68-f532886b815e" aria-labelledby="tooltip-4cd5c854-4632-4e08-92ef-893b176e2087" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
     <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
 </svg>
-</button><tool-tip id="tooltip-4f2c5d2b-027c-4313-ba42-18f0514687d8" for="icon-button-9fa12419-1e51-446d-acb0-157ff585f052" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
+</button><tool-tip id="tooltip-4cd5c854-4632-4e08-92ef-893b176e2087" for="icon-button-53abf269-283b-4a46-ba68-f532886b815e" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
 
 
   
@@ -978,7 +978,7 @@
             <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
     
         <li>
-          <include-fragment src="/axios/axios/sponsor_button" data-nonce="v2:d0f7a2c5-4239-00db-391b-e4e478436b29" data-view-component="true">
+          <include-fragment src="/axios/axios/sponsor_button" data-nonce="v2:11c7e628-d628-e9cd-71ad-43cfa90550e9" data-view-component="true">
   
   <div data-show-on-forbidden-error hidden>
     <div class="Box">
@@ -999,15 +999,15 @@
       
 
   <li>
-            <a href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" id="repository-details-watch-button" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="d7ef833f3af662da89aad05836e2f9b8bbc2c3a63e1eff25d92f8c85b47ef32f" aria-label="You must be signed in to change notification settings" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2 tmp-mr-2">
+            <a href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" id="repository-details-watch-button" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3acd6c92025e3894be2a32939afd97a7b4dd697ce88e560d77eb6b5ef35bd6da" aria-label="You must be signed in to change notification settings" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2 tmp-mr-2">
     <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
 </svg>Notifications
-</a>    <tool-tip id="tooltip-b5f99cc2-5be8-4a5d-9448-3ee89ea64a58" for="repository-details-watch-button" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">You must be signed in to change notification settings</tool-tip>
+</a>    <tool-tip id="tooltip-604a8f45-1355-453b-a0a7-118b56c0fe18" for="repository-details-watch-button" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">You must be signed in to change notification settings</tool-tip>
 
   </li>
 
   <li>
-          <a icon="repo-forked" id="fork-button" href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:23088740,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f29a487b4d82b13229d6ac1c833092ed9c7d33d480248e3b6aa578788109d5ac" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2 tmp-mr-2">
+          <a icon="repo-forked" id="fork-button" href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:23088740,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="27c8380f0ea3d075a9c43a35645aa92074c7114989d7d5898ac882f824d6648d" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2 tmp-mr-2">
     <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
 </svg>Fork
     <span id="repo-network-counter" data-pjax-replace="true" data-turbo-replace="true" title="11,647" data-view-component="true" class="Counter">11.6k</span>
@@ -1016,7 +1016,7 @@
 
   <li>
         <div data-view-component="true" class="BtnGroup d-flex">
-        <a href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:23088740,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.8.3...v1.8.4&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fc43583825aa8d1d4fc948fa84d5002d0f8fda1e8e18531689194b7b1fc505cb" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-sw btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2 tmp-mr-2">
+        <a href="/login?return_to=%2Faxios%2Faxios" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:23088740,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/axios/axios/compare/v1.5.1...v1.6.0&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7fa3de8fdecbb0481b4481f27a6b8ff430f2606cb26e8477c11a5aac8e668dd0" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-sw btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2 tmp-mr-2">
     <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
 </svg><span data-view-component="true" class="d-inline">
           Star
@@ -1123,22 +1123,22 @@
 </ul>
     <div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 tmp-pr-3 pr-md-4 tmp-pr-md-4 pr-lg-5 tmp-pr-lg-5 right-0">      <action-menu data-select-variant="none" data-view-component="true">
   <focus-group direction="vertical" mnemonics retain>
-    <button id="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-button" popovertarget="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-overlay" aria-controls="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-list" aria-haspopup="true" aria-labelledby="tooltip-752fc4de-986f-4da1-a83c-572838f51f9d" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium UnderlineNav-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button id="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-button" popovertarget="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-overlay" aria-controls="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-list" aria-haspopup="true" aria-labelledby="tooltip-1fb1c48a-d6ca-4b0f-a143-1a5360c7d0df" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium UnderlineNav-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-752fc4de-986f-4da1-a83c-572838f51f9d" for="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Additional navigation options</tool-tip>
+</button><tool-tip id="tooltip-1fb1c48a-d6ca-4b0f-a143-1a5360c7d0df" for="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Additional navigation options</tool-tip>
 
 
-<anchored-position data-target="action-menu.overlay" id="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-overlay" anchor="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+<anchored-position data-target="action-menu.overlay" id="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-overlay" anchor="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
   <div data-view-component="true" class="Overlay Overlay--size-auto">
     
       <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
   <div data-view-component="true">
-    <ul aria-labelledby="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-button" id="action-menu-613ce5bf-3106-4edc-a33c-9b17f91a8c7b-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+    <ul aria-labelledby="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-button" id="action-menu-ff3e9310-7e52-4837-b52c-4826d4adcd54-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
         <li hidden="hidden" data-menu-item="i0code-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-8322529f-983e-425b-b74e-7878b7867965" href="/axios/axios" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-509f5ff8-c40e-4998-9b40-3934114ec16b" href="/axios/axios" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
     <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
@@ -1154,7 +1154,7 @@
         <li hidden="hidden" data-menu-item="i1issues-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-d843fcd6-a887-4dbf-870b-6b9dd94d3baf" href="/axios/axios/issues" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-77d9fbeb-9c09-42be-b9a3-e3a412269d0b" href="/axios/axios/issues" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened">
     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
@@ -1170,7 +1170,7 @@
         <li hidden="hidden" data-menu-item="i2pull-requests-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-2449172f-8ef2-43e3-9f92-1875a425ef2f" href="/axios/axios/pulls" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-e55f78d9-1f44-4dec-a2d5-562cf872d6e2" href="/axios/axios/pulls" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request">
     <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
@@ -1186,7 +1186,7 @@
         <li hidden="hidden" data-menu-item="i3discussions-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-b81280cc-0fce-4df8-8356-fb97c1b9a719" href="/axios/axios/discussions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-86653ed4-c39c-49fd-81e1-db4264efbace" href="/axios/axios/discussions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion">
     <path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path>
@@ -1202,7 +1202,7 @@
         <li hidden="hidden" data-menu-item="i4actions-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-8fd7479e-a341-45c8-8eee-f2042309265c" href="/axios/axios/actions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-6a0ba8bb-1101-4c6d-b9a1-85181cd6c407" href="/axios/axios/actions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play">
     <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path>
@@ -1218,7 +1218,7 @@
         <li hidden="hidden" data-menu-item="i5security-and-quality-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-df8bef0b-c310-4a2b-baa0-5c317775e4d4" href="/axios/axios/security" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-e040ad8b-a94f-470c-87b5-6f904f08f4bd" href="/axios/axios/security" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield">
     <path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
@@ -1234,7 +1234,7 @@
         <li hidden="hidden" data-menu-item="i6insights-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-a20c22f7-c2c6-4853-a0d6-c901ee2c772e" href="/axios/axios/pulse" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-79977196-0e1e-42e6-9e36-87b17ef3562f" href="/axios/axios/pulse" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph">
     <path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
@@ -1271,7 +1271,7 @@
     
       
 <div class="clearfix new-discussion-timeline container-xl tmp-px-3 tmp-px-md-4 tmp-px-lg-5 tmp-mt-4">
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/axios/axios/compare/axios:39ec206...axios:9f6f97b">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/axios/axios/compare/axios:88fb52b...axios:f7adacd">Permalink</a>
 
     <div data-view-component="true" class="compare-show-header Subhead">
   <h1 data-view-component="true" class="Subhead-heading Subhead-heading--large">Comparing changes</h1>
@@ -1306,8 +1306,8 @@
     </span>
 </summary>
 
-  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" data-pjax src="/axios/axios/compare/repository-list?range=v1.8.3...v1.8.4&amp;repository=axios&amp;selected=axios%2Faxios&amp;type=base&amp;user_id=axios" preload>
-    <include-fragment data-nonce="v2:d0f7a2c5-4239-00db-391b-e4e478436b29" data-view-component="true">
+  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" data-pjax src="/axios/axios/compare/repository-list?range=v1.5.1...v1.6.0&amp;repository=axios&amp;selected=axios%2Faxios&amp;type=base&amp;user_id=axios" preload>
+    <include-fragment data-nonce="v2:11c7e628-d628-e9cd-71ad-43cfa90550e9" data-view-component="true">
   
       <div class="select-menu-blankslate select-menu-error" style="text-wrap: balance;">
         Failed to load repositories. Confirm that selected base ref is valid, then try again.
@@ -1342,7 +1342,7 @@
 <details id="base-ref-selector" class="details-reset details-overlay select-menu commitish-suggester hx_rsm">
   <summary data-view-component="true" class="branch Button--secondary Button--small Button">  <span class="Button-content">
     <span class="Button-label"><span class="fgColor-muted text-bold">base:</span>
-    <span class="css-truncate css-truncate-target" data-menu-button>v1.8.3</span></span>
+    <span class="css-truncate css-truncate-target" data-menu-button>v1.5.1</span></span>
   </span>
     <span class="Button-visual Button-trailingAction">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
@@ -1393,7 +1393,7 @@
             query-endpoint="/axios/axios/refs"
             
             cache-key="v0:1776367324.0"
-            current-committish="djEuOC4z"
+            current-committish="djEuNS4x"
             default-branch="djEueA=="
             name-with-owner="YXhpb3MvYXhpb3M="
             prefetch-on-mouseover
@@ -1421,7 +1421,7 @@
             </div>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="/axios/axios/compare/{{ urlEncodedRefName }}...v1.8.4" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="/axios/axios/compare/{{ urlEncodedRefName }}...v1.6.0" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
@@ -1446,7 +1446,7 @@
             data-targets="input-demux.sinks"
             query-endpoint="/axios/axios/refs"
             cache-key="v0:1776367324.0"
-            current-committish="djEuOC4z"
+            current-committish="djEuNS4x"
             default-branch="djEueA=="
             name-with-owner="YXhpb3MvYXhpb3M="
           >
@@ -1460,7 +1460,7 @@
             </template>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="/axios/axios/compare/{{ urlEncodedRefName }}...v1.8.4" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="/axios/axios/compare/{{ urlEncodedRefName }}...v1.6.0" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
@@ -1514,8 +1514,8 @@
     </span>
 </summary>
 
-  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" data-pjax src="/axios/axios/compare/repository-list?range=v1.8.3...v1.8.4&amp;repository=axios&amp;selected=axios%2Faxios&amp;type=head&amp;user_id=axios" preload>
-    <include-fragment data-nonce="v2:d0f7a2c5-4239-00db-391b-e4e478436b29" data-view-component="true">
+  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" data-pjax src="/axios/axios/compare/repository-list?range=v1.5.1...v1.6.0&amp;repository=axios&amp;selected=axios%2Faxios&amp;type=head&amp;user_id=axios" preload>
+    <include-fragment data-nonce="v2:11c7e628-d628-e9cd-71ad-43cfa90550e9" data-view-component="true">
   
       <div class="select-menu-blankslate select-menu-error" style="text-wrap: balance;">
         Failed to load repositories. Confirm that selected head ref is valid, then try again.
@@ -1550,7 +1550,7 @@
 <details id="head-ref-selector" class="details-reset details-overlay select-menu commitish-suggester hx_rsm">
   <summary data-view-component="true" class="branch Button--secondary Button--small Button">  <span class="Button-content">
     <span class="Button-label"><span class="fgColor-muted text-bold">compare:</span>
-    <span class="css-truncate css-truncate-target" data-menu-button>v1.8.4</span></span>
+    <span class="css-truncate css-truncate-target" data-menu-button>v1.6.0</span></span>
   </span>
     <span class="Button-visual Button-trailingAction">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
@@ -1601,7 +1601,7 @@
             query-endpoint="/axios/axios/refs"
             
             cache-key="v0:1776367324.0"
-            current-committish="djEuOC40"
+            current-committish="djEuNi4w"
             default-branch="djEueA=="
             name-with-owner="YXhpb3MvYXhpb3M="
             prefetch-on-mouseover
@@ -1629,7 +1629,7 @@
             </div>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="/axios/axios/compare/v1.8.3...{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="/axios/axios/compare/v1.5.1...{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
@@ -1654,7 +1654,7 @@
             data-targets="input-demux.sinks"
             query-endpoint="/axios/axios/refs"
             cache-key="v0:1776367324.0"
-            current-committish="djEuOC40"
+            current-committish="djEuNi4w"
             default-branch="djEueA=="
             name-with-owner="YXhpb3MvYXhpb3M="
           >
@@ -1668,7 +1668,7 @@
             </template>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="/axios/axios/compare/v1.8.3...{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="/axios/axios/compare/v1.5.1...{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
@@ -1709,7 +1709,7 @@
     <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
 </svg>
   <span class="text-emphasized">
-    3
+    8
   </span>
 
   <span class="color-fg-muted">commits</span>
@@ -1720,7 +1720,7 @@
     <path d="M1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073ZM8 3.25a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5v1.5a.75.75 0 0 1-1.5 0V7h-1.5a.75.75 0 0 1 0-1.5h1.5V4A.75.75 0 0 1 8 3.25Zm-3 8a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z"></path>
 </svg>
   <span class="text-emphasized">
-    20
+    29
   </span>
 
   <span class="color-fg-muted">files changed</span>
@@ -1746,74 +1746,38 @@
   <div data-view-component="true" class="TimelineItem-badge"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
     <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
 </svg></div>
-  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Mar 18, 2025</h3>
+  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Sep 28, 2023</h3>
         <ol class="tmp-mt-3 list-style-none Box Box--condensed tmp-ml-n6 tmp-ml-sm-0 position-relative" >
             <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
-    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6MWU2NjMyY2Q2MjUzYzg5YmU3Y2IxZmY3NTdiYTkxYWZiZDI0N2RlMSIsInQiOjE3NzY0MzQ3MTd9--897f13940710c00560d3af9fcf3dc5b201a57dc3b9ef36b76eadf8666dce0e0e"
-    data-url="/axios/axios/commits/1e6632cd6253c89be7cb1ff757ba91afbd247de1/commits_list_item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6MmFjNzMxZDYwNTQ1YmE1YzQyMDJjMjVmZDJlNzMyZGRkODI5N2Q4MiIsInQiOjE3NzY0MzQ3MjZ9--2dfa39dcfbf85241fd3bd2865ca64315f8bbe305c53bdfea21a659f72c1695e1"
+    data-url="/axios/axios/commits/2ac731d60545ba5c4202c25fd2e732ddd8297d82/commits_list_item"
     
     
 >
   <div class="flex-auto min-width-0 js-details-container Details">
     <p class="mb-1" >
-        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/1e6632cd6253c89be7cb1ff757ba91afbd247de1">chore(deps): bump tj-actions/changed-files in the github-actions group (</a>
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/2ac731d60545ba5c4202c25fd2e732ddd8297d82">chore(docs): update readme.md (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1889697507" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/5889" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/5889/hovercard" href="https://github.com/axios/axios/pull/5889">#5889</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/2ac731d60545ba5c4202c25fd2e732ddd8297d82">)</a>
 
-        <span class="hidden-text-expander inline">
-            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
-</button>        </span>
     </p>
 
-      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2924589369" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6838" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6838/hovercard" href="https://github.com/axios/axios/pull/6838">#6838</a>)
-
-Bumps the github-actions group with 1 update: [tj-actions/changed-files](<a href="https://github.com/tj-actions/changed-files">https://github.com/tj-actions/changed-files</a>).
-
-
-Updates `tj-actions/changed-files` from 45 to 46
-- [Release notes](<a href="https://github.com/tj-actions/changed-files/releases">https://github.com/tj-actions/changed-files/releases</a>)
-- [Changelog](<a href="https://github.com/tj-actions/changed-files/blob/main/HISTORY.md">https://github.com/tj-actions/changed-files/blob/main/HISTORY.md</a>)
-- [Commits](<a class="commit-link" href="https://github.com/tj-actions/changed-files/compare/v45...v46">tj-actions/changed-files@<tt>v45...v46</tt></a>)
-
----
-updated-dependencies:
-- dependency-name: tj-actions/changed-files
-  dependency-type: direct:production
-  update-type: version-update:semver-major
-  dependency-group: github-actions
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
-Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.github.com&gt;</pre></div>
 
     <div class="d-flex flex-items-center mt-1" >
       
 <div class="AvatarStack flex-self-start  " >
   <div class="AvatarStack-body" >
-      <a class="avatar" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" href="/apps/dependabot">
-        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/in/29110?s=40&amp;v=4" width="20" height="20" alt="@dependabot" />
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/therealrinku/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/therealrinku">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/76877078?s=40&amp;v=4" width="20" height="20" alt="@therealrinku" class=" avatar-user" />
 </a>  </div>
 </div>
 
       <div class="f6 color-fg-muted min-width-0">
-            <a class="commit-author user-mention" title="View all commits by dependabot[bot]" data-hovercard-type="user" data-hovercard-url="/users/dependabot%5Bbot%5D/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=dependabot%5Bbot%5D">dependabot[bot]</a>
+            <a class="commit-author user-mention" title="View all commits by therealrinku" data-hovercard-type="user" data-hovercard-url="/users/therealrinku/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=therealrinku">therealrinku</a>
     
   authored
-  <relative-time datetime="2025-03-18T15:17:04Z" class="no-wrap">Mar 18, 2025</relative-time>
+  <relative-time datetime="2023-09-28T15:22:47Z" class="no-wrap">Sep 28, 2023</relative-time>
 
       </div>
       <div class="ml-1">
-            
-<batch-deferred-content class="d-inline-block" data-url="/axios/axios/commits/checks-statuses-rollups">
-    <input type="hidden" name="oid" value="1e6632cd6253c89be7cb1ff757ba91afbd247de1" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="dropdown_direction" value="e" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="disable_live_updates" value="false" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-
-  
-
-  <div class="commit-build-statuses">
-    <span class="Skeleton d-inline-block" style="width:12px; height:12px;"></span>
-  </div>
-
-</batch-deferred-content>
       </div>
     </div>
   </div>
@@ -1822,7 +1786,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
 
     
 <batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
-    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDFlNjYzMmNkNjI1M2M4OWJlN2NiMWZmNzU3YmE5MWFmYmQyNDdkZTE" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDJhYzczMWQ2MDU0NWJhNWM0MjAyYzI1ZmQyZTczMmRkZDgyOTdkODI" data-targets="batch-deferred-content.inputs" autocomplete="off" />
     <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
     <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
 
@@ -1834,22 +1798,22 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
 
     <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
   <focus-group direction="vertical" mnemonics retain>
-    <button id="action-menu-48d877da-f14d-4149-becf-55201bcfc405-button" popovertarget="action-menu-48d877da-f14d-4149-becf-55201bcfc405-overlay" aria-controls="action-menu-48d877da-f14d-4149-becf-55201bcfc405-list" aria-haspopup="true" aria-labelledby="tooltip-e4db5573-f63e-4a78-abfd-842f5a9704f4" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button id="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-button" popovertarget="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-overlay" aria-controls="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-list" aria-haspopup="true" aria-labelledby="tooltip-b6b41847-52fa-4d03-a575-62e9ebaf7aa1" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-e4db5573-f63e-4a78-abfd-842f5a9704f4" for="action-menu-48d877da-f14d-4149-becf-55201bcfc405-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+</button><tool-tip id="tooltip-b6b41847-52fa-4d03-a575-62e9ebaf7aa1" for="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
 
 
-<anchored-position data-target="action-menu.overlay" id="action-menu-48d877da-f14d-4149-becf-55201bcfc405-overlay" anchor="action-menu-48d877da-f14d-4149-becf-55201bcfc405-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+<anchored-position data-target="action-menu.overlay" id="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-overlay" anchor="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
   <div data-view-component="true" class="Overlay Overlay--size-auto">
     
       <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
   <div data-view-component="true">
-    <ul aria-labelledby="action-menu-48d877da-f14d-4149-becf-55201bcfc405-button" id="action-menu-48d877da-f14d-4149-becf-55201bcfc405-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+    <ul aria-labelledby="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-button" id="action-menu-6c9080b8-f85f-4920-8491-60ece32937c4-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-0f288549-3e60-43da-90b2-6195507836f9" href="/axios/axios/commit/1e6632cd6253c89be7cb1ff757ba91afbd247de1" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-9bc47bbb-a920-43df-a806-9c59cd8d9c8c" href="/axios/axios/commit/2ac731d60545ba5c4202c25fd2e732ddd8297d82" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
     <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
@@ -1865,7 +1829,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <clipboard-copy value="1e6632cd6253c89be7cb1ff757ba91afbd247de1" tabindex="-1" id="item-b904bdcb-caf5-4c11-ae2e-70ab13a6bea6" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <clipboard-copy value="2ac731d60545ba5c4202c25fd2e732ddd8297d82" tabindex="-1" id="item-c9a0655e-6776-45b2-a248-b87f1aea96ad" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
@@ -1873,7 +1837,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
         </span>
       
         <span data-view-component="true" class="ActionListItem-label">
-          Copy full SHA for 1e6632c
+          Copy full SHA for 2ac731d
 </span>      
 </clipboard-copy>
   
@@ -1881,7 +1845,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-df0da9e0-c929-4b55-97b4-2aa9f4e3b43f" href="/axios/axios/tree/1e6632cd6253c89be7cb1ff757ba91afbd247de1" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-1b6f524c-09c4-4c04-9489-3d481bc3b18f" href="/axios/axios/tree/2ac731d60545ba5c4202c25fd2e732ddd8297d82" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
     <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
@@ -1905,7 +1869,7 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
     <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
     <div>
       <span data-view-component="true">
-  <clipboard-copy id="copy-commit-1e6632cd6253c89be7cb1ff757ba91afbd247de1" aria-label="Copy the full SHA" type="button" value="1e6632cd6253c89be7cb1ff757ba91afbd247de1" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+  <clipboard-copy id="copy-commit-2ac731d60545ba5c4202c25fd2e732ddd8297d82" aria-label="Copy the full SHA" type="button" value="2ac731d60545ba5c4202c25fd2e732ddd8297d82" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -1913,197 +1877,23 @@ Co-authored-by: dependabot[bot] &lt;49699333+dependabot[bot]@users.noreply.githu
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
 </clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
-</span><tool-tip id="tooltip-1c21f87b-a876-493f-a214-decfddac7b5b" for="copy-commit-1e6632cd6253c89be7cb1ff757ba91afbd247de1" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+</span><tool-tip id="tooltip-41508bd4-089d-4948-acf7-2bde806a49ea" for="copy-commit-2ac731d60545ba5c4202c25fd2e732ddd8297d82" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
 
     </div>
     <div>
-      <a id="commit-details-1e6632cd6253c89be7cb1ff757ba91afbd247de1" href="/axios/axios/commit/1e6632cd6253c89be7cb1ff757ba91afbd247de1" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
-    <span class="Button-label">1e6632c</span>
+      <a id="commit-details-2ac731d60545ba5c4202c25fd2e732ddd8297d82" href="/axios/axios/commit/2ac731d60545ba5c4202c25fd2e732ddd8297d82" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">2ac731d</span>
   </span>
-</a><tool-tip id="tooltip-b57c4f10-8d70-4633-bf18-ee0776f1802e" for="commit-details-1e6632cd6253c89be7cb1ff757ba91afbd247de1" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+</a><tool-tip id="tooltip-cbfdbff0-f03c-4865-a924-90dbeb28ae28" for="commit-details-2ac731d60545ba5c4202c25fd2e732ddd8297d82" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
 
     </div>
 </div>
     <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
     <div>
-      <a id="history-link-1e6632cd6253c89be7cb1ff757ba91afbd247de1" href="/axios/axios/tree/1e6632cd6253c89be7cb1ff757ba91afbd247de1" aria-labelledby="tooltip-4f57c826-6516-4790-aed1-709c4c39bdfa" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+      <a id="history-link-2ac731d60545ba5c4202c25fd2e732ddd8297d82" href="/axios/axios/tree/2ac731d60545ba5c4202c25fd2e732ddd8297d82" aria-labelledby="tooltip-5e340de0-5841-4bee-9e57-311de9e8aa90" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
     <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
 </svg>
-</a><tool-tip id="tooltip-4f57c826-6516-4790-aed1-709c4c39bdfa" for="history-link-1e6632cd6253c89be7cb1ff757ba91afbd247de1" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
-
-    </div>
-</div>  </div>
-</li>
-
-            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
-    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6ZjEwYzJlMGRlN2ZkZTAwNTFmODQ4NjA5YTI5YzI5MDZkMGNhYTFkOSIsInQiOjE3NzY0MzQ3MTd9--adc269a246409fcbf7fc831767d64dfc037f7d13a326d271076c3a6e77825259"
-    data-url="/axios/axios/commits/f10c2e0de7fde0051f848609a29c2906d0caa1d9/commits_list_item"
-    
-    
->
-  <div class="flex-auto min-width-0 js-details-container Details">
-    <p class="mb-1" >
-        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/f10c2e0de7fde0051f848609a29c2906d0caa1d9">fix(buildFullPath): handle <code>allowAbsoluteUrls: false</code> without `baseUR…</a>
-
-        <span class="hidden-text-expander inline">
-            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
-</button>        </span>
-    </p>
-
-      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">…L` (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2920823172" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6833" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6833/hovercard" href="https://github.com/axios/axios/pull/6833">#6833</a>)
-
-Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
-
-    <div class="d-flex flex-items-center mt-1" >
-      
-<div class="AvatarStack flex-self-start AvatarStack--two " >
-  <div class="AvatarStack-body" >
-      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/mhassan1/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mhassan1">
-        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/8029107?s=40&amp;v=4" width="20" height="20" alt="@mhassan1" class=" avatar-user" />
-</a>      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/jasonsaayman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jasonsaayman">
-        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/4814473?s=40&amp;v=4" width="20" height="20" alt="@jasonsaayman" class=" avatar-user" />
-</a>  </div>
-</div>
-
-      <div class="f6 color-fg-muted min-width-0">
-            <a class="commit-author user-mention" title="View all commits by mhassan1" data-hovercard-type="user" data-hovercard-url="/users/mhassan1/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=mhassan1">mhassan1</a>
-     and 
-    <a class="commit-author user-mention" title="View all commits by jasonsaayman" data-hovercard-type="user" data-hovercard-url="/users/jasonsaayman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=jasonsaayman">jasonsaayman</a>
-    
-  authored
-  <relative-time datetime="2025-03-18T18:01:37Z" class="no-wrap">Mar 18, 2025</relative-time>
-
-      </div>
-      <div class="ml-1">
-            
-<batch-deferred-content class="d-inline-block" data-url="/axios/axios/commits/checks-statuses-rollups">
-    <input type="hidden" name="oid" value="f10c2e0de7fde0051f848609a29c2906d0caa1d9" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="dropdown_direction" value="e" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="disable_live_updates" value="false" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-
-  
-
-  <div class="commit-build-statuses">
-    <span class="Skeleton d-inline-block" style="width:12px; height:12px;"></span>
-  </div>
-
-</batch-deferred-content>
-      </div>
-    </div>
-  </div>
-
-  <div class="d-flex flex-shrink-0" >
-
-    
-<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
-    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKGYxMGMyZTBkZTdmZGUwMDUxZjg0ODYwOWEyOWMyOTA2ZDBjYWExZDk" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-
-  
-
-    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
-
-</batch-deferred-content>
-
-    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
-  <focus-group direction="vertical" mnemonics retain>
-    <button id="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-button" popovertarget="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-overlay" aria-controls="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-list" aria-haspopup="true" aria-labelledby="tooltip-335fad64-78d8-4b89-ae13-b8ae7ed464a8" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
-    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-</svg>
-</button><tool-tip id="tooltip-335fad64-78d8-4b89-ae13-b8ae7ed464a8" for="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
-
-
-<anchored-position data-target="action-menu.overlay" id="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-overlay" anchor="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
-  <div data-view-component="true" class="Overlay Overlay--size-auto">
-    
-      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
-  <div data-view-component="true">
-    <ul aria-labelledby="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-button" id="action-menu-d227bb60-a7af-4eee-a4c5-4bf94142782f-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
-        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-4bd3a5ab-320f-488c-84d2-55e17f879a0d" href="/axios/axios/commit/f10c2e0de7fde0051f848609a29c2906d0caa1d9" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
-    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          View commit details
-</span>      
-</a>
-  
-</li>
-        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <clipboard-copy value="f10c2e0de7fde0051f848609a29c2906d0caa1d9" tabindex="-1" id="item-869af360-ef83-46d9-b907-644ca81c9d3e" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Copy full SHA for f10c2e0
-</span>      
-</clipboard-copy>
-  
-</li>
-        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-439ccee9-0add-4353-8cee-865bc8d77bc1" href="/axios/axios/tree/f10c2e0de7fde0051f848609a29c2906d0caa1d9" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Browse repository at this point
-</span>      
-</a>
-  
-</li>
-</ul>    
-</div></action-list>
-
-
-</div>
-      
-</div></anchored-position>  </focus-group>
-</action-menu>
-    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
-    <div>
-      <span data-view-component="true">
-  <clipboard-copy id="copy-commit-f10c2e0de7fde0051f848609a29c2906d0caa1d9" aria-label="Copy the full SHA" type="button" value="f10c2e0de7fde0051f848609a29c2906d0caa1d9" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
-</span><tool-tip id="tooltip-55e9aaf5-a903-4518-90b2-d882e9795270" for="copy-commit-f10c2e0de7fde0051f848609a29c2906d0caa1d9" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
-
-    </div>
-    <div>
-      <a id="commit-details-f10c2e0de7fde0051f848609a29c2906d0caa1d9" href="/axios/axios/commit/f10c2e0de7fde0051f848609a29c2906d0caa1d9" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
-    <span class="Button-label">f10c2e0</span>
-  </span>
-</a><tool-tip id="tooltip-a12fda48-aab8-463f-ae02-a47505225dd0" for="commit-details-f10c2e0de7fde0051f848609a29c2906d0caa1d9" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
-
-    </div>
-</div>
-    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
-    <div>
-      <a id="history-link-f10c2e0de7fde0051f848609a29c2906d0caa1d9" href="/axios/axios/tree/f10c2e0de7fde0051f848609a29c2906d0caa1d9" aria-labelledby="tooltip-92a79d2b-c19f-44c1-aa82-cfc59964dd9f" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
-    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-</a><tool-tip id="tooltip-92a79d2b-c19f-44c1-aa82-cfc59964dd9f" for="history-link-f10c2e0de7fde0051f848609a29c2906d0caa1d9" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+</a><tool-tip id="tooltip-5e340de0-5841-4bee-9e57-311de9e8aa90" for="history-link-2ac731d60545ba5c4202c25fd2e732ddd8297d82" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
 
     </div>
 </div>  </div>
@@ -2116,59 +1906,38 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
   <div data-view-component="true" class="TimelineItem-badge"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
     <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
 </svg></div>
-  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Mar 19, 2025</h3>
+  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Sep 29, 2023</h3>
         <ol class="tmp-mt-3 list-style-none Box Box--condensed tmp-ml-n6 tmp-ml-sm-0 position-relative" >
             <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
-    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6OWY2Zjk3YmNmYjdjNTEwMTAzZGZjYjA1NjQxYWU4ZThmNWMwOGJjYyIsInQiOjE3NzY0MzQ3MTd9--c703107984a7997a922dbd9111bdc9365859127266bb3fc6269397e570294dae"
-    data-url="/axios/axios/commits/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc/commits_list_item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6YTFjOGFkMDA4YjNjMTNkNTNlMTM1YmJkMDg2MjU4N2ZiOWQzZmMwOSIsInQiOjE3NzY0MzQ3MjZ9--7ccd00bd742163d2aa1abb53d776d9674009e982cc0fc163915b3a2d713c14a1"
+    data-url="/axios/axios/commits/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09/commits_list_item"
     
     
 >
   <div class="flex-auto min-width-0 js-details-container Details">
     <p class="mb-1" >
-        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc">chore(release): v1.8.4 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2931290695" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6844" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6844/hovercard" href="https://github.com/axios/axios/pull/6844">#6844</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc">)</a>
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09">fix(types): fix AxiosHeaders types; (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1919730267" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/5931" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/5931/hovercard" href="https://github.com/axios/axios/pull/5931">#5931</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09">)</a>
 
-        <span class="hidden-text-expander inline">
-            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
-</button>        </span>
     </p>
 
-      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">Co-authored-by: jasonsaayman &lt;4814473+jasonsaayman@users.noreply.github.com&gt;</pre></div>
 
     <div class="d-flex flex-items-center mt-1" >
       
-<div class="AvatarStack flex-self-start AvatarStack--two " >
+<div class="AvatarStack flex-self-start  " >
   <div class="AvatarStack-body" >
-      <a class="avatar" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" href="/apps/github-actions">
-        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/in/15368?s=40&amp;v=4" width="20" height="20" alt="@github-actions" />
-</a>      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/jasonsaayman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jasonsaayman">
-        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/4814473?s=40&amp;v=4" width="20" height="20" alt="@jasonsaayman" class=" avatar-user" />
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
 </a>  </div>
 </div>
 
       <div class="f6 color-fg-muted min-width-0">
-            <a class="commit-author user-mention" title="View all commits by github-actions[bot]" data-hovercard-type="user" data-hovercard-url="/users/github-actions%5Bbot%5D/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=github-actions%5Bbot%5D">github-actions[bot]</a>
-     and 
-    <a class="commit-author user-mention" title="View all commits by jasonsaayman" data-hovercard-type="user" data-hovercard-url="/users/jasonsaayman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=jasonsaayman">jasonsaayman</a>
+            <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
     
   authored
-  <relative-time datetime="2025-03-19T19:26:49Z" class="no-wrap">Mar 19, 2025</relative-time>
+  <relative-time datetime="2023-09-29T18:42:19Z" class="no-wrap">Sep 29, 2023</relative-time>
 
       </div>
       <div class="ml-1">
-            
-<batch-deferred-content class="d-inline-block" data-url="/axios/axios/commits/checks-statuses-rollups">
-    <input type="hidden" name="oid" value="9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="dropdown_direction" value="e" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-    <input type="hidden" name="disable_live_updates" value="false" data-targets="batch-deferred-content.inputs" autocomplete="off" />
-
-  
-
-  <div class="commit-build-statuses">
-    <span class="Skeleton d-inline-block" style="width:12px; height:12px;"></span>
-  </div>
-
-</batch-deferred-content>
       </div>
     </div>
   </div>
@@ -2177,7 +1946,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
 
     
 <batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
-    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDlmNmY5N2JjZmI3YzUxMDEwM2RmY2IwNTY0MWFlOGU4ZjVjMDhiY2M" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKGExYzhhZDAwOGIzYzEzZDUzZTEzNWJiZDA4NjI1ODdmYjlkM2ZjMDk" data-targets="batch-deferred-content.inputs" autocomplete="off" />
     <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
     <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
 
@@ -2189,22 +1958,22 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
 
     <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
   <focus-group direction="vertical" mnemonics retain>
-    <button id="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-button" popovertarget="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-overlay" aria-controls="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-list" aria-haspopup="true" aria-labelledby="tooltip-e867f3ad-ab7c-4f34-bba1-4c7a44bf2e6b" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button id="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-button" popovertarget="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-overlay" aria-controls="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-list" aria-haspopup="true" aria-labelledby="tooltip-b62f8c1e-3ff2-4a0b-8fb4-84fba937f740" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-e867f3ad-ab7c-4f34-bba1-4c7a44bf2e6b" for="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+</button><tool-tip id="tooltip-b62f8c1e-3ff2-4a0b-8fb4-84fba937f740" for="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
 
 
-<anchored-position data-target="action-menu.overlay" id="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-overlay" anchor="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+<anchored-position data-target="action-menu.overlay" id="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-overlay" anchor="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
   <div data-view-component="true" class="Overlay Overlay--size-auto">
     
       <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
   <div data-view-component="true">
-    <ul aria-labelledby="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-button" id="action-menu-d2fbc727-f073-4be1-b635-8089a63894ba-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+    <ul aria-labelledby="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-button" id="action-menu-66a61581-2555-4cd3-bec4-0d530df0bd35-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-8d25a67d-d3d6-4deb-b23c-5a42c1588803" href="/axios/axios/commit/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-8c972ee0-1f06-4e00-b111-dd87e4e4bf54" href="/axios/axios/commit/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
     <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
@@ -2220,7 +1989,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <clipboard-copy value="9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" tabindex="-1" id="item-6c908628-2528-4702-b4ad-d92f5c936c10" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <clipboard-copy value="a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" tabindex="-1" id="item-3d64034e-af37-4fa0-81d5-842f78c1ce10" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
@@ -2228,7 +1997,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
         </span>
       
         <span data-view-component="true" class="ActionListItem-label">
-          Copy full SHA for 9f6f97b
+          Copy full SHA for a1c8ad0
 </span>      
 </clipboard-copy>
   
@@ -2236,7 +2005,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
         <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
     
-    <a tabindex="-1" id="item-398c367c-45f6-44a1-aa75-4c63361f9121" href="/axios/axios/tree/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+    <a tabindex="-1" id="item-97957ee7-a399-4a59-969a-a522b17b0e3e" href="/axios/axios/tree/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
         <span class="ActionListItem-visual ActionListItem-visual--leading">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
     <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
@@ -2260,7 +2029,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
     <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
     <div>
       <span data-view-component="true">
-  <clipboard-copy id="copy-commit-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" aria-label="Copy the full SHA" type="button" value="9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+  <clipboard-copy id="copy-commit-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" aria-label="Copy the full SHA" type="button" value="a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -2268,23 +2037,980 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
     <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
 </svg>
 </clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
-</span><tool-tip id="tooltip-e2a9f714-7c1f-459a-aa64-453403466e5e" for="copy-commit-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+</span><tool-tip id="tooltip-748d588e-de42-44de-a5da-5640bf8eb624" for="copy-commit-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
 
     </div>
     <div>
-      <a id="commit-details-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" href="/axios/axios/commit/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
-    <span class="Button-label">9f6f97b</span>
+      <a id="commit-details-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" href="/axios/axios/commit/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">a1c8ad0</span>
   </span>
-</a><tool-tip id="tooltip-e4282e27-0775-4093-8053-b6380d2dc443" for="commit-details-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+</a><tool-tip id="tooltip-84a17d6e-d271-4a95-9fb9-db4cc7e3bb12" for="commit-details-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
 
     </div>
 </div>
     <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
     <div>
-      <a id="history-link-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" href="/axios/axios/tree/9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" aria-labelledby="tooltip-e95e2495-a919-4fed-88c9-f4b9d18ed5d5" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+      <a id="history-link-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" href="/axios/axios/tree/a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" aria-labelledby="tooltip-93ed8c0e-b2cf-4133-add2-d2c360c6be76" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
     <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
 </svg>
-</a><tool-tip id="tooltip-e95e2495-a919-4fed-88c9-f4b9d18ed5d5" for="history-link-9f6f97bcfb7c510103dfcb05641ae8e8f5c08bcc" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+</a><tool-tip id="tooltip-93ed8c0e-b2cf-4133-add2-d2c360c6be76" for="history-link-a1c8ad008b3c13d53e135bbd0862587fb9d3fc09" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+        </ol>
+</div>
+</div>  <div data-view-component="true" class="TimelineItem TimelineItem--condensed pt-2 tmp-pt-2 pb-2 tmp-pb-2">
+  
+  <div data-view-component="true" class="TimelineItem-badge"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg></div>
+  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Sep 30, 2023</h3>
+        <ol class="tmp-mt-3 list-style-none Box Box--condensed tmp-ml-n6 tmp-ml-sm-0 position-relative" >
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6YTQ4YTYzYWQ4MjNmYzIwZTVhNmE3MDVmMDVmMDk4NDJjYTQ5ZjQ4YyIsInQiOjE3NzY0MzQ3MjZ9--ff761b800eadee01528decb3b012ead2998b9af20afeb1f462dbb47f4755c32d"
+    data-url="/axios/axios/commits/a48a63ad823fc20e5a6a705f05f09842ca49f48c/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/a48a63ad823fc20e5a6a705f05f09842ca49f48c">chore(docs): added AxiosHeaders docs; (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1919761665" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/5932" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/5932/hovercard" href="https://github.com/axios/axios/pull/5932">#5932</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/a48a63ad823fc20e5a6a705f05f09842ca49f48c">)</a>
+
+    </p>
+
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start  " >
+  <div class="AvatarStack-body" >
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-09-30T17:49:59Z" class="no-wrap">Sep 30, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKGE0OGE2M2FkODIzZmMyMGU1YTZhNzA1ZjA1ZjA5ODQyY2E0OWY0OGM" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-button" popovertarget="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-overlay" aria-controls="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-list" aria-haspopup="true" aria-labelledby="tooltip-89487b64-d5e3-447c-a4b7-9753e0272b7a" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-89487b64-d5e3-447c-a4b7-9753e0272b7a" for="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-overlay" anchor="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-button" id="action-menu-5fae516f-a474-4da6-ba96-534278c251e0-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-2fd79262-67f2-4e36-b87f-996442aa2325" href="/axios/axios/commit/a48a63ad823fc20e5a6a705f05f09842ca49f48c" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="a48a63ad823fc20e5a6a705f05f09842ca49f48c" tabindex="-1" id="item-a22507e5-cced-4ba5-be2d-4d2b846f267d" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for a48a63a
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-9af611f3-6b24-4015-a91e-963962ddd886" href="/axios/axios/tree/a48a63ad823fc20e5a6a705f05f09842ca49f48c" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-a48a63ad823fc20e5a6a705f05f09842ca49f48c" aria-label="Copy the full SHA" type="button" value="a48a63ad823fc20e5a6a705f05f09842ca49f48c" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-dda10cab-2dbb-4507-9040-fa14832e6ad6" for="copy-commit-a48a63ad823fc20e5a6a705f05f09842ca49f48c" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-a48a63ad823fc20e5a6a705f05f09842ca49f48c" href="/axios/axios/commit/a48a63ad823fc20e5a6a705f05f09842ca49f48c" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">a48a63a</span>
+  </span>
+</a><tool-tip id="tooltip-3183ed11-4a4e-467b-b53a-d14797a79caf" for="commit-details-a48a63ad823fc20e5a6a705f05f09842ca49f48c" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-a48a63ad823fc20e5a6a705f05f09842ca49f48c" href="/axios/axios/tree/a48a63ad823fc20e5a6a705f05f09842ca49f48c" aria-labelledby="tooltip-acc64655-a7ca-42e6-adcf-6ec531e33910" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-acc64655-a7ca-42e6-adcf-6ec531e33910" for="history-link-a48a63ad823fc20e5a6a705f05f09842ca49f48c" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+        </ol>
+</div>
+</div>  <div data-view-component="true" class="TimelineItem TimelineItem--condensed pt-2 tmp-pt-2 pb-2 tmp-pb-2">
+  
+  <div data-view-component="true" class="TimelineItem-badge"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg></div>
+  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Oct 22, 2023</h3>
+        <ol class="tmp-mt-3 list-style-none Box Box--condensed tmp-ml-n6 tmp-ml-sm-0 position-relative" >
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6NWFhZmY1MzJhNmI4MjBiYjlhYjZhOGNkMGY3NzEzMWI0N2UyYWRiOCIsInQiOjE3NzY0MzQ3MjZ9--f6d956c45611319159dc992c4898ec44de8de183110df5d9f89ae73da1b364d0"
+    data-url="/axios/axios/commits/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8">fix(dns): fixed lookup function decorator to work properly in node v2…</a>
+
+        <span class="hidden-text-expander inline">
+            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
+</button>        </span>
+    </p>
+
+      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">…0; (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1950681229" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6011" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6011/hovercard" href="https://github.com/axios/axios/pull/6011">#6011</a>)</pre></div>
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start  " >
+  <div class="AvatarStack-body" >
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-10-22T14:12:33Z" class="no-wrap">Oct 22, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDVhYWZmNTMyYTZiODIwYmI5YWI2YThjZDBmNzcxMzFiNDdlMmFkYjg" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-button" popovertarget="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-overlay" aria-controls="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-list" aria-haspopup="true" aria-labelledby="tooltip-c838efa9-59cd-458a-a3ff-10a327186332" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-c838efa9-59cd-458a-a3ff-10a327186332" for="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-overlay" anchor="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-button" id="action-menu-8709ca19-2d31-4c4c-811c-0966149fd752-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-3fa80d96-2ed8-44ce-a011-e6b4329bde08" href="/axios/axios/commit/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" tabindex="-1" id="item-b120e007-bd74-4cea-a520-b88d7e664204" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for 5aaff53
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-209a7472-8464-4907-bf00-a9a421726cf1" href="/axios/axios/tree/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" aria-label="Copy the full SHA" type="button" value="5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-491f3b9b-d54b-411e-b7a7-b85f031c7bd3" for="copy-commit-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" href="/axios/axios/commit/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">5aaff53</span>
+  </span>
+</a><tool-tip id="tooltip-56ccdccd-e041-4778-94cc-183fd49600f1" for="commit-details-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" href="/axios/axios/tree/5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" aria-labelledby="tooltip-4071e395-2ed8-4ecc-be05-bac02055c408" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-4071e395-2ed8-4ecc-be05-bac02055c408" for="history-link-5aaff532a6b820bb9ab6a8cd0f77131b47e2adb8" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6N2Q0NWFiMmUyYWQ2ZTU5ZjU0NzVlMzlhZmQ0YjI4NmIxZjM5M2ZjMCIsInQiOjE3NzY0MzQ3MjZ9--714aeee821e208015a5ff02ad25cd59fd6a12342a06f6fed1bed5c26ec37c1bb"
+    data-url="/axios/axios/commits/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0">chore(tests): fixed tests to pass in node v19 and v20 with `keep-aliv…</a>
+
+        <span class="hidden-text-expander inline">
+            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
+</button>        </span>
+    </p>
+
+      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">…e` enabled; (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1955921108" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6021" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6021/hovercard" href="https://github.com/axios/axios/pull/6021">#6021</a>)</pre></div>
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start  " >
+  <div class="AvatarStack-body" >
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-10-22T15:20:44Z" class="no-wrap">Oct 22, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDdkNDVhYjJlMmFkNmU1OWY1NDc1ZTM5YWZkNGIyODZiMWYzOTNmYzA" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-button" popovertarget="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-overlay" aria-controls="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-list" aria-haspopup="true" aria-labelledby="tooltip-2696f980-c507-49bc-8c19-fbbe53c1b634" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-2696f980-c507-49bc-8c19-fbbe53c1b634" for="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-overlay" anchor="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-button" id="action-menu-2aecd0c9-f8ee-436b-8ec5-757b35f24fee-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-1a247a42-d1d1-4a56-be10-538073935add" href="/axios/axios/commit/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" tabindex="-1" id="item-8f13864c-907c-49c8-af7a-789b4438ee11" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for 7d45ab2
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-8861d31e-b3c7-43c7-b270-6df1f6611947" href="/axios/axios/tree/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" aria-label="Copy the full SHA" type="button" value="7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-455fa657-2dee-4899-9d11-68c6ddddb074" for="copy-commit-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" href="/axios/axios/commit/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">7d45ab2</span>
+  </span>
+</a><tool-tip id="tooltip-b2fba62d-1f66-4fb1-97c4-642d10eb0faa" for="commit-details-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" href="/axios/axios/tree/7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" aria-labelledby="tooltip-6fb7abb2-2fe8-40a2-b67a-9095c39411ee" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-6fb7abb2-2fe8-40a2-b67a-9095c39411ee" for="history-link-7d45ab2e2ad6e59f5475e39afd4b286b1f393fc0" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+        </ol>
+</div>
+</div>  <div data-view-component="true" class="TimelineItem TimelineItem--condensed pt-2 tmp-pt-2 pb-2 tmp-pb-2">
+  
+  <div data-view-component="true" class="TimelineItem-badge"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg></div>
+  <div data-view-component="true" class="TimelineItem-body">      <h3 class="f5 text-normal color-fg-muted" >Commits on Oct 26, 2023</h3>
+        <ol class="tmp-mt-3 list-style-none Box Box--condensed tmp-ml-n6 tmp-ml-sm-0 position-relative" >
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6OTZlZTIzMmJkM2VlNGRlMmU2NTczMzNkNGQyMTkxY2QzODllMTRkMCIsInQiOjE3NzY0MzQ3MjZ9--7d0facd6a89f9641f41ed464b2c39c27eae3402de28cdfcad4039fa63eeac987"
+    data-url="/axios/axios/commits/96ee232bd3ee4de2e657333d4d2191cd389e14d0/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0">fix(CSRF): fixed CSRF vulnerability</a> <a title="CVE-2023-45857" data-hovercard-type="advisory" data-hovercard-url="/advisories/GHSA-wf5p-g6vw-rhxx/hovercard" href="https://github.com/advisories/GHSA-wf5p-g6vw-rhxx">CVE-2023-45857</a> <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0">(</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1961746242" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6028" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6028/hovercard" href="https://github.com/axios/axios/pull/6028">#6028</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0">)</a>
+
+        <span class="hidden-text-expander inline">
+            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
+</button>        </span>
+    </p>
+
+      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">Co-authored-by: DigitalBrainJS &lt;robotshara@gmail.com&gt;</pre></div>
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start AvatarStack--two " >
+  <div class="AvatarStack-body" >
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/valentin-panov/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/valentin-panov">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/63700910?s=40&amp;v=4" width="20" height="20" alt="@valentin-panov" class=" avatar-user" />
+</a>      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by valentin-panov" data-hovercard-type="user" data-hovercard-url="/users/valentin-panov/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=valentin-panov">valentin-panov</a>
+     and 
+    <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-10-26T19:54:06Z" class="no-wrap">Oct 26, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDk2ZWUyMzJiZDNlZTRkZTJlNjU3MzMzZDRkMjE5MWNkMzg5ZTE0ZDA" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-button" popovertarget="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-overlay" aria-controls="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-list" aria-haspopup="true" aria-labelledby="tooltip-3dc617b7-2f23-4afd-9c31-b3b77a5c9576" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-3dc617b7-2f23-4afd-9c31-b3b77a5c9576" for="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-overlay" anchor="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-button" id="action-menu-3674ba7a-9673-46c3-8036-de62fcdffff1-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-2fa1e5e5-a0ba-4961-9326-d5bd70a919bc" href="/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="96ee232bd3ee4de2e657333d4d2191cd389e14d0" tabindex="-1" id="item-e1f92b2f-9b3a-4099-a45f-c98213040768" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for 96ee232
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-114bb29d-1420-4dde-8113-119b5b5919f4" href="/axios/axios/tree/96ee232bd3ee4de2e657333d4d2191cd389e14d0" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-96ee232bd3ee4de2e657333d4d2191cd389e14d0" aria-label="Copy the full SHA" type="button" value="96ee232bd3ee4de2e657333d4d2191cd389e14d0" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-355963e0-e1a4-4c24-aa96-1380c5d8d5ca" for="copy-commit-96ee232bd3ee4de2e657333d4d2191cd389e14d0" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-96ee232bd3ee4de2e657333d4d2191cd389e14d0" href="/axios/axios/commit/96ee232bd3ee4de2e657333d4d2191cd389e14d0" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">96ee232</span>
+  </span>
+</a><tool-tip id="tooltip-a9b2b0ea-182f-4bab-9e46-b058202d9d5a" for="commit-details-96ee232bd3ee4de2e657333d4d2191cd389e14d0" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-96ee232bd3ee4de2e657333d4d2191cd389e14d0" href="/axios/axios/tree/96ee232bd3ee4de2e657333d4d2191cd389e14d0" aria-labelledby="tooltip-cad0eb58-59d6-469b-8d4a-0a1b19078b58" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-cad0eb58-59d6-469b-8d4a-0a1b19078b58" for="history-link-96ee232bd3ee4de2e657333d4d2191cd389e14d0" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6OTkxN2U2N2NiYjZjMTU3MzgyODYzYmFkOGM3NDFkZTU4ZTNmM2MyYiIsInQiOjE3NzY0MzQ3MjZ9--fdb16a93e9800e476daf28a7df62714bb7293aa01b68d00d716e3f48276d6a44"
+    data-url="/axios/axios/commits/9917e67cbb6c157382863bad8c741de58e3f3c2b/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/9917e67cbb6c157382863bad8c741de58e3f3c2b">chore(ci): fix release-it arg; (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1964347189" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6032" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6032/hovercard" href="https://github.com/axios/axios/pull/6032">#6032</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/9917e67cbb6c157382863bad8c741de58e3f3c2b">)</a>
+
+    </p>
+
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start  " >
+  <div class="AvatarStack-body" >
+      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-10-26T20:53:38Z" class="no-wrap">Oct 26, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKDk5MTdlNjdjYmI2YzE1NzM4Mjg2M2JhZDhjNzQxZGU1OGUzZjNjMmI" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-button" popovertarget="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-overlay" aria-controls="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-list" aria-haspopup="true" aria-labelledby="tooltip-904a1ef3-fe38-4a1e-8f64-e2548ddaa54e" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-904a1ef3-fe38-4a1e-8f64-e2548ddaa54e" for="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-overlay" anchor="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-button" id="action-menu-bc70a9d1-8d19-4abc-b44a-5910413a4d43-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-c8c7a49e-e1e3-49db-aaa2-6800beac4e44" href="/axios/axios/commit/9917e67cbb6c157382863bad8c741de58e3f3c2b" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="9917e67cbb6c157382863bad8c741de58e3f3c2b" tabindex="-1" id="item-71acf5ab-a87b-4a9f-8e6f-361412f52cc6" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for 9917e67
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-1027fb5a-2c8b-45f8-b829-1bc94a8ab235" href="/axios/axios/tree/9917e67cbb6c157382863bad8c741de58e3f3c2b" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-9917e67cbb6c157382863bad8c741de58e3f3c2b" aria-label="Copy the full SHA" type="button" value="9917e67cbb6c157382863bad8c741de58e3f3c2b" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-b27485fc-d564-4628-89de-13fae226b866" for="copy-commit-9917e67cbb6c157382863bad8c741de58e3f3c2b" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-9917e67cbb6c157382863bad8c741de58e3f3c2b" href="/axios/axios/commit/9917e67cbb6c157382863bad8c741de58e3f3c2b" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">9917e67</span>
+  </span>
+</a><tool-tip id="tooltip-e77cd33a-abbb-4f6a-b2d2-467ceac6d07a" for="commit-details-9917e67cbb6c157382863bad8c741de58e3f3c2b" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-9917e67cbb6c157382863bad8c741de58e3f3c2b" href="/axios/axios/tree/9917e67cbb6c157382863bad8c741de58e3f3c2b" aria-labelledby="tooltip-3033285b-113c-43c1-b2c8-f831aab8224f" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-3033285b-113c-43c1-b2c8-f831aab8224f" for="history-link-9917e67cbb6c157382863bad8c741de58e3f3c2b" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
+
+    </div>
+</div>  </div>
+</li>
+
+            <li class="Box-row Box-row--focus-gray mt-0 d-flex js-commits-list-item js-navigation-item"
+    data-channel="eyJjIjoicmVwbzoyMzA4ODc0MDpjb21taXQ6ZjdhZGFjZGJhYTU2OTI4MTI1M2M4Y2ZjNjIzYWQzZjRkYzkwOWM2MCIsInQiOjE3NzY0MzQ3MjZ9--94f822859b490c70f83902499c35234a775d04c5adcf9c10011f9a818e8ccb90"
+    data-url="/axios/axios/commits/f7adacdbaa569281253c8cfc623ad3f4dc909c60/commits_list_item"
+    
+    
+>
+  <div class="flex-auto min-width-0 js-details-container Details">
+    <p class="mb-1" >
+        <a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/f7adacdbaa569281253c8cfc623ad3f4dc909c60">chore(release): v1.6.0 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1964287096" data-permission-text="Title is private" data-url="https://github.com/axios/axios/issues/6031" data-hovercard-type="pull_request" data-hovercard-url="/axios/axios/pull/6031/hovercard" href="https://github.com/axios/axios/pull/6031">#6031</a><a class="Link--primary text-bold js-navigation-open markdown-title" href="/axios/axios/commit/f7adacdbaa569281253c8cfc623ad3f4dc909c60">)</a>
+
+        <span class="hidden-text-expander inline">
+            <button aria-expanded="false" aria-label="Commit message body" type="button" data-view-component="true" class="ellipsis-expander js-details-target btn">    &hellip;
+</button>        </span>
+    </p>
+
+      <div class="my-2 Details-content--hidden" ><pre class="text-small ws-pre-wrap">Co-authored-by: DigitalBrainJS &lt;DigitalBrainJS@users.noreply.github.com&gt;</pre></div>
+
+    <div class="d-flex flex-items-center mt-1" >
+      
+<div class="AvatarStack flex-self-start AvatarStack--two " >
+  <div class="AvatarStack-body" >
+      <a class="avatar" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" href="/apps/github-actions">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/in/15368?s=40&amp;v=4" width="20" height="20" alt="@github-actions" />
+</a>      <a class="avatar avatar-user" style="width:20px;height:20px;" data-test-selector="commits-avatar-stack-avatar-link" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DigitalBrainJS">
+        <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/12586868?s=40&amp;v=4" width="20" height="20" alt="@DigitalBrainJS" class=" avatar-user" />
+</a>  </div>
+</div>
+
+      <div class="f6 color-fg-muted min-width-0">
+            <a class="commit-author user-mention" title="View all commits by github-actions[bot]" data-hovercard-type="user" data-hovercard-url="/users/github-actions%5Bbot%5D/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=github-actions%5Bbot%5D">github-actions[bot]</a>
+     and 
+    <a class="commit-author user-mention" title="View all commits by DigitalBrainJS" data-hovercard-type="user" data-hovercard-url="/users/DigitalBrainJS/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/axios/axios/commits?author=DigitalBrainJS">DigitalBrainJS</a>
+    
+  authored
+  <relative-time datetime="2023-10-26T21:14:41Z" class="no-wrap">Oct 26, 2023</relative-time>
+
+      </div>
+      <div class="ml-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-shrink-0" >
+
+    
+<batch-deferred-content class="d-inline-block v-align-middle" data-url="/commits/badges">
+    <input type="hidden" name="id" value="C_kwDOAWBOZNoAKGY3YWRhY2RiYWE1NjkyODEyNTNjOGNmYzYyM2FkM2Y0ZGM5MDljNjA" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="badge_size" value="large" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+    <input type="hidden" name="dropdown_direction" value="s" data-targets="batch-deferred-content.inputs" autocomplete="off" />
+
+  
+
+    <span class="Skeleton d-inline-block mr-1" style="width:75px; height:14px; margin-bottom:-4px;"></span>
+
+</batch-deferred-content>
+
+    <action-menu data-select-variant="none" data-view-component="true" class="d-flex d-sm-none">
+  <focus-group direction="vertical" mnemonics retain>
+    <button id="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-button" popovertarget="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-overlay" aria-controls="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-list" aria-haspopup="true" aria-labelledby="tooltip-5e29c04f-f58a-4cbc-986e-dcf91d5d8550" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+</svg>
+</button><tool-tip id="tooltip-5e29c04f-f58a-4cbc-986e-dcf91d5d8550" for="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Configuration menu</tool-tip>
+
+
+<anchored-position data-target="action-menu.overlay" id="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-overlay" anchor="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
+  <div data-view-component="true" class="Overlay Overlay--size-auto">
+    
+      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
+  <div data-view-component="true">
+    <ul aria-labelledby="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-button" id="action-menu-e5c9986d-cc7b-42d2-82e9-7175e95f4dd0-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-c7508232-6a14-4e75-a8bc-e03d4f326ea9" href="/axios/axios/commit/f7adacdbaa569281253c8cfc623ad3f4dc909c60" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-commit">
+    <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          View commit details
+</span>      
+</a>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <clipboard-copy value="f7adacdbaa569281253c8cfc623ad3f4dc909c60" tabindex="-1" id="item-e1a8d877-f2c8-4750-9e2b-190312058e98" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Copy full SHA for f7adacd
+</span>      
+</clipboard-copy>
+  
+</li>
+        <li data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
+    
+    
+    <a tabindex="-1" id="item-b4550262-f10d-4bea-aa5e-654da8134fe1" href="/axios/axios/tree/f7adacdbaa569281253c8cfc623ad3f4dc909c60" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
+        <span class="ActionListItem-visual ActionListItem-visual--leading">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+        </span>
+      
+        <span data-view-component="true" class="ActionListItem-label">
+          Browse repository at this point
+</span>      
+</a>
+  
+</li>
+</ul>    
+</div></action-list>
+
+
+</div>
+      
+</div></anchored-position>  </focus-group>
+</action-menu>
+    <div data-view-component="true" class="ButtonGroup mr-2 tmp-mr-2 d-none d-sm-flex">
+    <div>
+      <span data-view-component="true">
+  <clipboard-copy id="copy-commit-f7adacdbaa569281253c8cfc623ad3f4dc909c60" aria-label="Copy the full SHA" type="button" value="f7adacdbaa569281253c8cfc623ad3f4dc909c60" data-view-component="true" class="Button--secondary Button--small Button px-2 tmp-px-2 py-2 tmp-py-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg style="display: none;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+</clipboard-copy>  <div aria-live="polite" aria-atomic="true" class="sr-only" data-clipboard-copy-feedback></div>
+</span><tool-tip id="tooltip-d9f75ab4-4f4f-445e-9cd6-13cab2b97f30" for="copy-commit-f7adacdbaa569281253c8cfc623ad3f4dc909c60" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Copy the full SHA</tool-tip>
+
+    </div>
+    <div>
+      <a id="commit-details-f7adacdbaa569281253c8cfc623ad3f4dc909c60" href="/axios/axios/commit/f7adacdbaa569281253c8cfc623ad3f4dc909c60" data-view-component="true" class="Button--secondary Button--small Button text-mono f6">  <span class="Button-content">
+    <span class="Button-label">f7adacd</span>
+  </span>
+</a><tool-tip id="tooltip-3694d85e-13b2-4773-a29c-2cd533586cf7" for="commit-details-f7adacdbaa569281253c8cfc623ad3f4dc909c60" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">View commit details</tool-tip>
+
+    </div>
+</div>
+    <div data-view-component="true" class="ButtonGroup d-none d-sm-flex">
+    <div>
+      <a id="history-link-f7adacdbaa569281253c8cfc623ad3f4dc909c60" href="/axios/axios/tree/f7adacdbaa569281253c8cfc623ad3f4dc909c60" aria-labelledby="tooltip-b6fa852b-da82-474f-b55e-501bfca845b7" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code Button-visual">
+    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+</svg>
+</a><tool-tip id="tooltip-b6fa852b-da82-474f-b55e-501bfca845b7" for="history-link-f7adacdbaa569281253c8cfc623ad3f4dc909c60" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Browse the repository at this point in the history</tool-tip>
 
     </div>
 </div>  </div>
@@ -2297,7 +3023,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
         </div>
 
   <div id="files_bucket" class="files-bucket " >
-    <include-fragment aria-label="Loading Files" src="/axios/axios/compare/file-list?range=v1.8.3...v1.8.4" data-nonce="v2:d0f7a2c5-4239-00db-391b-e4e478436b29" data-view-component="true">
+    <include-fragment aria-label="Loading Files" src="/axios/axios/compare/file-list?range=v1.5.1...v1.6.0" data-nonce="v2:11c7e628-d628-e9cd-71ad-43cfa90550e9" data-view-component="true">
   
       <div data-hide-on-error>
         <span data-view-component="true">
@@ -2317,7 +3043,7 @@ Co-authored-by: Jay &lt;jasonsaayman@gmail.com&gt;</pre></div>
   
           <p>
             You can try running this command locally to see the comparison on your machine: <br>
-            <code>git diff v1.8.3...v1.8.4</code>
+            <code>git diff v1.5.1...v1.6.0</code>
           </p>
 
 </div>          <button data-retry-button="" type="button" data-view-component="true" class="btn">    Retry
