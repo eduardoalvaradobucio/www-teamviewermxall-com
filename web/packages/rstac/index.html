@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rstac</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rstac">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Client Library for SpatioTemporal Asset Catalog [R package rstac version 1.0.1]">
+<meta name="citation_author1" content="Rolf Simoes">
+<meta name="citation_author2" content="Felipe Carvalho">
+<meta name="citation_author3" content="Brazil Data Cube Team">
+<meta name="citation_publication_date" content="2024-07-18">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rstac">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rstac">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rstac: Client Library for SpatioTemporal Asset Catalog">
+<meta property="og:description" content="Provides functions to access, search and download spacetime earth observation data via SpatioTemporal Asset Catalog (STAC). This package supports the version 1.0.0 (and older) of the STAC specification (&amp;lt;&lt;a href=&quot;https://github.com/radiantearth/stac-spec&quot; target=&quot;_top&quot;&gt;https://github.com/radiantearth/stac-spec&lt;/a&gt;&amp;gt;). For further details see Simoes et al. (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FIGARSS47720.2021.9553518&quot; target=&quot;_top&quot;&gt;doi:10.1109/IGARSS47720.2021.9553518&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rstac">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rstac: Client Library for SpatioTemporal Asset Catalog</h2>
+<p>Provides functions to access, search and download spacetime earth
+    observation data via SpatioTemporal Asset Catalog (STAC). This package 
+    supports the version 1.0.0 (and older) of the STAC specification
+    (&lt;<a href="https://github.com/radiantearth/stac-spec" target="_top">https://github.com/radiantearth/stac-spec</a>&gt;). 
+    For further details see Simoes et al. (2021) &lt;<a href="https://doi.org/10.1109%2FIGARSS47720.2021.9553518" target="_top">doi:10.1109/IGARSS47720.2021.9553518</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../crayon/index.html"><span class="CRAN">crayon</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../jpeg/index.html"><span class="CRAN">jpeg</span></a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../tmap/index.html"><span class="CRAN">tmap</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a>, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../slider/index.html"><span class="CRAN">slider</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-07-18</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rstac">10.32614/CRAN.package.rstac</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rolf Simoes [aut],
+  Felipe Carvalho [aut, cre],
+  Brazil Data Cube Team [aut],
+  National Institute for Space Research (INPE) [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Felipe Carvalho  &#x3c;&#x6c;&#x69;&#x70;&#x65;&#x63;&#x61;&#x73;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/brazil-data-cube/rstac/issues" target="_top"><span class="GitHub">https://github.com/brazil-data-cube/rstac/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://brazil-data-cube.github.io/rstac/" target="_top"><span class="GitHub">https://brazil-data-cube.github.io/rstac/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rstac citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a>, <a href="../../views/SpatioTemporal.html"><span class="CRAN">SpatioTemporal</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rstac.html"><span class="CRAN">rstac results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rstac.html"><span class="CRAN">rstac.html</span></a> ,  <a href="rstac.pdf"><span class="CRAN">rstac.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rstac_1.0.1.tar.gz"> <span class="CRAN"> rstac_1.0.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rstac_1.0.1.zip"><span class="CRAN">rstac_1.0.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rstac_1.0.1.zip"><span class="CRAN">rstac_1.0.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rstac_1.0.1.zip"><span class="CRAN">rstac_1.0.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rstac_1.0.1.tgz"><span class="CRAN">rstac_1.0.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rstac_1.0.1.tgz"><span class="CRAN">rstac_1.0.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rstac_1.0.1.tgz"><span class="CRAN">rstac_1.0.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rstac_1.0.1.tgz"><span class="CRAN">rstac_1.0.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rstac"> <span class="CRAN"> rstac archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../greenR/index.html"><span class="CRAN">greenR</span></a>, <a href="../greenSD/index.html"><span class="CRAN">greenSD</span></a>, <a href="../rcrisp/index.html"><span class="CRAN">rcrisp</span></a>, <a href="../rsi/index.html"><span class="CRAN">rsi</span></a>, <a href="../sits/index.html"><span class="CRAN">sits</span></a>, <a href="../stacr/index.html"><span class="CRAN">stacr</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../aboveR/index.html"><span class="CRAN">aboveR</span></a>, <a href="../BFS/index.html"><span class="CRAN">BFS</span></a>, <a href="../earthdatalogin/index.html"><span class="CRAN">earthdatalogin</span></a>, <a href="../mapme.biodiversity/index.html"><span class="CRAN">mapme.biodiversity</span></a>, <a href="../spanner/index.html"><span class="CRAN">spanner</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rstac"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rstac</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

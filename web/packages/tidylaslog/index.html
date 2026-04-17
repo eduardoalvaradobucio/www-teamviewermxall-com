@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package tidylaslog</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=tidylaslog">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Tidy Import, Indexing, and Export of LAS Well Log Data [R package tidylaslog version 0.1.2]">
+<meta name="citation_author" content="Hope E. Omodolor">
+<meta name="citation_publication_date" content="2026-02-12">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tidylaslog">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tidylaslog">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="tidylaslog: Tidy Import, Indexing, and Export of LAS Well Log Data">
+<meta property="og:description" content=" Provides tools for reading, parsing, indexing, and exporting LAS (Log ASCII Standard) well log files into tidy, analysis-ready tabular formats. The package separates LAS header information and log data into structured components, builds a searchable index across collections of LAS files, and enables reproducible subsetting of wells based on metadata or curve availability. Output tables can be written to CSV or Parquet formats to support large-scale statistical, machine learning, and earth science workflows. The tidy data structure follows Wickham (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v059.i10&quot; target=&quot;_top&quot;&gt;doi:10.18637/jss.v059.i10&lt;/a&gt;&amp;gt;. The LAS file structure follows the Canadian Well Logging Society LAS standard &amp;lt;&lt;a href=&quot;https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Jan2017.pdf&quot; target=&quot;_top&quot;&gt;https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Jan2017.pdf&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=tidylaslog">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>tidylaslog: Tidy Import, Indexing, and Export of LAS Well Log Data</h2>
+<p>
+    Provides tools for reading, parsing, indexing, and exporting LAS (Log ASCII
+    Standard) well log files into tidy, analysis-ready tabular formats. The
+    package separates LAS header information and log data into structured
+    components, builds a searchable index across collections of LAS files,
+    and enables reproducible subsetting of wells based on metadata or curve
+    availability. Output tables can be written to CSV or Parquet formats to
+    support large-scale statistical, machine learning, and earth science
+    workflows. The tidy data structure follows Wickham (2014) &lt;<a href="https://doi.org/10.18637%2Fjss.v059.i10" target="_top">doi:10.18637/jss.v059.i10</a>&gt;.
+    The LAS file structure follows the Canadian Well Logging Society LAS standard
+    &lt;<a href="https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Jan2017.pdf" target="_top">https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Jan2017.pdf</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-12</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.tidylaslog">10.32614/CRAN.package.tidylaslog</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hope E. Omodolor <a href="https://orcid.org/0009-0005-7842-406X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hope E. Omodolor  &#x3c;&#x68;&#x6f;&#x70;&#x65;&#x6f;&#x6d;&#x6f;&#x64;&#x6f;&#x6c;&#x6f;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Omodolor/tidylaslog/issues" target="_top"><span class="GitHub">https://github.com/Omodolor/tidylaslog/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Omodolor/tidylaslog" target="_top"><span class="GitHub">https://github.com/Omodolor/tidylaslog</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tidylaslog.html"><span class="CRAN">tidylaslog results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/tidylaslog.html"><span class="CRAN">tidylaslog.html</span></a> ,  <a href="tidylaslog.pdf"><span class="CRAN">tidylaslog.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tidylaslog_0.1.2.tar.gz"> <span class="CRAN"> tidylaslog_0.1.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/tidylaslog_0.1.2.zip"><span class="CRAN">tidylaslog_0.1.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/tidylaslog_0.1.2.zip"><span class="CRAN">tidylaslog_0.1.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/tidylaslog_0.1.2.zip"><span class="CRAN">tidylaslog_0.1.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/tidylaslog_0.1.2.tgz"><span class="CRAN">tidylaslog_0.1.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/tidylaslog_0.1.2.tgz"><span class="CRAN">tidylaslog_0.1.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/tidylaslog_0.1.2.tgz"><span class="CRAN">tidylaslog_0.1.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/tidylaslog_0.1.2.tgz"><span class="CRAN">tidylaslog_0.1.2.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tidylaslog"><span class="CRAN"><samp>https://CRAN.R-project.org/package=tidylaslog</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

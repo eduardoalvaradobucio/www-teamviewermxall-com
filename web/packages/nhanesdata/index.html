@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package nhanesdata</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=nhanesdata">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Harmonized Access to NHANES Survey Data [R package nhanesdata version 0.2.1]">
+<meta name="citation_author" content="Kyle Grealis">
+<meta name="citation_publication_date" content="2026-02-28">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nhanesdata">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nhanesdata">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="nhanesdata: Harmonized Access to NHANES Survey Data">
+<meta property="og:description" content="Instant access to harmonized National Health and Nutrition Examination Survey (NHANES) data spanning 1999-2023. Retrieve pre-processed datasets from reliable cloud storage with automatic type reconciliation and integrated search tools for variables and datasets. Simplifies NHANES data workflows by handling cycle management and maintaining data consistency across survey waves. Data is sourced from &amp;lt;&lt;a href=&quot;https://www.cdc.gov/nchs/nhanes/&quot; target=&quot;_top&quot;&gt;https://www.cdc.gov/nchs/nhanes/&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=nhanesdata">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>nhanesdata: Harmonized Access to NHANES Survey Data</h2>
+<p>Instant access to harmonized National Health and Nutrition Examination Survey (NHANES) data spanning 1999-2023. Retrieve pre-processed datasets from reliable cloud storage with automatic type reconciliation and integrated search tools for variables and datasets. Simplifies NHANES data workflows by handling cycle management and maintaining data consistency across survey waves. Data is sourced from &lt;<a href="https://www.cdc.gov/nchs/nhanes/" target="_top">https://www.cdc.gov/nchs/nhanes/</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../nhanesA/index.html"><span class="CRAN">nhanesA</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../srvyr/index.html"><span class="CRAN">srvyr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../httptest2/index.html"><span class="CRAN">httptest2</span></a>, <a href="../janitor/index.html"><span class="CRAN">janitor</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../paws.storage/index.html"><span class="CRAN">paws.storage</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../reactable/index.html"><span class="CRAN">reactable</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-28</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.nhanesdata">10.32614/CRAN.package.nhanesdata</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kyle Grealis <a href="https://orcid.org/0000-0002-9223-8854" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Amrit Baral <a href="https://orcid.org/0000-0002-0961-9665" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Natalie Neugaard <a href="https://orcid.org/0009-0008-0820-5111" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Raymond Balise <a href="https://orcid.org/0000-0002-9856-5901" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Johannes Thrul <a href="https://orcid.org/0000-0001-8929-9579" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Janardan Devkota <a href="https://orcid.org/0009-0007-6734-777X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kyle Grealis  &#x3c;&#x6b;&#x79;&#x6c;&#x65;&#x67;&#x72;&#x65;&#x61;&#x6c;&#x69;&#x73;&#x20;&#x61;&#x74;&#x20;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x2e;&#x6d;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/kyleGrealis/nhanesdata/issues" target="_top"><span class="GitHub">https://github.com/kyleGrealis/nhanesdata/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/kyleGrealis/nhanesdata" target="_top"><span class="GitHub">https://github.com/kyleGrealis/nhanesdata</span></a>,
+<a href="https://www.kylegrealis.com/nhanesdata/" target="_top">https://www.kylegrealis.com/nhanesdata/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">nhanesdata citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nhanesdata.html"><span class="CRAN">nhanesdata results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/nhanesdata.html"><span class="CRAN">nhanesdata.html</span></a> ,  <a href="nhanesdata.pdf"><span class="CRAN">nhanesdata.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/covid-data-exclusion.html"><span class="CRAN">COVID-19 and the 2019-2020 NHANES Cycle</span></a> (<a href="vignettes/covid-data-exclusion.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/covid-data-exclusion.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting-started.html"><span class="CRAN">Getting Started with NHANES Data</span></a> (<a href="vignettes/getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/survey-design.html"><span class="CRAN">Creating Survey Design Objects</span></a> (<a href="vignettes/survey-design.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/survey-design.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/the-datasets.html"><span class="CRAN">Available NHANES Datasets</span></a> (<a href="vignettes/the-datasets.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/the-datasets.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nhanesdata_0.2.1.tar.gz"> <span class="CRAN"> nhanesdata_0.2.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/nhanesdata_0.2.1.zip"><span class="CRAN">nhanesdata_0.2.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/nhanesdata_0.2.1.zip"><span class="CRAN">nhanesdata_0.2.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/nhanesdata_0.2.1.zip"><span class="CRAN">nhanesdata_0.2.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/nhanesdata_0.2.1.tgz"><span class="CRAN">nhanesdata_0.2.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/nhanesdata_0.2.1.tgz"><span class="CRAN">nhanesdata_0.2.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/nhanesdata_0.2.1.tgz"><span class="CRAN">nhanesdata_0.2.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/nhanesdata_0.2.1.tgz"><span class="CRAN">nhanesdata_0.2.1.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nhanesdata"><span class="CRAN"><samp>https://CRAN.R-project.org/package=nhanesdata</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  dir="ltr"
+  lang="en-US"
+  prefix="og: http://ogp.me/ns#">
+  <!-- htmllint preset="none" -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="en-us" />
+  <meta name="robots" content="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Bioconductor project aims to develop and share open source software for precise and repeatable analysis of biological data. We foster an inclusive and collaborative community of developers and data scientists." />
+
+  
+  <meta property="og:title" content="clusterProfiler" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bioconductor" />
+  <meta property="og:description" content="This package supports functional characteristics of both coding and non-coding genomics data for thousands of species with up-to-date gene annotation. It provides a universal interface for gene functional annotation from a variety of sources and thus can be applied in diverse scenarios. It provides a tidy interface to access, manipulate, and visualize enrichment results to help users achieve efficient data interpretation. Datasets obtained from multiple treatments and time points can be analyzed and compared in a single run, easily revealing functional consensus and differences among distinct gene clusters." />
+  <meta property="og:url" content="http://bioconductor.org/packages/clusterProfiler/" />
+  <meta property="og:image" content="http://bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg" />
+
+
+  
+    
+  
+    
+  <title>Bioconductor - clusterProfiler</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <link rel="stylesheet" href="/style/existing.css" />
+   
+  <!-- General styling -->
+  <link rel="stylesheet" type="text/css" href="/style/base/fonts.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/base/colors.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/base/typography.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/base/layout.css" media="screen" />
+    
+  <!-- Component styling -->
+
+  <link rel="stylesheet" type="text/css" href="/style/components/code.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/gallery.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/blockquote.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/lists.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/breadcrumbs.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/buttons.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/components/tables.css" media="screen" />
+
+  <!-- Block styling -->
+  <link rel="stylesheet" type="text/css" href="/style/sections/announcement.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/sections/hero.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/sections/header.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/sections/sidebar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/sections/footer.css" media="screen"/>
+
+  <!-- Page styling -->
+  <link rel="stylesheet" type="text/css" href="/style/pages/home.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/pages/get-started.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/pages/learn-and-dev.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/pages/about.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/style/pages/packages.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/style/pages/orcid.css" media="screen"/>
+
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="/favicon.ico" />
+  <link rel="ICON" type="image/x-icon" href="/favicon.ico" />
+
+
+</head>
+
+  <body>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-WJMEEH1J58"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-WJMEEH1J58");
+</script>
+
+
+<script
+  type="text/javascript"
+  src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  if (!window.location.href.match(/bioconductor\.org|\/\/localhost|amazonaws\.com/|cloudfront\.net/i)) {
+    var mirror = true;
+    document.write('<base href="//www.bioconductor.org"/>\n');
+  }
+</script>
+
+ 
+<script src="/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/js/bioconductor.js"></script>
+
+<script type="text/javascript" src="/js/jquery.corner.js"></script>
+<script type="text/javascript" src="/js/jquery.timeago.js"></script>
+<script type="text/javascript" src="/js/bioc-style.js"></script>
+<script type="text/javascript" src="/js/versions.js"></script>
+<script type="text/javascript" src="/js/code_blocks.js"></script>
+<script type="text/javascript" src="/js/sidebar.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <header id="site-masthead" class="site-masthead">
+  <div class="announcement announcement-brand">
+ <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+     <path
+       d="M9.50003 6.75V8.25M9.50003 11.25H9.50753M4.30387 14.25H14.6962C15.8509 14.25 16.5726 13 15.9952 12L10.7991 3C10.2217 2 8.77834 2 8.20099 3L3.00484 12C2.42749 13 3.14917 14.25 4.30387 14.25Z"
+       stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+ </svg>
+
+     <p style="font-size:125%">
+         <a href="https://bioconductor.org/developers/release-schedule/">Bioconductor
+         3.23</a> Release Schedule
+     </p>
+</div>
+
+  <!-- If there are no announcements, comment out the element  -->
+  <div class="header-size">
+    <div class="header-logo">
+      <a href="/">
+        <img
+          src="/images/logo/svg/Logo.svg"
+          class="masthead-logo"
+          alt="Bioconductor home"
+        />
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <div class="nav-links">
+        <a class="format-bold mobile-link" href="/about/">About</a>
+        <a class="format-bold mobile-link" href="/help/">Learn</a>
+        <a class="format-bold mobile-link" href="/packages/release/BiocViews.html#___Software">Packages</a>
+        <a class="format-bold mobile-link" href="/developers/">Developers</a>
+      </div>
+      <div class="search-container">
+        <form
+          class="site-search"
+          id="search-form"
+          method="GET"
+          action="/help/search/index.html"
+        >
+          <label for="search-bar" class="sr-only">Search</label>
+          <img
+            src="/images/icons/search-icon.svg"
+            class="search-icon"
+            alt="Search icon"
+            aria-hidden="true"
+          />
+          <input
+            class="search-bar"
+            name="search-bar"
+            placeholder="Search"
+            id="search-bar"
+          />
+        </form>
+      </div>
+
+      <a class="header-button format-bold mobile-link" href="/install/">
+        <span class="get-started format-bold">
+          Get Started
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            fill="none"
+          >
+            <path
+              d="M5.25 3.66665L9.33333 7.74998L5.25 11.8333"
+              stroke="#3792AD"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <div class="nav-mobile">
+      <h6>Menu</h6>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    
+
+    <main>
+      
+        <div class="container">
+      
+
+        
+
+        <section class="content">
+          
+          <ul class="breadcrumbs">
+  
+  
+  
+    
+      
+      <li><a href="/">Home</a></li>
+    
+  
+  
+    
+      
+      <li><a href="/packages/3.22/BiocViews.html">Bioconductor 3.22</a></li>
+    
+  
+  
+    
+      
+      <li><a href="/packages/3.22/bioc">Software Packages</a></li>
+    
+  
+  
+    
+      <li>clusterProfiler</li>
+    
+  
+</ul>
+
+          
+   
+          
+
+          
+          <h1>clusterProfiler</h1>
+
+<div>
+  
+
+  <p>This is the <b>released</b> version of clusterProfiler; for the devel version, see
+<a href="/packages/devel/bioc/html/clusterProfiler.html">clusterProfiler</a>.</p>
+
+  
+
+  <h2>A universal enrichment tool for interpreting omics data</h2>
+
+  <div class="sidebar-box" id="badges-box">
+
+<section class="badges">
+   
+  
+    
+    
+    
+      
+    
+  
+
+  <a href="#archives">
+    <img
+      src="/shields/availability/release/clusterProfiler.svg"
+      alt="Platform availability badge"
+      title="Whether the package is available on all platforms; click for details."
+    />
+  </a>
+
+  
+  
+  
+  
+    <a href="http://bioconductor.org/packages/stats/bioc/clusterProfiler/">
+      <img
+        src="/shields/downloads/release/clusterProfiler.svg"
+        alt="Ranking badge"
+        title="Ranking by number of downloads. A lower number means the package is downloaded more frequently. Determined within a package type (software, experiment, annotation, workflow) and uses the number of distinct IPs for the last 12 months."
+      />
+    </a>
+  
+
+  
+  
+  
+    <a href="https://support.bioconductor.org/tag/clusterprofiler">
+      <img
+        src="/shields/posts/clusterProfiler.svg"
+        alt="Support activity badge"
+        title="Support site activity, last 6 months: answered posts / total posts."
+      />
+    </a>
+  
+
+  
+  
+  
+    <a href="#since">
+      <img
+        src="/shields/years-in-bioc/clusterProfiler.svg"
+        alt="Years in BioConductor badge"
+        title="How long since the package was first in a released Bioconductor version (or is it in devel only)."
+      />
+    </a>
+  
+
+  
+  
+  
+    
+    
+      <a href="https://bioconductor.org/checkResults/release/bioc-LATEST/clusterProfiler/">
+        <img
+          src="/shields/build/release/bioc/clusterProfiler.svg"
+          alt="Build results badge"
+          title="build results; click for full report"
+        />
+      </a>
+    
+  
+
+  
+  
+    
+    
+      <a href="https://bioconductor.org/checkResults/release/bioc-LATEST/clusterProfiler/">
+        <img
+          src="/shields/lastcommit/release/bioc/clusterProfiler.svg"
+          alt="Last commit badge"
+          title="time since last commit. possible values: today, < 1 week, < 1 month, < 3 months, since release, before release"
+        />
+      </a>
+    
+  
+
+  
+  
+    
+    
+      <a href="#since">
+        <img
+          src="/shields/dependencies/release/clusterProfiler.svg"
+          alt="Dependency count badge"
+          title="Number of recursive dependencies needed to install package."
+        />
+      </a>
+    
+  
+</section>
+
+
+<p>
+  DOI:
+  <a
+    title="DOI for use in publications, etc., will always redirect to current release version (or devel if package is not in release yet)."
+    href="https://doi.org/doi:10.18129/B9.bioc.clusterProfiler"
+  >
+    10.18129/B9.bioc.clusterProfiler
+  </a>
+</p>
+</div>
+
+  <p><br></p>
+  
+  <div class="package-info">
+
+    <p>
+      <strong>Bioconductor version:</strong> Release (3.22)
+    </p>
+    <p>
+      This package supports functional characteristics of both coding and non-coding genomics data for thousands of species with up-to-date gene annotation. It provides a universal interface for gene functional annotation from a variety of sources and thus can be applied in diverse scenarios. It provides a tidy interface to access, manipulate, and visualize enrichment results to help users achieve efficient data interpretation. Datasets obtained from multiple treatments and time points can be analyzed and compared in a single run, easily revealing functional consensus and differences among distinct gene clusters.
+    </p>
+    <p>
+      <strong>Author:</strong> Guangchuang Yu [aut, cre, cph]            <a href="https://orcid.org/0000-0002-6485-8781" title="ORCID iD" class="orcid-container">
+             <img src="/images/orcid.png" alt="ORCID iD" class="orcid-icon">
+             <span class="orcid-expanded"> ORCID: 0000-0002-6485-8781 </span>
+           </a>
+, Li-Gen Wang [ctb], Xiao Luo [ctb], Meijun Chen [ctb], Giovanni Dall'Olio [ctb], Wanqian Wei [ctb], Chun-Hui Gao [ctb]            <a href="https://orcid.org/0000-0002-1445-7939" title="ORCID iD" class="orcid-container">
+             <img src="/images/orcid.png" alt="ORCID iD" class="orcid-icon">
+             <span class="orcid-expanded"> ORCID: 0000-0002-1445-7939 </span>
+           </a>
+
+    <p />
+    <p>
+      <strong>Maintainer:</strong> Guangchuang Yu &#x3c;&#x67;&#x75;&#x61;&#x6e;&#x67;&#x63;&#x68;&#x75;&#x61;&#x6e;&#x67;&#x79;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;
+    </p>
+    <div id="bioc-citation-outer">
+      <strong>Citation (from within R, enter <code>citation("clusterProfiler")</code>):</strong>
+      <div id="bioc-citation" class="bioc-citation"></div>
+    </div>
+  </div>
+
+
+
+  <h3>Installation</h3>
+
+<p>
+  To install this package, start R (version "4.5") and enter:
+</p>
+
+<pre><code>
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("clusterProfiler")
+</code></pre>
+
+<p>
+  For older versions of R, please refer to the appropriate	<a href="/about/release-announcements/">Bioconductor release</a>.
+</p>
+
+  <h3>Documentation</h3>
+
+
+<p>To view documentation for the version of this package installed in your system, start R and enter:</p>
+<pre><code>browseVignettes("clusterProfiler")</code></pre>
+
+
+<table>
+  
+  
+    
+
+      <tr>
+        <td>clusterProfiler.html</td>
+        <td>
+          
+          <a href="../vignettes/clusterProfiler/inst/doc/clusterProfiler.html">HTML</a>
+          
+        </td>
+        
+      </tr>
+    
+  
+
+  
+    <tr>
+      <td>Reference Manual</td>
+      <td>
+        <a onClick="javascript: pageTracker._trackPageview('../manuals/clusterProfiler/man/clusterProfiler.pdf'); " href="../manuals/clusterProfiler/man/clusterProfiler.pdf">PDF</a>
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    <tr>
+      <td>NEWS</td>
+      <td>
+        <a href="../news/clusterProfiler/NEWS">Text</a>
+      </td>
+    </tr>
+  
+
+
+  
+
+
+  
+
+  
+    
+</table>
+
+
+<p>
+  <div class="info-section-button-padding">
+      <a class="brand-border-button" href="https://support.bioconductor.org/tag/clusterprofiler">
+        <span class="span-brand format-bold">
+          Need some help? Ask on the Bioconductor Support site!
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            fill="none"
+          >
+            <path
+              d="M5.25 3.66665L9.33333 7.74998L5.25 11.8333"
+              stroke="#3792AD"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </a>
+  </div>
+</p>
+
+  <h3 id="details">Details</h3>
+  <table class="full-width">
+	  <tr>
+	    <td>biocViews</td>
+	    <td><a href="../../BiocViews.html#___Annotation">Annotation</a>, <a href="../../BiocViews.html#___Clustering">Clustering</a>, <a href="../../BiocViews.html#___GO">GO</a>, <a href="../../BiocViews.html#___GeneSetEnrichment">GeneSetEnrichment</a>, <a href="../../BiocViews.html#___KEGG">KEGG</a>, <a href="../../BiocViews.html#___MultipleComparison">MultipleComparison</a>, <a href="../../BiocViews.html#___Pathways">Pathways</a>, <a href="../../BiocViews.html#___Reactome">Reactome</a>, <a href="../../BiocViews.html#___Software">Software</a>, <a href="../../BiocViews.html#___Visualization">Visualization</a></td>
+  	</tr>
+
+	  <tr>
+	    <td>Version</td>
+	    <td>4.18.4</td>
+  	</tr>
+
+	  
+	    <tr id="since">
+		    <td>In Bioconductor since</td>
+    		<td>BioC 2.8 (R-2.13) (15 years)</td>
+	    </tr>
+  	
+
+  	<tr>
+	    <td>License</td>
+	    
+                <td>Artistic-2.0</td>
+	    
+  	</tr>
+
+	  <tr>
+	    <td>Depends</td>
+	    <td>R (>= 4.2.0)</td>
+  	</tr>
+
+  	<tr>
+	    <td>Imports</td>
+	    <td><a href="../../bioc/html/AnnotationDbi.html">AnnotationDbi</a>, <a href="../../bioc/html/DOSE.html">DOSE</a>(>= 3.23.2), <a class="cran_package" href="http://cran.rstudio.com/web/packages/dplyr/index.html">dplyr</a>, <a href="../../bioc/html/enrichplot.html">enrichplot</a>(>= 1.9.3), <a href="../../data/annotation/html/GO.db.html">GO.db</a>, <a href="../../bioc/html/GOSemSim.html">GOSemSim</a>(>= 2.27.2), <a class="cran_package" href="http://cran.rstudio.com/web/packages/gson/index.html">gson</a> (>= 0.0.7), <a class="cran_package" href="http://cran.rstudio.com/web/packages/httr/index.html">httr</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/igraph/index.html">igraph</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/magrittr/index.html">magrittr</a>, methods, <a class="cran_package" href="http://cran.rstudio.com/web/packages/plyr/index.html">plyr</a>, <a href="../../bioc/html/qvalue.html">qvalue</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/rlang/index.html">rlang</a>, stats, <a class="cran_package" href="http://cran.rstudio.com/web/packages/tidyr/index.html">tidyr</a>, utils, <a class="cran_package" href="http://cran.rstudio.com/web/packages/yulab.utils/index.html">yulab.utils</a> (>= 0.2.3)</td>
+  	</tr>
+
+  	<tr>
+	    <td>System Requirements</td>
+	    <td></td>
+	  </tr>
+
+ 	<tr>
+	    <td>URL</td>
+	    <td><a href="https://yulab-smu.top/contribution-knowledge-mining/">https://yulab-smu.top/contribution-knowledge-mining/</a> </td>
+	  </tr>
+
+  	
+	    <tr>
+		    <td>Bug Reports</td>
+    		<td><a href="https://github.com/YuLab-SMU/clusterProfiler/issues">https://github.com/YuLab-SMU/clusterProfiler/issues</a> </td>
+	    </tr>
+  	
+</table>
+
+<details>
+  <summary class="package-details">See More</summary>
+  <table class="full-width">
+
+  	<tr>
+	    <td>Suggests</td>
+	    <td><a href="../../bioc/html/AnnotationHub.html">AnnotationHub</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/BiocManager/index.html">BiocManager</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/jsonlite/index.html">jsonlite</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/readr/index.html">readr</a>, <a href="../../data/annotation/html/org.Hs.eg.db.html">org.Hs.eg.db</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/quarto/index.html">quarto</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/testthat/index.html">testthat</a></td>
+  	</tr>
+ 
+        <tr>
+	    <td>Linking To</td>
+	    <td></td>
+  	</tr>
+	
+  	<tr>
+	    <td>Enhances</td>
+	    <td></td>
+	  </tr>
+ 
+        <tr>
+	    <td>Depends On Me</td>
+	    <td><a href="../../workflows/html/maEndToEnd.html">maEndToEnd</a></td>
+  	</tr>
+
+	<tr>
+	    <td>Imports Me</td>
+	    <td><a href="../../bioc/html/bioCancer.html">bioCancer</a>, <a href="../../bioc/html/broadSeq.html">broadSeq</a>, <a href="../../bioc/html/CaMutQC.html">CaMutQC</a>, <a href="../../bioc/html/CBNplot.html">CBNplot</a>, <a href="../../bioc/html/CEMiTool.html">CEMiTool</a>, <a href="../../bioc/html/CeTF.html">CeTF</a>, <a href="../../bioc/html/debrowser.html">debrowser</a>, <a href="../../bioc/html/EasyCellType.html">EasyCellType</a>, <a href="../../bioc/html/epiregulon.extra.html">epiregulon.extra</a>, <a href="../../bioc/html/esATAC.html">esATAC</a>, <a href="../../bioc/html/famat.html">famat</a>, <a href="../../bioc/html/GDCRNATools.html">GDCRNATools</a>, <a href="../../bioc/html/goSorensen.html">goSorensen</a>, <a href="../../bioc/html/MetaPhOR.html">MetaPhOR</a>, <a href="../../bioc/html/methylGSA.html">methylGSA</a>, <a href="../../bioc/html/MicrobiomeProfiler.html">MicrobiomeProfiler</a>, <a href="../../bioc/html/miRSM.html">miRSM</a>, <a href="../../bioc/html/miRspongeR.html">miRspongeR</a>, <a href="../../bioc/html/mitology.html">mitology</a>, <a href="../../bioc/html/Moonlight2R.html">Moonlight2R</a>, <a href="../../bioc/html/MoonlightR.html">MoonlightR</a>, <a href="../../bioc/html/mosdef.html">mosdef</a>, <a href="../../bioc/html/PanomiR.html">PanomiR</a>, <a href="../../bioc/html/pathlinkR.html">pathlinkR</a>, <a href="../../bioc/html/Pigengene.html">Pigengene</a>, <a href="../../bioc/html/ReducedExperiment.html">ReducedExperiment</a>, <a href="../../bioc/html/RFLOMICS.html">RFLOMICS</a>, <a href="../../bioc/html/signatureSearch.html">signatureSearch</a>, <a href="../../bioc/html/vsclust.html">vsclust</a>, <a href="../../workflows/html/ExpHunterSuite.html">ExpHunterSuite</a>, <a href="../../workflows/html/recountWorkflow.html">recountWorkflow</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/DRviaSPCN/index.html">DRviaSPCN</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/genekitr/index.html">genekitr</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/PathwayVote/index.html">PathwayVote</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/SurprisalAnalysis/index.html">SurprisalAnalysis</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/tinyarray/index.html">tinyarray</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/XYomics/index.html">XYomics</a></td>
+  	</tr>
+
+  	<tr>
+	    <td>Suggests Me</td>
+	    <td><a href="../../bioc/html/ChIPseeker.html">ChIPseeker</a>, <a href="../../bioc/html/cola.html">cola</a>, <a href="../../bioc/html/DAPAR.html">DAPAR</a>, <a href="../../bioc/html/DeeDeeExperiment.html">DeeDeeExperiment</a>, <a href="../../bioc/html/DOSE.html">DOSE</a>, <a href="../../bioc/html/enrichplot.html">enrichplot</a>, <a href="../../bioc/html/EpiCompare.html">EpiCompare</a>, <a href="../../bioc/html/EpiMix.html">EpiMix</a>, <a href="../../bioc/html/GeDi.html">GeDi</a>, <a href="../../bioc/html/GeneTonic.html">GeneTonic</a>, <a href="../../bioc/html/GenomicSuperSignature.html">GenomicSuperSignature</a>, <a href="../../bioc/html/GeoTcgaData.html">GeoTcgaData</a>, <a href="../../bioc/html/ggkegg.html">ggkegg</a>, <a href="../../bioc/html/GOSemSim.html">GOSemSim</a>, <a href="../../bioc/html/GRaNIE.html">GRaNIE</a>, <a href="../../bioc/html/GSEAmining.html">GSEAmining</a>, <a href="../../bioc/html/mastR.html">mastR</a>, <a href="../../bioc/html/MesKit.html">MesKit</a>, <a href="../../bioc/html/ReactomePA.html">ReactomePA</a>, <a href="../../bioc/html/rrvgo.html">rrvgo</a>, <a href="../../bioc/html/scFeatures.html">scFeatures</a>, <a href="../../bioc/html/scGPS.html">scGPS</a>, <a href="../../bioc/html/scGraphVerse.html">scGraphVerse</a>, <a href="../../bioc/html/TCGAbiolinks.html">TCGAbiolinks</a>, <a href="../../bioc/html/tidybulk.html">tidybulk</a>, <a href="../../data/annotation/html/org.Mxanthus.db.html">org.Mxanthus.db</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/ClusterGVis/index.html">ClusterGVis</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/easyEWAS/index.html">easyEWAS</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/enrichit/index.html">enrichit</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/ggpicrust2/index.html">ggpicrust2</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/grandR/index.html">grandR</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/ivolcano/index.html">ivolcano</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/OlinkAnalyze/index.html">OlinkAnalyze</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/ReporterScore/index.html">ReporterScore</a>, <a class="cran_package" href="http://cran.rstudio.com/web/packages/SRscore/index.html">SRscore</a></td>
+	  </tr>
+
+  	<tr>
+	    <td>Links To Me</td>
+	    <td></td>
+	  </tr>
+
+  	
+	  <tr>
+	    <td>Build Report</td>
+	    	<td><a href="https://bioconductor.org/checkResults/3.22/bioc-LATEST/clusterProfiler/">Build Report</a></td>
+	  </tr>
+  	
+  </table>
+</details>
+
+
+  <h3 id="archives">Package Archives</h3>
+
+<p>Follow <a href="/install/#install-bioconductor-packages">Installation</a> instructions to use this package in your R session.</p>
+
+<table class="full-width">
+  <tr>
+    <td>Source Package</td>
+    <td class="rpack">
+      <a onClick="javascript: pageTracker._trackPageview('../src/contrib/clusterProfiler_4.18.4.tar.gz'); " href="../src/contrib/clusterProfiler_4.18.4.tar.gz">clusterProfiler_4.18.4.tar.gz</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Windows Binary (x86_64)</td>
+    <td class="rpack">
+      
+      
+        <a onClick="javascript: pageTracker._trackPageview('../bin/windows/contrib/4.5/clusterProfiler_4.18.4.zip'); " href="../bin/windows/contrib/4.5/clusterProfiler_4.18.4.zip">
+        clusterProfiler_4.18.4.zip</a> 
+      
+    </td>
+</tr>
+
+
+
+  <tr>
+    <td>macOS Binary (x86_64)</td>
+    <td class="rpack">
+      <a onClick="javascript: pageTracker._trackPageview('../bin/macosx/big-sur-x86_64/contrib/4.5/clusterProfiler_4.18.4.tgz'); " href="../bin/macosx/big-sur-x86_64/contrib/4.5/clusterProfiler_4.18.4.tgz">clusterProfiler_4.18.4.tgz</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>macOS Binary (arm64)</td>
+    <td class="rpack">
+      <a onClick="javascript: pageTracker._trackPageview('../bin/macosx/big-sur-arm64/contrib/4.5/clusterProfiler_4.18.4.tgz'); " href="../bin/macosx/big-sur-arm64/contrib/4.5/clusterProfiler_4.18.4.tgz">clusterProfiler_4.18.4.tgz</a>
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td id="svn-source">Source Repository</td>
+    <td>git clone https://git.bioconductor.org/packages/clusterProfiler</td>
+  </tr>
+  <tr>
+    <td id="svn-source">Source Repository (Developer Access)</td>
+    <td>git clone git@git.bioconductor.org:packages/clusterProfiler</td>
+  </tr>
+
+
+
+  <tr>
+    <td>Bioc Package Browser</td>
+    <td><a href="https://code.bioconductor.org/browse/clusterProfiler/RELEASE_3_22/">https://code.bioconductor.org/browse/clusterProfiler/</a></td>
+  </tr>
+
+
+<tr>
+  <td>Package Short Url</td>
+  <td><a title="For citation in publications, etc., please use DOI: 10.18129/B9.bioc.clusterProfiler" href="/packages/clusterProfiler/">https://bioconductor.org/packages/clusterProfiler/</a></td>
+</tr>
+
+<tr>
+  <td>Package Downloads Report</td>
+  <td><a href="http://bioconductor.org/packages/stats/bioc/clusterProfiler/">Download Stats</a></td>
+</tr>
+
+
+  <tr>
+    <td>Old Source Packages for BioC 3.22</td>
+    <td><a href="/packages/3.22/bioc/src/contrib/Archive/clusterProfiler/">Source Archive</a></td>
+  </tr>
+
+
+</table>
+
+ 
+</div>
+
+
+          
+
+           
+        </section>
+      
+        </div>
+      
+    </main>
+
+    <footer>
+  <div class="footer-container">
+    <div class="link-container">
+      <div class="link-container-inner">
+        <nav>
+          <a href="/about/index.html"><h3>About</h3></a>
+          <a href="/about/annual-reports/">Annual Reports</a>
+          <a href="/about/collaborations/">Collaborations</a>
+          <a href="/about/core-team/">Core Team</a>
+          <a href="/about/mirrors/">Mirrors</a>
+          <a href="/dashboard/">Dashboard</a>
+          <a href="/about/">Project Details</a>
+          <a href="/about/code-of-conduct/">Code of Conduct</a>
+        </nav>
+        <nav>
+          <a href="/developers/index.html"><h3>Developers</h3></a>
+          <a href="https://contributions.bioconductor.org/develop-overview.html">Package Guidelines</a>
+          <a href="https://contributions.bioconductor.org/submission-overview.html">Package Submission</a>
+          <a href="/developers/release-schedule/">Release Schedule</a>
+          <a href="/about/release-announcements/">Release Announcements</a>
+          <a href="https://contributions.bioconductor.org/git-version-control.html">Source Control</a>
+          <a href="https://code.bioconductor.org/">Browsable Code Base</a>
+          <a href="/checkResults/">Build Reports</a>
+        </nav>
+      </div>
+      <div class="link-container-inner">
+        <nav>
+          <a href="/help/index.html"><h3>Learn</h3></a>
+          <a href="https://training.bioconductor.org/">Education and Training</a>
+          <a href="/help/bioconductor-books/">Bioconductor Books</a>
+          <a href="/help/package-vignettes/">Package Vignettes</a>
+	  <a href="/packages/release/workflows/">Workflows</a>
+          <a href="/help/publications/">Publications</a>
+          <a href="/help/community/">Community Resources</a>
+          <a href="/help/support/">Get Help</a>
+        </nav>
+        <nav>
+          <a href="/install/index.html"><h3>Get started</h3></a>
+          <a href="/install/index.html#install-R">Install R</a>
+          <a href="/install/index.html#find-bioconductor-packages">Find Bioconductor Packages</a>
+          <a href="/install/index.html#install-bioconductor-packages">Install Bioconductor Packages</a>
+          <a href="/install/index.html#update-bioconductor-packages">Update Bioconductor Packages</a>
+          <a href="/help/docker/">Docker Images</a>
+          <a href="https://anvil.bioconductor.org/">Bioconductor in AnVIL</a>
+	  <a href="/packages/release/BiocViews.html#___Software">Bioconductor Packages</a>
+        </nav>
+      </div>
+    </div>
+    <div class="logo-contact-container">
+      <div class="copyright">
+        <p> 
+          Contact us: <a class="text-underline" href="https://support.bioconductor.org/">support.bioconductor.org</a><br/>
+          Copyright &copy; 2003 - 2026 Bioconductor
+        </p>
+      </div>
+
+      <div class="socials-logo-container">
+        <div class="socials">
+          <a href="https://chat.bioconductor.org/" target="_blank"><img alt="Zulip Logo" src="/images/icons/svgs/zulip-white-icon.svg" /></a>
+          <a href="https://www.youtube.com/user/bioconductor" target="_blank"><img alt="YouTube Logo" src="/images/icons/svgs/youtube.svg" /></a>
+          <a href="https://www.linkedin.com/company/bioconductor/" target="_blank"><img alt="LinkedIn Logo" src="/images/icons/svgs/linkedin.svg" /></a>
+          <a href="https://bsky.app/profile/bioconductor.bsky.social" target="_blank"><img alt="Bluesky Logo" src="/images/icons/svgs/bluesky.svg" /></a>  
+          <a href="https://genomic.social/@bioconductor" target="_blank"><img alt="Mastodon Logo" src="/images/icons/svgs/mastodon.svg" /></a>  
+          <a href="https://blog.bioconductor.org/" target="_blank"><img alt="Blog Logo" src="/images/icons/svgs/arrow-circle-right-white.svg" /></a>  
+        </div>
+        <img class="footer-logo" src="/images/logo/svg/BC-Logo-White.svg" alt="BioConductor Logo in White" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

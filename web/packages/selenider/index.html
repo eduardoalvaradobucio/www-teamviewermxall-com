@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package selenider</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=selenider">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Concise, Lazy and Reliable Wrapper for 'chromote' and 'selenium' [R package selenider version 0.4.1]">
+<meta name="citation_author" content="Ashby Thorpe">
+<meta name="citation_publication_date" content="2025-01-12">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=selenider">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=selenider">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="selenider: Concise, Lazy and Reliable Wrapper for 'chromote' and 'selenium'">
+<meta property="og:description" content="A user-friendly wrapper for web automation, using either 'chromote' or 'selenium'. Provides a simple and consistent API to make web scraping and testing scripts easy to write and understand. Elements are lazy, and automatically wait for the website to be valid, resulting in reliable and reproducible code, with no visible impact on the experience of the programmer.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=selenider">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>selenider: Concise, Lazy and Reliable Wrapper for 'chromote' and 'selenium'</h2>
+<p>A user-friendly wrapper for web automation, using either
+    'chromote' or 'selenium'. Provides a simple and consistent API to make
+    web scraping and testing scripts easy to write and understand.
+    Elements are lazy, and automatically wait for the website to be valid,
+    resulting in reliable and reproducible code, with no visible impact on
+    the experience of the programmer.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../coro/index.html"><span class="CRAN">coro</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../prettyunits/index.html"><span class="CRAN">prettyunits</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../chromote/index.html"><span class="CRAN">chromote</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RSelenium/index.html"><span class="CRAN">RSelenium</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../selenium/index.html"><span class="CRAN">selenium</span></a> (&ge; 0.1.3), <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinytest2/index.html"><span class="CRAN">shinytest2</span></a>, <a href="../showimage/index.html"><span class="CRAN">showimage</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../wdman/index.html"><span class="CRAN">wdman</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-01-12</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.selenider">10.32614/CRAN.package.selenider</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ashby Thorpe <a href="https://orcid.org/0000-0003-3106-099X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ashby Thorpe  &#x3c;&#x61;&#x73;&#x68;&#x62;&#x79;&#x74;&#x68;&#x6f;&#x72;&#x70;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ashbythorpe/selenider/issues" target="_top"><span class="GitHub">https://github.com/ashbythorpe/selenider/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ashbythorpe/selenider" target="_top"><span class="GitHub">https://github.com/ashbythorpe/selenider</span></a>,
+<a href="https://ashbythorpe.github.io/selenider/" target="_top"><span class="GitHub">https://ashbythorpe.github.io/selenider/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_selenider.html"><span class="CRAN">selenider results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/selenider.html"><span class="CRAN">selenider.html</span></a> ,  <a href="selenider.pdf"><span class="CRAN">selenider.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/advanced-usage.html"><span class="CRAN">Advanced usage of selenider</span></a> (<a href="vignettes/advanced-usage.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/advanced-usage.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/selenider.html"><span class="CRAN">Getting started with selenider</span></a> (<a href="vignettes/selenider.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/selenider.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/unit-testing.html"><span class="CRAN">Unit testing</span></a> (<a href="vignettes/unit-testing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/unit-testing.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/with-rvest.html"><span class="CRAN">selenider and rvest</span></a> (<a href="vignettes/with-rvest.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/with-rvest.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/selenider_0.4.1.tar.gz"> <span class="CRAN"> selenider_0.4.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/selenider_0.4.1.zip"><span class="CRAN">selenider_0.4.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/selenider_0.4.1.zip"><span class="CRAN">selenider_0.4.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/selenider_0.4.1.zip"><span class="CRAN">selenider_0.4.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/selenider_0.4.1.tgz"><span class="CRAN">selenider_0.4.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/selenider_0.4.1.tgz"><span class="CRAN">selenider_0.4.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/selenider_0.4.1.tgz"><span class="CRAN">selenider_0.4.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/selenider_0.4.1.tgz"><span class="CRAN">selenider_0.4.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/selenider"> <span class="CRAN"> selenider archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../provolleyballr/index.html"><span class="CRAN">provolleyballr</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=selenider"><span class="CRAN"><samp>https://CRAN.R-project.org/package=selenider</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

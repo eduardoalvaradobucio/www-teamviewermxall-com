@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package mapdeck</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=mapdeck">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interactive Maps Using 'Mapbox GL JS' and 'Deck.gl' [R package mapdeck version 0.3.6]">
+<meta name="citation_author" content="David Cooley">
+<meta name="citation_publication_date" content="2025-11-29">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mapdeck">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mapdeck">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="mapdeck: Interactive Maps Using 'Mapbox GL JS' and 'Deck.gl'">
+<meta property="og:description" content="Provides a mechanism to plot an interactive map using 'Mapbox GL' (&amp;lt;&lt;a href=&quot;https://docs.mapbox.com/mapbox-gl-js/api/&quot; target=&quot;_top&quot;&gt;https://docs.mapbox.com/mapbox-gl-js/api/&lt;/a&gt;&amp;gt;), a javascript library for interactive maps, and 'Deck.gl' (&amp;lt;&lt;a href=&quot;https://deck.gl/&quot; target=&quot;_top&quot;&gt;https://deck.gl/&lt;/a&gt;&amp;gt;), a javascript library which uses 'WebGL' for visualising large data sets.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=mapdeck">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>mapdeck: Interactive Maps Using 'Mapbox GL JS' and 'Deck.gl'</h2>
+<p>Provides a mechanism to plot an interactive map using 'Mapbox GL' 
+		(&lt;<a href="https://docs.mapbox.com/mapbox-gl-js/api/" target="_top">https://docs.mapbox.com/mapbox-gl-js/api/</a>&gt;), a javascript library for interactive maps,
+		and 'Deck.gl' (&lt;<a href="https://deck.gl/" target="_top">https://deck.gl/</a>&gt;), a javascript library which uses 'WebGL' for 
+		visualising large data sets.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../colourvalues/index.html"><span class="CRAN">colourvalues</span></a> (&ge; 0.3.11), <a href="../googlePolylines/index.html"><span class="CRAN">googlePolylines</span></a> (&ge; 0.8.7), <a href="../geojsonsf/index.html"><span class="CRAN">geojsonsf</span></a> (&ge; 2.0.5), <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../jsonify/index.html"><span class="CRAN">jsonify</span></a> (&ge; 1.2.3), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.1.0), <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../sfheaders/index.html"><span class="CRAN">sfheaders</span></a> (&ge; 0.4.5)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html"><span class="CRAN">BH</span></a>, <a href="../colourvalues/index.html"><span class="CRAN">colourvalues</span></a> (&ge; 0.3.11), <a href="../geojsonsf/index.html"><span class="CRAN">geojsonsf</span></a> (&ge; 2.0.5), <a href="../geometries/index.html"><span class="CRAN">geometries</span></a> (&ge; 0.2.5), <a href="../interleave/index.html"><span class="CRAN">interleave</span></a> (&ge; 0.1.2), <a href="../jsonify/index.html"><span class="CRAN">jsonify</span></a> (&ge;
+1.2.3), <a href="../rapidjsonr/index.html"><span class="CRAN">rapidjsonr</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.1.0), <a href="../sfheaders/index.html"><span class="CRAN">sfheaders</span></a> (&ge; 0.4.5), <a href="../spatialwidget/index.html"><span class="CRAN">spatialwidget</span></a> (&ge; 0.2.6)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../googleway/index.html"><span class="CRAN">googleway</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spatialwidget/index.html"><span class="CRAN">spatialwidget</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-11-29</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.mapdeck">10.32614/CRAN.package.mapdeck</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Cooley [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Cooley  &#x3c;&#x64;&#x63;&#x6f;&#x6f;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x73;&#x79;&#x6d;&#x62;&#x6f;&#x6c;&#x69;&#x78;&#x2e;&#x63;&#x6f;&#x6d;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/SymbolixAU/mapdeck/issues" target="_top"><span class="GitHub">https://github.com/SymbolixAU/mapdeck/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS"><span class="CRAN">COPYRIGHTS</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://symbolixau.github.io/mapdeck/articles/mapdeck.html" target="_top"><span class="GitHub">https://symbolixau.github.io/mapdeck/articles/mapdeck.html</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/DynamicVisualizations.html"><span class="CRAN">DynamicVisualizations</span></a>, <a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mapdeck.html"><span class="CRAN">mapdeck results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/mapdeck.html"><span class="CRAN">mapdeck.html</span></a> ,  <a href="mapdeck.pdf"><span class="CRAN">mapdeck.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/mapdeck.html"><span class="CRAN">mapdeck</span></a> (<a href="vignettes/mapdeck.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/mapdeck.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mapdeck_0.3.6.tar.gz"> <span class="CRAN"> mapdeck_0.3.6.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/mapdeck_0.3.6.zip"><span class="CRAN">mapdeck_0.3.6.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/mapdeck_0.3.6.zip"><span class="CRAN">mapdeck_0.3.6.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/mapdeck_0.3.6.zip"><span class="CRAN">mapdeck_0.3.6.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/mapdeck_0.3.6.tgz"><span class="CRAN">mapdeck_0.3.6.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/mapdeck_0.3.6.tgz"><span class="CRAN">mapdeck_0.3.6.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/mapdeck_0.3.6.tgz"><span class="CRAN">mapdeck_0.3.6.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/mapdeck_0.3.6.tgz"><span class="CRAN">mapdeck_0.3.6.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mapdeck"> <span class="CRAN"> mapdeck archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../trackeRapp/index.html"><span class="CRAN">trackeRapp</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../cancensus/index.html"><span class="CRAN">cancensus</span></a>, <a href="../leafem/index.html"><span class="CRAN">leafem</span></a>, <a href="../mapboxapi/index.html"><span class="CRAN">mapboxapi</span></a>, <a href="../mapview/index.html"><span class="CRAN">mapview</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mapdeck"><span class="CRAN"><samp>https://CRAN.R-project.org/package=mapdeck</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

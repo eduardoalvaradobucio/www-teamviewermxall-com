@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package gargle</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=gargle">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Utilities for Working with Google APIs [R package gargle version 1.6.1]">
+<meta name="citation_author1" content="Jennifer Bryan">
+<meta name="citation_author2" content="Craig Citro">
+<meta name="citation_author3" content="Hadley Wickham">
+<meta name="citation_publication_date" content="2026-01-29">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gargle">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gargle">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="gargle: Utilities for Working with Google APIs">
+<meta property="og:description" content="Provides utilities for working with Google APIs &amp;lt;&lt;a href=&quot;https://developers.google.com/apis-explorer&quot; target=&quot;_top&quot;&gt;https://developers.google.com/apis-explorer&lt;/a&gt;&amp;gt;. This includes functions and classes for handling common credential types and for preparing, executing, and processing HTTP requests.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=gargle">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>gargle: Utilities for Working with Google APIs</h2>
+<p>Provides utilities for working with Google APIs
+    &lt;<a href="https://developers.google.com/apis-explorer" target="_top">https://developers.google.com/apis-explorer</a>&gt;.  This includes
+    functions and classes for handling common credential types and for
+    preparing, executing, and processing HTTP requests.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.6.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.0.1), <a href="../fs/index.html"><span class="CRAN">fs</span></a> (&ge; 1.3.1), <a href="../glue/index.html"><span class="CRAN">glue</span></a> (&ge; 1.3.0), <a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge;
+1.4.5), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a> (&ge; 0.2.0), <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../aws.ec2metadata/index.html"><span class="CRAN">aws.ec2metadata</span></a>, <a href="../aws.signature/index.html"><span class="CRAN">aws.signature</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sodium/index.html"><span class="CRAN">sodium</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.7)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-29</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.gargle">10.32614/CRAN.package.gargle</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jennifer Bryan <a href="https://orcid.org/0000-0002-6983-2759" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Craig Citro [aut],
+  Hadley Wickham <a href="https://orcid.org/0000-0003-4757-117X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Google Inc [cph],
+  Posit Software, PBC [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jennifer Bryan  &#x3c;&#x6a;&#x65;&#x6e;&#x6e;&#x79;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-lib/gargle/issues" target="_top"><span class="GitHub">https://github.com/r-lib/gargle/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gargle.r-lib.org" target="_top">https://gargle.r-lib.org</a>, <a href="https://github.com/r-lib/gargle" target="_top"><span class="GitHub">https://github.com/r-lib/gargle</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gargle.html"><span class="CRAN">gargle results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/gargle.html"><span class="CRAN">gargle.html</span></a> ,  <a href="gargle.pdf"><span class="CRAN">gargle.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/auth-from-web.html"><span class="CRAN">Auth when using R from the browser</span></a> (<a href="vignettes/auth-from-web.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/auth-from-web.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/gargle-auth-in-client-package.html"><span class="CRAN">How to use gargle for auth in a client package</span></a> (<a href="vignettes/gargle-auth-in-client-package.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/gargle-auth-in-client-package.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/get-api-credentials.html"><span class="CRAN">How to get your own API credentials</span></a> (<a href="vignettes/get-api-credentials.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/get-api-credentials.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/how-gargle-gets-tokens.html"><span class="CRAN">How gargle gets tokens</span></a> (<a href="vignettes/how-gargle-gets-tokens.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/how-gargle-gets-tokens.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/non-interactive-auth.html"><span class="CRAN">Non-interactive auth</span></a> (<a href="vignettes/non-interactive-auth.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/non-interactive-auth.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/oauth-client-not-app.html"><span class="CRAN">Transition from OAuth app to OAuth client</span></a> (<a href="vignettes/oauth-client-not-app.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/oauth-client-not-app.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/request-helper-functions.html"><span class="CRAN">Request helper functions</span></a> (<a href="vignettes/request-helper-functions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/request-helper-functions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/troubleshooting.html"><span class="CRAN">Troubleshooting gargle auth</span></a> (<a href="vignettes/troubleshooting.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/troubleshooting.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gargle_1.6.1.tar.gz"> <span class="CRAN"> gargle_1.6.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/gargle_1.6.1.zip"><span class="CRAN">gargle_1.6.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/gargle_1.6.1.zip"><span class="CRAN">gargle_1.6.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/gargle_1.6.1.zip"><span class="CRAN">gargle_1.6.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/gargle_1.6.1.tgz"><span class="CRAN">gargle_1.6.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/gargle_1.6.1.tgz"><span class="CRAN">gargle_1.6.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/gargle_1.6.1.tgz"><span class="CRAN">gargle_1.6.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/gargle_1.6.1.tgz"><span class="CRAN">gargle_1.6.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gargle"> <span class="CRAN"> gargle archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bigrquery/index.html"><span class="CRAN">bigrquery</span></a>, <a href="../daiR/index.html"><span class="CRAN">daiR</span></a>, <a href="../galigor/index.html"><span class="CRAN">galigor</span></a>, <a href="../gmailr/index.html"><span class="CRAN">gmailr</span></a>, <a href="../googleAnalyticsR/index.html"><span class="CRAN">googleAnalyticsR</span></a>, <a href="../googleAuthR/index.html"><span class="CRAN">googleAuthR</span></a>, <a href="../googledrive/index.html"><span class="CRAN">googledrive</span></a>, <a href="../googlesheets4/index.html"><span class="CRAN">googlesheets4</span></a>, <a href="../ladder/index.html"><span class="CRAN">ladder</span></a>, <a href="../ReviewR/index.html"><span class="CRAN">ReviewR</span></a>, <a href="../rgoogleads/index.html"><span class="CRAN">rgoogleads</span></a>, <a href="../rytstat/index.html"><span class="CRAN">rytstat</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../boxr/index.html"><span class="CRAN">boxr</span></a>, <a href="../dynamicSDM/index.html"><span class="CRAN">dynamicSDM</span></a>, <a href="../ellmer/index.html"><span class="CRAN">ellmer</span></a>, <a href="../ragnar/index.html"><span class="CRAN">ragnar</span></a>, <a href="../rgee/index.html"><span class="CRAN">rgee</span></a>, <a href="../targets/index.html"><span class="CRAN">targets</span></a>, <a href="../trackdown/index.html"><span class="CRAN">trackdown</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gargle"><span class="CRAN"><samp>https://CRAN.R-project.org/package=gargle</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package EML</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=EML">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Read and Write Ecological Metadata Language Files [R package EML version 2.0.7]">
+<meta name="citation_author1" content="Carl Boettiger">
+<meta name="citation_author2" content="Matthew B. Jones">
+<meta name="citation_publication_date" content="2025-07-28">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=EML">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=EML">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="EML: Read and Write Ecological Metadata Language Files">
+<meta property="og:description" content="Work with Ecological Metadata Language ('EML') files. 'EML' is a widely used metadata standard in the ecological and environmental sciences, described in Jones et al. (2006), &amp;lt;&lt;a href=&quot;https://doi.org/10.1146%2Fannurev.ecolsys.37.091305.110031&quot; target=&quot;_top&quot;&gt;doi:10.1146/annurev.ecolsys.37.091305.110031&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=EML">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>EML: Read and Write Ecological Metadata Language Files</h2>
+<p>Work with Ecological Metadata Language ('EML') files. 
+    'EML' is a widely used metadata standard in the ecological and
+    environmental sciences, described in Jones et al. (2006),
+    &lt;<a href="https://doi.org/10.1146%2Fannurev.ecolsys.37.091305.110031" target="_top">doi:10.1146/annurev.ecolsys.37.091305.110031</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.0.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../emld/index.html"><span class="CRAN">emld</span></a> (&ge; 0.5.0), <a href="../jqr/index.html"><span class="CRAN">jqr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../uuid/index.html"><span class="CRAN">uuid</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../taxadb/index.html"><span class="CRAN">taxadb</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../EML/index.html"><span class="CRAN">EML</span></a>, <a href="../units/index.html"><span class="CRAN">units</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-07-28</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.EML">10.32614/CRAN.package.EML</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Carl Boettiger <a href="https://orcid.org/0000-0002-1642-628X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph],
+  Matthew B. Jones <a href="https://orcid.org/0000-0003-0077-4738" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Mitchell Maier <a href="https://orcid.org/0000-0001-6955-0535" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Bryce Mecum <a href="https://orcid.org/0000-0002-0381-3766" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Maëlle Salmon <a href="https://orcid.org/0000-0002-2815-0399" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Jeanette Clark <a href="https://orcid.org/0000-0003-4703-1974" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Carl Boettiger  &#x3c;&#x63;&#x62;&#x6f;&#x65;&#x74;&#x74;&#x69;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/EML/issues" target="_top"><span class="GitHub">https://github.com/ropensci/EML/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/EML/" target="_top">https://docs.ropensci.org/EML/</a>, <a href="https://github.com/ropensci/EML/" target="_top"><span class="GitHub">https://github.com/ropensci/EML/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_EML.html"><span class="CRAN">EML results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/EML.html"><span class="CRAN">EML.html</span></a> ,  <a href="EML.pdf"><span class="CRAN">EML.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/creating-EML.html"><span class="CRAN">Creating EML</span></a> (<a href="vignettes/creating-EML.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/creating-EML.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/working-with-units.html"><span class="CRAN">Working with Units</span></a> (<a href="vignettes/working-with-units.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/working-with-units.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/EML_2.0.7.tar.gz"> <span class="CRAN"> EML_2.0.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/EML_2.0.7.zip"><span class="CRAN">EML_2.0.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/EML_2.0.7.zip"><span class="CRAN">EML_2.0.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/EML_2.0.7.zip"><span class="CRAN">EML_2.0.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/EML_2.0.7.tgz"><span class="CRAN">EML_2.0.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/EML_2.0.7.tgz"><span class="CRAN">EML_2.0.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/EML_2.0.7.tgz"><span class="CRAN">EML_2.0.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/EML_2.0.7.tgz"><span class="CRAN">EML_2.0.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/EML"> <span class="CRAN"> EML archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../camtrapdp/index.html"><span class="CRAN">camtrapdp</span></a>, <a href="../dataspice/index.html"><span class="CRAN">dataspice</span></a>, <a href="../ecocomDP/index.html"><span class="CRAN">ecocomDP</span></a>, <a href="../finch/index.html"><span class="CRAN">finch</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../EML/index.html"><span class="CRAN">EML</span></a>, <a href="../geoflow/index.html"><span class="CRAN">geoflow</span></a>, <a href="../geometa/index.html"><span class="CRAN">geometa</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=EML"><span class="CRAN"><samp>https://CRAN.R-project.org/package=EML</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

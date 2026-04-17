@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rphylopic</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rphylopic">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Get Silhouettes of Organisms from PhyloPic [R package rphylopic version 1.6.0]">
+<meta name="citation_author1" content="William Gearty">
+<meta name="citation_author2" content="Lewis A. Jones">
+<meta name="citation_publication_date" content="2025-11-18">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rphylopic">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rphylopic">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rphylopic: Get Silhouettes of Organisms from PhyloPic">
+<meta property="og:description" content="Work with the PhyloPic Web Service (&amp;lt;&lt;a href=&quot;http://api-docs.phylopic.org/v2/&quot; target=&quot;_top&quot;&gt;http://api-docs.phylopic.org/v2/&lt;/a&gt;&amp;gt;) to fetch silhouette images of organisms. Includes functions for adding silhouettes to both base R plots and ggplot2 plots.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rphylopic">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rphylopic: Get Silhouettes of Organisms from PhyloPic</h2>
+<p>Work with the PhyloPic Web Service (&lt;<a href="http://api-docs.phylopic.org/v2/" target="_top">http://api-docs.phylopic.org/v2/</a>&gt;) 
+    to fetch silhouette images of organisms. Includes functions for adding 
+    silhouettes to both base R plots and ggplot2 plots.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ape/index.html"><span class="CRAN">ape</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../grImport2/index.html"><span class="CRAN">grImport2</span></a> (&ge;
+0.3.3), <a href="../rsvg/index.html"><span class="CRAN">rsvg</span></a> (&ge; 2.6.0), <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../pbapply/index.html"><span class="CRAN">pbapply</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a> (&ge; 1.0.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../phytools/index.html"><span class="CRAN">phytools</span></a>, <a href="../palaeoverse/index.html"><span class="CRAN">palaeoverse</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/ggtree.html" target="_top"><span class="BioC">ggtree</span></a>, <a href="../deeptime/index.html"><span class="CRAN">deeptime</span></a>, <a href="../palmerpenguins/index.html"><span class="CRAN">palmerpenguins</span></a>, <a href="../maps/index.html"><span class="CRAN">maps</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-11-18</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rphylopic">10.32614/CRAN.package.rphylopic</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>William Gearty <a href="https://orcid.org/0000-0003-0076-3262" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Lewis A. Jones <a href="https://orcid.org/0000-0003-3902-8986" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Scott Chamberlain <a href="https://orcid.org/0000-0003-1444-9135" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Martin R. Smith <a href="https://orcid.org/0000-0001-5660-1727" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  David L. Miller <a href="https://orcid.org/0000-0002-9640-6755" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>William Gearty  &#x3c;&#x77;&#x69;&#x6c;&#x6c;&#x67;&#x65;&#x61;&#x72;&#x74;&#x79;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/palaeoverse/rphylopic/issues" target="_top"><span class="GitHub">https://github.com/palaeoverse/rphylopic/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rphylopic.palaeoverse.org" target="_top">https://rphylopic.palaeoverse.org</a>,
+<a href="https://github.com/palaeoverse/rphylopic" target="_top"><span class="GitHub">https://github.com/palaeoverse/rphylopic</span></a>,
+<a href="https://palaeoverse.org" target="_top">https://palaeoverse.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rphylopic citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Paleontology.html"><span class="CRAN">Paleontology</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rphylopic.html"><span class="CRAN">rphylopic results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rphylopic.html"><span class="CRAN">rphylopic.html</span></a> ,  <a href="rphylopic.pdf"><span class="CRAN">rphylopic.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/a-getting-started.html"><span class="CRAN">Getting started with rphylopic</span></a> (<a href="vignettes/a-getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/b-advanced-ggplot.html"><span class="CRAN">Advanced examples in ggplot</span></a> (<a href="vignettes/b-advanced-ggplot.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/c-advanced-base.html"><span class="CRAN">Advanced examples in base R</span></a> (<a href="vignettes/c-advanced-base.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rphylopic_1.6.0.tar.gz"> <span class="CRAN"> rphylopic_1.6.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rphylopic_1.6.0.zip"><span class="CRAN">rphylopic_1.6.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rphylopic_1.6.0.zip"><span class="CRAN">rphylopic_1.6.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rphylopic_1.6.0.zip"><span class="CRAN">rphylopic_1.6.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rphylopic_1.6.0.tgz"><span class="CRAN">rphylopic_1.6.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rphylopic_1.6.0.tgz"><span class="CRAN">rphylopic_1.6.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rphylopic_1.6.0.tgz"><span class="CRAN">rphylopic_1.6.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rphylopic_1.6.0.tgz"><span class="CRAN">rphylopic_1.6.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rphylopic"> <span class="CRAN"> rphylopic archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../mpmaggregate/index.html"><span class="CRAN">mpmaggregate</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/orthogene.html" target="_top"><span class="BioC">orthogene</span></a>, <a href="../rmacrostrat/index.html"><span class="CRAN">rmacrostrat</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rphylopic"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rphylopic</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

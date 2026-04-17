@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package httptest</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=httptest">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="A Test Environment for HTTP Requests [R package httptest version 4.2.3]">
+<meta name="citation_author" content="Neal Richardson">
+<meta name="citation_publication_date" content="2025-11-15">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=httptest">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=httptest">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="httptest: A Test Environment for HTTP Requests">
+<meta property="og:description" content="Testing and documenting code that communicates with remote servers can be painful. Dealing with authentication, server state, and other complications can make testing seem too costly to bother with. But it doesn't need to be that hard. This package enables one to test all of the logic on the R sides of the API in your package without requiring access to the remote service. Importantly, it provides three contexts that mock the network connection in different ways, as well as testing functions to assert that HTTP requests were&amp;mdash;or were not&amp;mdash;made. It also allows one to safely record real API responses to use as test fixtures. The ability to save responses and load them offline also enables one to write vignettes and other dynamic documents that can be distributed without access to a live server.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=httptest">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>httptest: A Test Environment for HTTP Requests</h2>
+<p>Testing and documenting code that communicates with remote servers
+    can be painful. Dealing with authentication, server state,
+    and other complications can make testing seem too costly to
+    bother with. But it doesn't need to be that hard. This package enables one
+    to test all of the logic on the R sides of the API in your package without
+    requiring access to the remote service. Importantly, it provides three
+    contexts that mock the network connection in different ways, as well as
+    testing functions to assert that HTTP requests were&mdash;or were
+    not&mdash;made. It also allows one to safely record real API responses to use as
+    test fixtures. The ability to save responses and load them offline also
+    enables one to write vignettes and other dynamic documents that can be
+    distributed without access to a live server.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>4.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../pkgload/index.html"><span class="CRAN">pkgload</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-11-15</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.httptest">10.32614/CRAN.package.httptest</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Neal Richardson <a href="https://orcid.org/0009-0002-7992-3520" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Jonathan Keane [ctb],
+  Maëlle Salmon <a href="https://orcid.org/0000-0002-2815-0399" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Neal Richardson  &#x3c;&#x6e;&#x65;&#x61;&#x6c;&#x2e;&#x70;&#x2e;&#x72;&#x69;&#x63;&#x68;&#x61;&#x72;&#x64;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/nealrichardson/httptest/issues" target="_top"><span class="GitHub">https://github.com/nealrichardson/httptest/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://enpiar.com/r/httptest/" target="_top">https://enpiar.com/r/httptest/</a>,
+<a href="https://github.com/nealrichardson/httptest" target="_top"><span class="GitHub">https://github.com/nealrichardson/httptest</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_httptest.html"><span class="CRAN">httptest results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/httptest.html"><span class="CRAN">httptest.html</span></a> ,  <a href="httptest.pdf"><span class="CRAN">httptest.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/faq.html"><span class="CRAN">Frequently Asked Questions</span></a> (<a href="vignettes/faq.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/httptest.html"><span class="CRAN">httptest: A Test Environment for HTTP Requests in R</span></a> (<a href="vignettes/httptest.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/httptest.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/redacting.html"><span class="CRAN">Redacting and Modifying Recorded Requests</span></a> (<a href="vignettes/redacting.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/vignettes.html"><span class="CRAN">Writing Vignettes with APIs</span></a> (<a href="vignettes/vignettes.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/httptest_4.2.3.tar.gz"> <span class="CRAN"> httptest_4.2.3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/httptest_4.2.3.zip"><span class="CRAN">httptest_4.2.3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/httptest_4.2.3.zip"><span class="CRAN">httptest_4.2.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/httptest_4.2.3.zip"><span class="CRAN">httptest_4.2.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/httptest_4.2.3.tgz"><span class="CRAN">httptest_4.2.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/httptest_4.2.3.tgz"><span class="CRAN">httptest_4.2.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/httptest_4.2.3.tgz"><span class="CRAN">httptest_4.2.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/httptest_4.2.3.tgz"><span class="CRAN">httptest_4.2.3.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/httptest"> <span class="CRAN"> httptest archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../speechbr/index.html"><span class="CRAN">speechbr</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../academictwitteR/index.html"><span class="CRAN">academictwitteR</span></a>, <a href="../aiRly/index.html"><span class="CRAN">aiRly</span></a>, <a href="../alfr/index.html"><span class="CRAN">alfr</span></a>, <a href="../bambooHR/index.html"><span class="CRAN">bambooHR</span></a>, <a href="../bitmexr/index.html"><span class="CRAN">bitmexr</span></a>, <a href="../briqr/index.html"><span class="CRAN">briqr</span></a>, <a href="../ccdR/index.html"><span class="CRAN">ccdR</span></a>, <a href="../codewhere/index.html"><span class="CRAN">codewhere</span></a>, <a href="../colourlovers/index.html"><span class="CRAN">colourlovers</span></a>, <a href="../cometr/index.html"><span class="CRAN">cometr</span></a>, <a href="../connectapi/index.html"><span class="CRAN">connectapi</span></a>, <a href="../covidcast/index.html"><span class="CRAN">covidcast</span></a>, <a href="../crunch/index.html"><span class="CRAN">crunch</span></a>, <a href="../ctxR/index.html"><span class="CRAN">ctxR</span></a>, <a href="../dkanr/index.html"><span class="CRAN">dkanr</span></a>, <a href="../echor/index.html"><span class="CRAN">echor</span></a>, <a href="../edgarWebR/index.html"><span class="CRAN">edgarWebR</span></a>, <a href="../emodnet.wfs/index.html"><span class="CRAN">emodnet.wfs</span></a>, <a href="../eph/index.html"><span class="CRAN">eph</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/EpiTxDb.html" target="_top"><span class="BioC">EpiTxDb</span></a>, <a href="../ffscrapr/index.html"><span class="CRAN">ffscrapr</span></a>, <a href="../foundry/index.html"><span class="CRAN">foundry</span></a>, <a href="../geofi/index.html"><span class="CRAN">geofi</span></a>, <a href="../gwasrapidd/index.html"><span class="CRAN">gwasrapidd</span></a>, <a href="../httpcache/index.html"><span class="CRAN">httpcache</span></a>, <a href="../igfetchr/index.html"><span class="CRAN">igfetchr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/koinar.html" target="_top"><span class="BioC">koinar</span></a>, <a href="../lacrmr/index.html"><span class="CRAN">lacrmr</span></a>, <a href="../markmyassignment/index.html"><span class="CRAN">markmyassignment</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/metabolomicsWorkbenchR.html" target="_top"><span class="BioC">metabolomicsWorkbenchR</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/MetMashR.html" target="_top"><span class="BioC">MetMashR</span></a>, <a href="../nhdplusTools/index.html"><span class="CRAN">nhdplusTools</span></a>, <a href="../npi/index.html"><span class="CRAN">npi</span></a>, <a href="../ohsome/index.html"><span class="CRAN">ohsome</span></a>, <a href="../osdatahub/index.html"><span class="CRAN">osdatahub</span></a>, <a href="../oysteR/index.html"><span class="CRAN">oysteR</span></a>, <a href="../pivotaltrackR/index.html"><span class="CRAN">pivotaltrackR</span></a>, <a href="../portalr/index.html"><span class="CRAN">portalr</span></a>, <a href="../promr/index.html"><span class="CRAN">promr</span></a>, <a href="../ProPublicaR/index.html"><span class="CRAN">ProPublicaR</span></a>, <a href="../pxweb/index.html"><span class="CRAN">pxweb</span></a>, <a href="../qtkit/index.html"><span class="CRAN">qtkit</span></a>, <a href="../readepi/index.html"><span class="CRAN">readepi</span></a>, <a href="../rnassqs/index.html"><span class="CRAN">rnassqs</span></a>, <a href="../rnbp/index.html"><span class="CRAN">rnbp</span></a>, <a href="../SC2API/index.html"><span class="CRAN">SC2API</span></a>, <a href="../scryr/index.html"><span class="CRAN">scryr</span></a>, <a href="../sentryR/index.html"><span class="CRAN">sentryR</span></a>, <a href="../spectator/index.html"><span class="CRAN">spectator</span></a>, <a href="../sship/index.html"><span class="CRAN">sship</span></a>, <a href="../tcpl/index.html"><span class="CRAN">tcpl</span></a>, <a href="../tidygeoRSS/index.html"><span class="CRAN">tidygeoRSS</span></a>, <a href="../tidyRSS/index.html"><span class="CRAN">tidyRSS</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/tRNAdbImport.html" target="_top"><span class="BioC">tRNAdbImport</span></a>, <a href="../tubern/index.html"><span class="CRAN">tubern</span></a>, <a href="../virustotal/index.html"><span class="CRAN">virustotal</span></a>, <a href="../yahoofinancer/index.html"><span class="CRAN">yahoofinancer</span></a>, <a href="../zzlite/index.html"><span class="CRAN">zzlite</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=httptest"><span class="CRAN"><samp>https://CRAN.R-project.org/package=httptest</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

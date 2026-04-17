@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pipeflow</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pipeflow">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Lightweight, General-Purpose Data Analysis Pipelines [R package pipeflow version 0.2.3]">
+<meta name="citation_author" content="Roman Pahl">
+<meta name="citation_publication_date" content="2025-07-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pipeflow">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pipeflow">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pipeflow: Lightweight, General-Purpose Data Analysis Pipelines">
+<meta property="og:description" content="A lightweight yet powerful framework for building robust data analysis pipelines. With 'pipeflow', you initialize a pipeline with your dataset and construct workflows step by step by adding R functions. You can modify, remove, or insert steps and parameters at any stage, while 'pipeflow' ensures the pipeline's integrity. Overall, this package offers a beginner-friendly framework that simplifies and streamlines the development of data analysis pipelines by making them modular, intuitive, and adaptable.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pipeflow">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pipeflow: Lightweight, General-Purpose Data Analysis Pipelines</h2>
+<p>A lightweight yet powerful framework for building robust data
+    analysis pipelines. With 'pipeflow', you initialize a pipeline with your
+    dataset and construct workflows step by step by adding R functions.
+    You can modify, remove, or insert steps and parameters at any stage,
+    while 'pipeflow' ensures the pipeline's integrity.
+    Overall, this package offers a beginner-friendly framework that simplifies
+    and streamlines the development of data analysis pipelines by making
+    them modular, intuitive, and adaptable.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lgr/index.html"><span class="CRAN">lgr</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../visNetwork/index.html"><span class="CRAN">visNetwork</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-07-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pipeflow">10.32614/CRAN.package.pipeflow</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roman Pahl [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roman Pahl  &#x3c;&#x72;&#x6f;&#x6d;&#x61;&#x6e;&#x2e;&#x70;&#x61;&#x68;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rpahl/pipeflow/issues" target="_top"><span class="GitHub">https://github.com/rpahl/pipeflow/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rpahl.github.io/pipeflow/" target="_top"><span class="GitHub">https://rpahl.github.io/pipeflow/</span></a>,
+<a href="https://github.com/rpahl/pipeflow" target="_top"><span class="GitHub">https://github.com/rpahl/pipeflow</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html"><span class="CRAN">ReproducibleResearch</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pipeflow.html"><span class="CRAN">pipeflow results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pipeflow.html"><span class="CRAN">pipeflow.html</span></a> ,  <a href="pipeflow.pdf"><span class="CRAN">pipeflow.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/v01-get-started.html"><span class="CRAN">Get started with pipeflow</span></a> (<a href="vignettes/v01-get-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v01-get-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/v02-modify-pipeline.html"><span class="CRAN">Modifying existing pipelines</span></a> (<a href="vignettes/v02-modify-pipeline.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v02-modify-pipeline.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/v03-combine-pipelines.html"><span class="CRAN">Combining pipelines</span></a> (<a href="vignettes/v03-combine-pipelines.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v03-combine-pipelines.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/v04-collect-output.html"><span class="CRAN">Collecting output</span></a> (<a href="vignettes/v04-collect-output.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v04-collect-output.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/v05-split-and-combine.html"><span class="CRAN">Advanced: How to use pipeflow with split data sets</span></a> (<a href="vignettes/v05-split-and-combine.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v05-split-and-combine.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/v06-self-modify-pipeline.html"><span class="CRAN">Advanced: How pipelines can modify themselves at runtime</span></a> (<a href="vignettes/v06-self-modify-pipeline.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/v06-self-modify-pipeline.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pipeflow_0.2.3.tar.gz"> <span class="CRAN"> pipeflow_0.2.3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pipeflow_0.2.3.zip"><span class="CRAN">pipeflow_0.2.3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pipeflow_0.2.3.zip"><span class="CRAN">pipeflow_0.2.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pipeflow_0.2.3.zip"><span class="CRAN">pipeflow_0.2.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pipeflow_0.2.3.tgz"><span class="CRAN">pipeflow_0.2.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/pipeflow_0.2.3.tgz"><span class="CRAN">pipeflow_0.2.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pipeflow_0.2.3.tgz"><span class="CRAN">pipeflow_0.2.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pipeflow_0.2.3.tgz"><span class="CRAN">pipeflow_0.2.3.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pipeflow"> <span class="CRAN"> pipeflow archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pipeflow"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pipeflow</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

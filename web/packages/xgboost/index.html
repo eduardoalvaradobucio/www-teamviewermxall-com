@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package xgboost</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=xgboost">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Extreme Gradient Boosting [R package xgboost version 3.2.1.1]">
+<meta name="citation_author1" content="Tianqi Chen">
+<meta name="citation_author2" content="Tong He">
+<meta name="citation_author3" content="Michael Benesty">
+<meta name="citation_author4" content="Vadim Khotilovich">
+<meta name="citation_author5" content="Yuan Tang">
+<meta name="citation_author6" content="Hyunsu Cho">
+<meta name="citation_author7" content="Kailong Chen">
+<meta name="citation_author8" content="Rory Mitchell">
+<meta name="citation_author9" content="Ignacio Cano">
+<meta name="citation_author10" content="Tianyi Zhou">
+<meta name="citation_author11" content="Mu Li">
+<meta name="citation_author12" content="Junyuan Xie">
+<meta name="citation_author13" content="Min Lin">
+<meta name="citation_author14" content="Yifeng Geng">
+<meta name="citation_author15" content="Yutian Li">
+<meta name="citation_author16" content="Jiaming Yuan">
+<meta name="citation_author17" content="David Cortes">
+<meta name="citation_publication_date" content="2026-03-18">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=xgboost">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=xgboost">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="xgboost: Extreme Gradient Boosting">
+<meta property="og:description" content="Extreme Gradient Boosting, which is an efficient implementation of the gradient boosting framework from Chen &amp;amp; Guestrin (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F2939672.2939785&quot; target=&quot;_top&quot;&gt;doi:10.1145/2939672.2939785&lt;/a&gt;&amp;gt;. This package is its R interface. The package includes efficient linear model solver and tree learning algorithms. The package can automatically do parallel computation on a single machine which could be more than 10 times faster than existing gradient boosting packages. It supports various objective functions, including regression, classification and ranking. The package is made to be extensible, so that users are also allowed to define their own objectives easily.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=xgboost">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>xgboost: Extreme Gradient Boosting</h2>
+<p>Extreme Gradient Boosting, which is an efficient implementation
+    of the gradient boosting framework from Chen &amp; Guestrin (2016) &lt;<a href="https://doi.org/10.1145%2F2939672.2939785" target="_top">doi:10.1145/2939672.2939785</a>&gt;.
+    This package is its R interface. The package includes efficient linear
+    model solver and tree learning algorithms. The package can automatically
+    do parallel computation on a single machine which could be more than 10
+    times faster than existing gradient boosting packages. It supports
+    various objective functions, including regression, classification and ranking.
+    The package is made to be extensible, so that users are also allowed to define
+    their own objectives easily.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.2.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a> (&ge; 1.1-0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.9.6), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 1.0.1), <a href="../DiagrammeR/index.html"><span class="CRAN">DiagrammeR</span></a> (&ge; 0.9.0), <a href="../DiagrammeRsvg/index.html"><span class="CRAN">DiagrammeRsvg</span></a>, <a href="../rsvg/index.html"><span class="CRAN">rsvg</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../Ckmeans.1d.dp/index.html"><span class="CRAN">Ckmeans.1d.dp</span></a> (&ge; 3.3.1), <a href="../vcd/index.html"><span class="CRAN">vcd</span></a> (&ge; 1.3), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a> (&ge; 1.0.1), <a href="../float/index.html"><span class="CRAN">float</span></a>, <a href="../titanic/index.html"><span class="CRAN">titanic</span></a>, <a href="../RhpcBLASctl/index.html"><span class="CRAN">RhpcBLASctl</span></a>, <a href="../survival/index.html"><span class="CRAN">survival</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-18</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.xgboost">10.32614/CRAN.package.xgboost</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tianqi Chen [aut],
+  Tong He [aut],
+  Michael Benesty [aut],
+  Vadim Khotilovich [aut],
+  Yuan Tang <a href="https://orcid.org/0000-0001-5243-233X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Hyunsu Cho [aut],
+  Kailong Chen [aut],
+  Rory Mitchell [aut],
+  Ignacio Cano [aut],
+  Tianyi Zhou [aut],
+  Mu Li [aut],
+  Junyuan Xie [aut],
+  Min Lin [aut],
+  Yifeng Geng [aut],
+  Yutian Li [aut],
+  Jiaming Yuan [aut, cre],
+  David Cortes [aut],
+  XGBoost contributors [cph] (base XGBoost implementation)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jiaming Yuan  &#x3c;&#x6a;&#x6d;&#x2e;&#x79;&#x75;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x75;&#x74;&#x6c;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dmlc/xgboost/issues" target="_top"><span class="GitHub">https://github.com/dmlc/xgboost/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (== 2.0)</span></a> | file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/dmlc/xgboost" target="_top"><span class="GitHub">https://github.com/dmlc/xgboost</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, C++17</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Databases.html"><span class="CRAN">Databases</span></a>, <a href="../../views/HighPerformanceComputing.html"><span class="CRAN">HighPerformanceComputing</span></a>, <a href="../../views/MachineLearning.html"><span class="CRAN">MachineLearning</span></a>, <a href="../../views/ModelDeployment.html"><span class="CRAN">ModelDeployment</span></a>, <a href="../../views/Survival.html"><span class="CRAN">Survival</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_xgboost.html"><span class="CRAN">xgboost results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/xgboost.html"><span class="CRAN">xgboost.html</span></a> ,  <a href="xgboost.pdf"><span class="CRAN">xgboost.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/xgboost_introduction.html"><span class="CRAN">XGBoost for R introduction</span></a> (<a href="vignettes/xgboost_introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/xgboost_introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/xgboostfromJSON.html"><span class="CRAN">XGBoost from JSON</span></a> (<a href="vignettes/xgboostfromJSON.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/xgboostfromJSON.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/xgboost_3.2.1.1.tar.gz"> <span class="CRAN"> xgboost_3.2.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/xgboost_3.2.1.1.zip"><span class="CRAN">xgboost_3.2.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/xgboost_3.2.1.1.zip"><span class="CRAN">xgboost_3.2.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/xgboost_3.2.1.1.zip"><span class="CRAN">xgboost_3.2.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/xgboost_3.2.1.1.tgz"><span class="CRAN">xgboost_3.2.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/xgboost_3.2.1.1.tgz"><span class="CRAN">xgboost_3.2.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/xgboost_3.2.1.1.tgz"><span class="CRAN">xgboost_3.2.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/xgboost_3.2.1.1.tgz"><span class="CRAN">xgboost_3.2.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/xgboost"> <span class="CRAN"> xgboost archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../LogisticEnsembles/index.html"><span class="CRAN">LogisticEnsembles</span></a>, <a href="../NumericEnsembles/index.html"><span class="CRAN">NumericEnsembles</span></a>, <a href="../PIE/index.html"><span class="CRAN">PIE</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../adapt4pv/index.html"><span class="CRAN">adapt4pv</span></a>, <a href="../alookr/index.html"><span class="CRAN">alookr</span></a>, <a href="../audrex/index.html"><span class="CRAN">audrex</span></a>, <a href="../autoBagging/index.html"><span class="CRAN">autoBagging</span></a>, <a href="../autostats/index.html"><span class="CRAN">autostats</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/bambu.html" target="_top"><span class="BioC">bambu</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/BayesSpace.html" target="_top"><span class="BioC">BayesSpace</span></a>, <a href="../BioMoR/index.html"><span class="CRAN">BioMoR</span></a>, <a href="../BioPred/index.html"><span class="CRAN">BioPred</span></a>, <a href="../CausalGPS/index.html"><span class="CRAN">CausalGPS</span></a>, <a href="../causalweight/index.html"><span class="CRAN">causalweight</span></a>, <a href="../CCI/index.html"><span class="CRAN">CCI</span></a>, <a href="../cpfa/index.html"><span class="CRAN">cpfa</span></a>, <a href="../CRE/index.html"><span class="CRAN">CRE</span></a>, <a href="../csmpv/index.html"><span class="CRAN">csmpv</span></a>, <a href="../CytoProfile/index.html"><span class="CRAN">CytoProfile</span></a>, <a href="../ddml/index.html"><span class="CRAN">ddml</span></a>, <a href="../DSAM/index.html"><span class="CRAN">DSAM</span></a>, <a href="../DSWE/index.html"><span class="CRAN">DSWE</span></a>, <a href="../E2E/index.html"><span class="CRAN">E2E</span></a>, <a href="../EFAfactors/index.html"><span class="CRAN">EFAfactors</span></a>, <a href="../EHRmuse/index.html"><span class="CRAN">EHRmuse</span></a>, <a href="../EIX/index.html"><span class="CRAN">EIX</span></a>, <a href="../fastml/index.html"><span class="CRAN">fastml</span></a>, <a href="../FastRet/index.html"><span class="CRAN">FastRet</span></a>, <a href="../fastrmodels/index.html"><span class="CRAN">fastrmodels</span></a>, <a href="../ggscidca/index.html"><span class="CRAN">ggscidca</span></a>, <a href="../glmnetr/index.html"><span class="CRAN">glmnetr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/GNET2.html" target="_top"><span class="BioC">GNET2</span></a>, <a href="../HCPclust/index.html"><span class="CRAN">HCPclust</span></a>, <a href="../IBLM/index.html"><span class="CRAN">IBLM</span></a>, <a href="../iimi/index.html"><span class="CRAN">iimi</span></a>, <a href="../imanr/index.html"><span class="CRAN">imanr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/infinityFlow.html" target="_top"><span class="BioC">infinityFlow</span></a>, <a href="../irboost/index.html"><span class="CRAN">irboost</span></a>, <a href="../IVDML/index.html"><span class="CRAN">IVDML</span></a>, <a href="../latentFactoR/index.html"><span class="CRAN">latentFactoR</span></a>, <a href="../ldmppr/index.html"><span class="CRAN">ldmppr</span></a>, <a href="../LTFGRS/index.html"><span class="CRAN">LTFGRS</span></a>, <a href="../LTFHPlus/index.html"><span class="CRAN">LTFHPlus</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/MAPFX.html" target="_top"><span class="BioC">MAPFX</span></a>, <a href="../MBMethPred/index.html"><span class="CRAN">MBMethPred</span></a>, <a href="../MethScope/index.html"><span class="CRAN">MethScope</span></a>, <a href="../MFF/index.html"><span class="CRAN">MFF</span></a>, <a href="../mikropml/index.html"><span class="CRAN">mikropml</span></a>, <a href="../mixgb/index.html"><span class="CRAN">mixgb</span></a>, <a href="../mlspatial/index.html"><span class="CRAN">mlspatial</span></a>, <a href="../modeltime/index.html"><span class="CRAN">modeltime</span></a>, <a href="../nadir/index.html"><span class="CRAN">nadir</span></a>, <a href="../nfl4th/index.html"><span class="CRAN">nfl4th</span></a>, <a href="../nflfastR/index.html"><span class="CRAN">nflfastR</span></a>, <a href="../nsga3/index.html"><span class="CRAN">nsga3</span></a>, <a href="../personalized/index.html"><span class="CRAN">personalized</span></a>, <a href="../PND.heter.cluster/index.html"><span class="CRAN">PND.heter.cluster</span></a>, <a href="../postcard/index.html"><span class="CRAN">postcard</span></a>, <a href="../PoweREST/index.html"><span class="CRAN">PoweREST</span></a>, <a href="../predhy/index.html"><span class="CRAN">predhy</span></a>, <a href="../predhy.GUI/index.html"><span class="CRAN">predhy.GUI</span></a>, <a href="../predictoR/index.html"><span class="CRAN">predictoR</span></a>, <a href="../promor/index.html"><span class="CRAN">promor</span></a>, <a href="../qshap/index.html"><span class="CRAN">qshap</span></a>, <a href="../quickSentiment/index.html"><span class="CRAN">quickSentiment</span></a>, <a href="../radiant.model/index.html"><span class="CRAN">radiant.model</span></a>, <a href="../reddPrec/index.html"><span class="CRAN">reddPrec</span></a>, <a href="../ReSurv/index.html"><span class="CRAN">ReSurv</span></a>, <a href="../rminer/index.html"><span class="CRAN">rminer</span></a>, <a href="../roseRF/index.html"><span class="CRAN">roseRF</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/scDblFinder.html" target="_top"><span class="BioC">scDblFinder</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/scds.html" target="_top"><span class="BioC">scds</span></a>, <a href="../scPOEM/index.html"><span class="CRAN">scPOEM</span></a>, <a href="../SELF/index.html"><span class="CRAN">SELF</span></a>, <a href="../SEMdeep/index.html"><span class="CRAN">SEMdeep</span></a>, <a href="../sentiment.ai/index.html"><span class="CRAN">sentiment.ai</span></a>, <a href="../SHAPBoost/index.html"><span class="CRAN">SHAPBoost</span></a>, <a href="../SHAPforxgboost/index.html"><span class="CRAN">SHAPforxgboost</span></a>, <a href="../shapviz/index.html"><span class="CRAN">shapviz</span></a>, <a href="../simPop/index.html"><span class="CRAN">simPop</span></a>, <a href="../SMMAL/index.html"><span class="CRAN">SMMAL</span></a>, <a href="../surveyvoi/index.html"><span class="CRAN">surveyvoi</span></a>, <a href="../tidybins/index.html"><span class="CRAN">tidybins</span></a>, <a href="../tidysdm/index.html"><span class="CRAN">tidysdm</span></a>, <a href="../traineR/index.html"><span class="CRAN">traineR</span></a>, <a href="../TSCI/index.html"><span class="CRAN">TSCI</span></a>, <a href="../tsensembler/index.html"><span class="CRAN">tsensembler</span></a>, <a href="../twang/index.html"><span class="CRAN">twang</span></a>, <a href="../VIM/index.html"><span class="CRAN">VIM</span></a>, <a href="../wactor/index.html"><span class="CRAN">wactor</span></a>, <a href="../weightedGCM/index.html"><span class="CRAN">weightedGCM</span></a>, <a href="../xgb2sql/index.html"><span class="CRAN">xgb2sql</span></a>, <a href="../xpect/index.html"><span class="CRAN">xpect</span></a>, <a href="../xrf/index.html"><span class="CRAN">xrf</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../automatedRecLin/index.html"><span class="CRAN">automatedRecLin</span></a>, <a href="../BAGofT/index.html"><span class="CRAN">BAGofT</span></a>, <a href="../bigsnpr/index.html"><span class="CRAN">bigsnpr</span></a>, <a href="../bioLeak/index.html"><span class="CRAN">bioLeak</span></a>, <a href="../biomod2/index.html"><span class="CRAN">biomod2</span></a>, <a href="../BORG/index.html"><span class="CRAN">BORG</span></a>, <a href="../Boruta/index.html"><span class="CRAN">Boruta</span></a>, <a href="../breakDown/index.html"><span class="CRAN">breakDown</span></a>, <a href="../bundle/index.html"><span class="CRAN">bundle</span></a>, <a href="../butcher/index.html"><span class="CRAN">butcher</span></a>, <a href="../caretSDM/index.html"><span class="CRAN">caretSDM</span></a>, <a href="../cfbfastR/index.html"><span class="CRAN">cfbfastR</span></a>, <a href="../CimpleG/index.html"><span class="CRAN">CimpleG</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/ClassifyR.html" target="_top"><span class="BioC">ClassifyR</span></a>, <a href="../coefplot/index.html"><span class="CRAN">coefplot</span></a>, <a href="../comets/index.html"><span class="CRAN">comets</span></a>, <a href="../cornet/index.html"><span class="CRAN">cornet</span></a>, <a href="../cuda.ml/index.html"><span class="CRAN">cuda.ml</span></a>, <a href="https://www.bioconductor.org/packages/release/data/experiment/html/CytoMethIC.html" target="_top"><span class="BioC">CytoMethIC</span></a>, <a href="../DALEXtra/index.html"><span class="CRAN">DALEXtra</span></a>, <a href="../daltoolbox/index.html"><span class="CRAN">daltoolbox</span></a>, <a href="../DeepLearningCausal/index.html"><span class="CRAN">DeepLearningCausal</span></a>, <a href="../drape/index.html"><span class="CRAN">drape</span></a>, <a href="../easyalluvial/index.html"><span class="CRAN">easyalluvial</span></a>, <a href="../embed/index.html"><span class="CRAN">embed</span></a>, <a href="../explore/index.html"><span class="CRAN">explore</span></a>, <a href="../familiar/index.html"><span class="CRAN">familiar</span></a>, <a href="../fdm2id/index.html"><span class="CRAN">fdm2id</span></a>, <a href="../FLAME/index.html"><span class="CRAN">FLAME</span></a>, <a href="../flevr/index.html"><span class="CRAN">flevr</span></a>, <a href="../GenericML/index.html"><span class="CRAN">GenericML</span></a>, <a href="../h3sdm/index.html"><span class="CRAN">h3sdm</span></a>, <a href="../interflex/index.html"><span class="CRAN">interflex</span></a>, <a href="../lime/index.html"><span class="CRAN">lime</span></a>, <a href="../LLMAgentR/index.html"><span class="CRAN">LLMAgentR</span></a>, <a href="../MachineShop/index.html"><span class="CRAN">MachineShop</span></a>, <a href="../MantaID/index.html"><span class="CRAN">MantaID</span></a>, <a href="../marginaleffects/index.html"><span class="CRAN">marginaleffects</span></a>, <a href="../mcboost/index.html"><span class="CRAN">mcboost</span></a>, <a href="../miesmuschel/index.html"><span class="CRAN">miesmuschel</span></a>, <a href="../misl/index.html"><span class="CRAN">misl</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/mistyR.html" target="_top"><span class="BioC">mistyR</span></a>, <a href="../ml/index.html"><span class="CRAN">ml</span></a>, <a href="../mlflow/index.html"><span class="CRAN">mlflow</span></a>, <a href="../mllrnrs/index.html"><span class="CRAN">mllrnrs</span></a>, <a href="../mlr/index.html"><span class="CRAN">mlr</span></a>, <a href="../mlr3benchmark/index.html"><span class="CRAN">mlr3benchmark</span></a>, <a href="../mlr3hyperband/index.html"><span class="CRAN">mlr3hyperband</span></a>, <a href="../mlr3learners/index.html"><span class="CRAN">mlr3learners</span></a>, <a href="../mlr3shiny/index.html"><span class="CRAN">mlr3shiny</span></a>, <a href="../mlr3tuning/index.html"><span class="CRAN">mlr3tuning</span></a>, <a href="../mlr3tuningspaces/index.html"><span class="CRAN">mlr3tuningspaces</span></a>, <a href="../mlr3viz/index.html"><span class="CRAN">mlr3viz</span></a>, <a href="../mlsurvlrnrs/index.html"><span class="CRAN">mlsurvlrnrs</span></a>, <a href="../MLwrap/index.html"><span class="CRAN">MLwrap</span></a>, <a href="../modelStudio/index.html"><span class="CRAN">modelStudio</span></a>, <a href="../modeltime.ensemble/index.html"><span class="CRAN">modeltime.ensemble</span></a>, <a href="../MSclassifR/index.html"><span class="CRAN">MSclassifR</span></a>, <a href="../offsetreg/index.html"><span class="CRAN">offsetreg</span></a>, <a href="../OpEnCAST/index.html"><span class="CRAN">OpEnCAST</span></a>, <a href="../orbital/index.html"><span class="CRAN">orbital</span></a>, <a href="../parsnip/index.html"><span class="CRAN">parsnip</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/pathMED.html" target="_top"><span class="BioC">pathMED</span></a>, <a href="../PatientLevelPrediction/index.html"><span class="CRAN">PatientLevelPrediction</span></a>, <a href="../pdp/index.html"><span class="CRAN">pdp</span></a>, <a href="../PheCAP/index.html"><span class="CRAN">PheCAP</span></a>, <a href="../pmml/index.html"><span class="CRAN">pmml</span></a>, <a href="../polle/index.html"><span class="CRAN">polle</span></a>, <a href="../PortfolioTesteR/index.html"><span class="CRAN">PortfolioTesteR</span></a>, <a href="../qeML/index.html"><span class="CRAN">qeML</span></a>, <a href="../r2pmml/index.html"><span class="CRAN">r2pmml</span></a>, <a href="../rattle/index.html"><span class="CRAN">rattle</span></a>, <a href="../rBayesianOptimization/index.html"><span class="CRAN">rBayesianOptimization</span></a>, <a href="../rush/index.html"><span class="CRAN">rush</span></a>, <a href="../sense/index.html"><span class="CRAN">sense</span></a>, <a href="../shapr/index.html"><span class="CRAN">shapr</span></a>, <a href="../sits/index.html"><span class="CRAN">sits</span></a>, <a href="../stackgbm/index.html"><span class="CRAN">stackgbm</span></a>, <a href="../SuperLearner/index.html"><span class="CRAN">SuperLearner</span></a>, <a href="../SuperSurv/index.html"><span class="CRAN">SuperSurv</span></a>, <a href="../survex/index.html"><span class="CRAN">survex</span></a>, <a href="../tabnet/index.html"><span class="CRAN">tabnet</span></a>, <a href="../targeted/index.html"><span class="CRAN">targeted</span></a>, <a href="../tidylearn/index.html"><span class="CRAN">tidylearn</span></a>, <a href="../tidypopgen/index.html"><span class="CRAN">tidypopgen</span></a>, <a href="../tidypredict/index.html"><span class="CRAN">tidypredict</span></a>, <a href="../tune/index.html"><span class="CRAN">tune</span></a>, <a href="../utsf/index.html"><span class="CRAN">utsf</span></a>, <a href="../vetiver/index.html"><span class="CRAN">vetiver</span></a>, <a href="../vimp/index.html"><span class="CRAN">vimp</span></a>, <a href="../vivid/index.html"><span class="CRAN">vivid</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/XAItest.html" target="_top"><span class="BioC">XAItest</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../fastshap/index.html"><span class="CRAN">fastshap</span></a>, <a href="../vip/index.html"><span class="CRAN">vip</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=xgboost"><span class="CRAN"><samp>https://CRAN.R-project.org/package=xgboost</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
