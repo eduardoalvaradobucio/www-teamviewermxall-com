@@ -1,0 +1,136 @@
+From b5f26b75bdd9afa95016fb67d0cab15fc74cbf05 Mon Sep 17 00:00:00 2001
+From: Dmitriy Mozgovoy <robotshara@gmail.com>
+Date: Fri, 12 Sep 2025 16:33:42 +0300
+Subject: [PATCH 1/2] fix(types): fixed env config types; (#7020)
+
+---
+ index.d.cts | 7 +++++--
+ index.d.ts  | 7 +++++--
+ 2 files changed, 10 insertions(+), 4 deletions(-)
+
+diff --git a/index.d.cts b/index.d.cts
+index 8a9e90e192..971a644f51 100644
+--- a/index.d.cts
++++ b/index.d.cts
+@@ -424,8 +424,11 @@ declare namespace axios {
+     env?: {
+       FormData?: new (...args: any[]) => object;
+       fetch?: (input: URL | Request | string, init?: RequestInit) => Promise<Response>;
+-      Request?: new (input: (RequestInfo | URL), init?: RequestInit) => Request;
+-      Response?: new (body?: (BodyInit | null), init?: ResponseInit) => Response;
++      Request?: new (input: URL | Request | string, init?: RequestInit) => Request;
++      Response?: new (
++          body?: ArrayBuffer | ArrayBufferView | Blob | FormData | URLSearchParams | string | null,
++          init?: ResponseInit
++      ) => Response;
+     };
+     formSerializer?: FormSerializerOptions;
+     family?: AddressFamily;
+diff --git a/index.d.ts b/index.d.ts
+index 82b486be3c..554140e57f 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -356,8 +356,11 @@ export interface AxiosRequestConfig<D = any> {
+   env?: {
+     FormData?: new (...args: any[]) => object;
+     fetch?: (input: URL | Request | string, init?: RequestInit) => Promise<Response>;
+-    Request?: new (input: (RequestInfo | URL), init?: RequestInit) => Request;
+-    Response?: new (body?: (BodyInit | null), init?: ResponseInit) => Response;
++    Request?: new (input: URL | Request | string, init?: RequestInit) => Request;
++    Response?: new (
++        body?: ArrayBuffer | ArrayBufferView | Blob | FormData | URLSearchParams | string | null,
++        init?: ResponseInit
++    ) => Response;
+   };
+   formSerializer?: FormSerializerOptions;
+   family?: AddressFamily;
+
+From 3cac78c2de2d1d1af0c1b4753feff16c075f01d1 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]"
+ <41898282+github-actions[bot]@users.noreply.github.com>
+Date: Fri, 12 Sep 2025 17:18:39 +0300
+Subject: [PATCH 2/2] chore(release): v1.12.1 (#7021)
+
+Co-authored-by: DigitalBrainJS <12586868+DigitalBrainJS@users.noreply.github.com>
+---
+ CHANGELOG.md      | 11 +++++++++++
+ bower.json        |  2 +-
+ lib/env/data.js   |  2 +-
+ package-lock.json |  4 ++--
+ package.json      |  2 +-
+ 5 files changed, 16 insertions(+), 5 deletions(-)
+
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 69561e6b31..54e5d8e4d2 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,16 @@
+ # Changelog
+ 
++## [1.12.1](https://github.com/axios/axios/compare/v1.12.0...v1.12.1) (2025-09-12)
++
++
++### Bug Fixes
++
++* **types:** fixed env config types; ([#7020](https://github.com/axios/axios/issues/7020)) ([b5f26b7](https://github.com/axios/axios/commit/b5f26b75bdd9afa95016fb67d0cab15fc74cbf05))
++
++### Contributors to this release
++
++- <img src="https://avatars.githubusercontent.com/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Dmitriy Mozgovoy](https://github.com/DigitalBrainJS "+10/-4 (#7020 )")
++
+ # [1.12.0](https://github.com/axios/axios/compare/v1.11.0...v1.12.0) (2025-09-11)
+ 
+ 
+diff --git a/bower.json b/bower.json
+index 0ffbfdd88d..81e3a601b5 100644
+--- a/bower.json
++++ b/bower.json
+@@ -1,7 +1,7 @@
+ {
+   "name": "axios",
+   "main": "./dist/axios.js",
+-  "version": "1.12.0",
++  "version": "1.12.1",
+   "homepage": "https://axios-http.com",
+   "authors": [
+     "Matt Zabriskie"
+diff --git a/lib/env/data.js b/lib/env/data.js
+index b538ee9ace..2202a3e04f 100644
+--- a/lib/env/data.js
++++ b/lib/env/data.js
+@@ -1 +1 @@
+-export const VERSION = "1.12.0";
+\ No newline at end of file
++export const VERSION = "1.12.1";
+\ No newline at end of file
+diff --git a/package-lock.json b/package-lock.json
+index 7a97fb971d..5d1a17c050 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "axios",
+-  "version": "1.12.0",
++  "version": "1.12.1",
+   "lockfileVersion": 2,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "axios",
+-      "version": "1.12.0",
++      "version": "1.12.1",
+       "license": "MIT",
+       "dependencies": {
+         "follow-redirects": "^1.15.6",
+diff --git a/package.json b/package.json
+index 2f0a12cfc5..6859515fd1 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "axios",
+-  "version": "1.12.0",
++  "version": "1.12.1",
+   "description": "Promise based HTTP client for the browser and node.js",
+   "main": "index.js",
+   "exports": {
