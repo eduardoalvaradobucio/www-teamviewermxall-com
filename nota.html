@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Douglas Crockford" />
+<meta http-equiv="Expires" content="1968-12-09" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<link rel="stylesheet" href="crockford.css" type="text/css">
+<link rel="icon" type="image/png" href="https://www.crockford.com/favicon.png">
+<title>Nota Message Format</title>
+<style>
+table {
+	clear: both;
+	float:right;
+	margin-top: -2em;
+    margin-bottom: 2em;
+}
+caption {
+    caption-side: bottom;
+    font-weight: normal;
+    text-align: center;
+}
+.red {
+    color: red;
+}
+pre div {
+    color: purple;
+    margin-top: 0;
+    padding-left: 1em;
+}
+</style>
+</head>
+<body>
+<div id="side">
+    <div id="name"><a href="https://www.crockford.com"><big>Douglas Crockford</big></a></div><br>
+    <h5><a href="https://www.crockford.com/blog.html">Blog</a></h5>
+    <h5><a href="https://www.crockford.com/books.html">Books</a></h5>
+    <h5><a href="https://www.crockford.com/videos.html">Videos</a></h5>
+    <h5><a href="https://www.crockford.com/2026.html">2026 Appearance</a></h5>
+    <h5><a href="https://www.crockford.com/slides.html">Slides</a></h5>
+    <h5><a href="https://www.crockford.com/javascript/">JavaScript</a></h5>
+    <h5><a href="https://mistysystem.com/">Misty</a></h5>
+    <h5><a href="https://jslint.com">JSLint</a></h5>
+    <h5><a href="https://json.org">JSON</a></h5>
+    <h5><a href="https://www.crockford.com/pronto,html">Pronto</a></h5>
+    <h5><a href="https://github.com/douglascrockford">Github</a></h5>
+    <h5><a href="https://www.crockford.com/ec.html">Electric Communities</a></h5>
+    <h5><a href="https://www.flickr.com/photos/douglascrockford/albums/72157644699201976">Flickr Photo Album</a></h5>
+    <h5><a href="https://bsky.app/profile/did:plc:45gs3u53n6my3eyjdhmuogbk">Blue Sky</a></h5>
+    <h5><a href="https://www.linkedin.com/in/douglas-crockford-724600109/">LinkedIn</a></h5>
+    <h5><a rel="me" href="https://layer8.space/@douglascrockford">Mastodon/Layer8</a></h5>
+    <h5><a href="https://www.researchgate.net/profile/Douglas-Crockford">ResearchGate</a></h5>
+    <h5><a href="https://www.crockford.com/pronouns.html">Pronouns: <dfn>pe/per</dfn></a></h5>
+    <h5><a href="https://aptera.us/reserve?referral_code=B53xn5cY">Aptera</a></h5>
+    <h5><a id="best">The best is yet to come</a></h5>
+    <h5><a href="https://www.crockford.com/about.html">About</a></h5>
+</div>
+<audio id="best_audio" src="the best is yet to come.mp3"></audio>
+<script>
+document.getElementById("best").addEventListener(
+    "click",
+    function (ignore) {
+        document.getElementById("best_audio").play();
+    },
+    false
+);
+</script>
+<div id="blog">
+<time>2023-10-24</time>
+<h1>Nota Message Format</h1>
+
+<img src="image/nota.gif" style="float: right;">
+<p>
+ This note describes a message format called <b>Nota</b> that was developed for use in
+ <a href="https://mistysystem.com/">Misty</a>'s Procession
+ Protocol. The Procession Protocol requires a JSON-like format that provides blobs (binary large
+ objects) for things like public keys and encrypted secrets. The Procession Protocol also requires
+ private process addresses.</p>
+<p><a href="https://www.JSON.org">JSON</a> had three design rules:</p>
+<ol start=0>
+    <li>Minimal</li>
+    <li>Textual</li>
+    <li>Subset of JavaScript</li>
+</ol>
+<p>The textual rule was important in the early days of the web because people did not have much experience with network programming,
+and having the ability to directly see the data was obviously useful.
+The tooling is much better now, so the value in being able to read the raw streams is much lower.
+It also came with some downsides:
+People were tempted to construct JSON text by hand which was often problematic, and the text encoding is slightly inefficient.</p>
+<p>The Subset of JavaScript rule (which gave JSON its name) was expedient because it allowed the JavaScript parser to act as the first JSON parser.
+A close association with JavaScript is no longer desirable.</p>
+<p>The minimal rule is still vitally important.</p>
+<p>Nota maintains JSON's design philosophy of being at the intersection of most programming languages and most data types.
+The representation of numbers is completely independent of problematic number formats like IEEE 754.
+The representation of data structures with arrays and key:value pairs seems to be compatible with everything.</p>
+<p>Nota departs from JSON by using counts instead of brackets.
+The representation of counts comes from <b><a href="https://www.crockford.com/kim.html">Kim</a></b>.
+Kim is also the representation of characters, being simpler and more compact than UTF-8.</p>
+<p>Nota is not intended to replace JSON. It is intended for an application that JSON does not do well.
+JSON should continue doing the things it does well.</p>
+<p>Nota stands for Network Object Transfer Arrangement. Nota is short for <i>notation</i>.
+Nota does not stand for <i>not a</i> or <i>none of the above</i>.</p>
+<h2 id="continuation">Continuation</h2>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Continuation</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue<br>
+DDDDDDD: seven data bits</caption>
+</table><p>The key idea in Kim is of a continuation byte. A continuation byte contains a continue bit and 7 data bits.
+To process a continuation byte, shift the kim accumulator left by seven bits, and then add the 7 data bits to the kim
+accumulator. If the continue bit is 0, we are done. Otherwise, repeat with the next byte.</p>
+
+<table>
+<caption>Summary of Nota Types</caption>
+    <tr>
+        <th scope="col">Bits</th>
+        <th scope="col">Type</th>
+    </tr>
+    <tr>
+        <td class=red>000</td>
+        <td>Blob</td>
+    </tr>
+    <tr>
+        <td class=red>001</td>
+        <td>Text</td>
+    </tr>
+    <tr>
+        <td class=red>010</td>
+        <td>Array</td>
+    </tr>
+    <tr>
+        <td class=red>011</td>
+        <td>Record</td>
+    </tr>
+    <tr>
+        <td class=red>100</td>
+        <td>Floating Point (positive exponent)</td>
+    </tr>
+    <tr>
+        <td class=red>101</td>
+        <td>Floating Point (negative exponent)</td>
+    </tr>
+    <tr>
+        <td class=red>110</td>
+        <td>Integer (zero exponent)</td>
+    </tr>
+    <tr>
+        <td class=red>111</td>
+        <td>Symbol</td>
+    </tr>
+</table>
+<h2 id="preambles">Preambles</h2>
+<p>Every Nota value starts with a preamble byte that is a Kim value with the three most significant bits
+used for type information.</p>
+<p>Most of the types provide 3 or 4 bits for storing some data: Make the kim encoding of the data.
+If the most significant byte contains no more than 3 or 4 bits, then those bits are encorporated into
+the preamble. If the kim requires no additional bits, then the C (continue) bit is turned off. Otherwise,
+the C bit is turned on and the continuation of the kim follows.</p>
+<h3 id="blob" style="clear: both;">Blob</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Blob</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>0</td>
+        <td class=red>0</td>
+        <td class=red>0</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the number of bits<br>
+DDDD: the number of bits</caption>
+</table>
+<p>A blob is a string of bits. The data produces the number of bits. The number of bytes that follow:</p>
+<pre>floor((number_of_bits + 7) / 8)</pre>
+<p>The final byte is padded with <code>0</code> if necessary. The length of a blob can be represented in 4 bits
+(for a byte-sized blob), or 11 bits, or 18 bits, or 25 bits, or 32 bits, or 39 bits...</p>
+<p>Example: A blob containing 25 bits: <code>1111000011100011001000001</code></p>
+<pre style="cursor: default;"><span title=continue>1</span><span title="blob type" class=red>000</span><span title="number of bits" style="color: blue;">0000 00011001</span> <span title="bits" style="color: green;">11110000 11100011 00100000 1</span><span title="padding">0000000</span>
+<div title="hexadecimal bytes">80       19       F0       E3       20       80</div></pre>
+<h3 id="text">Text</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Text</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>0</td>
+        <td class=red>0</td>
+        <td class=red>1</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the number of characters<br>
+DDDD: the number of characters</caption>
+</table>
+<p>The data produces the number of characters in the text. Many Kim encoded characters follow.
+The ASCII characters are encoded in a single byte.
+The characters in the first quarter of the Basic Multilingual Plane are encoded in two bytes.
+All other Unicode characters, including characters from the extended planes, are encoded in three bytes.
+Unlike JSON, there is never a need for escapement.</p>
+<p>Examples:</p>
+<pre>
+""
+<div>10</div>
+&quot;cat&quot;
+<div>13 63 61 74</div>
+"U+1F4A9 「うんち絵文字」 «💩»"
+<div>90 14 55 2B 31 46 34 41 39 20 E0 0C E0 46 E1 13 E0 61 81 FA 75 81 CB 07 81 B6 57 E0 0D 20 81 2B 87 E9 29 81 3B</div>
+</pre>
+<h3 id="array">Array</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Array</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>0</td>
+        <td class=red>1</td>
+        <td class=red>0</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the number of elements<br>
+DDDD: the number of elements
+</caption>
+</table>
+<p>An array is an ordered sequence of values. Following the preamble are the elements of the array.
+Each element begins with one of the preambles. As with JSON, nesting is encouraged.</p>
+<h3 id="record">Record</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Record</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>0</td>
+        <td class=red>1</td>
+        <td class=red>1</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the number of pairs<br>
+DDDD:  number of pairs</caption>
+</table>
+<p>A record is an unordered collection of key/value pairs.
+JSON called this structure an <i>object</i>, but that was
+confusing in a context where everything is an object, including everything that is not an object.
+Record is a more appropriate term because there are no methods involved here.
+In a record, the keys must be text, and they must be unique within the record.
+The values can be any Nota values.</p>
+<h3 id="floatingpoint">Floating Point</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Floating Point</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>1</td>
+        <td class=red>0</td>
+        <td class=red>E</td>
+        <td>S</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the exponent<br>
+<span class=red>E</span>: sign of the exponent<br>
+S: sign of the coefficient<br>
+DDD: three bits of the exponent
+</caption>
+</table>
+<p>Nota floating point represents numbers as <code>coefficient * power(10, exponent)</code>.
+It is similar to scientific notation except that the part before the <code>e</code> (coefficient)
+must be an integer.
+The part after the <code>e</code> (exponent) gives the number of positions to move the decimal point
+(negative moves left, positive moves right) inserting <code>0</code> as necessary.</p>
+<p>The preamble may contain the first three bits of the exponent. The preamble is followed by the continuation
+of the exponent (if there is one), followed by the coefficient.
+</p>
+<p>The <a href="#integer">integer</a> type should be used when the exponent is zero.</p>
+<p>Examples:</p>
+<pre>
+-1.01
+<div>5A 65</div>
+98.6
+<div>51 87 5A</div>
+-0.5772156649
+<div>D8 0A 95 C0 B0 BD 69</div>
+-1.00000000000001
+<div>D8 0E 96 DE B1 83 E9 80 01</div>
+-10000000000000
+<div>C8 0D 01</div></pre>
+<h3 id="integer">Integer</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Integer</th>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td class=red>1</td>
+        <td class=red>1</td>
+        <td class=red>0</td>
+        <td>S</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>C: continue the integer<br>
+S: sign<br>
+DDD: three bits of the integer</caption>
+</table>
+<p>The integers in the range -7 thru 7 can be represented by a single byte.
+The integers in the range -1023 thru 1023 can be represented by two bytes.
+The integers in the range -131071 thru 131071 can be represented by three bytes.</p>
+<p>Examples:</p>
+<pre>0     <div>60</div>
+2023  <div>E0 8F 67</div>
+-1    <div>69</div></pre>
+<h3>Symbol</h3>
+<table>
+    <tr>
+        <th colspan="8" scope="col">Symbol</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td class=red>1</td>
+        <td class=red>1</td>
+        <td class=red>1</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+        <td>D</td>
+    </tr>
+    <caption>DDDD: the symbol</caption>
+</table>
+<p>Currently there are only five symbols. All other symbols are reserved.</p>
+<p>The first two symbols are the logical constants <code>true</code> and <code>false</code>.</p>
+<p>The other two symbols are special prefixes.
+The <code>private</code> prefix must be followed by a record containing a private process address.
+The <code>system</code> prefix must be followed by a record containing a system message.
+</p>
+<pre>null     <div>70</div>
+false    <div>72</div>
+true     <div>73</div>
+private  <div>78</div>
+system   <div>79</div></pre>
+    <h5><a href="https://www.crockford.com/notademo.html">Nota Message Format Encoding Demonstrator</a></h5>
+    <h5><a href="https://www.crockford.com/wota.html">Wota</a></h5>
+    <h5><a href="https://www.crockford.com/kim.html">Kim</a></h5>
+    <h5><a href="https://www.crockford.com/ascii.html">ASCII</a></h5>
+    <h5><a href="https://www.crockford.com/dec64.html">DEC64</a></h5>
+    <h5><a href="https://www.mistysystem.com/">Misty</a></h5>
+    <h5><a href="https://www.json.org">JSON</a></h5>
+
+</div>
+</body>
+</html>
+

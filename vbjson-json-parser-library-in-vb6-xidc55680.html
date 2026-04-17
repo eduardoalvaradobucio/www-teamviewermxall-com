@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta name="description" content="A Visual Basic JSON parser implementation covered by a BSD licence that does not rely on the JScript engine for parsing." />
+    <meta name="keywords" content="Visual Basic, JSON" />
+    <link rel="canonical" href="https://www.ediy.co.nz/vbjson-json-parser-library-in-vb6-xidc55680.html" />
+
+<title>VB JSON Parser Library for VB6 (BSD Licensed) - Visual Basic, JSON</title>
+    <script src="/?syscmd=script" type="text/javascript"></script>
+    <link href="/?syscmd=stylesheet" type="text/css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+.cke_widget_drag_handler { display: none } 
+</style>
+
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body TOPMARGIN="0" LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+<div class="ediy-sheet">
+<div style=" width: 800px; margin-left: auto; margin-right: auto;">
+  <h2>VB-JSON:&nbsp;A Visual Basic 6 (VB6) JSON Parser Class Library&nbsp;</h2>
+  <!-- AddThis Button BEGIN -->
+
+  <div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_google_plusone" g:plusone:size="medium"></a> <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f1258e2643096a5">
+</script>
+  <!-- AddThis Button END -->
+
+  <p><img src="/site/images/388439.png" border="0" alt="VB6 JSON Parser BSD Licensed" align="right" width="300" style=" border: 1px solid #eeeeee; margin: 15px;"> <b>Introduction to JSON for Visual Basic 6</b><br>
+   VB-JSON is a Visual Basic 6 class library for parsing and emitting&nbsp;JSON&nbsp;(Javascript Object Notation)&nbsp;and&nbsp;can handle&nbsp;nested arrays and objects in the data. It does not rely on the JScript engine for parsing.</p>
+
+  <p>JSON&nbsp;is&nbsp;a useful&nbsp;and compact format&nbsp;for data interchange between a browser based JavaScript client program and a VB6 based data server,&nbsp;and also&nbsp;for storing structured meta data in a text field. It&nbsp;can also be used as an efficient RPC transport protocol
+  and compresses well using GZip.&nbsp; The project also includes a fast string builder class for assembling the JSON data string at a high speed.&nbsp;</p>
+
+  <p>This software is BSD licenced and is based on an Excel macro found <a href="http://code.google.com/p/vba-json/" rel="nofollow">here</a>. Some parsing bugs in the original functions have been fixed and the string <a href="http://www.ediy.co.nz/" title="Web Design Christchurch NZ" style=
+  "COLOR: #707070;">builder</a> class improves performance. Also there are some handy utility functions that return a JSON data set from an ADO Recordset&nbsp;or a character delimited string.</p>
+  
+  <p><b>VBJSON Download</b><br>
+   Download the VB-JSON JSON Parser class and a simple&nbsp;example&nbsp;project&nbsp;from here:</p>
+
+  <p><a class="ediy-button" href="http://www.ediy.co.nz/content.asp?syscmd=dl&amp;ID=A06786CB3E7E4F878FA542DBEE4B60B5" title="VBJSON VB6 JSON Parser" target="" rel="nofollow"><b>Download VBJSON.zip</b></a></p>
+ 
+  
+  <p>
+  <b><br>
+   Release History<br>
+  </b> <b>18th April 2009:</b> Initial Release<br>
+   <b>23rd April 2009:</b> Added JSON file parser button to sample project and a simple error list to show parsing errors rather than using Err.Raise<br>
+   <b>26th April 2009:</b>&nbsp;<br>
+   * Improved JSON parser error handling<br>
+   * Added // and /* */&nbsp;comment support<br>
+   * Added an early implementation of&nbsp;a simple scripting&nbsp;system called <b>JSONscript</b><br>
+  <br>
+   <b>18th July 2009:</b>&nbsp;<br>
+   * Changed VBJSON.cls to JSON.bas Module to make it a singleton<br>
+   * Fixed a bug with data containing the / character<br>
+   * Changed formatNumber function to use Long integers<br>
+   * Added code for making JSON-RPC calls 
+</p>
+  <p><b>1 August 2010<br>
+  </b> * Fixed a bug in the JSON parser that hangs on a&nbsp;colon character&nbsp;in a key.</p>
+
+  <p><b>16 March 2012<br>
+  </b> * Thank you to Hynek C for a patch to fix a possible infinite loop in the array/object parser. Please update the JSON.bas module file in your existing projects.</p>
+
+  <p><b>22 May 2012<br>
+  </b> * Thanks to Nick P for pointing out that CLng/Val is not the best number conversion function for large numbers. The project has been updated to use the CDec function instead.</p>
+
+  <p>A contact email address is given in the header of the class if you find any bugs or have suggestions&nbsp;on how to improve&nbsp;this project.<br>
+  <br>
+   For more information about the uses of JSON and&nbsp;the data&nbsp;format, please refer to the <a href="http://www.json.org/" rel="nofollow">JSON.ORG</a> web site.</p>
+<p>Our internal use of JSON has increased not only in the <a href="http://www.ediy.co.nz/">eDIY</a> web design and ecommerce software, but also some embedded microcontroller projects because it is so compact, yet able to encode complex data in very few bytes!
+</div> 
+
+</div>
+
+
+
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 	
+
+<div id="tipclick_div" onmouseover="if (tipclick) return tipclick._continue()" onmouseout="if (tipclick) return tipclick._stop()"></div>
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//sa.ediy.nz/";
+    _paq.push(['setTrackerUrl', u+'stats.php']);
+    _paq.push(['setSiteId', 7]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'stats.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//sa.ediy.nz/stats.php?idsite=7" style="border:0;" alt="" /></p></noscript>
+</body>
+
+</html>
+
+<!-- end of page --> 
+
