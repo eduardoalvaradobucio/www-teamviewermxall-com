@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pagoda2</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pagoda2">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Single Cell Analysis and Differential Expression [R package pagoda2 version 1.0.15]">
+<meta name="citation_author1" content="Nikolas Barkas">
+<meta name="citation_author2" content="Viktor Petukhov">
+<meta name="citation_author3" content="Peter Kharchenko">
+<meta name="citation_author4" content="Evan Biederstedt">
+<meta name="citation_publication_date" content="2026-03-31">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pagoda2">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pagoda2">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pagoda2: Single Cell Analysis and Differential Expression">
+<meta property="og:description" content="Analyzing and interactively exploring large-scale single-cell RNA-seq datasets. 'pagoda2' primarily performs normalization and differential gene expression analysis, with an interactive application for exploring single-cell RNA-seq datasets. It performs basic tasks such as cell size normalization, gene variance normalization, and can be used to identify subpopulations and run differential expression within individual samples. 'pagoda2' was written to rapidly process modern large-scale scRNAseq datasets of approximately 1e6 cells. The companion web application allows users to explore which gene expression patterns form the different subpopulations within your data. The package also serves as the primary method for preprocessing data for conos, &amp;lt;&lt;a href=&quot;https://github.com/kharchenkolab/conos&quot; target=&quot;_top&quot;&gt;https://github.com/kharchenkolab/conos&lt;/a&gt;&amp;gt;. This package interacts with data available through the 'p2data' package, which is available in a 'drat' repository. To access this data package, see the instructions at &amp;lt;&lt;a href=&quot;https://github.com/kharchenkolab/pagoda2&quot; target=&quot;_top&quot;&gt;https://github.com/kharchenkolab/pagoda2&lt;/a&gt;&amp;gt;. The size of the 'p2data' package is approximately 6 MB.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pagoda2">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pagoda2: Single Cell Analysis and Differential Expression</h2>
+<p>Analyzing and interactively exploring large-scale single-cell RNA-seq datasets. 'pagoda2' primarily performs normalization and differential gene expression analysis, with an interactive application for exploring single-cell RNA-seq datasets. It performs basic tasks such as cell size normalization, gene variance normalization, and can be used to identify subpopulations and run differential expression within individual samples. 'pagoda2' was written to rapidly process modern large-scale scRNAseq datasets of approximately 1e6 cells. The companion web application allows users to explore which gene expression patterns form the different subpopulations within your data. The package also serves as the primary method for preprocessing data for conos, &lt;<a href="https://github.com/kharchenkolab/conos" target="_top">https://github.com/kharchenkolab/conos</a>&gt;. This package interacts with data available through the 'p2data' package, which is available in a 'drat' repository. To access this data package, see the instructions at &lt;<a href="https://github.com/kharchenkolab/pagoda2" target="_top">https://github.com/kharchenkolab/pagoda2</a>&gt;. The size of the 'p2data' package is approximately 6 MB.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.15</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dendsort/index.html"><span class="CRAN">dendsort</span></a>, <a href="../drat/index.html"><span class="CRAN">drat</span></a>, <a href="../fastcluster/index.html"><span class="CRAN">fastcluster</span></a>, ../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html, ../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html, <a href="../irlba/index.html"><span class="CRAN">irlba</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../MASS/index.html"><span class="CRAN">MASS</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, ../../../doc/manuals/r-patched/packages/methods/refman/methods.html, <a href="../N2R/index.html"><span class="CRAN">N2R</span></a>, ../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html, <a href="../plyr/index.html"><span class="CRAN">plyr</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../RMTstat/index.html"><span class="CRAN">RMTstat</span></a>, <a href="../Rook/index.html"><span class="CRAN">Rook</span></a>, <a href="../Rtsne/index.html"><span class="CRAN">Rtsne</span></a>, <a href="../sccore/index.html"><span class="CRAN">sccore</span></a> (&ge;
+0.1.1), ../../../doc/manuals/r-patched/packages/stats/refman/stats.html, <a href="../urltools/index.html"><span class="CRAN">urltools</span></a>, ../../../doc/manuals/r-patched/packages/utils/refman/utils.html</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppArmadillo/index.html"><span class="CRAN">RcppArmadillo</span></a>, <a href="../RcppProgress/index.html"><span class="CRAN">RcppProgress</span></a>, <a href="../RcppEigen/index.html"><span class="CRAN">RcppEigen</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="https://www.bioconductor.org/packages/release/bioc/html/AnnotationDbi.html" target="_top"><span class="BioC">AnnotationDbi</span></a>, <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/BiocGenerics.html" target="_top"><span class="BioC">BiocGenerics</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/BiocParallel.html" target="_top"><span class="BioC">BiocParallel</span></a>, <a href="../colorRamps/index.html"><span class="CRAN">colorRamps</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../dbscan/index.html"><span class="CRAN">dbscan</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="https://www.bioconductor.org/packages/release/data/annotation/html/GO.db.html" target="_top"><span class="BioC">GO.db</span></a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../KernSmooth/index.html"><span class="CRAN">KernSmooth</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="https://www.bioconductor.org/packages/release/data/annotation/html/org.Dr.eg.db.html" target="_top"><span class="BioC">org.Dr.eg.db</span></a>, <a href="https://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html" target="_top"><span class="BioC">org.Hs.eg.db</span></a>, <a href="https://www.bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html" target="_top"><span class="BioC">org.Mm.eg.db</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/pcaMethods.html" target="_top"><span class="BioC">pcaMethods</span></a>, <a href="../pheatmap/index.html"><span class="CRAN">pheatmap</span></a>, <a href="../rgl/index.html"><span class="CRAN">rgl</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../robustbase/index.html"><span class="CRAN">robustbase</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/scde.html" target="_top"><span class="BioC">scde</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../uwot/index.html"><span class="CRAN">uwot</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-31</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pagoda2">10.32614/CRAN.package.pagoda2</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nikolas Barkas [aut],
+  Viktor Petukhov [aut],
+  Peter Kharchenko [aut],
+  Simon Steiger [ctb],
+  Rasmus Rydbirk [ctb],
+  Evan Biederstedt [cre, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Evan Biederstedt  &#x3c;&#x65;&#x76;&#x61;&#x6e;&#x2e;&#x62;&#x69;&#x65;&#x64;&#x65;&#x72;&#x73;&#x74;&#x65;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/kharchenkolab/pagoda2/issues" target="_top"><span class="GitHub">https://github.com/kharchenkolab/pagoda2/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>See the file COPYRIGHTS for various pagoda2 copyright
+details <br>  <a href="COPYRIGHTS"><span class="CRAN">pagoda2 copyright details</span></a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/kharchenkolab/pagoda2" target="_top"><span class="GitHub">https://github.com/kharchenkolab/pagoda2</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Omics.html"><span class="CRAN">Omics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pagoda2.html"><span class="CRAN">pagoda2 results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pagoda2.html"><span class="CRAN">pagoda2.html</span></a> ,  <a href="pagoda2.pdf"><span class="CRAN">pagoda2.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pagoda2_1.0.15.tar.gz"> <span class="CRAN"> pagoda2_1.0.15.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pagoda2_1.0.15.zip"><span class="CRAN">pagoda2_1.0.15.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pagoda2_1.0.15.zip"><span class="CRAN">pagoda2_1.0.15.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pagoda2_1.0.15.zip"><span class="CRAN">pagoda2_1.0.15.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pagoda2_1.0.15.tgz"><span class="CRAN">pagoda2_1.0.15.tgz</span></a>, r-oldrel (arm64): not available, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pagoda2_1.0.15.tgz"><span class="CRAN">pagoda2_1.0.15.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pagoda2_1.0.15.tgz"><span class="CRAN">pagoda2_1.0.15.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pagoda2"> <span class="CRAN"> pagoda2 archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../conos/index.html"><span class="CRAN">conos</span></a>, <a href="../CRMetrics/index.html"><span class="CRAN">CRMetrics</span></a>, <a href="../scITD/index.html"><span class="CRAN">scITD</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pagoda2"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pagoda2</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

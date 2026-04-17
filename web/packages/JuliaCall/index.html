@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package JuliaCall</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=JuliaCall">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Seamless Integration Between R and 'Julia' [R package JuliaCall version 0.17.6]">
+<meta name="citation_author" content="Changcheng Li">
+<meta name="citation_publication_date" content="2024-12-07">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=JuliaCall">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=JuliaCall">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="JuliaCall: Seamless Integration Between R and 'Julia'">
+<meta property="og:description" content="Provides an R interface to 'Julia', which is a high-level, high-performance dynamic programming language for numerical computing, see &amp;lt;&lt;a href=&quot;https://julialang.org/&quot; target=&quot;_top&quot;&gt;https://julialang.org/&lt;/a&gt;&amp;gt; for more information. It provides a high-level interface as well as a low-level interface. Using the high level interface, you could call any 'Julia' function just like any R function with automatic type conversion. Using the low level interface, you could deal with C-level SEXP directly while enjoying the convenience of using a high-level programming language like 'Julia'.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=JuliaCall">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>JuliaCall: Seamless Integration Between R and 'Julia'</h2>
+<p>Provides an R interface to 'Julia',
+    which is a high-level, high-performance dynamic programming language
+    for numerical computing, see &lt;<a href="https://julialang.org/" target="_top">https://julialang.org/</a>&gt; for more information.
+    It provides a high-level interface as well as a low-level interface.
+    Using the high level interface, you could call any 'Julia' function just like
+    any R function with automatic type conversion. Using the low level interface,
+    you could deal with C-level SEXP directly while enjoying the convenience of
+    using a high-level programming language like 'Julia'.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.17.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>../../../doc/manuals/r-patched/packages/utils/refman/utils.html, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 0.12.7), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.28), <a href="../rjson/index.html"><span class="CRAN">rjson</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../sass/index.html"><span class="CRAN">sass</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-12-07</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.JuliaCall">10.32614/CRAN.package.JuliaCall</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Changcheng Li [aut, cre],
+  Christopher Rackauckas [ctb],
+  Randy Lai [ctb],
+  Dmitri Grominski [ctb],
+  Nagi Teramo [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Changcheng Li  &#x3c;&#x63;&#x78;&#x6c;&#x35;&#x30;&#x38;&#x20;&#x61;&#x74;&#x20;&#x70;&#x73;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/JuliaInterop/JuliaCall/issues" target="_top"><span class="GitHub">https://github.com/JuliaInterop/JuliaCall/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/JuliaInterop/JuliaCall" target="_top"><span class="GitHub">https://github.com/JuliaInterop/JuliaCall</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Julia &gt;= 1.0.0, RCall.jl</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">JuliaCall citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html"><span class="CRAN">NumericalMathematics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_JuliaCall.html"><span class="CRAN">JuliaCall results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/JuliaCall.html"><span class="CRAN">JuliaCall.html</span></a> ,  <a href="JuliaCall.pdf"><span class="CRAN">JuliaCall.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/JuliaCall_in_Jupyter_R_Notebook.html"><span class="CRAN">JuliaCall in Jupyter R Notebook</span></a> (<a href="vignettes/JuliaCall_in_Jupyter_R_Notebook.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/JuliaCall_in_Jupyter_R_Notebook.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Julia_in_RMarkdown.html"><span class="CRAN">Julia in RMarkdown</span></a> (<a href="vignettes/Julia_in_RMarkdown.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Julia_in_RMarkdown.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/JuliaCall_0.17.6.tar.gz"> <span class="CRAN"> JuliaCall_0.17.6.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/JuliaCall_0.17.6.zip"><span class="CRAN">JuliaCall_0.17.6.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/JuliaCall_0.17.6.zip"><span class="CRAN">JuliaCall_0.17.6.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/JuliaCall_0.17.6.zip"><span class="CRAN">JuliaCall_0.17.6.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/JuliaCall_0.17.6.tgz"><span class="CRAN">JuliaCall_0.17.6.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/JuliaCall_0.17.6.tgz"><span class="CRAN">JuliaCall_0.17.6.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/JuliaCall_0.17.6.tgz"><span class="CRAN">JuliaCall_0.17.6.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/JuliaCall_0.17.6.tgz"><span class="CRAN">JuliaCall_0.17.6.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/JuliaCall"> <span class="CRAN"> JuliaCall archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BayesFluxR/index.html"><span class="CRAN">BayesFluxR</span></a>, <a href="../bigsimr/index.html"><span class="CRAN">bigsimr</span></a>, <a href="../circuitscaper/index.html"><span class="CRAN">circuitscaper</span></a>, <a href="../diffeqr/index.html"><span class="CRAN">diffeqr</span></a>, <a href="../EmpiricalDynamics/index.html"><span class="CRAN">EmpiricalDynamics</span></a>, <a href="../iai/index.html"><span class="CRAN">iai</span></a>, <a href="../jlview/index.html"><span class="CRAN">jlview</span></a>, <a href="../rjuliabugs/index.html"><span class="CRAN">rjuliabugs</span></a>, <a href="../sMTL/index.html"><span class="CRAN">sMTL</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../RegimeChange/index.html"><span class="CRAN">RegimeChange</span></a>, <a href="../spacemodR/index.html"><span class="CRAN">spacemodR</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=JuliaCall"><span class="CRAN"><samp>https://CRAN.R-project.org/package=JuliaCall</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

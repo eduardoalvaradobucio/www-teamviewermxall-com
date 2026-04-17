@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package gmwmx</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=gmwmx">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Estimate Functional and Stochastic Parameters of Linear Models with Correlated Residuals [R package gmwmx version 1.0.3]">
+<meta name="citation_author1" content="Davide Antonio Cucci">
+<meta name="citation_author2" content="Lionel Voirol">
+<meta name="citation_author3" content="Stéphane Guerrier">
+<meta name="citation_publication_date" content="2023-03-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gmwmx">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gmwmx">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="gmwmx: Estimate Functional and Stochastic Parameters of Linear Models with Correlated Residuals">
+<meta property="og:description" content="Implements the Generalized Method of Wavelet Moments with Exogenous Inputs estimator (GMWMX) presented in Cucci, D. A., Voirol, L., Kermarrec, G., Montillet, J. P., and Guerrier, S. (2023) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00190-023-01702-8&quot; target=&quot;_top&quot;&gt;doi:10.1007/s00190-023-01702-8&lt;/a&gt;&amp;gt;. The GMWMX estimator allows to estimate functional and stochastic parameters of linear models with correlated residuals. The 'gmwmx' package provides functions to estimate, compare and analyze models, utilities to load and work with Global Navigation Satellite System (GNSS) data as well as methods to compare results with the Maximum Likelihood Estimator (MLE) implemented in Hector.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=gmwmx">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>gmwmx: Estimate Functional and Stochastic Parameters of Linear Models
+with Correlated Residuals</h2>
+<p>Implements the Generalized Method of Wavelet Moments with Exogenous Inputs estimator (GMWMX) presented in Cucci, D. A., Voirol, L., Kermarrec, G., Montillet, J. P., and Guerrier, S. (2023) &lt;<a href="https://doi.org/10.1007%2Fs00190-023-01702-8" target="_top">doi:10.1007/s00190-023-01702-8</a>&gt;.
+             The GMWMX estimator allows to estimate functional and stochastic parameters of linear models with correlated residuals. 
+             The 'gmwmx' package provides functions to estimate, compare and analyze models, utilities to load and work with Global Navigation Satellite System (GNSS) data as well as methods to compare results with the Maximum Likelihood Estimator (MLE) implemented in Hector.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../wv/index.html"><span class="CRAN">wv</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../longmemo/index.html"><span class="CRAN">longmemo</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../ltsa/index.html"><span class="CRAN">ltsa</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppArmadillo/index.html"><span class="CRAN">RcppArmadillo</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../simts/index.html"><span class="CRAN">simts</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2023-03-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.gmwmx">10.32614/CRAN.package.gmwmx</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Davide Antonio Cucci [aut],
+  Lionel Voirol [aut, cre],
+  Stéphane Guerrier [aut],
+  Jean-Philippe Montillet [ctb],
+  Gaël Kermarrec [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lionel Voirol  &#x3c;&#x6c;&#x69;&#x6f;&#x6e;&#x65;&#x6c;&#x76;&#x6f;&#x69;&#x72;&#x6f;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x68;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3"><span class="CRAN">AGPL-3</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gmwmx.html"><span class="CRAN">gmwmx results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/gmwmx.html"><span class="CRAN">gmwmx.html</span></a> ,  <a href="gmwmx.pdf"><span class="CRAN">gmwmx.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/load_estimate_compare_models.html"><span class="CRAN">Load data, estimate and compare models</span></a> (<a href="vignettes/load_estimate_compare_models.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/load_estimate_compare_models.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/remove_outliers_hector.html"><span class="CRAN">Remove extreme values in a time series signal with Hector</span></a> (<a href="vignettes/remove_outliers_hector.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/remove_outliers_hector.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/simulate_data.html"><span class="CRAN">Generate data from a model</span></a> (<a href="vignettes/simulate_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/simulate_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/simulation_study.html"><span class="CRAN">Simulation study</span></a> (<a href="vignettes/simulation_study.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/simulation_study.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gmwmx_1.0.3.tar.gz"> <span class="CRAN"> gmwmx_1.0.3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/gmwmx_1.0.3.zip"><span class="CRAN">gmwmx_1.0.3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/gmwmx_1.0.3.zip"><span class="CRAN">gmwmx_1.0.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/gmwmx_1.0.3.zip"><span class="CRAN">gmwmx_1.0.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/gmwmx_1.0.3.tgz"><span class="CRAN">gmwmx_1.0.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/gmwmx_1.0.3.tgz"><span class="CRAN">gmwmx_1.0.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/gmwmx_1.0.3.tgz"><span class="CRAN">gmwmx_1.0.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/gmwmx_1.0.3.tgz"><span class="CRAN">gmwmx_1.0.3.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gmwmx"> <span class="CRAN"> gmwmx archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gmwmx"><span class="CRAN"><samp>https://CRAN.R-project.org/package=gmwmx</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
