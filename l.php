@@ -1,1 +1,1 @@
-<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="zghE9W8Q">document.location.replace("https:\/\/www.meta.com\/smart-glasses\/");</script></body></html>
+<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="hbt8RVhJ">document.location.replace("https:\/\/www.meta.com\/");</script></body></html>
