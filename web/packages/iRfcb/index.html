@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package iRfcb</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=iRfcb">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Tools for Managing Imaging FlowCytobot (IFCB) Data [R package iRfcb version 0.8.1]">
+<meta name="citation_author" content="Anders Torstensson">
+<meta name="citation_publication_date" content="2026-03-01">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=iRfcb">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=iRfcb">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="iRfcb: Tools for Managing Imaging FlowCytobot (IFCB) Data">
+<meta property="og:description" content="A comprehensive suite of tools for managing, processing, and analyzing data from the IFCB. I R FlowCytobot ('iRfcb') supports quality control, geospatial analysis, and preparation of IFCB data for publication in databases like &amp;lt;&lt;a href=&quot;https://www.gbif.org&quot; target=&quot;_top&quot;&gt;https://www.gbif.org&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://www.obis.org&quot; target=&quot;_top&quot;&gt;https://www.obis.org&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://emodnet.ec.europa.eu/en&quot; target=&quot;_top&quot;&gt;https://emodnet.ec.europa.eu/en&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://shark.smhi.se/en/&quot; target=&quot;_top&quot;&gt;https://shark.smhi.se/en/&lt;/a&gt;&amp;gt;, and &amp;lt;&lt;a href=&quot;https://www.ecotaxa.org&quot; target=&quot;_top&quot;&gt;https://www.ecotaxa.org&lt;/a&gt;&amp;gt;. The package integrates with the MATLAB 'ifcb-analysis' tool, which is described in Sosik and Olson (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.4319%2Flom.2007.5.204&quot; target=&quot;_top&quot;&gt;doi:10.4319/lom.2007.5.204&lt;/a&gt;&amp;gt;, and provides features for working with raw, manually classified, and machine learning–classified image datasets. Key functionalities include image extraction, particle size distribution analysis, taxonomic data handling, and biomass concentration calculations, essential for plankton research.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=iRfcb">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>iRfcb: Tools for Managing Imaging FlowCytobot (IFCB) Data</h2>
+<p>A comprehensive suite of tools for managing, processing, and
+    analyzing data from the IFCB. I R FlowCytobot ('iRfcb') supports
+    quality control, geospatial analysis, and preparation of IFCB data for
+    publication in databases like &lt;<a href="https://www.gbif.org" target="_top">https://www.gbif.org</a>&gt;,
+    &lt;<a href="https://www.obis.org" target="_top">https://www.obis.org</a>&gt;, &lt;<a href="https://emodnet.ec.europa.eu/en" target="_top">https://emodnet.ec.europa.eu/en</a>&gt;,
+    &lt;<a href="https://shark.smhi.se/en/" target="_top">https://shark.smhi.se/en/</a>&gt;, and &lt;<a href="https://www.ecotaxa.org" target="_top">https://www.ecotaxa.org</a>&gt;. The package
+    integrates with the MATLAB 'ifcb-analysis' tool, which is described in
+    Sosik and Olson (2007) &lt;<a href="https://doi.org/10.4319%2Flom.2007.5.204" target="_top">doi:10.4319/lom.2007.5.204</a>&gt;, and provides
+    features for working with raw, manually classified, and machine
+    learning–classified image datasets. Key functionalities include image
+    extraction, particle size distribution analysis, taxonomic data
+    handling, and biomass concentration calculations, essential for
+    plankton research.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.8.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a> (&ge; 6.0.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../R.matlab/index.html"><span class="CRAN">R.matlab</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a> (&ge; 1.41.0), <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../worrms/index.html"><span class="CRAN">worrms</span></a>, <a href="../zip/index.html"><span class="CRAN">zip</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../hdf5r/index.html"><span class="CRAN">hdf5r</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-01</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.iRfcb">10.32614/CRAN.package.iRfcb</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Anders Torstensson
+    <a href="https://orcid.org/0000-0002-8283-656X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]
+    (Swedish Meteorological and Hydrological Institute),
+  Kendra Hayashi <a href="https://orcid.org/0000-0003-1600-9504" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Jamie Enslein [ctb],
+  Raphael Kudela <a href="https://orcid.org/0000-0002-8640-1205" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Alle Lie <a href="https://orcid.org/0009-0001-8709-4841" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Jayme Smith <a href="https://orcid.org/0000-0002-9669-4427" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  DTO-BioFlow [fnd] (Horizon Europe, HORIZON-MISS-2022-OCEAN-01-07),
+  SBDI [fnd] (Swedish Research Council, 2019-00242)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anders Torstensson  &#x3c;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x2e;&#x74;&#x6f;&#x72;&#x73;&#x74;&#x65;&#x6e;&#x73;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x73;&#x6d;&#x68;&#x69;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://europeanifcbgroup.github.io/iRfcb/" target="_top"><span class="GitHub">https://europeanifcbgroup.github.io/iRfcb/</span></a>,
+<a href="https://github.com/EuropeanIFCBGroup/iRfcb" target="_top"><span class="GitHub">https://github.com/EuropeanIFCBGroup/iRfcb</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">iRfcb citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_iRfcb.html"><span class="CRAN">iRfcb results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/iRfcb.html"><span class="CRAN">iRfcb.html</span></a> ,  <a href="iRfcb.pdf"><span class="CRAN">iRfcb.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction.html"><span class="CRAN">iRfcb Introduction</span></a> (<a href="vignettes/introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/iRfcb_0.8.1.tar.gz"> <span class="CRAN"> iRfcb_0.8.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/iRfcb_0.8.1.zip"><span class="CRAN">iRfcb_0.8.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/iRfcb_0.8.1.zip"><span class="CRAN">iRfcb_0.8.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/iRfcb_0.8.1.zip"><span class="CRAN">iRfcb_0.8.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/iRfcb_0.8.1.tgz"><span class="CRAN">iRfcb_0.8.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/iRfcb_0.8.1.tgz"><span class="CRAN">iRfcb_0.8.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/iRfcb_0.8.1.tgz"><span class="CRAN">iRfcb_0.8.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/iRfcb_0.8.1.tgz"><span class="CRAN">iRfcb_0.8.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/iRfcb"> <span class="CRAN"> iRfcb archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../SHARK4R/index.html"><span class="CRAN">SHARK4R</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=iRfcb"><span class="CRAN"><samp>https://CRAN.R-project.org/package=iRfcb</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

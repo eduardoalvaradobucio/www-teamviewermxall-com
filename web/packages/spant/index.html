@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package spant</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=spant">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="MR Spectroscopy Analysis Tools [R package spant version 3.9.0]">
+<meta name="citation_author" content="Martin Wilson">
+<meta name="citation_publication_date" content="2026-02-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=spant">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spant">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="spant: MR Spectroscopy Analysis Tools">
+<meta property="og:description" content="Tools for reading, visualising and processing Magnetic Resonance Spectroscopy data. The package includes methods for spectral fitting: Wilson (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fmrm.28385&quot; target=&quot;_top&quot;&gt;doi:10.1002/mrm.28385&lt;/a&gt;&amp;gt;, Wilson (2025) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fmrm.30462&quot; target=&quot;_top&quot;&gt;doi:10.1002/mrm.30462&lt;/a&gt;&amp;gt; and spectral alignment: Wilson (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fmrm.27605&quot; target=&quot;_top&quot;&gt;doi:10.1002/mrm.27605&lt;/a&gt;&amp;gt;. ">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=spant">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>spant: MR Spectroscopy Analysis Tools</h2>
+<p>Tools for reading, visualising and processing Magnetic Resonance
+    Spectroscopy data. The package includes methods for spectral fitting: Wilson
+    (2021) &lt;<a href="https://doi.org/10.1002%2Fmrm.28385" target="_top">doi:10.1002/mrm.28385</a>&gt;, Wilson (2025) &lt;<a href="https://doi.org/10.1002%2Fmrm.30462" target="_top">doi:10.1002/mrm.30462</a>&gt; and
+    spectral alignment: Wilson (2018) &lt;<a href="https://doi.org/10.1002%2Fmrm.27605" target="_top">doi:10.1002/mrm.27605</a>&gt;. </p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.9.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html"><span class="CRAN">abind</span></a>, <a href="../plyr/index.html"><span class="CRAN">plyr</span></a>, <a href="../pbapply/index.html"><span class="CRAN">pbapply</span></a>, <a href="../pracma/index.html"><span class="CRAN">pracma</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../expm/index.html"><span class="CRAN">expm</span></a> (&ge; 1.0-0), <a href="../signal/index.html"><span class="CRAN">signal</span></a>, <a href="../minpack.lm/index.html"><span class="CRAN">minpack.lm</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../ptw/index.html"><span class="CRAN">ptw</span></a>, <a href="../mmand/index.html"><span class="CRAN">mmand</span></a>, <a href="../RNifti/index.html"><span class="CRAN">RNifti</span></a>, <a href="../RNiftyReg/index.html"><span class="CRAN">RNiftyReg</span></a>, <a href="../fields/index.html"><span class="CRAN">fields</span></a>, <a href="../numDeriv/index.html"><span class="CRAN">numDeriv</span></a>, <a href="../nloptr/index.html"><span class="CRAN">nloptr</span></a>, <a href="../irlba/index.html"><span class="CRAN">irlba</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../viridisLite/index.html"><span class="CRAN">viridisLite</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinyFiles/index.html"><span class="CRAN">shinyFiles</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../miniUI/index.html"><span class="CRAN">miniUI</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../kableExtra/index.html"><span class="CRAN">kableExtra</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../ragg/index.html"><span class="CRAN">ragg</span></a>, <a href="../doParallel/index.html"><span class="CRAN">doParallel</span></a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../fslr/index.html"><span class="CRAN">fslr</span></a>, <a href="../car/index.html"><span class="CRAN">car</span></a>, <a href="../divest/index.html"><span class="CRAN">divest</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.spant">10.32614/CRAN.package.spant</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Wilson <a href="https://orcid.org/0000-0002-2089-3956" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cre, aut],
+  Yong Wang [ctb],
+  John Muschelli [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Wilson  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x77;&#x69;&#x6c;&#x73;&#x6f;&#x6e;&#x31;&#x31;&#x31;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/martin3141/spant/issues/" target="_top"><span class="GitHub">https://github.com/martin3141/spant/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://spantdoc.wilsonlab.co.uk/" target="_top">https://spantdoc.wilsonlab.co.uk/</a>,
+<a href="https://martin3141.github.io/spant/" target="_top"><span class="GitHub">https://martin3141.github.io/spant/</span></a>,
+<a href="https://github.com/martin3141/spant/" target="_top"><span class="GitHub">https://github.com/martin3141/spant/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">spant citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MedicalImaging.html"><span class="CRAN">MedicalImaging</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spant.html"><span class="CRAN">spant results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/spant.html"><span class="CRAN">spant.html</span></a> ,  <a href="spant.pdf"><span class="CRAN">spant.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/abfit-baseline-opts.html"><span class="CRAN">ABfit baseline options</span></a> (<a href="vignettes/abfit-baseline-opts.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/abfit-baseline-opts.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/spant-basis-simulation.html"><span class="CRAN">Basis simulation</span></a> (<a href="vignettes/spant-basis-simulation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/spant-basis-simulation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/spant-intro.html"><span class="CRAN">Introduction to spant</span></a> (<a href="vignettes/spant-intro.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/spant-intro.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/spant-metabolite-simulation.html"><span class="CRAN">Metabolite simulation</span></a> (<a href="vignettes/spant-metabolite-simulation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/spant-metabolite-simulation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/spant-preprocessing.html"><span class="CRAN">Common preprocessing steps</span></a> (<a href="vignettes/spant-preprocessing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/spant-preprocessing.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spant_3.9.0.tar.gz"> <span class="CRAN"> spant_3.9.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/spant_3.9.0.zip"><span class="CRAN">spant_3.9.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/spant_3.9.0.zip"><span class="CRAN">spant_3.9.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/spant_3.9.0.zip"><span class="CRAN">spant_3.9.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/spant_3.6.0.tgz"><span class="CRAN">spant_3.6.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/spant_3.9.0.tgz"><span class="CRAN">spant_3.9.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/spant_3.9.0.tgz"><span class="CRAN">spant_3.9.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/spant_3.9.0.tgz"><span class="CRAN">spant_3.9.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/spant"> <span class="CRAN"> spant archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spant"><span class="CRAN"><samp>https://CRAN.R-project.org/package=spant</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package mlr3oml</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=mlr3oml">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Connector Between 'mlr3' and 'OpenML' [R package mlr3oml version 0.12.0]">
+<meta name="citation_author1" content="Michel Lang">
+<meta name="citation_author2" content="Sebastian Fischer">
+<meta name="citation_publication_date" content="2026-01-28">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mlr3oml">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mlr3oml">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="mlr3oml: Connector Between 'mlr3' and 'OpenML'">
+<meta property="og:description" content="Provides an interface to 'OpenML.org' to list and download machine learning data, tasks and experiments. The 'OpenML' objects can be automatically converted to 'mlr3' objects. For a more sophisticated interface with more upload options, see the 'OpenML' package.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=mlr3oml">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>mlr3oml: Connector Between 'mlr3' and 'OpenML'</h2>
+<p>Provides an interface to 'OpenML.org' to list and download
+    machine learning data, tasks and experiments. The 'OpenML' objects can
+    be automatically converted to 'mlr3' objects.  For a more
+    sophisticated interface with more upload options, see
+    the 'OpenML' package.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.12.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../backports/index.html"><span class="CRAN">backports</span></a> (&ge; 1.1.6), <a href="../bit64/index.html"><span class="CRAN">bit64</span></a>, <a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lgr/index.html"><span class="CRAN">lgr</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../mlr3/index.html"><span class="CRAN">mlr3</span></a> (&ge; 0.16.0), <a href="../mlr3misc/index.html"><span class="CRAN">mlr3misc</span></a> (&ge; 0.7.0), <a href="../paradox/index.html"><span class="CRAN">paradox</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../uuid/index.html"><span class="CRAN">uuid</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a> (&ge; 0.6.0), <a href="../mlr3db/index.html"><span class="CRAN">mlr3db</span></a> (&ge; 0.5.0), <a href="../qs2/index.html"><span class="CRAN">qs2</span></a>, <a href="../RWeka/index.html"><span class="CRAN">RWeka</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-28</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.mlr3oml">10.32614/CRAN.package.mlr3oml</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michel Lang <a href="https://orcid.org/0000-0001-9754-0393" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Sebastian Fischer <a href="https://orcid.org/0000-0002-9609-3197" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cre, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sebastian Fischer  &#x3c;&#x73;&#x65;&#x62;&#x66;&#x2e;&#x66;&#x69;&#x73;&#x63;&#x68;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mlr-org/mlr3oml/issues" target="_top"><span class="GitHub">https://github.com/mlr-org/mlr3oml/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3"><span class="CRAN">LGPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mlr3oml.mlr-org.com" target="_top">https://mlr3oml.mlr-org.com</a>, <a href="https://github.com/mlr-org/mlr3oml" target="_top"><span class="GitHub">https://github.com/mlr-org/mlr3oml</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mlr3oml.html"><span class="CRAN">mlr3oml results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/mlr3oml.html"><span class="CRAN">mlr3oml.html</span></a> ,  <a href="mlr3oml.pdf"><span class="CRAN">mlr3oml.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mlr3oml_0.12.0.tar.gz"> <span class="CRAN"> mlr3oml_0.12.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/mlr3oml_0.12.0.zip"><span class="CRAN">mlr3oml_0.12.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/mlr3oml_0.12.0.zip"><span class="CRAN">mlr3oml_0.12.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/mlr3oml_0.12.0.zip"><span class="CRAN">mlr3oml_0.12.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/mlr3oml_0.12.0.tgz"><span class="CRAN">mlr3oml_0.12.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/mlr3oml_0.12.0.tgz"><span class="CRAN">mlr3oml_0.12.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/mlr3oml_0.12.0.tgz"><span class="CRAN">mlr3oml_0.12.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/mlr3oml_0.12.0.tgz"><span class="CRAN">mlr3oml_0.12.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mlr3oml"> <span class="CRAN"> mlr3oml archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../mcboost/index.html"><span class="CRAN">mcboost</span></a>, <a href="../mlr3verse/index.html"><span class="CRAN">mlr3verse</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mlr3oml"><span class="CRAN"><samp>https://CRAN.R-project.org/package=mlr3oml</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

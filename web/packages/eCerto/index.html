@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package eCerto</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=eCerto">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Statistical Tests for the Production of Reference Materials [R package eCerto version 0.8.11]">
+<meta name="citation_author" content="Jan Lisec">
+<meta name="citation_publication_date" content="2026-01-29">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eCerto">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eCerto">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="eCerto: Statistical Tests for the Production of Reference Materials">
+<meta property="og:description" content="The production of certified reference materials (CRMs) requires various statistical tests depending on the task and recorded data to ensure that reported values of CRMs are appropriate. Often these tests are performed according to the procedures described in 'ISO GUIDE 35:2017'. The 'eCerto' package contains a 'Shiny' app which provides functionality to load, process, report and backup data recorded during CRM production and facilitates following the recommended procedures. It is described in Lisec et al (2023) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00216-023-05099-3&quot; target=&quot;_top&quot;&gt;doi:10.1007/s00216-023-05099-3&lt;/a&gt;&amp;gt; and can also be accessed online &amp;lt;&lt;a href=&quot;https://apps.bam.de/shn00/eCerto/&quot; target=&quot;_top&quot;&gt;https://apps.bam.de/shn00/eCerto/&lt;/a&gt;&amp;gt; without package installation.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=eCerto">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>eCerto: Statistical Tests for the Production of Reference Materials</h2>
+<p>The production of certified reference materials (CRMs) requires 
+    various statistical tests depending on the task and recorded data to ensure 
+    that reported values of CRMs are appropriate. 
+    Often these tests are performed according to the procedures described in 
+    'ISO GUIDE 35:2017'. The 'eCerto' package contains a 'Shiny' app which 
+    provides functionality to load, process, report and backup data recorded 
+    during CRM production and facilitates following the recommended procedures.
+    It is described in Lisec et al (2023) &lt;<a href="https://doi.org/10.1007%2Fs00216-023-05099-3" target="_top">doi:10.1007/s00216-023-05099-3</a>&gt; and
+    can also be accessed online &lt;<a href="https://apps.bam.de/shn00/eCerto/" target="_top">https://apps.bam.de/shn00/eCerto/</a>&gt; without 
+    package installation.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.8.11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bslib/index.html"><span class="CRAN">bslib</span></a>, <a href="../config/index.html"><span class="CRAN">config</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../golem/index.html"><span class="CRAN">golem</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a> (&ge; 2.0), <a href="../moments/index.html"><span class="CRAN">moments</span></a>, <a href="../openxlsx/index.html"><span class="CRAN">openxlsx</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 1.5), <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../shinyWidgets/index.html"><span class="CRAN">shinyWidgets</span></a>, <a href="../tidyxl/index.html"><span class="CRAN">tidyxl</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../webshot2/index.html"><span class="CRAN">webshot2</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-29</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.eCerto">10.32614/CRAN.package.eCerto</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jan Lisec <a href="https://orcid.org/0000-0003-1220-2286" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cre,
+    aut],
+  Frederik Kreß [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jan Lisec  &#x3c;&#x6a;&#x61;&#x6e;&#x2e;&#x6c;&#x69;&#x73;&#x65;&#x63;&#x20;&#x61;&#x74;&#x20;&#x62;&#x61;&#x6d;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/janlisec/eCerto/issues" target="_top"><span class="GitHub">https://github.com/janlisec/eCerto/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/janlisec/eCerto" target="_top"><span class="GitHub">https://github.com/janlisec/eCerto</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">eCerto citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eCerto.html"><span class="CRAN">eCerto results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/eCerto.html"><span class="CRAN">eCerto.html</span></a> ,  <a href="eCerto.pdf"><span class="CRAN">eCerto.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eCerto_0.8.11.tar.gz"> <span class="CRAN"> eCerto_0.8.11.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/eCerto_0.8.11.zip"><span class="CRAN">eCerto_0.8.11.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/eCerto_0.8.11.zip"><span class="CRAN">eCerto_0.8.11.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/eCerto_0.8.11.zip"><span class="CRAN">eCerto_0.8.11.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/eCerto_0.8.11.tgz"><span class="CRAN">eCerto_0.8.11.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/eCerto_0.8.11.tgz"><span class="CRAN">eCerto_0.8.11.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/eCerto_0.8.11.tgz"><span class="CRAN">eCerto_0.8.11.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/eCerto_0.8.11.tgz"><span class="CRAN">eCerto_0.8.11.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/eCerto"> <span class="CRAN"> eCerto archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eCerto"><span class="CRAN"><samp>https://CRAN.R-project.org/package=eCerto</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

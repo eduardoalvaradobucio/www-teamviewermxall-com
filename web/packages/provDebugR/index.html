@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package provDebugR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=provDebugR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="A Time-Travelling Debugger [R package provDebugR version 1.0.1]">
+<meta name="citation_author1" content="Orenna Brand">
+<meta name="citation_author2" content="Elizabeth Fong">
+<meta name="citation_author3" content="Rose Sheehan">
+<meta name="citation_author4" content="Joseph Wonsil">
+<meta name="citation_author5" content="Emery Boose">
+<meta name="citation_publication_date" content="2021-04-22">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=provDebugR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=provDebugR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="provDebugR: A Time-Travelling Debugger">
+<meta property="og:description" content="Uses provenance post-execution to help the user understand and debug their script by providing functions to look at intermediate steps and data values, their forwards and backwards lineage, and to understand the steps leading up to warning and error messages. 'provDebugR' uses provenance produced by 'rdtLite' (available on CRAN), stored in PROV-JSON format.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=provDebugR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>provDebugR: A Time-Travelling Debugger</h2>
+<p>Uses provenance post-execution to help the user understand
+    and debug their script by providing functions to look at intermediate steps and
+    data values, their forwards and backwards lineage, and to understand the
+    steps leading up to warning and error messages. 'provDebugR' uses
+    provenance produced by 'rdtLite' (available on CRAN), stored in PROV-JSON format.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../provGraphR/index.html"><span class="CRAN">provGraphR</span></a>, <a href="../provParseR/index.html"><span class="CRAN">provParseR</span></a>, <a href="../textutils/index.html"><span class="CRAN">textutils</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rdtLite/index.html"><span class="CRAN">rdtLite</span></a>, rdt, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2021-04-22</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.provDebugR">10.32614/CRAN.package.provDebugR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Orenna Brand [aut],
+  Elizabeth Fong [aut],
+  Barbara Lerner [cre],
+  Rose Sheehan [aut],
+  Joseph Wonsil [aut],
+  Emery Boose [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Barbara Lerner  &#x3c;&#x62;&#x6c;&#x65;&#x72;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x74;&#x68;&#x6f;&#x6c;&#x79;&#x6f;&#x6b;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Additional_repositories:</td>
+<td><a href="https://end-to-end-provenance.github.io/drat/" target="_top"><span class="GitHub">https://end-to-end-provenance.github.io/drat/</span></a></td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_provDebugR.html"><span class="CRAN">provDebugR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/provDebugR.html"><span class="CRAN">provDebugR.html</span></a> ,  <a href="provDebugR.pdf"><span class="CRAN">provDebugR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Home.html"><span class="CRAN">Introduction to Using Provenance to Debug with provDebugR</span></a> (<a href="vignettes/Home.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/debug.errors.html"><span class="CRAN">Using provenance to debug errors and warnings</span></a> (<a href="vignettes/debug.errors.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/debug.lineage.html"><span class="CRAN">Using provenance to view the lineage of a data item</span></a> (<a href="vignettes/debug.lineage.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/debug.variables.html"><span class="CRAN">Using provenance to view variable values</span></a> (<a href="vignettes/debug.variables.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/provDebugR_1.0.1.tar.gz"> <span class="CRAN"> provDebugR_1.0.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/provDebugR_1.0.1.zip"><span class="CRAN">provDebugR_1.0.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/provDebugR_1.0.1.zip"><span class="CRAN">provDebugR_1.0.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/provDebugR_1.0.1.zip"><span class="CRAN">provDebugR_1.0.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/provDebugR_1.0.1.tgz"><span class="CRAN">provDebugR_1.0.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/provDebugR_1.0.1.tgz"><span class="CRAN">provDebugR_1.0.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/provDebugR_1.0.1.tgz"><span class="CRAN">provDebugR_1.0.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/provDebugR_1.0.1.tgz"><span class="CRAN">provDebugR_1.0.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/provDebugR"> <span class="CRAN"> provDebugR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=provDebugR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=provDebugR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

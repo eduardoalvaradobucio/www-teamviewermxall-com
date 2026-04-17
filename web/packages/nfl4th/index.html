@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package nfl4th</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=nfl4th">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Functions to Calculate Optimal Fourth Down Decisions in the National Football League [R package nfl4th version 1.0.7]">
+<meta name="citation_author" content="Ben Baldwin">
+<meta name="citation_publication_date" content="2026-03-04">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nfl4th">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nfl4th">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="nfl4th: Functions to Calculate Optimal Fourth Down Decisions in the National Football League">
+<meta property="og:description" content="A set of functions to estimate outcomes of fourth down plays in the National Football League and obtain fourth down plays from &amp;lt;&lt;a href=&quot;https://www.nfl.com/&quot; target=&quot;_top&quot;&gt;https://www.nfl.com/&lt;/a&gt;&amp;gt; and &amp;lt;&lt;a href=&quot;https://www.espn.com/&quot; target=&quot;_top&quot;&gt;https://www.espn.com/&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=nfl4th">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>nfl4th: Functions to Calculate Optimal Fourth Down Decisions in the
+National Football League</h2>
+<p>A set of functions to estimate outcomes of fourth down plays
+    in the National Football League and obtain fourth down plays from
+    &lt;<a href="https://www.nfl.com/" target="_top">https://www.nfl.com/</a>&gt; and &lt;<a href="https://www.espn.com/" target="_top">https://www.espn.com/</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../janitor/index.html"><span class="CRAN">janitor</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../nflfastR/index.html"><span class="CRAN">nflfastR</span></a> (&ge; 5.2.0), <a href="../nflreadr/index.html"><span class="CRAN">nflreadr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../xgboost/index.html"><span class="CRAN">xgboost</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../gt/index.html"><span class="CRAN">gt</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../nflplotR/index.html"><span class="CRAN">nflplotR</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.0.0), <a href="../tictoc/index.html"><span class="CRAN">tictoc</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-04</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.nfl4th">10.32614/CRAN.package.nfl4th</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ben Baldwin [aut, cre, cph],
+  Sebastian Carl [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Baldwin  &#x3c;&#x62;&#x62;&#x61;&#x6c;&#x64;&#x77;&#x69;&#x6e;&#x32;&#x30;&#x36;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/nflverse/nfl4th/issues" target="_top"><span class="GitHub">https://github.com/nflverse/nfl4th/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.nfl4th.com/" target="_top">https://www.nfl4th.com/</a>, <a href="https://github.com/nflverse/nfl4th/" target="_top"><span class="GitHub">https://github.com/nflverse/nfl4th/</span></a>,
+<a href="https://github.com/nflverse/nfl4th" target="_top"><span class="GitHub">https://github.com/nflverse/nfl4th</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SportsAnalytics.html"><span class="CRAN">SportsAnalytics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nfl4th.html"><span class="CRAN">nfl4th results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/nfl4th.html"><span class="CRAN">nfl4th.html</span></a> ,  <a href="nfl4th.pdf"><span class="CRAN">nfl4th.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nfl4th_1.0.7.tar.gz"> <span class="CRAN"> nfl4th_1.0.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/nfl4th_1.0.7.zip"><span class="CRAN">nfl4th_1.0.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/nfl4th_1.0.7.zip"><span class="CRAN">nfl4th_1.0.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/nfl4th_1.0.7.zip"><span class="CRAN">nfl4th_1.0.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/nfl4th_1.0.7.tgz"><span class="CRAN">nfl4th_1.0.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/nfl4th_1.0.7.tgz"><span class="CRAN">nfl4th_1.0.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/nfl4th_1.0.7.tgz"><span class="CRAN">nfl4th_1.0.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/nfl4th_1.0.7.tgz"><span class="CRAN">nfl4th_1.0.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nfl4th"> <span class="CRAN"> nfl4th archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../nflverse/index.html"><span class="CRAN">nflverse</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nfl4th"><span class="CRAN"><samp>https://CRAN.R-project.org/package=nfl4th</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package framework</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=framework">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Structured Data Science Project Scaffolding [R package framework version 1.0.2]">
+<meta name="citation_author" content="Erik Westlund">
+<meta name="citation_publication_date" content="2026-02-17">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=framework">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=framework">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="framework: Structured Data Science Project Scaffolding">
+<meta property="og:description" content="Project scaffolding and workflow tools for reproducible data science. Manages packages, tracks data integrity, handles database connections, generates notebooks, and publishes to S3-compatible storage. More information at &amp;lt;&lt;a href=&quot;https://framework.table1.org&quot; target=&quot;_top&quot;&gt;https://framework.table1.org&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=framework">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>framework: Structured Data Science Project Scaffolding</h2>
+<p>Project scaffolding and workflow tools for reproducible data science.
+    Manages packages, tracks data integrity, handles database connections,
+    generates notebooks, and publishes to S3-compatible storage.
+    More information at &lt;<a href="https://framework.table1.org" target="_top">https://framework.table1.org</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../dotenv/index.html"><span class="CRAN">dotenv</span></a>, <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../plumber/index.html"><span class="CRAN">plumber</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../aws.s3/index.html"><span class="CRAN">aws.s3</span></a>, <a href="../aws.signature/index.html"><span class="CRAN">aws.signature</span></a>, <a href="../BiocManager/index.html"><span class="CRAN">BiocManager</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../cyclocomp/index.html"><span class="CRAN">cyclocomp</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../languageserver/index.html"><span class="CRAN">languageserver</span></a>, <a href="../odbc/index.html"><span class="CRAN">odbc</span></a>, <a href="../pool/index.html"><span class="CRAN">pool</span></a>, <a href="../prismjs/index.html"><span class="CRAN">prismjs</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../remotes/index.html"><span class="CRAN">remotes</span></a>, <a href="../renv/index.html"><span class="CRAN">renv</span></a>, <a href="../RMariaDB/index.html"><span class="CRAN">RMariaDB</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a>, <a href="../tm/index.html"><span class="CRAN">tm</span></a>, <a href="../usethis/index.html"><span class="CRAN">usethis</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../writexl/index.html"><span class="CRAN">writexl</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-17</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.framework">10.32614/CRAN.package.framework</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Erik Westlund [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Erik Westlund  &#x3c;&#x65;&#x72;&#x69;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x74;&#x61;&#x62;&#x6c;&#x65;&#x31;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/table1/framework/issues" target="_top"><span class="GitHub">https://github.com/table1/framework/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://framework.table1.org" target="_top">https://framework.table1.org</a>, <a href="https://github.com/table1/framework" target="_top"><span class="GitHub">https://github.com/table1/framework</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_framework.html"><span class="CRAN">framework results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/framework.html"><span class="CRAN">framework.html</span></a> ,  <a href="framework.pdf"><span class="CRAN">framework.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/framework_1.0.2.tar.gz"> <span class="CRAN"> framework_1.0.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/framework_1.0.2.zip"><span class="CRAN">framework_1.0.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/framework_1.0.2.zip"><span class="CRAN">framework_1.0.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/framework_1.0.2.zip"><span class="CRAN">framework_1.0.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/framework_1.0.2.tgz"><span class="CRAN">framework_1.0.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/framework_1.0.2.tgz"><span class="CRAN">framework_1.0.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/framework_1.0.2.tgz"><span class="CRAN">framework_1.0.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/framework_1.0.2.tgz"><span class="CRAN">framework_1.0.2.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=framework"><span class="CRAN"><samp>https://CRAN.R-project.org/package=framework</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package orderly</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=orderly">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Lightweight Reproducible Reporting [R package orderly version 2.0.3]">
+<meta name="citation_author1" content="Rich FitzJohn">
+<meta name="citation_author2" content="Robert Ashton">
+<meta name="citation_author3" content="Martin Eden">
+<meta name="citation_author4" content="Alex Hill">
+<meta name="citation_author5" content="Wes Hinsley">
+<meta name="citation_author6" content="Mantra Kusumgar">
+<meta name="citation_author7" content="Paul Liétar">
+<meta name="citation_author8" content="James Thompson">
+<meta name="citation_author9" content="Katy Gaythorpe">
+<meta name="citation_publication_date" content="2026-01-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=orderly">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=orderly">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="orderly: Lightweight Reproducible Reporting">
+<meta property="og:description" content="Distributed reproducible computing framework, adopting ideas from git, docker and other software. By defining a lightweight interface around the inputs and outputs of an analysis, a lot of the repetitive work for reproducible research can be automated. We define a simple format for organising and describing work that facilitates collaborative reproducible research and acknowledges that all analyses are run multiple times over their lifespans.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=orderly">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>orderly: Lightweight Reproducible Reporting</h2>
+<p>Distributed reproducible computing framework, adopting
+    ideas from git, docker and other software.  By defining a
+    lightweight interface around the inputs and outputs of an
+    analysis, a lot of the repetitive work for reproducible research
+    can be automated.  We define a simple format for organising and
+    describing work that facilitates collaborative reproducible
+    research and acknowledges that all analyses are run multiple times
+    over their lifespans.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.0.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../diffobj/index.html"><span class="CRAN">diffobj</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../gert/index.html"><span class="CRAN">gert</span></a> (&ge; 1.9.3), <a href="../httr2/index.html"><span class="CRAN">httr2</span></a> (&ge; 1.2.1), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../pkgload/index.html"><span class="CRAN">pkgload</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../jsonvalidate/index.html"><span class="CRAN">jsonvalidate</span></a> (&ge; 1.4.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../webfakes/index.html"><span class="CRAN">webfakes</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.orderly">10.32614/CRAN.package.orderly</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rich FitzJohn [aut, cre],
+  Robert Ashton [aut],
+  Martin Eden [aut],
+  Alex Hill [aut],
+  Wes Hinsley [aut],
+  Mantra Kusumgar [aut],
+  Paul Liétar [aut],
+  James Thompson [aut],
+  Katy Gaythorpe [aut],
+  Imperial College of Science, Technology and Medicine [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rich FitzJohn  &#x3c;&#x72;&#x69;&#x63;&#x68;&#x2e;&#x66;&#x69;&#x74;&#x7a;&#x6a;&#x6f;&#x68;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mrc-ide/orderly/issues" target="_top"><span class="GitHub">https://github.com/mrc-ide/orderly/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mrc-ide/orderly" target="_top"><span class="GitHub">https://github.com/mrc-ide/orderly</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html"><span class="CRAN">ReproducibleResearch</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_orderly.html"><span class="CRAN">orderly results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/orderly.html"><span class="CRAN">orderly.html</span></a> ,  <a href="orderly.pdf"><span class="CRAN">orderly.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/collaboration.html"><span class="CRAN">Collaborative analysis</span></a> (<a href="vignettes/collaboration.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/collaboration.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/dependencies.html"><span class="CRAN">Dependencies between packets</span></a> (<a href="vignettes/dependencies.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/dependencies.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/details.html"><span class="CRAN">Details</span></a> (<a href="vignettes/details.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/details.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/introduction.html"><span class="CRAN">Introduction to orderly</span></a> (<a href="vignettes/introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/metadata.html"><span class="CRAN">Outpack metadata</span></a> (<a href="vignettes/metadata.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/migrating.html"><span class="CRAN">Migrating from orderly (1.x)</span></a> (<a href="vignettes/migrating.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/orderly.html"><span class="CRAN">orderly</span></a> (<a href="vignettes/orderly.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/plugins.html"><span class="CRAN">Creating plugins</span></a> (<a href="vignettes/plugins.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/plugins.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/query.html"><span class="CRAN">Orderly query DSL</span></a> (<a href="vignettes/query.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/query.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/troubleshooting.html"><span class="CRAN">Troubleshooting</span></a> (<a href="vignettes/troubleshooting.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/troubleshooting.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/orderly_2.0.3.tar.gz"> <span class="CRAN"> orderly_2.0.3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/orderly_2.0.3.zip"><span class="CRAN">orderly_2.0.3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/orderly_2.0.3.zip"><span class="CRAN">orderly_2.0.3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/orderly_2.0.3.zip"><span class="CRAN">orderly_2.0.3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/orderly_2.0.3.tgz"><span class="CRAN">orderly_2.0.3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/orderly_2.0.3.tgz"><span class="CRAN">orderly_2.0.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/orderly_2.0.3.tgz"><span class="CRAN">orderly_2.0.3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/orderly_2.0.3.tgz"><span class="CRAN">orderly_2.0.3.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/orderly"> <span class="CRAN"> orderly archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=orderly"><span class="CRAN"><samp>https://CRAN.R-project.org/package=orderly</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

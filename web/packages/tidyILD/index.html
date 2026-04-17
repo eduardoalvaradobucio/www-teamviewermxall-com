@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package tidyILD</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=tidyILD">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Tidy Intensive Longitudinal Data Analysis [R package tidyILD version 0.3.0]">
+<meta name="citation_author" content="Alex Litovchenko">
+<meta name="citation_publication_date" content="2026-03-11">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tidyILD">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tidyILD">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="tidyILD: Tidy Intensive Longitudinal Data Analysis">
+<meta property="og:description" content="A reproducible, tidyverse-style framework for intensive longitudinal data analysis in R, with built-in methodological safeguards, provenance tracking, and reporting tools. Encodes time structure, enforces within-between decomposition, provides spacing-aware lags, and integrates diagnostics and visualization. Use ild_prepare(), ild_center(), ild_lag(), and related functions for a unified pipeline from raw EMA/diary data to interpretable models.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=tidyILD">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>tidyILD: Tidy Intensive Longitudinal Data Analysis</h2>
+<p>A reproducible, tidyverse-style framework for intensive longitudinal
+  data analysis in R, with built-in methodological safeguards, provenance
+  tracking, and reporting tools. Encodes time structure, enforces
+  within-between decomposition, provides spacing-aware lags, and integrates
+  diagnostics and visualization. Use ild_prepare(), ild_center(), ild_lag(),
+  and related functions for a unified pipeline from raw EMA/diary data to
+  interpretable models.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../lme4/index.html"><span class="CRAN">lme4</span></a>, <a href="../nlme/index.html"><span class="CRAN">nlme</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../broom.mixed/index.html"><span class="CRAN">broom.mixed</span></a>, <a href="../clubSandwich/index.html"><span class="CRAN">clubSandwich</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-11</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.tidyILD">10.32614/CRAN.package.tidyILD</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alex Litovchenko [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alex Litovchenko  &#x3c;&#x61;&#x6c;&#x34;&#x38;&#x37;&#x37;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">tidyILD citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tidyILD.html"><span class="CRAN">tidyILD results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/tidyILD.html"><span class="CRAN">tidyILD.html</span></a> ,  <a href="tidyILD.pdf"><span class="CRAN">tidyILD.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ild-analysis-report.html"><span class="CRAN">Short analysis report</span></a> (<a href="vignettes/ild-analysis-report.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ild-analysis-report.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ild-decomposition-and-spacing.html"><span class="CRAN">Within-between decomposition and irregular spacing</span></a> (<a href="vignettes/ild-decomposition-and-spacing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ild-decomposition-and-spacing.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ild-glossary-and-quickstart.html"><span class="CRAN">Glossary and quick-start checklist</span></a> (<a href="vignettes/ild-glossary-and-quickstart.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ild-glossary-and-quickstart.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ild-provenance.html"><span class="CRAN">Reproducible ILD workflows with tidyILD provenance</span></a> (<a href="vignettes/ild-provenance.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ild-provenance.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/tidyILD-workflow.html"><span class="CRAN">From raw data to model with tidyILD</span></a> (<a href="vignettes/tidyILD-workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/tidyILD-workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tidyILD_0.3.0.tar.gz"> <span class="CRAN"> tidyILD_0.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/tidyILD_0.3.0.zip"><span class="CRAN">tidyILD_0.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/tidyILD_0.3.0.zip"><span class="CRAN">tidyILD_0.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/tidyILD_0.3.0.zip"><span class="CRAN">tidyILD_0.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/tidyILD_0.3.0.tgz"><span class="CRAN">tidyILD_0.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/tidyILD_0.3.0.tgz"><span class="CRAN">tidyILD_0.3.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/tidyILD_0.3.0.tgz"><span class="CRAN">tidyILD_0.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/tidyILD_0.3.0.tgz"><span class="CRAN">tidyILD_0.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tidyILD"> <span class="CRAN"> tidyILD archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tidyILD"><span class="CRAN"><samp>https://CRAN.R-project.org/package=tidyILD</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

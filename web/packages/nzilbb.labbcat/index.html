@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package nzilbb.labbcat</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=nzilbb.labbcat">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Accessing Data Stored in 'LaBB-CAT' Instances [R package nzilbb.labbcat version 1.5-1]">
+<meta name="citation_author" content="Robert Fromont">
+<meta name="citation_publication_date" content="2026-03-31">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nzilbb.labbcat">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nzilbb.labbcat">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="nzilbb.labbcat: Accessing Data Stored in 'LaBB-CAT' Instances">
+<meta property="og:description" content="'LaBB-CAT' is a web-based language corpus management system developed by the New Zealand Institute of Language, Brain and Behaviour (NZILBB) - see &amp;lt;&lt;a href=&quot;https://labbcat.canterbury.ac.nz&quot; target=&quot;_top&quot;&gt;https://labbcat.canterbury.ac.nz&lt;/a&gt;&amp;gt;. This package defines functions for accessing corpus data in a 'LaBB-CAT' instance. You must have at least version 20230818.1400 of 'LaBB-CAT' to use this package. For more information about 'LaBB-CAT', see Robert Fromont and Jennifer Hay (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.3366%2FE1749503208000142&quot; target=&quot;_top&quot;&gt;doi:10.3366/E1749503208000142&lt;/a&gt;&amp;gt; or Robert Fromont (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csl.2017.01.004&quot; target=&quot;_top&quot;&gt;doi:10.1016/j.csl.2017.01.004&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=nzilbb.labbcat">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>nzilbb.labbcat: Accessing Data Stored in 'LaBB-CAT' Instances</h2>
+<p>'LaBB-CAT' is a web-based language corpus management
+ system developed by the New Zealand Institute of Language, Brain
+ and Behaviour (NZILBB) - see &lt;<a href="https://labbcat.canterbury.ac.nz" target="_top">https://labbcat.canterbury.ac.nz</a>&gt;.
+ This package defines functions for accessing corpus data in a 'LaBB-CAT'
+ instance. You must have at least version 20230818.1400 of 'LaBB-CAT'
+ to use this package.
+ For more information about 'LaBB-CAT', see
+ Robert Fromont and Jennifer Hay (2008) &lt;<a href="https://doi.org/10.3366%2FE1749503208000142" target="_top">doi:10.3366/E1749503208000142</a>&gt;
+ or 
+ Robert Fromont (2017) &lt;<a href="https://doi.org/10.1016%2Fj.csl.2017.01.004" target="_top">doi:10.1016/j.csl.2017.01.004</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.5-1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-31</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.nzilbb.labbcat">10.32614/CRAN.package.nzilbb.labbcat</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robert Fromont <a href="https://orcid.org/0000-0001-5271-5487" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Robert Fromont  &#x3c;&#x72;&#x6f;&#x62;&#x65;&#x72;&#x74;&#x2e;&#x66;&#x72;&#x6f;&#x6d;&#x6f;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x6e;&#x74;&#x65;&#x72;&#x62;&#x75;&#x72;&#x79;&#x2e;&#x61;&#x63;&#x2e;&#x6e;&#x7a;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/nzilbb/labbcat-R/issues" target="_top"><span class="GitHub">https://github.com/nzilbb/labbcat-R/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>New Zealand Institute of Language, Brain and Behaviour,
+University of Canterbury</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://nzilbb.github.io/labbcat-R/" target="_top"><span class="GitHub">https://nzilbb.github.io/labbcat-R/</span></a>,
+<a href="https://labbcat.canterbury.ac.nz" target="_top">https://labbcat.canterbury.ac.nz</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nzilbb.labbcat.html"><span class="CRAN">nzilbb.labbcat results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/nzilbb.labbcat.html"><span class="CRAN">nzilbb.labbcat.html</span></a> ,  <a href="nzilbb.labbcat.pdf"><span class="CRAN">nzilbb.labbcat.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nzilbb.labbcat_1.5-1.tar.gz"> <span class="CRAN"> nzilbb.labbcat_1.5-1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/nzilbb.labbcat_1.5-1.zip"><span class="CRAN">nzilbb.labbcat_1.5-1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/nzilbb.labbcat_1.5-1.zip"><span class="CRAN">nzilbb.labbcat_1.5-1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/nzilbb.labbcat_1.5-1.zip"><span class="CRAN">nzilbb.labbcat_1.5-1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/nzilbb.labbcat_1.5-1.tgz"><span class="CRAN">nzilbb.labbcat_1.5-1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/nzilbb.labbcat_1.5-0.tgz"><span class="CRAN">nzilbb.labbcat_1.5-0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/nzilbb.labbcat_1.5-1.tgz"><span class="CRAN">nzilbb.labbcat_1.5-1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/nzilbb.labbcat_1.5-1.tgz"><span class="CRAN">nzilbb.labbcat_1.5-1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nzilbb.labbcat"> <span class="CRAN"> nzilbb.labbcat archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nzilbb.labbcat"><span class="CRAN"><samp>https://CRAN.R-project.org/package=nzilbb.labbcat</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

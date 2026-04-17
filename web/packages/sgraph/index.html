@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package sgraph</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=sgraph">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Network Visualization Using 'sigma.js' [R package sgraph version 1.1.0]">
+<meta name="citation_author1" content="Thomas Charlon">
+<meta name="citation_author2" content="CELEHS">
+<meta name="citation_author3" content="PARSE Health">
+<meta name="citation_publication_date" content="2024-08-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sgraph">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sgraph">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="sgraph: Network Visualization Using 'sigma.js'">
+<meta property="og:description" content="Interactive visualizations of graphs created with the 'igraph' package using a 'htmlwidgets' wrapper for the 'sigma.js' network visualization v2.4.0 &amp;lt;&lt;a href=&quot;https://www.sigmajs.org/&quot; target=&quot;_top&quot;&gt;https://www.sigmajs.org/&lt;/a&gt;&amp;gt;, enabling to display several thousands of nodes. While several 'R' packages have been developed to interface 'sigma.js', all were developed for v1.x.x and none have migrated to v2.4.0 nor are they planning to. This package builds upon the 'sigmaNet' package, and users familiar with it will recognize the similar design approach. Two extensions have been added to the classic 'sigma.js' visualizations by overriding the underlying 'JavaScript' code, enabling to draw a frame around node labels, and to display labels on multiple lines by parsing line breaks. Other additional functionalities that did not require overriding 'sigma.js' code include toggling node visibility when clicked using a node attribute and highlighting specific edges. 'sigma.js' is currently preparing a stable release v3.0.0, and this package plans to update to it when it is available.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=sgraph">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>sgraph: Network Visualization Using 'sigma.js'</h2>
+<p>Interactive visualizations of graphs created with the 'igraph' package using a 'htmlwidgets' wrapper for the 'sigma.js' network visualization v2.4.0 &lt;<a href="https://www.sigmajs.org/" target="_top">https://www.sigmajs.org/</a>&gt;, enabling to display several thousands of nodes. While several 'R' packages have been developed to interface 'sigma.js', all were developed for v1.x.x and none have migrated to v2.4.0 nor are they planning to. This package builds upon the 'sigmaNet' package, and users familiar with it will recognize the similar design approach. Two extensions have been added to the classic 'sigma.js' visualizations by overriding the underlying 'JavaScript' code, enabling to draw a frame around node labels, and to display labels on multiple lines by parsing line breaks. Other additional functionalities that did not require overriding 'sigma.js' code include toggling node visibility when clicked using a node attribute and highlighting specific edges. 'sigma.js' is currently preparing a stable release v3.0.0, and this package plans to update to it when it is available.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cowplot/index.html"><span class="CRAN">cowplot</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-08-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.sgraph">10.32614/CRAN.package.sgraph</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Thomas Charlon <a href="https://orcid.org/0000-0001-7497-0470" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  CELEHS [aut] (&lt;https://celehs.hms.harvard.edu&gt;),
+  PARSE Health [aut] (&lt;https://parse-health.org&gt;)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thomas Charlon  &#x3c;&#x63;&#x68;&#x61;&#x72;&#x6c;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.com/thomaschln/sgraph/-/issues" target="_top">https://gitlab.com/thomaschln/sgraph/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.com/thomaschln/sgraph" target="_top">https://gitlab.com/thomaschln/sgraph</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sgraph.html"><span class="CRAN">sgraph results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/sgraph.html"><span class="CRAN">sgraph.html</span></a> ,  <a href="sgraph.pdf"><span class="CRAN">sgraph.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sgraph.html"><span class="CRAN">Graph Visualizations Using Sigma.js</span></a> (<a href="vignettes/sgraph.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/sgraph.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sgraph_1.1.0.tar.gz"> <span class="CRAN"> sgraph_1.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/sgraph_1.1.0.zip"><span class="CRAN">sgraph_1.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/sgraph_1.1.0.zip"><span class="CRAN">sgraph_1.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/sgraph_1.1.0.zip"><span class="CRAN">sgraph_1.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/sgraph_1.1.0.tgz"><span class="CRAN">sgraph_1.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/sgraph_1.1.0.tgz"><span class="CRAN">sgraph_1.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/sgraph_1.1.0.tgz"><span class="CRAN">sgraph_1.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/sgraph_1.1.0.tgz"><span class="CRAN">sgraph_1.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sgraph"> <span class="CRAN"> sgraph archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../kgraph/index.html"><span class="CRAN">kgraph</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sgraph"><span class="CRAN"><samp>https://CRAN.R-project.org/package=sgraph</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

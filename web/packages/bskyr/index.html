@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package bskyr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=bskyr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interact with 'Bluesky' Social [R package bskyr version 0.4.0]">
+<meta name="citation_author" content="Christopher T. Kenny">
+<meta name="citation_publication_date" content="2025-10-25">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bskyr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bskyr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="bskyr: Interact with 'Bluesky' Social">
+<meta property="og:description" content="Collect data from and make posts on 'Bluesky' Social via the Hypertext Transfer Protocol (HTTP) Application Programming Interface (API), as documented at &amp;lt;&lt;a href=&quot;https://atproto.com/specs/xrpc&quot; target=&quot;_top&quot;&gt;https://atproto.com/specs/xrpc&lt;/a&gt;&amp;gt;. This further supports broader queries to the Authenticated Transfer (AT) Protocol &amp;lt;&lt;a href=&quot;https://atproto.com/&quot; target=&quot;_top&quot;&gt;https://atproto.com/&lt;/a&gt;&amp;gt; which 'Bluesky' Social relies on. Data is returned in a tidy format and posts can be made using a simple interface.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=bskyr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>bskyr: Interact with 'Bluesky' Social</h2>
+<p>Collect data from and make posts on 'Bluesky' Social
+    via the Hypertext Transfer Protocol (HTTP) Application Programming 
+    Interface (API), as documented at &lt;<a href="https://atproto.com/specs/xrpc" target="_top">https://atproto.com/specs/xrpc</a>&gt;. This 
+    further supports broader queries to the Authenticated Transfer (AT) Protocol
+    &lt;<a href="https://atproto.com/" target="_top">https://atproto.com/</a>&gt; which 'Bluesky' Social relies on. Data is returned in a
+    tidy format and posts can be made using a simple interface.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a>, <a href="../mime/index.html"><span class="CRAN">mime</span></a>, <a href="../opengraph/index.html"><span class="CRAN">opengraph</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../emoji/index.html"><span class="CRAN">emoji</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.0.0), <a href="../vcr/index.html"><span class="CRAN">vcr</span></a> (&ge; 2.0.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-10-25</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.bskyr">10.32614/CRAN.package.bskyr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christopher T. Kenny
+    <a href="https://orcid.org/0000-0002-9386-6860" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christopher T. Kenny  &#x3c;&#x63;&#x74;&#x6b;&#x65;&#x6e;&#x6e;&#x79;&#x20;&#x61;&#x74;&#x20;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x2e;&#x6d;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/christopherkenny/bskyr/issues" target="_top"><span class="GitHub">https://github.com/christopherkenny/bskyr/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/christopherkenny/bskyr" target="_top"><span class="GitHub">https://github.com/christopherkenny/bskyr</span></a>,
+<a href="http://christophertkenny.com/bskyr/" target="_top">http://christophertkenny.com/bskyr/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">bskyr citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bskyr.html"><span class="CRAN">bskyr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/bskyr.html"><span class="CRAN">bskyr.html</span></a> ,  <a href="bskyr.pdf"><span class="CRAN">bskyr.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/creating_records.html"><span class="CRAN">Creating Records on Bluesky Social</span></a> (<a href="vignettes/creating_records.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/creating_records.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/gathering_data.html"><span class="CRAN">Gathering Data from Bluesky Social</span></a> (<a href="vignettes/gathering_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/gathering_data.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/lists_and_starter_packs.html"><span class="CRAN">Working with Lists and Starter Packs</span></a> (<a href="vignettes/lists_and_starter_packs.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lists_and_starter_packs.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bskyr_0.4.0.tar.gz"> <span class="CRAN"> bskyr_0.4.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/bskyr_0.4.0.zip"><span class="CRAN">bskyr_0.4.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/bskyr_0.4.0.zip"><span class="CRAN">bskyr_0.4.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/bskyr_0.4.0.zip"><span class="CRAN">bskyr_0.4.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/bskyr_0.4.0.tgz"><span class="CRAN">bskyr_0.4.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/bskyr_0.4.0.tgz"><span class="CRAN">bskyr_0.4.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/bskyr_0.4.0.tgz"><span class="CRAN">bskyr_0.4.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/bskyr_0.4.0.tgz"><span class="CRAN">bskyr_0.4.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bskyr"> <span class="CRAN"> bskyr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bskyr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=bskyr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

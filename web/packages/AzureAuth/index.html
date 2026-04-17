@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package AzureAuth</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=AzureAuth">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Authentication Services for Azure Active Directory [R package AzureAuth version 1.3.4]">
+<meta name="citation_author" content="Hong Ooi">
+<meta name="citation_publication_date" content="2025-12-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=AzureAuth">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=AzureAuth">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="AzureAuth: Authentication Services for Azure Active Directory">
+<meta property="og:description" content="Provides Azure Active Directory (AAD) authentication functionality for R users of Microsoft's 'Azure' cloud &amp;lt;&lt;a href=&quot;https://azure.microsoft.com/en-us&quot; target=&quot;_top&quot;&gt;https://azure.microsoft.com/en-us&lt;/a&gt;&amp;gt;. Use this package to obtain 'OAuth' 2.0 tokens for services including Azure Resource Manager, Azure Storage and others. It supports both AAD v1.0 and v2.0, as well as multiple authentication methods, including device code and resource owner grant. Tokens are cached in a user-specific directory obtained using the 'rappdirs' package. The interface is based on the 'OAuth' framework in the 'httr' package, but customised and streamlined for Azure. Part of the 'AzureR' family of packages.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=AzureAuth">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>AzureAuth: Authentication Services for Azure Active Directory</h2>
+<p>Provides Azure Active Directory (AAD) authentication functionality for R users of Microsoft's 'Azure' cloud &lt;<a href="https://azure.microsoft.com/en-us" target="_top">https://azure.microsoft.com/en-us</a>&gt;. Use this package to obtain 'OAuth' 2.0 tokens for services including Azure Resource Manager, Azure Storage and others. It supports both AAD v1.0 and v2.0, as well as multiple authentication methods, including device code and resource owner grant. Tokens are cached in a user-specific directory obtained using the 'rappdirs' package. The interface is based on the 'OAuth' framework in the 'httr' package, but customised and streamlined for Azure. Part of the 'AzureR' family of packages.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.3.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge; 1.3), <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../jose/index.html"><span class="CRAN">jose</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../AzureRMR/index.html"><span class="CRAN">AzureRMR</span></a>, <a href="../AzureGraph/index.html"><span class="CRAN">AzureGraph</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.AzureAuth">10.32614/CRAN.package.AzureAuth</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hong Ooi [aut, cre],
+  Tyler Littlefield [ctb],
+  httr development team [ctb] (Original OAuth listener code),
+  Scott Holden [ctb] (Advice on AAD authentication),
+  Chris Stone [ctb] (Advice on AAD authentication),
+  Microsoft [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hong Ooi  &#x3c;&#x68;&#x6f;&#x6e;&#x67;&#x6f;&#x6f;&#x69;&#x37;&#x33;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Azure/AzureAuth/issues" target="_top"><span class="GitHub">https://github.com/Azure/AzureAuth/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Azure/AzureAuth" target="_top"><span class="GitHub">https://github.com/Azure/AzureAuth</span></a> <a href="https://github.com/Azure/AzureR" target="_top"><span class="GitHub">https://github.com/Azure/AzureR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_AzureAuth.html"><span class="CRAN">AzureAuth results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/AzureAuth.html"><span class="CRAN">AzureAuth.html</span></a> ,  <a href="AzureAuth.pdf"><span class="CRAN">AzureAuth.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/scenarios.html"><span class="CRAN">Authentication scenarios</span></a> (<a href="vignettes/scenarios.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/shiny.html"><span class="CRAN">Shiny</span></a> (<a href="vignettes/shiny.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/token.html"><span class="CRAN">Acquire an OAuth token</span></a> (<a href="vignettes/token.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/AzureAuth_1.3.4.tar.gz"> <span class="CRAN"> AzureAuth_1.3.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/AzureAuth_1.3.4.zip"><span class="CRAN">AzureAuth_1.3.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/AzureAuth_1.3.4.zip"><span class="CRAN">AzureAuth_1.3.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/AzureAuth_1.3.4.zip"><span class="CRAN">AzureAuth_1.3.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/AzureAuth_1.3.4.tgz"><span class="CRAN">AzureAuth_1.3.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/AzureAuth_1.3.4.tgz"><span class="CRAN">AzureAuth_1.3.4.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/AzureAuth_1.3.4.tgz"><span class="CRAN">AzureAuth_1.3.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/AzureAuth_1.3.4.tgz"><span class="CRAN">AzureAuth_1.3.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/AzureAuth"> <span class="CRAN"> AzureAuth archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AplosNCA/index.html"><span class="CRAN">AplosNCA</span></a>, <a href="../AzureCognitive/index.html"><span class="CRAN">AzureCognitive</span></a>, <a href="../AzureGraph/index.html"><span class="CRAN">AzureGraph</span></a>, <a href="../AzureKeyVault/index.html"><span class="CRAN">AzureKeyVault</span></a>, <a href="../AzureKusto/index.html"><span class="CRAN">AzureKusto</span></a>, <a href="../AzureRMR/index.html"><span class="CRAN">AzureRMR</span></a>, <a href="../fabricQueryR/index.html"><span class="CRAN">fabricQueryR</span></a>, <a href="../Microsoft365R/index.html"><span class="CRAN">Microsoft365R</span></a>, <a href="../powerbiR/index.html"><span class="CRAN">powerbiR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AzureStor/index.html"><span class="CRAN">AzureStor</span></a>, <a href="../AzureVision/index.html"><span class="CRAN">AzureVision</span></a>, <a href="../AzureVMmetadata/index.html"><span class="CRAN">AzureVMmetadata</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=AzureAuth"><span class="CRAN"><samp>https://CRAN.R-project.org/package=AzureAuth</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package ggeffects</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=ggeffects">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs [R package ggeffects version 2.3.2]">
+<meta name="citation_author" content="Daniel Lüdecke">
+<meta name="citation_publication_date" content="2025-12-16">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ggeffects">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ggeffects">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="ggeffects: Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs">
+<meta property="og:description" content="Compute marginal effects and adjusted predictions from statistical models and returns the result as tidy data frames. These data frames are ready to use with the 'ggplot2'-package. Effects and predictions can be calculated for many different models. Interaction terms, splines and polynomial terms are also supported. The main functions are ggpredict(), ggemmeans() and ggeffect(). There is a generic plot()-method to plot the results using 'ggplot2'.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=ggeffects">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>ggeffects: Create Tidy Data Frames of Marginal Effects for 'ggplot' from
+Model Outputs</h2>
+<p>Compute marginal effects and adjusted predictions from statistical
+    models and returns the result as tidy data frames. These data frames are
+    ready to use with the 'ggplot2'-package. Effects and predictions can be
+    calculated for many different models. Interaction terms, splines and
+    polynomial terms are also supported. The main functions are ggpredict(),
+    ggemmeans() and ggeffect(). There is a generic plot()-method to plot the
+    results using 'ggplot2'.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../insight/index.html"><span class="CRAN">insight</span></a> (&ge; 1.3.0), <a href="../datawizard/index.html"><span class="CRAN">datawizard</span></a> (&ge; 1.2.0), <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../reformulas/index.html"><span class="CRAN">reformulas</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../AER/index.html"><span class="CRAN">AER</span></a>, <a href="../afex/index.html"><span class="CRAN">afex</span></a>, <a href="../aod/index.html"><span class="CRAN">aod</span></a>, <a href="../bayestestR/index.html"><span class="CRAN">bayestestR</span></a>, <a href="../betareg/index.html"><span class="CRAN">betareg</span></a>, <a href="../brglm/index.html"><span class="CRAN">brglm</span></a>, <a href="../brglm2/index.html"><span class="CRAN">brglm2</span></a>, <a href="../brms/index.html"><span class="CRAN">brms</span></a>, <a href="../broom/index.html"><span class="CRAN">broom</span></a>, <a href="../car/index.html"><span class="CRAN">car</span></a>, <a href="../carData/index.html"><span class="CRAN">carData</span></a>, <a href="../clubSandwich/index.html"><span class="CRAN">clubSandwich</span></a>, <a href="../dfidx/index.html"><span class="CRAN">dfidx</span></a>, <a href="../effects/index.html"><span class="CRAN">effects</span></a> (&ge; 4.2-2), <a href="../effectsize/index.html"><span class="CRAN">effectsize</span></a> (&ge; 1.0.0), <a href="../emmeans/index.html"><span class="CRAN">emmeans</span></a> (&ge; 1.8.9), <a href="../fixest/index.html"><span class="CRAN">fixest</span></a>, <a href="../gam/index.html"><span class="CRAN">gam</span></a>, <a href="../gamlss/index.html"><span class="CRAN">gamlss</span></a>, <a href="../gamm4/index.html"><span class="CRAN">gamm4</span></a>, <a href="../gee/index.html"><span class="CRAN">gee</span></a>, <a href="../geepack/index.html"><span class="CRAN">geepack</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../ggrepel/index.html"><span class="CRAN">ggrepel</span></a>, <a href="../GLMMadaptive/index.html"><span class="CRAN">GLMMadaptive</span></a>, <a href="../glmmTMB/index.html"><span class="CRAN">glmmTMB</span></a> (&ge; 1.1.7), <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../gt/index.html"><span class="CRAN">gt</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lme4/index.html"><span class="CRAN">lme4</span></a> (&ge; 1.1-35), <a href="../logistf/index.html"><span class="CRAN">logistf</span></a>, <a href="../logitr/index.html"><span class="CRAN">logitr</span></a>, <a href="../marginaleffects/index.html"><span class="CRAN">marginaleffects</span></a> (&ge;
+0.25.0), <a href="../modelbased/index.html"><span class="CRAN">modelbased</span></a> (&ge; 0.10.0), <a href="../MASS/index.html"><span class="CRAN">MASS</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../mice/index.html"><span class="CRAN">mice</span></a>, <a href="../MCMCglmm/index.html"><span class="CRAN">MCMCglmm</span></a>, <a href="../MuMIn/index.html"><span class="CRAN">MuMIn</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../mclogit/index.html"><span class="CRAN">mclogit</span></a>, <a href="../mlogit/index.html"><span class="CRAN">mlogit</span></a>, <a href="../nestedLogit/index.html"><span class="CRAN">nestedLogit</span></a> (&ge; 0.3.0), <a href="../nlme/index.html"><span class="CRAN">nlme</span></a>, <a href="../nnet/index.html"><span class="CRAN">nnet</span></a>, <a href="../ordinal/index.html"><span class="CRAN">ordinal</span></a>, <a href="../parameters/index.html"><span class="CRAN">parameters</span></a>, <a href="../parsnip/index.html"><span class="CRAN">parsnip</span></a>, <a href="../patchwork/index.html"><span class="CRAN">patchwork</span></a>, <a href="../pscl/index.html"><span class="CRAN">pscl</span></a>, <a href="../plm/index.html"><span class="CRAN">plm</span></a>, <a href="../quantreg/index.html"><span class="CRAN">quantreg</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rms/index.html"><span class="CRAN">rms</span></a>, <a href="../robustbase/index.html"><span class="CRAN">robustbase</span></a>, <a href="../rstanarm/index.html"><span class="CRAN">rstanarm</span></a>, <a href="../rstantools/index.html"><span class="CRAN">rstantools</span></a>, <a href="../sandwich/index.html"><span class="CRAN">sandwich</span></a>, <a href="../sdmTMB/index.html"><span class="CRAN">sdmTMB</span></a> (&ge; 0.4.0), <a href="../see/index.html"><span class="CRAN">see</span></a>, <a href="../sjlabelled/index.html"><span class="CRAN">sjlabelled</span></a> (&ge; 1.1.2), <a href="../sjstats/index.html"><span class="CRAN">sjstats</span></a>, <a href="../speedglm/index.html"><span class="CRAN">speedglm</span></a>, <a href="../survey/index.html"><span class="CRAN">survey</span></a>, <a href="../survival/index.html"><span class="CRAN">survival</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tinytable/index.html"><span class="CRAN">tinytable</span></a> (&ge; 0.1.0), <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../VGAM/index.html"><span class="CRAN">VGAM</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-16</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.ggeffects">10.32614/CRAN.package.ggeffects</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel Lüdecke <a href="https://orcid.org/0000-0002-8895-3206" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Frederik Aust <a href="https://orcid.org/0000-0003-4900-788X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Sam Crawley <a href="https://orcid.org/0000-0002-7847-0411" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Mattan S. Ben-Shachar
+    <a href="https://orcid.org/0000-0002-4287-4801" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Sean C. Anderson <a href="https://orcid.org/0000-0001-9563-1937" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel Lüdecke  &#x3c;&#x64;&#x2e;&#x6c;&#x75;&#x65;&#x64;&#x65;&#x63;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6b;&#x65;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/strengejacke/ggeffects/issues/" target="_top"><span class="GitHub">https://github.com/strengejacke/ggeffects/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://strengejacke.github.io/ggeffects/" target="_top"><span class="GitHub">https://strengejacke.github.io/ggeffects/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">ggeffects citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MixedModels.html"><span class="CRAN">MixedModels</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ggeffects.html"><span class="CRAN">ggeffects results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/ggeffects.html"><span class="CRAN">ggeffects.html</span></a> ,  <a href="ggeffects.pdf"><span class="CRAN">ggeffects.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/content.html"><span class="CRAN">Documentation of the ggeffects package</span></a> (<a href="vignettes/content.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/content.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ggeffects_2.3.2.tar.gz"> <span class="CRAN"> ggeffects_2.3.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/ggeffects_2.3.2.zip"><span class="CRAN">ggeffects_2.3.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/ggeffects_2.3.2.zip"><span class="CRAN">ggeffects_2.3.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/ggeffects_2.3.2.zip"><span class="CRAN">ggeffects_2.3.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/ggeffects_2.3.2.tgz"><span class="CRAN">ggeffects_2.3.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/ggeffects_2.3.2.tgz"><span class="CRAN">ggeffects_2.3.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/ggeffects_2.3.2.tgz"><span class="CRAN">ggeffects_2.3.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/ggeffects_2.3.2.tgz"><span class="CRAN">ggeffects_2.3.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ggeffects"> <span class="CRAN"> ggeffects archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../eirm/index.html"><span class="CRAN">eirm</span></a>, <a href="../MIGEE/index.html"><span class="CRAN">MIGEE</span></a>, <a href="../pastaPlot/index.html"><span class="CRAN">pastaPlot</span></a>, <a href="../sjPlot/index.html"><span class="CRAN">sjPlot</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../broom.helpers/index.html"><span class="CRAN">broom.helpers</span></a>, <a href="../growthTrendR/index.html"><span class="CRAN">growthTrendR</span></a>, <a href="https://www.bioconductor.org/packages/release/data/experiment/html/LegATo.html" target="_top"><span class="BioC">LegATo</span></a>, <a href="../nestedLogit/index.html"><span class="CRAN">nestedLogit</span></a>, <a href="../psre/index.html"><span class="CRAN">psre</span></a>, <a href="../pubh/index.html"><span class="CRAN">pubh</span></a>, <a href="../sdmTMB/index.html"><span class="CRAN">sdmTMB</span></a>, <a href="../SimplyAgree/index.html"><span class="CRAN">SimplyAgree</span></a>, <a href="../statAPA/index.html"><span class="CRAN">statAPA</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ggeffects"><span class="CRAN"><samp>https://CRAN.R-project.org/package=ggeffects</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

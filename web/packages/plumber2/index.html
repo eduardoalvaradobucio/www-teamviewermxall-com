@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package plumber2</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=plumber2">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Easy and Powerful Web Servers [R package plumber2 version 0.2.0]">
+<meta name="citation_author" content="Thomas Lin Pedersen">
+<meta name="citation_publication_date" content="2026-01-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=plumber2">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=plumber2">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="plumber2: Easy and Powerful Web Servers">
+<meta property="og:description" content="Automatically create a web server from annotated 'R' files or by building it up programmatically. Provides automatic 'OpenAPI' documentation, input handling, asynchronous evaluation, and plugin support.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=plumber2">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>plumber2: Easy and Powerful Web Servers</h2>
+<p>Automatically create a web server from annotated 'R' files or by
+    building it up programmatically. Provides automatic 'OpenAPI' documentation,
+    input handling, asynchronous evaluation, and plugin support.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../fiery/index.html"><span class="CRAN">fiery</span></a> (&ge; 1.5.0), <a href="../fireproof/index.html"><span class="CRAN">fireproof</span></a>, <a href="../firesafety/index.html"><span class="CRAN">firesafety</span></a>, <a href="../firesale/index.html"><span class="CRAN">firesale</span></a>, <a href="../firestorm/index.html"><span class="CRAN">firestorm</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../promises/index.html"><span class="CRAN">promises</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../ragg/index.html"><span class="CRAN">ragg</span></a>, <a href="../rapidoc/index.html"><span class="CRAN">rapidoc</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../reqres/index.html"><span class="CRAN">reqres</span></a> (&ge; 1.0.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../routr/index.html"><span class="CRAN">routr</span></a> (&ge; 2.0.0), <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../svglite/index.html"><span class="CRAN">svglite</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../webutils/index.html"><span class="CRAN">webutils</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../geojsonsf/index.html"><span class="CRAN">geojsonsf</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../later/index.html"><span class="CRAN">later</span></a>, <a href="../mirai/index.html"><span class="CRAN">mirai</span></a>, <a href="../nanoparquet/index.html"><span class="CRAN">nanoparquet</span></a>, <a href="../quarto/index.html"><span class="CRAN">quarto</span></a>, <a href="../redoc/index.html"><span class="CRAN">redoc</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../storr/index.html"><span class="CRAN">storr</span></a>, <a href="../swagger/index.html"><span class="CRAN">swagger</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../tomledit/index.html"><span class="CRAN">tomledit</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.plumber2">10.32614/CRAN.package.plumber2</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Thomas Lin Pedersen
+    <a href="https://orcid.org/0000-0002-5147-4711" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre],
+  Posit Software, PBC <a href="https://ror.org/03wc8by49" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph,
+    fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thomas Lin Pedersen  &#x3c;&#x74;&#x68;&#x6f;&#x6d;&#x61;&#x73;&#x2e;&#x70;&#x65;&#x64;&#x65;&#x72;&#x73;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/posit-dev/plumber2/issues" target="_top"><span class="GitHub">https://github.com/posit-dev/plumber2/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://plumber2.posit.co/" target="_top">https://plumber2.posit.co/</a>, <a href="https://github.com/posit-dev/plumber2" target="_top"><span class="GitHub">https://github.com/posit-dev/plumber2</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_plumber2.html"><span class="CRAN">plumber2 results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/plumber2.html"><span class="CRAN">plumber2.html</span></a> ,  <a href="plumber2.pdf"><span class="CRAN">plumber2.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/annotations.html"><span class="CRAN">Annotations reference</span></a> (<a href="vignettes/annotations.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/annotations.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/execution-model.html"><span class="CRAN">Runtime</span></a> (<a href="vignettes/execution-model.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/execution-model.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/extending.html"><span class="CRAN">Extending plumber2</span></a> (<a href="vignettes/extending.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/extending.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/hosting.html"><span class="CRAN">Hosting</span></a> (<a href="vignettes/hosting.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/hosting.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/introduction.html"><span class="CRAN">Introduction</span></a> (<a href="vignettes/introduction.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/migration.html"><span class="CRAN">Upgrading From Plumber</span></a> (<a href="vignettes/migration.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/migration.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/otel.html"><span class="CRAN">Instrumentation with OpenTelemetry</span></a> (<a href="vignettes/otel.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/otel.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/plumber.html"><span class="CRAN">Get Started</span></a> (<a href="vignettes/plumber.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/plumber.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/programmatic-usage.html"><span class="CRAN">Programmatic Usage</span></a> (<a href="vignettes/programmatic-usage.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/programmatic-usage.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/rendering-output.html"><span class="CRAN">Rendering Output</span></a> (<a href="vignettes/rendering-output.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rendering-output.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/routing-and-input.html"><span class="CRAN">Routing &amp; Input</span></a> (<a href="vignettes/routing-and-input.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/routing-and-input.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/security.html"><span class="CRAN">Security</span></a> (<a href="vignettes/security.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/security.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/server_yml.html"><span class="CRAN">_server.yml for framework developers</span></a> (<a href="vignettes/server_yml.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/server_yml.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/tips-and-tricks.html"><span class="CRAN">Tips &amp; Tricks</span></a> (<a href="vignettes/tips-and-tricks.qmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/tips-and-tricks.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/plumber2_0.2.0.tar.gz"> <span class="CRAN"> plumber2_0.2.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/plumber2_0.2.0.zip"><span class="CRAN">plumber2_0.2.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/plumber2_0.2.0.zip"><span class="CRAN">plumber2_0.2.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/plumber2_0.2.0.zip"><span class="CRAN">plumber2_0.2.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/plumber2_0.2.0.tgz"><span class="CRAN">plumber2_0.2.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/plumber2_0.2.0.tgz"><span class="CRAN">plumber2_0.2.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/plumber2_0.2.0.tgz"><span class="CRAN">plumber2_0.2.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/plumber2_0.2.0.tgz"><span class="CRAN">plumber2_0.2.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/plumber2"> <span class="CRAN"> plumber2 archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../htmxr/index.html"><span class="CRAN">htmxr</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../lucidr/index.html"><span class="CRAN">lucidr</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=plumber2"><span class="CRAN"><samp>https://CRAN.R-project.org/package=plumber2</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

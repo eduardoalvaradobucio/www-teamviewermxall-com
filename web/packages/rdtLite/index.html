@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rdtLite</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rdtLite">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Provenance Collector [R package rdtLite version 1.4]">
+<meta name="citation_author1" content="Barbara Lerner">
+<meta name="citation_author2" content="Emery Boose">
+<meta name="citation_author3" content="Elizabeth Fong">
+<meta name="citation_author4" content="Luis Perez">
+<meta name="citation_publication_date" content="2022-08-08">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rdtLite">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rdtLite">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rdtLite: Provenance Collector">
+<meta property="og:description" content="Defines functions that can be used to collect provenance as an 'R' script executes or during a console session. The output is a text file in 'PROV-JSON' format.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rdtLite">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rdtLite: Provenance Collector</h2>
+<p>Defines functions that can be used to collect provenance as
+  an 'R' script executes or during a console session. The output is a text 
+  file in 'PROV-JSON' format.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../gtools/index.html"><span class="CRAN">gtools</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../provViz/index.html"><span class="CRAN">provViz</span></a> (&ge; 1.0.6), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sessioninfo/index.html"><span class="CRAN">sessioninfo</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../XML/index.html"><span class="CRAN">XML</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../provSummarizeR/index.html"><span class="CRAN">provSummarizeR</span></a>, <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../vroom/index.html"><span class="CRAN">vroom</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2022-08-08</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rdtLite">10.32614/CRAN.package.rdtLite</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Barbara Lerner [aut, cre],
+  Emery Boose [aut],
+  Elizabeth Fong [aut],
+  Luis Perez [aut],
+  Thomas Pasquier [ctb],
+  Matthew Lau [ctb],
+  Yada Pruksachatkun [ctb],
+  Alex Liu [ctb],
+  Moe Pwint Phyu [ctb],
+  Connor Gregorich-Trevor [ctb],
+  Aaron Ellison [res],
+  Margo Seltzer [res],
+  Joe Wonsil [res],
+  Orenna Brand [res]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Barbara Lerner  &#x3c;&#x62;&#x6c;&#x65;&#x72;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x74;&#x68;&#x6f;&#x6c;&#x79;&#x6f;&#x6b;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/End-to-end-provenance/rdtLite/issues" target="_top"><span class="GitHub">https://github.com/End-to-end-provenance/rdtLite/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>President and Fellows of Harvard College, Trustees of Mount
+Holyoke College</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/End-to-end-provenance/rdtLite" target="_top"><span class="GitHub">https://github.com/End-to-end-provenance/rdtLite</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rdtLite citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rdtLite.html"><span class="CRAN">rdtLite results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rdtLite.html"><span class="CRAN">rdtLite.html</span></a> ,  <a href="rdtLite.pdf"><span class="CRAN">rdtLite.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GettingStarted.html"><span class="CRAN">Introduction to Provenance Collection with rdtLite</span></a> (<a href="vignettes/GettingStarted.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/GettingStarted.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rdtLite_1.4.tar.gz"> <span class="CRAN"> rdtLite_1.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rdtLite_1.4.zip"><span class="CRAN">rdtLite_1.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rdtLite_1.4.zip"><span class="CRAN">rdtLite_1.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rdtLite_1.4.zip"><span class="CRAN">rdtLite_1.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rdtLite_1.4.tgz"><span class="CRAN">rdtLite_1.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rdtLite_1.4.tgz"><span class="CRAN">rdtLite_1.4.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rdtLite_1.4.tgz"><span class="CRAN">rdtLite_1.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rdtLite_1.4.tgz"><span class="CRAN">rdtLite_1.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rdtLite"> <span class="CRAN"> rdtLite archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../provDebugR/index.html"><span class="CRAN">provDebugR</span></a>, <a href="../provSummarizeR/index.html"><span class="CRAN">provSummarizeR</span></a>, <a href="../provTraceR/index.html"><span class="CRAN">provTraceR</span></a>, <a href="../provViz/index.html"><span class="CRAN">provViz</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rdtLite"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rdtLite</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package nomisdata</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=nomisdata">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Access 'Nomis' UK Labour Market Data and Statistics [R package nomisdata version 0.1.2]">
+<meta name="citation_author" content="Cheryl Isabella Lim">
+<meta name="citation_publication_date" content="2026-02-10">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nomisdata">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nomisdata">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="nomisdata: Access 'Nomis' UK Labour Market Data and Statistics">
+<meta property="og:description" content="Interface to the 'Nomis' database (&amp;lt;&lt;a href=&quot;https://www.nomisweb.co.uk&quot; target=&quot;_top&quot;&gt;https://www.nomisweb.co.uk&lt;/a&gt;&amp;gt;), maintained by Durham University on behalf of the Office for National Statistics (ONS). Provides access to UK labour market statistics including census data, benefit claimant counts, and employment surveys. Supports automatic pagination, optional disk caching, spatial data via 'sf', and tidy data output. Independent implementation unaffiliated with ONS or Durham University.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=nomisdata">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>nomisdata: Access 'Nomis' UK Labour Market Data and Statistics</h2>
+<p>Interface to the 'Nomis' database (&lt;<a href="https://www.nomisweb.co.uk" target="_top">https://www.nomisweb.co.uk</a>&gt;), maintained by Durham University on behalf of the Office for National Statistics (ONS). Provides access to UK labour market statistics including census data, benefit claimant counts, and employment surveys. Supports automatic pagination, optional disk caching, spatial data via 'sf', and tidy data output. Independent implementation unaffiliated with ONS or Durham University.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.6.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.0), <a href="../httr2/index.html"><span class="CRAN">httr2</span></a> (&ge; 1.0.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.8.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.2.0), <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../cachem/index.html"><span class="CRAN">cachem</span></a> (&ge; 1.0.0), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.4.0), <a href="../janitor/index.html"><span class="CRAN">janitor</span></a> (&ge; 2.2.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.42), <a href="../memoise/index.html"><span class="CRAN">memoise</span></a> (&ge; 2.0.0), <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a> (&ge; 0.3.0), <a href="../readr/index.html"><span class="CRAN">readr</span></a> (&ge; 2.1.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.20), <a href="../rsdmx/index.html"><span class="CRAN">rsdmx</span></a> (&ge; 0.6.0), <a href="../scales/index.html"><span class="CRAN">scales</span></a> (&ge;
+1.2.0), <a href="../sf/index.html"><span class="CRAN">sf</span></a> (&ge; 1.0.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a> (&ge; 2.5.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-10</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.nomisdata">10.32614/CRAN.package.nomisdata</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Cheryl Isabella Lim
+    <a href="https://orcid.org/0009-0004-5766-1392" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Cheryl Isabella Lim  &#x3c;&#x63;&#x68;&#x65;&#x72;&#x79;&#x6c;&#x2e;&#x61;&#x63;&#x61;&#x64;&#x65;&#x6d;&#x69;&#x63;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/cherylisabella/nomisdata/issues" target="_top"><span class="GitHub">https://github.com/cherylisabella/nomisdata/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/cherylisabella/nomisdata" target="_top"><span class="GitHub">https://github.com/cherylisabella/nomisdata</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nomisdata.html"><span class="CRAN">nomisdata results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/nomisdata.html"><span class="CRAN">nomisdata.html</span></a> ,  <a href="nomisdata.pdf"><span class="CRAN">nomisdata.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/advanced-queries.html"><span class="CRAN">Advanced Querying</span></a> (<a href="vignettes/advanced-queries.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/advanced-queries.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/geography.html"><span class="CRAN">Working with Geography</span></a> (<a href="vignettes/geography.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/geography.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/quickstart.html"><span class="CRAN">Getting Started with nomisdata</span></a> (<a href="vignettes/quickstart.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quickstart.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/spatial-analysis.html"><span class="CRAN">Spatial Analysis with nomisdata</span></a> (<a href="vignettes/spatial-analysis.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/spatial-analysis.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/visualisation.html"><span class="CRAN">Data Visualisation</span></a> (<a href="vignettes/visualisation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/visualisation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nomisdata_0.1.2.tar.gz"> <span class="CRAN"> nomisdata_0.1.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/nomisdata_0.1.2.zip"><span class="CRAN">nomisdata_0.1.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/nomisdata_0.1.2.zip"><span class="CRAN">nomisdata_0.1.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/nomisdata_0.1.2.zip"><span class="CRAN">nomisdata_0.1.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/nomisdata_0.1.2.tgz"><span class="CRAN">nomisdata_0.1.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/nomisdata_0.1.2.tgz"><span class="CRAN">nomisdata_0.1.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/nomisdata_0.1.2.tgz"><span class="CRAN">nomisdata_0.1.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/nomisdata_0.1.2.tgz"><span class="CRAN">nomisdata_0.1.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nomisdata"> <span class="CRAN"> nomisdata archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nomisdata"><span class="CRAN"><samp>https://CRAN.R-project.org/package=nomisdata</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

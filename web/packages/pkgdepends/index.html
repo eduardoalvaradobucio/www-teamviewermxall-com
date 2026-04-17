@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pkgdepends</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pkgdepends">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Package Dependency Resolution and Downloads [R package pkgdepends version 0.9.1]">
+<meta name="citation_author" content="Gábor Csárdi">
+<meta name="citation_publication_date" content="2026-04-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pkgdepends">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pkgdepends">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pkgdepends: Package Dependency Resolution and Downloads">
+<meta property="og:description" content="Find recursive dependencies of 'R' packages from various sources. Solve the dependencies to obtain a consistent set of packages to install. Download packages, and install them. It supports packages on 'CRAN', 'Bioconductor' and other 'CRAN-like' repositories, 'GitHub', package 'URLs', and local package trees and files. It caches metadata and package files via the 'pkgcache' package, and performs all 'HTTP' requests, downloads, builds and installations in parallel. 'pkgdepends' is the workhorse of the 'pak' package.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pkgdepends">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pkgdepends: Package Dependency Resolution and Downloads</h2>
+<p>Find recursive dependencies of 'R' packages from various
+    sources. Solve the dependencies to obtain a consistent set of packages
+    to install. Download packages, and install them. It supports packages
+    on 'CRAN', 'Bioconductor' and other 'CRAN-like' repositories,
+    'GitHub', package 'URLs', and local package trees and files. It caches
+    metadata and package files via the 'pkgcache' package, and performs
+    all 'HTTP' requests, downloads, builds and installations in parallel.
+    'pkgdepends' is the workhorse of the 'pak' package.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.9.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a> (&ge; 3.3.1), <a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.6.0), <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../desc/index.html"><span class="CRAN">desc</span></a> (&ge; 1.4.3), <a href="../filelock/index.html"><span class="CRAN">filelock</span></a> (&ge; 1.0.2), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lpSolve/index.html"><span class="CRAN">lpSolve</span></a>, <a href="../pkgbuild/index.html"><span class="CRAN">pkgbuild</span></a> (&ge; 1.0.2), <a href="../pkgcache/index.html"><span class="CRAN">pkgcache</span></a> (&ge; 2.2.0), <a href="../processx/index.html"><span class="CRAN">processx</span></a> (&ge; 3.4.2), <a href="../ps/index.html"><span class="CRAN">ps</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../zip/index.html"><span class="CRAN">zip</span></a> (&ge; 2.3.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../asciicast/index.html"><span class="CRAN">asciicast</span></a> (&ge; 2.2.0.9000), <a href="../codetools/index.html"><span class="CRAN">codetools</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../debugme/index.html"><span class="CRAN">debugme</span></a>, <a href="../fansi/index.html"><span class="CRAN">fansi</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../gh/index.html"><span class="CRAN">gh</span></a>, <a href="../gitcreds/index.html"><span class="CRAN">gitcreds</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../pak/index.html"><span class="CRAN">pak</span></a>, <a href="../pingr/index.html"><span class="CRAN">pingr</span></a> (&ge;
+2.0.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../svglite/index.html"><span class="CRAN">svglite</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.2.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../webfakes/index.html"><span class="CRAN">webfakes</span></a> (&ge; 1.1.5.9000), <a href="../withr/index.html"><span class="CRAN">withr</span></a> (&ge; 2.1.1)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pkgdepends">10.32614/CRAN.package.pkgdepends</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gábor Csárdi [aut, cre],
+  Posit Software, PBC <a href="https://ror.org/03wc8by49" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph,
+    fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gábor Csárdi  &#x3c;&#x63;&#x73;&#x61;&#x72;&#x64;&#x69;&#x2e;&#x67;&#x61;&#x62;&#x6f;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-lib/pkgdepends/issues" target="_top"><span class="GitHub">https://github.com/r-lib/pkgdepends/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-lib.github.io/pkgdepends/" target="_top"><span class="GitHub">https://r-lib.github.io/pkgdepends/</span></a>,
+<a href="https://github.com/r-lib/pkgdepends" target="_top"><span class="GitHub">https://github.com/r-lib/pkgdepends</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pkgdepends.html"><span class="CRAN">pkgdepends results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pkgdepends.html"><span class="CRAN">pkgdepends.html</span></a> ,  <a href="pkgdepends.pdf"><span class="CRAN">pkgdepends.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pkgdepends_0.9.1.tar.gz"> <span class="CRAN"> pkgdepends_0.9.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pkgdepends_0.9.1.zip"><span class="CRAN">pkgdepends_0.9.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pkgdepends_0.9.1.zip"><span class="CRAN">pkgdepends_0.9.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pkgdepends_0.9.1.zip"><span class="CRAN">pkgdepends_0.9.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pkgdepends_0.9.1.tgz"><span class="CRAN">pkgdepends_0.9.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/pkgdepends_0.9.0.tgz"><span class="CRAN">pkgdepends_0.9.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pkgdepends_0.9.1.tgz"><span class="CRAN">pkgdepends_0.9.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pkgdepends_0.9.1.tgz"><span class="CRAN">pkgdepends_0.9.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pkgdepends"> <span class="CRAN"> pkgdepends archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../shinylive/index.html"><span class="CRAN">shinylive</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../pak/index.html"><span class="CRAN">pak</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pkgdepends"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pkgdepends</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

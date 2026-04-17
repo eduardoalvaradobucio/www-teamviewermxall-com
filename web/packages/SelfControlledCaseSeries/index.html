@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package SelfControlledCaseSeries</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=SelfControlledCaseSeries">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Self-Controlled Case Series [R package SelfControlledCaseSeries version 6.1.4]">
+<meta name="citation_author1" content="Martijn Schuemie">
+<meta name="citation_author2" content="Patrick Ryan">
+<meta name="citation_author3" content="Trevor Shaddox">
+<meta name="citation_author4" content="Marc Suchard">
+<meta name="citation_publication_date" content="2026-03-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SelfControlledCaseSeries">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SelfControlledCaseSeries">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="SelfControlledCaseSeries: Self-Controlled Case Series">
+<meta property="og:description" content="Execute the self-controlled case series (SCCS) design using observational data in the OMOP Common Data Model. Extracts all necessary data from the database and transforms it to the format required for SCCS. Age and season can be modeled using splines assuming constant hazard within calendar months. Event-dependent censoring of the observation period can be corrected for. Many exposures can be included at once (MSCCS), with regularization on all coefficients except for the exposure of interest. Includes diagnostics for all major assumptions of the SCCS.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=SelfControlledCaseSeries">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>SelfControlledCaseSeries: Self-Controlled Case Series</h2>
+<p>Execute the self-controlled case series (SCCS) design using observational 
+  data in the OMOP Common Data Model. Extracts all necessary data from the database and 
+	transforms it to the format required for SCCS. Age and season can be modeled
+	using splines assuming constant hazard within calendar months. Event-dependent 
+	censoring of the observation period can be corrected for. Many exposures can be
+	included at once (MSCCS), with regularization on all coefficients except for the
+	exposure of interest. Includes diagnostics for all major assumptions of the SCCS.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>6.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0), <a href="../Cyclops/index.html"><span class="CRAN">Cyclops</span></a> (&ge; 3.6.0), <a href="../DatabaseConnector/index.html"><span class="CRAN">DatabaseConnector</span></a> (&ge;
+6.0.0), <a href="../Andromeda/index.html"><span class="CRAN">Andromeda</span></a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../SqlRender/index.html"><span class="CRAN">SqlRender</span></a> (&ge; 1.16.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.0), <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.9), <a href="../ParallelLogger/index.html"><span class="CRAN">ParallelLogger</span></a> (&ge; 3.4.0), <a href="../EmpiricalCalibration/index.html"><span class="CRAN">EmpiricalCalibration</span></a>, <a href="../../../doc/manuals/r-patched/packages/splines/refman/splines.html" target="_top">splines</a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.4.0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../ResultModelManager/index.html"><span class="CRAN">ResultModelManager</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../zip/index.html"><span class="CRAN">zip</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../Eunomia/index.html"><span class="CRAN">Eunomia</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.SelfControlledCaseSeries">10.32614/CRAN.package.SelfControlledCaseSeries</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martijn Schuemie [aut, cre],
+  Patrick Ryan [aut],
+  Trevor Shaddox [aut],
+  Marc Suchard [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martijn Schuemie  &#x3c;&#x73;&#x63;&#x68;&#x75;&#x65;&#x6d;&#x69;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x68;&#x64;&#x73;&#x69;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/OHDSI/SelfControlledCaseSeries/issues" target="_top"><span class="GitHub">https://github.com/OHDSI/SelfControlledCaseSeries/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License 2.0</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ohdsi.github.io/SelfControlledCaseSeries/" target="_top"><span class="GitHub">https://ohdsi.github.io/SelfControlledCaseSeries/</span></a>,
+<a href="https://github.com/OHDSI/SelfControlledCaseSeries" target="_top"><span class="GitHub">https://github.com/OHDSI/SelfControlledCaseSeries</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SelfControlledCaseSeries.html"><span class="CRAN">SelfControlledCaseSeries results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/SelfControlledCaseSeries.html"><span class="CRAN">SelfControlledCaseSeries.html</span></a> ,  <a href="SelfControlledCaseSeries.pdf"><span class="CRAN">SelfControlledCaseSeries.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/MultipleAnalyses.pdf"><span class="CRAN">Multiple analyses using SelfControlledCaseSeries</span></a> (<a href="vignettes/MultipleAnalyses.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/MultipleAnalyses.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ResultsSchema.pdf"><span class="CRAN">Results schema</span></a> (<a href="vignettes/ResultsSchema.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ResultsSchema.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/SingleStudies.pdf"><span class="CRAN">Single studies using SelfControlledCaseSeries</span></a> (<a href="vignettes/SingleStudies.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/SingleStudies.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SelfControlledCaseSeries_6.1.4.tar.gz"> <span class="CRAN"> SelfControlledCaseSeries_6.1.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/SelfControlledCaseSeries_6.1.4.zip"><span class="CRAN">SelfControlledCaseSeries_6.1.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/SelfControlledCaseSeries_6.1.4.zip"><span class="CRAN">SelfControlledCaseSeries_6.1.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/SelfControlledCaseSeries_6.1.1.zip"><span class="CRAN">SelfControlledCaseSeries_6.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/SelfControlledCaseSeries_6.1.4.tgz"><span class="CRAN">SelfControlledCaseSeries_6.1.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/SelfControlledCaseSeries_6.1.1.tgz"><span class="CRAN">SelfControlledCaseSeries_6.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/SelfControlledCaseSeries_6.1.4.tgz"><span class="CRAN">SelfControlledCaseSeries_6.1.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/SelfControlledCaseSeries_6.1.4.tgz"><span class="CRAN">SelfControlledCaseSeries_6.1.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SelfControlledCaseSeries"> <span class="CRAN"> SelfControlledCaseSeries archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SelfControlledCaseSeries"><span class="CRAN"><samp>https://CRAN.R-project.org/package=SelfControlledCaseSeries</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

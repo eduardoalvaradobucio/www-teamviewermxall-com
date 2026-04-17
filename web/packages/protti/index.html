@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package protti</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=protti">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Bottom-Up Proteomics and LiP-MS Quality Control and Data Analysis Tools [R package protti version 1.0.0]">
+<meta name="citation_author1" content="Jan-Philipp Quast">
+<meta name="citation_author2" content="Dina Schuster">
+<meta name="citation_publication_date" content="2026-01-14">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=protti">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=protti">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="protti: Bottom-Up Proteomics and LiP-MS Quality Control and Data Analysis Tools">
+<meta property="og:description" content="Useful functions and workflows for proteomics quality control and data analysis of both limited proteolysis-coupled mass spectrometry (LiP-MS) (Feng et. al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fnbt.2999&quot; target=&quot;_top&quot;&gt;doi:10.1038/nbt.2999&lt;/a&gt;&amp;gt;) and regular bottom-up proteomics experiments. Data generated with search tools such as 'Spectronaut', 'MaxQuant' and 'Proteome Discover' can be easily used due to flexibility of functions.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=protti">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>protti: Bottom-Up Proteomics and LiP-MS Quality Control and Data
+Analysis Tools</h2>
+<p>Useful functions and workflows for proteomics quality control and data analysis of both limited proteolysis-coupled mass spectrometry (LiP-MS) (Feng et. al. (2014) &lt;<a href="https://doi.org/10.1038%2Fnbt.2999" target="_top">doi:10.1038/nbt.2999</a>&gt;) and regular bottom-up proteomics experiments. Data generated with search tools such as 'Spectronaut', 'MaxQuant' and 'Proteome Discover' can be easily used due to flexibility of functions.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../janitor/index.html"><span class="CRAN">janitor</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../forcats/index.html"><span class="CRAN">forcats</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../ggrepel/index.html"><span class="CRAN">ggrepel</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../r3dmol/index.html"><span class="CRAN">r3dmol</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/proDA.html" target="_top"><span class="BioC">proDA</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/limma.html" target="_top"><span class="BioC">limma</span></a>, <a href="../dendextend/index.html"><span class="CRAN">dendextend</span></a>, <a href="../pheatmap/index.html"><span class="CRAN">pheatmap</span></a>, <a href="../heatmaply/index.html"><span class="CRAN">heatmaply</span></a>, <a href="../furrr/index.html"><span class="CRAN">furrr</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../seriation/index.html"><span class="CRAN">seriation</span></a>, <a href="../drc/index.html"><span class="CRAN">drc</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/STRINGdb.html" target="_top"><span class="BioC">STRINGdb</span></a>, <a href="../iq/index.html"><span class="CRAN">iq</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../farver/index.html"><span class="CRAN">farver</span></a>, <a href="../ggforce/index.html"><span class="CRAN">ggforce</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../missForest/index.html"><span class="CRAN">missForest</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-14</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.protti">10.32614/CRAN.package.protti</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jan-Philipp Quast <a href="https://orcid.org/0000-0003-2713-778X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Dina Schuster <a href="https://orcid.org/0000-0001-6611-8237" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  ETH Zurich [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jan-Philipp Quast  &#x3c;&#x6a;&#x70;&#x71;&#x75;&#x61;&#x73;&#x74;&#x2e;&#x73;&#x6f;&#x66;&#x74;&#x77;&#x61;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jpquast/protti/issues" target="_top"><span class="GitHub">https://github.com/jpquast/protti/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jpquast/protti" target="_top"><span class="GitHub">https://github.com/jpquast/protti</span></a>,
+<a href="https://jpquast.github.io/protti/" target="_top"><span class="GitHub">https://jpquast.github.io/protti/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">protti citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Omics.html"><span class="CRAN">Omics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_protti.html"><span class="CRAN">protti results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/protti.html"><span class="CRAN">protti.html</span></a> ,  <a href="protti.pdf"><span class="CRAN">protti.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/data_analysis_dose_response_workflow.html"><span class="CRAN">Dose-Response Data Analysis Workflow</span></a> (<a href="vignettes/data_analysis_dose_response_workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/data_analysis_dose_response_workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/data_analysis_single_dose_treatment_workflow.html"><span class="CRAN">Single Dose Treatment Data Analysis Workflow</span></a> (<a href="vignettes/data_analysis_single_dose_treatment_workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/data_analysis_single_dose_treatment_workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/input_preparation_workflow.html"><span class="CRAN">Input Preparation Workflow</span></a> (<a href="vignettes/input_preparation_workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/input_preparation_workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/protein_structure_workflow.html"><span class="CRAN">Protein Structure Analysis Workflow</span></a> (<a href="vignettes/protein_structure_workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/protein_structure_workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/quality_control_workflow.html"><span class="CRAN">Qualtiy Control (QC) workflow</span></a> (<a href="vignettes/quality_control_workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quality_control_workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/protti_1.0.0.tar.gz"> <span class="CRAN"> protti_1.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/protti_1.0.0.zip"><span class="CRAN">protti_1.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/protti_1.0.0.zip"><span class="CRAN">protti_1.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/protti_1.0.0.zip"><span class="CRAN">protti_1.0.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/protti_1.0.0.tgz"><span class="CRAN">protti_1.0.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/protti_1.0.0.tgz"><span class="CRAN">protti_1.0.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/protti_1.0.0.tgz"><span class="CRAN">protti_1.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/protti_1.0.0.tgz"><span class="CRAN">protti_1.0.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/protti"> <span class="CRAN"> protti archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=protti"><span class="CRAN"><samp>https://CRAN.R-project.org/package=protti</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

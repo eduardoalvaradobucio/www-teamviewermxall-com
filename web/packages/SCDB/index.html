@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package SCDB</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=SCDB">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Easily Access and Maintain Time-Based Versioned Data (Slowly-Changing-Dimension) [R package SCDB version 0.6.0]">
+<meta name="citation_author1" content="Rasmus Skytte Randløv">
+<meta name="citation_author2" content="Marcus Munch Grünewald">
+<meta name="citation_publication_date" content="2026-01-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SCDB">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SCDB">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="SCDB: Easily Access and Maintain Time-Based Versioned Data (Slowly-Changing-Dimension)">
+<meta property="og:description" content="A collection of functions that enable easy access and updating of a database of data over time. More specifically, the package facilitates type-2 history for data-warehouses and provides a number of Quality of life improvements for working on SQL databases with R. For reference see Ralph Kimball and Margy Ross (2013, ISBN 9781118530801).">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=SCDB">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>SCDB: Easily Access and Maintain Time-Based Versioned Data
+(Slowly-Changing-Dimension)</h2>
+<p>A collection of functions that enable easy access and updating of a database of data over time.
+             More specifically, the package facilitates type-2 history for data-warehouses and provides a number
+             of Quality of life improvements for working on SQL databases with R.
+             For reference see Ralph Kimball and Margy Ross (2013, ISBN 9781118530801).</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../dbplyr/index.html"><span class="CRAN">dbplyr</span></a> (&ge; 2.4.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../parallelly/index.html"><span class="CRAN">parallelly</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../conflicted/index.html"><span class="CRAN">conflicted</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a> (&ge; 0.10.1), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../here/index.html"><span class="CRAN">here</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lintr/index.html"><span class="CRAN">lintr</span></a>, <a href="../microbenchmark/index.html"><span class="CRAN">microbenchmark</span></a>, <a href="../odbc/index.html"><span class="CRAN">odbc</span></a>, <a href="../pak/index.html"><span class="CRAN">pak</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a>, <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyverse/index.html"><span class="CRAN">tidyverse</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.SCDB">10.32614/CRAN.package.SCDB</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rasmus Skytte Randløv
+    <a href="https://orcid.org/0000-0002-5860-3838" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre,
+    rev],
+  Marcus Munch Grünewald
+    <a href="https://orcid.org/0009-0006-8090-406X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Lasse Engbo Christiansen
+    <a href="https://orcid.org/0000-0001-5019-1931" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [rev, ctb],
+  Sofia Myrup Otero [rev],
+  Kim Daniel Jacobsen [ctb],
+  Statens Serum Institut [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rasmus Skytte Randløv  &#x3c;&#x72;&#x73;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x73;&#x73;&#x69;&#x2e;&#x64;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ssi-dk/SCDB/issues" target="_top"><span class="GitHub">https://github.com/ssi-dk/SCDB/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ssi-dk/SCDB" target="_top"><span class="GitHub">https://github.com/ssi-dk/SCDB</span></a>, <a href="https://ssi-dk.github.io/SCDB/" target="_top"><span class="GitHub">https://ssi-dk.github.io/SCDB/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SCDB.html"><span class="CRAN">SCDB results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/SCDB.html"><span class="CRAN">SCDB.html</span></a> ,  <a href="SCDB.pdf"><span class="CRAN">SCDB.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SCDB.html"><span class="CRAN">SCDB: Basic principles</span></a> (<a href="vignettes/SCDB.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/SCDB.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/benchmarks.html"><span class="CRAN">SCDB: Benchmarks</span></a> (<a href="vignettes/benchmarks.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/benchmarks.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/delta-loading.html"><span class="CRAN">Batch migration and incremental backups</span></a> (<a href="vignettes/delta-loading.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/delta-loading.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/slowly-changing-dimension.html"><span class="CRAN">Slowly Changing Dimension methodology</span></a> (<a href="vignettes/slowly-changing-dimension.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/slowly-changing-dimension.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SCDB_0.6.0.tar.gz"> <span class="CRAN"> SCDB_0.6.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/SCDB_0.6.0.zip"><span class="CRAN">SCDB_0.6.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/SCDB_0.6.0.zip"><span class="CRAN">SCDB_0.6.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/SCDB_0.6.0.zip"><span class="CRAN">SCDB_0.6.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/SCDB_0.6.0.tgz"><span class="CRAN">SCDB_0.6.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/SCDB_0.6.0.tgz"><span class="CRAN">SCDB_0.6.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/SCDB_0.6.0.tgz"><span class="CRAN">SCDB_0.6.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/SCDB_0.6.0.tgz"><span class="CRAN">SCDB_0.6.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SCDB"> <span class="CRAN"> SCDB archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../diseasystore/index.html"><span class="CRAN">diseasystore</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SCDB"><span class="CRAN"><samp>https://CRAN.R-project.org/package=SCDB</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

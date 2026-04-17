@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package contentanalysis</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=contentanalysis">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Scientific Content and Citation Analysis from PDF Documents [R package contentanalysis version 1.0.0]">
+<meta name="citation_author1" content="Massimo Aria">
+<meta name="citation_author2" content="Corrado Cuccurullo">
+<meta name="citation_publication_date" content="2026-03-07">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=contentanalysis">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=contentanalysis">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="contentanalysis: Scientific Content and Citation Analysis from PDF Documents">
+<meta property="og:description" content="Provides comprehensive tools for extracting and analyzing scientific content from PDF documents, including citation extraction, reference matching, text analysis, and bibliometric indicators. Supports multi-column PDF layouts, 'CrossRef' API &amp;lt;&lt;a href=&quot;https://www.crossref.org/documentation/retrieve-metadata/rest-api/&quot; target=&quot;_top&quot;&gt;https://www.crossref.org/documentation/retrieve-metadata/rest-api/&lt;/a&gt;&amp;gt; integration, and advanced citation parsing.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=contentanalysis">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>contentanalysis: Scientific Content and Citation Analysis from PDF Documents</h2>
+<p>Provides comprehensive tools for extracting and analyzing scientific 
+    content from PDF documents, including citation extraction, reference matching, 
+    text analysis, and bibliometric indicators. Supports multi-column PDF layouts,
+    'CrossRef' API &lt;<a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/" target="_top">https://www.crossref.org/documentation/retrieve-metadata/rest-api/</a>&gt; integration, and advanced citation parsing.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a> (&ge; 0.1-3), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.0), <a href="../httr2/index.html"><span class="CRAN">httr2</span></a> (&ge; 0.2.0), <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 2.0.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.4), <a href="../openalexR/index.html"><span class="CRAN">openalexR</span></a> (&ge;
+2.0.2), <a href="../pdftools/index.html"><span class="CRAN">pdftools</span></a> (&ge; 3.6.0), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 1.1.0), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge;
+1.5.2), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.3.0), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.3.0), <a href="../tidytext/index.html"><span class="CRAN">tidytext</span></a> (&ge;
+0.4.3), <a href="../visNetwork/index.html"><span class="CRAN">visNetwork</span></a> (&ge; 2.1.4)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../stringdist/index.html"><span class="CRAN">stringdist</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../mockery/index.html"><span class="CRAN">mockery</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-07</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.contentanalysis">10.32614/CRAN.package.contentanalysis</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Massimo Aria <a href="https://orcid.org/0000-0002-8517-9411" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cre, aut, cph],
+  Corrado Cuccurullo
+    <a href="https://orcid.org/0000-0002-7401-8575" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Massimo Aria  &#x3c;&#x61;&#x72;&#x69;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x6e;&#x61;&#x2e;&#x69;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/massimoaria/contentanalysis/issues" target="_top"><span class="GitHub">https://github.com/massimoaria/contentanalysis/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/massimoaria/contentanalysis" target="_top"><span class="GitHub">https://github.com/massimoaria/contentanalysis</span></a>,</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_contentanalysis.html"><span class="CRAN">contentanalysis results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/contentanalysis.html"><span class="CRAN">contentanalysis.html</span></a> ,  <a href="contentanalysis.pdf"><span class="CRAN">contentanalysis.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction.html"><span class="CRAN">Introduction to contentanalysis</span></a> (<a href="vignettes/introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/contentanalysis_1.0.0.tar.gz"> <span class="CRAN"> contentanalysis_1.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/contentanalysis_1.0.0.zip"><span class="CRAN">contentanalysis_1.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/contentanalysis_1.0.0.zip"><span class="CRAN">contentanalysis_1.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/contentanalysis_1.0.0.zip"><span class="CRAN">contentanalysis_1.0.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/contentanalysis_1.0.0.tgz"><span class="CRAN">contentanalysis_1.0.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/contentanalysis_1.0.0.tgz"><span class="CRAN">contentanalysis_1.0.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/contentanalysis_1.0.0.tgz"><span class="CRAN">contentanalysis_1.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/contentanalysis_1.0.0.tgz"><span class="CRAN">contentanalysis_1.0.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/contentanalysis"> <span class="CRAN"> contentanalysis archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bibliometrix/index.html"><span class="CRAN">bibliometrix</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=contentanalysis"><span class="CRAN"><samp>https://CRAN.R-project.org/package=contentanalysis</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
