@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package esquisse</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=esquisse">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Explore and Visualize Your Data Interactively [R package esquisse version 2.1.0]">
+<meta name="citation_author1" content="Fanny Meyer">
+<meta name="citation_author2" content="Victor Perrier">
+<meta name="citation_publication_date" content="2025-02-21">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=esquisse">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=esquisse">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="esquisse: Explore and Visualize Your Data Interactively">
+<meta property="og:description" content="A 'shiny' gadget to create 'ggplot2' figures interactively with drag-and-drop to map your variables to different aesthetics. You can quickly visualize your data accordingly to their type, export in various formats, and retrieve the code to reproduce the plot.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=esquisse">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>esquisse: Explore and Visualize Your Data Interactively</h2>
+<p>A 'shiny' gadget to create 'ggplot2' figures interactively with drag-and-drop to map your variables to different aesthetics.
+    You can quickly visualize your data accordingly to their type, export in various formats,
+    and retrieve the code to reproduce the plot.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bslib/index.html"><span class="CRAN">bslib</span></a>, <a href="../datamods/index.html"><span class="CRAN">datamods</span></a> (&ge; 1.5.1), <a href="../downlit/index.html"><span class="CRAN">downlit</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.0.0), <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a> (&ge; 0.5.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../phosphoricons/index.html"><span class="CRAN">phosphoricons</span></a> (&ge;
+0.2.1), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 0.3.1), <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a> (&ge; 1.1.0), <a href="../shinybusy/index.html"><span class="CRAN">shinybusy</span></a>, <a href="../shinyWidgets/index.html"><span class="CRAN">shinyWidgets</span></a> (&ge; 0.6.0), <a href="../zip/index.html"><span class="CRAN">zip</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../officer/index.html"><span class="CRAN">officer</span></a>, <a href="../rvg/index.html"><span class="CRAN">rvg</span></a>, <a href="../rio/index.html"><span class="CRAN">rio</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.1.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../ggthemes/index.html"><span class="CRAN">ggthemes</span></a>, hrbrthemes, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-02-21</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.esquisse">10.32614/CRAN.package.esquisse</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Fanny Meyer [aut],
+  Victor Perrier [aut, cre],
+  Ian Carroll [ctb] (Faceting support),
+  Xiangnan Dang [ctb] (Facets rows and cols, X/Y limits),
+  Nicolas Bevacqua [cph] (author of dragula JavaScript library),
+  Daybrush (Younkue Choi) [cph] (author of moveable JavaScript library),
+  Zeno Rocha [cph] (author of clipboard JavaScript library)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Victor Perrier  &#x3c;&#x76;&#x69;&#x63;&#x74;&#x6f;&#x72;&#x2e;&#x70;&#x65;&#x72;&#x72;&#x69;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x64;&#x72;&#x65;&#x61;&#x6d;&#x72;&#x73;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dreamRs/esquisse/issues" target="_top"><span class="GitHub">https://github.com/dreamRs/esquisse/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a> | file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://dreamrs.github.io/esquisse/" target="_top"><span class="GitHub">https://dreamrs.github.io/esquisse/</span></a>,
+<a href="https://github.com/dreamRs/esquisse" target="_top"><span class="GitHub">https://github.com/dreamRs/esquisse</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_esquisse.html"><span class="CRAN">esquisse results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/esquisse.html"><span class="CRAN">esquisse.html</span></a> ,  <a href="esquisse.pdf"><span class="CRAN">esquisse.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/get-started.html"><span class="CRAN">get-started</span></a> (<a href="vignettes/get-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/get-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/shiny-usage.html"><span class="CRAN">shiny-usage</span></a> (<a href="vignettes/shiny-usage.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/shiny-usage.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/esquisse_2.1.0.tar.gz"> <span class="CRAN"> esquisse_2.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/esquisse_2.1.0.zip"><span class="CRAN">esquisse_2.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/esquisse_2.1.0.zip"><span class="CRAN">esquisse_2.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/esquisse_2.1.0.zip"><span class="CRAN">esquisse_2.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/esquisse_2.1.0.tgz"><span class="CRAN">esquisse_2.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/esquisse_2.1.0.tgz"><span class="CRAN">esquisse_2.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/esquisse_2.1.0.tgz"><span class="CRAN">esquisse_2.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/esquisse_2.1.0.tgz"><span class="CRAN">esquisse_2.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/esquisse"> <span class="CRAN"> esquisse archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../shinyrecipes/index.html"><span class="CRAN">shinyrecipes</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../flow/index.html"><span class="CRAN">flow</span></a>, <a href="../GDAtools/index.html"><span class="CRAN">GDAtools</span></a>, <a href="../Slick/index.html"><span class="CRAN">Slick</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/systemPipeShiny.html" target="_top"><span class="BioC">systemPipeShiny</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=esquisse"><span class="CRAN"><samp>https://CRAN.R-project.org/package=esquisse</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

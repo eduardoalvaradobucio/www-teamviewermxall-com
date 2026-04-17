@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package cbioportalR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=cbioportalR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Browse and Query Clinical and Genomic Data from cBioPortal [R package cbioportalR version 1.1.1]">
+<meta name="citation_author" content="Karissa Whiting">
+<meta name="citation_publication_date" content="2024-11-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cbioportalR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cbioportalR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="cbioportalR: Browse and Query Clinical and Genomic Data from cBioPortal">
+<meta property="og:description" content="Provides R users with direct access to genomic and clinical data from the 'cBioPortal' web resource via user-friendly functions that wrap 'cBioPortal's' existing API endpoints &amp;lt;&lt;a href=&quot;https://www.cbioportal.org/api/swagger-ui/index.html&quot; target=&quot;_top&quot;&gt;https://www.cbioportal.org/api/swagger-ui/index.html&lt;/a&gt;&amp;gt;. Users can browse and query genomic data on mutations, copy number alterations and fusions, as well as data on tumor mutational burden ('TMB'), microsatellite instability status ('MSI'), 'FACETS' and select clinical data points (depending on the study). See &amp;lt;&lt;a href=&quot;https://www.cbioportal.org/&quot; target=&quot;_top&quot;&gt;https://www.cbioportal.org/&lt;/a&gt;&amp;gt; and Gao et al., (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1126%2Fscisignal.2004088&quot; target=&quot;_top&quot;&gt;doi:10.1126/scisignal.2004088&lt;/a&gt;&amp;gt; for more information on the cBioPortal web resource.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=cbioportalR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>cbioportalR: Browse and Query Clinical and Genomic Data from cBioPortal</h2>
+<p>Provides R users with direct access to genomic and clinical data from the 'cBioPortal' web resource via user-friendly
+    functions that wrap 'cBioPortal's' existing API endpoints &lt;<a href="https://www.cbioportal.org/api/swagger-ui/index.html" target="_top">https://www.cbioportal.org/api/swagger-ui/index.html</a>&gt;. Users can browse and query genomic data on mutations,
+    copy number alterations and fusions, as well as data on tumor mutational burden ('TMB'),
+    microsatellite instability status ('MSI'), 'FACETS' and select clinical data points (depending on the study). 
+    See &lt;<a href="https://www.cbioportal.org/" target="_top">https://www.cbioportal.org/</a>&gt; and Gao et al., (2013) &lt;<a href="https://doi.org/10.1126%2Fscisignal.2004088" target="_top">doi:10.1126/scisignal.2004088</a>&gt; for more information on the cBioPortal web resource.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge; 1.4.3), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.1.7), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 0.3.4), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.3), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.0.3), <a href="../glue/index.html"><span class="CRAN">glue</span></a> (&ge; 1.6.2), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge;
+1.8.0), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.2.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.9), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge; 1.4.0), <a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.4), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.39), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.14), <a href="../covr/index.html"><span class="CRAN">covr</span></a> (&ge; 3.5.1), <a href="../spelling/index.html"><span class="CRAN">spelling</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-11-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.cbioportalR">10.32614/CRAN.package.cbioportalR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Karissa Whiting <a href="https://orcid.org/0000-0002-4683-1868" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Karissa Whiting  &#x3c;&#x6b;&#x61;&#x72;&#x69;&#x73;&#x73;&#x61;&#x2e;&#x77;&#x68;&#x69;&#x74;&#x69;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/karissawhiting/cbioportalR/issues" target="_top"><span class="GitHub">https://github.com/karissawhiting/cbioportalR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/karissawhiting/cbioportalR" target="_top"><span class="GitHub">https://github.com/karissawhiting/cbioportalR</span></a>,
+<a href="https://www.karissawhiting.com/cbioportalR/" target="_top">https://www.karissawhiting.com/cbioportalR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Omics.html"><span class="CRAN">Omics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cbioportalR.html"><span class="CRAN">cbioportalR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/cbioportalR.html"><span class="CRAN">cbioportalR.html</span></a> ,  <a href="cbioportalR.pdf"><span class="CRAN">cbioportalR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/internal-structure.html"><span class="CRAN">Internal Structure &amp; Guiding Principles</span></a> (<a href="vignettes/internal-structure.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/internal-structure.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/overview-of-workflow.html"><span class="CRAN">Overview of Data Retrieval Workflow</span></a> (<a href="vignettes/overview-of-workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cbioportalR_1.1.1.tar.gz"> <span class="CRAN"> cbioportalR_1.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/cbioportalR_1.1.1.zip"><span class="CRAN">cbioportalR_1.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/cbioportalR_1.1.1.zip"><span class="CRAN">cbioportalR_1.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/cbioportalR_1.1.1.zip"><span class="CRAN">cbioportalR_1.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/cbioportalR_1.1.1.tgz"><span class="CRAN">cbioportalR_1.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/cbioportalR_1.1.1.tgz"><span class="CRAN">cbioportalR_1.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/cbioportalR_1.1.1.tgz"><span class="CRAN">cbioportalR_1.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/cbioportalR_1.1.1.tgz"><span class="CRAN">cbioportalR_1.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cbioportalR"> <span class="CRAN"> cbioportalR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cbioportalR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=cbioportalR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

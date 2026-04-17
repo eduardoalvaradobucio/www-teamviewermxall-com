@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package wehoop</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=wehoop">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Access Women's Basketball Play by Play Data [R package wehoop version 2.1.0]">
+<meta name="citation_author1" content="Saiem Gilani">
+<meta name="citation_author2" content="Geoffery Hutchinson">
+<meta name="citation_publication_date" content="2024-07-21">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=wehoop">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=wehoop">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="wehoop: Access Women's Basketball Play by Play Data">
+<meta property="og:description" content="A utility for working with women's basketball data. A scraping and aggregating interface for the WNBA Stats API &amp;lt;&lt;a href=&quot;https://stats.wnba.com/&quot; target=&quot;_top&quot;&gt;https://stats.wnba.com/&lt;/a&gt;&amp;gt; and ESPN's &amp;lt;&lt;a href=&quot;https://www.espn.com&quot; target=&quot;_top&quot;&gt;https://www.espn.com&lt;/a&gt;&amp;gt; women's college basketball and WNBA statistics. It provides users with the capability to access the game play-by-plays, box scores, standings and results to analyze the data for themselves.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=wehoop">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>wehoop: Access Women's Basketball Play by Play Data</h2>
+<p>A utility for working with women's basketball data. A scraping and aggregating interface for the WNBA Stats API &lt;<a href="https://stats.wnba.com/" target="_top">https://stats.wnba.com/</a>&gt; and ESPN's &lt;<a href="https://www.espn.com" target="_top">https://www.espn.com</a>&gt; women's college basketball and WNBA statistics. It provides users with the capability to access the game play-by-plays, box scores, standings and results to analyze the data for themselves.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.0.0), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.14.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../janitor/index.html"><span class="CRAN">janitor</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 0.3.0), <a href="../progressr/index.html"><span class="CRAN">progressr</span></a> (&ge;
+0.6.0), <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.7), <a href="../RcppParallel/index.html"><span class="CRAN">RcppParallel</span></a> (&ge; 5.1.4), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge;
+0.4.0), <a href="../rvest/index.html"><span class="CRAN">rvest</span></a> (&ge; 1.0.0), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge; 1.3.0), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.2.0), <a href="../usethis/index.html"><span class="CRAN">usethis</span></a> (&ge; 1.6.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../crayon/index.html"><span class="CRAN">crayon</span></a> (&ge; 1.3.4), <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../ggrepel/index.html"><span class="CRAN">ggrepel</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge;
+0.5), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a> (&ge; 1.0.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.0), <a href="../tictoc/index.html"><span class="CRAN">tictoc</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a> (&ge; 1.3)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-07-21</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.wehoop">10.32614/CRAN.package.wehoop</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Saiem Gilani [aut, cre],
+  Geoffery Hutchinson [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Saiem Gilani  &#x3c;&#x73;&#x61;&#x69;&#x65;&#x6d;&#x2e;&#x67;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sportsdataverse/wehoop/issues" target="_top"><span class="GitHub">https://github.com/sportsdataverse/wehoop/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://wehoop.sportsdataverse.org" target="_top">https://wehoop.sportsdataverse.org</a>,
+<a href="https://github.com/sportsdataverse/wehoop" target="_top"><span class="GitHub">https://github.com/sportsdataverse/wehoop</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SportsAnalytics.html"><span class="CRAN">SportsAnalytics</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_wehoop.html"><span class="CRAN">wehoop results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/wehoop.html"><span class="CRAN">wehoop.html</span></a> ,  <a href="wehoop.pdf"><span class="CRAN">wehoop.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/wehoop_2.1.0.tar.gz"> <span class="CRAN"> wehoop_2.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/wehoop_2.1.0.zip"><span class="CRAN">wehoop_2.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/wehoop_2.1.0.zip"><span class="CRAN">wehoop_2.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/wehoop_2.1.0.zip"><span class="CRAN">wehoop_2.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/wehoop_2.1.0.tgz"><span class="CRAN">wehoop_2.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/wehoop_2.1.0.tgz"><span class="CRAN">wehoop_2.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/wehoop_2.1.0.tgz"><span class="CRAN">wehoop_2.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/wehoop_2.1.0.tgz"><span class="CRAN">wehoop_2.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/wehoop"> <span class="CRAN"> wehoop archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=wehoop"><span class="CRAN"><samp>https://CRAN.R-project.org/package=wehoop</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

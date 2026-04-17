@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package soilDB</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=soilDB">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Soil Database Interface [R package soilDB version 2.9.1]">
+<meta name="citation_author1" content="Dylan Beaudette">
+<meta name="citation_author2" content="Jay Skovlin">
+<meta name="citation_author3" content="Stephen Roecker">
+<meta name="citation_author4" content="Andrew Brown">
+<meta name="citation_publication_date" content="2026-04-03">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=soilDB">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=soilDB">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="soilDB: Soil Database Interface">
+<meta property="og:description" content="A collection of functions for reading soil data from U.S. Department of Agriculture Natural Resources Conservation Service (USDA-NRCS) and National Cooperative Soil Survey (NCSS) databases.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=soilDB">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>soilDB: Soil Database Interface</h2>
+<p>A collection of functions for reading soil data from U.S. Department of Agriculture Natural Resources Conservation Service (USDA-NRCS) and National Cooperative Soil Survey (NCSS) databases.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.9.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../aqp/index.html"><span class="CRAN">aqp</span></a> (&ge; 2.1.0), <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../odbc/index.html"><span class="CRAN">odbc</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../wk/index.html"><span class="CRAN">wk</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../raster/index.html"><span class="CRAN">raster</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-03</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.soilDB">10.32614/CRAN.package.soilDB</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dylan Beaudette <a href="https://orcid.org/0009-0008-2780-4785" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Jay Skovlin [aut],
+  Stephen Roecker [aut],
+  Andrew Brown <a href="https://orcid.org/0000-0002-4565-533X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andrew Brown  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x2e;&#x67;&#x2e;&#x62;&#x72;&#x6f;&#x77;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x73;&#x64;&#x61;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ncss-tech/soilDB/issues" target="_top"><span class="GitHub">https://github.com/ncss-tech/soilDB/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ncss-tech/soilDB/" target="_top"><span class="GitHub">https://github.com/ncss-tech/soilDB/</span></a>,
+<a href="https://ncss-tech.github.io/soilDB/" target="_top"><span class="GitHub">https://ncss-tech.github.io/soilDB/</span></a>,
+<a href="https://ncss-tech.github.io/AQP/" target="_top"><span class="GitHub">https://ncss-tech.github.io/AQP/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">soilDB citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_soilDB.html"><span class="CRAN">soilDB results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/soilDB.html"><span class="CRAN">soilDB.html</span></a> ,  <a href="soilDB.pdf"><span class="CRAN">soilDB.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dominant-es.html"><span class="CRAN">Mapping Dominant Ecological Sites using SSURGO Data</span></a> (<a href="vignettes/dominant-es.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/dominant-es.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/fetchNASIS.html"><span class="CRAN">fetchNASIS(from='pedons') Columns</span></a> (<a href="vignettes/fetchNASIS.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/fetchNASIS.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/local-ssurgo.html"><span class="CRAN">Local SSURGO Databases</span></a> (<a href="vignettes/local-ssurgo.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/local-ssurgo.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/sda.html"><span class="CRAN">Soil Data Access</span></a> (<a href="vignettes/sda.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/sda.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/soilweb-data-functions.html"><span class="CRAN">SoilWeb Functions and Data</span></a> (<a href="vignettes/soilweb-data-functions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/soilweb-data-functions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/wcs-ssurgo.html"><span class="CRAN">Map Unit Key Grids and Thematic Maps of Soil Survey Geographic (SSURGO) Data</span></a> (<a href="vignettes/wcs-ssurgo.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/wcs-ssurgo.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/soilDB_2.9.1.tar.gz"> <span class="CRAN"> soilDB_2.9.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/soilDB_2.9.1.zip"><span class="CRAN">soilDB_2.9.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/soilDB_2.9.1.zip"><span class="CRAN">soilDB_2.9.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/soilDB_2.9.1.zip"><span class="CRAN">soilDB_2.9.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/soilDB_2.9.1.tgz"><span class="CRAN">soilDB_2.9.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/soilDB_2.8.13.tgz"><span class="CRAN">soilDB_2.8.13.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/soilDB_2.9.1.tgz"><span class="CRAN">soilDB_2.9.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/soilDB_2.9.1.tgz"><span class="CRAN">soilDB_2.9.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/soilDB"> <span class="CRAN"> soilDB archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../sharpshootR/index.html"><span class="CRAN">sharpshootR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../apsimx/index.html"><span class="CRAN">apsimx</span></a>, <a href="../aqp/index.html"><span class="CRAN">aqp</span></a>, <a href="../SoilTaxonomy/index.html"><span class="CRAN">SoilTaxonomy</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=soilDB"><span class="CRAN"><samp>https://CRAN.R-project.org/package=soilDB</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

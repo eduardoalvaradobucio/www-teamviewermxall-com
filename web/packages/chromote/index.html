@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package chromote</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=chromote">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Headless Chrome Web Browser Interface [R package chromote version 0.5.1]">
+<meta name="citation_author1" content="Garrick Aden-Buie">
+<meta name="citation_author2" content="Winston Chang">
+<meta name="citation_author3" content="Barret Schloerke">
+<meta name="citation_publication_date" content="2025-04-24">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=chromote">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=chromote">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="chromote: Headless Chrome Web Browser Interface">
+<meta property="og:description" content="An implementation of the 'Chrome DevTools Protocol', for controlling a headless Chrome web browser.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=chromote">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>chromote: Headless Chrome Web Browser Interface</h2>
+<p>An implementation of the 'Chrome DevTools Protocol', for
+    controlling a headless Chrome web browser.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.5.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../fastmap/index.html"><span class="CRAN">fastmap</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../later/index.html"><span class="CRAN">later</span></a> (&ge; 1.1.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a>, <a href="../promises/index.html"><span class="CRAN">promises</span></a> (&ge; 1.1.1), <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../websocket/index.html"><span class="CRAN">websocket</span></a> (&ge; 1.2.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../zip/index.html"><span class="CRAN">zip</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../showimage/index.html"><span class="CRAN">showimage</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-04-24</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.chromote">10.32614/CRAN.package.chromote</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Garrick Aden-Buie <a href="https://orcid.org/0000-0002-7111-0077" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Winston Chang [aut],
+  Barret Schloerke <a href="https://orcid.org/0000-0001-9986-114X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Posit Software, PBC <a href="https://ror.org/03wc8by49" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph,
+    fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Garrick Aden-Buie  &#x3c;&#x67;&#x61;&#x72;&#x72;&#x69;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rstudio/chromote/issues" target="_top"><span class="GitHub">https://github.com/rstudio/chromote/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rstudio.github.io/chromote/" target="_top"><span class="GitHub">https://rstudio.github.io/chromote/</span></a>,
+<a href="https://github.com/rstudio/chromote" target="_top"><span class="GitHub">https://github.com/rstudio/chromote</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Google Chrome or other Chromium-based browser.
+chromium: chromium (rpm) or chromium-browser (deb)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_chromote.html"><span class="CRAN">chromote results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/chromote.html"><span class="CRAN">chromote.html</span></a> ,  <a href="chromote.pdf"><span class="CRAN">chromote.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/chromote.html"><span class="CRAN">chromote</span></a> (<a href="vignettes/chromote.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/chromote.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/commands-and-events.html"><span class="CRAN">Commands and events</span></a> (<a href="vignettes/commands-and-events.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/commands-and-events.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-attach-existing.html"><span class="CRAN">Attaching to existing tabs</span></a> (<a href="vignettes/example-attach-existing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-attach-existing.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-authentication.html"><span class="CRAN">Websites that require authentication</span></a> (<a href="vignettes/example-authentication.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-authentication.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-cran-tests.html"><span class="CRAN">Using chromote in CRAN tests</span></a> (<a href="vignettes/example-cran-tests.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-cran-tests.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-custom-headers.html"><span class="CRAN">Setting custom headers</span></a> (<a href="vignettes/example-custom-headers.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-custom-headers.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-custom-user-agent.html"><span class="CRAN">Setting custom user agent</span></a> (<a href="vignettes/example-custom-user-agent.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-custom-user-agent.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-extract-text.html"><span class="CRAN">Extracting text from a web page</span></a> (<a href="vignettes/example-extract-text.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-extract-text.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-loading-page.html"><span class="CRAN">Loading a page reliably</span></a> (<a href="vignettes/example-loading-page.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-loading-page.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-remote-hosts.html"><span class="CRAN">Chrome on remote hosts</span></a> (<a href="vignettes/example-remote-hosts.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-remote-hosts.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-screenshot.html"><span class="CRAN">Taking a screenshot of a web page</span></a> (<a href="vignettes/example-screenshot.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-screenshot.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/sync-async.html"><span class="CRAN">Synchronous vs. asynchronous usage</span></a> (<a href="vignettes/sync-async.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/sync-async.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/which-chrome.html"><span class="CRAN">Choosing which Chrome-based browser to use</span></a> (<a href="vignettes/which-chrome.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/which-chrome.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/chromote_0.5.1.tar.gz"> <span class="CRAN"> chromote_0.5.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/chromote_0.5.1.zip"><span class="CRAN">chromote_0.5.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/chromote_0.5.1.zip"><span class="CRAN">chromote_0.5.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/chromote_0.5.1.zip"><span class="CRAN">chromote_0.5.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/chromote_0.5.1.tgz"><span class="CRAN">chromote_0.5.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/chromote_0.5.1.tgz"><span class="CRAN">chromote_0.5.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/chromote_0.5.1.tgz"><span class="CRAN">chromote_0.5.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/chromote_0.5.1.tgz"><span class="CRAN">chromote_0.5.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/chromote"> <span class="CRAN"> chromote archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../hexsession/index.html"><span class="CRAN">hexsession</span></a>, <a href="../jstager/index.html"><span class="CRAN">jstager</span></a>, <a href="../ncaavolleyballr/index.html"><span class="CRAN">ncaavolleyballr</span></a>, <a href="../qtkit/index.html"><span class="CRAN">qtkit</span></a>, <a href="../scicomptools/index.html"><span class="CRAN">scicomptools</span></a>, <a href="../shinytest2/index.html"><span class="CRAN">shinytest2</span></a>, <a href="../Spectran/index.html"><span class="CRAN">Spectran</span></a>, <a href="../tall/index.html"><span class="CRAN">tall</span></a>, <a href="../Virusparies/index.html"><span class="CRAN">Virusparies</span></a>, <a href="../wdpar/index.html"><span class="CRAN">wdpar</span></a>, <a href="../webshot2/index.html"><span class="CRAN">webshot2</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../animint2/index.html"><span class="CRAN">animint2</span></a>, <a href="../btw/index.html"><span class="CRAN">btw</span></a>, <a href="../cardargus/index.html"><span class="CRAN">cardargus</span></a>, <a href="../ctrdata/index.html"><span class="CRAN">ctrdata</span></a>, <a href="../cucumber/index.html"><span class="CRAN">cucumber</span></a>, <a href="../designer/index.html"><span class="CRAN">designer</span></a>, <a href="../flextable/index.html"><span class="CRAN">flextable</span></a>, <a href="../howler/index.html"><span class="CRAN">howler</span></a>, <a href="../inlpubs/index.html"><span class="CRAN">inlpubs</span></a>, <a href="../mapgl/index.html"><span class="CRAN">mapgl</span></a>, <a href="../provolleyballr/index.html"><span class="CRAN">provolleyballr</span></a>, <a href="../reactRouter/index.html"><span class="CRAN">reactRouter</span></a>, <a href="../rgl/index.html"><span class="CRAN">rgl</span></a>, <a href="../rqti/index.html"><span class="CRAN">rqti</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../scoutbaR/index.html"><span class="CRAN">scoutbaR</span></a>, <a href="../selenider/index.html"><span class="CRAN">selenider</span></a>, <a href="../shiny.emptystate/index.html"><span class="CRAN">shiny.emptystate</span></a>, <a href="../shiny.fluent/index.html"><span class="CRAN">shiny.fluent</span></a>, <a href="../shiny.react/index.html"><span class="CRAN">shiny.react</span></a>, <a href="../shiny.semantic/index.html"><span class="CRAN">shiny.semantic</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=chromote"><span class="CRAN"><samp>https://CRAN.R-project.org/package=chromote</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

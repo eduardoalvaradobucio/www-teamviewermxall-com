@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package omopgenerics</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=omopgenerics">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Methods and Classes for the OMOP Common Data Model [R package omopgenerics version 1.3.7]">
+<meta name="citation_author1" content="Martí Català">
+<meta name="citation_author2" content="Edward Burn">
+<meta name="citation_publication_date" content="2026-03-07">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=omopgenerics">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=omopgenerics">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="omopgenerics: Methods and Classes for the OMOP Common Data Model">
+<meta property="og:description" content="Provides definitions of core classes and methods used by analytic pipelines that query the OMOP (Observational Medical Outcomes Partnership) common data model.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=omopgenerics">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>omopgenerics: Methods and Classes for the OMOP Common Data Model</h2>
+<p>Provides definitions of core classes and methods used by analytic 
+    pipelines that query the OMOP (Observational Medical Outcomes Partnership) 
+    common data model.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.3.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../dbplyr/index.html"><span class="CRAN">dbplyr</span></a> (&ge; 2.5.1), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../generics/index.html"><span class="CRAN">generics</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../snakecase/index.html"><span class="CRAN">snakecase</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bit64/index.html"><span class="CRAN">bit64</span></a>, <a href="../CDMConnector/index.html"><span class="CRAN">CDMConnector</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a>, <a href="../gt/index.html"><span class="CRAN">gt</span></a>, <a href="../here/index.html"><span class="CRAN">here</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../omock/index.html"><span class="CRAN">omock</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-07</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.omopgenerics">10.32614/CRAN.package.omopgenerics</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martí Català <a href="https://orcid.org/0000-0003-3308-9905" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Edward Burn <a href="https://orcid.org/0000-0002-9286-1128" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Mike Du <a href="https://orcid.org/0000-0002-9517-8834" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Yuchen Guo <a href="https://orcid.org/0000-0002-0847-4855" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Adam Black <a href="https://orcid.org/0000-0001-5576-8701" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Marta Alcalde-Herraiz
+    <a href="https://orcid.org/0009-0002-4405-1814" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martí Català  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x2e;&#x63;&#x61;&#x74;&#x61;&#x6c;&#x61;&#x73;&#x61;&#x62;&#x61;&#x74;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x64;&#x6f;&#x72;&#x6d;&#x73;&#x2e;&#x6f;&#x78;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/darwin-eu/omopgenerics/issues" target="_top"><span class="GitHub">https://github.com/darwin-eu/omopgenerics/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://darwin-eu.github.io/omopgenerics/" target="_top"><span class="GitHub">https://darwin-eu.github.io/omopgenerics/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_omopgenerics.html"><span class="CRAN">omopgenerics results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/omopgenerics.html"><span class="CRAN">omopgenerics.html</span></a> ,  <a href="omopgenerics.pdf"><span class="CRAN">omopgenerics.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cdm_reference.html"><span class="CRAN">cdm_reference</span></a> (<a href="vignettes/cdm_reference.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cdm_reference.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/codelists.html"><span class="CRAN">concept_set</span></a> (<a href="vignettes/codelists.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/codelists.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cohorts.html"><span class="CRAN">cohort_table</span></a> (<a href="vignettes/cohorts.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cohorts.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/expanding_omopgenerics.html"><span class="CRAN">expanding_omopgenerics</span></a> (<a href="vignettes/expanding_omopgenerics.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/expanding_omopgenerics.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/logging.html"><span class="CRAN">logging</span></a> (<a href="vignettes/logging.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/logging.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/reexport.html"><span class="CRAN">reexport</span></a> (<a href="vignettes/reexport.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/reexport.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/summarised_result.html"><span class="CRAN">summarised_result</span></a> (<a href="vignettes/summarised_result.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/summarised_result.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/suppression.html"><span class="CRAN">suppression</span></a> (<a href="vignettes/suppression.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/suppression.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/omopgenerics_1.3.7.tar.gz"> <span class="CRAN"> omopgenerics_1.3.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/omopgenerics_1.3.7.zip"><span class="CRAN">omopgenerics_1.3.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/omopgenerics_1.3.7.zip"><span class="CRAN">omopgenerics_1.3.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/omopgenerics_1.3.7.zip"><span class="CRAN">omopgenerics_1.3.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/omopgenerics_1.3.7.tgz"><span class="CRAN">omopgenerics_1.3.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/omopgenerics_1.3.7.tgz"><span class="CRAN">omopgenerics_1.3.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/omopgenerics_1.3.7.tgz"><span class="CRAN">omopgenerics_1.3.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/omopgenerics_1.3.7.tgz"><span class="CRAN">omopgenerics_1.3.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/omopgenerics"> <span class="CRAN"> omopgenerics archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../CDMConnector/index.html"><span class="CRAN">CDMConnector</span></a>, <a href="../CodelistGenerator/index.html"><span class="CRAN">CodelistGenerator</span></a>, <a href="../CohortCharacteristics/index.html"><span class="CRAN">CohortCharacteristics</span></a>, <a href="../CohortConstructor/index.html"><span class="CRAN">CohortConstructor</span></a>, <a href="../CohortContrast/index.html"><span class="CRAN">CohortContrast</span></a>, <a href="../CohortSurvival/index.html"><span class="CRAN">CohortSurvival</span></a>, <a href="../CohortSymmetry/index.html"><span class="CRAN">CohortSymmetry</span></a>, <a href="../DrugExposureDiagnostics/index.html"><span class="CRAN">DrugExposureDiagnostics</span></a>, <a href="../DrugUtilisation/index.html"><span class="CRAN">DrugUtilisation</span></a>, <a href="../IncidencePrevalence/index.html"><span class="CRAN">IncidencePrevalence</span></a>, <a href="../MeasurementDiagnostics/index.html"><span class="CRAN">MeasurementDiagnostics</span></a>, <a href="../omock/index.html"><span class="CRAN">omock</span></a>, <a href="../OmopConstructor/index.html"><span class="CRAN">OmopConstructor</span></a>, <a href="../OmopOnSpark/index.html"><span class="CRAN">OmopOnSpark</span></a>, <a href="../OmopSketch/index.html"><span class="CRAN">OmopSketch</span></a>, <a href="../OmopViewer/index.html"><span class="CRAN">OmopViewer</span></a>, <a href="../PatientProfiles/index.html"><span class="CRAN">PatientProfiles</span></a>, <a href="../PhenotypeR/index.html"><span class="CRAN">PhenotypeR</span></a>, <a href="../TestGenerator/index.html"><span class="CRAN">TestGenerator</span></a>, <a href="../visOmopResults/index.html"><span class="CRAN">visOmopResults</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../EpiStandard/index.html"><span class="CRAN">EpiStandard</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=omopgenerics"><span class="CRAN"><samp>https://CRAN.R-project.org/package=omopgenerics</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

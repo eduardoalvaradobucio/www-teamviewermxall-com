@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package asciicast</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=asciicast">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Create 'Ascii' Screen Casts from R Scripts [R package asciicast version 2.3.1]">
+<meta name="citation_author1" content="Gábor Csárdi">
+<meta name="citation_author2" content="Romain Francois">
+<meta name="citation_author3" content="Mario Nebl">
+<meta name="citation_author4" content="Marcin Kulik">
+<meta name="citation_publication_date" content="2024-01-18">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=asciicast">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=asciicast">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="asciicast: Create 'Ascii' Screen Casts from R Scripts">
+<meta property="og:description" content="Record 'asciicast' screen casts from R scripts. Convert them to animated SVG images, to be used in 'README' files, or blog posts. Includes 'asciinema-player' as an 'HTML' widget, and an 'asciicast' 'knitr' engine, to embed 'ascii' screen casts in 'Rmarkdown' documents.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=asciicast">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>asciicast: Create 'Ascii' Screen Casts from R Scripts</h2>
+<p>Record 'asciicast' screen casts from R scripts. Convert them
+    to animated SVG images, to be used in 'README' files, or blog posts.
+    Includes 'asciinema-player' as an 'HTML' widget, and an 'asciicast'
+    'knitr' engine, to embed 'ascii' screen casts in 'Rmarkdown'
+    documents.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.3.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a> (&ge; 3.3.0.9000), <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a> (&ge; 2.2.9002), <a href="../processx/index.html"><span class="CRAN">processx</span></a> (&ge; 3.7.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../V8/index.html"><span class="CRAN">V8</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../processx/index.html"><span class="CRAN">processx</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../cpp11/index.html"><span class="CRAN">cpp11</span></a>, <a href="../decor/index.html"><span class="CRAN">decor</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-01-18</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.asciicast">10.32614/CRAN.package.asciicast</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gábor Csárdi [aut, cre],
+  Romain Francois [aut],
+  Mario Nebl [aut] (https://github.com/marionebl/svg-term author),
+  Marcin Kulik [aut] (https://github.com/asciinema/asciinema-player
+    author),
+  Posit Software, PBC [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gábor Csárdi  &#x3c;&#x63;&#x73;&#x61;&#x72;&#x64;&#x69;&#x2e;&#x67;&#x61;&#x62;&#x6f;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-lib/asciicast/issues" target="_top"><span class="GitHub">https://github.com/r-lib/asciicast/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://asciicast.r-lib.org/" target="_top">https://asciicast.r-lib.org/</a>, <a href="https://github.com/r-lib/asciicast" target="_top"><span class="GitHub">https://github.com/r-lib/asciicast</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_asciicast.html"><span class="CRAN">asciicast results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/asciicast.html"><span class="CRAN">asciicast.html</span></a> ,  <a href="asciicast.pdf"><span class="CRAN">asciicast.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/asciicast_2.3.1.tar.gz"> <span class="CRAN"> asciicast_2.3.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/asciicast_2.3.1.zip"><span class="CRAN">asciicast_2.3.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/asciicast_2.3.1.zip"><span class="CRAN">asciicast_2.3.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/asciicast_2.3.1.zip"><span class="CRAN">asciicast_2.3.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/asciicast_2.3.1.tgz"><span class="CRAN">asciicast_2.3.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/asciicast_2.3.1.tgz"><span class="CRAN">asciicast_2.3.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/asciicast_2.3.1.tgz"><span class="CRAN">asciicast_2.3.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/asciicast_2.3.1.tgz"><span class="CRAN">asciicast_2.3.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/asciicast"> <span class="CRAN"> asciicast archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../cTOST/index.html"><span class="CRAN">cTOST</span></a>, <a href="../maestro/index.html"><span class="CRAN">maestro</span></a>, <a href="../pkgdepends/index.html"><span class="CRAN">pkgdepends</span></a>, <a href="../rhub/index.html"><span class="CRAN">rhub</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=asciicast"><span class="CRAN"><samp>https://CRAN.R-project.org/package=asciicast</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rcrossref</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rcrossref">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Client for Various 'CrossRef' 'APIs' [R package rcrossref version 1.2.1]">
+<meta name="citation_author1" content="Scott Chamberlain">
+<meta name="citation_author2" content="Hao Zhu">
+<meta name="citation_author3" content="Najko Jahn">
+<meta name="citation_author4" content="Carl Boettiger">
+<meta name="citation_author5" content="Karthik Ram">
+<meta name="citation_publication_date" content="2025-08-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rcrossref">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rcrossref">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rcrossref: Client for Various 'CrossRef' 'APIs'">
+<meta property="og:description" content="Client for various 'CrossRef' 'APIs', including 'metadata' search with their old and newer search 'APIs', get 'citations' in various formats (including 'bibtex', 'citeproc-json', 'rdf-xml', etc.), convert 'DOIs' to 'PMIDs', and 'vice versa', get citations for 'DOIs', and get links to full text of articles when available.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rcrossref">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rcrossref: Client for Various 'CrossRef' 'APIs'</h2>
+<p>Client for various 'CrossRef' 'APIs', including 'metadata' search
+    with their old and newer search 'APIs', get 'citations' in various formats
+    (including 'bibtex', 'citeproc-json', 'rdf-xml', etc.), convert 'DOIs'
+    to 'PMIDs', and 'vice versa', get citations for 'DOIs', and get links to
+    full text of articles when available.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.2.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.5), <a href="../crul/index.html"><span class="CRAN">crul</span></a> (&ge; 0.7.4), <a href="../xml2/index.html"><span class="CRAN">xml2</span></a> (&ge;
+1.1.1), <a href="../plyr/index.html"><span class="CRAN">plyr</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 0.7.4), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../miniUI/index.html"><span class="CRAN">miniUI</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a> (&ge; 7.1.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../vcr/index.html"><span class="CRAN">vcr</span></a> (&ge;
+0.2.6), <a href="../bibtex/index.html"><span class="CRAN">bibtex</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rcrossref">10.32614/CRAN.package.rcrossref</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Scott Chamberlain [aut],
+  Hao Zhu [aut],
+  Najko Jahn <a href="https://orcid.org/0000-0001-5105-1463" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre],
+  Carl Boettiger [aut],
+  Karthik Ram [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Najko Jahn  &#x3c;&#x6e;&#x61;&#x6a;&#x6b;&#x6f;&#x2e;&#x6a;&#x61;&#x68;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/rcrossref/issues" target="_top"><span class="GitHub">https://github.com/ropensci/rcrossref/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/rcrossref/" target="_top">https://docs.ropensci.org/rcrossref/</a>,
+<a href="https://github.com/ropensci/rcrossref" target="_top"><span class="GitHub">https://github.com/ropensci/rcrossref</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rcrossref.html"><span class="CRAN">rcrossref results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rcrossref.html"><span class="CRAN">rcrossref.html</span></a> ,  <a href="rcrossref.pdf"><span class="CRAN">rcrossref.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rcrossref_1.2.1.tar.gz"> <span class="CRAN"> rcrossref_1.2.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rcrossref_1.2.1.zip"><span class="CRAN">rcrossref_1.2.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rcrossref_1.2.1.zip"><span class="CRAN">rcrossref_1.2.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rcrossref_1.2.1.zip"><span class="CRAN">rcrossref_1.2.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rcrossref_1.2.1.tgz"><span class="CRAN">rcrossref_1.2.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rcrossref_1.2.1.tgz"><span class="CRAN">rcrossref_1.2.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rcrossref_1.2.1.tgz"><span class="CRAN">rcrossref_1.2.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rcrossref_1.2.1.tgz"><span class="CRAN">rcrossref_1.2.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rcrossref"> <span class="CRAN"> rcrossref archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../biblio/index.html"><span class="CRAN">biblio</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../namedropR/index.html"><span class="CRAN">namedropR</span></a>, <a href="../Rcompadre/index.html"><span class="CRAN">Rcompadre</span></a>, <a href="../ref.ICAR/index.html"><span class="CRAN">ref.ICAR</span></a>, <a href="../rorcid/index.html"><span class="CRAN">rorcid</span></a>, <a href="../slgf/index.html"><span class="CRAN">slgf</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rcrossref"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rcrossref</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

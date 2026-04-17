@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package shinyWGD</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=shinyWGD">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="'Shiny' Application for Whole Genome Duplication Analysis [R package shinyWGD version 1.0.0]">
+<meta name="citation_author" content="Jia Li">
+<meta name="citation_publication_date" content="2024-11-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=shinyWGD">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=shinyWGD">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="shinyWGD: 'Shiny' Application for Whole Genome Duplication Analysis">
+<meta property="og:description" content="Provides a comprehensive 'Shiny' application for analyzing Whole Genome Duplication ('WGD') events. This package provides a user-friendly 'Shiny' web application for non-experienced researchers to prepare input data and execute command lines for several well-known 'WGD' analysis tools, including 'wgd', 'ksrates', 'i-ADHoRe', 'OrthoFinder', and 'Whale'. This package also provides the source code for experienced researchers to adjust and install the package to their own server. Key Features 1) Input Data Preparation This package allows users to conveniently upload and format their data, making it compatible with various 'WGD' analysis tools. 2) Command Line Generation This package automatically generates the necessary command lines for selected 'WGD' analysis tools, reducing manual errors and saving time. 3) Visualization This package offers interactive visualizations to explore and interpret 'WGD' results, facilitating in-depth 'WGD' analysis. 4) Comparative Genomics Users can study and compare 'WGD' events across different species, aiding in evolutionary and comparative genomics studies. 5) User-Friendly Interface This 'Shiny' web application provides an intuitive and accessible interface, making 'WGD' analysis accessible to researchers and 'bioinformaticians' of all levels.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=shinyWGD">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>shinyWGD: 'Shiny' Application for Whole Genome Duplication Analysis</h2>
+<p>Provides a comprehensive 'Shiny' application for analyzing 
+    Whole Genome Duplication ('WGD') events.
+    This package provides a user-friendly 'Shiny' web application for 
+    non-experienced researchers to prepare input data and execute command lines 
+    for several well-known 'WGD' analysis tools, including 'wgd', 'ksrates', 
+    'i-ADHoRe', 'OrthoFinder', and 'Whale'. This package also provides the source code 
+    for experienced researchers to adjust and install the package to their own server. 
+    Key Features
+    1) Input Data Preparation 
+    This package allows users to conveniently upload and format their data, 
+	making it compatible with various 'WGD' analysis tools.
+    2) Command Line Generation
+    This package automatically generates the necessary command lines for 
+	selected 'WGD' analysis tools, reducing manual errors and saving time.
+    3) Visualization
+    This package offers interactive visualizations to explore and interpret 'WGD' results, 
+	facilitating in-depth 'WGD' analysis.
+    4) Comparative Genomics
+    Users can study and compare 'WGD' events across different species, 
+	aiding in evolutionary and comparative genomics studies.
+    5) User-Friendly Interface 
+	This 'Shiny' web application provides an intuitive and accessible interface, 
+	making 'WGD' analysis accessible to researchers and 'bioinformaticians' of all levels.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinyalert/index.html"><span class="CRAN">shinyalert</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../vroom/index.html"><span class="CRAN">vroom</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ape/index.html"><span class="CRAN">ape</span></a>, <a href="../ks/index.html"><span class="CRAN">ks</span></a>, <a href="../mclust/index.html"><span class="CRAN">mclust</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../seqinr/index.html"><span class="CRAN">seqinr</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tidyverse/index.html"><span class="CRAN">tidyverse</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../argparse/index.html"><span class="CRAN">argparse</span></a>, <a href="../bslib/index.html"><span class="CRAN">bslib</span></a>, <a href="../bsplus/index.html"><span class="CRAN">bsplus</span></a>, <a href="../english/index.html"><span class="CRAN">english</span></a>, <a href="../fontawesome/index.html"><span class="CRAN">fontawesome</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../shinyBS/index.html"><span class="CRAN">shinyBS</span></a>, <a href="../shinyFiles/index.html"><span class="CRAN">shinyFiles</span></a>, <a href="../shinyWidgets/index.html"><span class="CRAN">shinyWidgets</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-11-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.shinyWGD">10.32614/CRAN.package.shinyWGD</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jia Li [aut, cre],
+  Zhen Li [ctb],
+  Arthur Zwaenepoel [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jia Li  &#x3c;&#x6c;&#x69;&#x30;&#x38;&#x31;&#x37;&#x36;&#x36;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 1.12.3), pandoc-citeproc</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_shinyWGD.html"><span class="CRAN">shinyWGD results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/shinyWGD.html"><span class="CRAN">shinyWGD.html</span></a> ,  <a href="shinyWGD.pdf"><span class="CRAN">shinyWGD.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/shinyWGD_1.0.0.tar.gz"> <span class="CRAN"> shinyWGD_1.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/shinyWGD_1.0.0.zip"><span class="CRAN">shinyWGD_1.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/shinyWGD_1.0.0.zip"><span class="CRAN">shinyWGD_1.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/shinyWGD_1.0.0.zip"><span class="CRAN">shinyWGD_1.0.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/shinyWGD_1.0.0.tgz"><span class="CRAN">shinyWGD_1.0.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/shinyWGD_1.0.0.tgz"><span class="CRAN">shinyWGD_1.0.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/shinyWGD_1.0.0.tgz"><span class="CRAN">shinyWGD_1.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/shinyWGD_1.0.0.tgz"><span class="CRAN">shinyWGD_1.0.0.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=shinyWGD"><span class="CRAN"><samp>https://CRAN.R-project.org/package=shinyWGD</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

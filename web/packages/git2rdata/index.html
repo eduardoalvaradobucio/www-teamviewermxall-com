@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package git2rdata</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=git2rdata">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Store and Retrieve Data.frames in a Git Repository [R package git2rdata version 0.5.2]">
+<meta name="citation_author" content="Thierry Onkelinx">
+<meta name="citation_publication_date" content="2026-04-08">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=git2rdata">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=git2rdata">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="git2rdata: Store and Retrieve Data.frames in a Git Repository">
+<meta property="og:description" content="The git2rdata package is an R package for writing and reading dataframes as plain text files. A metadata file stores important information. 1) Storing metadata allows to maintain the classes of variables. By default, git2rdata optimizes the data for file storage. The optimization is most effective on data containing factors. The optimization makes the data less human readable. The user can turn this off when they prefer a human readable format over smaller files. Details on the implementation are available in vignette(&quot;plain_text&quot;, package = &quot;git2rdata&quot;). 2) Storing metadata also allows smaller row based diffs between two consecutive commits. This is a useful feature when storing data as plain text files under version control. Details on this part of the implementation are available in vignette(&quot;version_control&quot;, package = &quot;git2rdata&quot;). Although we envisioned git2rdata with a git workflow in mind, you can use it in combination with other version control systems like subversion or mercurial. 3) git2rdata is a useful tool in a reproducible and traceable workflow. vignette(&quot;workflow&quot;, package = &quot;git2rdata&quot;) gives a toy example. 4) vignette(&quot;efficiency&quot;, package = &quot;git2rdata&quot;) provides some insight into the efficiency of file storage, git repository size and speed for writing and reading.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=git2rdata">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>git2rdata: Store and Retrieve Data.frames in a Git Repository</h2>
+<p>The git2rdata package is an R package for writing and reading
+    dataframes as plain text files.  A metadata file stores important
+    information.  1) Storing metadata allows to maintain the classes of
+    variables.  By default, git2rdata optimizes the data for file storage.
+    The optimization is most effective on data containing factors.  The
+    optimization makes the data less human readable.  The user can turn
+    this off when they prefer a human readable format over smaller files.
+    Details on the implementation are available in vignette("plain_text",
+    package = "git2rdata").  2) Storing metadata also allows smaller row
+    based diffs between two consecutive commits.  This is a useful feature
+    when storing data as plain text files under version control.  Details
+    on this part of the implementation are available in
+    vignette("version_control", package = "git2rdata").  Although we
+    envisioned git2rdata with a git workflow in mind, you can use it in
+    combination with other version control systems like subversion or
+    mercurial.  3) git2rdata is a useful tool in a reproducible and
+    traceable workflow.  vignette("workflow", package = "git2rdata") gives
+    a toy example.  4) vignette("efficiency", package = "git2rdata")
+    provides some insight into the efficiency of file storage, git
+    repository size and speed for writing and reading.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html"><span class="CRAN">assertthat</span></a>, <a href="../git2r/index.html"><span class="CRAN">git2r</span></a> (&ge; 0.23.0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../microbenchmark/index.html"><span class="CRAN">microbenchmark</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-08</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.git2rdata">10.32614/CRAN.package.git2rdata</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Thierry Onkelinx <a href="https://orcid.org/0000-0001-8804-4216" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre] (affiliation: Research Institute for Nature and Forest
+    (INBO)),
+  Floris Vanderhaeghe
+    <a href="https://orcid.org/0000-0002-6378-6229" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]
+    (affiliation: Research Institute for Nature and Forest (INBO)),
+  Peter Desmet <a href="https://orcid.org/0000-0002-8442-8025" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (affiliation: Research Institute for Nature and Forest
+    (INBO)),
+  Els Lommelen <a href="https://orcid.org/0000-0002-3481-5684" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (affiliation: Research Institute for Nature and Forest
+    (INBO)),
+  Research Institute for Nature and Forest (INBO)
+    <a href="https://ror.org/00j54wy13" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thierry Onkelinx  &#x3c;&#x74;&#x68;&#x69;&#x65;&#x72;&#x72;&#x79;&#x2e;&#x6f;&#x6e;&#x6b;&#x65;&#x6c;&#x69;&#x6e;&#x78;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6e;&#x62;&#x6f;&#x2e;&#x62;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/git2rdata/issues" target="_top"><span class="GitHub">https://github.com/ropensci/git2rdata/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ropensci.github.io/git2rdata/" target="_top"><span class="GitHub">https://ropensci.github.io/git2rdata/</span></a>,
+<a href="https://github.com/ropensci/git2rdata/" target="_top"><span class="GitHub">https://github.com/ropensci/git2rdata/</span></a>,
+<a href="https://doi.org/10.5281/zenodo.1485309" target="_top">https://doi.org/10.5281/zenodo.1485309</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">git2rdata citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_git2rdata.html"><span class="CRAN">git2rdata results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/git2rdata.html"><span class="CRAN">git2rdata.html</span></a> ,  <a href="git2rdata.pdf"><span class="CRAN">git2rdata.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/convert.html"><span class="CRAN">Using the convert argument</span></a> (<a href="vignettes/convert.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/convert.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/data_package.html"><span class="CRAN">Creating data packages</span></a> (<a href="vignettes/data_package.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/data_package.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/efficiency.html"><span class="CRAN">Efficiency Relative to Storage and Time</span></a> (<a href="vignettes/efficiency.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/efficiency.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/metadata.html"><span class="CRAN">Adding metadata</span></a> (<a href="vignettes/metadata.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/metadata.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/plain_text.html"><span class="CRAN">Getting Started Storing Dataframes as Plain Text</span></a> (<a href="vignettes/plain_text.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/plain_text.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/split_by.html"><span class="CRAN">Storing Large Dataframes</span></a> (<a href="vignettes/split_by.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/split_by.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/version_control.html"><span class="CRAN">Optimizing Storage for Version Control</span></a> (<a href="vignettes/version_control.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/version_control.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/workflow.html"><span class="CRAN">Suggested Workflow for Storing a Variable Set of Dataframes under Version Control</span></a> (<a href="vignettes/workflow.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/workflow.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/git2rdata_0.5.2.tar.gz"> <span class="CRAN"> git2rdata_0.5.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/git2rdata_0.5.2.zip"><span class="CRAN">git2rdata_0.5.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/git2rdata_0.5.2.zip"><span class="CRAN">git2rdata_0.5.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/git2rdata_0.5.2.zip"><span class="CRAN">git2rdata_0.5.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/git2rdata_0.5.2.tgz"><span class="CRAN">git2rdata_0.5.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/git2rdata_0.5.1.tgz"><span class="CRAN">git2rdata_0.5.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/git2rdata_0.5.2.tgz"><span class="CRAN">git2rdata_0.5.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/git2rdata_0.5.2.tgz"><span class="CRAN">git2rdata_0.5.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/git2rdata"> <span class="CRAN"> git2rdata archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=git2rdata"><span class="CRAN"><samp>https://CRAN.R-project.org/package=git2rdata</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package spatialGE</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=spatialGE">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Visualization and Analysis of Spatial Heterogeneity in Spatially-Resolved Gene Expression [R package spatialGE version 1.2.2]">
+<meta name="citation_author1" content="Oscar Ospina">
+<meta name="citation_author2" content="Alex Soupir">
+<meta name="citation_author3" content="Brooke Fridley">
+<meta name="citation_publication_date" content="2025-06-04">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=spatialGE">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spatialGE">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="spatialGE: Visualization and Analysis of Spatial Heterogeneity in Spatially-Resolved Gene Expression">
+<meta property="og:description" content="Visualization and analysis of spatially resolved transcriptomics data. The 'spatialGE' R package provides methods for visualizing and analyzing spatially resolved transcriptomics data, such as 10X Visium, CosMx, or csv/tsv gene expression matrices. It includes tools for spatial interpolation, autocorrelation analysis, tissue domain detection, gene set enrichment, and differential expression analysis using spatial mixed models.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=spatialGE">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>spatialGE: Visualization and Analysis of Spatial Heterogeneity in
+Spatially-Resolved Gene Expression</h2>
+<p>Visualization and analysis of spatially resolved transcriptomics data. The 'spatialGE'
+	R package provides methods for visualizing and analyzing spatially resolved transcriptomics data, 
+	such as 10X Visium, CosMx, or csv/tsv gene expression matrices. It includes tools for spatial 
+	interpolation, autocorrelation analysis, tissue domain detection, gene set enrichment, and 
+	differential expression analysis using spatial mixed models.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.2.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/BiocParallel.html" target="_top"><span class="BioC">BiocParallel</span></a>, <a href="../concaveman/index.html"><span class="CRAN">concaveman</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html" target="_top"><span class="BioC">ComplexHeatmap</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/DelayedArray.html" target="_top"><span class="BioC">DelayedArray</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/DelayedMatrixStats.html" target="_top"><span class="BioC">DelayedMatrixStats</span></a>, <a href="../dynamicTreeCut/index.html"><span class="CRAN">dynamicTreeCut</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/EBImage.html" target="_top"><span class="BioC">EBImage</span></a>, <a href="../ggforce/index.html"><span class="CRAN">ggforce</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../ggpolypath/index.html"><span class="CRAN">ggpolypath</span></a>, <a href="../ggrepel/index.html"><span class="CRAN">ggrepel</span></a>, <a href="../gstat/index.html"><span class="CRAN">gstat</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/GSVA.html" target="_top"><span class="BioC">GSVA</span></a>, <a href="../hdf5r/index.html"><span class="CRAN">hdf5r</span></a>, <a href="../jpeg/index.html"><span class="CRAN">jpeg</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../khroma/index.html"><span class="CRAN">khroma</span></a> (&ge; 1.6.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../MASS/index.html"><span class="CRAN">MASS</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.7), <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../sctransform/index.html"><span class="CRAN">sctransform</span></a>, <a href="../sfsmisc/index.html"><span class="CRAN">sfsmisc</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../spaMM/index.html"><span class="CRAN">spaMM</span></a>, <a href="../spdep/index.html"><span class="CRAN">spdep</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../uwot/index.html"><span class="CRAN">uwot</span></a>, <a href="../wordspace/index.html"><span class="CRAN">wordspace</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppEigen/index.html"><span class="CRAN">RcppEigen</span></a>, <a href="../RcppProgress/index.html"><span class="CRAN">RcppProgress</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../geoR/index.html"><span class="CRAN">geoR</span></a>, <a href="../ggpubr/index.html"><span class="CRAN">ggpubr</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../janitor/index.html"><span class="CRAN">janitor</span></a>, <a href="../kableExtra/index.html"><span class="CRAN">kableExtra</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../msigdbr/index.html"><span class="CRAN">msigdbr</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rpart/index.html"><span class="CRAN">rpart</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../scSpatialSIM/index.html"><span class="CRAN">scSpatialSIM</span></a>, <a href="../spatstat/index.html"><span class="CRAN">spatstat</span></a>, <a href="../SeuratObject/index.html"><span class="CRAN">SeuratObject</span></a>, <a href="../tidyverse/index.html"><span class="CRAN">tidyverse</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-06-04</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.spatialGE">10.32614/CRAN.package.spatialGE</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Oscar Ospina <a href="https://orcid.org/0000-0001-5986-4207" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Alex Soupir <a href="https://orcid.org/0000-0003-1251-9179" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Brooke Fridley <a href="https://orcid.org/0000-0001-7739-7956" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Satija Lab [cph] (Copyright holder of code fragments from Seurat
+    function FindVariableFeatures)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Oscar Ospina  &#x3c;&#x6f;&#x73;&#x63;&#x61;&#x72;&#x2e;&#x6f;&#x73;&#x70;&#x69;&#x6e;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x68;&#x6d;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>ins/COPYRIGHT</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spatialGE.html"><span class="CRAN">spatialGE results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/spatialGE.html"><span class="CRAN">spatialGE.html</span></a> ,  <a href="spatialGE.pdf"><span class="CRAN">spatialGE.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/basic_functions_vignette.html"><span class="CRAN">spatialge_tutorial_main</span></a> (<a href="vignettes/basic_functions_vignette.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/basic_functions_vignette.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spatialGE_1.2.2.tar.gz"> <span class="CRAN"> spatialGE_1.2.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/spatialGE_1.2.2.zip"><span class="CRAN">spatialGE_1.2.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/spatialGE_1.2.2.zip"><span class="CRAN">spatialGE_1.2.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/spatialGE_1.2.2.zip"><span class="CRAN">spatialGE_1.2.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/spatialGE_1.2.2.tgz"><span class="CRAN">spatialGE_1.2.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/spatialGE_1.2.2.tgz"><span class="CRAN">spatialGE_1.2.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/spatialGE_1.2.2.tgz"><span class="CRAN">spatialGE_1.2.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/spatialGE_1.2.2.tgz"><span class="CRAN">spatialGE_1.2.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/spatialGE"> <span class="CRAN"> spatialGE archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spatialGE"><span class="CRAN"><samp>https://CRAN.R-project.org/package=spatialGE</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

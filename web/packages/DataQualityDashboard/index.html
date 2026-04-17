@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package DataQualityDashboard</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=DataQualityDashboard">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Execute and View Data Quality Checks on OMOP CDM Database [R package DataQualityDashboard version 2.8.7]">
+<meta name="citation_author1" content="Katy Sadowski">
+<meta name="citation_author2" content="Clair Blacketer">
+<meta name="citation_author3" content="Maxim Moinat">
+<meta name="citation_author4" content="Ajit Londhe">
+<meta name="citation_author5" content="Anthony Sena">
+<meta name="citation_author6" content="Anthony Molinaro">
+<meta name="citation_author7" content="Frank DeFalco">
+<meta name="citation_author8" content="Pavel Grafkin">
+<meta name="citation_publication_date" content="2026-03-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DataQualityDashboard">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DataQualityDashboard">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="DataQualityDashboard: Execute and View Data Quality Checks on OMOP CDM Database">
+<meta property="og:description" content="Assesses data quality in Observational Medical Outcomes Partnership Common Data Model (OMOP CDM) databases. Executes data quality checks and provides an R 'shiny' application to view the results.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=DataQualityDashboard">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>DataQualityDashboard: Execute and View Data Quality Checks on OMOP CDM Database</h2>
+<p>Assesses data quality in Observational Medical Outcomes Partnership Common Data Model (OMOP CDM) databases. Executes data quality checks and provides an R 'shiny' application to view the results.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.8.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.2), <a href="../DatabaseConnector/index.html"><span class="CRAN">DatabaseConnector</span></a> (&ge; 2.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../ParallelLogger/index.html"><span class="CRAN">ParallelLogger</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../rJava/index.html"><span class="CRAN">rJava</span></a>, <a href="../SqlRender/index.html"><span class="CRAN">SqlRender</span></a> (&ge; 1.10.1), <a href="../plyr/index.html"><span class="CRAN">plyr</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../Eunomia/index.html"><span class="CRAN">Eunomia</span></a> (&ge; 2.0.0), <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.DataQualityDashboard">10.32614/CRAN.package.DataQualityDashboard</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Katy Sadowski [aut, cre],
+  Clair Blacketer [aut],
+  Maxim Moinat [aut],
+  Ajit Londhe [aut],
+  Anthony Sena [aut],
+  Anthony Molinaro [aut],
+  Frank DeFalco [aut],
+  Pavel Grafkin [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Katy Sadowski  &#x3c;&#x73;&#x61;&#x64;&#x6f;&#x77;&#x73;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x68;&#x64;&#x73;&#x69;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/OHDSI/DataQualityDashboard/issues" target="_top"><span class="GitHub">https://github.com/OHDSI/DataQualityDashboard/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License 2.0</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/OHDSI/DataQualityDashboard" target="_top"><span class="GitHub">https://github.com/OHDSI/DataQualityDashboard</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">DataQualityDashboard citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DataQualityDashboard.html"><span class="CRAN">DataQualityDashboard results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/DataQualityDashboard.html"><span class="CRAN">DataQualityDashboard.html</span></a> ,  <a href="DataQualityDashboard.pdf"><span class="CRAN">DataQualityDashboard.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AddNewCheck.html"><span class="CRAN">Add a New Data Quality Check</span></a> (<a href="vignettes/AddNewCheck.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/CheckStatusDefinitions.html"><span class="CRAN">Check Status Definitions</span></a> (<a href="vignettes/CheckStatusDefinitions.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/DataQualityDashboard.html"><span class="CRAN">Getting Started</span></a> (<a href="vignettes/DataQualityDashboard.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/DqdForCohorts.html"><span class="CRAN">Running the DQD on a Cohort</span></a> (<a href="vignettes/DqdForCohorts.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/SqlOnly.html"><span class="CRAN">Running the DQD in SqlOnly mode</span></a> (<a href="vignettes/SqlOnly.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/Thresholds.html"><span class="CRAN">Failure Thresholds and How to Change Them</span></a> (<a href="vignettes/Thresholds.rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DataQualityDashboard_2.8.7.tar.gz"> <span class="CRAN"> DataQualityDashboard_2.8.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/DataQualityDashboard_2.8.7.zip"><span class="CRAN">DataQualityDashboard_2.8.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/DataQualityDashboard_2.8.7.zip"><span class="CRAN">DataQualityDashboard_2.8.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/DataQualityDashboard_2.8.7.zip"><span class="CRAN">DataQualityDashboard_2.8.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/DataQualityDashboard_2.8.7.tgz"><span class="CRAN">DataQualityDashboard_2.8.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/DataQualityDashboard_2.8.6.tgz"><span class="CRAN">DataQualityDashboard_2.8.6.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/DataQualityDashboard_2.8.7.tgz"><span class="CRAN">DataQualityDashboard_2.8.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/DataQualityDashboard_2.8.7.tgz"><span class="CRAN">DataQualityDashboard_2.8.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DataQualityDashboard"> <span class="CRAN"> DataQualityDashboard archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DataQualityDashboard"><span class="CRAN"><samp>https://CRAN.R-project.org/package=DataQualityDashboard</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

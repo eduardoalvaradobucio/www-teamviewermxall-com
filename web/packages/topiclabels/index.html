@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package topiclabels</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=topiclabels">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Automated Topic Labeling with Language Models [R package topiclabels version 0.3.0]">
+<meta name="citation_author1" content="Jonas Rieger">
+<meta name="citation_author2" content="Fritz Peters">
+<meta name="citation_author3" content="Andreas Fischer">
+<meta name="citation_author4" content="Tim Lauer">
+<meta name="citation_author5" content="André Bittermann">
+<meta name="citation_publication_date" content="2025-10-27">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=topiclabels">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=topiclabels">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="topiclabels: Automated Topic Labeling with Language Models">
+<meta property="og:description" content="Leveraging (large) language models for automatic topic labeling. The main function converts a list of top terms into a label for each topic. Hence, it is complementary to any topic modeling package that produces a list of top terms for each topic. While human judgement is indispensable for topic validation (i.e., inspecting top terms and most representative documents), automatic topic labeling can be a valuable tool for researchers in various scenarios.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=topiclabels">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>topiclabels: Automated Topic Labeling with Language Models</h2>
+<p>Leveraging (large) language models for automatic topic labeling. The main function converts a list of top terms into a label for each topic. Hence, it is complementary to any topic modeling package that produces a list of top terms for each topic. While human judgement is indispensable for topic validation (i.e., inspecting top terms and most representative documents), automatic topic labeling can be a valuable tool for researchers in various scenarios.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a> (&ge; 1.8.5), <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-10-27</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.topiclabels">10.32614/CRAN.package.topiclabels</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jonas Rieger <a href="https://orcid.org/0000-0002-0007-4478" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Fritz Peters <a href="https://orcid.org/0009-0003-8471-4931" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Andreas Fischer <a href="https://orcid.org/0009-0006-0748-6076" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Tim Lauer <a href="https://orcid.org/0009-0003-1625-1672" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  André Bittermann <a href="https://orcid.org/0000-0003-2942-9831" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jonas Rieger  &#x3c;&#x72;&#x69;&#x65;&#x67;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x69;&#x73;&#x74;&#x69;&#x6b;&#x2e;&#x74;&#x75;&#x2d;&#x64;&#x6f;&#x72;&#x74;&#x6d;&#x75;&#x6e;&#x64;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/PetersFritz/topiclabels/issues" target="_top"><span class="GitHub">https://github.com/PetersFritz/topiclabels/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/PetersFritz/topiclabels" target="_top"><span class="GitHub">https://github.com/PetersFritz/topiclabels</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">topiclabels citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_topiclabels.html"><span class="CRAN">topiclabels results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/topiclabels.html"><span class="CRAN">topiclabels.html</span></a> ,  <a href="topiclabels.pdf"><span class="CRAN">topiclabels.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/topiclabels_0.3.0.tar.gz"> <span class="CRAN"> topiclabels_0.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/topiclabels_0.3.0.zip"><span class="CRAN">topiclabels_0.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/topiclabels_0.3.0.zip"><span class="CRAN">topiclabels_0.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/topiclabels_0.3.0.zip"><span class="CRAN">topiclabels_0.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/topiclabels_0.3.0.tgz"><span class="CRAN">topiclabels_0.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/topiclabels_0.3.0.tgz"><span class="CRAN">topiclabels_0.3.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/topiclabels_0.3.0.tgz"><span class="CRAN">topiclabels_0.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/topiclabels_0.3.0.tgz"><span class="CRAN">topiclabels_0.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/topiclabels"> <span class="CRAN"> topiclabels archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=topiclabels"><span class="CRAN"><samp>https://CRAN.R-project.org/package=topiclabels</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

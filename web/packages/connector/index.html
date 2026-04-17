@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package connector</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=connector">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Streamlining Data Access in Clinical Research [R package connector version 1.0.0]">
+<meta name="citation_author1" content="Cervan Girard">
+<meta name="citation_author2" content="Aksel Thomsen">
+<meta name="citation_author3" content="Vladimir Obucina">
+<meta name="citation_publication_date" content="2025-08-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=connector">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=connector">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="connector: Streamlining Data Access in Clinical Research">
+<meta property="og:description" content="Provides a consistent interface for connecting R to various data sources including file systems and databases. Designed for clinical research, 'connector' streamlines access to 'ADAM', 'SDTM' for example. It helps to deal with multiple data formats through a standardized API and centralized configuration.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=connector">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>connector: Streamlining Data Access in Clinical Research</h2>
+<p>Provides a consistent interface for connecting R to various 
+    data sources including file systems and databases. 
+    Designed for clinical research, 'connector' streamlines access to 'ADAM', 
+    'SDTM' for example. It helps to deal with multiple data formats through a standardized API and centralized 
+    configuration.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a> (&ge; 2.4.0), <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../vroom/index.html"><span class="CRAN">vroom</span></a>, <a href="../writexl/index.html"><span class="CRAN">writexl</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a>, <a href="../zephyr/index.html"><span class="CRAN">zephyr</span></a> (&ge; 0.1.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dbplyr/index.html"><span class="CRAN">dbplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../usethis/index.html"><span class="CRAN">usethis</span></a>, <a href="../whirl/index.html"><span class="CRAN">whirl</span></a> (&ge;
+0.2.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.connector">10.32614/CRAN.package.connector</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Cervan Girard [aut, cre],
+  Aksel Thomsen [aut],
+  Vladimir Obucina [aut],
+  Novo Nordisk A/S [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Cervan Girard  &#x3c;&#x63;&#x67;&#x69;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x6f;&#x76;&#x6f;&#x6e;&#x6f;&#x72;&#x64;&#x69;&#x73;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/NovoNordisk-OpenSource/connector/issues" target="_top"><span class="GitHub">https://github.com/NovoNordisk-OpenSource/connector/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://novonordisk-opensource.github.io/connector/" target="_top"><span class="GitHub">https://novonordisk-opensource.github.io/connector/</span></a>,
+<a href="https://github.com/NovoNordisk-OpenSource/connector/" target="_top"><span class="GitHub">https://github.com/NovoNordisk-OpenSource/connector/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_connector.html"><span class="CRAN">connector results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/connector.html"><span class="CRAN">connector.html</span></a> ,  <a href="connector.pdf"><span class="CRAN">connector.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Consistent-API.html"><span class="CRAN">Understanding Connector Package Methods</span></a> (<a href="vignettes/Consistent-API.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Consistent-API.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/connector.html"><span class="CRAN">connector</span></a> (<a href="vignettes/connector.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/connector.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/customize.html"><span class="CRAN">How to extend connector</span></a> (<a href="vignettes/customize.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/customize.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/without-yaml.html"><span class="CRAN">Using connector without YAML files</span></a> (<a href="vignettes/without-yaml.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/without-yaml.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/connector_1.0.0.tar.gz"> <span class="CRAN"> connector_1.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/connector_1.0.0.zip"><span class="CRAN">connector_1.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/connector_1.0.0.zip"><span class="CRAN">connector_1.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/connector_1.0.0.zip"><span class="CRAN">connector_1.0.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/connector_1.0.0.tgz"><span class="CRAN">connector_1.0.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/connector_1.0.0.tgz"><span class="CRAN">connector_1.0.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/connector_1.0.0.tgz"><span class="CRAN">connector_1.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/connector_1.0.0.tgz"><span class="CRAN">connector_1.0.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/connector"> <span class="CRAN"> connector archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../clinTrialData/index.html"><span class="CRAN">clinTrialData</span></a>, <a href="../connector.databricks/index.html"><span class="CRAN">connector.databricks</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=connector"><span class="CRAN"><samp>https://CRAN.R-project.org/package=connector</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

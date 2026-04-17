@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package quanteda</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=quanteda">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Quantitative Analysis of Textual Data [R package quanteda version 4.4]">
+<meta name="citation_author1" content="Kenneth Benoit">
+<meta name="citation_author2" content="Kohei Watanabe">
+<meta name="citation_author3" content="Haiyan Wang">
+<meta name="citation_author4" content="Paul Nulty">
+<meta name="citation_author5" content="Adam Obeng">
+<meta name="citation_author6" content="Stefan Müller">
+<meta name="citation_author7" content="Akitaka Matsuo">
+<meta name="citation_author8" content="William Lowe">
+<meta name="citation_publication_date" content="2026-04-06">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=quanteda">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=quanteda">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="quanteda: Quantitative Analysis of Textual Data">
+<meta property="og:description" content="A fast, flexible, and comprehensive framework for quantitative text analysis in R. Provides functionality for corpus management, creating and manipulating tokens and n-grams, exploring keywords in context, forming and manipulating sparse matrices of documents by features and feature co-occurrences, analyzing keywords, computing feature similarities and distances, applying content dictionaries, applying supervised and unsupervised machine learning, visually representing text and text analyses, and more. ">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=quanteda">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>quanteda: Quantitative Analysis of Textual Data</h2>
+<p>A fast, flexible, and comprehensive framework for 
+    quantitative text analysis in R.  Provides functionality for corpus management,
+    creating and manipulating tokens and n-grams, exploring keywords in context, 
+    forming and manipulating sparse matrices
+    of documents by features and feature co-occurrences, analyzing keywords, computing feature similarities and
+    distances, applying content dictionaries, applying supervised and unsupervised machine learning, 
+    visually representing text and text analyses, and more. </p>
+<table>
+<tr>
+<td>Version:</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../fastmatch/index.html"><span class="CRAN">fastmatch</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a> (&ge; 1.5-0), <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 0.12.12), <a href="../SnowballC/index.html"><span class="CRAN">SnowballC</span></a>, <a href="../stopwords/index.html"><span class="CRAN">stopwords</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../formatR/index.html"><span class="CRAN">formatR</span></a>, <a href="../tm/index.html"><span class="CRAN">tm</span></a> (&ge; 0.6), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lsa/index.html"><span class="CRAN">lsa</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../slam/index.html"><span class="CRAN">slam</span></a>, <a href="../torch/index.html"><span class="CRAN">torch</span></a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../lda/index.html"><span class="CRAN">lda</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../spacyr/index.html"><span class="CRAN">spacyr</span></a>, <a href="../stm/index.html"><span class="CRAN">stm</span></a>, <a href="../text2vec/index.html"><span class="CRAN">text2vec</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tidytext/index.html"><span class="CRAN">tidytext</span></a>, <a href="../tokenizers/index.html"><span class="CRAN">tokenizers</span></a>, <a href="../topicmodels/index.html"><span class="CRAN">topicmodels</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-06</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.quanteda">10.32614/CRAN.package.quanteda</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kenneth Benoit <a href="https://orcid.org/0000-0002-0797-564X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cre, aut, cph],
+  Kohei Watanabe <a href="https://orcid.org/0000-0001-6519-5265" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Haiyan Wang <a href="https://orcid.org/0000-0003-4992-4311" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Paul Nulty <a href="https://orcid.org/0000-0002-7214-4666" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Adam Obeng <a href="https://orcid.org/0000-0002-2906-4775" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Stefan Müller <a href="https://orcid.org/0000-0002-6315-4125" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Akitaka Matsuo <a href="https://orcid.org/0000-0002-3323-6330" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  William Lowe <a href="https://orcid.org/0000-0002-1549-6163" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Christian Müller [ctb],
+  Olivier Delmarcelle
+    <a href="https://orcid.org/0000-0003-4347-070X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  European Research Council [fnd] (ERC-2011-StG 283794-QUANTESS)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kenneth Benoit  &#x3c;&#x6b;&#x62;&#x65;&#x6e;&#x6f;&#x69;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x73;&#x65;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/quanteda/quanteda/issues" target="_top"><span class="GitHub">https://github.com/quanteda/quanteda/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://quanteda.io" target="_top">https://quanteda.io</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">quanteda citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NaturalLanguageProcessing.html"><span class="CRAN">NaturalLanguageProcessing</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_quanteda.html"><span class="CRAN">quanteda results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/quanteda.html"><span class="CRAN">quanteda.html</span></a> ,  <a href="quanteda.pdf"><span class="CRAN">quanteda.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/quickstart.html"><span class="CRAN">Quick Start Guide</span></a> (<a href="vignettes/quickstart.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quickstart.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/quanteda_4.4.tar.gz"> <span class="CRAN"> quanteda_4.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/quanteda_4.4.zip"><span class="CRAN">quanteda_4.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/quanteda_4.4.zip"><span class="CRAN">quanteda_4.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/quanteda_4.4.zip"><span class="CRAN">quanteda_4.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/quanteda_4.4.tgz"><span class="CRAN">quanteda_4.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/quanteda_4.3.1.tgz"><span class="CRAN">quanteda_4.3.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/quanteda_4.4.tgz"><span class="CRAN">quanteda_4.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/quanteda_4.4.tgz"><span class="CRAN">quanteda_4.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/quanteda"> <span class="CRAN"> quanteda archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../idiolect/index.html"><span class="CRAN">idiolect</span></a>, <a href="../quanteda.tidy/index.html"><span class="CRAN">quanteda.tidy</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AutoPlots/index.html"><span class="CRAN">AutoPlots</span></a>, <a href="../conText/index.html"><span class="CRAN">conText</span></a>, <a href="../corpustools/index.html"><span class="CRAN">corpustools</span></a>, <a href="../DisasterAlert/index.html"><span class="CRAN">DisasterAlert</span></a>, <a href="../doc2concrete/index.html"><span class="CRAN">doc2concrete</span></a>, <a href="../eHDPrep/index.html"><span class="CRAN">eHDPrep</span></a>, <a href="../grafzahl/index.html"><span class="CRAN">grafzahl</span></a>, <a href="../highlightr/index.html"><span class="CRAN">highlightr</span></a>, <a href="../keyATM/index.html"><span class="CRAN">keyATM</span></a>, <a href="../LexisNexisTools/index.html"><span class="CRAN">LexisNexisTools</span></a>, <a href="../LLMing/index.html"><span class="CRAN">LLMing</span></a>, <a href="../LSX/index.html"><span class="CRAN">LSX</span></a>, <a href="../minorparties/index.html"><span class="CRAN">minorparties</span></a>, <a href="../newsmap/index.html"><span class="CRAN">newsmap</span></a>, <a href="../oolong/index.html"><span class="CRAN">oolong</span></a>, <a href="../orderanalyzer/index.html"><span class="CRAN">orderanalyzer</span></a>, <a href="../poldis/index.html"><span class="CRAN">poldis</span></a>, <a href="../politeness/index.html"><span class="CRAN">politeness</span></a>, <a href="../pseudobibeR/index.html"><span class="CRAN">pseudobibeR</span></a>, <a href="../quanteda.textmodels/index.html"><span class="CRAN">quanteda.textmodels</span></a>, <a href="../quanteda.textplots/index.html"><span class="CRAN">quanteda.textplots</span></a>, <a href="../quanteda.textstats/index.html"><span class="CRAN">quanteda.textstats</span></a>, <a href="../quickSentiment/index.html"><span class="CRAN">quickSentiment</span></a>, <a href="../rainette/index.html"><span class="CRAN">rainette</span></a>, <a href="../RNewsflow/index.html"><span class="CRAN">RNewsflow</span></a>, <a href="../seededlda/index.html"><span class="CRAN">seededlda</span></a>, <a href="../sentometrics/index.html"><span class="CRAN">sentometrics</span></a>, <a href="../sentopics/index.html"><span class="CRAN">sentopics</span></a>, <a href="../stm/index.html"><span class="CRAN">stm</span></a>, <a href="../stylest2/index.html"><span class="CRAN">stylest2</span></a>, <a href="../sweater/index.html"><span class="CRAN">sweater</span></a>, <a href="../textstem/index.html"><span class="CRAN">textstem</span></a>, <a href="../topics/index.html"><span class="CRAN">topics</span></a>, <a href="../tosca/index.html"><span class="CRAN">tosca</span></a>, <a href="../ulex/index.html"><span class="CRAN">ulex</span></a>, <a href="../wordmap/index.html"><span class="CRAN">wordmap</span></a>, <a href="../wordvector/index.html"><span class="CRAN">wordvector</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../quanteda.textmodels/index.html"><span class="CRAN">quanteda.textmodels</span></a>, <a href="../quanteda.textstats/index.html"><span class="CRAN">quanteda.textstats</span></a>, <a href="../seededlda/index.html"><span class="CRAN">seededlda</span></a>, <a href="../wordvector/index.html"><span class="CRAN">wordvector</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../explor/index.html"><span class="CRAN">explor</span></a>, <a href="../mlr3pipelines/index.html"><span class="CRAN">mlr3pipelines</span></a>, <a href="../nmfkc/index.html"><span class="CRAN">nmfkc</span></a>, <a href="../quallmer/index.html"><span class="CRAN">quallmer</span></a>, <a href="../readtext/index.html"><span class="CRAN">readtext</span></a>, <a href="../spacyr/index.html"><span class="CRAN">spacyr</span></a>, <a href="../stopwords/index.html"><span class="CRAN">stopwords</span></a>, <a href="../text2map/index.html"><span class="CRAN">text2map</span></a>, <a href="../textAnnotatoR/index.html"><span class="CRAN">textAnnotatoR</span></a>, <a href="../tidylda/index.html"><span class="CRAN">tidylda</span></a>, <a href="../tidytext/index.html"><span class="CRAN">tidytext</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=quanteda"><span class="CRAN"><samp>https://CRAN.R-project.org/package=quanteda</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

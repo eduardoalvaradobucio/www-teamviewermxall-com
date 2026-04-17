@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package modelStudio</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=modelStudio">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interactive Studio for Explanatory Model Analysis [R package modelStudio version 3.1.2]">
+<meta name="citation_author1" content="Hubert Baniecki">
+<meta name="citation_author2" content="Przemyslaw Biecek">
+<meta name="citation_publication_date" content="2023-02-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=modelStudio">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=modelStudio">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="modelStudio: Interactive Studio for Explanatory Model Analysis">
+<meta property="og:description" content="Automate the explanatory analysis of machine learning predictive models. Generate advanced interactive model explanations in the form of a serverless HTML site with only one line of code. This tool is model-agnostic, therefore compatible with most of the black-box predictive models and frameworks. The main function computes various (instance and model-level) explanations and produces a customisable dashboard, which consists of multiple panels for plots with their short descriptions. It is possible to easily save the dashboard and share it with others. modelStudio facilitates the process of Interactive Explanatory Model Analysis introduced in Baniecki et al. (2023) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10618-023-00924-w&quot; target=&quot;_top&quot;&gt;doi:10.1007/s10618-023-00924-w&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=modelStudio">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>modelStudio: Interactive Studio for Explanatory Model Analysis</h2>
+<p>Automate the explanatory analysis of machine learning predictive 
+    models. Generate advanced interactive model explanations in the form of 
+    a serverless HTML site with only one line of code. This tool is 
+    model-agnostic, therefore compatible with most of the black-box predictive
+    models and frameworks. The main function computes various (instance and 
+    model-level) explanations and produces a customisable dashboard, which 
+    consists of multiple panels for plots with their short descriptions. It is 
+    possible to easily save the dashboard and share it with others. modelStudio 
+    facilitates the process of Interactive Explanatory Model Analysis introduced 
+    in Baniecki et al. (2023) &lt;<a href="https://doi.org/10.1007%2Fs10618-023-00924-w" target="_top">doi:10.1007/s10618-023-00924-w</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../DALEX/index.html"><span class="CRAN">DALEX</span></a> (&ge; 2.2.1), <a href="../ingredients/index.html"><span class="CRAN">ingredients</span></a> (&ge; 2.2.0), <a href="../iBreakDown/index.html"><span class="CRAN">iBreakDown</span></a> (&ge;
+2.0.1), <a href="../r2d3/index.html"><span class="CRAN">r2d3</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../parallelMap/index.html"><span class="CRAN">parallelMap</span></a>, <a href="../ranger/index.html"><span class="CRAN">ranger</span></a>, <a href="../xgboost/index.html"><span class="CRAN">xgboost</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2023-02-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.modelStudio">10.32614/CRAN.package.modelStudio</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hubert Baniecki <a href="https://orcid.org/0000-0001-6661-5364" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Przemyslaw Biecek <a href="https://orcid.org/0000-0001-8423-1823" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Piotr Piatyszek [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hubert Baniecki  &#x3c;&#x68;&#x62;&#x61;&#x6e;&#x69;&#x65;&#x63;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ModelOriented/modelStudio/issues" target="_top"><span class="GitHub">https://github.com/ModelOriented/modelStudio/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://modelstudio.drwhy.ai" target="_top">https://modelstudio.drwhy.ai</a>,
+<a href="https://github.com/ModelOriented/modelStudio" target="_top"><span class="GitHub">https://github.com/ModelOriented/modelStudio</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">modelStudio citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_modelStudio.html"><span class="CRAN">modelStudio results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/modelStudio.html"><span class="CRAN">modelStudio.html</span></a> ,  <a href="modelStudio.pdf"><span class="CRAN">modelStudio.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ms-perks-features.html"><span class="CRAN">modelStudio - perks and features</span></a> (<a href="vignettes/ms-perks-features.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ms-perks-features.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ms-r-python-examples.html"><span class="CRAN">modelStudio - R &amp; Python examples</span></a> (<a href="vignettes/ms-r-python-examples.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ms-r-python-examples.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ms-rmarkdown.html"><span class="CRAN">modelStudio in R Markdown HTML</span></a> (<a href="vignettes/ms-rmarkdown.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ms-rmarkdown.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/modelStudio_3.1.2.tar.gz"> <span class="CRAN"> modelStudio_3.1.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/modelStudio_3.1.2.zip"><span class="CRAN">modelStudio_3.1.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/modelStudio_3.1.2.zip"><span class="CRAN">modelStudio_3.1.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/modelStudio_3.1.2.zip"><span class="CRAN">modelStudio_3.1.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/modelStudio_3.1.2.tgz"><span class="CRAN">modelStudio_3.1.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/modelStudio_3.1.2.tgz"><span class="CRAN">modelStudio_3.1.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/modelStudio_3.1.2.tgz"><span class="CRAN">modelStudio_3.1.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/modelStudio_3.1.2.tgz"><span class="CRAN">modelStudio_3.1.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/modelStudio"> <span class="CRAN"> modelStudio archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../fastml/index.html"><span class="CRAN">fastml</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=modelStudio"><span class="CRAN"><samp>https://CRAN.R-project.org/package=modelStudio</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

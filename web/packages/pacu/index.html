@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pacu</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pacu">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Precision Agriculture Computational Utilities [R package pacu version 0.1.74]">
+<meta name="citation_author1" content="dos Santos Caio">
+<meta name="citation_author2" content="Miguez Fernando">
+<meta name="citation_publication_date" content="2025-11-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pacu">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pacu">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pacu: Precision Agriculture Computational Utilities">
+<meta property="og:description" content="Support for a variety of commonly used precision agriculture operations. Includes functions to download and process raw satellite images from Sentinel-2 &amp;lt;&lt;a href=&quot;https://documentation.dataspace.copernicus.eu/APIs/OData.html&quot; target=&quot;_top&quot;&gt;https://documentation.dataspace.copernicus.eu/APIs/OData.html&lt;/a&gt;&amp;gt;. Includes functions that download vegetation index statistics for a given period of time, without the need to download the raw images &amp;lt;&lt;a href=&quot;https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html&quot; target=&quot;_top&quot;&gt;https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html&lt;/a&gt;&amp;gt;. There are also functions to download and visualize weather data in a historical context. Lastly, the package also contains functions to process yield monitor data. These functions can build polygons around recorded data points, evaluate the overlap between polygons, clean yield data, and smooth yield maps.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pacu">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pacu: Precision Agriculture Computational Utilities</h2>
+<p>Support for a variety of commonly used precision agriculture operations. Includes functions to download and process raw satellite images from Sentinel-2 &lt;<a href="https://documentation.dataspace.copernicus.eu/APIs/OData.html" target="_top">https://documentation.dataspace.copernicus.eu/APIs/OData.html</a>&gt;. Includes functions that download vegetation index statistics for a given period of time, without the need to download the raw images &lt;<a href="https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html" target="_top">https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html</a>&gt;. There are also functions to download and visualize weather data in a historical context. Lastly, the package also contains functions to process yield monitor data. These functions can build polygons around recorded data points, evaluate the overlap between polygons, clean yield data, and smooth yield maps.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.74</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../apsimx/index.html"><span class="CRAN">apsimx</span></a>, <a href="../gstat/index.html"><span class="CRAN">gstat</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../units/index.html"><span class="CRAN">units</span></a>, <a href="../XML/index.html"><span class="CRAN">XML</span></a>, <a href="../concaveman/index.html"><span class="CRAN">concaveman</span></a>, <a href="../tmap/index.html"><span class="CRAN">tmap</span></a> (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../patchwork/index.html"><span class="CRAN">patchwork</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../nasapower/index.html"><span class="CRAN">nasapower</span></a>, <a href="../spData/index.html"><span class="CRAN">spData</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../nlraa/index.html"><span class="CRAN">nlraa</span></a>, <a href="../car/index.html"><span class="CRAN">car</span></a>, <a href="../minpack.lm/index.html"><span class="CRAN">minpack.lm</span></a>, <a href="../MASS/index.html"><span class="CRAN">MASS</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-11-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pacu">10.32614/CRAN.package.pacu</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>dos Santos Caio [aut, cre],
+  Miguez Fernando [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>dos Santos Caio  &#x3c;&#x63;&#x6c;&#x73;&#x61;&#x6e;&#x74;&#x6f;&#x73;&#x20;&#x61;&#x74;&#x20;&#x69;&#x61;&#x73;&#x74;&#x61;&#x74;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/cldossantos/pacu/issues" target="_top"><span class="GitHub">https://github.com/cldossantos/pacu/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Agriculture.html"><span class="CRAN">Agriculture</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pacu.html"><span class="CRAN">pacu results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pacu.html"><span class="CRAN">pacu.html</span></a> ,  <a href="pacu.pdf"><span class="CRAN">pacu.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/pacu.html"><span class="CRAN">pacu: Precision Agriculture Computational Utilities</span></a> (<a href="vignettes/pacu.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/pacu_faq.html"><span class="CRAN">pacu: Precision Agriculture Computational Utilities - FAQ</span></a> (<a href="vignettes/pacu_faq.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/pacu_faq.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/pacu_sat.html"><span class="CRAN">pacu: Precision Agriculture Computational Utilities - Satellite data</span></a> (<a href="vignettes/pacu_sat.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/pacu_sat.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/pacu_weather.html"><span class="CRAN">pacu: Precision Agriculture Computational Utilities - Weather data</span></a> (<a href="vignettes/pacu_weather.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/pacu_weather.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/pacu_ym.html"><span class="CRAN">pacu: Precision Agriculture Computational Utilities - Yield monitor data</span></a> (<a href="vignettes/pacu_ym.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/pacu_ym.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pacu_0.1.74.tar.gz"> <span class="CRAN"> pacu_0.1.74.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pacu_0.1.74.zip"><span class="CRAN">pacu_0.1.74.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pacu_0.1.74.zip"><span class="CRAN">pacu_0.1.74.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pacu_0.1.74.zip"><span class="CRAN">pacu_0.1.74.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pacu_0.1.74.tgz"><span class="CRAN">pacu_0.1.74.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/pacu_0.1.74.tgz"><span class="CRAN">pacu_0.1.74.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pacu_0.1.74.tgz"><span class="CRAN">pacu_0.1.74.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pacu_0.1.74.tgz"><span class="CRAN">pacu_0.1.74.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pacu"> <span class="CRAN"> pacu archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pacu"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pacu</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package starburst</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=starburst">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Seamless AWS Cloud Bursting for Parallel R Workloads [R package starburst version 0.3.8]">
+<meta name="citation_author" content="Scott Friedman">
+<meta name="citation_publication_date" content="2026-03-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=starburst">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=starburst">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="starburst: Seamless AWS Cloud Bursting for Parallel R Workloads">
+<meta property="og:description" content="A 'future' backend that enables seamless execution of parallel R workloads on 'Amazon Web Services' ('AWS', &amp;lt;&lt;a href=&quot;https://aws.amazon.com&quot; target=&quot;_top&quot;&gt;https://aws.amazon.com&lt;/a&gt;&amp;gt;), including 'EC2' and 'Fargate'. 'staRburst' handles environment synchronization, data transfer, quota management, and worker orchestration automatically, allowing users to scale from local execution to 100+ cloud workers with a single line of code change.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=starburst">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>starburst: Seamless AWS Cloud Bursting for Parallel R Workloads</h2>
+<p>A 'future' backend that enables seamless execution of parallel R
+    workloads on 'Amazon Web Services' ('AWS', &lt;<a href="https://aws.amazon.com" target="_top">https://aws.amazon.com</a>&gt;),
+    including 'EC2' and 'Fargate'. 'staRburst' handles environment
+    synchronization, data transfer, quota management, and worker orchestration
+    automatically, allowing users to scale from local execution to 100+ cloud
+    workers with a single line of code change.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../future/index.html"><span class="CRAN">future</span></a> (&ge; 1.33.0), <a href="../globals/index.html"><span class="CRAN">globals</span></a>, <a href="../paws.compute/index.html"><span class="CRAN">paws.compute</span></a>, <a href="../paws.storage/index.html"><span class="CRAN">paws.storage</span></a>, <a href="../paws.management/index.html"><span class="CRAN">paws.management</span></a>, <a href="../paws.security.identity/index.html"><span class="CRAN">paws.security.identity</span></a>, <a href="../qs2/index.html"><span class="CRAN">qs2</span></a>, <a href="../uuid/index.html"><span class="CRAN">uuid</span></a>, <a href="../renv/index.html"><span class="CRAN">renv</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../crayon/index.html"><span class="CRAN">crayon</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../future.apply/index.html"><span class="CRAN">future.apply</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.starburst">10.32614/CRAN.package.starburst</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Scott Friedman [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Scott Friedman  &#x3c;&#x68;&#x65;&#x6c;&#x70;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x72;&#x62;&#x75;&#x72;&#x73;&#x74;&#x2e;&#x69;&#x6e;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/scttfrdmn/starburst/issues" target="_top"><span class="GitHub">https://github.com/scttfrdmn/starburst/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License 2.0</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://starburst.ing" target="_top">https://starburst.ing</a>, <a href="https://github.com/scttfrdmn/starburst" target="_top"><span class="GitHub">https://github.com/scttfrdmn/starburst</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/HighPerformanceComputing.html"><span class="CRAN">HighPerformanceComputing</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_starburst.html"><span class="CRAN">starburst results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/starburst.html"><span class="CRAN">starburst.html</span></a> ,  <a href="starburst.pdf"><span class="CRAN">starburst.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/detached-sessions.html"><span class="CRAN">Detached Session Mode</span></a> (<a href="vignettes/detached-sessions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/detached-sessions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-api-calls.html"><span class="CRAN">Example: Parallel Bulk API Calls</span></a> (<a href="vignettes/example-api-calls.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-api-calls.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-bootstrap.html"><span class="CRAN">Example: Bootstrap Confidence Intervals for A/B Testing</span></a> (<a href="vignettes/example-bootstrap.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-bootstrap.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-feature-engineering.html"><span class="CRAN">Example: Parallel Feature Engineering</span></a> (<a href="vignettes/example-feature-engineering.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-feature-engineering.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-geospatial.html"><span class="CRAN">Example: Parallel Geospatial Analysis</span></a> (<a href="vignettes/example-geospatial.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-geospatial.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-grid-search.html"><span class="CRAN">Example: Parallel Grid Search for Hyperparameter Tuning</span></a> (<a href="vignettes/example-grid-search.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-grid-search.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-monte-carlo.html"><span class="CRAN">Example: Monte Carlo Portfolio Simulation</span></a> (<a href="vignettes/example-monte-carlo.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-monte-carlo.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-reports.html"><span class="CRAN">Example: Parallel Report Generation</span></a> (<a href="vignettes/example-reports.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-reports.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-risk-modeling.html"><span class="CRAN">Example: Parallel Portfolio Risk Modeling</span></a> (<a href="vignettes/example-risk-modeling.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-risk-modeling.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting-started.html"><span class="CRAN">Getting Started with staRburst</span></a> (<a href="vignettes/getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/security.html"><span class="CRAN">Security Best Practices for staRburst</span></a> (<a href="vignettes/security.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/security.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/troubleshooting.html"><span class="CRAN">Troubleshooting staRburst</span></a> (<a href="vignettes/troubleshooting.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/troubleshooting.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/starburst_0.3.8.tar.gz"> <span class="CRAN"> starburst_0.3.8.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/starburst_0.3.8.zip"><span class="CRAN">starburst_0.3.8.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/starburst_0.3.8.zip"><span class="CRAN">starburst_0.3.8.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/starburst_0.3.8.zip"><span class="CRAN">starburst_0.3.8.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/starburst_0.3.8.tgz"><span class="CRAN">starburst_0.3.8.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/starburst_0.3.8.tgz"><span class="CRAN">starburst_0.3.8.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/starburst_0.3.8.tgz"><span class="CRAN">starburst_0.3.8.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/starburst_0.3.8.tgz"><span class="CRAN">starburst_0.3.8.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=starburst"><span class="CRAN"><samp>https://CRAN.R-project.org/package=starburst</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

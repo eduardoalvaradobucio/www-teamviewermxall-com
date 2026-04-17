@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package crunch</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=crunch">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Crunch.io Data Tools [R package crunch version 1.31.1]">
+<meta name="citation_author1" content="Greg Freedman Ellis">
+<meta name="citation_author2" content="Jonathan Keane">
+<meta name="citation_author3" content="Mike Malecki">
+<meta name="citation_author4" content="Neal Richardson">
+<meta name="citation_author5" content="Gordon Shotwell">
+<meta name="citation_author6" content="Aljaž Sluga">
+<meta name="citation_publication_date" content="2025-08-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=crunch">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=crunch">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="crunch: Crunch.io Data Tools">
+<meta property="og:description" content="The Crunch.io service &amp;lt;&lt;a href=&quot;https://crunch.io/&quot; target=&quot;_top&quot;&gt;https://crunch.io/&lt;/a&gt;&amp;gt; provides a cloud-based data store and analytic engine, as well as an intuitive web interface. Using this package, analysts can interact with and manipulate Crunch datasets from within R. Importantly, this allows technical researchers to collaborate naturally with team members, managers, and clients who prefer a point-and-click interface.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=crunch">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>crunch: Crunch.io Data Tools</h2>
+<p>The Crunch.io service &lt;<a href="https://crunch.io/" target="_top">https://crunch.io/</a>&gt; provides a cloud-based
+    data store and analytic engine, as well as an intuitive web interface.
+    Using this package, analysts can interact with and manipulate Crunch
+    datasets from within R. Importantly, this allows technical researchers to
+    collaborate naturally with team members, managers, and clients who prefer a
+    point-and-click interface.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.31.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html"><span class="CRAN">abind</span></a>, <a href="../crayon/index.html"><span class="CRAN">crayon</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge; 1.0.0), <a href="../httpcache/index.html"><span class="CRAN">httpcache</span></a> (&ge;
+0.1.4), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 0.9.15), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../httptest/index.html"><span class="CRAN">httptest</span></a> (&ge; 3.0.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lintr/index.html"><span class="CRAN">lintr</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../mime/index.html"><span class="CRAN">mime</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.0.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.crunch">10.32614/CRAN.package.crunch</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Greg Freedman Ellis [aut, cre],
+  Jonathan Keane [aut],
+  Mike Malecki [aut],
+  Neal Richardson [aut],
+  Gordon Shotwell [aut],
+  Aljaž Sluga [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Greg Freedman Ellis  &#x3c;&#x67;&#x72;&#x65;&#x67;&#x20;&#x61;&#x74;&#x20;&#x63;&#x72;&#x75;&#x6e;&#x63;&#x68;&#x2e;&#x69;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Crunch-io/rcrunch/issues" target="_top"><span class="GitHub">https://github.com/Crunch-io/rcrunch/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3"><span class="CRAN">LGPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://crunch.io/r/crunch/" target="_top">https://crunch.io/r/crunch/</a>, <a href="https://github.com/Crunch-io/rcrunch" target="_top"><span class="GitHub">https://github.com/Crunch-io/rcrunch</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_crunch.html"><span class="CRAN">crunch results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/crunch.html"><span class="CRAN">crunch.html</span></a> ,  <a href="crunch.pdf"><span class="CRAN">crunch.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/abstract-categories.html"><span class="CRAN">Abstract Categories</span></a> (<a href="vignettes/abstract-categories.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/abstract-categories.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/analyze.html"><span class="CRAN">Analyzing Crunch Data</span></a> (<a href="vignettes/analyze.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/analyze.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/array-variables.html"><span class="CRAN">Array Variables</span></a> (<a href="vignettes/array-variables.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/array-variables.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/crunch-internals.html"><span class="CRAN">Crunch Internals</span></a> (<a href="vignettes/crunch-internals.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/crunch.html"><span class="CRAN">Getting Started</span></a> (<a href="vignettes/crunch.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/crunch.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/deck-cookbook.html"><span class="CRAN">Crunch Deck Cookbook</span></a> (<a href="vignettes/deck-cookbook.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/deck-cookbook.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/derive.html"><span class="CRAN">Adding Variables</span></a> (<a href="vignettes/derive.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/derive.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/export.html"><span class="CRAN">Exporting Data</span></a> (<a href="vignettes/export.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/export.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/filters.html"><span class="CRAN">Filtering Data</span></a> (<a href="vignettes/filters.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/filters.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/fork-and-merge.html"><span class="CRAN">Fork and Merge a Dataset</span></a> (<a href="vignettes/fork-and-merge.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/fork-and-merge.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/projects.html"><span class="CRAN">Organizing Datasets in Projects</span></a> (<a href="vignettes/projects.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/subtotals.html"><span class="CRAN">Subtotals and Headings</span></a> (<a href="vignettes/subtotals.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/subtotals.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/variable-order.html"><span class="CRAN">Variable Folders and Organization</span></a> (<a href="vignettes/variable-order.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/variable-order.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/variables.html"><span class="CRAN">Crunch Variables</span></a> (<a href="vignettes/variables.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/variables.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/crunch_1.31.1.tar.gz"> <span class="CRAN"> crunch_1.31.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/crunch_1.31.1.zip"><span class="CRAN">crunch_1.31.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/crunch_1.31.1.zip"><span class="CRAN">crunch_1.31.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/crunch_1.31.1.zip"><span class="CRAN">crunch_1.31.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/crunch_1.31.1.tgz"><span class="CRAN">crunch_1.31.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/crunch_1.31.1.tgz"><span class="CRAN">crunch_1.31.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/crunch_1.31.1.tgz"><span class="CRAN">crunch_1.31.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/crunch_1.31.1.tgz"><span class="CRAN">crunch_1.31.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/crunch"> <span class="CRAN"> crunch archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=crunch"><span class="CRAN"><samp>https://CRAN.R-project.org/package=crunch</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

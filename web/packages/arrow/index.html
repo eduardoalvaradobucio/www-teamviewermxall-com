@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package arrow</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=arrow">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Integration to 'Apache' 'Arrow' [R package arrow version 23.0.1.2]">
+<meta name="citation_author1" content="Neal Richardson">
+<meta name="citation_author2" content="Ian Cook">
+<meta name="citation_author3" content="Nic Crane">
+<meta name="citation_author4" content="Dewey Dunnington">
+<meta name="citation_author5" content="Romain François">
+<meta name="citation_author6" content="Jonathan Keane">
+<meta name="citation_author7" content="Bryce Mecum">
+<meta name="citation_author8" content="Dragoș Moldovan-Grünfeld">
+<meta name="citation_author9" content="Jeroen Ooms">
+<meta name="citation_author10" content="Jacob Wujciak-Jens">
+<meta name="citation_author11" content="Apache Arrow">
+<meta name="citation_publication_date" content="2026-03-25">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=arrow">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=arrow">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="arrow: Integration to 'Apache' 'Arrow'">
+<meta property="og:description" content="'Apache' 'Arrow' &amp;lt;&lt;a href=&quot;https://arrow.apache.org/&quot; target=&quot;_top&quot;&gt;https://arrow.apache.org/&lt;/a&gt;&amp;gt; is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware. This package provides an interface to the 'Arrow C++' library.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=arrow">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>arrow: Integration to 'Apache' 'Arrow'</h2>
+<p>'Apache' 'Arrow' &lt;<a href="https://arrow.apache.org/" target="_top">https://arrow.apache.org/</a>&gt; is a cross-language
+    development platform for in-memory data. It specifies a standardized
+    language-independent columnar memory format for flat and hierarchical data,
+    organized for efficient analytic operations on modern hardware. This
+    package provides an interface to the 'Arrow C++' library.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>23.0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html"><span class="CRAN">assertthat</span></a>, <a href="../bit64/index.html"><span class="CRAN">bit64</span></a> (&ge; 0.9-7), <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.0.0), <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a> (&ge; 1.0.0), <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../cpp11/index.html"><span class="CRAN">cpp11</span></a> (&ge; 0.4.2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../blob/index.html"><span class="CRAN">blob</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../dbplyr/index.html"><span class="CRAN">dbplyr</span></a>, <a href="../decor/index.html"><span class="CRAN">decor</span></a>, <a href="../distro/index.html"><span class="CRAN">distro</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a> (&ge; 0.2.8), <a href="../hms/index.html"><span class="CRAN">hms</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../pillar/index.html"><span class="CRAN">pillar</span></a>, <a href="../pkgload/index.html"><span class="CRAN">pkgload</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../sys/index.html"><span class="CRAN">sys</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.1.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../tzdb/index.html"><span class="CRAN">tzdb</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-25</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.arrow">10.32614/CRAN.package.arrow</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Neal Richardson [aut],
+  Ian Cook [aut],
+  Nic Crane [aut],
+  Dewey Dunnington <a href="https://orcid.org/0000-0002-9415-4582" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Romain François <a href="https://orcid.org/0000-0002-2444-4226" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Jonathan Keane [aut, cre],
+  Bryce Mecum [aut],
+  Dragoș Moldovan-Grünfeld [aut],
+  Jeroen Ooms [aut],
+  Jacob Wujciak-Jens [aut],
+  Javier Luraschi [ctb],
+  Karl Dunkle Werner
+    <a href="https://orcid.org/0000-0003-0523-7309" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Jeffrey Wong [ctb],
+  Apache Arrow [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jonathan Keane  &#x3c;&#x6a;&#x6b;&#x65;&#x61;&#x6e;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/apache/arrow/issues" target="_top"><span class="GitHub">https://github.com/apache/arrow/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2.0)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/apache/arrow/" target="_top"><span class="GitHub">https://github.com/apache/arrow/</span></a>, <a href="https://arrow.apache.org/docs/r/" target="_top">https://arrow.apache.org/docs/r/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++20; for AWS S3 support on Linux, libcurl and
+openssl (optional); cmake &gt;= 3.26 (build-time only, and only
+for full source build)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/HighPerformanceComputing.html"><span class="CRAN">HighPerformanceComputing</span></a>, <a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_arrow.html"><span class="CRAN">arrow results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/arrow.html"><span class="CRAN">arrow.html</span></a> ,  <a href="arrow.pdf"><span class="CRAN">arrow.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/arrow_23.0.1.2.tar.gz"> <span class="CRAN"> arrow_23.0.1.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/arrow_23.0.1.2.zip"><span class="CRAN">arrow_23.0.1.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/arrow_23.0.1.2.zip"><span class="CRAN">arrow_23.0.1.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/arrow_23.0.1.2.zip"><span class="CRAN">arrow_23.0.1.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/arrow_23.0.1.2.tgz"><span class="CRAN">arrow_23.0.1.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/arrow_23.0.1.1.tgz"><span class="CRAN">arrow_23.0.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/arrow_23.0.1.2.tgz"><span class="CRAN">arrow_23.0.1.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/arrow_23.0.1.2.tgz"><span class="CRAN">arrow_23.0.1.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/arrow"> <span class="CRAN"> arrow archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../geslaR/index.html"><span class="CRAN">geslaR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../antaresRead/index.html"><span class="CRAN">antaresRead</span></a>, <a href="../APCalign/index.html"><span class="CRAN">APCalign</span></a>, <a href="../ARDECO/index.html"><span class="CRAN">ARDECO</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/autonomics.html" target="_top"><span class="BioC">autonomics</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/BayesSpace.html" target="_top"><span class="BioC">BayesSpace</span></a>, <a href="../blockr.io/index.html"><span class="CRAN">blockr.io</span></a>, <a href="../cansim/index.html"><span class="CRAN">cansim</span></a>, <a href="../capesR/index.html"><span class="CRAN">capesR</span></a>, <a href="../censobr/index.html"><span class="CRAN">censobr</span></a>, <a href="../ClickHouseHTTP/index.html"><span class="CRAN">ClickHouseHTTP</span></a>, <a href="../cnefetools/index.html"><span class="CRAN">cnefetools</span></a>, <a href="../connector/index.html"><span class="CRAN">connector</span></a>, <a href="../connector.databricks/index.html"><span class="CRAN">connector.databricks</span></a>, <a href="../diffdfs/index.html"><span class="CRAN">diffdfs</span></a>, <a href="../DominoDataR/index.html"><span class="CRAN">DominoDataR</span></a>, <a href="../dpkg/index.html"><span class="CRAN">dpkg</span></a>, <a href="../duckspatial/index.html"><span class="CRAN">duckspatial</span></a>, <a href="../eam/index.html"><span class="CRAN">eam</span></a>, <a href="../ebirdst/index.html"><span class="CRAN">ebirdst</span></a>, <a href="../econdatasets/index.html"><span class="CRAN">econdatasets</span></a>, <a href="../EEAaq/index.html"><span class="CRAN">EEAaq</span></a>, <a href="../Eunomia/index.html"><span class="CRAN">Eunomia</span></a>, <a href="../EZbakR/index.html"><span class="CRAN">EZbakR</span></a>, <a href="../fastreg/index.html"><span class="CRAN">fastreg</span></a>, <a href="../feather/index.html"><span class="CRAN">feather</span></a>, <a href="../foundry/index.html"><span class="CRAN">foundry</span></a>, <a href="../gbifdb/index.html"><span class="CRAN">gbifdb</span></a>, <a href="../geocodebr/index.html"><span class="CRAN">geocodebr</span></a>, <a href="../geoflow/index.html"><span class="CRAN">geoflow</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/goatea.html" target="_top"><span class="BioC">goatea</span></a>, <a href="../isoorbi/index.html"><span class="CRAN">isoorbi</span></a>, <a href="../leakr/index.html"><span class="CRAN">leakr</span></a>, <a href="../LifemapR/index.html"><span class="CRAN">LifemapR</span></a>, <a href="../mintyr/index.html"><span class="CRAN">mintyr</span></a>, <a href="../MolgenisArmadillo/index.html"><span class="CRAN">MolgenisArmadillo</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/MSstatsBig.html" target="_top"><span class="BioC">MSstatsBig</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/MSstatsShiny.html" target="_top"><span class="BioC">MSstatsShiny</span></a>, <a href="../multimolang/index.html"><span class="CRAN">multimolang</span></a>, <a href="../nascaR.data/index.html"><span class="CRAN">nascaR.data</span></a>, <a href="../NBDCtools/index.html"><span class="CRAN">NBDCtools</span></a>, <a href="../neonUtilities/index.html"><span class="CRAN">neonUtilities</span></a>, <a href="../nhanesdata/index.html"><span class="CRAN">nhanesdata</span></a>, <a href="../nhdplusTools/index.html"><span class="CRAN">nhdplusTools</span></a>, <a href="../nhlscraper/index.html"><span class="CRAN">nhlscraper</span></a>, <a href="../OlinkAnalyze/index.html"><span class="CRAN">OlinkAnalyze</span></a>, <a href="../omock/index.html"><span class="CRAN">omock</span></a>, <a href="../overturemapsr/index.html"><span class="CRAN">overturemapsr</span></a>, <a href="../parqr/index.html"><span class="CRAN">parqr</span></a>, <a href="../parquetize/index.html"><span class="CRAN">parquetize</span></a>, <a href="../pipr/index.html"><span class="CRAN">pipr</span></a>, <a href="../pleioh2g/index.html"><span class="CRAN">pleioh2g</span></a>, <a href="../pxmake/index.html"><span class="CRAN">pxmake</span></a>, <a href="../pysparklyr/index.html"><span class="CRAN">pysparklyr</span></a>, <a href="../rb3/index.html"><span class="CRAN">rb3</span></a>, <a href="../rcdf/index.html"><span class="CRAN">rcdf</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/RcisTarget.html" target="_top"><span class="BioC">RcisTarget</span></a>, <a href="../repfun/index.html"><span class="CRAN">repfun</span></a>, <a href="../riemtan/index.html"><span class="CRAN">riemtan</span></a>, <a href="../RKaggle/index.html"><span class="CRAN">RKaggle</span></a>, <a href="../RSQLite.toolkit/index.html"><span class="CRAN">RSQLite.toolkit</span></a>, <a href="../sfarrow/index.html"><span class="CRAN">sfarrow</span></a>, <a href="../SkeletalVis/index.html"><span class="CRAN">SkeletalVis</span></a>, <a href="../sooty/index.html"><span class="CRAN">sooty</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/SpaceTrooper.html" target="_top"><span class="BioC">SpaceTrooper</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/SpatialExperimentIO.html" target="_top"><span class="BioC">SpatialExperimentIO</span></a>, <a href="../spatialGE/index.html"><span class="CRAN">spatialGE</span></a>, <a href="../SQL/index.html"><span class="CRAN">SQL</span></a>, <a href="../strand/index.html"><span class="CRAN">strand</span></a>, <a href="../tidyCDISC/index.html"><span class="CRAN">tidyCDISC</span></a>, <a href="../verdata/index.html"><span class="CRAN">verdata</span></a>, <a href="../vigicaen/index.html"><span class="CRAN">vigicaen</span></a>, <a href="../volrisk/index.html"><span class="CRAN">volrisk</span></a>, <a href="../workspace/index.html"><span class="CRAN">workspace</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/xenLite.html" target="_top"><span class="BioC">xenLite</span></a>, <a href="../z22/index.html"><span class="CRAN">z22</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../a5R/index.html"><span class="CRAN">a5R</span></a>, <a href="../ABCDscores/index.html"><span class="CRAN">ABCDscores</span></a>, <a href="../adbi/index.html"><span class="CRAN">adbi</span></a>, <a href="../analogsea/index.html"><span class="CRAN">analogsea</span></a>, <a href="../aNCA/index.html"><span class="CRAN">aNCA</span></a>, <a href="../arkdb/index.html"><span class="CRAN">arkdb</span></a>, <a href="../assemblykor/index.html"><span class="CRAN">assemblykor</span></a>, <a href="../birdnetR/index.html"><span class="CRAN">birdnetR</span></a>, <a href="../brickster/index.html"><span class="CRAN">brickster</span></a>, <a href="../citestR/index.html"><span class="CRAN">citestR</span></a>, <a href="../clinTrialData/index.html"><span class="CRAN">clinTrialData</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/CuratedAtlasQueryR.html" target="_top"><span class="BioC">CuratedAtlasQueryR</span></a>, <a href="../datadiff/index.html"><span class="CRAN">datadiff</span></a>, <a href="../dataverifyr/index.html"><span class="CRAN">dataverifyr</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../diagFDR/index.html"><span class="CRAN">diagFDR</span></a>, <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a>, <a href="../duckplyr/index.html"><span class="CRAN">duckplyr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/edgeR.html" target="_top"><span class="BioC">edgeR</span></a>, <a href="../eyeris/index.html"><span class="CRAN">eyeris</span></a>, <a href="../fabricQueryR/index.html"><span class="CRAN">fabricQueryR</span></a>, <a href="../FakeDataR/index.html"><span class="CRAN">FakeDataR</span></a>, <a href="../ffm/index.html"><span class="CRAN">ffm</span></a>, <a href="../filecacher/index.html"><span class="CRAN">filecacher</span></a>, <a href="../finnts/index.html"><span class="CRAN">finnts</span></a>, <a href="../framework/index.html"><span class="CRAN">framework</span></a>, <a href="../geoarrow/index.html"><span class="CRAN">geoarrow</span></a>, <a href="../geobr/index.html"><span class="CRAN">geobr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/ggspavis.html" target="_top"><span class="BioC">ggspavis</span></a>, <a href="../golfastr/index.html"><span class="CRAN">golfastr</span></a>, <a href="../healthbR/index.html"><span class="CRAN">healthbR</span></a>, <a href="../hubUtils/index.html"><span class="CRAN">hubUtils</span></a>, <a href="../kuzuR/index.html"><span class="CRAN">kuzuR</span></a>, <a href="../laminr/index.html"><span class="CRAN">laminr</span></a>, <a href="../lessR/index.html"><span class="CRAN">lessR</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/limpa.html" target="_top"><span class="BioC">limpa</span></a>, <a href="../marginaleffects/index.html"><span class="CRAN">marginaleffects</span></a>, <a href="../mark/index.html"><span class="CRAN">mark</span></a>, <a href="../mrgsim.parallel/index.html"><span class="CRAN">mrgsim.parallel</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/MSstatsConvert.html" target="_top"><span class="BioC">MSstatsConvert</span></a>, <a href="../nanoarrow/index.html"><span class="CRAN">nanoarrow</span></a>, <a href="../nanoparquet/index.html"><span class="CRAN">nanoparquet</span></a>, <a href="../nc/index.html"><span class="CRAN">nc</span></a>, <a href="../neonstore/index.html"><span class="CRAN">neonstore</span></a>, <a href="../nflreadr/index.html"><span class="CRAN">nflreadr</span></a>, <a href="../noctua/index.html"><span class="CRAN">noctua</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/OmicsMLRepoR.html" target="_top"><span class="BioC">OmicsMLRepoR</span></a>, <a href="../opencpu/index.html"><span class="CRAN">opencpu</span></a>, <a href="../orbital/index.html"><span class="CRAN">orbital</span></a>, <a href="../perspectiveR/index.html"><span class="CRAN">perspectiveR</span></a>, <a href="../pins/index.html"><span class="CRAN">pins</span></a>, <a href="../plumber/index.html"><span class="CRAN">plumber</span></a>, <a href="../plumber2/index.html"><span class="CRAN">plumber2</span></a>, <a href="../pointblank/index.html"><span class="CRAN">pointblank</span></a>, <a href="../positron.tutorials/index.html"><span class="CRAN">positron.tutorials</span></a>, <a href="../r4ds.tutorials/index.html"><span class="CRAN">r4ds.tutorials</span></a>, <a href="../radiant.data/index.html"><span class="CRAN">radiant.data</span></a>, <a href="../RaMS/index.html"><span class="CRAN">RaMS</span></a>, <a href="../RAthena/index.html"><span class="CRAN">RAthena</span></a>, <a href="../receptiviti/index.html"><span class="CRAN">receptiviti</span></a>, <a href="../redquack/index.html"><span class="CRAN">redquack</span></a>, <a href="../rio/index.html"><span class="CRAN">rio</span></a>, <a href="../rMIDAS2/index.html"><span class="CRAN">rMIDAS2</span></a>, <a href="../rtemis/index.html"><span class="CRAN">rtemis</span></a>, <a href="../sakura/index.html"><span class="CRAN">sakura</span></a>, <a href="../Seurat/index.html"><span class="CRAN">Seurat</span></a>, <a href="../sparklyr/index.html"><span class="CRAN">sparklyr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/SpatialFeatureExperiment.html" target="_top"><span class="BioC">SpatialFeatureExperiment</span></a>, <a href="../starvz/index.html"><span class="CRAN">starvz</span></a>, <a href="../tidylaslog/index.html"><span class="CRAN">tidylaslog</span></a>, <a href="../tidyquery/index.html"><span class="CRAN">tidyquery</span></a>, <a href="../tiledb/index.html"><span class="CRAN">tiledb</span></a>, <a href="../toonlite/index.html"><span class="CRAN">toonlite</span></a>, <a href="../topics/index.html"><span class="CRAN">topics</span></a>, <a href="../torchvision/index.html"><span class="CRAN">torchvision</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/tximport.html" target="_top"><span class="BioC">tximport</span></a>, <a href="../vetiver/index.html"><span class="CRAN">vetiver</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/VisiumIO.html" target="_top"><span class="BioC">VisiumIO</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/Voyager.html" target="_top"><span class="BioC">Voyager</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/wiggleplotr.html" target="_top"><span class="BioC">wiggleplotr</span></a>, <a href="../worldmet/index.html"><span class="CRAN">worldmet</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/XeniumIO.html" target="_top"><span class="BioC">XeniumIO</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../CDMConnector/index.html"><span class="CRAN">CDMConnector</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=arrow"><span class="CRAN"><samp>https://CRAN.R-project.org/package=arrow</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

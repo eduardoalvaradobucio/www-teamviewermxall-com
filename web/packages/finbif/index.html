@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package finbif</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=finbif">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interface for the 'Finnish Biodiversity Information Facility' API [R package finbif version 0.9.14]">
+<meta name="citation_author" content="William K. Morris">
+<meta name="citation_publication_date" content="2026-04-17">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=finbif">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=finbif">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="finbif: Interface for the 'Finnish Biodiversity Information Facility' API">
+<meta property="og:description" content="A programmatic interface to the 'Finnish Biodiversity Information Facility' ('FinBIF') API (&amp;lt;&lt;a href=&quot;https://api.laji.fi&quot; target=&quot;_top&quot;&gt;https://api.laji.fi&lt;/a&gt;&amp;gt;). 'FinBIF' aggregates Finnish biodiversity data from multiple sources in a single open access portal for researchers, citizen scientists, industry and government. 'FinBIF' allows users of biodiversity information to find, access, combine and visualise data on Finnish plants, animals and microorganisms. The 'finbif' package makes the publicly available data in 'FinBIF' easily accessible to programmers. Biodiversity information is available on taxonomy and taxon occurrence. Occurrence data can be filtered by taxon, time, location and other variables. The data accessed are conveniently preformatted for subsequent analyses.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=finbif">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>finbif: Interface for the 'Finnish Biodiversity Information Facility'
+API</h2>
+<p>A programmatic interface to the 'Finnish Biodiversity Information
+    Facility' ('FinBIF') API (&lt;<a href="https://api.laji.fi" target="_top">https://api.laji.fi</a>&gt;). 'FinBIF' aggregates
+    Finnish biodiversity data from multiple sources in a single open access
+    portal for researchers, citizen scientists, industry and government.
+    'FinBIF' allows users of biodiversity information to find, access, combine
+    and visualise data on Finnish plants, animals and microorganisms. The
+    'finbif' package makes the publicly available data in 'FinBIF' easily
+    accessible to programmers. Biodiversity information is available on taxonomy
+    and taxon occurrence. Occurrence data can be filtered by taxon, time,
+    location and other variables. The data accessed are conveniently
+    preformatted for subsequent analyses.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.9.14</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../secretbase/index.html"><span class="CRAN">secretbase</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lutz/index.html"><span class="CRAN">lutz</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../vcr/index.html"><span class="CRAN">vcr</span></a> (&ge; 0.6.0), <a href="../webfakes/index.html"><span class="CRAN">webfakes</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.finbif">10.32614/CRAN.package.finbif</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Finnish Museum of Natural History - Luomus
+    <a href="https://ror.org/03tcx6c30" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph],
+  Finnish Biodiversity Information Facility
+    <a href="https://ror.org/01c0yey93" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph],
+  William K. Morris <a href="https://orcid.org/0000-0002-8686-4154" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>William K. Morris  &#x3c;&#x77;&#x69;&#x6c;&#x6c;&#x69;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x6d;&#x6f;&#x72;&#x72;&#x69;&#x73;&#x2e;&#x65;&#x6d;&#x61;&#x69;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/luomus/finbif/issues" target="_top"><span class="GitHub">https://github.com/luomus/finbif/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/luomus/finbif" target="_top"><span class="GitHub">https://github.com/luomus/finbif</span></a>, <a href="https://luomus.github.io/finbif/" target="_top"><span class="GitHub">https://luomus.github.io/finbif/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">finbif citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_finbif.html"><span class="CRAN">finbif results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/finbif.html"><span class="CRAN">finbif.html</span></a> ,  <a href="finbif.pdf"><span class="CRAN">finbif.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/finbif.html"><span class="CRAN">1. Introduction to the finbif package</span></a> (<a href="vignettes/finbif.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/v02_occurrence_data.html"><span class="CRAN">2. Occurrence records from FinBIF</span></a> (<a href="vignettes/v02_occurrence_data.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/v03_selecting_variables.html"><span class="CRAN">3. Selecting and ordering variables</span></a> (<a href="vignettes/v03_selecting_variables.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/v04_metadata.html"><span class="CRAN">4. Metadata</span></a> (<a href="vignettes/v04_metadata.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/v05_filtering.html"><span class="CRAN">5. Filtering occurrence records</span></a> (<a href="vignettes/v05_filtering.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/finbif_0.9.14.tar.gz"> <span class="CRAN"> finbif_0.9.14.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/finbif_0.9.13.zip"><span class="CRAN">finbif_0.9.13.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/finbif_0.9.13.zip"><span class="CRAN">finbif_0.9.13.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/finbif_0.9.13.zip"><span class="CRAN">finbif_0.9.13.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/finbif_0.9.13.tgz"><span class="CRAN">finbif_0.9.13.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/finbif_0.9.13.tgz"><span class="CRAN">finbif_0.9.13.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/finbif_0.9.13.tgz"><span class="CRAN">finbif_0.9.13.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/finbif_0.9.13.tgz"><span class="CRAN">finbif_0.9.13.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/finbif"> <span class="CRAN"> finbif archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=finbif"><span class="CRAN"><samp>https://CRAN.R-project.org/package=finbif</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pcutils</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pcutils">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Some Useful Functions for Statistics and Visualization [R package pcutils version 0.2.8]">
+<meta name="citation_author" content="Chen Peng">
+<meta name="citation_publication_date" content="2025-03-27">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pcutils">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pcutils">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pcutils: Some Useful Functions for Statistics and Visualization">
+<meta property="og:description" content="Offers a range of utilities and functions for everyday programming tasks. 1.Data Manipulation. Such as grouping and merging, column splitting, and character expansion. 2.File Handling. Read and convert files in popular formats. 3.Plotting Assistance. Helpful utilities for generating color palettes, validating color formats, and adding transparency. 4.Statistical Analysis. Includes functions for pairwise comparisons and multiple testing corrections, enabling perform statistical analyses with ease. 5.Graph Plotting, Provides efficient tools for creating doughnut plot and multi-layered doughnut plot; Venn diagrams, including traditional Venn diagrams, upset plots, and flower plots; Simplified functions for creating stacked bar plots, or a box plot with alphabets group for multiple comparison group.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pcutils">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pcutils: Some Useful Functions for Statistics and Visualization</h2>
+<p>Offers a range of utilities and functions for everyday programming tasks. 1.Data
+           Manipulation. Such as grouping and merging, column splitting, and character expansion. 2.File
+           Handling. Read and convert files in popular formats. 3.Plotting Assistance. Helpful utilities
+           for generating color palettes, validating color formats, and adding transparency.
+           4.Statistical Analysis. Includes functions for pairwise comparisons and multiple testing
+           corrections, enabling perform statistical analyses with ease. 5.Graph Plotting, Provides
+           efficient tools for creating doughnut plot and multi-layered doughnut plot; Venn diagrams,
+           including traditional Venn diagrams, upset plots, and flower plots; Simplified functions for
+           creating stacked bar plots, or a box plot with alphabets group for multiple comparison group.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../reshape2/index.html"><span class="CRAN">reshape2</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../agricolae/index.html"><span class="CRAN">agricolae</span></a>, <a href="../clipr/index.html"><span class="CRAN">clipr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../BiocManager/index.html"><span class="CRAN">BiocManager</span></a>, <a href="../ggpubr/index.html"><span class="CRAN">ggpubr</span></a>, <a href="../kableExtra/index.html"><span class="CRAN">kableExtra</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../pagedown/index.html"><span class="CRAN">pagedown</span></a>, <a href="../ggsci/index.html"><span class="CRAN">ggsci</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../grImport2/index.html"><span class="CRAN">grImport2</span></a>, <a href="../rsvg/index.html"><span class="CRAN">rsvg</span></a>, <a href="../PMCMRplus/index.html"><span class="CRAN">PMCMRplus</span></a>, <a href="../nortest/index.html"><span class="CRAN">nortest</span></a>, <a href="../fitdistrplus/index.html"><span class="CRAN">fitdistrplus</span></a>, <a href="../ggalluvial/index.html"><span class="CRAN">ggalluvial</span></a>, gghalves, <a href="../ggspatial/index.html"><span class="CRAN">ggspatial</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a>, <a href="../ggimage/index.html"><span class="CRAN">ggimage</span></a>, <a href="../ggpmisc/index.html"><span class="CRAN">ggpmisc</span></a>, <a href="../UpSetR/index.html"><span class="CRAN">UpSetR</span></a>, <a href="../eulerr/index.html"><span class="CRAN">eulerr</span></a>, <a href="../plotrix/index.html"><span class="CRAN">plotrix</span></a>, <a href="../vegan/index.html"><span class="CRAN">vegan</span></a>, <a href="../circlize/index.html"><span class="CRAN">circlize</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a>, <a href="../relaimpo/index.html"><span class="CRAN">relaimpo</span></a>, <a href="../snow/index.html"><span class="CRAN">snow</span></a>, <a href="../doSNOW/index.html"><span class="CRAN">doSNOW</span></a>, <a href="../foreach/index.html"><span class="CRAN">foreach</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../ggraph/index.html"><span class="CRAN">ggraph</span></a>, <a href="../ggrepel/index.html"><span class="CRAN">ggrepel</span></a>, <a href="../treemap/index.html"><span class="CRAN">treemap</span></a>, <a href="../voronoiTreemap/index.html"><span class="CRAN">voronoiTreemap</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../multcompView/index.html"><span class="CRAN">multcompView</span></a>, <a href="../rio/index.html"><span class="CRAN">rio</span></a>, <a href="../bookdown/index.html"><span class="CRAN">bookdown</span></a>, <a href="../sysfonts/index.html"><span class="CRAN">sysfonts</span></a>, <a href="../showtext/index.html"><span class="CRAN">showtext</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../r.proxy/index.html"><span class="CRAN">r.proxy</span></a>, <a href="../openssl/index.html"><span class="CRAN">openssl</span></a>, <a href="../styler/index.html"><span class="CRAN">styler</span></a>, <a href="../lintr/index.html"><span class="CRAN">lintr</span></a>, <a href="../aplot/index.html"><span class="CRAN">aplot</span></a>, <a href="../ggbeeswarm/index.html"><span class="CRAN">ggbeeswarm</span></a>, <a href="../ggVennDiagram/index.html"><span class="CRAN">ggVennDiagram</span></a>, <a href="../gifski/index.html"><span class="CRAN">gifski</span></a>, <a href="../ggnewscale/index.html"><span class="CRAN">ggnewscale</span></a>, <a href="../revtools/index.html"><span class="CRAN">revtools</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-03-27</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pcutils">10.32614/CRAN.package.pcutils</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Chen Peng <a href="https://orcid.org/0000-0002-9449-7606" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chen Peng  &#x3c;&#x70;&#x65;&#x6e;&#x67;&#x63;&#x68;&#x65;&#x6e;&#x32;&#x30;&#x30;&#x31;&#x20;&#x61;&#x74;&#x20;&#x7a;&#x6a;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#x6e;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Asa12138/pcutils/issues" target="_top"><span class="GitHub">https://github.com/Asa12138/pcutils/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Asa12138/pcutils" target="_top"><span class="GitHub">https://github.com/Asa12138/pcutils</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pcutils.html"><span class="CRAN">pcutils results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pcutils.html"><span class="CRAN">pcutils.html</span></a> ,  <a href="pcutils.pdf"><span class="CRAN">pcutils.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pcutils_0.2.8.tar.gz"> <span class="CRAN"> pcutils_0.2.8.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pcutils_0.2.8.zip"><span class="CRAN">pcutils_0.2.8.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pcutils_0.2.8.zip"><span class="CRAN">pcutils_0.2.8.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pcutils_0.2.8.zip"><span class="CRAN">pcutils_0.2.8.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pcutils_0.2.8.tgz"><span class="CRAN">pcutils_0.2.8.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/pcutils_0.2.8.tgz"><span class="CRAN">pcutils_0.2.8.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pcutils_0.2.8.tgz"><span class="CRAN">pcutils_0.2.8.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pcutils_0.2.8.tgz"><span class="CRAN">pcutils_0.2.8.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pcutils"> <span class="CRAN"> pcutils archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../MetaNet/index.html"><span class="CRAN">MetaNet</span></a>, <a href="../pctax/index.html"><span class="CRAN">pctax</span></a>, <a href="../plot4fun/index.html"><span class="CRAN">plot4fun</span></a>, <a href="../ReporterScore/index.html"><span class="CRAN">ReporterScore</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pcutils"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pcutils</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
