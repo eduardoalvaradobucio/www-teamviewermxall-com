@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - Library</title>
+
+    <script src="/lib/angular.js"></script>
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+
+    <link rel="stylesheet" href="/design/header.css">
+    <link rel="stylesheet" href="/design/footer.css">
+    <link rel="stylesheet" href="/design/common.css">
+
+    <link rel="stylesheet" href="/design/versionofaprogram/versionofaprogram.css">
+
+    <script src="/common/common.js"></script>
+    <script src="/common/languages.js"></script>
+    <script>var data = {"name":"JSON","version":{"major":0e0,"minor":5,"patch":12,"snapshot":false},"organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.datastructures.interchange","runtimeDependencies":[{"name":"references","version":{"major":0e0,"minor":1,"patch":5,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.datastructures.basic"},{"name":"strings","version":{"major":0e0,"minor":9,"patch":16,"snapshot":false},"prefix":"str","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.datastructures.basic"},{"name":"numbers","version":{"major":0e0,"minor":1,"patch":32,"snapshot":false},"prefix":"n","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"mathematics.arithmetic.numbers"},{"name":"math","version":{"major":0e0,"minor":1,"patch":20,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"mathematics.arithmetic.commonfunctions"},{"name":"arrays","version":{"major":0e0,"minor":9,"patch":7,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.algorithms.arrays"},{"name":"Characters","version":{"major":0e0,"minor":1,"patch":4,"snapshot":false},"prefix":"char","organizationNamespace":"no.inductive.libraries","scientificNamespace":"computerscience.datastructures.basic"},{"name":"DataStructures","version":{"major":0e0,"minor":1,"patch":5,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.libraries","scientificNamespace":"computerscience.datastructures.basic"},{"name":"lists","version":{"major":0e0,"minor":1,"patch":14,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.datastructures.basic"}],"developmentDependencies":[{"name":"testing","version":{"major":0e0,"minor":1,"patch":8,"snapshot":false},"prefix":"","organizationNamespace":"no.inductive.idea10.programs","scientificNamespace":"computerscience.development.testing"}],"runtimeFunctions":["JSONCompare","JSONCompareElements","JSONCompareArrays","JSONCompareObjects","FreeStringReferenceArray","WriteJSON","WriteJSONPretty","WriteJSONPrettyBinary","CreateDefaultWriterSettings","WriteJSONWithOptions","WriteBooleanValue","WriteNumber","WriteArray","WriteString","JSONEscapeString","JSONEscapedStringLength","JSONEscapeCharacter","JSONMustBeEscaped","WriteObject","WriteJSONFromStruct","WriteJSONFromArray","ReadJSON","GetJSONValue","GetJSONValueRecursive","GetJSONObject","GetJSONArray","JSONTokenize","GetJSONNumberToken","IsValidJSONNumber","IsValidJSONNumberAfterSign","IsValidJSONNumberAdvancePastDigits","IsValidJSONNumberFromDotOrExponent","IsValidJSONNumberFromExponent","IsJSONNumberCharacter","GetJSONPrimitiveName","GetJSONString","IsValidJSONString","IsValidJSONStringInJSON","IsJSONIllegalControllCharacter","IsValidJSON","MatchTypesWithStrings","MatchTypesString","MatchTypes","NumberExistsAndIsPositive","StringExistsAndIsFromList","GetNumberFromStructPath","GetBooleanFromStructPath","GetStringFromStructPath","GetDataFromPath","ParsePath","LastIndexOfString","IndexString","CollectStringsFromPath","CollectBooleansFromPath","CollectNumbersFromPath","CollectDataFromPath","ComputeJSONStringLength","ComputeJSONBooleanStringLength","ComputeJSONNumberStringLength","ComputeJSONArrayStringLength","ComputeJSONObjectStringLength"],"developmentFunctions":["TestEscaper","mapTo","mapXTo","mapbTo","TestWriter","CreateExampleJSON","TestWriterEscape","TestWriter2","TestWriter3","TestReader","Test2","TestReaderExample","JSONExample","TestReader2","test","TestValidator","TestComparator","TestTypeMatcher","TestTypeCheck","TestTypeSubtype","TestPathLookup","TestTokenizer1"],"runtimeDataStructures":["WriterSettings"],"developmentDataStructures":["Example","X"],"rootFolders":{},"rootFiles":{},"hasDocumentation":true,"documentationHTML":"<p>This library is for reading and writing <a href=\"https:\/\/www.json.org\/\">JSON<\/a>. Because it has been created using progsbase, it is available in 12 programming languages and behaves the same in every one.<\/p>\n<h4>Quick Start - Java and Maven<\/h4>\n<p>Add the following to your POM:<\/p>\n<pre><code>&lt;dependency&gt;\n    &lt;groupId&gt;com.progsbase.libraries&lt;\/groupId&gt;\n    &lt;artifactId&gt;JSON&lt;\/artifactId&gt;\n    &lt;version&gt;0.4.0&lt;\/version&gt;\n&lt;\/dependency&gt;\n<\/code><\/pre>\n<p>You can read and write JSON to and from a class:<\/p>\n<pre><code>Example e = JSONReflectiveReader.readJSON(str, Example.class);\nString str = JSONReflectiveWriter.writeJSON(e);\n<\/code><\/pre>\n<p>Or you can read or write JSON to and from a general Object, List<Object> and Map&lt;String, Object&gt;:<\/p>\n<pre><code>Object o = JSONObjectReader.readJSON(str);\nString str2 = JSONObjectWriter.writeJSON(o);\n<\/code><\/pre>\n<p>Here is an example of reading a generic class:<\/p>\n<pre><code>List&lt;List&lt;Double&gt;&gt; e = JSONReflectiveReader.readJSON(\n    &quot;[[1.1, 2, 3], [1, 2, 3], [1, 2, 3]]&quot;, \n    List.class, \n    new GenericTypeGetter&lt;List&lt;List&lt;Double&gt;&gt;&gt;(){}.getType()\n);\n<\/code><\/pre>\n<h4>Quick Start - All languages<\/h4>\n<ul>\n<li>Goto &quot;Download&quot; below and select the programming language. Include the source in your project.<\/li>\n<li>Goto <a href=\".\/\/\/JSONExample\/\">this example<\/a> and select your language to see how to use the library.<\/li>\n<\/ul>\n<h4>About<\/h4>\n<p>JSON is a textual representation of a structure with maps and arrays.<\/p>\n<p>The two main functions are <a href=\".\/\/\/ReadJSON\">ReadJSON<\/a>, which reads JSON into an Data data structure, and <a href=\".\/\/\/WriteJSON\">WriteJSON<\/a>, which writes an Data data structure to JSON. If there is a problem reading the JSON, the errorMessages array will contain one or more error messages.<\/p>\n<ul>\n<li><a href=\".\/\/\/ReadJSON\">ReadJSON<\/a><\/li>\n<li><a href=\".\/\/\/WriteJSON\">WriteJSON<\/a><\/li>\n<\/ul>\n<p>The keys of the map must be strings. The values can be primitives, maps or arrays. An array can contain any combination of primitives, map and arrays.<\/p>\n<p>The primitives supported by JSON are strings, numbers, booleans and null.<\/p>\n<p>The JSON is read into general maps and arrays. Languages with reflection can put the elements of a map into the elements of a data structure with the same name. Languages with dynamic typing has native support for maps and arrays with mixed types. <a href=\"https:\/\/progsbase.com\">Progsbase<\/a> neither has reflection nor dynamic typing, so it reads the data into general maps and arrays. The values of the map and the contents of the arrays are elements that can either be one of the primitives, maps or arrays.<\/p>\n<p>Some useful internal functions of this library are:<\/p>\n<ul>\n<li><a href=\".\/\/\/IsValidJSON\">IsValidJSON<\/a> - Checks whether a string is valid JSON.<\/li>\n<li><a href=\".\/\/\/JSONCompare\">JSONCompare<\/a> - Compares two JSON strings for equality. Two JSON strings are equal if they hold the same data according to the JSON standard.<\/li>\n<li><a href=\".\/\/\/IsValidJSONString\">IsValidJSONString<\/a> - Checks whether a string is a valid JSON string.<\/li>\n<li><a href=\".\/\/\/IsValidJSONNumber\">IsValidJSONNumber<\/a> - Checks whether a string is a valid JSON number.<\/li>\n<li><a href=\".\/\/\/JSONTokenize\">JSONTokenize<\/a> - Creates an array of valid JSON tokens.<\/li>\n<\/ul>\n<h4>Standards compliance<\/h4>\n<p>This implementation is compliant with the JSON standard <a href=\"https:\/\/tools.ietf.org\/html\/rfc8259\">RFC 8259<\/a>.<\/p>\n<p>It passes the following <a href=\"https:\/\/github.com\/nst\/JSONTestSuite\">test suite<\/a> titled &quot;A comprehensive test suite for RFC 8259 compliant JSON parsers&quot;. This library accepts all the test cases which the author of the test suite says implementations are free to accept or reject.<\/p>\n<h4>Tests<\/h4>\n<p>Run the <a href=\".\/\/\/test\">tests<\/a> for the JavaScript version of the library directly in your browser now.<\/p>\n<ul>\n<li><a href=\".\/\/\/test\">tests<\/a><\/li>\n<\/ul>\n","isPrivate":false,"hasNPMURL":false,"npmURL":"","hasNuGetURL":false,"nuGetURL":"","hasReward":false,"reward":"","jobprovider":""}</script>
+    <script src="/browserpages/versionofaprogram/versionofaprogram.js"></script>
+
+    <link rel="icon" type="image/png" href="/design/icons/favicon.png" />
+
+    <link rel="canonical" href="https://repo.progsbase.com/repoviewer/no.inductive.idea10.programs/JSON/latest/" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120901997-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120901997-1');
+    </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         greeting_dialog_display='hide'
+         page_id="1772758836115059"
+         logged_in_greeting="Have any questions about progsbase?"
+         logged_out_greeting="Have any questions about progsbase?"
+    >
+    </div>
+</head>
+<body ng-app="VersionOfProgramApp" ng-cloak="">
+
+<div ng-include="'/design/header.html'"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+
+<div ng-controller="VersionOfProgramController">
+    <h1 class="h3">{{prog.name}} <span ng-if="prog.isPrivate" title="Private Library">&#x1F512</span></h1>
+    <a href="/">Libraries</a> &gt; JSON Library &gt; <a href="..">v{{versionToString(prog.version)}}</a>
+    <!--<div><small><span ng-if="prog.organizationNamespace">{{prog.organizationNamespace}}</span> - <span ng-if="prog.scientificNamespace">{{prog.scientificNamespace}}</span></small></div>-->
+
+    <div ng-if="prog.hasReward">
+        <hr>
+        <h4>Job &#x1F4B0</h4>
+        <p>
+        <div><b>Reward</b>: ${{prog.reward}}</div>
+        <div><b>Provider</b>: {{prog.jobprovider}}</div>
+        <div><b>Download</b>:
+            <a
+                    href="?view=bundle&accept=text/html;subtype=text/plain;subsubtype=JavaProject;subtypeversion=5"
+                    download="{{prog.name}}-project-package.zip"
+            >
+                Project Package
+            </a>
+        </div>
+        </p>
+
+        <p>Implement this library and instantly earn ${{prog.reward}}. Job is provided by {{prog.jobprovider}}.</p>
+        <p>&#9432; Download the project package and start implementing the solution. When you have implemented a solution, use the progsbase client to submit your implementation. Our systems will run a test suite created by the job provider. If the tests succeed, you will instantly be granted the reward. The first to submit a solution that passes the test suite gets the reward. Rewards are transferred to the <a href="https://www.paypal.com/">PayPal</a> account with the email registered in your profile the next business day at 18:00 CET.</p>
+        <p>
+            The only things you need are JDK 7 or higher, the <a href="https://www.progsbase.com/downloads/">progsbase client</a> and a text editor.
+            <ol>
+                <li>Download and unzip the project package above.</li>
+                <li>In <tt>{{prog.name}}/{{prog.name}}/</tt> run <tt>progsbase importdeps Java IDE</tt> to import dependencies.</li>
+                <li>To compile run: <tt>javac ../RunTests.java -sourcepath main/:test/:../imports/ -d ../target</tt></li>
+                <li>To run the tests: <tt>java -cp ../target RunTests</tt></li>
+                <li>Remove <tt>-SNAPSHOT</tt> from the version number. e.g. if the version is "0.1.1-SNAPSHOT", make it "0.1.1".</li>
+                <li>When you are done, you can claim the reward by running: <tt>progsbase upload</tt>. The tests will be run and if all pass, you will receive the reward.</li>
+
+            </ol>
+        </p>
+
+        <div><b>RunTests.java</b></div>
+        <pre>public class RunTests{
+    public static void main(String [] args){
+        System.out.println(tests.tests.test());
+    }
+}</pre>
+
+        <hr>
+    </div>
+
+    <div ng-show="!prog.hasReward">
+        <hr>
+        <div>Reuse or develop this library:</div>
+        <ul>
+            <li ng-if="prog.hasNPMURL"><a ng-href="{{prog.npmURL}}">NPM</a></li>
+            <li ng-if="prog.hasNuGetURL"><a ng-href="{{prog.nuGetURL}}">NuGet</a></li>
+            <li><a href="javascript:void(0)" ng-click="ExpandAndScrollToDownload();">Download</a></li>
+        </ul>
+    </div>
+
+    <div ng-show="hasDocumentation">
+        <hr>
+        <h2 ng-show="docs.show" class="h5">Documentation <button ng-click="hidedocs()" class="btn btn-outline-secondary btn-sm">Hide</button></h2>
+        <div ng-show="docs.show" ng-bind-html="documentationHTML" class="documentation"></div>
+        <button ng-show="!docs.show" ng-click="showdocs()" class="btn btn-outline-secondary btn-sm">Show Documentation</button>
+        <hr>
+    </div>
+
+    <div>
+        <h2 class="h5">Test Results</h2>
+        <div>
+            <div ng-show="!runningtests && !testsavailable">
+                <button ng-click="RunTests()">Run tests for all languages</button>
+            </div>
+            <div ng-show="runningtests">
+                &#9203; running tests for all languages...
+            </div>
+            <div ng-show="testsavailable">
+                <table>
+                    <tr>
+                        <th>Language</th>
+                        <th>Result</th>
+                        <th>Failures</th>
+                        <th>Time (s)</th>
+                    </tr>
+                    <tr ng-repeat="tr in testresults track by $index">
+                        <td title="{{tr.version}}">{{tr.language}}</td>
+                        <td style="text-align: center;">
+                            <span ng-show="tr.success" style="color: green">&#10004;</span>
+                            <span ng-show="!tr.success" style="color: red">&#10006;</span>
+                        </td>
+                        <td style="text-align: right;">{{tr.failures}}</td>
+                        <td style="text-align: right;">{{tr.time}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs marginedbox">
+        <li class="nav-item">
+            <a class="nav-link" ng-class="{active: selected == 'functionsanddatastructures'}" ng-click="selected = 'functionsanddatastructures'" href="javascript:void(0)">
+                Functions and Data Structures
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" ng-class="{active: selected == 'dependencies'}" ng-click="selected = 'dependencies'" href="javascript:void(0)">Dependencies</a>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" ng-class="{active: selected == 'filesandfolders'}" ng-click="selected = 'filesandfolders'" href="javascript:void(0)">Files and folders</a>
+        </li>-->
+        <li class="nav-item">
+            <a name="download" class="nav-link" ng-class="{active: selected == 'download'}" ng-click="selected = 'download'" href="javascript:void(0)">Download</a>
+        </li>
+    </ul>
+
+    <div ng-show="selected == 'functionsanddatastructures'">
+        <ul class="nav nav-tabs marginedbox">
+            <li class="nav-item">
+                <a class="nav-link" ng-class="{active: subselected == 'runtime'}" ng-click="setSubselected('runtime')" href="javascript:void(0)">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ng-class="{active: subselected == 'test'}" ng-click="setSubselected('test')" href="javascript:void(0)">Test</a>
+            </li>
+        </ul>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <table class="table table-sm marginedbox">
+                        <thead>
+                            <tr>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="f in prog.functions | orderBy: 'toString()'">
+                                <td>
+                                    <a ng-href="{{location}}//{{f}}">{{f}}</a>
+                                </td>
+                            </tr>
+                            <tr ng-show="prog.functions.length == 0">
+                                <td>
+                                    <i>None</i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-sm-6">
+
+                    <table class="table table-sm marginedbox">
+                        <thead>
+                        <tr>
+                            <th>Data Structure</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="ds in prog.dataStructures | orderBy: 'toString()'">
+                            <td>
+                                <a ng-href="{{location}}//{{ds}}">{{ds}}</a>
+                            </td>
+                        </tr>
+                        <tr ng-show="prog.dataStructures.length == 0">
+                            <td>
+                                <i>None</i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div ng-show="selected == 'dependencies'">
+
+        <ul class="nav nav-tabs marginedbox">
+            <li class="nav-item">
+                <a class="nav-link" ng-class="{active: subselected == 'runtime'}" ng-click="setSubselected('runtime')" href="javascript:void(0)">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ng-class="{active: subselected == 'test'}" ng-click="setSubselected('test')" href="javascript:void(0)">Test</a>
+            </li>
+        </ul>
+
+        <table class="table table-sm marginedbox">
+            <thead>
+                <th>Program</th>
+                <th>v.</th>
+                <th>Organization Namespace</th>
+                <th>Scientific Namespace</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dep in prog.dependencies">
+                    <td>
+                        <a ng-href="/repoviewer/{{dep.organizationNamespace}}/{{dep.name}}/{{versionToString(dep.version)}}">
+                            {{dep.name}}
+                        </a>
+                    </td>
+                    <td>
+                        {{versionToString(dep.version)}}
+                    </td>
+                    <td>
+                        {{dep.organizationNamespace}}
+                    </td>
+                    <td>
+                        {{dep.scientificNamespace}}
+                    </td>
+                </tr>
+                <tr ng-if="prog.dependencies.length == 0">
+                    <td>
+                        <i>None</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-show="selected == 'filesandfolders'" class="marginedbox">
+        <div ng-repeat="f in prog.rootFolders">
+            <a ng-href="{{location}}{{f}}">{{f}}/</a>
+        </div>
+        <div ng-repeat="f in prog.rootFiles">
+            <a ng-href="{{location}}/{{f}}">{{f}}</a>
+        </div>
+        <div ng-if="prog.rootFolders.length == 0 && prog.rootFiles.length == 0">
+            <i>None</i>
+        </div>
+    </div>
+
+    <div id="download"></div>
+    <div ng-show="selected == 'download'" class="marginedbox">
+        <h4>Download with the progsbase Tool</h4>
+        <p>Add this to your info.json to include this library as a dependency. Then, use the <a href="https://www.progsbase.com/downloads/">progsbase tool</a> to download the dependency.</p>
+        <pre>["", "{{prog.organizationNamespace}}", "{{prog.name}}", "{{versionToString(prog.version)}}"]</pre>
+
+        <h4>Download for Development</h4>
+        <p>This download includes the source code for the project. Currently, only Java is supported as an input language to progsbase. Check out <a href="https://www.progsbase.com/tutorials/develop-progsbase-code-using-the-command-line/">this tutorial</a> on how to build, test and run the project.</p>
+        <ul>
+            <li>
+                <a
+                        href="?view=bundle&accept=text/html;subtype=text/plain;subsubtype=JavaProject;subtypeversion=5"
+                        download="{{prog.name}}-project-package.zip"
+                >
+                    Java Project Package
+                </a>
+            </li>
+        </ul>
+
+        <h4>Download for Reuse</h4>
+        <p>These downloads include the whole library and all dependencies. Everything you need to use the library is included. More options are available with the <a href="https://www.progsbase.com">progsbase tool</a>.</p>
+        <ul>
+            <li ng-repeat="language in languages">
+                <span ng-if="language.versions.length == 1">
+                    <a
+                            href="?view=bundle&accept={{language.mime}};{{getVersionType(language)}}={{language.versions[0]}}"
+                            download="{{prog.name}}.{{language.extension}}"
+                    >
+                        {{language.name}}
+                    </a>
+                </span>
+                <span ng-if="language.versions.length > 1">
+                    {{language.name}}
+                    <span ng-repeat="version in language.versions">
+                        <a
+                                href="?view=bundle&accept={{language.mime}};{{getVersionType(language)}}={{version}}"
+                                download="{{prog.name}}.{{language.extension}}"
+                        >{{version}}</a><span ng-if="$index + 1 < language.versions.length">,</span>
+                    </span>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a
+                            href="?view=bundle&accept=text/html;subtype=text/plain;subsubtype=AST;subtypeversion=1"
+                            download="{{prog.name}}.json"
+                    >
+                        Abstract Syntax Tree (AST) in JSON format
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a
+                            href="?view=bundle&accept=text/html;subtype=text/plain;subsubtype=NPM;subtypeversion=6"
+                            download="{{prog.name}}-npm.zip"
+                    >
+                        NPM package
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a
+                            href="?view=bundle&accept=text/html;subtype=text/plain;subsubtype=NuGet;subtypeversion=5"
+                            download="{{prog.name}}-nuget.zip"
+                    >
+                        NuGet package
+                    </a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div ng-include="'/design/footer.html'"></div>
+
+</body>
+</html>
