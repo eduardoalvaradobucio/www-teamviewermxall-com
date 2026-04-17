@@ -1,0 +1,128 @@
+ul.tree-view .package,
+ul.tree-view .module {
+	margin-left: -18px;
+	padding-left: 18px;
+	background-repeat: no-repeat;
+	background-position: 1px center;
+	background-size: 15px 15px;
+}
+
+ul.tree-view .package {
+	background-image: url(../images/ddox/package.png);
+	cursor: default;
+}
+
+ul.tree-view .package:hover {
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+ul.tree-view .module {
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/ddox/module.png);
+}
+
+ul.tree-view .module > a {
+	display: block;
+}
+
+ul.tree-view .module.selected, ul.tree-view .package.selected { font-weight: bold; }
+ul.tree-view .module.selected { background-image: url(../images/ddox/module.png); }
+
+ul.tree-view li.collapsed ul { display: none; }
+
+#bs-main nav.bs-local ul.tree-view {
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.tree-view li {
+	padding-left: 18px;
+	padding-right: 4px;
+}
+
+ul.tree-view ul {
+	margin: 0;
+	padding: 0;
+}
+
+a.protected {
+	font-style: italic;
+	background-image: url(../images/ddox/protected.png);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+}
+a.package {
+	font-style: italic;
+	background-image: url(../images/ddox/package.png);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+}
+a.private {
+	font-style: italic;
+	background-image: url(../images/ddox/private.png);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+}
+a.inherited:after { content: url(../images/ddox/inherited.png); padding-left: 2pt; }
+
+td { padding: 1.5pt 3pt; }
+td:first-child { padding-left: 0; }
+
+td.typecol {
+	max-width: 200pt;
+	overflow: auto;
+}
+
+nav.page-nav ul { list-style: none; padding-left: 0; }
+nav.page-nav li a { color: black; }
+nav.page-nav li:before { content: "▼"; padding-right: 3px; }
+
+.prototype {
+	margin: 1em 0;
+	border-left: 0.5em solid #eee;
+	padding-left: 0.5em;
+}
+
+.tableEntryAnnotation, .decoration { color: #888; }
+.tableEntryAnnotation { margin-left: 0.5em; }
+
+.license-info { border-top: 2px solid #eee; width: 100%; margin-top: 20pt; }
+.license-info { margin-top: 2em; color: #888; }
+.license-info p { display: inline; }
+
+#symbolSearchResults, #symbolSearch {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#bs-main nav.bs-local ul#symbolSearchResults {
+	position: absolute;
+	list-style: none;
+	padding: 0.5em;
+	margin: 0;
+	overflow: hidden;
+	background: white;
+	min-width: 20em;
+	border: 1px solid #ddd;
+	box-shadow: 0px 5px 20px 0 rgba(0,0,0,0.5);
+}
+#bs-main #symbolSearchResults li {
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 18px;
+}
+
+#symbolSearchResults .deprecated a { color: gray; }
+#symbolSearchResults .module { background-image: url(../images/ddox/module.png); }
+#symbolSearchResults .functiondeclaration { background-image: url(../images/ddox/function.png); }
+#symbolSearchResults .classdeclaration { background-image: url(../images/ddox/class.png); }
+#symbolSearchResults .interfacedeclaration { background-image: url(../images/ddox/interface.png); }
+#symbolSearchResults .structdeclaration { background-image: url(../images/ddox/struct.png); }
+#symbolSearchResults .variabledeclaration { background-image: url(../images/ddox/variable.png); }
+#symbolSearchResults .property { background-image: url(../images/ddox/property.png); }
+#symbolSearchResults .enumdeclaration { background-image: url(../images/ddox/enum.png); }
+#symbolSearchResults .enummemberdeclaration { background-image: url(../images/ddox/enummember.png); }
+#symbolSearchResults .aliasdeclaration { background-image: url(../images/ddox/alias.png); }
+#symbolSearchResults .templatedeclaration { background-image: url(../images/ddox/template.png); }

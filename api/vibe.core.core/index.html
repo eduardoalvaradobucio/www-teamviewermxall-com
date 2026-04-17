@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../../styles/normalize.css"/>
+		<link rel="stylesheet" href="../../styles/bootstrap.css"/>
+		<script src="../../scripts/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js"></script><script type="text/javascript" src="../../scripts/ddox.js"></script><title>Module vibe.core.core - vibe.d</title>
+		<link rel="stylesheet" href="../../styles/vibelog.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/default.css" type="text/css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/feed/rss"/>
+		<script src="../../prettify/prettify.js"></script>
+		<meta name="viewport" content="width = device-width"/>
+		<meta name="keywords" lang="en" content="vibe framework, asynchronous, event based, web framework, network library"/>
+		<meta name="keywords" lang="de" content="vibe framework, asynchron, ereignis-basiert, web framework, netzwerk-bibliothek"/>
+	</head>
+	<body class="bs-blue">
+		<div class="bs-hl"></div><div class="bs-hr"></div><header>
+			<div id="logo-line">
+				<a class="logo-title-link" href="https://vibed.org/">
+					<img id="title" src="../../images/title-new.png" width="262" height="97" alt="vibe.d beta banner"/>
+				</a>
+				<a class="download-button" href="https://code.dlang.org/packages/vibe-d/0.10.1">
+					<div class="bs-hbtn right black">
+						<div class="content">get <strong>vibe.d</strong><br><large>0.10.1</large></div>
+					</div><div class="bs-hbtn left red">
+						<div class="dub-logo"></div>
+					</div></a>
+				<p id="slogan">
+					Asynchronous I/O that doesn’t get in your way, written in <a href="https://dlang.org" target="_blank">D</a>
+				</p>
+			</div>
+		</header><div id="bs-main" class="bs-leftnav">
+			<nav>
+				<nav id="global-nav">
+					<ul>
+						<li class="nav-home">
+							<a class="" href="../../">Home</a>
+						</li>
+						<li class="nav-blog">
+							<a class="" href="../../blog">News</a>
+						</li>
+						<li class="nav-features">
+							<a class="" href="../../features">Features</a>
+						</li>
+						<li class="nav-tutorials">
+							<a class="" href="../../tutorials">Tutorials</a>
+						</li>
+						<li class="nav-docs">
+							<a class="" href="../../docs">Documentation</a>
+						</li>
+						<li class="nav-community">
+							<a class="" href="../../community">Community</a>
+						</li>
+						<li class="nav-get-involved">
+							<a class="" href="../../get-involved">Get involved</a>
+						</li>
+						<li class="nav-download">
+							<a class="" href="../../download">Download</a>
+						</li>
+						<li class="nav-about">
+							<a class="" href="../../about">About</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="document-nav" class="bs-local">
+					<noscript>
+						<p style="color: red">The search functionality needs JavaScript enabled</p>
+					</noscript>
+					<div id="symbolSearchPane" style="">
+						<form action="../search" method="GET">
+							<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+						</form>
+						<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+					</div>
+					<div class="bs-separator">
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">diet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../diet.defs/">defs</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.dom/">dom</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.input/">input</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.parser/">parser</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.traits/">traits</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">eventcore
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../eventcore.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.driver/">driver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.socket/">socket</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">
+									<a href="../taggedalgebraic/">taggedalgebraic</a>
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedalgebraic/">taggedalgebraic</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedunion/">taggedunion</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.visit/">visit</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">vibe
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">container
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.ringbuffer/">ringbuffer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.seahash/">seahash</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">core
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.internal.release/">release</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.args/">args</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.channel/">channel</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.concurrency/">concurrency</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.connectionpool/">connectionpool</a>
+								</div>
+							</li>
+							<li>
+								<div class="module selected">
+									<a href="../vibe.core.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.file/">file</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.net/">net</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.parallelism/">parallelism</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.path/">path</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.process/">process</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.stream/">stream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.sync/">sync</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.task/">task</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.taskpool/">taskpool</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">crypto
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.crypto.cryptorand/">cryptorand</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">data
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.bson/">bson</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.json/">json</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.serialization/">serialization</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">db
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">mongo
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">impl
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.crud/">crud</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.index/">index</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.collection/">collection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.connection/">connection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.cursor/">cursor</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.database/">database</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.flags/">flags</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.mongo/">mongo</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sasl/">sasl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.settings/">settings</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">redis
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.idioms/">idioms</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.redis/">redis</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.types/">types</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">http
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">auth
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.basic_auth/">basic_auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.digest_auth/">digest_auth</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.internal.basic_auth_client/">basic_auth_client</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.dist/">dist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.fileserver/">fileserver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.form/">form</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.proxy/">proxy</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.router/">router</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.server/">server</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.session/">session</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.status/">status</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.websockets/">websockets</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">inet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.message/">message</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.mimetypes/">mimetypes</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.url/">url</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.urltransfer/">urltransfer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.webform/">webform</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">mail
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.mail.smtp/">smtp</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">stream
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.base64/">base64</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.botan/">botan</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.bufferedstream/">bufferedstream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.cached/">cached</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.counting/">counting</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.memory/">memory</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.multicast/">multicast</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.openssl/">openssl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.operations/">operations</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.semaphore/">semaphore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.stdio/">stdio</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.taskpipe/">taskpipe</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.tls/">tls</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.wrapper/">wrapper</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.zlib/">zlib</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">textfilter
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.markdown/">markdown</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.urlencode/">urlencode</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">utils
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.array/">array</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.string/">string</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.validation/">validation</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">web
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.auth/">auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.i18n/">i18n</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rest/">rest</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rpc/">rpc</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.validation/">validation</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.web/">web</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.d/">d</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.vibe/">vibe</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+					</div>
+					<script>setupDdox();</script>
+					<div id="api-version-selector" class="bs-separator">
+						<ul>
+							<li class="selected"><a href="../../api/vibe.core.core/">current</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.9.8/vibe.core.core/">0.9.8</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.8.6/vibe.core.core/">0.8.6</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.10.1/vibe.core.core/">0.10.1</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+			<section>
+				<div id="maincontent">
+					<h1>Module vibe.core.core</h1><p>This module contains the core functionality of the vibe.d framework.
+</p><section></section>
+
+					<section></section>
+					<section>
+						<h2>Functions</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createFileDescriptorEvent" class="public" href="../vibe.core.core/createFileDescriptorEvent">createFileDescriptorEvent</a><span class="tableEntryAnnotation">(file_descriptor, event_mask)</span>
+									</code>
+								</td>
+								<td>Creates an event to wait on an existing file descriptor.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createLeanTimer" class="public" href="../vibe.core.core/createLeanTimer">createLeanTimer</a><span class="tableEntryAnnotation">(callback)</span>
+									</code>
+								</td>
+								<td>Creates a new timer with a lean callback mechanism.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createTimer" class="public" href="../vibe.core.core/createTimer">createTimer</a><span class="tableEntryAnnotation">(callback)</span>
+									</code>
+								</td>
+								<td>Creates a new timer without arming it.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="disableDefaultSignalHandlers" class="public" href="../vibe.core.core/disableDefaultSignalHandlers">disableDefaultSignalHandlers</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Disables the signal handlers usually set up by vibe.d.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="exitEventLoop" class="public" href="../vibe.core.core/exitEventLoop">exitEventLoop</a><span class="tableEntryAnnotation">(shutdown_all_threads)</span>
+									</code>
+								</td>
+								<td>Stops the currently running event loop.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="hibernate" class="public" href="../vibe.core.core/hibernate">hibernate</a><span class="tableEntryAnnotation">(on_interrupt)</span>
+									</code>
+								</td>
+								<td>Suspends the execution of the calling task until <code class="lang-d"><a href="../vibe.core.core/switchToTask"><span class="pln">switchToTask</span></a></code> is called
+	manually.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="logicalProcessorCount" class="public property" href="../vibe.core.core/logicalProcessorCount">logicalProcessorCount</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Determines the number of logical processors in the system.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="lowerPrivileges" class="public" href="../vibe.core.core/lowerPrivileges">lowerPrivileges</a><span class="tableEntryAnnotation">(uname, gname)</span>
+									</code>
+								</td>
+								<td>Sets the effective user and group ID to the ones configured for privilege lowering.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="lowerPrivileges" class="public" href="../vibe.core.core/lowerPrivileges">lowerPrivileges</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="processEvents" class="public" href="../vibe.core.core/processEvents">processEvents</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Process all pending events without blocking.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runApplication" class="public" href="../vibe.core.core/runApplication">runApplication</a><span class="tableEntryAnnotation">(args_out)</span>
+									</code>
+								</td>
+								<td>Performs final initialization and runs the event loop.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runEventLoop" class="public" href="../vibe.core.core/runEventLoop">runEventLoop</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Starts the vibe.d event loop for the calling thread.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runEventLoopOnce" class="public" href="../vibe.core.core/runEventLoopOnce">runEventLoopOnce</a><span class="tableEntryAnnotation">(timeout)</span>
+									</code>
+								</td>
+								<td>Wait once for events and process them.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(task, args)</span>
+									</code>
+								</td>
+								<td>Runs a new asynchronous task.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(task, args)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(task, args)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(settings, task, args)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(settings, task, args)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTask" class="public" href="../vibe.core.core/runTask">runTask</a><span class="tableEntryAnnotation">(settings, task, args)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runTaskScoped" class="public" href="../vibe.core.core/runTaskScoped">runTaskScoped</a><span class="tableEntryAnnotation">(callable, args)</span>
+									</code>
+								</td>
+								<td>Runs an asyncronous task that is guaranteed to finish before the caller's
+	scope is left.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runWorkerTask" class="public" href="../vibe.core.core/runWorkerTask">runWorkerTask</a><span class="tableEntryAnnotation">(func, args)</span>
+									</code>
+								</td>
+								<td>Runs a new asynchronous task in a worker thread.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runWorkerTaskDist" class="public" href="../vibe.core.core/runWorkerTaskDist">runWorkerTaskDist</a><span class="tableEntryAnnotation">(func, args)</span>
+									</code>
+								</td>
+								<td>Runs a new asynchronous task in all worker threads concurrently.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runWorkerTaskDistH" class="public" href="../vibe.core.core/runWorkerTaskDistH">runWorkerTaskDistH</a><span class="tableEntryAnnotation">(on_handle, func, args)</span>
+									</code>
+								</td>
+								<td>Runs a new asynchronous task in all worker threads and returns the handles.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="runWorkerTaskH" class="public" href="../vibe.core.core/runWorkerTaskH">runWorkerTaskH</a><span class="tableEntryAnnotation">(func, args)</span>
+									</code>
+								</td>
+								<td>Runs a new asynchronous task in a worker thread, returning the task handle.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setIdleHandler" class="public" href="../vibe.core.core/setIdleHandler">setIdleHandler</a><span class="tableEntryAnnotation">(del)</span>
+									</code>
+								</td>
+								<td>Sets a callback that is called whenever no events are left in the event queue.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTaskCreationCallback" class="public" href="../vibe.core.core/setTaskCreationCallback">setTaskCreationCallback</a><span class="tableEntryAnnotation">(func)</span>
+									</code>
+								</td>
+								<td>Sets a callback that is invoked whenever new task is created.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTaskEventCallback" class="public" href="../vibe.core.core/setTaskEventCallback">setTaskEventCallback</a><span class="tableEntryAnnotation">(func)</span>
+									</code>
+								</td>
+								<td>Sets a callback that is invoked whenever a task changes its status.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTaskStackSize" class="public" href="../vibe.core.core/setTaskStackSize">setTaskStackSize</a><span class="tableEntryAnnotation">(sz)</span>
+									</code>
+								</td>
+								<td>Sets the stack size to use for tasks.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTimer" class="public" href="../vibe.core.core/setTimer">setTimer</a><span class="tableEntryAnnotation">(timeout, callback, periodic)</span>
+									</code>
+								</td>
+								<td>Creates a new timer, that will fire <code class="lang-d"><a href="../vibe.core.core/setTimer#callback"><span class="pln">callback</span></a></code> after <code class="lang-d"><a href="../vibe.core.core/setTimer#timeout"><span class="pln">timeout</span></a></code>
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTimer" class="public" href="../vibe.core.core/setTimer">setTimer</a><span class="tableEntryAnnotation">(timeout, callback, periodic)</span>
+									</code>
+								</td>
+								<td>Compatibility overload - use a <code class="lang-d"><span class="kwd">@safe nothrow</span></code> callback instead.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setupWorkerThreads" class="public" href="../vibe.core.core/setupWorkerThreads">setupWorkerThreads</a><span class="tableEntryAnnotation">(num)</span>
+									</code>
+								</td>
+								<td>Sets up num worker threads.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="sleep" class="public" href="../vibe.core.core/sleep">sleep</a><span class="tableEntryAnnotation">(timeout)</span>
+									</code>
+								</td>
+								<td>Suspends the execution of the calling task for the specified amount of time.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="sleepUninterruptible" class="public" href="../vibe.core.core/sleepUninterruptible">sleepUninterruptible</a><span class="tableEntryAnnotation">(timeout)</span>
+									</code>
+								</td>
+								<td>Suspends the execution of the calling task an an uninterruptible manner.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="switchToTask" class="public" href="../vibe.core.core/switchToTask">switchToTask</a><span class="tableEntryAnnotation">(t)</span>
+									</code>
+								</td>
+								<td>Switches execution to the given task.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="workerTaskPool" class="public property" href="../vibe.core.core/workerTaskPool">workerTaskPool</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Returns the default worker task pool.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="workerThreadCount" class="public property" href="../vibe.core.core/workerThreadCount">workerThreadCount</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>The number of worker threads used for processing worker tasks.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="yield" class="public" href="../vibe.core.core/yield">yield</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Suspends the execution of the calling task to let other tasks and events be
+	handled.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="yieldLock" class="public" href="../vibe.core.core/yieldLock">yieldLock</a><span class="tableEntryAnnotation">(file, line)</span>
+									</code>
+								</td>
+								<td>Returns an object that ensures that no task switches happen during its life time.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="yieldUninterruptible" class="public" href="../vibe.core.core/yieldUninterruptible">yieldUninterruptible</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Suspends the execution of the calling task to let other tasks and events be
+	handled.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Structs</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="FileDescriptorEvent" class="public" href="../vibe.core.core/FileDescriptorEvent">FileDescriptorEvent</a>
+									</code>
+								</td>
+								<td>Generic file descriptor event.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="Timer" class="public" href="../vibe.core.core/Timer">Timer</a>
+									</code>
+								</td>
+								<td>Represents a timer.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Manifest constants</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="isCallable" class="public" href="../vibe.core.core/isCallable">
+										<code>isCallable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isMethod" class="public" href="../vibe.core.core/isMethod">
+										<code>isMethod</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isNothrowCallable" class="public" href="../vibe.core.core/isNothrowCallable">
+										<code>isNothrowCallable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isNothrowMethod" class="public" href="../vibe.core.core/isNothrowMethod">
+										<code>isNothrowMethod</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="vibeVersionString" class="public" href="../vibe.core.core/vibeVersionString">
+										<code>vibeVersionString</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td>A version string representing the current vibe.d core version
+</td>
+							</tr>
+						</table>
+					</section>
+					<footer>
+						<table class="license-info">
+							<tr>
+								<th>Authors</th>
+								<td>
+									<p>Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>Copyright</th>
+								<td>
+									<p>© 2012-2020 Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>License</th>
+								<td>
+									<p>Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+</p>
+
+								</td>
+							</tr>
+						</table>
+					</footer>
+					<script>prettyPrint();</script>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="copyright">Copyright © 2012-2026 Sönke Ludwig</div>
+			<div>
+				<a href="../../impressum">Impressum</a> –
+				<a href="../../about#license">License</a> –
+				<a href="../../contact">Contact</a>
+			</div>
+		</footer>
+		<div class="bs-fl"></div><div class="bs-fr"></div>
+	</body>
+</html>
