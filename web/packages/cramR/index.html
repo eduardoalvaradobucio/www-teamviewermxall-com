@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package cramR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=cramR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Cram Method for Efficient Simultaneous Learning and Evaluation [R package cramR version 0.1.1]">
+<meta name="citation_author" content="Yanis Vandecasteele">
+<meta name="citation_publication_date" content="2025-08-24">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cramR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cramR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="cramR: Cram Method for Efficient Simultaneous Learning and Evaluation">
+<meta property="og:description" content="Performs the Cram method, a general and efficient approach to simultaneous learning and evaluation using a generic machine learning algorithm. In a single pass of batched data, the proposed method repeatedly trains a machine learning algorithm and tests its empirical performance. Because it utilizes the entire sample for both learning and evaluation, cramming is significantly more data-efficient than sample-splitting. Unlike cross-validation, Cram evaluates the final learned model directly, providing sharper inference aligned with real-world deployment. The method naturally applies to both policy learning and contextual bandits, where decisions are based on individual features to maximize outcomes. The package includes cram_policy() for learning and evaluating individualized binary treatment rules, cram_ml() to train and assess the population-level performance of machine learning models, and cram_bandit() for on-policy evaluation of contextual bandit algorithms. For all three functions, the package provides estimates of the average outcome that would result if the model were deployed, along with standard errors and confidence intervals for these estimates. Details of the method are described in Jia, Imai, and Li (2024) &amp;lt;&lt;a href=&quot;https://www.hbs.edu/ris/Publication%20Files/2403.07031v1_a83462e0-145b-4675-99d5-9754aa65d786.pdf&quot; target=&quot;_top&quot;&gt;https://www.hbs.edu/ris/Publication%20Files/2403.07031v1_a83462e0-145b-4675-99d5-9754aa65d786.pdf&lt;/a&gt;&amp;gt; and Jia et al. (2025) &amp;lt;&lt;a href=&quot;https://doi.org/10.48550%2FarXiv.2403.07031&quot; target=&quot;_top&quot;&gt;doi:10.48550/arXiv.2403.07031&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=cramR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>cramR: Cram Method for Efficient Simultaneous Learning and Evaluation</h2>
+<p>Performs the Cram method, a general and efficient approach to simultaneous learning and evaluation using a generic machine learning algorithm. In a single pass of batched data, the proposed method repeatedly trains a machine learning algorithm and tests its empirical performance. Because it utilizes the entire sample for both learning and evaluation, cramming is significantly more data-efficient than sample-splitting. Unlike cross-validation, Cram evaluates the final learned model directly, providing sharper inference aligned with real-world deployment. The method naturally applies to both policy learning and contextual bandits, where decisions are based on individual features to maximize outcomes. The package includes cram_policy() for learning and evaluating individualized binary treatment rules, cram_ml() to train and assess the population-level performance of machine learning models, and cram_bandit() for on-policy evaluation of contextual bandit algorithms. For all three functions, the package provides estimates of the average outcome that would result if the model were deployed, along with standard errors and confidence intervals for these estimates. Details of the method are described in Jia, Imai, and Li (2024) &lt;<a href="https://www.hbs.edu/ris/Publication%20Files/2403.07031v1_a83462e0-145b-4675-99d5-9754aa65d786.pdf" target="_top">https://www.hbs.edu/ris/Publication%20Files/2403.07031v1_a83462e0-145b-4675-99d5-9754aa65d786.pdf</a>&gt; and Jia et al. (2025) &lt;<a href="https://doi.org/10.48550%2FarXiv.2403.07031" target="_top">doi:10.48550/arXiv.2403.07031</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../caret/index.html"><span class="CRAN">caret</span></a> (&ge; 7.0-1), <a href="../grf/index.html"><span class="CRAN">grf</span></a> (&ge; 2.4.0), <a href="../glmnet/index.html"><span class="CRAN">glmnet</span></a> (&ge; 4.1.8), ../../../doc/manuals/r-patched/packages/stats/refman/stats.html (&ge;
+4.3.3), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.3), <a href="../doParallel/index.html"><span class="CRAN">doParallel</span></a> (&ge; 1.0.17), <a href="../foreach/index.html"><span class="CRAN">foreach</span></a> (&ge; 1.5.2), <a href="../DT/index.html"><span class="CRAN">DT</span></a> (&ge; 0.33), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.16.4), <a href="../keras/index.html"><span class="CRAN">keras</span></a> (&ge;
+2.15.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.4), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../R.devices/index.html"><span class="CRAN">R.devices</span></a>, <a href="../itertools/index.html"><span class="CRAN">itertools</span></a>, <a href="../iterators/index.html"><span class="CRAN">iterators</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../covr/index.html"><span class="CRAN">covr</span></a> (&ge; 3.5.1), <a href="../kableExtra/index.html"><span class="CRAN">kableExtra</span></a> (&ge; 1.4.0), <a href="../profvis/index.html"><span class="CRAN">profvis</span></a> (&ge; 0.4.0), <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../waldo/index.html"><span class="CRAN">waldo</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../randomForest/index.html"><span class="CRAN">randomForest</span></a>, <a href="../gbm/index.html"><span class="CRAN">gbm</span></a>, <a href="../nnet/index.html"><span class="CRAN">nnet</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-24</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.cramR">10.32614/CRAN.package.cramR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yanis Vandecasteele [cre, aut],
+  Michael Lingzhi Li [ctb],
+  Kosuke Imai [ctb],
+  Zeyang Jia [ctb],
+  Longlin Wang [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yanis Vandecasteele  &#x3c;&#x79;&#x61;&#x6e;&#x69;&#x73;&#x76;&#x64;&#x63;&#x2e;&#x65;&#x6e;&#x73;&#x61;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/yanisvdc/cramR/issues" target="_top"><span class="GitHub">https://github.com/yanisvdc/cramR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/yanisvdc/cramR" target="_top"><span class="GitHub">https://github.com/yanisvdc/cramR</span></a>,
+<a href="https://yanisvdc.github.io/cramR/" target="_top"><span class="GitHub">https://yanisvdc.github.io/cramR/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">cramR citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cramR.html"><span class="CRAN">cramR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/cramR.html"><span class="CRAN">cramR.html</span></a> ,  <a href="cramR.pdf"><span class="CRAN">cramR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cram_bandit.html"><span class="CRAN">Cram Bandit</span></a> (<a href="vignettes/cram_bandit.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_bandit.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_bandit_helpers.html"><span class="CRAN">Cram Bandit Helpers</span></a> (<a href="vignettes/cram_bandit_helpers.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_bandit_helpers.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_bandit_simulation.html"><span class="CRAN">Cram Bandit Simulation</span></a> (<a href="vignettes/cram_bandit_simulation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_bandit_simulation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_ml.html"><span class="CRAN">Cram ML</span></a> (<a href="vignettes/cram_ml.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_ml.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_policy_part_1.html"><span class="CRAN">Introduction &amp; Cram Policy part 1</span></a> (<a href="vignettes/cram_policy_part_1.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_policy_part_1.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_policy_part_2.html"><span class="CRAN">Cram Policy part 2</span></a> (<a href="vignettes/cram_policy_part_2.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_policy_part_2.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cram_policy_simulation.html"><span class="CRAN">Cram Policy Simulation</span></a> (<a href="vignettes/cram_policy_simulation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cram_policy_simulation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/quickstart.html"><span class="CRAN">Quick Start with CRAM</span></a> (<a href="vignettes/quickstart.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quickstart.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cramR_0.1.1.tar.gz"> <span class="CRAN"> cramR_0.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/cramR_0.1.1.zip"><span class="CRAN">cramR_0.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/cramR_0.1.1.zip"><span class="CRAN">cramR_0.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/cramR_0.1.1.zip"><span class="CRAN">cramR_0.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/cramR_0.1.1.tgz"><span class="CRAN">cramR_0.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/cramR_0.1.1.tgz"><span class="CRAN">cramR_0.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/cramR_0.1.1.tgz"><span class="CRAN">cramR_0.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/cramR_0.1.1.tgz"><span class="CRAN">cramR_0.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cramR"> <span class="CRAN"> cramR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cramR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=cramR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

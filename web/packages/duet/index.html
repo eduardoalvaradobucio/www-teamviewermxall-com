@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package duet</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=duet">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Analysing Non-Verbal Communication in Dyadic Interactions from Video Data [R package duet version 0.1.1]">
+<meta name="citation_author" content="Themis Efthimiou">
+<meta name="citation_publication_date" content="2025-01-17">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=duet">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=duet">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="duet: Analysing Non-Verbal Communication in Dyadic Interactions from Video Data">
+<meta property="og:description" content="Analyzes non-verbal communication by processing data extracted from video recordings of dyadic interactions. It supports integration with open source tools, currently limited to 'OpenPose' (Cao et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTPAMI.2019.2929257&quot; target=&quot;_top&quot;&gt;doi:10.1109/TPAMI.2019.2929257&lt;/a&gt;&amp;gt;), converting its outputs into CSV format for further analysis. The package includes functions for data pre-processing, visualization, and computation of motion indices such as velocity, acceleration, and jerkiness (Cook et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbrain%2Fawt208&quot; target=&quot;_top&quot;&gt;doi:10.1093/brain/awt208&lt;/a&gt;&amp;gt;), facilitating the analysis of non-verbal cues in paired interactions and contributing to research on human communication dynamics.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=duet">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>duet: Analysing Non-Verbal Communication in Dyadic Interactions from
+Video Data</h2>
+<p>Analyzes non-verbal communication by processing data extracted 
+    from video recordings of dyadic interactions. It supports integration 
+    with open source tools, currently limited to 'OpenPose' (Cao et al. (2019) 
+    &lt;<a href="https://doi.org/10.1109%2FTPAMI.2019.2929257" target="_top">doi:10.1109/TPAMI.2019.2929257</a>&gt;), converting its outputs into CSV format 
+    for further analysis. The package includes functions for data pre-processing, 
+    visualization, and computation of motion indices such as velocity, acceleration, 
+    and jerkiness (Cook et al. (2013) &lt;<a href="https://doi.org/10.1093%2Fbrain%2Fawt208" target="_top">doi:10.1093/brain/awt208</a>&gt;), facilitating 
+    the analysis of non-verbal cues in paired interactions and contributing to 
+    research on human communication dynamics.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../ggthemes/index.html"><span class="CRAN">ggthemes</span></a>, ../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html, ../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html, <a href="../kza/index.html"><span class="CRAN">kza</span></a>, ../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html, <a href="../patchwork/index.html"><span class="CRAN">patchwork</span></a>, <a href="../reshape2/index.html"><span class="CRAN">reshape2</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../signal/index.html"><span class="CRAN">signal</span></a>, ../../../doc/manuals/r-patched/packages/stats/refman/stats.html, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, ../../../doc/manuals/r-patched/packages/tools/refman/tools.html, ../../../doc/manuals/r-patched/packages/utils/refman/utils.html, <a href="../zoo/index.html"><span class="CRAN">zoo</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-01-17</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.duet">10.32614/CRAN.package.duet</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Themis Efthimiou <a href="https://orcid.org/0000-0002-8458-5493" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Themis Efthimiou  &#x3c;&#x74;&#x68;&#x65;&#x6d;&#x69;&#x66;&#x74;&#x77;&#x32;&#x30;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>FFmpeg (https://ffmpeg.org/)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_duet.html"><span class="CRAN">duet results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/duet.html"><span class="CRAN">duet.html</span></a> ,  <a href="duet.pdf"><span class="CRAN">duet.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/duet_0.1.1.tar.gz"> <span class="CRAN"> duet_0.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/duet_0.1.1.zip"><span class="CRAN">duet_0.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/duet_0.1.1.zip"><span class="CRAN">duet_0.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/duet_0.1.1.zip"><span class="CRAN">duet_0.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/duet_0.1.1.tgz"><span class="CRAN">duet_0.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/duet_0.1.1.tgz"><span class="CRAN">duet_0.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/duet_0.1.1.tgz"><span class="CRAN">duet_0.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/duet_0.1.1.tgz"><span class="CRAN">duet_0.1.1.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=duet"><span class="CRAN"><samp>https://CRAN.R-project.org/package=duet</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

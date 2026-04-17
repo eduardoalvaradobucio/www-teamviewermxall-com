@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package MendelianRandomization</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=MendelianRandomization">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Mendelian Randomization Package [R package MendelianRandomization version 0.10.0]">
+<meta name="citation_author1" content="Stephen Burgess">
+<meta name="citation_author2" content="Olena Yavorska">
+<meta name="citation_publication_date" content="2024-04-12">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=MendelianRandomization">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MendelianRandomization">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="MendelianRandomization: Mendelian Randomization Package">
+<meta property="og:description" content="Encodes several methods for performing Mendelian randomization analyses with summarized data. Summarized data on genetic associations with the exposure and with the outcome can be obtained from large consortia. These data can be used for obtaining causal estimates using instrumental variable methods.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=MendelianRandomization">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>MendelianRandomization: Mendelian Randomization Package</h2>
+<p>Encodes several methods for performing Mendelian randomization
+    analyses with summarized data. Summarized data on genetic associations with the
+    exposure and with the outcome can be obtained from large consortia. These data
+    can be used for obtaining causal estimates using instrumental variable methods.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.10.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.1), ../../../doc/manuals/r-patched/packages/methods/refman/methods.html</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a> (&ge; 3.6.0), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 1.0.1), <a href="../robustbase/index.html"><span class="CRAN">robustbase</span></a> (&ge; 0.92-6), <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a> (&ge; 1.2), <a href="../iterpc/index.html"><span class="CRAN">iterpc</span></a> (&ge; 0.3), <a href="../quantreg/index.html"><span class="CRAN">quantreg</span></a> (&ge; 5.01), <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../glmnet/index.html"><span class="CRAN">glmnet</span></a>, <a href="../numDeriv/index.html"><span class="CRAN">numDeriv</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppArmadillo/index.html"><span class="CRAN">RcppArmadillo</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-04-12</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.MendelianRandomization">10.32614/CRAN.package.MendelianRandomization</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Stephen Burgess <a href="https://orcid.org/0000-0001-5365-8760" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Olena Yavorska [aut],
+  James Staley <a href="https://orcid.org/0009-0001-9520-5011" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Fernando Hartwig <a href="https://orcid.org/0000-0003-3729-0710" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Jim Broadbent <a href="https://orcid.org/0000-0002-5685-6241" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Christopher Foley <a href="https://orcid.org/0000-0002-0970-2610" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Andrew Grant [ctb],
+  Amy Mason <a href="https://orcid.org/0000-0002-8019-0777" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Ting Ye <a href="https://orcid.org/0000-0001-6009-641X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Haoran Xue <a href="https://orcid.org/0000-0001-7923-6128" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Zhaotong Lin <a href="https://orcid.org/0000-0001-8723-4392" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Siqi Xu [ctb],
+  Ashish Patel <a href="https://orcid.org/0000-0002-0350-4365" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Hyunseung Kang [ctb],
+  Sheng Wang [ctb],
+  Ville Karhunen <a href="https://orcid.org/0000-0001-6064-1588" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Stephen Burgess  &#x3c;&#x73;&#x62;&#x34;&#x35;&#x32;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x65;&#x64;&#x73;&#x63;&#x68;&#x6c;&#x2e;&#x63;&#x61;&#x6d;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2"><span class="CRAN">GPL-2</span></a> | <a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/CausalInference.html"><span class="CRAN">CausalInference</span></a>, <a href="../../views/MetaAnalysis.html"><span class="CRAN">MetaAnalysis</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MendelianRandomization.html"><span class="CRAN">MendelianRandomization results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/MendelianRandomization.html"><span class="CRAN">MendelianRandomization.html</span></a> ,  <a href="MendelianRandomization.pdf"><span class="CRAN">MendelianRandomization.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Vignette_MR.pdf"><span class="CRAN">Mendelian randomization vignette</span></a> (<a href="vignettes/Vignette_MR.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Vignette_MR.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MendelianRandomization_0.10.0.tar.gz"> <span class="CRAN"> MendelianRandomization_0.10.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/MendelianRandomization_0.10.0.zip"><span class="CRAN">MendelianRandomization_0.10.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/MendelianRandomization_0.10.0.zip"><span class="CRAN">MendelianRandomization_0.10.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/MendelianRandomization_0.10.0.zip"><span class="CRAN">MendelianRandomization_0.10.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/MendelianRandomization_0.10.0.tgz"><span class="CRAN">MendelianRandomization_0.10.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/MendelianRandomization_0.10.0.tgz"><span class="CRAN">MendelianRandomization_0.10.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/MendelianRandomization_0.10.0.tgz"><span class="CRAN">MendelianRandomization_0.10.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/MendelianRandomization_0.10.0.tgz"><span class="CRAN">MendelianRandomization_0.10.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/MendelianRandomization"> <span class="CRAN"> MendelianRandomization archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../autoMR/index.html"><span class="CRAN">autoMR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../mrbayes/index.html"><span class="CRAN">mrbayes</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MendelianRandomization"><span class="CRAN"><samp>https://CRAN.R-project.org/package=MendelianRandomization</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

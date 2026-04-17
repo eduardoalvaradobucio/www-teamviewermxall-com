@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rsat</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rsat">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Dealing with Multiplatform Satellite Images [R package rsat version 0.1.21]">
+<meta name="citation_author1" content="Unai Pérez - Goya">
+<meta name="citation_author2" content="Manuel Montesino - SanMartin">
+<meta name="citation_author3" content="Ana F Militino">
+<meta name="citation_author4" content="Maria Dolores Ugarte">
+<meta name="citation_publication_date" content="2024-02-03">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rsat">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rsat">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rsat: Dealing with Multiplatform Satellite Images">
+<meta property="og:description" content="Downloading, customizing, and processing time series of satellite images for a region of interest. 'rsat' functions allow a unified access to multispectral images from Landsat, MODIS and Sentinel repositories. 'rsat' also offers capabilities for customizing satellite images, such as tile mosaicking, image cropping and new variables computation. Finally, 'rsat' covers the processing, including cloud masking, compositing and gap-filling/smoothing time series of images (Militino et al., 2018 &amp;lt;&lt;a href=&quot;https://doi.org/10.3390%2Frs10030398&quot; target=&quot;_top&quot;&gt;doi:10.3390/rs10030398&lt;/a&gt;&amp;gt; and Militino et al., 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTGRS.2019.2904193&quot; target=&quot;_top&quot;&gt;doi:10.1109/TGRS.2019.2904193&lt;/a&gt;&amp;gt;).">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rsat">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rsat: Dealing with Multiplatform Satellite Images</h2>
+<p>Downloading, customizing, and processing time series of satellite images for a region of interest. 'rsat' functions allow a unified access to multispectral images from Landsat, MODIS and Sentinel repositories. 'rsat' also offers capabilities for customizing satellite images, such as tile mosaicking, image cropping and new variables computation. Finally, 'rsat' covers the processing, including cloud masking, compositing and gap-filling/smoothing time series of images (Militino et al., 2018 &lt;<a href="https://doi.org/10.3390%2Frs10030398" target="_top">doi:10.3390/rs10030398</a>&gt; and Militino et al., 2019 &lt;<a href="https://doi.org/10.1109%2FTGRS.2019.2904193" target="_top">doi:10.1109/TGRS.2019.2904193</a>&gt;).</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.21</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../XML/index.html"><span class="CRAN">XML</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../leafem/index.html"><span class="CRAN">leafem</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../tmap/index.html"><span class="CRAN">tmap</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../zip/index.html"><span class="CRAN">zip</span></a>, ../../../doc/manuals/r-patched/packages/methods/refman/methods.html, <a href="../Rdpack/index.html"><span class="CRAN">Rdpack</span></a>, <a href="../fields/index.html"><span class="CRAN">fields</span></a>, <a href="../calendR/index.html"><span class="CRAN">calendR</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../raster/index.html"><span class="CRAN">raster</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-02-03</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rsat">10.32614/CRAN.package.rsat</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Unai Pérez - Goya <a href="https://orcid.org/0000-0002-2796-9079" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Manuel Montesino - SanMartin
+    <a href="https://orcid.org/0000-0002-0822-600X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Ana F Militino <a href="https://orcid.org/0000-0002-0631-3919" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Maria Dolores Ugarte
+    <a href="https://orcid.org/0000-0002-3505-8400" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Marc Weber [rev] (Marc reviewed rsat (v. 0.1.14) for rOpenSci, see
+    &lt;https://github.com/ropensci/software-review/issues/437&gt;),
+  Kelly Hondula [rev] (Kelly reviewed rsat (v. 0.1.14) for rOpenSci, see
+    &lt;https://github.com/ropensci/software-review/issues/437&gt;)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Unai Pérez - Goya  &#x3c;&#x75;&#x6e;&#x61;&#x69;&#x2e;&#x70;&#x65;&#x72;&#x65;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x61;&#x76;&#x61;&#x72;&#x72;&#x61;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/rsat/issues" target="_top"><span class="GitHub">https://github.com/ropensci/rsat/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/rsat" target="_top"><span class="GitHub">https://github.com/ropensci/rsat</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rsat citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rsat.html"><span class="CRAN">rsat results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rsat.html"><span class="CRAN">rsat.html</span></a> ,  <a href="rsat.pdf"><span class="CRAN">rsat.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rsat1_search.html"><span class="CRAN">rsat1_search</span></a> (<a href="vignettes/rsat1_search.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rsat1_search.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/rsat2_download.html"><span class="CRAN">rsat2_download</span></a> (<a href="vignettes/rsat2_download.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rsat2_download.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/rsat3_customize.html"><span class="CRAN">rsat3_customize</span></a> (<a href="vignettes/rsat3_customize.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rsat3_customize.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/rsat4_process.html"><span class="CRAN">rsat4_process</span></a> (<a href="vignettes/rsat4_process.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rsat4_process.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rsat_0.1.21.tar.gz"> <span class="CRAN"> rsat_0.1.21.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rsat_0.1.21.zip"><span class="CRAN">rsat_0.1.21.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rsat_0.1.21.zip"><span class="CRAN">rsat_0.1.21.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rsat_0.1.21.zip"><span class="CRAN">rsat_0.1.21.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rsat_0.1.21.tgz"><span class="CRAN">rsat_0.1.21.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/rsat_0.1.21.tgz"><span class="CRAN">rsat_0.1.21.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rsat_0.1.21.tgz"><span class="CRAN">rsat_0.1.21.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rsat_0.1.21.tgz"><span class="CRAN">rsat_0.1.21.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rsat"> <span class="CRAN"> rsat archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rsat"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rsat</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package RBaM</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=RBaM">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Bayesian Modeling: Estimate a Computer Model and Make Uncertain Predictions [R package RBaM version 1.1.2]">
+<meta name="citation_author" content="Benjamin Renard">
+<meta name="citation_publication_date" content="2026-01-08">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RBaM">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RBaM">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="RBaM: Bayesian Modeling: Estimate a Computer Model and Make Uncertain Predictions">
+<meta property="og:description" content="An interface to the 'BaM' (Bayesian Modeling) engine, a 'Fortran'-based executable aimed at estimating a model with a Bayesian approach and using it for prediction, with a particular focus on uncertainty quantification. Classes are defined for the various building blocks of 'BaM' inference (model, data, error models, Markov Chain Monte Carlo (MCMC) samplers, predictions). The typical usage is as follows: (1) specify the model to be estimated; (2) specify the inference setting (dataset, parameters, error models...); (3) perform Bayesian-MCMC inference; (4) read, analyse and use MCMC samples; (5) perform prediction experiments. Technical details are available (in French) in Renard (2017) &amp;lt;&lt;a href=&quot;https://hal.science/hal-02606929v1&quot; target=&quot;_top&quot;&gt;https://hal.science/hal-02606929v1&lt;/a&gt;&amp;gt;. Examples of applications include Mansanarez et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1029%2F2018WR023389&quot; target=&quot;_top&quot;&gt;doi:10.1029/2018WR023389&lt;/a&gt;&amp;gt;, Le Coz et al. (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fhyp.14169&quot; target=&quot;_top&quot;&gt;doi:10.1002/hyp.14169&lt;/a&gt;&amp;gt;, Perret et al. (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.1029%2F2020WR027745&quot; target=&quot;_top&quot;&gt;doi:10.1029/2020WR027745&lt;/a&gt;&amp;gt;, Darienzo et al. (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.1029%2F2020WR028607&quot; target=&quot;_top&quot;&gt;doi:10.1029/2020WR028607&lt;/a&gt;&amp;gt; and Perret et al. (2023) &amp;lt;&lt;a href=&quot;https://doi.org/10.1061%2FJHEND8.HYENG-13101&quot; target=&quot;_top&quot;&gt;doi:10.1061/JHEND8.HYENG-13101&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=RBaM">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>RBaM: Bayesian Modeling: Estimate a Computer Model and Make Uncertain
+Predictions</h2>
+<p>An interface to the 'BaM' (Bayesian Modeling) engine, 
+    a 'Fortran'-based executable aimed at estimating a model 
+    with a Bayesian approach and using it for prediction,
+    with a particular focus on uncertainty quantification.
+    Classes are defined for the various building blocks of 
+    'BaM' inference (model, data, error models, Markov Chain Monte Carlo (MCMC) samplers, predictions).
+    The typical usage is as follows:
+    (1) specify the model to be estimated; 
+    (2) specify the inference setting (dataset, parameters, error models...);
+    (3) perform Bayesian-MCMC inference;
+    (4) read, analyse and use MCMC samples;
+    (5) perform prediction experiments.
+    Technical details are available (in French) in 
+    Renard (2017) &lt;<a href="https://hal.science/hal-02606929v1" target="_top">https://hal.science/hal-02606929v1</a>&gt;.
+    Examples of applications include 
+    Mansanarez et al. (2019) &lt;<a href="https://doi.org/10.1029%2F2018WR023389" target="_top">doi:10.1029/2018WR023389</a>&gt;,
+    Le Coz et al. (2021) &lt;<a href="https://doi.org/10.1002%2Fhyp.14169" target="_top">doi:10.1002/hyp.14169</a>&gt;,
+    Perret et al. (2021) &lt;<a href="https://doi.org/10.1029%2F2020WR027745" target="_top">doi:10.1029/2020WR027745</a>&gt;,
+    Darienzo et al. (2021) &lt;<a href="https://doi.org/10.1029%2F2020WR028607" target="_top">doi:10.1029/2020WR028607</a>&gt; and
+    Perret et al. (2023) &lt;<a href="https://doi.org/10.1061%2FJHEND8.HYENG-13101" target="_top">doi:10.1061/JHEND8.HYENG-13101</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a>, ../../../doc/manuals/r-patched/packages/utils/refman/utils.html, ../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html, ../../../doc/manuals/r-patched/packages/stats/refman/stats.html, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, ../../../doc/manuals/r-patched/packages/tools/refman/tools.html, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../mvtnorm/index.html"><span class="CRAN">mvtnorm</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-08</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.RBaM">10.32614/CRAN.package.RBaM</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Benjamin Renard <a href="https://orcid.org/0000-0001-8447-5430" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph],
+  INRAE [fnd],
+  Ministère de la Transition Ecologique - SCHAPI [fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Benjamin Renard  &#x3c;&#x62;&#x65;&#x6e;&#x6a;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x72;&#x65;&#x6e;&#x61;&#x72;&#x64;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6e;&#x72;&#x61;&#x65;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/BaM-tools/RBaM/issues" target="_top"><span class="GitHub">https://github.com/BaM-tools/RBaM/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/BaM-tools/RBaM" target="_top"><span class="GitHub">https://github.com/BaM-tools/RBaM</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RBaM.html"><span class="CRAN">RBaM results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/RBaM.html"><span class="CRAN">RBaM.html</span></a> ,  <a href="RBaM.pdf"><span class="CRAN">RBaM.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RBaM_1.1.2.tar.gz"> <span class="CRAN"> RBaM_1.1.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/RBaM_1.1.2.zip"><span class="CRAN">RBaM_1.1.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/RBaM_1.1.2.zip"><span class="CRAN">RBaM_1.1.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/RBaM_1.1.2.zip"><span class="CRAN">RBaM_1.1.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/RBaM_1.1.2.tgz"><span class="CRAN">RBaM_1.1.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/RBaM_1.1.2.tgz"><span class="CRAN">RBaM_1.1.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/RBaM_1.1.2.tgz"><span class="CRAN">RBaM_1.1.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/RBaM_1.1.2.tgz"><span class="CRAN">RBaM_1.1.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RBaM"> <span class="CRAN"> RBaM archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RBaM"><span class="CRAN"><samp>https://CRAN.R-project.org/package=RBaM</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

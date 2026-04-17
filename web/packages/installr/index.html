@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package installr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=installr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Using R to Install Stuff on Windows OS (Such As: R, 'Rtools', 'RStudio', 'Git', and More!) [R package installr version 0.23.4]">
+<meta name="citation_author" content="Tal Galili">
+<meta name="citation_publication_date" content="2022-11-12">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=installr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=installr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="installr: Using R to Install Stuff on Windows OS (Such As: R, 'Rtools', 'RStudio', 'Git', and More!)">
+<meta property="og:description" content="R is great for installing software. Through the 'installr' package you can automate the updating of R (on Windows, using updateR()) and install new software. Software installation is initiated through a GUI (just run installr()), or through functions such as: install.Rtools(), install.pandoc(), install.git(), and many more. The updateR() command performs the following: finding the latest R version, downloading it, running the installer, deleting the installation file, copy and updating old packages to the new R installation.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=installr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>installr: Using R to Install Stuff on Windows OS (Such As: R, 'Rtools',
+'RStudio', 'Git', and More!)</h2>
+<p>R is great for installing software.  Through the 'installr'
+    package you can automate the updating of R (on Windows, using updateR())
+    and install new software. Software installation is initiated through a
+    GUI (just run installr()), or through functions such as: install.Rtools(),
+    install.pandoc(), install.git(), and many more. The updateR() command
+    performs the following: finding the latest R version, downloading it,
+    running the installer, deleting the installation file, copy and updating
+    old packages to the new R installation.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.23.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, ../../../doc/manuals/r-patched/packages/utils/refman/utils.html</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../XML/index.html"><span class="CRAN">XML</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../plyr/index.html"><span class="CRAN">plyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, ../../../doc/manuals/r-patched/packages/tools/refman/tools.html, <a href="../pkgbuild/index.html"><span class="CRAN">pkgbuild</span></a> (&ge; 1.1.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.1.0), <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../R.utils/index.html"><span class="CRAN">R.utils</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2022-11-12</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.installr">10.32614/CRAN.package.installr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tal Galili [aut, cre, cph] (http://www.r-statistics.com),
+  Barry Rowlingson [ctb],
+  Boris Hejblum [ctb],
+  Dason [ctb],
+  Felix Schonbrodt [ctb],
+  G. Grothendieck [ctb],
+  GERGELY DAROCZI [ctb],
+  Heuristic Andrew [ctb],
+  James [ctb] (http://stackoverflow.com/users/269476/james),
+  Thomas Leeper [ctb] (http://thomasleeper.com/),
+  VitoshKa [ctb],
+  Yihui Xie [ctb] (http://yihui.name),
+  Michael Friendly [ctb] (http://datavis.ca/),
+  Kornelius Rohmeyer [ctb] (http://algorithm-forge.com/techblog/),
+  Dieter Menne [ctb],
+  Tyler Hunt [ctb] (https://github.com/JackStat),
+  Takekatsu Hiramura [ctb] (https://github.com/hiratake55),
+  Berry Boessenkool [ctb] (https://github.com/BerryBoessenkool),
+  Jonathan Godfrey [ctb] (https://github.com/ajrgodfrey),
+  Tom Allard [ctb],
+  ChingChuan Chen [ctb],
+  Jonathan Hill [ctb],
+  Chan-Yub Park [ctb] (https://github.com/mrchypark),
+  Gerhard Nachtmann [ctb],
+  Russ Hyde [ctb],
+  Lyndon D'Arcy [ctb] (https://github.com/logworthy),
+  Gerhard Burger [ctb] (https://github.com/burgerga),
+  Adrian Hordyk [ctb] (https://github.com/AdrianHordyk),
+  Arthur Gailes [ctb] (https://github.com/arthurgailes)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tal Galili  &#x3c;&#x74;&#x61;&#x6c;&#x2e;&#x67;&#x61;&#x6c;&#x69;&#x6c;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/talgalili/installr/issues" target="_top"><span class="GitHub">https://github.com/talgalili/installr/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2"><span class="CRAN">GPL-2</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://talgalili.github.io/installr/" target="_top"><span class="GitHub">https://talgalili.github.io/installr/</span></a>,
+<a href="https://github.com/talgalili/installr/" target="_top"><span class="GitHub">https://github.com/talgalili/installr/</span></a>,
+<a href="https://www.r-statistics.com/tag/installr/" target="_top">https://www.r-statistics.com/tag/installr/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a>, <a href="ChangeLog"><span class="CRAN">ChangeLog</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_installr.html"><span class="CRAN">installr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/installr.html"><span class="CRAN">installr.html</span></a> ,  <a href="installr.pdf"><span class="CRAN">installr.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/installr_0.23.4.tar.gz"> <span class="CRAN"> installr_0.23.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/installr_0.23.4.zip"><span class="CRAN">installr_0.23.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/installr_0.23.4.zip"><span class="CRAN">installr_0.23.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/installr_0.23.4.zip"><span class="CRAN">installr_0.23.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/installr_0.23.4.tgz"><span class="CRAN">installr_0.23.4.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/installr_0.23.4.tgz"><span class="CRAN">installr_0.23.4.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/installr_0.23.4.tgz"><span class="CRAN">installr_0.23.4.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/installr_0.23.4.tgz"><span class="CRAN">installr_0.23.4.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/installr"> <span class="CRAN"> installr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bsitar/index.html"><span class="CRAN">bsitar</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=installr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=installr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

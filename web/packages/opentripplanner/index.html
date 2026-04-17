@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package opentripplanner</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=opentripplanner">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Setup and connect to 'OpenTripPlanner' [R package opentripplanner version 0.5.2]">
+<meta name="citation_author1" content="Malcolm Morgan">
+<meta name="citation_author2" content="Marcus Young">
+<meta name="citation_author3" content="Robin Lovelace">
+<meta name="citation_publication_date" content="2024-05-06">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=opentripplanner">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=opentripplanner">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="opentripplanner: Setup and connect to 'OpenTripPlanner'">
+<meta property="og:description" content="Setup and connect to 'OpenTripPlanner' (OTP) &amp;lt;&lt;a href=&quot;http://www.opentripplanner.org/&quot; target=&quot;_top&quot;&gt;http://www.opentripplanner.org/&lt;/a&gt;&amp;gt;. OTP is an open source platform for multi-modal and multi-agency journey planning written in 'Java'. The package allows you to manage a local version or connect to remote OTP server to find walking, cycling, driving, or transit routes. This package has been peer-reviewed by rOpenSci (v. 0.2.0.0).">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=opentripplanner">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>opentripplanner: Setup and connect to 'OpenTripPlanner'</h2>
+<p>Setup and connect to 'OpenTripPlanner' (OTP) &lt;<a href="http://www.opentripplanner.org/" target="_top">http://www.opentripplanner.org/</a>&gt;.
+    OTP is an open source platform for multi-modal and multi-agency
+    journey planning written in 'Java'. The package allows you to manage a local version or 
+    connect to remote OTP server to find walking, cycling, driving, or transit routes.
+    This package has been peer-reviewed by rOpenSci (v. 0.2.0.0).</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../geodist/index.html"><span class="CRAN">geodist</span></a>, <a href="../googlePolylines/index.html"><span class="CRAN">googlePolylines</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 1.0.0), <a href="../RcppSimdJson/index.html"><span class="CRAN">RcppSimdJson</span></a> (&ge; 0.1.2), <a href="../progressr/index.html"><span class="CRAN">progressr</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a> (&ge;
+0.9.3), <a href="../sfheaders/index.html"><span class="CRAN">sfheaders</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-05-06</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.opentripplanner">10.32614/CRAN.package.opentripplanner</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Malcolm Morgan <a href="https://orcid.org/0000-0002-9488-9183" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Marcus Young <a href="https://orcid.org/0000-0003-4627-1116" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Robin Lovelace <a href="https://orcid.org/0000-0001-5679-6536" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Layik Hama <a href="https://orcid.org/0000-0003-1912-4890" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Malcolm Morgan  &#x3c;&#x6d;&#x2e;&#x6d;&#x6f;&#x72;&#x67;&#x61;&#x6e;&#x31;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x65;&#x65;&#x64;&#x73;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/opentripplanner/issues" target="_top"><span class="GitHub">https://github.com/ropensci/opentripplanner/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/opentripplanner" target="_top"><span class="GitHub">https://github.com/ropensci/opentripplanner</span></a>,
+<a href="https://docs.ropensci.org/opentripplanner/" target="_top">https://docs.ropensci.org/opentripplanner/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>EN-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">opentripplanner citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_opentripplanner.html"><span class="CRAN">opentripplanner results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/opentripplanner.html"><span class="CRAN">opentripplanner.html</span></a> ,  <a href="opentripplanner.pdf"><span class="CRAN">opentripplanner.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Analyst.html"><span class="CRAN">Analyst</span></a> (<a href="vignettes/Analyst.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Analyst.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/OTPv2.html"><span class="CRAN">OTPv2</span></a> (<a href="vignettes/OTPv2.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/OTPv2.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/advanced_features.html"><span class="CRAN">opentripplanner-advanced</span></a> (<a href="vignettes/advanced_features.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/advanced_features.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/known_issues.html"><span class="CRAN">opentripplanner-known-issues</span></a> (<a href="vignettes/known_issues.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/opentripplanner.html"><span class="CRAN">opentripplanner-get-started</span></a> (<a href="vignettes/opentripplanner.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/opentripplanner.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/prerequisites.html"><span class="CRAN">opentripplanner-prerequisites</span></a> (<a href="vignettes/prerequisites.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/prerequisites.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/opentripplanner_0.5.2.tar.gz"> <span class="CRAN"> opentripplanner_0.5.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/opentripplanner_0.5.2.zip"><span class="CRAN">opentripplanner_0.5.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/opentripplanner_0.5.2.zip"><span class="CRAN">opentripplanner_0.5.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/opentripplanner_0.5.2.zip"><span class="CRAN">opentripplanner_0.5.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/opentripplanner_0.5.2.tgz"><span class="CRAN">opentripplanner_0.5.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/opentripplanner_0.5.2.tgz"><span class="CRAN">opentripplanner_0.5.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/opentripplanner_0.5.2.tgz"><span class="CRAN">opentripplanner_0.5.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/opentripplanner_0.5.2.tgz"><span class="CRAN">opentripplanner_0.5.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/opentripplanner"> <span class="CRAN"> opentripplanner archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../stplanr/index.html"><span class="CRAN">stplanr</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=opentripplanner"><span class="CRAN"><samp>https://CRAN.R-project.org/package=opentripplanner</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

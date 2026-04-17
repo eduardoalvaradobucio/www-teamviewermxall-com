@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Douglas Crockford" />
+<meta http-equiv="Expires" content="1968-12-09" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<link rel="stylesheet" href="crockford.css" type="text/css">
+<link rel="icon" type="image/png" href="https://www.crockford.com/favicon.png">
+<title>ASCII</title>
+<style>
+table {
+    table-layout: fixed;
+    width: 90%;
+}
+th, td {
+    padding: 0;
+    text-align: center;
+    width: 4%;
+}
+div#high {
+    font-family: 'Programma';
+    font-size: 50%;
+    text-align: left;
+}
+div#low {
+    font-family: 'Programma';
+    font-size: 50%;
+    text-align: right;
+}
+</style>
+</head>
+<body>
+<div id="side">
+    <div id="name"><a href="https://www.crockford.com"><big>Douglas Crockford</big></a></div><br>
+    <h5><a href="https://www.crockford.com/blog.html">Blog</a></h5>
+    <h5><a href="https://www.crockford.com/books.html">Books</a></h5>
+    <h5><a href="https://www.crockford.com/videos.html">Videos</a></h5>
+    <h5><a href="https://www.crockford.com/2026.html">2026 Appearance</a></h5>
+    <h5><a href="https://www.crockford.com/slides.html">Slides</a></h5>
+    <h5><a href="https://www.crockford.com/javascript/">JavaScript</a></h5>
+    <h5><a href="https://mistysystem.com/">Misty</a></h5>
+    <h5><a href="https://jslint.com">JSLint</a></h5>
+    <h5><a href="https://json.org">JSON</a></h5>
+    <h5><a href="https://www.crockford.com/pronto,html">Pronto</a></h5>
+    <h5><a href="https://github.com/douglascrockford">Github</a></h5>
+    <h5><a href="https://www.crockford.com/ec.html">Electric Communities</a></h5>
+    <h5><a href="https://www.flickr.com/photos/douglascrockford/albums/72157644699201976">Flickr Photo Album</a></h5>
+    <h5><a href="https://bsky.app/profile/did:plc:45gs3u53n6my3eyjdhmuogbk">Blue Sky</a></h5>
+    <h5><a href="https://www.linkedin.com/in/douglas-crockford-724600109/">LinkedIn</a></h5>
+    <h5><a rel="me" href="https://layer8.space/@douglascrockford">Mastodon/Layer8</a></h5>
+    <h5><a href="https://www.researchgate.net/profile/Douglas-Crockford">ResearchGate</a></h5>
+    <h5><a href="https://www.crockford.com/pronouns.html">Pronouns: <dfn>pe/per</dfn></a></h5>
+    <h5><a href="https://aptera.us/reserve?referral_code=B53xn5cY">Aptera</a></h5>
+    <h5><a id="best">The best is yet to come</a></h5>
+    <h5><a href="https://www.crockford.com/about.html">About</a></h5>
+</div>
+<audio id="best_audio" src="the best is yet to come.mp3"></audio>
+<script>
+document.getElementById("best").addEventListener(
+    "click",
+    function (ignore) {
+        document.getElementById("best_audio").play();
+    },
+    false
+);
+</script>
+<div id="blog">
+<time>2019-03-01</time>
+<h1>ASCII</h1>
+
+<p>The American Standard Code for Information Interchange was developed in the 1960s for use in teletype machines and similar devices. It also anticipated use by computers, although computer networking at the time was still largely theoretical. It was not intended to be used as an internal computer character set, but it became the standard character set, partly due to the influence of UNIX. It still exists today as the first 128 code points of Unicode.</p>
+<table align="center">
+  <tr>
+    <th><div id=low>LOW&nbsp;</div><div id=high>&nbsp;HIGH</div></th>
+    <th>0</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <th>F</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <td><i><a href="#nul" title="null">nul</a></i></td>
+    <td><i><a href="#soh" title="start of heading">soh</a></i></td>
+    <td><i><a href="#stx" title="start of text">stx</a></i></td>
+    <td><i><a href="#etx" title="end of text">etx</a></i></td>
+    <td><i><a href="#eot" title="end of transmission">eot</a></i></td>
+    <td><i><a href="#enq" title="enquiry">enq</a></i></td>
+    <td><i><a href="#ack" title="acknowledge">ack</a></i></td>
+    <td><i><a href="#bel" title="bell">bel</a></i></td>
+    <td><i><a href="#bs" title="backspace">bs</a></i></td>
+    <td><i><a href="#tab" title="tabulation">tab</a></i></td>
+    <td><i><a href="#lf" title="line feed">lf</a></i></td>
+    <td><i><a href="#vt" title="vertical tabulation">vt</a></i></td>
+    <td><i><a href="#ff" title="form feed">ff</a></i></td>
+    <td><i><a href="#cr" title="carriage return">cr</a></i></td>
+    <td><i><a href="#so" title="shift out">so</a></i></td>
+    <td><i><a href="#si" title="shift in">si</a></i></td>
+  </tr>
+  <tr>
+    <th>1</th>
+    <td><i><a href="#dle" title="data link escape">dle</a></i></td>
+    <td><i><a href="#dc1" title="device control one">dc1</a></i></td>
+    <td><i><a href="#dc2" title="device control two">dc2</a></i></td>
+    <td><i><a href="#dc3" title="device control three">dc3</a></i></td>
+    <td><i><a href="#dc4" title="device control four">dc4</a></i></td>
+    <td><i><a href="#nak" title="negative acknowledge">nak</a></i></td>
+    <td><i><a href="#syn" title="synchronous idle">syn</a></i></td>
+    <td><i><a href="#etb" title="end of tranmission block">etb</a></i></td>
+    <td><i><a href="#can" title="cancel">can</a></i></td>
+    <td><i><a href="#em" title="end of medium">em</a></i></td>
+    <td><i><a href="#sub" title="substitute">sub</a></i></td>
+    <td><i><a href="#esc" title="escape">esc</a></i></td>
+    <td><i><a href="#fs" title="file separator">fs</a></i></td>
+    <td><i><a href="#gs" title="group separator">gs</a></i></td>
+    <td><i><a href="#rs" title="record separator">rs</a></i></td>
+    <td><i><a href="#us" title="unit separator">us</a></i></td>
+  </tr>
+  <tr>
+    <th>2</th>
+    <td><tt><span title="space">&nbsp;</span></tt></td>
+    <td><tt>!</tt></td>
+    <td><tt>&quot;</tt></td>
+    <td><tt>#</tt></td>
+    <td><tt>$</tt></td>
+    <td><tt>%</tt></td>
+    <td><tt>&amp;</tt></td>
+    <td><tt>'</tt></td>
+    <td><tt>(</tt></td>
+    <td><tt>)</tt></td>
+    <td><tt>*</tt></td>
+    <td><tt>+</tt></td>
+    <td><tt>,</tt></td>
+    <td><tt>-</tt></td>
+    <td><tt>.</tt></td>
+    <td><tt>/</tt></td>
+  </tr>
+  <tr>
+    <th>3</th>
+    <td><tt>0</tt></td>
+    <td><tt>1</tt></td>
+    <td><tt>2</tt></td>
+    <td><tt>3</tt></td>
+    <td><tt>4</tt></td>
+    <td><tt>5</tt></td>
+    <td><tt>6</tt></td>
+    <td><tt>7</tt></td>
+    <td><tt>8</tt></td>
+    <td><tt>9</tt></td>
+    <td><tt>:</tt></td>
+    <td><tt>;</tt></td>
+    <td><tt>&lt;</tt></td>
+    <td><tt>=</tt></td>
+    <td><tt>&gt;</tt></td>
+    <td><tt>?</tt></td>
+  </tr>
+  <tr>
+    <th>4</th>
+    <td><tt>@</tt></td>
+    <td><tt>A</tt></td>
+    <td><tt>B</tt></td>
+    <td><tt>C</tt></td>
+    <td><tt>D</tt></td>
+    <td><tt>E</tt></td>
+    <td><tt>F</tt></td>
+    <td><tt>G</tt></td>
+    <td><tt>H</tt></td>
+    <td><tt>I</tt></td>
+    <td><tt>J</tt></td>
+    <td><tt>K</tt></td>
+    <td><tt>L</tt></td>
+    <td><tt>M</tt></td>
+    <td><tt>N</tt></td>
+    <td><tt>O</tt></td>
+  </tr>
+  <tr>
+    <th>5</th>
+    <td><tt>P</tt></td>
+    <td><tt>Q</tt></td>
+    <td><tt>R</tt></td>
+    <td><tt>S</tt></td>
+    <td><tt>T</tt></td>
+    <td><tt>U</tt></td>
+    <td><tt>V</tt></td>
+    <td><tt>W</tt></td>
+    <td><tt>X</tt></td>
+    <td><tt>Y</tt></td>
+    <td><tt>Z</tt></td>
+    <td><tt>[</tt></td>
+    <td><tt>\</tt></td>
+    <td><tt>]</tt></td>
+    <td><tt>^</tt></td>
+    <td><tt>_</tt></td>
+  </tr>
+  <tr>
+    <th>6</th>
+    <td><tt>`</tt></td>
+    <td><tt>a</tt></td>
+    <td><tt>b</tt></td>
+    <td><tt>c</tt></td>
+    <td><tt>d</tt></td>
+    <td><tt>e</tt></td>
+    <td><tt>f</tt></td>
+    <td><tt>g</tt></td>
+    <td><tt>h</tt></td>
+    <td><tt>i</tt></td>
+    <td><tt>j</tt></td>
+    <td><tt>k</tt></td>
+    <td><tt>l</tt></td>
+    <td><tt>m</tt></td>
+    <td><tt>n</tt></td>
+    <td><tt>o</tt></td>
+  </tr>
+  <tr>
+    <th>7</th>
+    <td><tt>p</tt></td>
+    <td><tt>q</tt></td>
+    <td><tt>r</tt></td>
+    <td><tt>s</tt></td>
+    <td><tt>t</tt></td>
+    <td><tt>u</tt></td>
+    <td><tt>v</tt></td>
+    <td><tt>w</tt></td>
+    <td><tt>x</tt></td>
+    <td><tt>y</tt></td>
+    <td><tt>z</tt></td>
+    <td><tt>{</tt></td>
+    <td><tt>|</tt></td>
+    <td><tt>}</tt></td>
+    <td><tt>~</tt></td>
+    <td><i><a href="#del" title="delete">del</a></i></td>
+  </tr>
+</table>
+<p>The first 32 characters and the last character are control codes. Each control code has a very specific function.</p>
+<dl>
+<p>Paper Tape:</p>
+<dt id="nul"><i>nul</i></dt>
+<dd><tt>null</tt>. ASCII was designed specifically for use with punched paper tape. A reel of paper tape is a stream of rows. Each row contains one character. A hole in the tape represented a <code>1</code> bit. A row with no punches was empty tape, or leader. A character containing only <code>0</code> bits should be ignored by the receiver.</dd>
+<dt id="del"><i>del</i></dt>
+<dd><tt>delete</tt>. To delete a character on a paper tape, punch out all of the holes in the row. A character containing only <code>1</code> bits should be ignored by the receiver.</dd>
+<dt id="dc1"><i>dc1</i></dt>
+<dd><tt>device control one</tt>. Turn the paper tape reader on.</dd>
+<dt id="dc2"><i>dc2</i></dt>
+<dd><tt>device control two</tt>. Turn the paper tape puncher on.</dd>
+<dt id="dc3"><i>dc3</i></dt>
+<dd><tt>device control three</tt>. Turn the paper tape reader off.</dd>
+<dt id="dc3"><i>dc4</i></dt>
+<dd><tt>device control four</tt>. Turn the paper tape puncher off.</dd>
+<p>Format Effectors:</p>
+<dt id="bs"><i>bs</i></dt>
+<dd><tt>backspace</tt>. Move the print head back one space. This was not a deletion. Deletion is done on the paper tape with <i><a href="#del" title="delete">del</a></i>.</dd>
+<dt id="tab"><i>tab</i></dt>
+<dd><tt>tabulation</tt>. Advance to the next tabstop. ASCII did not provide a way to define tabstops, nor did it define a default tab spacing. We still do not have an international tabstop standard. <i>tab</i> was not intended to be a data separator. That was what <i><a href="#us" title="unit separator">us</a></i> was for.</dd>
+<dt id="cr"><i>cr</i></dt>
+<dd><tt>carriage return</tt>. Move the print head to the left edge. Some terminals could not complete the move in a single character time, so <i><a href="#lf" title="line feed">lf</a></i> and <i><a href="#nul" title="null">nul</a></i> characters would be sent to prevent the printing of a character in the middle of the page.</dd>
+<dt id="lf"><i>lf</i></dt>
+<dd><tt>line feed</tt>. Roll the paper ahead one line. <i><a href="#lf" title="line feed">lf</a></i> was usually issued after <i><a href="#cr" title="carriage return">cr</a></i> because moving the print head to the left edge could be slow. The paper could be rolled while the print head was still in motion. This character is sometimes called <tt>newline</tt>.</dd>
+<dt id="ff"><i>ff</i></dt>
+<dd><tt>form feed</tt>. Eject the current page, advancing to the top of the next page.</dd>
+<dt id="vt"><i>vt</i></dt>
+<dd><tt>vertical tabulation</tt>. Roll the paper ahead to the next vertical tabstop. ASCII did not provide a way to define vertical tabstops, nor did it define a default vertical tab spacing.</dd>
+<p>Protocol:</p>
+<dt id="soh"><i>soh</i></dt>
+<dd><tt>start of heading</tt>. A message could have an optional header that could include delivery or routing information.</dd>
+<dt id="stx"><i>stx</i></dt>
+<dd><tt>start of text</tt>. A message starts with this character.</dd>
+<dt id="etx"><i>etx</i></dt>
+<dd><tt>end of text</tt>. A message ends with this character. Sometimes it is followed by an error detection code such as CRC-16.</dd>
+<dt id="etb"><i>etb</i></dt>
+<dd><tt>end of tranmission block</tt>. This allowed for breaking a long message into smaller blocks that could be individually acknowledged.</dd>
+<dt id="ack"><i>ack</i></dt>
+<dd><tt>acknowledge</tt>. The message was received.</dd>
+<dt id="nak"><i>nak</i></dt>
+<dd><tt>negative acknowledge</tt>. The message was not received correctly. In most cases, similar control characters have similar codes, but <i><a href="#ack" title="acknoweldge">ack</a></i> and <i><a href="#nak" title="negative acknoweldge">nak</a></i> were separated to give more resistence against transmission errors. It would require three bit errors to transform <i><a href="#ack" title="acknoweldge">ack</a></i> into <i><a href="#nak" title="negative acknoweldge">nak</a></i>.</dd>
+<dt id="eot"><i>eot</i></dt><dd><tt>end of transmission</tt>.</dd>
+<dt id="em"><i>em</i></dt><dd><tt>end of medium</tt>. This could mark the end of a tape.</dd>
+<dt id="enq"><i>enq</i></dt>
+<dd><tt>enquiry</tt>. Ask the other station to identify itself. Some teletypes, on receiving this character, would automatically reply with a preprogrammed string.
+Pressing the <span class="key">here is</span> key would also transmit the preprogrammed string.</dd>
+<dt id="bel"><i>bel</i></dt>
+<dd><tt>bell</tt>. Ring the bell to get the operator's attention.</dd>
+<dt id="syn"><i>syn</i></dt>
+<dd><tt>synchronous idle</tt>. In the synchronous transmission mode,
+the channel is given a steady stream of bits with no framing bits around the characters.
+The two stations synchronize a character clock so that they agree on when it is time to
+start the next character. When a sender has nothing to send, it sends <i>syn</i> characters.
+The receiver can look for a pattern of <i>syn</i> characters for synchronization.</dd>
+<dt id="can"><i>can</i></dt>
+<dd><tt>cancel</tt>. The remainder of the message will not be sent. Oops.</dd>
+<dt id="sub"><i>sub</i></dt>
+<dd><tt>substitute</tt>. The character that was supposed to be sent was somehow lost. Oops.</dd>
+<p>Escapement:</p>
+<dt id="so"><i>so</i></dt>
+<dd><tt>shift out</tt>. Switch to an alternate character set. Early in the design of ASCII, this was going to be used to access lower case, similar to the use of <span class="key">shift</span> on typewriter keyboards. <i><a href="#so" title="shift out">so</a></i> and <i><a href="#si" title="shift in">si</a></i> were retained for accessing an alternate character set. It was sometimes used to select the ribbon color.</dd>
+<dt id="si"><i>si</i></dt><dd><tt>shift in</tt>.</dd>
+<dt id="esc"><i>esc</i></dt>
+<dd><tt>escape</tt>. <i>esc</i> was another way of accessing an alternate character set. One use of <i>esc</i> was to add an eighth bit to the next character.</dd>
+<dt id="dle"><i>dle</i></dt>
+<dd><tt>data link escape</tt>. Do not treat the next character as a control character.</dd>
+<p>Information Separators:</p>
+<dt id="us"><i>us</i></dt><dd><tt>unit separator</tt>.</dd>
+<dt id="rs"><i>rs</i></dt><dd><tt>record separator</tt>.</dd>
+<dt id="gs"><i>gs</i></dt><dd><tt>group separator</tt>.</dd>
+<dt id="fs"><i>fs</i></dt><dd><tt>file separator</tt>.</dd>
+</dl>
+<p>Some of these codes are still reflected in modern keyboards (<span class="key">del</span> <span class="key">bs</span> <span class="key">tab</span> <span class="key">esc</span>) but now have very different meanings.
+The original purpose of the <span class="key">ctrl</span> key was to generate these control characters by subtracting 64 from certain codes.
+<span class="key">ctrl</span><span class="key">A</span> generated <i><a href="#soh" title="start of header">soh</a></i>.
+<span class="key">ctrl</span><span class="key">Z</span> generated <i><a href="#sub" title="substitute">sub</a></i>.
+Six of the control characters could be generated by using <span class="key">ctrl</span><span class="key">shift</span> together.</p>
+<h5><a href="https://www.crockford.com/utf8.html">UTF-8.</a></h5>
+<h5><a href="https://www.crockford.com/kim.html">UTF-8 and Kim.</a></h5>
+<img style="position: absolute; left=0;" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Teletype.jpg">
+
+</div>
+</body>
+</html>
+

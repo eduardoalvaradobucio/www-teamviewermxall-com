@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package lidR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=lidR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Airborne LiDAR Data Manipulation and Visualization for Forestry Applications [R package lidR version 4.3.1]">
+<meta name="citation_author1" content="Jean-Romain Roussel">
+<meta name="citation_author2" content="David Auty">
+<meta name="citation_publication_date" content="2026-04-07">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lidR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lidR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications">
+<meta property="og:description" content="Airborne LiDAR (Light Detection and Ranging) interface for data manipulation and visualization. Read/write 'las' and 'laz' files, computation of metrics in area based approach, point filtering, artificial point reduction, classification from geographic data, normalization, individual tree segmentation and other manipulations.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=lidR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry
+Applications</h2>
+<p>Airborne LiDAR (Light Detection and Ranging) interface for data
+    manipulation and visualization. Read/write 'las' and 'laz' files, computation
+    of metrics in area based approach, point filtering, artificial point reduction,
+    classification from geographic data, normalization, individual tree segmentation
+    and other manipulations.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>4.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), ../../../doc/manuals/r-patched/packages/methods/refman/methods.html</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../classInt/index.html"><span class="CRAN">classInt</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.12.0), <a href="../glue/index.html"><span class="CRAN">glue</span></a>, ../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html, <a href="../lazyeval/index.html"><span class="CRAN">lazyeval</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.3), <a href="../rgl/index.html"><span class="CRAN">rgl</span></a>, <a href="../rlas/index.html"><span class="CRAN">rlas</span></a> (&ge; 1.8.2), <a href="../sf/index.html"><span class="CRAN">sf</span></a>, ../../../doc/manuals/r-patched/packages/stats/refman/stats.html, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a> (&ge; 1.5-17), ../../../doc/manuals/r-patched/packages/tools/refman/tools.html, ../../../doc/manuals/r-patched/packages/utils/refman/utils.html, <a href="../parallelly/index.html"><span class="CRAN">parallelly</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html"><span class="CRAN">BH</span></a> (&ge; 1.72.0), <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppArmadillo/index.html"><span class="CRAN">RcppArmadillo</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="https://www.bioconductor.org/packages/release/bioc/html/EBImage.html" target="_top"><span class="BioC">EBImage</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../geometry/index.html"><span class="CRAN">geometry</span></a>, <a href="../gstat/index.html"><span class="CRAN">gstat</span></a>, <a href="../raster/index.html"><span class="CRAN">raster</span></a>, <a href="../RCSF/index.html"><span class="CRAN">RCSF</span></a>, <a href="../RMCC/index.html"><span class="CRAN">RMCC</span></a>, <a href="../rjson/index.html"><span class="CRAN">rjson</span></a>, <a href="../mapview/index.html"><span class="CRAN">mapview</span></a>, <a href="../mapedit/index.html"><span class="CRAN">mapedit</span></a>, <a href="../progress/index.html"><span class="CRAN">progress</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.1.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-07</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.lidR">10.32614/CRAN.package.lidR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jean-Romain Roussel [aut, cre, cph],
+  David Auty [aut, ctb] (Reviews the documentation),
+  Florian De Boissieu [ctb] (Fixed bugs and improved catalog features),
+  Andrew Sánchez Meador [ctb] (Implemented wing2015() for
+    segment_snags()),
+  Bourdon Jean-François [ctb] (Contributed to Roussel2020() for
+    track_sensor()),
+  Gatziolis Demetrios [ctb] (Implemented Gatziolis2019() for
+    track_sensor()),
+  Leon Steinmeier [ctb] (Contributed to parallelization management),
+  Stanislaw Adaszewski [cph] (Author of the C++ concaveman code),
+  Benoît St-Onge [cph] (Author of the 'chm_prep' function)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jean-Romain Roussel  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x72;&#x2d;&#x6c;&#x69;&#x64;&#x61;&#x72;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-lidar/lidR/issues" target="_top"><span class="GitHub">https://github.com/r-lidar/lidR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/r-lidar/lidR" target="_top"><span class="GitHub">https://github.com/r-lidar/lidR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">lidR citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lidR.html"><span class="CRAN">lidR results</span></a> <span style="background-color:#F4E646;">[issues need fixing before 2026-05-01]</span></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/lidR.html"><span class="CRAN">lidR.html</span></a> ,  <a href="lidR.pdf"><span class="CRAN">lidR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/lidR-LAS-class.html"><span class="CRAN">1. LAS formal class</span></a> (<a href="vignettes/lidR-LAS-class.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lidR-LAS-class.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/lidR-LAScatalog-class.html"><span class="CRAN">2. LAScatalog formal class</span></a> (<a href="vignettes/lidR-LAScatalog-class.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lidR-LAScatalog-class.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/lidR-LAScatalog-engine.html"><span class="CRAN">3. LAScatalog processing engine</span></a> (<a href="vignettes/lidR-LAScatalog-engine.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lidR-LAScatalog-engine.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/lidR-catalog-apply-examples.html"><span class="CRAN">5. Create a function to process a LAScatalog</span></a> (<a href="vignettes/lidR-catalog-apply-examples.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lidR-catalog-apply-examples.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/lidR-computation-speed-LAScatalog.html"><span class="CRAN">4. Speed-up the computations on a LAScatalog</span></a> (<a href="vignettes/lidR-computation-speed-LAScatalog.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/lidR-computation-speed-LAScatalog.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lidR_4.3.1.tar.gz"> <span class="CRAN"> lidR_4.3.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/lidR_4.3.1.zip"><span class="CRAN">lidR_4.3.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/lidR_4.3.1.zip"><span class="CRAN">lidR_4.3.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/lidR_4.3.1.zip"><span class="CRAN">lidR_4.3.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/lidR_4.3.1.tgz"><span class="CRAN">lidR_4.3.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/lidR_4.2.3.tgz"><span class="CRAN">lidR_4.2.3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/lidR_4.3.1.tgz"><span class="CRAN">lidR_4.3.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/lidR_4.3.1.tgz"><span class="CRAN">lidR_4.3.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lidR"> <span class="CRAN"> lidR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../spanner/index.html"><span class="CRAN">spanner</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../aboveR/index.html"><span class="CRAN">aboveR</span></a>, <a href="../CrownScorchTLS/index.html"><span class="CRAN">CrownScorchTLS</span></a>, <a href="../crownsegmentr/index.html"><span class="CRAN">crownsegmentr</span></a>, <a href="../CspStandSegmentation/index.html"><span class="CRAN">CspStandSegmentation</span></a>, <a href="../dsmSearch/index.html"><span class="CRAN">dsmSearch</span></a>, <a href="../FORTLS/index.html"><span class="CRAN">FORTLS</span></a>, <a href="../lidaRtRee/index.html"><span class="CRAN">lidaRtRee</span></a>, <a href="../rcaiman/index.html"><span class="CRAN">rcaiman</span></a>, <a href="../rcontroll/index.html"><span class="CRAN">rcontroll</span></a>, <a href="../rTLsDeep/index.html"><span class="CRAN">rTLsDeep</span></a>, <a href="../tReeTraits/index.html"><span class="CRAN">tReeTraits</span></a>, <a href="../vostokR/index.html"><span class="CRAN">vostokR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../CspStandSegmentation/index.html"><span class="CRAN">CspStandSegmentation</span></a>, <a href="../spanner/index.html"><span class="CRAN">spanner</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../crookR/index.html"><span class="CRAN">crookR</span></a>, <a href="../FuelDeep3D/index.html"><span class="CRAN">FuelDeep3D</span></a>, <a href="../lacunr/index.html"><span class="CRAN">lacunr</span></a>, <a href="../rayshader/index.html"><span class="CRAN">rayshader</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lidR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=lidR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
