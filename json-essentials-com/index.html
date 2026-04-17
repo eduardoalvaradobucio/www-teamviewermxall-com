@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:js="local:js">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="max-age=86400">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<meta name="copyright" content="Copyright   
+&amp;copy; 
+2021-2022: Alexander Stoyan. All rights
+reserved.">
+<meta name="keywords" content="PINERY Software  Systems, Pinery JSON, JSON  Essentials, JSON parser, JSON Schema, JSON query, JSON
+  formatting, JSON validation, JSON annotation, JSON COM, JSON
+  ActiveX, JSON toolkit, JSON SDK, JSON software development kit,
+  JSON API, JSON application programming interface, JSON library,
+  JSON components, JSON REST">
+<meta name="description" content="Fast, reliable, standard  compliant COM/ActiveX JSON toolkit for Windows applications that
+  includes parser, DOM, Schema, selectors and ready to use REST
+  support.">
+<title>JSON Essentials for  COM/ActiveX >
+      PINERY_SOFTWARE_SYSTEMS</title>
+<link rel="stylesheet preload prefetch" href="https://pinery.systems/assets/css/fonts.css" as="style" type="text/css">
+<link rel="stylesheet preload prefetch" href="https://pinery.systems/assets/css/styles.css" as="style" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://pinery.systems/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pinery.systems/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pinery.systems/favicon-16x16.png">
+<link rel="manifest" href="https://pinery.systems/site.webmanifest"><script src="https://pinery.systems/assets/js/formmgr.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script></head>
+<body x-site-url="https://pinery.systems/" x-site-name="pinery.systems"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FVGQTKM5HE"></script><script> 
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-FVGQTKM5HE'); // Analytics
+                gtag('config', 'AW-313491976'); // Google Ads
+
+                function gtag_report_purchase_conversion(value, currency, id) {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-313491976/fP7_CP6tiowDEIiEvpUB',
+                        'value': value,
+                        'currency': currency,
+                        'transaction_id': id,
+                        'event_callback': function() {
+                            console.log('Purchase conversion reported');
+                        }
+                    });
+                    return false;
+                }
+
+                function gtag_report_evaluation_conversion() {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-313491976/WuhGCOrPu5IDEIiEvpUB',
+                        'event_callback': function() {
+                            console.log('Evaluation conversion reported');
+                        }
+                    });
+                    return false;
+                }
+
+                function gtag_report_freeware_conversion() {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-313491976/3COyCPas6pIDEIiEvpUB',
+                        'event_callback': function() {
+                            console.log('Freeware conversion reported');
+                        }
+                    });
+                    return false;
+                }
+
+                 </script><script type="text/javascript" src="https://pinery.systems/assets/js/cookie-consent-4.0.0.js" charset="UTF-8"></script><script type="text/javascript" charset="UTF-8"> 
+
+            var siteUrl = $(document.body).attr('x-site-url');
+            var siteName = $(document.body).attr('x-site-name');
+            
+            document.addEventListener('DOMContentLoaded', function () {
+                cookieconsent.run({
+                    "notice_banner_type":"headline",
+                    "consent_type":"express",
+                    "palette":"dark",
+                    "language":"en",
+                    "page_load_consent_levels":["strictly-necessary"],
+                    "notice_banner_reject_button_hide":false,
+                    "preferences_center_close_button_hide":false,
+                    "website_name":siteName,
+                    "website_privacy_policy_url":siteUrl + "/privacy.html"
+                });
+            });
+
+             </script><noscript>Cookie Consent by 
+        <a href="https://www.PrivacyPolicies.com/cookie-consent/" rel="nofollow noopener">PrivacyPolicies.com</a></noscript><script xmlns:inl="local:inline">
+
+
+    var feedbackInitialized = false;
+    var feedbackForm = new FormManager();
+
+    function feedbackSubmitHandler(response) {
+        $('#feedback-close').removeClass('invisible');
+        return response;
+    }
+
+    function initFeedback(init) {
+        if (init == feedbackInitialized)
+            return;
+
+        if (init) {
+            $('#feedback-submit').val('Wait ...');
+            feedbackForm.init($('#feedback'), 'Send', feedbackSubmitHandler, 'feedback', 5)
+                .validateAsLong($('#feedback-message'));
+        }
+
+        $('#btn-feedback-helpful').attr('checked', 'checked');
+        $('#feedback-suggestion').val('');
+        $('#feedback-subject').val('');
+
+        if (init) {
+            $('#feedback-fields-container').removeClass('invisible');
+            $('#feedback-response-container').addClass('invisible');
+            $('#feedback-panel').removeClass('invisible');
+            $('#feedback-close').addClass('invisible');
+            $('#feedback-message').val('[no suggestion provided]');
+            $('#feedback-suggestion').focus();
+        } else {
+            $('#feedback-panel').addClass('invisible');
+        }
+
+        feedbackInitialized = init;
+    }
+
+    $(function()  {
+        $('#feedback-submit').click(function(e)  {
+            var helpful = ($('#btn-feedback-helpful').is(':checked'));
+            $('#feedback-subject').val((helpful ? 'Helpful' : 'Not-Helpful')
+                + ' - ' + window.location);
+            $('#feedback-fields-container').addClass('invisible');
+            $('#feedback-response-container').removeClass('invisible');
+
+            var suggestion = $('#feedback-suggestion').val();
+            if (suggestion) {
+                $('#feedback-message').val(suggestion);
+            }
+
+            e.stopPropagation();
+        });
+
+        $('#feedback-form').click(function(e)  {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        $('#feedback-close').click(function(e)  {
+            initFeedback(false);
+            e.stopPropagation();
+        });
+
+        
+        $('#btn-feedback, #feedback-panel').click(function(e)  {
+            initFeedback(!feedbackInitialized);
+        });
+
+        $('#btn-feedback-helpful, #btn-feedback-nothelpful, #label-feedback-helpful, #label-feedback-nothelpful, #feedback-getintouch').click(function(e)  {
+            e.stopPropagation();
+        });
+    });
+
+    
+    </script><div id="feedback-container" class="no-print" xmlns:inl="local:inline"><button id="btn-feedback"><span>Feedback</span></button><div id="feedback-panel" class="invisible">
+<div id="feedback-curtain"></div>
+<div id="feedback-form">
+<form id="feedback" method="post" action="https://script.google.com/macros/s/AKfycbwb9Sw1w1hDBjn7Zi_nVLpFp2WT_Vg20KU52d4B5Xd5z3OPHDfmmkTeyX2O9VrjnWQ/exec">
+<div id="feedback-fields-container">
+<p><b>Was this page helpful?</b><span class="tab"></span><input type="radio" id="btn-feedback-helpful" name="feedback-helpful" value="yes" checked><label for="btn-feedback-helpful" id="label-feedback-helpful">Yes</label><span class="tab"></span><span>|</span><span class="tab"></span><input type="radio" id="btn-feedback-nothelpful" name="feedback-helpful" value="no"><label for="btn-feedback-nothelpful" id="label-feedback-nothelpful">No</label></p><input type="hidden" id="feedback-name" name="name" value="anonymous"><input type="hidden" id="feedback-subject" name="subject" value="Feedback"><input type="hidden" id="feedback-email" name="email" value="anonymous@anonymous.none"><input type="hidden" id="feedback-type" name="type" value="feedback"><input type="hidden" id="feedback-order" name="order" value="0"><input type="hidden" id="feedback-message" name="message" value="."><textarea type="text" id="feedback-suggestion" name="suggestion" placeholder="Any suggestions?" class="form-multiline-input"></textarea><input type="hidden" id="feedback-x" name="x"><input type="hidden" id="feedback-y" name="y"><p></p>
+<div class="vcenter"><input type="submit" id="feedback-submit"><span class="tab"></span><a id="feedback-getintouch" href="https://pinery.systems/contact.html">Or get in touch</a></div>
+</div>
+<div id="feedback-response-container" class="invisible"><br><br><div id="feedback-progress"><span class="progress">.</span><span class="progress" style="--delay: 0.1s">
+                .</span><span class="progress" style="--delay: 0.2s">
+                .</span><span class="progress" style="--delay: 0.3s">
+                .</span><span class="progress" style="--delay: 0.4s">
+                .</span><span class="progress" style="--delay: 0.5s">
+                .</span></div>
+<div id="feedback-response" class="response-hidden"></div>
+<p></p>
+<div class="center"><button id="feedback-close" type="button" class="invisible">Close</button></div>
+</div>
+</form>
+</div>
+</div>
+</div><header class="no-print page-header" xmlns:inl="local:inline"><div class="vblock"><span><a href="https://pinery.systems/" class="nolink nowrap"><span class="hdr-separator">&gt;</span><span class="hdr1">PINERY_
+            <sup class="title-part">
+&reg;
+</sup></span><span class="hdr2 title-part">SOFTWARE_SYSTEMS</span></a></span><span class="title-part"><a href="
+#
+" class="nolink nowrap"><span class="hdr-separator">&gt;</span><span class="hdr2">JSON Essentials&trade; for  COM/ActiveX</span></a></span></div>
+<div class="line no-print"><span></span></div></header><section class="vblock page-body"><nav class="navigator no-print"><script xmlns:inl="local:inline">
+
+
+        $(function() {
+           $('#nav-btn').click(function() {
+               $('#navigator-panel').toggleClass('navigator-panel-open');
+           });
+        });
+
+        
+    </script><div id="nav-btn" xmlns:inl="local:inline">
+<div class="nav-btn-row"></div>
+<div class="nav-btn-row"></div>
+<div class="nav-btn-row"></div>
+</div>
+<div id="navigator-panel" xmlns:inl="local:inline">
+<p><a class="link nowrap" href="https://pinery.systems/index.html"><link to="index.html">Home</link></a></p>
+<p><a class="link nowrap" href="https://pinery.systems/json-essentials-com/index.html"><link to="json-essentials-com/index.html">
+      JSON Essentials&trade; for  COM/ActiveX</link></a></p>
+<p><span class="tab"></span><span class="tab"></span><a class="link nowrap" href="https://pinery.systems/json-essentials-com/evaluate.html"><link to="json-essentials-com/evaluate.html">Try It</link></a></p>
+<p><span class="tab"></span><span class="tab"></span><a class="link nowrap" href="https://pinery.systems/json-essentials-com/get-license.html"><link to="json-essentials-com/get-license.html">Get It</link></a></p>
+<p><span class="tab"></span><span class="tab"></span><a class="link nowrap" href="https://pinery.systems/json-essentials-com/documentation.html" rel="help"><link to="json-essentials-com/documentation.html" rel="help">
+      Documentation</link></a></p>
+<p><span class="tab"></span><span class="tab"></span><a class="link nowrap" href="https://pinery.systems/json-essentials-com/changelog.html"><link to="json-essentials-com/changelog.html">
+      Changelog</link></a></p>
+<p><a class="link nowrap" href="https://pinery.systems/contact.html"><link to="contact.html">Contact</link></a></p>
+<p><a class="link nowrap" href="https://pinery.systems/legal.html"><link to="legal.html">Terms &amp; Legal</link></a></p>
+<div class="twitter-block no-print"><a class="twitter-timeline" data-lang="en" data-width="24ch" data-height="30em" data-dnt="true" href="https://twitter.com/pinery_systems?ref_src=twsrc%5Etfw">
+        Twitter updates...</a><script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div></nav><article class="main-article"><html>
+	<table class="hfill">
+		<tr>
+			<td>
+				<h1>JSON Essentials&trade; for  COM/ActiveX - Universal JSON toolkit for  Windows</h1>
+			</td>
+			<td class="tab"></td>
+			<td class="right vcenter">
+				<form action="evaluate.html">
+					<button>Try It</button>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<p>Current version: 
+      <b>1.2.1</b>
+		<br/>Released on: 
+      <b>2022.01.20</b></p>
+	<p>
+		<a href="#overview">Overview</a>
+		<span>|</span>
+		<a href="#where-to-use">Where to use</a>
+		<span>|</span>
+		<a href="#features">Features</a>
+		<span>|</span>
+		<a href="#code-samples">Code samples</a>
+		<span>|</span>
+		<a href="#json-schema">JSON Schema</a>
+		<span>|</span>
+		<a href="#compliance">Compliance</a>
+		<span>|</span>
+		<a href="#future">Future perspectives</a>
+	</p>
+	<h2 class="ah">1 
+      <a href="#overview" class="ah2" id="overview">
+      Overview</a></h2>
+	<p>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>is a language independent JSON toolkit for rapid
+      implementation of the most common</span>
+		<b>JSON</b>
+		<span>use cases on the</span>
+		<b>Windows</b>
+		<span>platform.</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>is built with focus on exceptional standard compliance,
+      performance, stability and simplicity. It can be used with
+      any programming language and in development environment that
+      supports</span>
+		<b>COM/ActiveX API</b>
+		<span>standard, including but not limited to the mainstream
+      programming languages like</span>
+		<b>C#</b>, 
+      <b>Visual Basic</b>, 
+      <b>C/C++</b>, 
+      <b>Delphi</b>, 
+      <b>Java</b>, 
+      <b>JavaScript</b>, 
+      <b>VB Script</b>, 
+      <b>TypeScript</b>, 
+      <b>PHP</b>, 
+      <b>Python</b>, 
+      <b>Matlab</b>
+		<span>etc. It's native and flexible support of</span>
+		<b>HTTP/HTTPS</b>
+		<span>protocols makes it immediately ready for complex</span>
+		<b>JSON REST</b>
+		<span>applications.</span></p>
+	<p>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>provides different licensing options and product
+      configurations that allow individual developers, non-profit
+      and academic organizations to use the it for</span>
+		<b>free</b>, 
+      <span>and allow</span>
+		<b>commercial</b>
+		<span>users to get only the needed functionality.</span>
+		<a href="get-license.html">Make your license choice</a>.</p>
+	<h2 class="ah">2 
+      <a href="#where-to-use" class="ah2" id="where-to-use">Where
+      to use</a></h2>
+	<p>
+		<b>JSON</b>
+		<span>data format has become the primary format for data
+        exchange in most modern systems because it's simple,
+        lightweight, cross-platform, but still powerful, thus the
+        scope of application of</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>is limited by one's imagination only. From keeping
+        local configuration files in</span>
+		<b>JSON</b>
+		<span>format, organizing small datasets in</span>
+		<b>JSON,</b>
+		<span>to communicating with Web services that offer</span>
+		<b>JSON API</b>
+		<span>endpoints, etc. In the world of distributed systems
+        and</span>
+		<b>Service Oriented Architectures</b>
+		<span>a simple to use, but still functional, fast and
+        reliable</span>
+		<b>JSON</b>
+		<span>handling using</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>can not only save time on development but also save
+        cost on data processing, especially in cloud environments
+        where CPU cycles directly translate to dollar
+        amounts.</span>
+	</p>
+	<p>
+		<span>Here are just a few well-know major Web services to
+        mention that require</span>
+		<b>JSON</b>
+		<span>as the main or the only mean of communication with
+        the external world, and</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>can handle all that for your Windows applications,
+        services and scripts:</span>
+		<ul>
+			<li>
+				<p>
+					<a href="https://dataondemand.nasdaq.com/docs/index.html" rel="noopener" target="_blank">Nasdaq
+              Data-On-Demand</a>
+					<span>-</span>
+					<b>Nasdaq</b>
+					<span>provides institutional investors, fund managers
+              and traders with financial analytics, and buy and
+              sell signals derived from structured and unstructured
+              data, and our machine intelligence engine. In high
+              frequency trading systems hudreds or thousands
+              of</span>
+					<b>JSON</b>
+					<span>requests and responses may occur in just a
+              second. The ability to handle all those requests in
+              time combined with effective trading logic defines
+              success. A typical use case using</span>
+					<b>JSON Essentials&trade; for  COM/ActiveX</b>
+					<span>would be a real-time and history stock
+              information processing for subscribed tickers in
+              order to reflecting stock data in a chart or
+              trigerring buy-sell signals.</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="https://developers.facebook.com/docs/graph-api/overview" rel="noopener" target="_blank">Facebook Graph API</a>
+					<span>- The</span>
+					<b>Facebook Graph API</b>
+					<span>is the primary way to get data into and out of
+              the</span>
+					<b>Facebook</b>
+					<span>platform. It's an HTTP-based API that apps can
+              use to programmatically query data, post new stories,
+              manage ads, upload photos, and perform a wide variety
+              of other tasks. A typical use case using</span>
+					<b>JSON Essentials&trade; for  COM/ActiveX</b>
+					<span>would be an automated synchronization of a
+              company's public feed and</span>
+					<b>Facebook</b>
+					<span>ads with other social networks and/or
+              centralized company's feed generator.</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="https://cloud.google.com/storage/docs/json_api" rel="noopener" target="_blank">Google Cloud Storage
+              JSON API overview</a>
+					<span>- The</span>
+					<b>Google Cloud Storage JSON API</b>
+					<span>is a simple,</span>
+					<b>JSON</b>
+					<span>backed interface for accessing and
+              manipulating</span>
+					<b>Cloud Storage</b>
+					<span>projects in a programmatic way. It is fully
+              compatible with the</span>
+					<b>Cloud Storage Client Libraries.</b>
+					<span>A typical use case using</span>
+					<b>JSON Essentials&trade; for  COM/ActiveX</b>
+					<span>would be a middleware implementation that
+              uses</span>
+					<b>Google Cloud</b>
+					<span>services for implementing business logic and
+              infrastructure layers.</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="https://developer.paypal.com/docs/api/overview" rel="noopener" target="_blank">PayPal API</a>
+					<span>-</span>
+					<b>PayPal's</b>
+					<span>services allow people to make financial
+              transactions online by granting the ability to
+              transfer funds electronically between individuals and
+              businesses.Through</span>
+					<b>PayPal,</b>
+					<span>users can send or receive payments for online
+              auctions, purchase or sell goods and services, donate
+              money or receive donations. It's</span>
+					<b>JSON API</b>
+					<span>allows automatic and managing fund flows,
+              logging and reporting. A typical use case
+              using</span>
+					<b>JSON Essentials&trade; for  COM/ActiveX</b>
+					<span>would be an implementation of a</span>
+					<b>PayPal</b>
+					<span>Web hook for subscribing to account events for
+              reading and processing all</span>
+					<b>JSON</b>
+					<span>notifications about financial actitivy in the
+              monitored accounts.</span>
+				</p>
+			</li>
+		</ul>
+	</p>
+	<h2 class="ah">3 
+      <a href="#features" class="ah2" id="features">
+      Features</a></h2>
+	<p>
+		<span>The following below growing list of features only
+      briefly outlines capabilities of</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>. 
+      <a href="https://pinery.systems/contact.html">Suggest a feature</a>
+		<span>that you believe is worth adding.</span></p>
+	<table class="hfill">
+		<tr>
+			<td class="feature-name-cell">Loading JSON from:</td>
+			<td class="top">
+				<p>string, file, stream, HTTP response, registry,
+            language specific objects</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">Writing JSON to:</td>
+			<td class="top">
+				<p>file, stream, HTTP request, registry</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">Encoding support:</td>
+			<td class="top">
+				<p>UTF-8, UTF-16, UTF-32, Binary Order Mark</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">JSON formatting
+          options:</td>
+			<td class="top">
+				<p>indentation, spaces, newlines, escapes</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">JSON DOM operations:</td>
+			<td class="top">
+				<p>JSON of a node, DOM traversal, node addition, node
+            removal, node lookup, tree saving, node selecting,
+            clearing, deep tree comparison, direct DOM values
+            access, node annotations access</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">JSON selectors:</td>
+			<td class="top">
+				<p>JSON pointer, relative JSON pointer, compiled
+            selector expressions</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">JSON Schema
+          collection:</td>
+			<td class="top">
+				<p>manual schema adding, unresolved schema request,
+            custom schema request callback, schema lookup, schema
+            removal, clearing</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">JSON Schema
+          operations:</td>
+			<td class="top">
+				<p>instance validation, instance annotation, unknown
+            schema resolving, schema standard identification</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">HTTP capabilities:</td>
+			<td class="top">
+				<p>HTTP/HTTPS support, full HTTP request customization,
+            x-www-form-urlencoded and multipart/form-data form
+            data, HTTP timeouts configuration, collecting response
+            status and headers, processing response body as
+            binary/text or JSON DOM, one call JSON DOM request and
+            response processing</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="feature-name-cell">Non-functional:</td>
+			<td class="top">
+				<p>language independent, lightweight, exceptionally
+            fast, strictly standard compliant, well documented,
+            thoroughly tested</p>
+			</td>
+		</tr>
+	</table>
+	<h2 class="ah">4 
+      <a href="#code-samples" class="ah2" id="code-samples">Code
+      samples</a></h2>
+	<p>
+		<b>JScript/JavaScript</b>: 
+      <a href="https://pinery.systems/json-essentials-com/help.html#pf46" rel="help" target="_blank">Create DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf48" rel="help" target="_blank">Parse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf4a" rel="help" target="_blank">Traverse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf51" rel="help" target="_blank">Format JSON</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf55" rel="help" target="_blank">Select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf58" rel="help" target="_blank">Fast select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5b" rel="help" target="_blank">Loading JSON file</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5e" rel="help" target="_blank">Loading JSON from registry</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf61" rel="help" target="_blank">Loading JSON code</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf63" rel="help" target="_blank">Object to JSON DOM and Direct DOM Access</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf69" rel="help" target="_blank">HTTP GET JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf6b" rel="help" target="_blank">HTTP PUT JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf75" rel="help" target="_blank">Validate JSON against schema</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf7b" rel="help" target="_blank">Handle schema request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf83" rel="help" target="_blank">Annotate JSON against
+      schema</a></p>
+	<p>
+		<b>C#</b>: 
+      <a href="https://pinery.systems/json-essentials-com/help.html#pf49" rel="help" target="_blank">Create DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf47" rel="help" target="_blank">Parse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf4d" rel="help" target="_blank">Traverse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf52" rel="help" target="_blank">Format JSON</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf56" rel="help" target="_blank">Select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf59" rel="help" target="_blank">Fast select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5c" rel="help" target="_blank">Loading JSON file</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5f" rel="help" target="_blank">Loading JSON from registry</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf62" rel="help" target="_blank">Loading JSON code</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf65" rel="help" target="_blank">Object to JSON DOM and Direct DOM Access</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf6a" rel="help" target="_blank">HTTP GET JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf6e" rel="help" target="_blank">HTTP PUT JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf77" rel="help" target="_blank">Validate JSON against schema</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf7c" rel="help" target="_blank">Schema request via callback</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf7f" rel="help" target="_blank">Schema request via delegate</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf85" rel="help" target="_blank">Annotate JSON against
+      schema</a></p>
+	<p>
+		<b>Visual Basic</b>: 
+      <a href="https://pinery.systems/json-essentials-com/help.html#pf47" rel="help" target="_blank">Create DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf4a" rel="help" target="_blank">Parse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf4f" rel="help" target="_blank">Traverse DOM</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf54" rel="help" target="_blank">Format JSON</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf57" rel="help" target="_blank">Select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5a" rel="help" target="_blank">Fast select node</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf5d" rel="help" target="_blank">Loading JSON file</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf60" rel="help" target="_blank">Loading JSON from registry</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf62" rel="help" target="_blank">Loading JSON code</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf67" rel="help" target="_blank">Object to JSON DOM and Direct DOM Access</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf6a" rel="help" target="_blank">HTTP GET JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf72" rel="help" target="_blank">HTTP PUT JSON request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf79" rel="help" target="_blank">Validate JSON against schema</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf81" rel="help" target="_blank">Handle schema request</a>
+		<span>|</span>
+		<a href="https://pinery.systems/json-essentials-com/help.html#pf87" rel="help" target="_blank">Annotate JSON against
+      schema</a></p>
+	<h2 class="ah">5 
+      <a href="#json-schema" class="ah2" id="json-schema">JSON
+      Schema support</a></h2>
+	<p>
+		<b>JSON Essentials&trade; for  COM/ActiveX v1.2.1</b>
+		<span>supports only</span>
+		<a href="https://json-schema.org/specification-links.html#draft-7" rel="noopener" target="blank">Draft-07</a>
+		<span>JSON Schema standard for both validation and
+        annotation. At the moment of its release it passes all
+        required</span>
+		<a href="https://github.com/json-schema-org/JSON-Schema-Test-Suite" target="_blank" rel="noopener">JSON Schema Test Suite</a>
+		<span>tests for</span>
+		<a href="https://json-schema.org/specification-links.html#draft-7" rel="noopener" target="blank">Draft-07.</a>
+		<span>However it is not guaranteed that future updates
+        in</span>
+		<a href="https://github.com/json-schema-org/JSON-Schema-Test-Suite" target="_blank" rel="noopener">JSON Schema Test Suite</a>
+		<span>released after will pass. In order to mititage such
+        risks each package of</span>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>includes a copy of the latest snapshot of the tests
+        available right before its release for validating its
+        functionality.</span>
+	</p>
+	<p>
+		<span>Support of newer standards</span>
+		<a href="https://json-schema.org/specification-links.html#draft-2019-09-formerly-known-as-draft-8" rel="noopener" target="blank">Draft-2019-09</a>
+		<span>and</span>
+		<a href="https://json-schema.org/specification-links.html#2020-12" rel="noopener" target="blank">Draft-2020-12</a>
+		<span>is currently under development.</span>
+	</p>
+	<h2 class="ah">6 
+      <a href="#compliance" class="ah2" id="compliance">
+      Compliance</a></h2>
+	<p>
+		<b>JSON Essentials&trade; for  COM/ActiveX</b>
+		<span>is compliant with:</span>
+		<ul>
+			<li>
+				<a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404" target="_blank" rel="noopener">ECMA-404: The JSON data
+            interchange syntax</a>
+			</li>
+			<li>
+				<a href="https://json-schema.org/specification-links.html#draft-7" target="_blank" rel="noopener">JSON Schema
+            Specification: Draft7</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc6901" target="_blank" rel="noopener">RFC-6901: JSON
+            Pointer</a>
+			</li>
+			<li>
+				<a href="https://datatracker.ietf.org/doc/html/draft-handrews-relative-json-pointer-01" target="_blank" rel="noopener">Relative JSON Pointer:
+            Internet Draft</a>
+			</li>
+			<li>
+				<a href="https://www.ietf.org/rfc/rfc3629" target="_blank" rel="noopener">RFC-3629: UTF-8, a
+            transformation format of ISO 10646</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc2781" target="_blank" rel="noopener">RFC-2781: UTF-16, an
+            encoding of ISO 10646</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc5198" target="_blank" rel="noopener">RFC-5198: Unicode Format
+            for Network Interchange</a>
+			</li>
+			<li>
+				<a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/bbb05720-f724-45c7-8d17-f83c3d1a3961" target="_blank" rel="noopener">MS-OAUT: OLE Automation
+            Protocol</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc7231" target="_blank" rel="noopener">RFC-7231: Hypertext
+            Transfer Protocol (HTTP/1.1): Semantics and Content</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc3986" target="_blank" rel="noopener">RFC-3986: Uniform
+            Resource Identifier (URI): Generic Syntax</a>
+			</li>
+			<li>
+				<a href="https://tools.ietf.org/html/rfc1867" target="_blank" rel="noopener">RFC-1867: Form-based
+            File Upload in HTML</a>
+			</li>
+			<li>
+				<a href="https://github.com/json-schema-org/JSON-Schema-Test-Suite" target="_blank" rel="noopener">JSON Schema Test
+            Suite</a>
+				<span>(except some optional tests)</span>
+			</li>
+		</ul>
+	</p>
+	<h2 class="ah">7 
+      <a href="#future" class="ah2" id="future">Future
+      perspectives</a></h2>
+	<p>Despite a humble start there is much more yet to be
+      uncovered. Here is the brief outlook on what is getting ready
+      to be released soon and what's in development:</p>
+	<ul>
+		<li>Highly configurable implementation for server
+        platforms</li>
+		<li>Dedicated free-threaded classes implementation</li>
+		<li>Full support of all JSON Schema standards and
+        drafts</li>
+		<li>
+			<span>Open source cross-platform highly configurable and
+          exceptionally fast</span>
+			<b>JSON Essentials&trade; for  C++</b>
+		</li>
+	</ul>
+</html></article></section><footer xmlns:inl="local:inline"><div class="line no-print"><span></span></div>
+<div class="table vblock page-footer">
+<div class="table-cell">Copyright 
+  
+&copy; 
+2021-2022: Alexander Stoyan. All rights
+reserved.</div>
+<div class="table-cell no-print" style="text-align: right">
+        Modified on 
+        2022.09.09</div>
+</div></footer></body>
+</html>
+
