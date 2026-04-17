@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="alternate" title="Recently Updated Pike Modules" 
+href="http://modules.gotpike.org/rss/recent" type="application/rss+xml">
+<title>pike module repository: Home</title>
+<script language="JavaScript">
+	function toggleVisibility( what )
+	{
+		node = document.getElementById( "info" + what );
+		link = document.getElementById(  "link" + what );
+		if(node.style.display == 'block')
+		{
+			node.style.display = 'none';
+			link.src = '/static/images/unfold.gif';
+		}
+		else
+		{
+			node.style.display = 'block';
+			link.src = '/static/images/fold.gif';
+		}
+	}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<font face="helvetica, arial, sans-serif">
+<img src="/static/images/pike_character.png">
+<br>
+<a href="/"><img src="/static/images/home.gif" border=0 width=32 
+height=32 alt="Home"></a>&nbsp;<font 
+size=+3>modules.gotpike.org</font>
+
+
+
+<form action="/auth/login" method="post">
+<table>
+  <tr>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    Username: <input type="text" size="10" name="username"/>
+    Password: <input type="password" size="10" name="password"/>
+	<input type="hidden" name="return_to" value="/"/>
+    <input type="submit" name="action" value="Login"/> 
+    </font>
+  </td>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    [<a href="/register">Create Account</a>]<br>
+    [<a href="/auth/forgotpassword">Forgot Password?</a>]
+    </font>
+  </td>
+  </tr>
+</table>
+</form>
+
+</font>
+</td>
+</tr>
+<tr>
+<td>
+
+<table cellspacing="15">
+<tr><td valign="top" width="25%">
+<font face="helvetica,arial,sanserif">
+<p>
+<b>Modules</b> <p>
+<a href="/index/recent"><img src="/static/images/up.gif" border="0"> Up Level</a><p>
+<p/>
+<b>Recent Changes</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.USB?selected=1.0">Public.USB 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.50">Public.Parser.XML2 1.50</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.ZeroMQ?selected=1.1">Public.ZeroMQ 1.1</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Template.Mustache?selected=1.0">Public.Template.Mustache 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Protocols.XMPP?selected=1.4">Public.Protocols.XMPP 1.4</a><br>
+
+
+<p>
+<b>Popular Downloads</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON2?selected=1.0">Public.Parser.JSON2 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON?selected=0.2">Public.Parser.JSON 0.2</a><br>
+
+<a href="http://modules.gotpike.org/module/GTK2?selected=2.23">GTK2 2.23</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Web.FCGI?selected=1.8">Public.Web.FCGI 1.8</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.48">Public.Parser.XML2 1.48</a><br>
+
+
+</font>
+ </td>
+<td valign="top">
+<font face="helvetica,arial,sanserif">
+<!-- begin page content -->
+<font color="red"><i></i></font><br/>
+
+<font size="+1">
+Welcome to the Pike 
+Module Repository!
+</font>
+<br>
+<p>
+Browse the available modules using the module browser to the left.
+</font>
+<p>
+
+<!-- begin content box : New at modules.gotpike.org -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=90%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+
+<p>
+
+<b>New at modules.gotpike.org</b><p>
+
+<li>The <a 
+href="https://bitbucket.org/hww3/pike_modules-samplemodule">SampleModule</a> code provides a good 
+starting point, 
+and includes some Makefile support for integrating with modules.gotpike.org when you release a new module version.
+<p>
+<li><a href="docs/PMARCreation.html">Documentation</a> for creating PMAR (Pike Module ARchive) files for distribution
+of prepared modules is now available.
+<p>
+<li>Every module has quick access to Wiki! We've created a space at the 
+GotPike Wiki, and have placed a link to that location on each module 
+information page. Now it's easy to share module tips and ideas with 
+others!
+
+<p>
+<li>Initial addition of Monger <a 
+href="docs/MongerDeveloper.html">Developer Tools</a> documentation.
+<p>
+<li>An RSS feed for recently updated modules is now available! Simply 
+click on the XML button at the bottom of the main page for the feed.
+<p>
+<li>Module documentation is now available for all new module versions.
+<p>
+<li>Introduction to using Monger <a href="/docs/UsingMonger.html">now 
+available</a>.
+<p>
+<blockquote>This document describes the Pike module manager.</blockquote>
+<p>
+<li>Preliminary Pike module build documentation is available <A 
+href="/docs/PikeModule.html">here</a>.
+<p>
+<blockquote>This document describes the Pike module build system as well 
+as the 
+requirements for submitting modules to the Pike Module 
+Repository.</blockquote>
+<p>
+&nbsp;
+<p>
+<a href="/recent.rss"><img src="/static/images/rss-small.png" alt="RSS Feed" border="0"/></a>
+<a href="http://getfirefox.com"><img 
+src="/static/images/get-firefox-blue.png" alt="Get Firefox" 
+border="0"/></a>
+
+
+</td>
+</tr>
+</table>
+<!-- end content box : New at modules.gotpike.org -->
+
+<p>
+
+<!-- end page content -->
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+<font face="helvetica, arial,sanserif">
+<a href="http://www.gotpike.org">gotpike.org</a> | 
+Copyright &copy; 2004 - 2019 | Pike is a trademark of 
+Department of Computer and Information Science,
+                      Link&ouml;ping University
+</font>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/*************************************************************************
+ * Mobile
+ ************************************************************************/
+
+@media only screen and (max-width: 480px) {
+
+  div.flex-grid { display: block }
+  div.flex-col  { padding: 0; }
+
+  #header div {
+    width: auto;
+    padding: 10px 0 0 1em;
+  }
+
+  #header ul.user { right: 1em; }
+  #header ul.nav {
+    margin: 1em 0 0 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  #footer div {
+    width: auto;
+    padding: 1em;
+  }
+
+  #header div.search { display: none; }
+
+  #sidewalk {
+    width: auto;
+    margin: 1em;
+  }
+
+  #sidewalk #sidewalk { margin: 0; }
+
+  #sidewalk div.hero { padding: 10px; }
+  #sidewalk div.hero h1 { line-height: 1em; }
+  #sidewalk div.hero div.snippet pre {
+    position: static;
+    background-image: none;
+    padding: 10px 0;
+    width: auto;
+  }
+
+  #sidewalk #doc div.float {
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+
+  #sidewalk #doc div.mainSidebar { padding: 0; }
+  #sidewalk #doc div.sidebar { display: none; }
+
+  #sidewalk div.blog div.posts { width: auto; }
+  #sidewalk div.blog > ul { display: none; }
+
+  #sidewalk div.heading div.cmds { position: static; }
+  #sidewalk div.heading > div.page-control {
+    position: static;
+    float: none;
+    margin: 1em 0;
+  }
+
+  #sidewalk h1 { line-height: 1em; }
+  #sidewalk #forum div.sidebar { display: none; }
+  #sidewalk #forum div.comment { width: auto; }
+}
+
+/*
+TODO: use this to find elems forcing horiz scroll
+
+* {
+  border: 1px solid #f00 !important;
+}
+*/

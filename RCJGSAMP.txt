@@ -1,0 +1,175 @@
+000010 IDENTIFICATION DIVISION.                                         
+000020 PROGRAM-ID.                     RCJGSAMP.                        
+000030 AUTHOR.                         REDVERS CONSULTING LTD.          
+000040******************************************************************
+000050*  This program generates a sample JSON object using the         *
+000060*  Redvers COBOL JSON Interface generator subroutine RCJSNGEN.   *
+000070******************************************************************
+000080 ENVIRONMENT DIVISION.                                            
+000090                                                                  
+000100 DATA DIVISION.                                                   
+000110                                                                  
+000120 WORKING-STORAGE SECTION.                                         
+000130                                                                  
+000140***  Start of COBOL Record Definition (CRD)                       
+000150 01  JSN-CRD.                                                     
+000160     03  JSN-RESERVATION.                                         
+000170         05  JSN-REFNO           PIC 9(8).                        
+000180         05  JSN-TIMESTAMP       PIC X(23).                       
+000190         05  JSN-CONFIRMED       PIC A(5).                        
+000200     03  JSN-TRAIN.                                               
+000210         05  JSN-DATE            PIC 99/99/9999.                  
+000220         05  JSN-TIME            PIC X(5).                        
+000230         05  JSN-FROM            PIC X(20).                       
+000240         05  JSN-TO              PIC X(20).                       
+000250         05  JSN-SEAT            PIC X(3).                        
+000260     03  JSN-PASSENGER.                                           
+000270         05  JSN-NAME            PIC X(20).                       
+000280     03  JSN-PRICE               PIC 9(6)V99.                     
+000290     03  JSN-COMMENTS            PIC X(50) OCCURS 10.             
+000300***  End of COBOL Record Definition (CRD)                         
+000310                                                                  
+000320***  Start of the CRD SOURCE AREA                                 
+000330 01  CRD-SOURCE-AREA.                                             
+000340     03  FILLER                  PIC X(80) VALUE                  
+000350     "000000 01  JSN-CRD.                                       ".
+000360     03  FILLER                  PIC X(80) VALUE                  
+000370     "000000*       {Rail Booking}                              ".
+000380     03  FILLER                  PIC X(80) VALUE                  
+000390     "000000     03  JSN-RESERVATION.                           ".
+000400     03  FILLER                  PIC X(80) VALUE                  
+000410     "000000*       {reservation}                               ".
+000420     03  FILLER                  PIC X(80) VALUE                  
+000430     "000000        05  JSN-REFNO           PIC 9(8).           ".
+000440     03  FILLER                  PIC X(80) VALUE                  
+000450     "000000*          {ref_no}                                 ".
+000460     03  FILLER                  PIC X(80) VALUE                  
+000470     "000000        05  JSN-TIMESTAMP       PIC X(23).          ".
+000480     03  FILLER                  PIC X(80) VALUE                  
+000490     "000000*          {time_stamp}                             ".
+000500     03  FILLER                  PIC X(80) VALUE                  
+000510     "000000        05  JSN-CONFIRMED       PIC A(5).           ".
+000520     03  FILLER                  PIC X(80) VALUE                  
+000530     "000000*          {confirmed}                              ".
+000540     03  FILLER                  PIC X(80) VALUE                  
+000550     "000000    03  JSN-TRAIN.                                  ".
+000560     03  FILLER                  PIC X(80) VALUE                  
+000570     "000000*      {train}                                      ".
+000580     03  FILLER                  PIC X(80) VALUE                  
+000590     "000000        05  JSN-DATE            PIC 99/99/9999.     ".
+000600     03  FILLER                  PIC X(80) VALUE                  
+000610     "000000*          {date}                                   ".
+000620     03  FILLER                  PIC X(80) VALUE                  
+000630     "000000        05  JSN-TIME            PIC X(5).           ".
+000640     03  FILLER                  PIC X(80) VALUE                  
+000650     "000000*          {time}                                   ".
+000660     03  FILLER                  PIC X(80) VALUE                  
+000670     "000000        05  JSN-FROM            PIC X(20).          ".
+000680     03  FILLER                  PIC X(80) VALUE                  
+000690     "000000*          {from}                                   ".
+000700     03  FILLER                  PIC X(80) VALUE                  
+000710     "000000        05  JSN-TO              PIC X(20).          ".
+000720     03  FILLER                  PIC X(80) VALUE                  
+000730     "000000*          {to}                                     ".
+000740     03  FILLER                  PIC X(80) VALUE                  
+000750     "000000        05  JSN-SEAT            PIC X(3).           ".
+000760     03  FILLER                  PIC X(80) VALUE                  
+000770     "000000*          {seat}                                   ".
+000780     03  FILLER                  PIC X(80) VALUE                  
+000790     "000000    03  JSN-PASSENGER.                              ".
+000800     03  FILLER                  PIC X(80) VALUE                  
+000810     "000000*      {passenger}                                  ".
+000820     03  FILLER                  PIC X(80) VALUE                  
+000830     "000000        05  JSN-NAME            PIC X(20).          ".
+000840     03  FILLER                  PIC X(80) VALUE                  
+000850     "000000*          {name}                                   ".
+000860     03  FILLER                  PIC X(80) VALUE                  
+000870     "000000    03  JSN-PRICE              PIC 9(6)V99.         ".
+000880     03  FILLER                  PIC X(80) VALUE                  
+000890     "000000*      {price}                                      ".
+000900     03  FILLER                  PIC X(80) VALUE                  
+000910     "000000    03  JSN-COMMENTS           PIC X(50) OCCURS 10. ".
+000920     03  FILLER                  PIC X(80) VALUE                  
+000930     "000000*      {comments}                                   ".
+000940***  End of the CRD SOURCE AREA                                   
+000950                                                                  
+000960***  Storage area for the largest possible JSON object:           
+000970 01  JSON-OBJECT                 PIC X(16000)     VALUE SPACE.    
+000980                                                                  
+000990 01  WS-OTHER-PARAMETERS.                                         
+001000     03  WS-COBOL-RECORD-LENGTH  PIC S9(8) BINARY VALUE ZERO.     
+001010     03  WS-CRD-SOURCE-COUNT     PIC S9(8) BINARY VALUE ZERO.     
+001020     03  WS-JSON-OBJECT-LENGTH   PIC S9(8) BINARY VALUE ZERO.     
+001030     03  WS-FEEDBACK-CODE        PIC S9(4) BINARY VALUE ZERO.     
+001040     03  WS-FEEDBACK-TEXT        PIC X(80) VALUE SPACE.           
+001050                                                                  
+001060 PROCEDURE DIVISION.                                              
+001070                                                                  
+001080 TOP-LEVEL SECTION.                                               
+001090******************************************************************
+001100*  This section populates the CRD with application data and      *
+001110*  performs the section that calls RCJSNGEN.                     *
+001120******************************************************************
+001130 TOP-ENTER.                                                       
+001140                                                                  
+001150     INITIALIZE                     JSN-CRD.                      
+001160                                                                  
+001170     MOVE 1234567                TO JSN-REFNO.                    
+001180     MOVE "2016-06-24T14:26:59.125"                               
+001190                                 TO JSN-TIMESTAMP.                
+001200     MOVE "true"                 TO JSN-CONFIRMED.                
+001210                                                                  
+001220     MOVE 07042016               TO JSN-DATE.                     
+001230     MOVE "09:30"                TO JSN-TIME.                     
+001240     MOVE "New York"             TO JSN-FROM.                     
+001250     MOVE "Chicago"              TO JSN-TO.                       
+001260     MOVE "57B"                  TO JSN-SEAT.                     
+001270                                                                  
+001280     MOVE "John Smith"           TO JSN-NAME.                     
+001290                                                                  
+001300     MOVE 1234.25                TO JSN-PRICE.                    
+001310     MOVE "Lunch & dinner incl." TO JSN-COMMENTS (1).             
+001320     STRING QUOTE "Have a nice day!" QUOTE                        
+001330                                 DELIMITED BY SIZE                
+001340                                 INTO JSN-COMMENTS (2).           
+001350                                                                  
+001360     PERFORM A-CALL-RCJSNGEN.                                     
+001370                                                                  
+001380***  Display the JSON object and processing complete message:     
+001390     DISPLAY JSON-OBJECT (1:WS-JSON-OBJECT-LENGTH).               
+001400     DISPLAY WS-FEEDBACK-TEXT.                                    
+001410                                                                  
+001420     STOP RUN.                                                    
+001430                                                                  
+001440 TOP-EXIT.                                                        
+001450     EXIT.                                                        
+001460                                                                  
+001470 A-CALL-RCJSNGEN SECTION.                                         
+001480******************************************************************
+001490*  This section executes the CALL to the interface and checks    *
+001500*  the feedback code.                                            *
+001510******************************************************************
+001520 A-ENTER.                                                         
+001530                                                                  
+001540     COMPUTE WS-CRD-SOURCE-COUNT = LENGTH OF CRD-SOURCE-AREA / 80.
+001550     MOVE LENGTH OF JSN-CRD      TO WS-COBOL-RECORD-LENGTH.       
+001560     MOVE LENGTH OF JSON-OBJECT  TO WS-JSON-OBJECT-LENGTH.        
+001570                                                                  
+001580     CALL "RCJSNGEN"          USING JSN-CRD                       
+001590                                    WS-COBOL-RECORD-LENGTH        
+001600                                    CRD-SOURCE-AREA               
+001610                                    WS-CRD-SOURCE-COUNT           
+001620                                    JSON-OBJECT                   
+001630                                    WS-JSON-OBJECT-LENGTH         
+001640                                    WS-FEEDBACK-CODE              
+001650                                    WS-FEEDBACK-TEXT.             
+001660                                                                  
+001670     IF  WS-FEEDBACK-CODE > 10                                    
+001680         DISPLAY "BAD RETURN FROM RCJSNGEN - FEEDBACK CODE IS "   
+001690                                    WS-FEEDBACK-CODE              
+001700         DISPLAY " MESSAGE READS: " WS-FEEDBACK-TEXT              
+001710         STOP RUN                                                 
+001720     END-IF.                                                      
+001730                                                                  
+001740 A-EXIT.                                                          
+001750     EXIT.                                                        

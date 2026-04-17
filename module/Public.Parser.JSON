@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="alternate" title="Recently Updated Pike Modules" 
+href="http://modules.gotpike.org/rss/recent" type="application/rss+xml">
+<title>pike module repository: Public.Parser.JSON</title>
+<script language="JavaScript">
+	function toggleVisibility( what )
+	{
+		node = document.getElementById( "info" + what );
+		link = document.getElementById(  "link" + what );
+		if(node.style.display == 'block')
+		{
+			node.style.display = 'none';
+			link.src = '/static/images/unfold.gif';
+		}
+		else
+		{
+			node.style.display = 'block';
+			link.src = '/static/images/fold.gif';
+		}
+	}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<font face="helvetica, arial, sans-serif">
+<img src="/static/images/pike_character.png">
+<br>
+<a href="/"><img src="/static/images/home.gif" border=0 width=32 
+height=32 alt="Home"></a>&nbsp;<font 
+size=+3>modules.gotpike.org</font>
+
+
+
+<form action="/auth/login" method="post">
+<table>
+  <tr>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    Username: <input type="text" size="10" name="username"/>
+    Password: <input type="password" size="10" name="password"/>
+	<input type="hidden" name="return_to" value="/"/>
+    <input type="submit" name="action" value="Login"/> 
+    </font>
+  </td>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    [<a href="/register">Create Account</a>]<br>
+    [<a href="/auth/forgotpassword">Forgot Password?</a>]
+    </font>
+  </td>
+  </tr>
+</table>
+</form>
+
+</font>
+</td>
+</tr>
+<tr>
+<td>
+
+<table cellspacing="15">
+<tr><td valign="top" width="25%">
+<font face="helvetica,arial,sanserif">
+<p>
+<b>Modules</b> <p>
+<a href="/index/ADT">ADT</a><br><a href="/index/Database">Database</a><br><a href="/module/GTK2">GTK2</a><br><a href="/index/GUI">GUI</a><br><a href="/index/IP">IP</a><br><a href="/module/PiJAX">PiJAX</a><br><a href="/index/Public">Public</a><br><a href="/index/Sql">Sql</a><br><a href="/index/Stdio">Stdio</a><br><a href="/module/Subversion">Subversion</a><br><a href="/index/System">System</a><br><a href="/index/Tools">Tools</a><br><a href="/module/Xosd">Xosd</a><br><a href="/module/lua">lua</a><br><a href="/module/v4l2">v4l2</a><br><a href="/module/wx">wx</a><br>
+<p/>
+<b>Recent Changes</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.USB?selected=1.0">Public.USB 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.50">Public.Parser.XML2 1.50</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.ZeroMQ?selected=1.1">Public.ZeroMQ 1.1</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Template.Mustache?selected=1.0">Public.Template.Mustache 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Protocols.XMPP?selected=1.4">Public.Protocols.XMPP 1.4</a><br>
+
+
+<p>
+<b>Popular Downloads</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON2?selected=1.0">Public.Parser.JSON2 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON?selected=0.2">Public.Parser.JSON 0.2</a><br>
+
+<a href="http://modules.gotpike.org/module/GTK2?selected=2.23">GTK2 2.23</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Web.FCGI?selected=1.8">Public.Web.FCGI 1.8</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.48">Public.Parser.XML2 1.48</a><br>
+
+
+</font>
+ </td>
+<td valign="top">
+<font face="helvetica,arial,sanserif">
+<!-- begin page content -->
+<font color="red"><i></i></font><br/>
+
+<!-- beginning of module page -->
+<table>
+<tr>
+<td width="*" valign="top">
+
+<!-- begin content box : Module Information -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Information</b><br/>
+Public.Parser.JSON
+<p/>
+This module provides an interface json-c (http://oss.metaparadigm.com/json-c/).
+<p/>
+
+
+No Source Control configured.
+
+
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+</td>
+
+<td width="30%" valign="top">
+
+<!-- begin content box : Module Authors -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Authors</b><br/>
+
+Owner<br/>
+Johan Björklund
+
+<p/>
+
+Contributors<br/>
+
+
+No Contributors yet.
+
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+<!-- begin content box : Module Versions -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Versions</b><br/>
+
+
+Most recent version: <b>0.2</b> &nbsp;
+
+
+Selected version: <b>0.2</b> Added: <b>15 Jan 2008</b>
+<br/>
+
+<br/>
+
+API changes:\r\n * \"encode\" and \"decode\" where where previously \"serialize\" and \"parse\"\r\n\r\nUse Public.Parser.JSON.Wrapper for JSON-RPC.\r\n\r\nThoroughly tested with UTF8, works beautifully.
+<p/>
+<b>Depends on:</b>
+<p/>
+<table>
+
+<tr><td>No Dependencies Specified.</td>
+
+
+</table>
+<p/>
+<p/>
+<b>Files in Root Directory:</b><br/>
+<a href="/view_version_file/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2/README">README</a>
+ &nbsp; .svn/
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2/JSON.cmod">JSON.cmod</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2/module.pmod.in">module.pmod.in</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2/Makefile.in">Makefile.in</a>
+ &nbsp; roxen_module/
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2/configure.in">configure.in</a>
+
+<p/>
+
+[ <a href="http://modules.gotpike.org/download/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2.tar.gz" title="Download the original source distribution for this version.">Download</a> ]
+
+
+[ <span title="A pre-built install of this module is not available. 
+Please use the source download instead.">Download PMAR</span> ]
+
+
+[ <a href="/module_modref/Public.Parser.JSON/0.2/Public_Parser_JSON-0.2.tar.gz">Module Documentation</a> ]
+
+[ <a href="http://wiki.gotpike.org/PikeModules/Module/Public.Parser.JSON">Wiki this Module</a> ]
+ 
+
+
+<p/>
+<b>Other Versions:</b><br/>
+<table>
+
+
+
+
+
+
+
+<tr>
+    <td><a id='info.0.1' onclick="toggleVisibility('changes.0.1')"><img 
+id="linkchanges.0.1" src="/static/images/unfold.gif" border="0"></a> 
+0.1</td>
+<td> &nbsp; GPL </td>
+<td> &nbsp; 2006-01-16 00:35</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON?selected=0.1">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.1">
+  
+</div>
+</td></tr>
+
+
+
+</table>
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+
+<p/>
+
+
+</td>
+</tr>
+</table>
+
+
+<br>
+
+
+
+<!-- end of module page -->
+
+
+<!-- end page content -->
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+<font face="helvetica, arial,sanserif">
+<a href="http://www.gotpike.org">gotpike.org</a> | 
+Copyright &copy; 2004 - 2019 | Pike is a trademark of 
+Department of Computer and Information Science,
+                      Link&ouml;ping University
+</font>
+</td>
+</tr>
+</table>
+</body>
+</html>

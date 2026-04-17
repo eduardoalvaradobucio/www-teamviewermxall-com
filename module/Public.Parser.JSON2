@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="alternate" title="Recently Updated Pike Modules" 
+href="http://modules.gotpike.org/rss/recent" type="application/rss+xml">
+<title>pike module repository: Public.Parser.JSON2</title>
+<script language="JavaScript">
+	function toggleVisibility( what )
+	{
+		node = document.getElementById( "info" + what );
+		link = document.getElementById(  "link" + what );
+		if(node.style.display == 'block')
+		{
+			node.style.display = 'none';
+			link.src = '/static/images/unfold.gif';
+		}
+		else
+		{
+			node.style.display = 'block';
+			link.src = '/static/images/fold.gif';
+		}
+	}
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<font face="helvetica, arial, sans-serif">
+<img src="/static/images/pike_character.png">
+<br>
+<a href="/"><img src="/static/images/home.gif" border=0 width=32 
+height=32 alt="Home"></a>&nbsp;<font 
+size=+3>modules.gotpike.org</font>
+
+
+
+<form action="/auth/login" method="post">
+<table>
+  <tr>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    Username: <input type="text" size="10" name="username"/>
+    Password: <input type="password" size="10" name="password"/>
+	<input type="hidden" name="return_to" value="/"/>
+    <input type="submit" name="action" value="Login"/> 
+    </font>
+  </td>
+  <td>
+    <font size="-2" face="helvetica, arial, sans-serif">
+    [<a href="/register">Create Account</a>]<br>
+    [<a href="/auth/forgotpassword">Forgot Password?</a>]
+    </font>
+  </td>
+  </tr>
+</table>
+</form>
+
+</font>
+</td>
+</tr>
+<tr>
+<td>
+
+<table cellspacing="15">
+<tr><td valign="top" width="25%">
+<font face="helvetica,arial,sanserif">
+<p>
+<b>Modules</b> <p>
+<a href="/index/ADT">ADT</a><br><a href="/index/Database">Database</a><br><a href="/module/GTK2">GTK2</a><br><a href="/index/GUI">GUI</a><br><a href="/index/IP">IP</a><br><a href="/module/PiJAX">PiJAX</a><br><a href="/index/Public">Public</a><br><a href="/index/Sql">Sql</a><br><a href="/index/Stdio">Stdio</a><br><a href="/module/Subversion">Subversion</a><br><a href="/index/System">System</a><br><a href="/index/Tools">Tools</a><br><a href="/module/Xosd">Xosd</a><br><a href="/module/lua">lua</a><br><a href="/module/v4l2">v4l2</a><br><a href="/module/wx">wx</a><br>
+<p/>
+<b>Recent Changes</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.USB?selected=1.0">Public.USB 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.50">Public.Parser.XML2 1.50</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.ZeroMQ?selected=1.1">Public.ZeroMQ 1.1</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Template.Mustache?selected=1.0">Public.Template.Mustache 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Protocols.XMPP?selected=1.4">Public.Protocols.XMPP 1.4</a><br>
+
+
+<p>
+<b>Popular Downloads</b>
+<p>
+
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON2?selected=1.0">Public.Parser.JSON2 1.0</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.JSON?selected=0.2">Public.Parser.JSON 0.2</a><br>
+
+<a href="http://modules.gotpike.org/module/GTK2?selected=2.23">GTK2 2.23</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Web.FCGI?selected=1.8">Public.Web.FCGI 1.8</a><br>
+
+<a href="http://modules.gotpike.org/module/Public.Parser.XML2?selected=1.48">Public.Parser.XML2 1.48</a><br>
+
+
+</font>
+ </td>
+<td valign="top">
+<font face="helvetica,arial,sanserif">
+<!-- begin page content -->
+<font color="red"><i></i></font><br/>
+
+<!-- beginning of module page -->
+<table>
+<tr>
+<td width="*" valign="top">
+
+<!-- begin content box : Module Information -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Information</b><br/>
+Public.Parser.JSON2
+<p/>
+A module for parsing JSON written in c using ragel (a state machine compiler).
+<p/>
+
+
+No Source Control configured.
+
+
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+</td>
+
+<td width="30%" valign="top">
+
+<!-- begin content box : Module Authors -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Authors</b><br/>
+
+Owner<br/>
+Arne Goedeke
+
+<p/>
+
+Contributors<br/>
+
+
+No Contributors yet.
+
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+<!-- begin content box : Module Versions -->
+<table bgcolor=#cccccc cellspacing=5 cellpadding=5 width=100%>
+<tr><td cellpadding=0 cellspacing=0 bgcolor=#cccccc><font
+face="helvetica,arial">
+<b>Module Versions</b><br/>
+
+
+Most recent version: <b>1.0</b> &nbsp;
+
+
+Selected version: <b>1.0</b> Added: <b>10 Jun 2010</b>
+<br/>
+
+<br/>
+
+This module has been merged into pike 7.8. It is not maintained anylonger. This version uses the Standards.JSON internally, which now offers the same functionality. This is intented for those who are too lazy to update their code.
+<p/>
+<b>Depends on:</b>
+<p/>
+<table>
+
+<tr><td>Pike </td><td>7.8.447 - 7.8.999</td><td>Required</td>
+</tr>
+
+
+</table>
+<p/>
+<p/>
+<b>Files in Root Directory:</b><br/>
+<a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/testsuite.in">testsuite.in</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/Makefile.in">Makefile.in</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/README">README</a>
+ &nbsp; json_example/
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/CHANGES">CHANGES</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/configure.in">configure.in</a>
+ &nbsp; <a href="/view_version_file/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0/LICENSE">LICENSE</a>
+ &nbsp; module.pmod.in/
+
+<p/>
+
+[ <a href="http://modules.gotpike.org/download/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0.tar.gz" title="Download the original source distribution for this version.">Download</a> ]
+
+
+[ <A href="http://modules.gotpike.org/download_pmar/Public.Parser.JSON2/1.0" title="Download a pre-built module you can install using 'pike -x pmar_install'.">Download PMAR</a> ]
+
+
+[ <a href="/module_modref/Public.Parser.JSON2/1.0/Public_Parser_JSON2-1.0.tar.gz">Module Documentation</a> ]
+
+[ <a href="http://wiki.gotpike.org/PikeModules/Module/Public.Parser.JSON2">Wiki this Module</a> ]
+ 
+
+
+<p/>
+<b>Other Versions:</b><br/>
+<table>
+
+
+
+
+
+
+
+<tr>
+    <td><a id='info.0.10' onclick="toggleVisibility('changes.0.10')"><img 
+id="linkchanges.0.10" src="/static/images/unfold.gif" border="0"></a> 
+0.10</td>
+<td> &nbsp; BSD </td>
+<td> &nbsp; 2009-09-03 07:11</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.10">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.10">
+  - fixed a bug that treated null as mapping values as invalid (reported by Philipp Hancke)                                                                           \r\n- fixed a bug that parsed some escape sequences wrong (reported by Philipp Hancke)\r\n
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.9' onclick="toggleVisibility('changes.0.9')"><img 
+id="linkchanges.0.9" src="/static/images/unfold.gif" border="0"></a> 
+0.9</td>
+<td> &nbsp; BSD </td>
+<td> &nbsp; 2009-06-16 08:32</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.9">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.9">
+  - fixed a bug that could cause a return value\r\n      to be truncated on 64bit machines. This happened\r\n      only in case of mal-formatted json and could lead\r\n      to wrong error message\r\n    - integer/float parsing now supports higher precision\r\n      types on architectures that support it (i.e. where\r\n      INT_TYPE/FLOAT_TYPE is bigger).\r\n    - fixed a bug in the json rendering that did not error\r\n      when trying to encode strings with characters outside\r\n      of unicode. instead it produces malformed json.\r\n    - working configure-checks for the availability of\r\n      wchar
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.8' onclick="toggleVisibility('changes.0.8')"><img 
+id="linkchanges.0.8" src="/static/images/unfold.gif" border="0"></a> 
+0.8</td>
+<td> &nbsp; BSD </td>
+<td> &nbsp; 2008-10-02 06:33</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.8">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.8">
+  - fixed a bug in the string escpape function                                                                                                                       that potentially produced wrong json. shame                                                                                                                      on me
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.7' onclick="toggleVisibility('changes.0.7')"><img 
+id="linkchanges.0.7" src="/static/images/unfold.gif" border="0"></a> 
+0.7</td>
+<td> &nbsp; BSD </td>
+<td> &nbsp; 2008-09-25 23:27</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.7">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.7">
+  - added parse_utf8()                                                                                                                                               \r\n- added render_utf8()                                                                                                                                              \r\n- rewrote the render-function inside the cmod                                                                                                                      \r\n- the parser is more strict about unicode now,                                                                                                                     \r\n  hence its not possible to send anything but                                                                                                                      \r\n  unicode characters in strings.
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.6' onclick="toggleVisibility('changes.0.6')"><img 
+id="linkchanges.0.6" src="/static/images/unfold.gif" border="0"></a> 
+0.6</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2008-02-22 08:14</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.6">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.6">
+  - uses swscanf for number parsing in case sizeof(p_wchar2) == sizeof(wchar_t)                                                              instead of copying in to a char* and parsing using sscanf.
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.5' onclick="toggleVisibility('changes.0.5')"><img 
+id="linkchanges.0.5" src="/static/images/unfold.gif" border="0"></a> 
+0.5</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2007-12-01 22:48</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.5">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.5">
+  fixed a memory leak
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.4' onclick="toggleVisibility('changes.0.4')"><img 
+id="linkchanges.0.4" src="/static/images/unfold.gif" border="0"></a> 
+0.4</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2007-04-21 17:06</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.4">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.4">
+  - changed the array and mapping parser from using                                                                                 \r\n  the pike stack to collect values (stupid me) 
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.3' onclick="toggleVisibility('changes.0.3')"><img 
+id="linkchanges.0.3" src="/static/images/unfold.gif" border="0"></a> 
+0.3</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2007-04-16 08:20</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.3">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.3">
+  - parser wasnt strict enough\r\n- fixed some output formating
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.2' onclick="toggleVisibility('changes.0.2')"><img 
+id="linkchanges.0.2" src="/static/images/unfold.gif" border="0"></a> 
+0.2</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2007-03-21 10:16</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.2">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.2">
+  - added render()\r\n- added validate()\r\n- added extra types for null, false and true.\r\n- some documentation (hopefully)
+</div>
+</td></tr>
+
+
+
+
+
+<tr>
+    <td><a id='info.0.1' onclick="toggleVisibility('changes.0.1')"><img 
+id="linkchanges.0.1" src="/static/images/unfold.gif" border="0"></a> 
+0.1</td>
+<td> &nbsp; LGPL </td>
+<td> &nbsp; 2007-03-13 06:20</td>  
+<td> &nbsp; <a href="/module/Public.Parser.JSON2?selected=0.1">Select</a></td></tr>
+<tr><td colspan=4>
+<div style="display:none;margin-left:20px" id="infochanges.0.1">
+  initial version
+</div>
+</td></tr>
+
+
+
+</table>
+</td>
+</tr>
+</table>
+<!-- end content box  -->
+
+<p/>
+
+
+</td>
+</tr>
+</table>
+
+
+<br>
+
+
+
+<!-- end of module page -->
+
+
+<!-- end page content -->
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+<font face="helvetica, arial,sanserif">
+<a href="http://www.gotpike.org">gotpike.org</a> | 
+Copyright &copy; 2004 - 2019 | Pike is a trademark of 
+Department of Computer and Information Science,
+                      Link&ouml;ping University
+</font>
+</td>
+</tr>
+</table>
+</body>
+</html>

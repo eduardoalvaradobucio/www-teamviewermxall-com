@@ -1,0 +1,45 @@
+<use file="/templates/gotpike_package">
+<page title="using Monger Developer: the pike module manager">
+<h1>An Introduction to Monger Developer Tools</h1>
+Developer tools were introduced with the first unbundled version of 
+monger, found in the Tools.Monger module, version 7.6.28. 
+<p>
+The first release offers significant new functionality for developer
+types, in that it allows a certain amount of change functionality when
+working with the remote module repository. In fact, this functionality was
+used to create the new version of Tools.Monger and upload its source
+using Tools.Monger.MongerDeveloper. As of right now, you'll have to create
+a new module using the web interface.
+<p>
+Here's an example:
+<pre>
+> object m = Tools.Monger.MongerDeveloper();
+> m->set_auth("joedeveloper", "pikerulez");
+(1) Result: 0
+> m->add_new_version("Tools.Monger", "7.6.28", "This is the first
+functional unbundled release of the Monger tool.\nThis version includes
+developer functionality, such as version creation,\ndependency
+functionality, and source upload.", "GPL/LGPL/MPL");
+(2) Result: 1
+> m->set_dependency("Tools.Monger", "7.6.28", "Pike", "7.6.0", "7.7.999", 
+1);
+(3) Result: 1
+> m->set_module_source("Tools.Monger", "7.6.28",
+"Tools_Monger-7.6.28.tar.gz");
+(2) Result: 1
+> quit
+</pre>
+<p>
+To get the new release, use this command with any 7.6.6 or higher release
+of Pike:
+<p>
+pike -x monger --install Tools.Monger
+<p>
+You may need to remove your Tools.pmod/Standalone.pmod/monger.pike.o file
+if you get annoyed at the out of date warning messages. 
+<p>
+Version 7.6.32 contains a simple script which will automate the creation 
+of new module versions in the gotpike.org repository. This script can be 
+used as a jumping off point for the creation of more sophisticated 
+applications. 
+</page>

@@ -4,28 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>COBOL software for AES encryption, SHA hashing, XML and JSON generation &amp; parsing, digital signatures with public/private keys and source code obfuscation</title>
-<meta name="Keywords" content="COBOL, encryption, AES, encrypt, decrypt, SHA-1, SHA-2, SHA-3, hash, MAC, XML, JSON, interface, parser, generator, PKI, asymmetric, signature, digital, obfuscation, intellectual property">
-<meta name="Description" content="COBOL software for AES encryption, SHA hashing, XML and JSON generation &amp; parsing, digital signatures, public/private key encryption and source code obfuscation.">
-<meta name="google-site-verification" content="9EVOlG877NJH5k7pNOSLqkkboA6G7RX6BUfgmFpImVk">
+<title>Software Products for COBOL</title>
+<meta name="keywords" content="cobol, encryption, AES, hash, SHA-1, SHA-2, SHA-3, xml, json, interface, signature, software">
+<meta name="description" content="Software Products for COBOL from Redvers Consulting.">
 
 <link href="css/cobol.css" rel="stylesheet">
-<link rel="canonical" href="https://www.redversconsulting.com/">
 <style>
 <!--
-  #navList #navHome a {background-position:bottom}
-  #dataEncryption {position:absolute; top:50px; left:240px; max-width:440px; padding: 5px}
-  #hashingAlgorithm {position:absolute; top:180px; left:300px; max-width:440px; padding: 5px}
-  #cobolXmlInterface {position:absolute; top:310px; left:240px; max-width:440px; padding: 5px}
-  #cobolJsonInterface {position:absolute; top:440px; left:300px; max-width:440px; padding: 5px}
-  #cobolSignature {position:absolute; top:570px; left:240px; max-width:440px; padding: 5px}
-  #cloakingDevice {position:absolute; top:700px; left:300px; max-width:440px; padding: 5px}
+#navList #navProducts a {
+	background-position: bottom
+}
 -->
 </style>
 </head>
 
 <body>
-<!-- COBOL software for XML and JSON generation &amp; parsing, AES encryption, SHA hashing, digital signatures with public/private keys and source code obfuscation -->
 
 <header>
   <h1>Technical Solutions for COBOL</h1>
@@ -55,44 +48,45 @@
     <li id="Signature"><a href="cobol_signature.php" title="The Redvers COBOL Signature software enables COBOL applications to securely communicate with blockchain and other messaging systems using standard digital signatures and PKI encryption"><span>COBOL Signature</span></a></li>
     <li id="Cloaking"><a href="cloaking_device.php" title="The Redvers Cloaking Device is a COBOL obfuscator that protects the intellectual property in COBOL source code"><span>COBOL Obfuscation</span></a></li>
   </ul> 
-<div id="content">
+  <ul id="subList">
+    <li id="subEncryption"><a href="data_encryption.php" title="Redvers Encryption Module">Encryption</a></li>
+    <li id="subHashing"><a href="hashing_algorithm.php" title="Redvers Hashing Algorithm">Hashing</a></li>
+    <li id="subCobolXml"><a href="cobol_xml_interface.php" title="Redvers COBOL XML Interface">XML Interface</a></li>
+    <li id="subCobolJson"><a href="cobol_json_interface.php" title="Redvers COBOL JSON Interface">JSON Interface</a></li>
+    <li id="subSignature"><a href="cobol_signature.php" title="Redvers COBOL Signature software">Signature</a></li>
+    <li id="subCloaking"><a href="cloaking_device.php" title="Redvers Cloaking Device">Cloaking</a></li>
+  </ul>
 
-  <div id="dataEncryption">
-    <p>The <a href="data_encryption.php" title="COBOL AES Encryption">Redvers Encryption Module</a>
- gives COBOL applications the Advanced
- Encryption Standard (AES) to encrypt and decrypt
- confidential data using 128, 192 or 256 bit keys.</p>
-  </div>
+  <div id="content">
 
-  <div id="hashingAlgorithm">
-    <p>The <a href="hashing_algorithm.php" title="COBOL SHA Hashing Algorithm">Redvers Hashing Algorithm</a>
+  <h2>Software Products for COBOL</h2>
+
+  <p><strong>To address the problem of an ever shrinking pool of COBOL skills, Redvers Consulting offers a range of software products that address the more complex tasks sometimes required of COBOL applications. Our off-the-shelf packages provide simple, efficient, tried and tested solutions to modern demands on COBOL:</strong></p>
+ <ul>
+  <li>The <a href="data_encryption.php" title="COBOL AES Encryption">Redvers Encryption Module</a>
+ gives COBOL applications the Advanced Encryption Standard (AES) to encrypt and decrypt
+ confidential data using 128, 192 or 256 bit keys.</li>
+  <li>The <a href="hashing_algorithm.php" title="COBOL SHA Hashing Algorithm">Redvers Hashing Algorithm</a>
  gives COBOL applications the capability to produce SHA-1, SHA-2 or SHA-3 message digests or MAC codes for
- single or multiple data strings.</p>
-  </div>
+ single or multiple data strings.</li>
+  <li>The <a href="cobol_xml_interface.php" title="COBOL XML Interface">Redvers COBOL XML Interface</a>
+ is faster, simpler and more programmer friendly than ever before. Now also generates and parses XML in multiple dimension arrays.</li>
+  <li>The <a href="cobol_json_interface.php" title="COBOL JSON Interface">Redvers COBOL JSON Interface</a>
+ uses a COBOL record layout to generate or parse JSON objects, on-line or in batch mode.</li>
+  <li>The <a href="cobol_signature.php" title="COBOL Signature">Redvers COBOL Signature</a>
+ software enables COBOL applications to communicate securely with blockchain and other messaging
+ systems using standard digital signatures and public/private key (PKI) encryption.</li>
+  <li>The <a href="cloaking_device.php" title="COBOL Obfuscation">Redvers Cloaking Device</a>
+ ensures the intellectual property in your COBOL source code is kept fully secure.</li>
+ </ul><br>
 
-  <div id="cobolXmlInterface">
-    <p>The <a href="cobol_xml_interface.php" title="COBOL XML Interface">Redvers COBOL XML Interface</a>
- is faster, simpler and more programmer friendly than ever before. Also generates and parses
- XML in multiple dimension arrays.</p>
-  </div>
+  <p>Our ability to deliver software in COBOL source code form, gives our customers reliable, efficient and perfectly integrated solutions to business needs. Application security is enhanced because our licensed subroutines do not include any input/output files or ACCEPT statements. This means the logic is immune from outside influences and will perform consistently, no matter what external conditions exist. Source code distribution also means our software will run on all hardware platforms and operating systems: <em>EBCDIC, ASCII, big endian or little endian</em>.</p><br>
 
-  <div id="cobolJsonInterface">
-    <p>The <a href="cobol_json_interface.php" title="COBOL JSON Interface">Redvers COBOL JSON Interface</a>
- uses a COBOL record layout to generate or parse JSON objects, on-line or in batch mode.</p>
-  </div>
-
-  <div id="cobolSignature">
-    <p>The <a href="cobol_signature.php" title="COBOL Signature">Redvers COBOL Signature</a>
- enables COBOL applications to communicate with blockchain and other messaging
- systems using standard public/private key (PKI) encrypted digital signatures.</p>
-  </div>
-
-  <div id="cloakingDevice">
-    <p>The <a href="cloaking_device.php" title="COBOL Obfuscation">Redvers Cloaking Device</a>
- ensures the intellectual property in your COBOL source code is kept fully secure.</p>
-  </div>
+  <p><strong>Click on one of the links to the left to find out more...</strong></p>
 
 </div>
+
+<div id="picSpace"></div>
 
   <footer>
   <p>&copy; Redvers Consulting Ltd, 2001-2026, all rights reserved</p>

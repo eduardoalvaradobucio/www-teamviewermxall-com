@@ -1,0 +1,444 @@
+
+#sidewalk div#doc {
+  margin-bottom: -2em;
+}
+
+#sidewalk #doc h1 { color: #2b6cb0; }
+#sidewalk #doc h2 { color: #c53030; }
+
+#sidewalk #doc code,
+#sidewalk #doc pre {
+  font: 14px Menlo, "Courier New", monospace
+}
+
+/*#sidewalk #doc code {
+  color: #070;
+}
+*/
+/*
+  #sidewalk #doc pre {
+  font-size: 9pt;
+  overflow: auto;
+  padding: 1em;
+}
+*/
+.todo, .TODO {
+  color: #d53F8c;
+}
+
+/***************************************************************
+ * Index
+ **************************************************************/
+
+#sidewalk #doc ul.index-links {
+  list-style:none;
+  margin:1em 0 2em 0;
+  padding:0;
+}
+
+#sidewalk #doc ul.index-links li {
+  display:inline-block;
+  font-size:14pt;
+}
+
+#sidewalk #doc ul.index-links li + li:before {
+  content:"\2022";
+  margin:0 0.5em;
+  color:#bbb;
+}
+
+#sidewalk #doc ul.index-links li a { color:#ac3238; }
+#sidewalk #doc ul.index-links li a:hover { color:#f00; }
+
+#sidewalk #doc div.index {
+  clear:both;
+  padding:0 0 1em 0;
+}
+
+#sidewalk #doc div.index {
+  border-top:1px solid #ccc;
+}
+
+#sidewalk #doc div.index div.left {
+  width:530px;
+  display:inline-block;
+  vertical-align:top;
+  padding-right:30px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:   border-box;
+  -ms-box-sizing:    border-box;
+  box-sizing:        border-box;
+}
+
+#sidewalk #doc div.index div.right {
+  width:420px;
+  display:inline-block;
+  vertical-align:top;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:   border-box;
+  -ms-box-sizing:    border-box;
+  box-sizing:        border-box;
+}
+
+#sidewalk #doc div.index h3 + p {
+  margin-top:-1em;
+}
+
+#sidewalk #doc div.index ol + h3 {
+  margin-top:2em;
+}
+
+#sidewalk #doc div.index table {
+  border-collapse:collapse;
+}
+#sidewalk #doc div.index table tr { border-top:1px solid #d0dae5; }
+#sidewalk #doc div.index table tr:nth-child(odd) { background: #f7fafc; }
+#sidewalk #doc div.index table td { padding: 4px 12px; font-size: 15px; }
+#sidewalk #doc div.index table td div { font-size: 14px; }
+#sidewalk #doc div.index table td:first-child { vertical-align:top; }
+
+#sidewalk #doc div.float {
+  float: left;
+  width: 48%;
+  padding-right: 2em;
+}
+
+#sidewalk #doc div.index div.manuals table td { padding:0.5em 1em 1em 0; }
+#sidewalk #doc div.index div.manuals table td div { margin-top:0.25em; }
+#sidewalk #doc div.index div.manuals table td div a { margin-right:0.5em; }
+
+#sidewalk #doc div.index div.manuals table td:first-child {
+  padding-left:24px;
+  background:url(../img/book-x18.png) no-repeat left 0.5em ;
+}
+
+#sidewalk #doc div.index div.manuals h2#skySparkManuals + table tr:last-child td:first-child {
+  background:url(../img/video-x18.png) no-repeat left 0.5em ;
+}
+
+
+#sidewalk #doc div.index table + h2 { margin-top:3em; }
+#sidewalk #doc div.index h2 a { color:#ac3238; }
+
+/***************************************************************
+ * Breadcrumb
+ **************************************************************/
+
+#sidewalk #doc div.breadcrumb ul {
+  margin: 0;
+  padding: 0 0 1em 0;
+  border-bottom:1px solid #ccc;
+}
+
+#sidewalk #doc div.breadcrumb ul li {
+  display: inline-block;
+  margin: 0;
+  padding:0;
+}
+
+#sidewalk #doc div.breadcrumb ul li + li:before {
+  margin: 0 0.5em;
+  content: '\00bb';
+  color: #999;
+}
+
+/***************************************************************
+ * Main : Sidebar
+ **************************************************************/
+
+#sidewalk #doc div.mainSidebar {
+  padding-right:220px;
+  position:relative;
+}
+
+#sidewalk #doc div.mainSidebar + div.mainSidebar {
+  border-top:1px solid #ccc;
+  margin-top:2em;
+}
+
+#sidewalk #doc div.sidebar {
+  position:absolute;
+  top:2em;
+  right:0;
+  width:220px;
+  padding-left:1em;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:   border-box;
+  -ms-box-sizing:    border-box;
+  box-sizing:        border-box;
+}
+
+#sidewalk #doc div.sidebar > ul {
+  padding: 0;
+  margin:0 0 0 1.5em;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+#sidewalk #doc div.sidebar > ul ul {
+  padding-left: 1.2em;
+  line-height: 1.3em;
+}
+
+#sidewalk #doc div.sidebar > ol {
+  margin: 0;
+  padding: 0 0 0 2em;
+  line-height: 1.5em;
+  color: #999;
+  font-size: 14px;
+}
+
+#sidewalk #doc div.sidebar > ol > li > ol {
+  list-style: disc;
+  padding-left: 18px;
+  /*
+  counter-reset: section;
+  */
+}
+
+#sidewalk #doc div.sidebar > ol > li > ol > li:before {
+  /*
+  content: counter(chapter) '.' counter(section) '. ';
+  counter-increment: section;
+  */
+}
+
+#sidewalk #doc div.sidebar ol ol ol {
+  list-style: circle;
+  padding-left: 18px
+}
+
+#sidewalk #doc div.sidebar ol ol ol li:first-child {
+  /*
+  counter-increment: heading;
+  */
+}
+
+#sidewalk #doc div.sidebar ol ol ol li:before {
+  /*
+  content: counter(chapter) '.' counter(section) '.' counter(heading) '. ';
+  counter-increment: heading;
+  */
+}
+
+#sidewalk #doc div.sidebar h3 {
+  /*
+  counter-reset: part;
+  */
+}
+
+#sidewalk #doc div.sidebar h3 a {
+  padding: 6px;
+  font-size: 16px;
+}
+
+#sidewalk #doc div.sidebar h4:before {
+  /*
+  color: #555;
+  content: counter(part, upper-roman) '. ';
+  counter-increment: part;
+  */
+}
+
+/***************************************************************
+ * Type
+ **************************************************************/
+
+#sidewalk #doc div.type table {
+  width:100%;
+  border-collapse:collapse;
+  border-bottom:1px solid #ccc;
+}
+#sidewalk #doc div.type table tr { border-top:1px solid #ccc; }
+#sidewalk #doc div.type table tr:nth-child(odd) { background: #f8fafc; }
+#sidewalk #doc div.type table td { padding:4px 6px; font-size:15px; }
+#sidewalk #doc div.type table td:first-child { padding-right:1em; }
+#sidewalk #doc div.type table td:last-child { width: 100%; }
+#sidewalk #doc div.type table td:last-child p { margin:0; }
+
+#sidewalk #doc div.type h1 > span:first-child {
+  display: block;
+  font-size: 60%;
+  padding-bottom: 6px;
+  color: #2b6cb0;
+}
+
+#sidewalk #doc div.type > pre {
+  padding: 10px 14px;
+}
+
+#sidewalk #doc div.type > pre > a {
+  display: inline-block;
+  margin: 0 0 6px 0;
+}
+
+#sidewalk #doc div.type > p.src {
+  display:none;
+}
+
+#sidewalk #doc div.type p.facets code,
+#sidewalk #doc div.type p.facets a,
+#sidewalk #doc div.type p.sig code,
+#sidewalk #doc div.type p.sig a {
+  color: #2f855a;
+}
+
+#sidewalk #doc div.type + div.sidebar > ul {
+  list-style: none;
+  font-size: 14px;
+}
+
+/***************************************************************
+ * Type : Slots
+ **************************************************************/
+
+#sidewalk #doc div.type dl {
+  margin: 2em 0 1em 0;
+}
+
+#sidewalk #doc div.type dl dt {
+  border-top: 1px solid #d0dae5;
+  background: #f2f6f8;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#sidewalk #doc div.type dl dd {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+#sidewalk #doc div.type dl dd p.src a {
+  position: absolute;
+  top: -3.15em;
+  right: 10px;
+  font-size: 14px;
+  color: #7aa3c0;
+}
+
+/***************************************************************
+ * Manual Index
+ **************************************************************/
+
+#sidewalk #doc div.toc ol li {
+  font-size:14pt;
+  color:#444;
+}
+
+#sidewalk #doc div.toc ol li {
+  margin-bottom: 1em;
+}
+
+#sidewalk #doc div.toc ol li > a {
+  font-weight: bold;
+}
+
+#sidewalk #doc div.toc ol li p {
+  color:#000;
+  font-size:12pt;
+  font-weight:normal;
+  margin: 3px 0 0px 1em;
+}
+
+#sidewalk #doc div.toc ol li p:last-child {
+  font-size: 11pt;
+}
+
+#sidewalk #doc div.toc {
+  counter-reset: part;
+}
+
+#sidewalk #doc div.toc h2:before {
+  content: counter(part, upper-roman) '. ';
+  counter-increment: part;
+}
+
+/***************************************************************
+ * Manual : Chapter
+ **************************************************************/
+
+#sidewalk #doc ul.chapter-nav {
+  position:relative;
+  list-style:none;
+  margin:1em 0;
+  padding:0;
+  font-size: 14px;
+}
+
+#sidewalk #doc ul.chapter-nav li {
+  display:block;
+  color:#999;
+}
+
+#sidewalk #doc ul.chapter-nav li.next {
+  text-align:right;
+}
+
+#sidewalk #doc ul.chapter-nav li + li.next {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#sidewalk #doc ul.chapter-nav li.prev:before {
+  content:'\00ab'; margin-right:0.5em;
+}
+
+#sidewalk #doc ul.chapter-nav li.next:after {
+  content:'\00bb'; margin-left:0.5em;
+}
+
+/***************************************************************
+ * Source Code
+ **************************************************************/
+
+#sidewalk #doc div.src pre {
+  margin: 1em 0;
+  padding: 0;
+  color: #222;
+  background:none;
+  border:none;
+  overflow:auto;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+#sidewalk #doc div.src pre b {
+  color: #e53e3e;
+  font-weight: normal;
+}
+
+#sidewalk #doc div.src pre i {
+  color: #2b6cb0;
+  font-style: normal;
+}
+
+#sidewalk #doc div.src pre em {
+  color: #d69e2e;
+  font-style:normal;
+}
+
+#sidewalk #doc div.src pre q {
+  color: #718096;
+  font-style: normal;
+}
+
+#sidewalk #doc div.src pre q:before,
+#sidewalk #doc div.src pre q:after {
+  content: '';
+}
+
+/***************************************************************
+ * Footer
+ **************************************************************/
+
+div.footer {
+  clear:both;
+  margin:3em 0 1em 0;
+  font-size:9pt;
+  color: #a0aec0;
+}
+
+div.footer span {
+  margin:0 0.5em;
+}

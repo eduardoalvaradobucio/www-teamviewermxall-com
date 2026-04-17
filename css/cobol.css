@@ -1,0 +1,312 @@
+@charset "utf-8";
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000040;
+	position: relative;
+	max-width: 1920px;
+	margin: 0px auto;
+	background-color: #ffffff;
+}
+header {
+	background-position: center;
+	background: url(../images/banner.png) no-repeat top;
+}
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#wrapper {
+	position: relative;
+	margin: 68px auto 0px auto;
+	max-width: 960px;
+	min-width: 480px;
+}
+#navList {
+	position: absolute;
+	top: -178px;
+	left: 100px;
+	min-height: 26px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+	display: block;
+}
+#navList li {
+	float: left;
+}
+#navList li a {
+	height: 20px;
+	width: 126px;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	background: url(../images/buttonsBg.png) no-repeat top;
+}
+#navList li a:hover {
+	background-position: bottom;
+}
+#subList {
+	position: absolute;
+	top: -67px;
+	left: 100px;
+	min-height: 26px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+	display: block;
+}
+#subList li {
+	float: left;
+}
+#subList li a {
+	height: 21px;
+	width: 126px;
+	padding-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	background: url(../images/buttonsSm.png) no-repeat top;
+}
+#subList li a:hover {
+	background-position: bottom;
+}
+#products {
+	position: absolute;
+	width: 140px;
+	margin: 0px;
+	padding: 40px 0px 0px 10px;
+	list-style-type: none;
+}
+#products span {
+	display: none;
+}
+#products li a {
+	height: 100px;
+	width: 100px;
+	margin: 2px 0px 30px 0px;
+	display: block;
+}
+#products li a:hover {
+	background-position: right;
+}
+#Encryption a {
+	background-image: url(../images/cobol-encryption-sm.png);
+}
+#Hashing a {
+	background-image: url(../images/cobol-hashing-sm.png);
+}
+#CobolXml a {
+	background-image: url(../images/cobol-xml-sm.png);
+}
+#CobolJson a {
+	background-image: url(../images/cobol-json-sm.png);
+}
+#Signature a {
+	background-image: url(../images/cobol-signature-sm.png);
+}
+#Cloaking a {
+	background-image: url(../images/cobol-cloaking-sm.png);
+}
+#content {
+	max-width: 500px;
+	min-height: 800px;
+	margin: 0px 0px 0px 160px;
+	padding: 0px 10px 0px 10px;
+	text-align: justify;
+	float: left;
+}
+#content p {
+	margin: 0px;
+	padding: 10px 0px 10px 0px;
+}
+#content ul {
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	list-style-image: url(../images/bullet.gif);
+}
+#content li {
+	margin: 0px 0px 8px 10px;
+	padding: 0px 0px 0px 10px;
+}
+#picSpace {
+	width: 200px;
+	margin: 40px 10px 0px 0px;
+	padding-top: 200px;
+	float: right;
+	background: url(../images/cobol-products.png) no-repeat top;
+}
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	min-height: 54px;
+	margin: 0px;
+	padding: 66px 26px 0px 96px;
+	text-align: center;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	max-height: 32px;
+	margin: 0px 0px 10px 0px;
+	padding: 4px;
+	background-color:#336699;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 40px 0px 10px 0px;
+	padding: 2px;
+	background-color:#336699;
+}
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	margin: 30px 0px 10px 0px;
+	padding: 0px;
+}
+a {
+	font-weight: bold;
+	color: #336699;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border-style: none;
+}
+form {
+	padding: 10px;
+	background-color: #e0e8ff;
+}
+button {
+	height: 30px;
+	width: 107px;
+	display: block;
+	border-style: none;
+	color: #ffffff;
+	background: url(../images/button_blank.png) no-repeat left;
+}
+button:hover {
+	background-position: right;
+}
+table {
+	padding: 5px 0px 5px 0px;
+}
+table tr {
+	height: 30px;
+}
+.table192 {
+	margin: auto;
+	width: 192px;
+}
+.table470 {
+	margin: auto;
+	max-width: 470px;
+}
+.tableTd107 {
+	width: 107px;
+}
+.tableTd130 {
+	width: 130px;
+}
+.tableTd256 {
+	max-width: 256px;
+}
+.tableTd340 {
+	max-width: 340px;
+}
+.tableTdTop {
+	vertical-align: text-top;
+}
+.tableTdRight {
+	text-align: right;
+}
+.tableTdDownLg a {
+	height: 92px;
+	width: 80px;
+	display: block;
+	background: url(../images/download.png) no-repeat left;
+}
+.tableTdDownSm a {
+	height: 46px;
+	width: 40px;
+	display: block;
+	background: url(../images/download_sm.png) no-repeat left;
+}
+.tableTdPdf a {
+	height: 40px;
+	width: 36px;
+	display: block;
+	background: url(../images/pdfIcon.gif) no-repeat left;
+}
+.input34B {
+	color: #e0e8ff;
+	background-color: #e0e8ff;
+	border-style: none;
+}
+.centreText {
+	text-align: center;
+}
+.rightText {
+	text-align: right;
+}
+.externalText a {
+	font-weight: normal;
+	color: #0000ff;
+	text-decoration: underline;
+}
+.actionText a {
+	height: 22px;
+	margin: 20px 20px 10px 20px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	display: block;
+	background-image: url(../images/but_blue_bck.gif);
+}
+.redText {
+	color: #ff0000;
+}
+.smallText {
+	font-size: 12px;
+}
+footer {
+	clear: both;
+	font-size: 12px;
+	text-align: left;
+}
+footer p {
+	padding: 20px 98px 0px 0px;
+	color: #999999;
+	text-align: center;
+}
+footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #999999;
+	text-decoration: underline;
+}

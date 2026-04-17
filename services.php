@@ -4,28 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>COBOL software for AES encryption, SHA hashing, XML and JSON generation &amp; parsing, digital signatures with public/private keys and source code obfuscation</title>
-<meta name="Keywords" content="COBOL, encryption, AES, encrypt, decrypt, SHA-1, SHA-2, SHA-3, hash, MAC, XML, JSON, interface, parser, generator, PKI, asymmetric, signature, digital, obfuscation, intellectual property">
-<meta name="Description" content="COBOL software for AES encryption, SHA hashing, XML and JSON generation &amp; parsing, digital signatures, public/private key encryption and source code obfuscation.">
-<meta name="google-site-verification" content="9EVOlG877NJH5k7pNOSLqkkboA6G7RX6BUfgmFpImVk">
+<title>Batch Optimisation Service</title>
+<meta name="keywords" content="batch optimisation, batch optimization, COBOL, mainframe, consultants, consulting, legacy, batch, optimisation, optimization, tuning">
+<meta name="description" content="Redvers Consulting provides a batch optimisation service for mainframe clients who want to get more from their batch window.">
 
 <link href="css/cobol.css" rel="stylesheet">
-<link rel="canonical" href="https://www.redversconsulting.com/">
 <style>
 <!--
-  #navList #navHome a {background-position:bottom}
-  #dataEncryption {position:absolute; top:50px; left:240px; max-width:440px; padding: 5px}
-  #hashingAlgorithm {position:absolute; top:180px; left:300px; max-width:440px; padding: 5px}
-  #cobolXmlInterface {position:absolute; top:310px; left:240px; max-width:440px; padding: 5px}
-  #cobolJsonInterface {position:absolute; top:440px; left:300px; max-width:440px; padding: 5px}
-  #cobolSignature {position:absolute; top:570px; left:240px; max-width:440px; padding: 5px}
-  #cloakingDevice {position:absolute; top:700px; left:300px; max-width:440px; padding: 5px}
+#navList #navServices a {
+	background-position: bottom
+}
+#picSpace {
+	background-image: url(images/cobol-programmer.jpg)
+}
 -->
 </style>
 </head>
 
 <body>
-<!-- COBOL software for XML and JSON generation &amp; parsing, AES encryption, SHA hashing, digital signatures with public/private keys and source code obfuscation -->
 
 <header>
   <h1>Technical Solutions for COBOL</h1>
@@ -55,44 +51,34 @@
     <li id="Signature"><a href="cobol_signature.php" title="The Redvers COBOL Signature software enables COBOL applications to securely communicate with blockchain and other messaging systems using standard digital signatures and PKI encryption"><span>COBOL Signature</span></a></li>
     <li id="Cloaking"><a href="cloaking_device.php" title="The Redvers Cloaking Device is a COBOL obfuscator that protects the intellectual property in COBOL source code"><span>COBOL Obfuscation</span></a></li>
   </ul> 
+  <ul id="subList">
+    <li id="subCase"><a href="case_study.php" title="Redvers Batch Optimisation Service - Case Study">Case Study</a></li>
+  </ul>
+  
 <div id="content">
+  
+  <h2>Redvers Batch Optimisation Service</h2>
 
-  <div id="dataEncryption">
-    <p>The <a href="data_encryption.php" title="COBOL AES Encryption">Redvers Encryption Module</a>
- gives COBOL applications the Advanced
- Encryption Standard (AES) to encrypt and decrypt
- confidential data using 128, 192 or 256 bit keys.</p>
-  </div>
+<p><strong>With data volumes increasing by 40% year on year and 200 billion lines of COBOL code still in use, efficient data processing is as important today as it has ever been.</strong></p>
 
-  <div id="hashingAlgorithm">
-    <p>The <a href="hashing_algorithm.php" title="COBOL SHA Hashing Algorithm">Redvers Hashing Algorithm</a>
- gives COBOL applications the capability to produce SHA-1, SHA-2 or SHA-3 message digests or MAC codes for
- single or multiple data strings.</p>
-  </div>
+<p>In the rather unfashionable but still indispensable world of <strong>mainframe COBOL applications</strong>, legacy programs are continually being altered in order to satisfy changes in business requirements. </p>
+<p>These alterations, compounded with previously changed code, inevitably lead to poorer system performance. In an attempt to compensate for this, IT departments are forced into an endless cycle of buying hardware and tuning tools just to satisfy existing service levels.</p>
+<p>Our <strong>solutions</strong> reverse this cycle, giving clients a bigger overnight batch window which can be turned into cost savings, increased customer base, expansion of future developments or company mergers and takeovers.</p>
 
-  <div id="cobolXmlInterface">
-    <p>The <a href="cobol_xml_interface.php" title="COBOL XML Interface">Redvers COBOL XML Interface</a>
- is faster, simpler and more programmer friendly than ever before. Also generates and parses
- XML in multiple dimension arrays.</p>
-  </div>
+<h3>What Do We Do?</h3>
+<p>Our team of <strong>experienced professionals</strong> will produce <strong>efficient system designs</strong> for new developments or produce optimisation reports for existing systems or programs. In the analysis phase we use a combination of our home-grown analysis tools and industry standard utilities.</p>
 
-  <div id="cobolJsonInterface">
-    <p>The <a href="cobol_json_interface.php" title="COBOL JSON Interface">Redvers COBOL JSON Interface</a>
- uses a COBOL record layout to generate or parse JSON objects, on-line or in batch mode.</p>
-  </div>
+<p>Our solutions do not use excessive memory or CPU cycles and are always kept as <strong>simple as possible</strong>. System designs are produced to site standards and the optimisation reports itemize efficiency problems and provide a list of possible solutions with their expected benefits.</p>
 
-  <div id="cobolSignature">
-    <p>The <a href="cobol_signature.php" title="COBOL Signature">Redvers COBOL Signature</a>
- enables COBOL applications to communicate with blockchain and other messaging
- systems using standard public/private key (PKI) encrypted digital signatures.</p>
-  </div>
+<p>On customer approval to proceed, we will provide the necessary consultants to build, unit/system test and implement the solution. Much of the build and unit testing can be performed off site. Implementation can be done as a stand-alone project or integrated with a client development life-cycle. </p>
+<p>Our code is always<strong> well documented</strong> and easy to understand for future reference and maintainability.</p>
 
-  <div id="cloakingDevice">
-    <p>The <a href="cloaking_device.php" title="COBOL Obfuscation">Redvers Cloaking Device</a>
- ensures the intellectual property in your COBOL source code is kept fully secure.</p>
-  </div>
+<h3>Optimising Your System</h3>
+<p>If you have a program or system that would benefit from <strong>optimisation</strong>, please provide your contact details on our <a href="contact.php" title="Contact Redvers Consulting">Contact</a> page and one of our representatives will be in touch shortly.</p>
 
 </div>
+
+<div id="picSpace"></div>
 
   <footer>
   <p>&copy; Redvers Consulting Ltd, 2001-2026, all rights reserved</p>

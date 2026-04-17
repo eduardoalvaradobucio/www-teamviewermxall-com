@@ -1,0 +1,225 @@
+<use file="/templates/gotpike_package">
+<page title="using Monger: the pike module manager">
+<h1>An Introduction to Monger</h1>
+One of the exciting new features available in Pike 7.6 is the 
+addition of Monger. Monger is a tool designed to ease module management 
+for Pike installations. By accessing data stored in a Pike Module 
+Repository, Monger provides access to official and third party modules 
+in real time. The current version of Monger provides 3 modes: 
+List, Query and Install. We'll discuss each mode in turn below.
+<p>
+<b>General Information</b>
+<br>
+Monger is available as part of all Pike 7.6 installations. Currently, 
+Monger is a command line utility, and can be accessed using the following 
+command:
+<pre>
+     pike -x monger
+</pre>
+<p>
+By default, monger will query the module repository at modules.gotpike.org:8000,
+however you can change the repository by providing it on the command line:
+<pre>
+     pike -x monger --repository=host:port
+</pre>
+<p>
+<b>List Mode</b>
+<br>
+List mode allows you to see a list of the modules in the repository, optionally
+limited by a substring.
+
+<pre>
+     pike -x monger --list [subphrase]
+</pre>
+<p>
+By running the list command without any additional arguments, you will get a
+list of all modules in the repository. If you wish to see modules in the 
+repository whose name contains a given string, you can provide it after the list
+command. For example:
+<pre>
+     pike -x monger --list Public
+</pre>
+<p>
+This command will provide a list of all modules in the repository whose name 
+contains the phrase "Public".
+<p>
+<b>Query Mode</b>
+<br>
+Query mode allows you to view detailed information about a particular 
+module in the repository. The query will include information about 
+recommended versions of the module for your Pike installation.
+<p>
+For example:
+<pre>
+     pike -x monger --query Public.Protocols.Jabber
+     Selecting recommended version 1.0 for query.
+     Public.Protocols.Jabber: This module provides a client interface to Jabber 
+        Instant Messaging (IM) servers.
+     Author/Owner: Bill Welliver
+     Version: 1.0 (recommended)      License: GPL/LGPL/MPL
+     Changes: Initial Release of the Jabber Client module
+
+     This version supports plaintext authentication, presence, roster 
+     management and send/receive messaging in an asynchronous environment 
+     using callbacks. Connection using SSL is supported though largely 
+     untested.
+
+     This module is available for automated installation. 
+</pre>
+<p>
+Use the --version option to view a particular version, and --force to 
+force viewing of a particular version when it is not a recommended 
+version (ie has a Pike dependency that is not satisfied by your version 
+of Pike:
+<pre>
+     pike -x monger --query --version=1.1 System.PAM
+     Requested version 1.1 is not the recommended version.
+     use --force to force query of this version.
+</pre>
+
+<p>
+<b>Install Mode</b>
+<br>
+One of the most useful features of Monger is its Install mode. Install 
+mode is similar in many ways to the install command available in Perl's 
+CPAN module. This mode allows you to automate the potentially tedious job 
+of installing a module from source.
+<p>
+In order to use monger to install modules automatically, you must have the 
+following in your PATH:
+<li>gzip
+<li>tar
+<li>make
+<li>the c compiler you used to compile pike; usually gcc
+<p>
+Monger will retrieve query the module repository for the best version of 
+the module you want, download, build and finally install it. After a 
+successful install, Monger will clean up after itself. If the build fails, 
+Monger will leave the files it downloaded in case you wish to try to build 
+the module manually.
+<p>
+<pre>
+pike -x monger --install IP.v4
+Selecting recommended version 0.2 for install.
+beginning download of version 0.2...
+wrote module to file IP_v4-0.2.tar.gz (15786 bytes)
+uncompressing...IP_v4-0.2.tar.gz
+working with tar file IP_v4-0.2.tar
+IP_v4-0.2/
+IP_v4-0.2/CVS/
+IP_v4-0.2/CVS/Entries
+IP_v4-0.2/CVS/Repository
+IP_v4-0.2/CVS/Root
+IP_v4-0.2/CVS/Template
+IP_v4-0.2/module.pmod.in/
+IP_v4-0.2/module.pmod.in/Address.pike
+IP_v4-0.2/module.pmod.in/Prefix.pike
+IP_v4-0.2/module.pmod.in/Protocol.pike
+IP_v4-0.2/module.pmod.in/Tuple.pike
+IP_v4-0.2/module.pmod.in/helpers.pike
+IP_v4-0.2/module.pmod.in/module.pmod
+IP_v4-0.2/configure.in
+IP_v4-0.2/Makefile.in
+IP_v4-0.2/configure
+IP_v4-0.2/testsuite.in
+ make PIKE_INCLUDES=-I/usr/local/pike/7.6.25/include/pike PIKE_SRC_DIR=/usr/local/pike/7.6.25/include/pike BUILD_BASE=/usr/local/pike/7.6.25/include/pike MODULE_BASE=/usr/local/pike/7.6.25/include/pike TMP_BINDIR=/usr/local/pike/7.6.25/include/pike SRCDIR=. FULL_SRCDIR=/home/bertrand/.monger/IP_v4-0.2/ TMP_MODULE_BASE=. PIKE_EXTERNAL_MODULE=pike_external_module CORE_AUTODOC_PATH=/usr/local/pike/7.6.25/doc/src/core_autodoc.xml SYSTEM_DOC_PATH=/usr/local/pike/7.6.25/doc/ SYSTEM_MODULE_PATH=/usr/local/pike/7.6.25/lib/modules LOCAL_MODULE_PATH=$$HOME/lib/pike/modules RUNPIKE=pike all
+cd . && /usr/local/pike/7.6.25/include/pike/run_autoconfig .
+Running autoconf in .
+AR="" CFLAGS="-g -Wa,--execstack -mcpu=i686" LDFLAGS="-L/usr/local/src/pike-7.6.25/src/bundles/lib -z execstack -R/usr/local/lib -L/usr/local/lib -R/usr/X11R6/lib -L/usr/X11R6/lib" LDSHARED="gcc -shared  " CPPFLAGS="-I/usr/local/src/pike-7.6.25/src/bundles/include -I/usr/local/include -I/usr/X11R6/include" BUILDDIR="" BINDIR="/usr/local/pike/7.6.25/include/pike" PIKE_SRC_DIR="/usr/local/pike/7.6.25/include/pike" BUILD_BASE="/usr/local/pike/7.6.25/include/pike" ./config.status --recheck
+running /bin/sh ./configure  --cache-file=./config.cache --with-cdebug --without-bundles CFLAGS=-g -Wa,--execstack -mcpu=i686 CPPFLAGS=-I/usr/local/src/pike-7.6.25/src/bundles/include -I/usr/local/include -I/usr/X11R6/include LDFLAGS=-L/usr/local/src/pike-7.6.25/src/bundles/lib -z execstack -R/usr/local/lib -L/usr/local/lib -R/usr/X11R6/lib -L/usr/X11R6/lib  --no-create --no-recursion
+configure: loading cache ./config.cache
+
+###################################################
+## Configuring module: IP_v4-0.2
+## Installation dir:   
+
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /usr/local/pike/7.6.25/include/pike/smartlink gcc accepts -g... (cached) yes
+checking for /usr/local/pike/7.6.25/include/pike/smartlink gcc option to accept ANSI C... (cached) none needed
+checking if we are using TCC (TenDRA C Compiler)... (cached) no
+checking how to run the C preprocessor... (cached) gcc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking for the Pike base directory... /usr/local/pike/7.6.25/include/pike
+configure: creating ./config.status
+CONFIG_FILES="make_variables:/usr/local/pike/7.6.25/include/pike/make_variables.in" CONFIG_HEADERS="" ./config.status
+config.status: creating make_variables
+CONFIG_FILES=Makefile CONFIG_HEADERS="" ./config.status
+config.status: creating Makefile
+touch remake
+Run make again
+make: *** [Makefile] Error 1
+ make PIKE_INCLUDES=-I/usr/local/pike/7.6.25/include/pike PIKE_SRC_DIR=/usr/local/pike/7.6.25/include/pike BUILD_BASE=/usr/local/pike/7.6.25/include/pike MODULE_BASE=/usr/local/pike/7.6.25/include/pike TMP_BINDIR=/usr/local/pike/7.6.25/include/pike SRCDIR=. FULL_SRCDIR=/home/bertrand/.monger/IP_v4-0.2/ TMP_MODULE_BASE=. PIKE_EXTERNAL_MODULE=pike_external_module CORE_AUTODOC_PATH=/usr/local/pike/7.6.25/doc/src/core_autodoc.xml SYSTEM_DOC_PATH=/usr/local/pike/7.6.25/doc/ SYSTEM_MODULE_PATH=/usr/local/pike/7.6.25/lib/modules LOCAL_MODULE_PATH=$$HOME/lib/pike/modules RUNPIKE=pike all
+Making module.pmod
+make all successful.
+ make PIKE_INCLUDES=-I/usr/local/pike/7.6.25/include/pike PIKE_SRC_DIR=/usr/local/pike/7.6.25/include/pike BUILD_BASE=/usr/local/pike/7.6.25/include/pike MODULE_BASE=/usr/local/pike/7.6.25/include/pike TMP_BINDIR=/usr/local/pike/7.6.25/include/pike SRCDIR=. FULL_SRCDIR=/home/bertrand/.monger/IP_v4-0.2/ TMP_MODULE_BASE=. PIKE_EXTERNAL_MODULE=pike_external_module CORE_AUTODOC_PATH=/usr/local/pike/7.6.25/doc/src/core_autodoc.xml SYSTEM_DOC_PATH=/usr/local/pike/7.6.25/doc/ SYSTEM_MODULE_PATH=/usr/local/pike/7.6.25/lib/modules LOCAL_MODULE_PATH=$$HOME/lib/pike/modules RUNPIKE=pike verify
+make[1]: Entering directory `/home/bertrand/.monger/IP_v4-0.2'
+if test ! -d "./plib/modules" ; then \
+  mkdir -p ./plib/modules ; \
+fi; if test "x" != "x" ; then \
+  /usr/local/pike/7.6.25/include/pike/install_module module.so ./plib/modules/IP.pmod/___v4.so ;\
+fi; \
+if test "xmodule.pmod.in" != "x"; then \
+  /usr/local/pike/7.6.25/include/pike/install_module module.pmod ./plib/modules/IP.pmod/v4.pmod ;\
+fi
+make[1]: Leaving directory `/home/bertrand/.monger/IP_v4-0.2'
+pike -Mplib/modules /usr/local/pike/7.6.25/include/pike/test_pike.pike testsuite
+Doing tests in testsuite (0 tests)
+Total tests: 0  (0 tests skipped)       
+make verify successful.
+ make PIKE_INCLUDES=-I/usr/local/pike/7.6.25/include/pike PIKE_SRC_DIR=/usr/local/pike/7.6.25/include/pike BUILD_BASE=/usr/local/pike/7.6.25/include/pike MODULE_BASE=/usr/local/pike/7.6.25/include/pike TMP_BINDIR=/usr/local/pike/7.6.25/include/pike SRCDIR=. FULL_SRCDIR=/home/bertrand/.monger/IP_v4-0.2/ TMP_MODULE_BASE=. PIKE_EXTERNAL_MODULE=pike_external_module CORE_AUTODOC_PATH=/usr/local/pike/7.6.25/doc/src/core_autodoc.xml SYSTEM_DOC_PATH=/usr/local/pike/7.6.25/doc/ SYSTEM_MODULE_PATH=/usr/local/pike/7.6.25/lib/modules LOCAL_MODULE_PATH=$$HOME/lib/pike/modules RUNPIKE=pike install
+make install successful.
+cleaning up IP_v4-0.2.tar
+removing directory IP_v4-0.2
+</pre>
+<p>
+The module IP.v4 is now installed:
+<pre>
+pike
+Pike v7.6 release 25 running Hilfe v3.5 (Incremental Pike Frontend)
+> indices(IP.v4);
+(1) Result: ({ /* 8 elements */
+                "__author",
+                "module",
+                "helpers",
+                "Tuple",
+                "Prefix",
+                "__version",
+                "Protocol",
+                "Address"
+            })
+</pre>
+<p>
+Note that monger (and the underlying build process) will use whatever 
+compiler settings were used when the pike software was built. If you need 
+to change them (for instance if you install a library in a new location), 
+you will need to edit the <tt>specs</tt> file in the 
+<tt>/path/to/pike/include/pike</tt> 
+directory. Be careful when editing this file, as you can easily break the 
+build process. Always make a backup copy of the <tt>specs</tt> file.
+<p>
+<b>Developer Tools</b>
+<br>
+Recent versions of Monger provide tools for manipulating the module 
+repository programmatically. This allows (for example) new module versions 
+to be added to the repository from within a release creation script. 
+Details for this functionality can be found in the <a 
+href="MongerDeveloper.html">Monger Developer</a> documentation.
+
+<p>
+<b>Drawbacks</b>
+<br>
+While Monger is a very useful tool, it does have a few shortcomings. 
+Hopefully, these will be addressed in subsequent releases of Pike.
+<li>Monger requires an active connection to the internet during operation.
+<li>Retrieved module distributions and data are not cached on the local 
+client.
+<li>Data is not verified for authenticity using checksums.
+<li>Documentation is not automatically generated.
+<li>There is no interactive mode.
+<li>Settings are not currently saved.
+</page>

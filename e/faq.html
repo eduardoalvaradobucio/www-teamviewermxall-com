@@ -1,0 +1,327 @@
+<html
+><head
+><title
+>Frequently asked questions about E</title></head><body bgcolor="#FFFFFF"
+><h1
+>Frequently asked questions about E</h1><p
+>Coordinated by Jonathan Rees. Last modified 28 September 2001.No longer maintained. Use the standard E documentation instead.</p><p
+>Thanks to Mark S. Miller,
+			 Marc Stiegler, 
+			 Douglas Crockford, and 
+			 Alan Karp
+	       for their contributions.</p><p
+>Send corrections, suggestions, questions, and answers to <img src="/~jar/email-address-as-image.png" />.</p><p
+>I call this a FAQ, but since I have no data on 
+	        question frequency, it is really just my private list
+		of questions about E that I imagine might be
+		asked by a skeptical newcomer.</p><p
+>General<br /><a href="#1-1"
+>1.1. What is E?</a><br /><a href="#1-2"
+>1.2. Why is it called 'E'?</a><br /><a href="#1-3"
+>1.3. Doesn't the world have enough programming languages already?</a><br /><a href="#1-4"
+>1.4. Can't E's goals be met by an API (instead of a language)?</a><br /><a href="#1-5"
+>1.5. Is E stable?</a><br /><a href="#1-6"
+>1.6. Is E supported?</a><br /><a href="#1-7"
+>1.7. Is E free?</a><br /></p><p
+>Capability security<br /><a href="#2-1"
+>2.1. What is capability security?</a><br /><a href="#2-2"
+>2.2. What advantages do capabilities have over the status quo?</a><br /><a href="#2-3"
+>2.3. I thought Java was secure.  Isn't it?</a><br /><a href="#2-4"
+>2.4. If capability security is such a good idea, why 
+	     isn't it in wide use?</a><br /><a href="#2-5"
+>2.5. What if I accidentally give a capability to someone who
+	  shouldn't have it?</a><br /><a href="#2-6"
+>2.6. How does revocation work in E?</a><br /><a href="#2-7"
+>2.7. How do I know whether my objects are protected?</a><br /><a href="#2-8"
+>2.8. If capabilities can be sent over the network, doesn't that 
+	  mean they're ultimately just strings (i.e. the characters that
+	  get sent over the wire)?</a><br /><a href="#2-9"
+>2.9. E seems to be vulnerable to denial of service attacks, 
+	   such as long-running loops. What gives?</a><br /><a href="#2-10"
+>2.10. Is confinement really good for anything useful?</a><br /></p><p
+>Event loop concurrency<br /><a href="#3-1"
+>3.1. RPC and threads are simple and intuitive. 
+	   Why does E insist on the use of an event loop?</a><br /><a href="#3-2"
+>3.2. If an E process is single-threaded, how to take advantage of
+	    parallelism (e.g. on SMP's)?</a><br /></p><p
+>Distributed objects<br /><a href="#4-1"
+>4.1. Why are local and remote objects treated differently in E?</a><br /><a href="#4-2"
+>4.2. Can I tell whether an object is remote (as opposed to local)?</a><br /><a href="#4-3"
+>4.3. How are promises different from futures?</a><br /><a href="#4-4"
+>4.4. Why do promises 'become' the object that they resolve to?
+	   This seems confusing.</a><br /><a href="#4-5"
+>4.5. Why go to the trouble of partially ordering events?</a><br /><a href="#4-6"
+>4.6. What network protocol does E use?</a><br /><a href="#4-7"
+>4.7. How do I discover / name remote objects?</a><br /><a href="#4-8"
+>4.8. Is there a reason that object mobility isn't supported?</a><br /></p><p
+>Language details<br /><a href="#5-1"
+>5.1. Why lambda-based objects, rather than classes or prototypes?</a><br /><a href="#5-2"
+>5.2. What happened to the '.' in message passing syntax?</a><br /><a href="#5-3"
+>5.3. If E is so secure, how does one get anything done at all?</a><br /></p><p
+>Miscellaneous<br /><a href="#6-1"
+>6.1. Is there an E IDE?</a><br /><a href="#6-2"
+>6.2. If E is so secure, how do I debug systems written using E?</a><br /><a href="#6-3"
+>6.3. How do I use Java code from E?  Doesn't Java access make E unsafe?</a><br /><a href="#6-4"
+>6.4. What is Elib?</a><br /><a href="#6-5"
+>6.5. How does E relate to other efforts such as <a href="http://www.e-speak.net/"
+>e-speak</a>, <a href="http://www.eros-os.org/"
+>EROS</a>, and Mozart?</a><br /><a href="#6-6"
+>6.6. How can I learn more?</a><br /></p><h2
+>General</h2><h4
+><a name="1-1"
+>1.1. What is E?</a></h4><p
+><p
+>E is a programming language designed to make it easy to write
+	         distributed programs that are correct and secure.
+		 For more information, see <a href="http://www.skyhunter.com/marcs/ewalnut.html"
+><i
+>E in a Walnut</i></a> and <a href="http://www.erights.org/"
+>the erights.org web site.</a></p></p><h4
+><a name="1-2"
+>1.2. Why is it called 'E'?</a></h4><p
+><p
+>Douglas Crockford writes:
+	      'I chose E because of the progression B, C. I observed that there was
+no language D. I figured it was a bad luck letter, so we moved on to
+E. That 'E' was also the initial of Electric Communities was noticed
+at the time. It also tied in to our development of the Unum
+distributed object model.'</p></p><h4
+><a name="1-3"
+>1.3. Doesn't the world have enough programming languages already?</a></h4><p
+><p
+>[To be answered, with particular reference to Python and Ruby]</p></p><h4
+><a name="1-4"
+>1.4. Can't E's goals be met by an API (instead of a language)?</a></h4><p
+><p
+>An API on an IPC system can provide inter-process security.  But it can't provide intra-process security, because adding an API cannot take away security holes.</p><p
+>ELib, the Java API that underlies E, provides the means for objects to speak to one another in a capability-secure fashion.  Objects defined in the E language may only affect the world outside of themselves according to the semantics provided by ELib.</p></p><h4
+><a name="1-5"
+>1.5. Is E stable?</a></h4><p
+><p
+>Almost.  As of September 2001 it is still in beta, but
+	   E version 1.0 is under intense development and is expected to be
+	   a stable public release.  It should be ready in early 2002 [???].</p></p><h4
+><a name="1-6"
+>1.6. Is E supported?</a></h4><p
+><p
+>[To be answered; maybe mention the DARPA support?]</p></p><h4
+><a name="1-7"
+>1.7. Is E free?</a></h4><p
+><p
+>The code distributed with E is <a href="http://erights.org/download/licenses.html"
+>licensed</a> under Mozilla-compatible licenses. According to <a href="http://opensource.org/"
+>opensource.org</a>, Mozilla is an open-source license. According to <a href="http://www.gnu.org/"
+>gnu.org</a>, Mozilla is a free software license.]</p></p><h2
+>Capability security</h2><h4
+><a name="2-1"
+>2.1. What is capability security?</a></h4><p
+><p
+>[To be answered - talk about naming, authorization, POLA.
+	    Walnut deals with this.]</p></p><h4
+><a name="2-2"
+>2.2. What advantages do capabilities have over the status quo?</a></h4><p
+><p
+>[MSM: Besides the usual sources, some useful distinctions may be found at <a href="http://www.caplet.com/security/taxonomy/index.html"
+>http://www.caplet.com/security/taxonomy/index.html</a>.]</p></p><h4
+><a name="2-3"
+>2.3. I thought Java was secure.  Isn't it?</a></h4><p
+><p
+>Sun claims that 'right from the beginning, the Java platform
+		 was designed to run programs securely on networks'.
+		 Java takes many steps in the direction of language-based
+		 security, such as pointer safety and garbage collection. However, as explained in <a href="http://www.skyhunter.com/marcs/ewalnut.html#SEC41"
+><i
+>E in a Walnut</i></a>'s 'Capability security' section, Java security is 
+		 based on identities of principals, not on keys, and is 
+		 so complicated that no one uses it nontrivially. It may work for confining applets, 
+		 but not for more sophisticated patterns of cooperation. For an example of Java's pervasive inattention to security,
+		 see the discussion in the same section 
+		 of how Java's ReadStream class fails to be secure.</p></p><h4
+><a name="2-4"
+>2.4. If capability security is such a good idea, why 
+	     isn't it in wide use?</a></h4><p
+><p
+>[To be answered; acknowledge critics before shooting them down]</p></p><h4
+><a name="2-5"
+>2.5. What if I accidentally give a capability to someone who
+	  shouldn't have it?</a></h4><p
+><p
+>[To be answered - revocation? timeouts?]</p></p><h4
+><a name="2-6"
+>2.6. How does revocation work in E?</a></h4><p
+><p
+>Revocation is done in user code using a pattern such as the following.  This also shows the power of lambda-based facets:<pre
+>class revokerMaker(var underlying) :any {
+    def forwarder {
+        # Miranda methods other than printOn and reactToLostClient 
+        # generally shouldn't be transparently forwarded to the underlying.
+        to printOn(out) {
+            underlying printOn(out)
+        }
+        to reactToLostClient(problem) {
+            underlying reactToLostClient(problem)
+        }
+        # forwards all non-Miranda methods, so this pattern should
+        # only be used if 'underlying' is known not to have any
+        # protocol that gives itself away.  Therefore, this is only
+        # for 'Cooperative (with the underlying) revocability'.
+        # Uncooperative revocability requires the Membrane pattern,
+        # for which we eventually expect to provide a library.
+        delegate { underlying }
+    }
+    def revoker {
+        to revoke() {
+            underlying := null
+        }
+        # Dead-man switch: if a holder of the revoking facet is lost 
+        # (due to a network partition), then we can no longer locally
+        # know that they don't wish to revoke, so revoke just in case.
+        # This is costly, but fails safe.
+        to reactToLostClient(problem) {
+            underlying := Ref broken(problem)
+        }
+    }
+    [forwarder, revoker]
+}</pre></p></p><h4
+><a name="2-7"
+>2.7. How do I know whether my objects are protected?</a></h4><p
+><p
+>[To be answered]</p></p><h4
+><a name="2-8"
+>2.8. If capabilities can be sent over the network, doesn't that 
+	  mean they're ultimately just strings (i.e. the characters that
+	  get sent over the wire)?</a></h4><p
+><p
+>[To be answered.  Talk about sturdyrefs?]</p></p><h4
+><a name="2-9"
+>2.9. E seems to be vulnerable to denial of service attacks, 
+	   such as long-running loops. What gives?</a></h4><p
+><p
+>[To be answered: there's nothing that can be done?]</p></p><h4
+><a name="2-10"
+>2.10. Is confinement really good for anything useful?</a></h4><p
+><p
+>[To be answered. Cf. especially the distinctions made by <a href="http://www.erights.org/elib/capability/dist-confine.html"
+>http://www.erights.org/elib/capability/dist-confine.html</a>]</p></p><h2
+>Event loop concurrency</h2><h4
+><a name="3-1"
+>3.1. RPC and threads are simple and intuitive. 
+	   Why does E insist on the use of an event loop?</a></h4><p
+><p
+>[To be answered: deadlock and races, multi-threaded hell]</p></p><h4
+><a name="3-2"
+>3.2. If an E process is single-threaded, how to take advantage of
+	    parallelism (e.g. on SMP's)?</a></h4><p
+><p
+>[To be answered: micro-parallelism and/or multiple vats]</p></p><h2
+>Distributed objects</h2><h4
+><a name="4-1"
+>4.1. Why are local and remote objects treated differently in E?</a></h4><p
+><p
+>[To be answered - see <a href="http://www.eros-os.org/pipermail/e-lang/2001-September/005717.html"
+>discussion</a>]</p></p><h4
+><a name="4-2"
+>4.2. Can I tell whether an object is remote (as opposed to local)?</a></h4><p
+><p
+>Yes, although you have to work at it a bit (check that the reference is resolved and not near). [blah.]</p></p><h4
+><a name="4-3"
+>4.3. How are promises different from futures?</a></h4><p
+><p
+>[When you 'force' a future, you might block.]</p></p><h4
+><a name="4-4"
+>4.4. Why do promises 'become' the object that they resolve to?
+	   This seems confusing.</a></h4><p
+><p
+>[To be answered.  MSM: Enables many cool programming techniques from logic programming:<ul
+><li
+>incrementally filled in data structures</li><li
+>immutable cyclic structures</li><li
+>... need more ...]</li></ul></p></p><h4
+><a name="4-5"
+>4.5. Why go to the trouble of partially ordering events?</a></h4><p
+><p
+>[To be answered - decent explanation in Walnut]</p></p><h4
+><a name="4-6"
+>4.6. What network protocol does E use?</a></h4><p
+><p
+>[To be answered]</p></p><h4
+><a name="4-7"
+>4.7. How do I discover / name remote objects?</a></h4><p
+><p
+>[To be answered - SturdyRefs, perhaps?]</p></p><h4
+><a name="4-8"
+>4.8. Is there a reason that object mobility isn't supported?</a></h4><p
+><p
+>[Tobe answered]</p></p><h2
+>Language details</h2><h4
+><a name="5-1"
+>5.1. Why lambda-based objects, rather than classes or prototypes?</a></h4><p
+><p
+>[To be answered]</p></p><h4
+><a name="5-2"
+>5.2. What happened to the '.' in message passing syntax?</a></h4><p
+><p
+>E's synchronous call syntax follows the lead of Smalltalk, not Simula-67.
+	   The development team decided that Smalltalk's syntax was easier
+	   to read and had less visual clutter than Simula's.
+	   In addition, one of the design goals of
+	   E is to make a language capable of working as
+	   the shell language for capability secure operating systems. 
+	   E is not breaking new ground here, since traditional shell
+	   languages prefer space to punctuation.</p></p><h4
+><a name="5-3"
+>5.3. If E is so secure, how does one get anything done at all?</a></h4><p
+><p
+>[To be answered]</p></p><h2
+>Miscellaneous</h2><h4
+><a name="6-1"
+>6.1. Is there an E IDE?</a></h4><p
+><p
+>[To be answered - no, I guess, but Emacs works pretty darn well.]</p></p><h4
+><a name="6-2"
+>6.2. If E is so secure, how do I debug systems written using E?</a></h4><p
+><p
+>[To be answered following Markm's and Norm's postings]</p></p><h4
+><a name="6-3"
+>6.3. How do I use Java code from E?  Doesn't Java access make E unsafe?</a></h4><p
+><p
+>[To be answered]</p></p><h4
+><a name="6-4"
+>6.4. What is Elib?</a></h4><p
+><p
+>[Answered above]</p></p><h4
+><a name="6-5"
+>6.5. How does E relate to other efforts such as <a href="http://www.e-speak.net/"
+>e-speak</a>, <a href="http://www.eros-os.org/"
+>EROS</a>, and Mozart?</a></h4><p
+><p
+>E is a language and infrastructure for secure distributed
+applications;
+e-speak provides only the infrastructure.  Both E and e-speak use capability
+mechanisms for access control, while e-speak also has mechanisms for naming
+and discovery.  Both E and e-speak have trusted code that mediates requests,
+allowing a degree of manageability not provided by systems that don't
+mediate, such as Jini.  Unlike E, e-speak is language independent, having
+had programming libraries for Java, Python, C++, and Perl (in various stages
+of completeness) in addition to a version for document exchange programming
+in XML.  The E language makes security guarantees that e-speak cannot.  For
+example, an E program can be analyzed for capability confinement. [Alan Karp]</p><p
+>Both Mozart and E descend from FCP (Flat Concurrent 
+Prolog), and the distributed capability security properties of both 
+languages are directly related to the security properties FCP had (in the 
+abstract, but not in actual implementations). [Mark Miller]</p><p
+>[EROS, Mozart: to be answered.]</p></p><h4
+><a name="6-6"
+>6.6. How can I learn more?</a></h4><p
+><ul
+><li
+><a href="http://erights.org/"
+>Erights.org</a> is E's home.</li><li
+><a href="http://www.skyhunter.com/marcs/ewalnut.html"
+><i
+>E in a Walnut</i></a> is an introduction to the language.</li><li
+>E is discussed on <a href="http://www.eros-os.org/mailman/listinfo/e-lang"
+>the e-lang discussion list</a>.</li><li
+>E and ELib have <a href="http://erights.org/javadoc/index.html"
+>API documentation</a>.</li></ul></p><p
+><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p></body></html>

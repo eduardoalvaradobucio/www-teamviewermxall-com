@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<use file="/templates/gotpike_package">
+	<STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		P { margin-bottom: 0.08in }
+		TD P { margin-bottom: 0.08in }
+		H1 { margin-bottom: 0.08in }
+		H1.western { font-family: "Albany", sans-serif; font-size: 16pt }
+		H1.cjk { font-size: 16pt }
+		H1.ctl { font-size: 16pt }
+		H2 { margin-bottom: 0.08in }
+		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Arial Unicode MS"; font-size: 14pt; font-style: italic }
+		H3 { margin-bottom: 0.08in }
+		H3.western { font-family: "Albany", sans-serif }
+		H3.cjk { font-family: "HG Mincho Light J" }
+		H3.ctl { font-family: "Arial Unicode MS" }
+		H4 { margin-bottom: 0.08in }
+		H4.western { font-family: "Albany", sans-serif; font-size: 11pt; font-style: italic }
+		H4.cjk { font-family: "HG Mincho Light J"; font-size: 11pt; font-style: italic }
+		H4.ctl { font-family: "Arial Unicode MS"; font-size: 11pt; font-style: italic }
+	-->
+	</STYLE>
+<PAGE TITLE="building pike modules">
+<BODY LANG="en-US" DIR="LTR">
+<H1 CLASS="western">Introduction to the Pike Module Development Kit</H1>
+<P>
+updated May 16, 2006
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">About</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">This document describes the basic
+procedures and requirements for developing modules for the Pike
+programming language. The tools and procedures contained in this
+document should be considered the official supported methods. Pike
+modules may consist of a combination of Pike components and compiled
+shared libraries, usually written in C or the CMOD format. This
+document also lays out the basic requirements for submitting a module
+to the currently unnamed Pike module repository (or simply &ldquo;the
+repository&rdquo;). This document assumes that the reader has a
+working knowledge of the Pike language, as well as a basic
+understanding of the standard development tools described below. This
+document should not be considered the final authority for building
+modules; for assistance or clarification, please refer to one of the
+resources listed in the final section of this document, &ldquo;Further
+reading and assistance.&rdquo;</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">Requirements</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">This procedure was developed for and
+using UNIX based operating systems. This procedure does not currently
+function for developers targeting the NT operating system.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The basic requirements for developing
+Pike modules are relatively simple. These include (in addition to the
+tools commonly supplied with an end user UNIX):</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in">C compiler, such as gcc</P>
+	<LI><P STYLE="margin-bottom: 0in">autoconf 2.13 or 2.52</P>
+	<LI><P STYLE="margin-bottom: 0in">Pike version 7.5 or higher</P>
+</UL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Optional components include:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in">automake</P>
+	<LI><P STYLE="margin-bottom: 0in">autoheader</P>
+</UL>
+<P STYLE="margin-bottom: 0in">It should be noted that the version of
+autoconf used is significant. Versions of autoconf greater than 2.52
+currently do not work. The recommended version for developing with
+Pike is 2.13. Modules that are properly prepared for distribution do
+not require the end user to have installed autoconf, automake or
+autoheader. 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">The Pike Module tool</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Pike versions 7.5 and higher have a
+built in tool that performs module building. When given a module
+distribution written using these procedures, the module tool will
+perform all of the steps required to build and install the module.
+The tool also performs a number of other useful query functions for
+determining system dependent paths for directories such as the module
+path.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Usage:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>pike -x module [arguments] [make
+args]</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">When the tool is run from the module
+source directory, without any arguments, the tool will determine what
+steps need to be performed in order to build the module. The steps
+that the module may perform include running autoconf, automake,
+autoheader, configure, and make. You may pass additional arguments to
+the configure script by adding the argument <TT>CONFIGUREARGS=&rdquo;my
+args to configure&rdquo;</TT>. The default target for modules should be to 
+build the module. Additionally, you may instruct the
+module tool to perform any of a number of make targets, including
+(but not limited to):</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=66*>
+	<COL WIDTH=190*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>install</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>installs the module in the system 
+module directory. Note that the module must already have been built 
+for this target to perform properly.</P>
+			</TD>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>install_local</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>installs the module in the user's module directory, usually
+				<TT>$HOME/lib/pike/modules</TT>. See 
+the note for the "install" target for information about prerequisite 
+handling.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>clean</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>removes most of the byproduct files from the make process.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>spotless</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>removes all of the build byproduct files.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>dump_module</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>precompiles (dumps) the installed module for faster startup
+				time</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>dump_local_module</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>precompiles (dumps) the local user's installed module for
+				faster startup time</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>modref</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>builds the reference documentation for the module by
+				extracting it from the module source. The system module reference
+				is then rebuilt to include the new module documentaion.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>module_modref</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>builds the reference documentation for the module by
+				extracting it from the module source. The resulting modref is
+				then placed in the <TT>modref/</TT> directory in the module build
+				directory. This is used to provide module documentation from the
+				module repository website.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>verify</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>generates a testsuite, if any tests are defined, then runs the
+				test.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=26%>
+				<P>verbose_verify 
+				</P>
+			</TD>
+			<TD WIDTH=74%>
+				<P>same as verify, but more output is generated from the tests.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Additional usage information may be
+found by running:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>pike -x module --help</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">A bare-bones module</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Pike modules can consist of zero or
+more pike language files, plus a shared object built from one or more
+c language files, of which any or none may be precompiled from CMOD
+files. In addition to these source files, a pike module distribution
+must include a minimum of the following files in order to compile and
+install properly:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H3 CLASS="western">configure.in</H3>
+<P STYLE="margin-bottom: 0in">This is the input to autoconf, and is
+used to configure the source and build environment for the particular
+system the module is being built on. At the very least, this file
+must contain the following lines:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>AC_INIT(module.pmod.in)</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>AC_MODULE_INIT()</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>AC_OUTPUT(Makefile)</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The first line initializes autoconf,
+and checks for the file or directory provided as an argument in order
+to verify that it's being run from the right location. The argument
+should be a file in the same directory; in this example, it points to
+a directory of Pike code that the module will be built from. Note
+that this particular file may not exist, especially if you're
+developing a module that is C only, so try to pick a file that is
+unique to your module.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The second line initializes the Pike
+module build system. This macro takes no arguments.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">The third line will generate the
+Makefile from the input file, <TT>Makefile.in</TT>, expanding any
+autoconf expansions that have been defined. You may add any tests or
+valid autoconf code between the second and third lines as may be
+necessary for your module to configure. Additionally, you may also
+have autoconf generate more files than have been demonstrated here.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H3 CLASS="western">Makefile.in</H3>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">This is the shell for the Makefile that
+will be used to build your module. This file may be modified to
+include a number of additional rules, but at a minimum, must contan
+the following content:</P>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<BLOCKQUOTE><TT>@make_variables@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>VPATH=@srcdir@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>OBJS=</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>AUTODOC_SRC_IN=</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>MODDIR=Protocols.pmod/BEEP.pmod/</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>MODNAME=client</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>MODULE_PMOD_IN=module.pmod.in</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>MODULE_LDFLAGS=@LDFLAGS@ @LIBS@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>CONFIG_HEADERS=@CONFIG_HEADERS@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>@dynamic_module_makefile@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><TT>@dependencies@</TT></BLOCKQUOTE>
+<BLOCKQUOTE><BR><BR>
+</BLOCKQUOTE>
+<P STYLE="margin-bottom: 0in">Important pieces of this makefile
+include:</P>
+<H4 CLASS="western">MODDIR</H4>
+<P STYLE="margin-bottom: 0in">This variable may be left empty for a
+root level module, or it may point to the place in the module
+filesystem where this module should be installed. If not empty, it
+must end with a / in order for the module to be installed in the
+proper location.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>IMPORTANT NOTE: </B>not including a
+trailing forward-slash (/) will cause the module to be installed in
+an incorrect location.</P>
+<H4 CLASS="western">MODNAME</H4>
+<P STYLE="margin-bottom: 0in">This variable is the name of this
+module, and may not be empty. If MODDIR is empty, the module will be
+installed as <TT>$(MODNAME).pmod</TT> in the root of the module tree,
+or as <TT>$(MODDIR)$(MODNAME)</TT> if MODDIR is defined.</P>
+<H4 CLASS="western">OBJS</H4>
+<P STYLE="margin-bottom: 0in">This variable may point to one or more
+object files that the shared objet portion of the module will be
+built from. Rules exist to compile .c files and .cmod files into the
+appropriate .o file. If this variable is empty, the shared object
+(.so) file will not be created. The shared object file will be
+installed as <TT>___$(MODNAME).so</TT> in the appropriate place in
+the pike tree.</P>
+<H4 CLASS="western" STYLE="page-break-before: always">AUTODOC_SRC_IN 
+</H4>
+<P STYLE="margin-bottom: 0in">This may contain a list of files
+containing AutoDoc markup. Used for specifiying C files that
+documentation should be searched for markup. CMOD files should not be
+specified on this line, but rather the compiled C files (change the
+extension from .cmod to .c to determine the files to specify for this
+variable.</P>
+<H4 CLASS="western">MODULE_PMOD_IN 
+</H4>
+<P STYLE="margin-bottom: 0in">This should be a directory that
+contains the pike code for the module. This directory may consist of
+a directory tree of pike code, and will be installed as
+<TT>$(MODDIR)(MODNAME).pmod</TT>. The contents of the tree will be
+run through a substitution, with instances of <TT>@module@</TT> being
+replaced with the final name of the .so file. If this variable is
+empty and a shared object file is being built, a stub will be
+generated which inherits the .so file, placing the module in its
+proper location in the Pike module tree.</P>
+<H3 CLASS="western">Other Makefile Variables</H3>
+<P>The following Makefile variables are less commonly used, but are
+fully supported by the module build system.</P>
+<P>MODULE_ARCHIVES</P>
+<P>MODULE_SUBDIRS</P>
+<P>MODULE_LDFLAGS</P>
+<P>MODULE_CPPFLAGS</P>
+<P>MODULE_MAKE_FLAGS</P>
+<P>CONFIG_HEADERS</P>
+<P>MODULE_CLEAN_EXTRA</P>
+<P>MODULE_SPOTLESS_EXTRA</P>
+<H3 CLASS="western">Examples:</H3>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">To build a module
+<TT>Protocols.BEEP.client</TT>, from a source tree of pike files
+stored in a directory called <TT>module.pmod.in</TT>, we would use
+the following variable definitions:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><TT>MODDIR = Protocols.pmod/BEEP.pmod/</TT></P>
+<P STYLE="margin-bottom: 0in"><TT>MODNAME = client</TT></P>
+<P STYLE="margin-bottom: 0in"><TT>MODULE_PMOD_IN = module.pmod.in</TT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">This would result in the pike module
+input directory module.pmod.in being substituted and stored in
+<TT>Protocols.pmod/BEEP.pmod/client.pmod</TT>, and if we supplied a
+number of object files in OBJS, they would be compiled and installed
+as a .so file called <TT>Protocols.pmod/BEEP.pmod/___client.so</TT>.
+If we were using a shared object file, we should also include in our
+Pike language module (presumably in the file
+<TT>$(MODULE_PMOD_IN)/module.pmod</TT>) code the following line:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<BLOCKQUOTE><TT>inherit @module@;</TT></BLOCKQUOTE>
+<P STYLE="margin-bottom: 0in">If you are building a module strictly
+from compiled code, this procedure still stands, however if you do
+not provide <TT>$(MODULE_PMOD_IN)</TT>, a minimal stub will be
+generated that will inherit the .so file to the module's final name
+in the Pike module namespace. 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Also, it is important to note that
+MODDIR is a relative path ending with a slash, and MODNAME is not
+(that is, it should not end with .pmod). 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H3 CLASS="western">Source Components</H3>
+<P>Pike modules may be developed using any combination of C, CMOD
+(the preprocessed version of C used for easing Pike module
+development), C++ or Pike.</P>
+<P>Pike language components (either a single pike file, or a
+directory of Pike language files are specified on the MODULE_PMOD_IN
+makefile variable.</P>
+<P>C and other compiled components are specified as a series of
+object files specified in the makefile variable OBJS (for instance,
+if the source file is called module.c or module.cmod, then the file
+specified should be module.o). 
+</P>
+<P>If you need to build a library which the module will link, you can
+use the MODULE_ARCHIVES makefile variable.</P>
+<P>All publicly available methods and properties made available
+through the module should be documented using the pike AutoDoc
+system. Discussion of AutoDoc is beyond the scope of this document,
+however additional information is available in the refdoc directory
+in the Pike source distribution.</P>
+<H3 CLASS="western">Optional components</H3>
+<H4 CLASS="western">testsuite.in</H4>
+<P>The optional testsuite code is provided in this file. The
+testsuite generator uses M4, so the syntax of this file may be a bit
+strange if you're not used to working with M4. An example of a
+minimal testsuite looks like this:</P>
+<P><BR><BR>
+</P>
+<BLOCKQUOTE><TT>test_true(functionp(HelloWorld.run))</TT></BLOCKQUOTE>
+<P>This sample code does one thing: it tests for the the code
+functionp(Protocols.BEEP.client.run) to be true.</P>
+<P>More information about the testsuite generator and the syntax of
+testsuites may be found by examining the testsuite.in files within
+the Pike source tree or by reviewing the Testsuites chapter of the
+Pike Reference Manual.</P>
+<H2 CLASS="western">Preparing a module for distribution</H2>
+<P>A module may be prepared for distribution (and ultimate submission
+to the Pike module repository) by performing the following tasks:</P>
+<P><BR><BR>
+</P>
+<OL>
+	<LI><P>Properly naming the module build directory.</P>
+	<OL>
+		<P>The module build directory should be named using the following
+		convention:</P>
+		<OL>
+			<LI><P>The location of the module within the Pike namespace should
+			be used, with dots (.) being replaced by underscores (_). 
+			</P>
+			<LI><P>The version number should follow the module name, separated
+			from it by a hypen (-). A version should consist of two or three
+			sets of decimals separated by periods. Only numeric characters
+			should be used in a version.</P>
+			<OL>
+				<P>Example: Version 1.0.2 of the module Protocols.BEEP.client
+				would be named Protocols_BEEP_client-1.0.2, and its corresponding
+				archive would be tarred and gzipped to produce a file named
+				Protocols_BEEP_client-1.0.2 .tar.gz 
+				</P>
+			</OL>
+			<LI><P>The module should then be packaged using tar and gzipped.</P>
+		</OL>
+	</OL>
+	<LI><P>Verify that the module will build successfully.</P>
+	<OL>
+		<P>This is usually performed by building and installing the module.</P>
+		<OL>
+			<P><TT>pike -x module; pike -x module install</TT></P>
+		</OL>
+	</OL>
+	<LI><P>Verify thaat the module documentation will build 
+properly for end users. </P>
+	<OL>
+		<OL>
+			<P><TT>pike -x module module_modref</TT></P>
+		</OL>
+	</OL>
+	<LI><P>Create metadata files (these files, while optional are highly
+	recommended)</P>
+	<OL>
+		<OL>
+			<P>AUTHORS &ndash; contains the names and email addresses of the
+			author(s)</P>
+			<P>README &ndash; contains information regarding installation and
+			use</P>
+			<P>LICENSE / COPYING &ndash; contains the license(s) the module is made
+			available under</P>
+			<P>CHANGES &ndash; contains a history of changes to the module</P>
+		</OL>
+	</OL>
+	<LI><P>Adding the required information fields to the module</P>
+	<OL>
+		<P>If you are planning on submitting the module to the repository,
+		you should add the following constants to your module's main class
+		(note that there are 2 underscore characters in each constant
+		name):</P>
+		<OL>
+			<P>__version A string indicating the module version number.
+			Normally this is a string of dotted integers in the following
+			format Major.Minor.Build, where build is an optional component.</P>
+			<P>__author A string containing an RFC822 formatted address line
+			containing the name and email address of a group or individual
+			responsible for the module. 
+			<P>__components An array containing a list of all file and directory
+                        components for the module, relative to the module directory. It is used
+                        by the uninstall functionality, and so should reflect the list of 
+                        files that would be installed by this particular version of the module.
+                        For example:
+                        ({ "Public.pmod/MyModule.pmod", "Public.pmod/MyModule.pmod/someclass.pike" }).
+			</P>
+			<P>Example: if the module is Protocols.BEEP.client, the version of
+			the module should be available as Protocols.BEEP.client.__version.</P>
+                        <P>You can generate a list of components suitable for pasting into this field
+                        by using Tools.Monger.MongerDeveloper.generate_components:
+                        </P>
+                        <P>pike -x module && pike -x module verify<br/>
+                           cd plib/modules<br/>
+                           pike -e 'write(Tools.Monger.MongerDeveloper()->generate_components("."))'
+                        </P>
+                        <P>Note that you must provide a relative path to your module directory
+                         in order for this technique to work. Do not provide a full path to the module's
+                         directory, as the resulting file will contain absolute paths, which is almost
+                         definitely not what you want.
+                        </P>
+		</OL>
+	</OL>
+	<LI><P>Creating the configure script</P>
+	<OL>
+		<P>This is accomplished by running the following command in the
+		module build directory:</P>
+		<OL>
+			<P><TT>pike -x module &ndash;&ndash;autoconf</TT></P>
+		</OL>
+	</OL>
+	<LI><P>Clean the build directory tree</P>
+	<OL>
+		<P>Any unnecessary files can be removed from the module build tree
+		by running the following command:</P>
+		<OL>
+			<P><TT>pike -x module spotless</TT></P>
+		</OL>
+	</OL>
+</OL>
+<P>Please note that these guidelines are important to adhere to. Many
+of these guidelines exist to allow automated installation of modules,
+which is an important feature for end users. In order to promote the
+proper distribution of modules, the module repository will refuse to
+accept modules that are not packaged using these steps.</P>
+<H2 CLASS="western">Further reading and assistance</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Pike Website</P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://pike.ida.liu.se/">http://pike.ida.liu.se</A></P>
+<P STYLE="margin-bottom: 0in">Pike User Community Site</P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://www.gotpike.org/">http://www.gotpike.org</A></P>
+<P STYLE="margin-bottom: 0in">Pike Users Mailing List</P>
+<P STYLE="margin-bottom: 0in"><A HREF="mailto:pike@roxen.com">pike@roxen.com</A></P>
+<P STYLE="margin-bottom: 0in">Pike Development List</P>
+<P STYLE="margin-bottom: 0in"><A HREF="mailto:pike-devel@lists.lysator.liu.se">pike-devel@lists.lysator.liu.se</A></P>
+</page>

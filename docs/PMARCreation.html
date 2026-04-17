@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Creating Packaged Module distributions (PMARs)</title>
+</head>
+<body>
+This document describes the structure and recommended procedures for creating prepackaged module installation 
+archives. These files, called PMARs, can be used with the pmar_install tool (pike -x pmar_install) to install modules 
+without having to run the build process. This tool is primarily intended for distribution of pike-only modules, or 
+for the distribution of modules packaged for systems which typically do not have build environments (such as 
+Microsoft Windows). 
+<p>
+<h2>Structure of a PMAR</h2>
+
+A PMAR file is simply a TAR file that contains files in a particular directory structure. In its simplest forms, it 
+consists of the following:
+
+<pre>
+myModule/
+         METADATA.TXT
+         MODULE/
+</pre>
+
+That is, you should create a directory (its name is actually not significant), and within that directory, create a 
+file called METADATA.TXT and a directory called MODULE.
+<p>
+The contents of your module should be copied into the MODULE directory. That is, if you have a called Public.Foo, 
+you'd copy the whole Public.pmod/Foo.pmod hierarchy into the MODULE directory. Note that you need to include the 
+whole hierarchy that would be created for your module, so you'd include Public.pmod. The easiest way to get the files 
+in a ready-to-go manner is to run "pike -x module verify", and then copy the contents of plib/modules into the 
+MODULES directory. 
+<p>
+Hint: You can bundle multiple modules in one PMAR File by including them in the MODULES directory. For example, we 
+can include both Public.Foo and Public.Tools.Bar, making things simpler. Because we determine module installation 
+status by directly querying the module for pertinent information (see the <a href="PikeModule.html">Pike Module 
+Developer's Guide</a> for more information), we can combine modules with impunity. Note that when doing this, we 
+should provide a comma separated list of modules contained in a PMAR as the value for MODULE in METADATA.TXT.
+
+<p>
+The file METADATA.TXT contains information that describes the module included in the PMAR file. It consists of a 
+number of lines that contain key-value mappings, in the format:
+<p>
+<pre>
+KEY=value
+</pre>
+There are 3 keys that are required for your module package: MODULE, PLATFORM and VERSION. 
+<p>
+The value of the MODULE key should contain the name of your module, for example, Public.Foo.
+<p>
+The value of the VERSION key should contain the version of your module, for example, 1.2.
+<p>
+The value of the PLATFORM key should contain the platform that the module has been prepared for, in the form of 
+os/architecture. For pike-only modules, you can use the platform value of "any/any". For Windows builds, you should 
+use a platform value of "win32/i586".
+<p>
+For our example module, which is pike-only, we'd create a metadata file that looked like this:
+<p>
+<pre>
+MODULE=Public.Foo
+VERSION=1.2
+PLATFORM=any/any
+</pre>
+<p>
+<h2>Optional components</h2>
+At the moment, there are a few optional components of a PMAR file which may be useful for more exotic installations. 
+These optional components are a set of pike classes that can be run to perform pre and post install operations.
+<p>
+To use these features, create a SCRIPTS directory in your package, and place files called "preinstall.pike" and/or 
+"postinstall.pike". These scripts will be run, if present, at the appropriate times. 
+<p>
+The constructor of the script will receive the installer object (pmar_install.pike), and a System.Filesystem object 
+of the PMAR file. They should also contain a method called run(), which returns a boolean that indicates success or 
+failure. If a pre/post install activity fails, the installation will halt. 
+<p>
+You can use the objects passed to the constructor to get system install directories, 
+and to access files within your package. Note that most packages will not need to make use of this functionality.
+<p>
+You can find a sample make rule that automates the creation of PMARs (and creates module repository releases of your 
+module, as well) in the SampleModule module in Bill Welliver's CVS repository. A link to a TAR of this can be found 
+<a href="http://buoy.riverweb.com:8080/viewrep/~tarball=tgz/cvs/pike_modules/SampleModule/SampleModule.tgz">here</a>.
+
+</body>
+</html>
