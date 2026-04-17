@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../../styles/normalize.css"/>
+		<link rel="stylesheet" href="../../styles/bootstrap.css"/>
+		<script src="../../scripts/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js"></script><script type="text/javascript" src="../../scripts/ddox.js"></script><title>Module vibe.stream.openssl - vibe.d</title>
+		<link rel="stylesheet" href="../../styles/vibelog.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/default.css" type="text/css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/feed/rss"/>
+		<script src="../../prettify/prettify.js"></script>
+		<meta name="viewport" content="width = device-width"/>
+		<meta name="keywords" lang="en" content="vibe framework, asynchronous, event based, web framework, network library"/>
+		<meta name="keywords" lang="de" content="vibe framework, asynchron, ereignis-basiert, web framework, netzwerk-bibliothek"/>
+	</head>
+	<body class="bs-blue">
+		<div class="bs-hl"></div><div class="bs-hr"></div><header>
+			<div id="logo-line">
+				<a class="logo-title-link" href="https://vibed.org/">
+					<img id="title" src="../../images/title-new.png" width="262" height="97" alt="vibe.d beta banner"/>
+				</a>
+				<a class="download-button" href="https://code.dlang.org/packages/vibe-d/0.10.1">
+					<div class="bs-hbtn right black">
+						<div class="content">get <strong>vibe.d</strong><br><large>0.10.1</large></div>
+					</div><div class="bs-hbtn left red">
+						<div class="dub-logo"></div>
+					</div></a>
+				<p id="slogan">
+					Asynchronous I/O that doesn’t get in your way, written in <a href="https://dlang.org" target="_blank">D</a>
+				</p>
+			</div>
+		</header><div id="bs-main" class="bs-leftnav">
+			<nav>
+				<nav id="global-nav">
+					<ul>
+						<li class="nav-home">
+							<a class="" href="../../">Home</a>
+						</li>
+						<li class="nav-blog">
+							<a class="" href="../../blog">News</a>
+						</li>
+						<li class="nav-features">
+							<a class="" href="../../features">Features</a>
+						</li>
+						<li class="nav-tutorials">
+							<a class="" href="../../tutorials">Tutorials</a>
+						</li>
+						<li class="nav-docs">
+							<a class="" href="../../docs">Documentation</a>
+						</li>
+						<li class="nav-community">
+							<a class="" href="../../community">Community</a>
+						</li>
+						<li class="nav-get-involved">
+							<a class="" href="../../get-involved">Get involved</a>
+						</li>
+						<li class="nav-download">
+							<a class="" href="../../download">Download</a>
+						</li>
+						<li class="nav-about">
+							<a class="" href="../../about">About</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="document-nav" class="bs-local">
+					<noscript>
+						<p style="color: red">The search functionality needs JavaScript enabled</p>
+					</noscript>
+					<div id="symbolSearchPane" style="">
+						<form action="../search" method="GET">
+							<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+						</form>
+						<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+					</div>
+					<div class="bs-separator">
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">diet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../diet.defs/">defs</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.dom/">dom</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.input/">input</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.parser/">parser</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.traits/">traits</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">eventcore
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../eventcore.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.driver/">driver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.socket/">socket</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">
+									<a href="../taggedalgebraic/">taggedalgebraic</a>
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedalgebraic/">taggedalgebraic</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedunion/">taggedunion</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.visit/">visit</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">vibe
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">container
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.ringbuffer/">ringbuffer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.seahash/">seahash</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">core
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.internal.release/">release</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.args/">args</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.channel/">channel</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.concurrency/">concurrency</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.connectionpool/">connectionpool</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.file/">file</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.net/">net</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.parallelism/">parallelism</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.path/">path</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.process/">process</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.stream/">stream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.sync/">sync</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.task/">task</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.taskpool/">taskpool</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">crypto
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.crypto.cryptorand/">cryptorand</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">data
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.bson/">bson</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.json/">json</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.serialization/">serialization</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">db
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">mongo
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">impl
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.crud/">crud</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.index/">index</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.collection/">collection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.connection/">connection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.cursor/">cursor</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.database/">database</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.flags/">flags</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.mongo/">mongo</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sasl/">sasl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.settings/">settings</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">redis
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.idioms/">idioms</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.redis/">redis</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.types/">types</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">http
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">auth
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.basic_auth/">basic_auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.digest_auth/">digest_auth</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.internal.basic_auth_client/">basic_auth_client</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.dist/">dist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.fileserver/">fileserver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.form/">form</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.proxy/">proxy</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.router/">router</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.server/">server</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.session/">session</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.status/">status</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.websockets/">websockets</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">inet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.message/">message</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.mimetypes/">mimetypes</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.url/">url</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.urltransfer/">urltransfer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.webform/">webform</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">mail
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.mail.smtp/">smtp</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">stream
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.base64/">base64</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.botan/">botan</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.bufferedstream/">bufferedstream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.cached/">cached</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.counting/">counting</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.memory/">memory</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.multicast/">multicast</a>
+								</div>
+							</li>
+							<li>
+								<div class="module selected">
+									<a href="../vibe.stream.openssl/">openssl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.operations/">operations</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.semaphore/">semaphore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.stdio/">stdio</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.taskpipe/">taskpipe</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.tls/">tls</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.wrapper/">wrapper</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.zlib/">zlib</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">textfilter
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.markdown/">markdown</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.urlencode/">urlencode</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">utils
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.array/">array</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.string/">string</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.validation/">validation</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">web
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.auth/">auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.i18n/">i18n</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rest/">rest</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rpc/">rpc</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.validation/">validation</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.web/">web</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.d/">d</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.vibe/">vibe</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+					</div>
+					<script>setupDdox();</script>
+					<div id="api-version-selector" class="bs-separator">
+						<ul>
+							<li class="selected"><a href="../../api/vibe.stream.openssl/">current</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.9.8/vibe.stream.openssl/">0.9.8</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.8.6/vibe.stream.openssl/">0.8.6</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.10.1/vibe.stream.openssl/">0.10.1</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+			<section>
+				<div id="maincontent">
+					<h1>Module vibe.stream.openssl</h1><p>OpenSSL based SSL/TLS stream implementation
+</p><section></section>
+
+					<section></section>
+					<section>
+						<h2>Functions</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_clear_flags" class="public" href="../vibe.stream.openssl/BIO_clear_flags">BIO_clear_flags</a><span class="tableEntryAnnotation">(b, flags)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_get_data" class="public" href="../vibe.stream.openssl/BIO_get_data">BIO_get_data</a><span class="tableEntryAnnotation">(bio)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_get_init" class="public" href="../vibe.stream.openssl/BIO_get_init">BIO_get_init</a><span class="tableEntryAnnotation">(bio)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_get_new_index" class="public" href="../vibe.stream.openssl/BIO_get_new_index">BIO_get_new_index</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_get_shutdown" class="public" href="../vibe.stream.openssl/BIO_get_shutdown">BIO_get_shutdown</a><span class="tableEntryAnnotation">(bio)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_free" class="public" href="../vibe.stream.openssl/BIO_meth_free">BIO_meth_free</a><span class="tableEntryAnnotation">(biom)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_new" class="public" href="../vibe.stream.openssl/BIO_meth_new">BIO_meth_new</a><span class="tableEntryAnnotation">(type, name)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_set_create" class="public" href="../vibe.stream.openssl/BIO_meth_set_create">BIO_meth_set_create</a><span class="tableEntryAnnotation">(biom, cb)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_set_ctrl" class="public" href="../vibe.stream.openssl/BIO_meth_set_ctrl">BIO_meth_set_ctrl</a><span class="tableEntryAnnotation">(biom, cb)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_set_destroy" class="public" href="../vibe.stream.openssl/BIO_meth_set_destroy">BIO_meth_set_destroy</a><span class="tableEntryAnnotation">(biom, cb)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_set_read" class="public" href="../vibe.stream.openssl/BIO_meth_set_read">BIO_meth_set_read</a><span class="tableEntryAnnotation">(biom, cb)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_meth_set_write" class="public" href="../vibe.stream.openssl/BIO_meth_set_write">BIO_meth_set_write</a><span class="tableEntryAnnotation">(biom, cb)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_set_data" class="public" href="../vibe.stream.openssl/BIO_set_data">BIO_set_data</a><span class="tableEntryAnnotation">(bio, ptr)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_set_flags" class="public" href="../vibe.stream.openssl/BIO_set_flags">BIO_set_flags</a><span class="tableEntryAnnotation">(b, flags)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_set_init" class="public" href="../vibe.stream.openssl/BIO_set_init">BIO_set_init</a><span class="tableEntryAnnotation">(bio, init_)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_set_shutdown" class="public" href="../vibe.stream.openssl/BIO_set_shutdown">BIO_set_shutdown</a><span class="tableEntryAnnotation">(bio, shut)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BIO_test_flags" class="public" href="../vibe.stream.openssl/BIO_test_flags">BIO_test_flags</a><span class="tableEntryAnnotation">(b, flags)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="BN_get_rfc3526_prime_2048" class="public" href="../vibe.stream.openssl/BN_get_rfc3526_prime_2048">BN_get_rfc3526_prime_2048</a><span class="tableEntryAnnotation">(bn)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="CRYPTO_get_ex_new_index" class="public" href="../vibe.stream.openssl/CRYPTO_get_ex_new_index">CRYPTO_get_ex_new_index</a><span class="tableEntryAnnotation">(class_index, argl, argp, new_func, dup_func, free_func)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="ERR_new" class="public" href="../vibe.stream.openssl/ERR_new">ERR_new</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="ERR_set_debug" class="public" href="../vibe.stream.openssl/ERR_set_debug">ERR_set_debug</a><span class="tableEntryAnnotation">(file, line, func)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="ERR_set_error" class="public" href="../vibe.stream.openssl/ERR_set_error">ERR_set_error</a><span class="tableEntryAnnotation">(lib, reason, fmt)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_clear_options" class="public" href="../vibe.stream.openssl/SSL_clear_options">SSL_clear_options</a><span class="tableEntryAnnotation">(ssl, op)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_CTX_clear_options" class="public" href="../vibe.stream.openssl/SSL_CTX_clear_options">SSL_CTX_clear_options</a><span class="tableEntryAnnotation">(ctx, op)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_CTX_get_options" class="public" href="../vibe.stream.openssl/SSL_CTX_get_options">SSL_CTX_get_options</a><span class="tableEntryAnnotation">(ctx)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_CTX_set_options" class="public" href="../vibe.stream.openssl/SSL_CTX_set_options">SSL_CTX_set_options</a><span class="tableEntryAnnotation">(ctx, op)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_get1_peer_certificate" class="public" href="../vibe.stream.openssl/SSL_get1_peer_certificate">SSL_get1_peer_certificate</a><span class="tableEntryAnnotation">(ssl)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_get_ex_new_index" class="public" href="../vibe.stream.openssl/SSL_get_ex_new_index">SSL_get_ex_new_index</a><span class="tableEntryAnnotation">(argl, argp, new_func, dup_func, free_func)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_get_options" class="public" href="../vibe.stream.openssl/SSL_get_options">SSL_get_options</a><span class="tableEntryAnnotation">(ssl)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="SSL_set_options" class="public" href="../vibe.stream.openssl/SSL_set_options">SSL_set_options</a><span class="tableEntryAnnotation">(ssl, op)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLS_client_method" class="public" href="../vibe.stream.openssl/TLS_client_method">TLS_client_method</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLS_server_method" class="public" href="../vibe.stream.openssl/TLS_server_method">TLS_server_method</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Classes</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="OpenSSLContext" class="public" href="../vibe.stream.openssl/OpenSSLContext">OpenSSLContext</a>
+									</code>
+								</td>
+								<td>Encapsulates the configuration for an SSL tunnel.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="OpenSSLStream" class="public" href="../vibe.stream.openssl/OpenSSLStream">OpenSSLStream</a>
+									</code>
+								</td>
+								<td>Creates an SSL/TLS tunnel within an existing stream.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Manifest constants</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="alpn_forced" class="public" href="../vibe.stream.openssl/alpn_forced">
+										<code>alpn_forced</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="haveALPN" class="public" href="../vibe.stream.openssl/haveALPN">
+										<code>haveALPN</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="BIOMethCreateCallback" class="public" href="../vibe.stream.openssl/BIOMethCreateCallback">
+										<code>BIOMethCreateCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span> <span class="typ">int</span> <span class="kwd">function</span><span class="pun">(</span><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">bio<wbr/></span><span class="pun">.</span><span class="pln">bio_st</span><span class="pun">*</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="BIOMethCtrlCallback" class="public" href="../vibe.stream.openssl/BIOMethCtrlCallback">
+										<code>BIOMethCtrlCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span> <span class="typ">long</span> <span class="kwd">function</span><span class="pun">(</span><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">bio<wbr/></span><span class="pun">.</span><span class="pln">bio_st</span><span class="pun">*</span><span class="pun">, </span><span class="typ">int</span><span class="pun">, </span><span class="typ">long</span><span class="pun">, </span><span class="typ">void</span><span class="pun">*</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="BIOMethDestroyCallback" class="public" href="../vibe.stream.openssl/BIOMethDestroyCallback">
+										<code>BIOMethDestroyCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span> <span class="typ">int</span> <span class="kwd">function</span><span class="pun">(</span><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">bio<wbr/></span><span class="pun">.</span><span class="pln">bio_st</span><span class="pun">*</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="BIOMethReadCallback" class="public" href="../vibe.stream.openssl/BIOMethReadCallback">
+										<code>BIOMethReadCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span> <span class="typ">int</span> <span class="kwd">function</span><span class="pun">(</span><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">bio<wbr/></span><span class="pun">.</span><span class="pln">bio_st</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="typ">int</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="BIOMethWriteCallback" class="public" href="../vibe.stream.openssl/BIOMethWriteCallback">
+										<code>BIOMethWriteCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">nothrow</span> <span class="kwd">extern</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span> <span class="typ">int</span> <span class="kwd">function</span><span class="pun">(</span><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">bio<wbr/></span><span class="pun">.</span><span class="pln">bio_st</span><span class="pun">*</span><span class="pun">, </span><span class="kwd">const</span><span class="pun">(</span><span class="typ">char</span><span class="pun">)</span><span class="pun">*</span><span class="pun">, </span><span class="typ">int</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="get_rfc3526_prime_2048" class="public" href="../vibe.stream.openssl/get_rfc3526_prime_2048">
+										<code>get_rfc3526_prime_2048</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="typ">BN_get_rfc3526_prime_2048</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="SSL_get_peer_certificate" class="public" href="../vibe.stream.openssl/SSL_get_peer_certificate">
+										<code>SSL_get_peer_certificate</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="typ">SSL_get1_peer_certificate</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="SSLState" class="public" href="../vibe.stream.openssl/SSLState">
+										<code>SSLState</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="pln">deimos<wbr/></span><span class="pun">.</span><span class="pln">openssl<wbr/></span><span class="pun">.</span><span class="pln">ssl<wbr/></span><span class="pun">.</span><span class="pln">ssl_st</span><span class="pun">*</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="SSLv23_client_method" class="public" href="../vibe.stream.openssl/SSLv23_client_method">
+										<code>SSLv23_client_method</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="typ">TLS_client_method</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="SSLv23_server_method" class="public" href="../vibe.stream.openssl/SSLv23_server_method">
+										<code>SSLv23_server_method</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="typ">TLS_server_method</span></code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<footer>
+						<table class="license-info">
+							<tr>
+								<th>Authors</th>
+								<td>
+									<p>Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>Copyright</th>
+								<td>
+									<p>© 2012-2014 Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>License</th>
+								<td>
+									<p>Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+</p>
+
+								</td>
+							</tr>
+						</table>
+					</footer>
+					<script>prettyPrint();</script>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="copyright">Copyright © 2012-2026 Sönke Ludwig</div>
+			<div>
+				<a href="../../impressum">Impressum</a> –
+				<a href="../../about#license">License</a> –
+				<a href="../../contact">Contact</a>
+			</div>
+		</footer>
+		<div class="bs-fl"></div><div class="bs-fr"></div>
+	</body>
+</html>

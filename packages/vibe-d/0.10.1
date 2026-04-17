@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../styles/markdown.css"/>
+		<link rel="stylesheet" type="text/css" href="../../styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../styles/top.css"/>
+		<link rel="stylesheet" type="text/css" href="../../styles/top_p.css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="search" href="../../opensearch.xml" type="application/opensearchdescription+xml" title="DUB"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0"/>
+		<!-- facebook & co.-->
+		<meta property="og:url" content=""/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Package vibe-d on DUB"/>
+		<meta property="og:image" content="/packages/vibe-d/logo?s=5aedc6627a81c3954344a2a9"/>
+		<meta property="og:description" content="Event driven web and concurrency framework"/>
+		<meta property="og:site_name" content="DUB Package Registry"/>
+		<meta property="og:locale" content="en_US"/>
+		<meta property="article:author" content="Sönke Ludwig"/>
+		<!-- twitter-->
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@D_Programming"/>
+		<meta name="twitter:url" content="http://code.dlang.org/packages/vibe-d"/>
+		<meta name="twitter:title" content="Package vibe-d on DUB"/>
+		<meta name="twitter:description" content="Event driven web and concurrency framework"/>
+		<meta name="twitter:image" content="/packages/vibe-d/logo?s=5aedc6627a81c3954344a2a9"/>
+		<meta name="theme-color" content="#B03931"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="description" content="Event driven web and concurrency framework"/>
+		<title>Package vibe-d version 0.10.1 - DUB - The D package registry</title>
+	</head>
+	<body id="Home" class="doc">
+		<script>document.body.className += ' have-javascript'</script>
+		<div id="top">
+			<div class="helper">
+				<div class="helper expand-container active">
+					<div class="logo">
+						<a href="../../">
+							<img id="logo" alt="DUB Logo" src="../../images/dub-header.png"/>
+						</a>
+					</div>
+					<a href="#" title="Menu" class="hamburger expand-toggle">
+						<span>Menu</span>
+					</a>
+					<div id="cssmenu">
+						<ul>
+							<li class="">
+								<a href="../../">
+									<span>Packages</span>
+								</a>
+							</li>
+							<li class="expand-container">
+								<a class="expand-toggle" href="#">
+									<span>Documentation</span>
+								</a>
+								<ul class="expand-content">
+									<li class="">
+										<a href="https://dub.pm/">
+											<span>Getting Started</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://dub.pm/dub-guide/recipe/">
+											<span>DUB Guide</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://dub.pm/dub-reference/recipe/">
+											<span>DUB Reference</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://dub.pm/cli-reference/dub/">
+											<span>CLI Reference</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://dub.pm/dub-reference/build_settings/">
+											<span>Recipe build settings</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://dub.pm/dub-reference/settings/">
+											<span>Settings</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="expand-container">
+								<a class="expand-toggle" href="#">
+									<span>About</span>
+								</a>
+								<ul class="expand-content">
+									<li class="">
+										<a href="http://forum.rejectedsoftware.com/groups/rejectedsoftware.dub">
+											<span>Forums</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://github.com/dlang/dub-registry/issues">
+											<span>Bug tracker (website)</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://github.com/dlang/dub/issues">
+											<span>Bug tracker (DUB)</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://github.com/dlang/dub-registry">
+											<span>Github repository (website)</span>
+										</a>
+									</li>
+									<li class="">
+										<a href="https://github.com/dlang/dub">
+											<span>GitHub repository (DUB)</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="https://github.com/dlang/dub/releases">
+									<span>Download</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="../../login?redirect=/packages/vibe-d/0.10.1">
+									<span>Log in</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="search-container expand-container">
+						<a class="expand-toggle" href="search.html" title="Search">
+							<span>Search</span>
+						</a>
+						<div id="search-box">
+							<form method="GET" action="../../search">
+								<span id="search-query">
+									<input id="q" name="q" placeholder="Search for a package"/>
+								</span>
+								<span id="search-submit">
+									<button type="submit">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="main">
+				<img class="packageLogo" src="/packages/vibe-d/logo?s=5aedc6627a81c3954344a2a9" alt="vibe-d logo"/>
+				<h1>
+					vibe-d <strong class="badge">0.10.1</strong>
+				</h1>
+				<p>Event driven web and concurrency framework</p>
+				<br/>
+				<p>To use this package, run the following command in your project's root directory:</p>
+				<div class="clipboard-pkg">
+					<div class="clipboard-pkg-row">
+						<input id="package-clipboard" value="dub add vibe-d"/>
+						<button class="btn-clipboard" data-clipboard-target="#package-clipboard">
+							<img src="/images/clippy.svg" width="13" alt="Copy to clipboard"/>
+						</button>
+					</div>
+				</div>
+				<div class="clipboard-manual">
+					<p>
+						<strong>Manual usage</strong>
+						<br/>
+						Put the following dependency into your project's dependences section:
+					</p>
+					<div class="clipboard-pkg">
+						<div class="clipboard-pkg-row">
+							<label class="clipboard-pkg-title" for="package-clipboard-json">dub.json</label>
+							<input id="package-clipboard-json" value="&quot;vibe-d&quot;: &quot;~&gt;0.10.1&quot;"/>
+							<button class="btn-clipboard" data-clipboard-target="#package-clipboard-json">
+								<img src="/images/clippy.svg" width="13" alt="Copy to clipboard"/>
+							</button>
+						</div>
+						<div class="clipboard-pkg-row">
+							<label class="clipboard-pkg-title" for="package-clipboard-sdl">dub.sdl</label>
+							<input id="package-clipboard-sdl" value="dependency &quot;vibe-d&quot; version=&quot;~&gt;0.10.1&quot;"/>
+							<button class="btn-clipboard" data-clipboard-target="#package-clipboard-sdl">
+								<img src="/images/clippy.svg" width="13" alt="Copy to clipboard"/>
+							</button>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<p>This package provides sub packages which can be used individually:</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Autils">
+						vibe-d:utils
+					</a>
+					- Low level utility functionality
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Adata">
+						vibe-d:data
+					</a>
+					- Data format and serialization support
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Astream">
+						vibe-d:stream
+					</a>
+					- Library of various pluggable stream implementations
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Atls">
+						vibe-d:tls
+					</a>
+					- TLS stream implementations
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Acrypto">
+						vibe-d:crypto
+					</a>
+					- Cryptographic helper routines
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Atextfilter">
+						vibe-d:textfilter
+					</a>
+					- Text filtering routines
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Ainet">
+						vibe-d:inet
+					</a>
+					- Internet standard functionality
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Amail">
+						vibe-d:mail
+					</a>
+					- SMTP client support
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Ahttp">
+						vibe-d:http
+					</a>
+					- HTTP server and client implementation and higher level HTTP functionality
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Amongodb">
+						vibe-d:mongodb
+					</a>
+					- MongoDB database client implementation
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Aredis">
+						vibe-d:redis
+					</a>
+					- Redis database client implementation
+				</p>
+				<p>
+					<a class="blind" href="../../packages/vibe-d%3Aweb">
+						vibe-d:web
+					</a>
+					- High level web and REST service framework
+				</p>
+				<div class="subtabsHeader">
+					<a class="tab active" href="../../packages/vibe-d?tab=info">Info</a><a class="tab external" href="https://vibed.org/docs" target="_blank">Documentation</a>
+				</div>
+				<div class="repositoryReadme markdown-body">
+					<div><p><a href="http://vibed.org"><img src="https://vibed.org/images/title-new.png" alt="vibe.d"></a>
+</p>
+<p>vibe.d is a high-performance asynchronous I/O, concurrency and web application
+toolkit written in D. It already contains many supplemental features such as
+database support to be able to offer a complete development environment. For
+more specialized needs, there are also many compatible
+<a href="https://code.dlang.org/?sort=updated&amp;category=library.vibed">DUB packages</a>
+available.
+</p>
+<p>Visit the website at <a href="https://vibed.org/">https://vibed.org/</a> for more information and
+<a href="https://vibed.org/docs">documentation</a>.
+</p>
+<p><a href="https://code.dlang.org/packages/vibe-d"><img src="https://img.shields.io/dub/v/vibe-d.svg" alt="DUB Package"></a>
+<a href="https://github.com/vibe-d/vibe.d/actions/workflows/ci.yml"><img src="https://github.com/vibe-d/vibe.d/actions/workflows/ci.yml/badge.svg" alt="Posix Build Status"></a>
+<a href="https://ci.appveyor.com/project/s-ludwig/vibe-d/branch/master"><img src="https://ci.appveyor.com/api/projects/status/cp2kxg70h54pga9d/branch/master?svg=true" alt="Windows Build Status"></a>
+</p>
+<h3 id="hello-vibe-d">Hello Vibe.d</h3>
+<pre class="prettyprint"><code>#!/usr/bin/env dub
+/+ dub.sdl:
+   name "hello_vibed"
+   dependency "vibe-d" version="~&gt;0.9.0"
++/
+import vibe.vibe;
+
+void main()
+{
+    listenHTTP("127.0.0.1:8080", (req, res) {
+        res.writeBody("Hello Vibe.d: " ~ req.path);
+    });
+
+    runApplication();
+}
+</code></pre>
+<p>Download this file as <code class="prettyprint">hello.d</code> and run it with <a href="https://github.com/dlang/dub">DUB</a>:
+</p>
+<pre class="prettyprint"><code>&gt; dub hello.d
+</code></pre>
+<p>(or <code class="prettyprint">chmod +x</code> and execute it: <code class="prettyprint">./hello.d</code>)
+</p>
+<p>Alternatively, you can quickstart with examples directly on <a href="https://run.dlang.io/is/qTsfv6"><img src="https://img.shields.io/badge/run.dlang.io-open-blue.svg" alt="Open on run.dlang.io"></a>.
+</p>
+<h3 id="project-structure">Project structure</h3>
+<p>The vibe.d project is structured into multiple repositories:
+</p>
+<ul>
+<li><code class="prettyprint">vibe-d</code> (this repository): The high level web and REST framework, HTTP, STMP and Redis/MongoDB functionality
+</li>
+<li><a href="https://github.com/vibe-d/vibe-http"><code class="prettyprint">vibe-http</code></a>: HTTP client/server implementation including WebSockets, proxy, sessions etc.
+</li>
+<li><a href="https://github.com/vibe-d/vibe-stream"><code class="prettyprint">vibe-stream</code></a>: Advanced stream types and TLS stream support
+</li>
+<li><a href="https://github.com/vibe-d/vibe-inet"><code class="prettyprint">vibe-inet</code></a>: Internet standard functionality (URL, form encoding, HTML encoding, ...)
+</li>
+<li><a href="https://github.com/vibe-d/vibe-core"><code class="prettyprint">vibe-core</code></a>: Fiber based I/O and concurrency implementation
+</li>
+<li><a href="https://github.com/vibe-d/vibe-serialization"><code class="prettyprint">vibe-serialization</code></a>: Serialization and structured data format support
+</li>
+<li><a href="https://github.com/vibe-d/vibe-container"><code class="prettyprint">vibe-container</code></a>: Container implementations used throughout the project
+</li>
+<li><a href="https://github.com/vibe-d/vibe-sdl"><code class="prettyprint">vibe-sdl</code></a>: <a href="https://sdlang.org">SDLang</a> serialization support based on <a href="https://github.com/s-ludwig/sdlite"><code class="prettyprint">sdlite</code></a>
+</li>
+<li><a href="https://github.com/vibe-d/vibe-compat"><code class="prettyprint">vibe-compat</code></a>: Legacy functionality
+</li>
+<li><a href="https://github.com/vibe-d/observable"><code class="prettyprint">observable</code></a>: Observable, signal/slot and reactive value implementations
+</li>
+<li><a href="https://github.com/rejectedsoftware/diet-ng"><code class="prettyprint">diet</code></a>: pug.js inspired compile-time HTML template system with <code class="prettyprint">vibe.web</code> integration
+</li>
+<li><a href="https://github.com/vibe-d/eventcore"><code class="prettyprint">eventcore</code></a>: Low-level abstraction over the operating system's asynchronous I/O facilities
+</li>
+</ul>
+<p>You can find an API overview of the whole project in the <a href="https://vibed.org/api/">API documentation</a>.
+</p>
+<h3 id="support">Support</h3>
+<p>Vibe.d supports the 10 latest minor releases of DMD.
+For example, if the current version is v2.090.1,
+then v2.089.x, v2.088.x, ... v2.080.x are supported.
+Note that support for patch release is desireable,
+but only support for the last patch in a minor is guaranteed.
+</p>
+<p>Additionally, Vibe.d supports all LDC versions that implement
+the version of a supported frontend (e.g. by the previous rule
+<a href="https://github.com/ldc-developers/ldc/releases/tag/v1.20.0">LDC v1.20.0</a>
+implements v2.090.1 and would be supported).
+</p>
+<h3 id="installation">Installation</h3>
+<p>Instead of explicitly installing vibe.d, it is recommended to use
+<a href="https://github.com/dlang/dub">DUB</a> for building vibe.d based
+applications. Once DUB is installed, you can create and run a new project
+using the following shell commands:
+</p>
+<pre class="prettyprint"><code>dub init &lt;name&gt; -t vibe.d
+cd &lt;name&gt;
+dub
+
+</code></pre>
+<p>Similarly, you can run an example by invoking <code class="prettyprint">dub</code> from any of the
+example project directories.
+</p>
+<p>Note that on non-Windows operating systems, you also need to have
+OpenSSL installed - and of course a D compiler. See below
+for instructions.
+</p>
+<h3 id="additional-setup-on-windows">Additional setup on Windows</h3>
+<ul>
+<li>Just install DMD using the installer on <a href="https://dlang.org/download.html">https://dlang.org/download.html</a>
+</li>
+<li>And get the latest <a href="https://code.dlang.org/download">DUB release</a>
+</li>
+</ul>
+<h3 id="additional-setup-on-mac-using-brew">Additional setup on Mac using brew</h3>
+<p>If you don't have brew installed, install it according to their <a href="https://brew.sh">install
+instructions</a>.
+</p>
+<p>You can then also install DUB using brew:
+</p>
+<pre class="prettyprint"><code>brew install dub
+
+</code></pre>
+<p>(Note: Install brew only if you do not have macports, as they will conflict)
+</p>
+<p>Install DMD using the installer on <a href="https://dlang.org/download.html">https://dlang.org/download.html</a>.
+</p>
+<p>Optionally, run <code class="prettyprint">./setup-mac.sh</code> to create a user/group pair for privilege lowering.
+</p>
+<h3 id="additional-setup-on-linux-debian-ubuntu-mint">Additional setup on Linux (Debian/Ubuntu/Mint)</h3>
+<p>Install vibe.d's dependencies:
+</p>
+<pre class="prettyprint"><code>sudo apt-get install libssl-dev
+
+
+</code></pre>
+<p>On 32-bit linux: Install DMD-i386
+</p>
+<pre class="prettyprint"><code>sudo apt-get install g++ gcc-multilib xdg-utils
+wget "http://downloads.dlang.org/releases/2.x/2.098.0/dmd_2.098.0-0_i386.deb"
+sudo dpkg -i dmd_2.098.0-0_i386.deb
+
+
+</code></pre>
+<p>On 64-bit linux: Install DMD-amd64
+</p>
+<pre class="prettyprint"><code>sudo apt-get install g++ gcc-multilib xdg-utils
+wget "http://downloads.dlang.org/releases/2.x/2.098.0/dmd_2.098.0-0_amd64.deb"
+sudo dpkg -i dmd_2.098.0-0_amd64.deb
+
+
+</code></pre>
+<p>Optionally, run <code class="prettyprint">./setup-linux.sh</code> to create a user/group pair for privilege lowering.
+</p>
+<h3 id="additional-setup-on-linux-generic">Additional setup on Linux (generic)</h3>
+<p>You need to have the following dependencies installed:
+</p>
+<ul>
+<li><a href="http://dlang.org/download">DMD 2.088.1 or greater</a>
+</li>
+<li><a href="https://www.openssl.org/source/">libssl</a>
+</li>
+</ul>
+<p>Optionally, run <code class="prettyprint">./setup-linux.sh</code> to create a user/group pair for privilege lowering.
+</p>
+<h3 id="additional-setup-on-freebsd">Additional setup on FreeBSD</h3>
+<p>Install the DMD compiler and vibe.d's dependencies using portupgrade or a similar mechanism:
+</p>
+<pre class="prettyprint"><code>sudo portupgrade -PN devel/pkgconf
+
+</code></pre>
+<p>Optionally, run <code class="prettyprint">./setup-freebsd.sh</code> to create a user/group pair for privilege lowering.
+</p>
+<h3 id="switching-between-openssl-versions">Switching between OpenSSL versions</h3>
+<p>By default, vibe.d is built against OpenSSL 1.1.x. On systems that use the older
+1.0.x branch, this can be overridden on the DUB command line using
+<code class="prettyprint">--override-config vibe-d:tls/openssl-1.0</code>. Alternatively, the same can be done
+using a sub configuration directive in the package recipe:
+</p>
+<p>SDL syntax:
+</p>
+<pre class="prettyprint"><code>dependency "vibe-stream:tls" version="~&gt;1.0"
+subConfiguration "vibe-stream:tls" "openssl-1.0"
+</code></pre>
+<p>JSON syntax:
+</p>
+<pre class="prettyprint"><code>{
+    ...
+    "dependencies": {
+        ...
+        "vibe-stream:tls": "~&gt;1.0"
+    },
+    "subConfigurations": {
+        ...
+        "vibe-stream:tls": "openssl-1.0"
+    }
+}
+</code></pre>
+<p>Finally, there is a "botan" configuration for using the D port of the Botan
+library.
+</p>
+</div>
+				</div>
+			</div>
+			<div class="packageInfo">
+				<ul class="unmarkedList">
+					<li id="registredBy">
+						Registered by <strong>Sönke Ludwig</strong>
+					</li>
+					<li id="latestVersion">
+						<strong>0.10.1</strong> released 2 years ago
+					</li>
+					<li id="repository">
+						<a class="blind github" href="https://github.com/vibe-d/vibe.d">vibe-d/vibe.d</a>
+					</li>
+					<li id="homepage">
+						<a class="blind" href="https://vibed.org/">vibed.org/</a>
+					</li>
+					<li id="license">MIT</li><li id="copyright">Copyright © 2012-2020 Sönke Ludwig</li>
+				</ul>
+				<dl>
+					<dt>Authors:</dt>
+					<dd class="wrap">
+						<ul class="authors unmarkedList">
+							<li>Sönke Ludwig</li>
+							<li>Mathias 'Geod24' Lang</li>
+							<li>Etienne Cimon</li>
+							<li>Martin Nowak</li>
+							<li>Mihails 'Dicebot' Strasuns</li>
+							<li>150 contributors total</li>
+						</ul>
+					</dd>
+					<dt>Sub packages:</dt>
+					<dd class="wrap">
+						<a class="blind" href="../../packages/vibe-d%3Autils"><span class="light">vibe-d:</span>utils</a>, <a class="blind" href="../../packages/vibe-d%3Adata"><span class="light">vibe-d:</span>data</a>, <a class="blind" href="../../packages/vibe-d%3Astream"><span class="light">vibe-d:</span>stream</a>, <a class="blind" href="../../packages/vibe-d%3Atls"><span class="light">vibe-d:</span>tls</a>, <a class="blind" href="../../packages/vibe-d%3Acrypto"><span class="light">vibe-d:</span>crypto</a>, <a class="blind" href="../../packages/vibe-d%3Atextfilter"><span class="light">vibe-d:</span>textfilter</a>, <a class="blind" href="../../packages/vibe-d%3Ainet"><span class="light">vibe-d:</span>inet</a>, <a class="blind" href="../../packages/vibe-d%3Amail"><span class="light">vibe-d:</span>mail</a>, <a class="blind" href="../../packages/vibe-d%3Ahttp"><span class="light">vibe-d:</span>http</a>, <a class="blind" href="../../packages/vibe-d%3Amongodb"><span class="light">vibe-d:</span>mongodb</a>, <a class="blind" href="../../packages/vibe-d%3Aredis"><span class="light">vibe-d:</span>redis</a>, <a class="blind" href="../../packages/vibe-d%3Aweb"><span class="light">vibe-d:</span>web</a>
+					</dd>
+					<dt>Dependencies:</dt>
+					<dd class="wrap">
+						<a class="blind" href="../../packages/vibe-d%3Aweb">vibe-d:web</a>, <a class="blind" href="../../packages/vibe-d%3Autils">vibe-d:utils</a>, <a class="blind" href="../../packages/vibe-d%3Amail">vibe-d:mail</a>, <a class="blind" href="../../packages/vibe-d%3Aredis">vibe-d:redis</a>, <a class="blind" href="../../packages/vibe-d%3Ahttp">vibe-d:http</a>, <a class="blind" href="../../packages/vibe-d%3Amongodb">vibe-d:mongodb</a>
+					</dd>
+					<dt>System dependencies:</dt><dd class="wrap">Optionally OpenSSL 1.1.x</dd><dt>Versions:</dt>
+					<dd id="versions">
+						<table>
+							<tr>
+								<td>
+									<a class="blind" href="../../packages/vibe-d/0.10.3">
+										0.10.3
+									</a>
+								</td>
+								<td>
+									<span>2025-Nov-25</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="blind" href="../../packages/vibe-d/0.10.2">
+										0.10.2
+									</a>
+								</td>
+								<td>
+									<span>2025-Feb-14</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>0.10.1</strong>
+								</td>
+								<td>
+									<span>2024-Sep-07</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="blind" href="../../packages/vibe-d/0.10.1-rc.1">
+										0.10.1-rc.1
+									</a>
+								</td>
+								<td>
+									<span>2024-Aug-30</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="blind" href="../../packages/vibe-d/0.10.1-alpha.3">
+										0.10.1-alpha.3
+									</a>
+								</td>
+								<td>
+									<span>2024-Apr-18</span>
+								</td>
+							</tr>
+						</table>
+						<span id="showAll">
+							<a class="blind" href="../../packages/vibe-d/versions">
+								Show all 232 versions
+							</a>
+						</span>
+					</dd>
+					<dt>Download Stats:</dt>
+					<dd id="stats">
+						<ul class="unmarkedList">
+							<li>
+								<p>
+									<strong>406</strong> downloads today
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>2934</strong> downloads this week
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>14723</strong> downloads this month
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>1771919</strong> downloads total
+								</p>
+							</li>
+						</ul>
+					</dd>
+					<dt>Score:</dt><dd id="score" title="5.0&#10;&#10;#downloads / m: 14723&#10;#stars: 1203&#10;#watchers: 54&#10;#forks: 279&#10;#issues: 448&#10;"><a href="https://dub.pm/dub-guide/publishing/#package-scoring">5.0</a></dd>
+					<dt>
+						Short URL:
+						<dd>
+							<a href="http://vibe-d.dub.pm" target="_blank">vibe-d.dub.pm</a>
+						</dd>
+					</dt>
+				</dl>
+			</div>
+			<script type="application/javascript" src="/scripts/clipboard.min.js"></script>
+<script>
+	//<![CDATA[
+	new Clipboard('.btn-clipboard');
+	//]]>
+</script>
+		</div>
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"e39123fe21a0499a9ec6b33bb7be110c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	<script type="application/javascript" src="/scripts/menu.js"></script>
+</html>

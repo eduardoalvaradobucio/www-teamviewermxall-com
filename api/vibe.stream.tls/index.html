@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../../styles/normalize.css"/>
+		<link rel="stylesheet" href="../../styles/bootstrap.css"/>
+		<script src="../../scripts/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js"></script><script type="text/javascript" src="../../scripts/ddox.js"></script><title>Module vibe.stream.tls - vibe.d</title>
+		<link rel="stylesheet" href="../../styles/vibelog.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/default.css" type="text/css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/feed/rss"/>
+		<script src="../../prettify/prettify.js"></script>
+		<meta name="viewport" content="width = device-width"/>
+		<meta name="keywords" lang="en" content="vibe framework, asynchronous, event based, web framework, network library"/>
+		<meta name="keywords" lang="de" content="vibe framework, asynchron, ereignis-basiert, web framework, netzwerk-bibliothek"/>
+	</head>
+	<body class="bs-blue">
+		<div class="bs-hl"></div><div class="bs-hr"></div><header>
+			<div id="logo-line">
+				<a class="logo-title-link" href="https://vibed.org/">
+					<img id="title" src="../../images/title-new.png" width="262" height="97" alt="vibe.d beta banner"/>
+				</a>
+				<a class="download-button" href="https://code.dlang.org/packages/vibe-d/0.10.1">
+					<div class="bs-hbtn right black">
+						<div class="content">get <strong>vibe.d</strong><br><large>0.10.1</large></div>
+					</div><div class="bs-hbtn left red">
+						<div class="dub-logo"></div>
+					</div></a>
+				<p id="slogan">
+					Asynchronous I/O that doesn’t get in your way, written in <a href="https://dlang.org" target="_blank">D</a>
+				</p>
+			</div>
+		</header><div id="bs-main" class="bs-leftnav">
+			<nav>
+				<nav id="global-nav">
+					<ul>
+						<li class="nav-home">
+							<a class="" href="../../">Home</a>
+						</li>
+						<li class="nav-blog">
+							<a class="" href="../../blog">News</a>
+						</li>
+						<li class="nav-features">
+							<a class="" href="../../features">Features</a>
+						</li>
+						<li class="nav-tutorials">
+							<a class="" href="../../tutorials">Tutorials</a>
+						</li>
+						<li class="nav-docs">
+							<a class="" href="../../docs">Documentation</a>
+						</li>
+						<li class="nav-community">
+							<a class="" href="../../community">Community</a>
+						</li>
+						<li class="nav-get-involved">
+							<a class="" href="../../get-involved">Get involved</a>
+						</li>
+						<li class="nav-download">
+							<a class="" href="../../download">Download</a>
+						</li>
+						<li class="nav-about">
+							<a class="" href="../../about">About</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="document-nav" class="bs-local">
+					<noscript>
+						<p style="color: red">The search functionality needs JavaScript enabled</p>
+					</noscript>
+					<div id="symbolSearchPane" style="">
+						<form action="../search" method="GET">
+							<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+						</form>
+						<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+					</div>
+					<div class="bs-separator">
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">diet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../diet.defs/">defs</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.dom/">dom</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.input/">input</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.parser/">parser</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.traits/">traits</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">eventcore
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../eventcore.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.driver/">driver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.socket/">socket</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">
+									<a href="../taggedalgebraic/">taggedalgebraic</a>
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedalgebraic/">taggedalgebraic</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedunion/">taggedunion</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.visit/">visit</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">vibe
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">container
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.ringbuffer/">ringbuffer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.seahash/">seahash</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">core
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.internal.release/">release</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.args/">args</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.channel/">channel</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.concurrency/">concurrency</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.connectionpool/">connectionpool</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.file/">file</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.net/">net</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.parallelism/">parallelism</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.path/">path</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.process/">process</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.stream/">stream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.sync/">sync</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.task/">task</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.taskpool/">taskpool</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">crypto
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.crypto.cryptorand/">cryptorand</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">data
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.bson/">bson</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.json/">json</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.serialization/">serialization</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">db
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">mongo
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">impl
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.crud/">crud</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.index/">index</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.collection/">collection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.connection/">connection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.cursor/">cursor</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.database/">database</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.flags/">flags</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.mongo/">mongo</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sasl/">sasl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.settings/">settings</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">redis
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.idioms/">idioms</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.redis/">redis</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.types/">types</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">http
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">auth
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.basic_auth/">basic_auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.digest_auth/">digest_auth</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.internal.basic_auth_client/">basic_auth_client</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.dist/">dist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.fileserver/">fileserver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.form/">form</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.proxy/">proxy</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.router/">router</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.server/">server</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.session/">session</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.status/">status</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.websockets/">websockets</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">inet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.message/">message</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.mimetypes/">mimetypes</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.url/">url</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.urltransfer/">urltransfer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.webform/">webform</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">mail
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.mail.smtp/">smtp</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">stream
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.base64/">base64</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.botan/">botan</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.bufferedstream/">bufferedstream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.cached/">cached</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.counting/">counting</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.memory/">memory</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.multicast/">multicast</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.openssl/">openssl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.operations/">operations</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.semaphore/">semaphore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.stdio/">stdio</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.taskpipe/">taskpipe</a>
+								</div>
+							</li>
+							<li>
+								<div class="module selected">
+									<a href="../vibe.stream.tls/">tls</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.wrapper/">wrapper</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.zlib/">zlib</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">textfilter
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.markdown/">markdown</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.urlencode/">urlencode</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">utils
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.array/">array</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.string/">string</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.validation/">validation</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">web
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.auth/">auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.i18n/">i18n</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rest/">rest</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rpc/">rpc</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.validation/">validation</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.web/">web</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.d/">d</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.vibe/">vibe</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+					</div>
+					<script>setupDdox();</script>
+					<div id="api-version-selector" class="bs-separator">
+						<ul>
+							<li class="selected"><a href="../../api/vibe.stream.tls/">current</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.9.8/vibe.stream.tls/">0.9.8</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.8.6/vibe.stream.tls/">0.8.6</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.10.1/vibe.stream.tls/">0.10.1</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+			<section>
+				<div id="maincontent">
+					<h1>Module vibe.stream.tls</h1><p>TLS stream implementation
+</p><section><p>TLSStream can be used to implement TLS communication on top of a TCP connection. The
+	TLSContextKind of an TLSStream determines if the TLS tunnel is established actively (client) or
+	passively (server).
+</p>
+</section>
+
+					<section><section><h2>Example</h2>
+<p>A simple TLS client
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../vibe.core.net/"></span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">net</span></a><span class="pun">;
+</span><span class="kwd">import </span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">tls</span><span class="pun">;
+
+</span><span class="typ">void </span><span class="pln">sendTLSMessage</span><span class="pun">()
+{
+	</span><span class="kwd">auto </span><span class="pln">conn </span><span class="pun">= </span><span class="pln">connectTCP</span><span class="pun">(</span><span class="str">"127.0.0.1"</span><span class="pun">, </span><span class="lit">1234</span><span class="pun">);
+	</span><span class="kwd">auto </span><span class="pln">sslctx </span><span class="pun">= <a href="../vibe.stream.tls/createTLSContext"></span><span class="pln">createTLSContext</span></a><span class="pun">(<a href="../vibe.stream.tls/TLSContextKind#client"></span><span class="typ">TLSContextKind<wbr/></span><span class="pun">.</span><span class="pln">client</span></a><span class="pun">);
+	</span><span class="kwd">auto </span><span class="pln">stream </span><span class="pun">= <a href="../vibe.stream.tls/createTLSStream"></span><span class="pln">createTLSStream</span></a><span class="pun">(</span><span class="pln">conn</span><span class="pun">, </span><span class="pln">sslctx</span><span class="pun">);
+	</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="str">"Hello, World!"</span><span class="pun">);
+	</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">finalize</span><span class="pun">();
+	</span><span class="pln">conn<wbr/></span><span class="pun">.</span><span class="pln">close</span><span class="pun">();
+}
+</span></code></pre>
+</section>
+<section><h2>Example</h2>
+<p>Corresponding server
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../vibe.core.log/"></span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">log</span></a><span class="pun">;
+</span><span class="kwd">import <a href="../vibe.core.net/"></span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">core<wbr/></span><span class="pun">.</span><span class="pln">net</span></a><span class="pun">;
+</span><span class="kwd">import <a href="../vibe.stream.operations/"></span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">operations</span></a><span class="pun">;
+</span><span class="kwd">import </span><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">tls</span><span class="pun">;
+
+</span><span class="typ">void </span><span class="pln">listenForTLS</span><span class="pun">()
+{
+	</span><span class="kwd">auto </span><span class="pln">sslctx </span><span class="pun">= <a href="../vibe.stream.tls/createTLSContext"></span><span class="pln">createTLSContext</span></a><span class="pun">(<a href="../vibe.stream.tls/TLSContextKind#server"></span><span class="typ">TLSContextKind<wbr/></span><span class="pun">.</span><span class="pln">server</span></a><span class="pun">);
+	</span><span class="pln">sslctx<wbr/></span><span class="pun">.</span><span class="pln">useCertificateChainFile</span><span class="pun">(</span><span class="str">"server.crt"</span><span class="pun">);
+	</span><span class="pln">sslctx<wbr/></span><span class="pun">.</span><span class="pln">usePrivateKeyFile</span><span class="pun">(</span><span class="str">"server.key"</span><span class="pun">);
+	</span><span class="pln">listenTCP</span><span class="pun">(</span><span class="lit">1234</span><span class="pun">, </span><span class="kwd">delegate </span><span class="typ">void</span><span class="pun">(</span><span class="typ">TCPConnection </span><span class="pln">conn</span><span class="pun">) </span><span class="kwd">nothrow </span><span class="pun">{
+		</span><span class="kwd">try </span><span class="pun">{
+			</span><span class="kwd">auto </span><span class="pln">stream </span><span class="pun">= <a href="../vibe.stream.tls/createTLSStream"></span><span class="pln">createTLSStream</span></a><span class="pun">(</span><span class="pln">conn</span><span class="pun">, </span><span class="pln">sslctx</span><span class="pun">);
+			</span><span class="pln">logInfo</span><span class="pun">(</span><span class="str">"Got message: %s"</span><span class="pun">, </span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">readAllUTF8</span><span class="pun">());
+			</span><span class="pln">stream<wbr/></span><span class="pun">.</span><span class="pln">finalize</span><span class="pun">();
+		} </span><span class="kwd">catch </span><span class="pun">(</span><span class="typ">Exception </span><span class="pln">e</span><span class="pun">) {
+			</span><span class="pln">logInfo</span><span class="pun">(</span><span class="str">"Failed to receive encrypted message"</span><span class="pun">);
+		}
+	});
+}
+</span></code></pre>
+</section>
+</section>
+					<section>
+						<h2>Functions</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createTLSContext" class="public" href="../vibe.stream.tls/createTLSContext">createTLSContext</a><span class="tableEntryAnnotation">(kind, ver)</span>
+									</code>
+								</td>
+								<td>Creates a new context of the given kind.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createTLSStream" class="public" href="../vibe.stream.tls/createTLSStream">createTLSStream</a><span class="tableEntryAnnotation">(underlying, ctx, peer_name, peer_address)</span>
+									</code>
+								</td>
+								<td>Constructs a new TLS tunnel and infers the stream state from the TLSContextKind.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createTLSStream" class="public" href="../vibe.stream.tls/createTLSStream">createTLSStream</a><span class="tableEntryAnnotation">(underlying, ctx, state, peer_name, peer_address)</span>
+									</code>
+								</td>
+								<td>Constructs a new TLS tunnel, allowing to override the stream state.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="createTLSStreamFL" class="public" href="../vibe.stream.tls/createTLSStreamFL">createTLSStreamFL</a><span class="tableEntryAnnotation">(underlying, ctx, state, peer_name, peer_address)</span>
+									</code>
+								</td>
+								<td>Constructs a new TLS stream using manual memory allocator.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="setTLSContextFactory" class="public" href="../vibe.stream.tls/setTLSContextFactory">setTLSContextFactory</a><span class="tableEntryAnnotation">(factory)</span>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Interfaces</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSContext" class="public" href="../vibe.stream.tls/TLSContext">TLSContext</a>
+									</code>
+								</td>
+								<td>Encapsulates the configuration for an TLS tunnel.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSStream" class="public" href="../vibe.stream.tls/TLSStream">TLSStream</a>
+									</code>
+								</td>
+								<td>Creates an TLS tunnel within an existing stream.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Structs</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSCertificateInformation" class="public" href="../vibe.stream.tls/TLSCertificateInformation">TLSCertificateInformation</a>
+									</code>
+								</td>
+								<td>Certificate information
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSPeerValidationData" class="public" href="../vibe.stream.tls/TLSPeerValidationData">TLSPeerValidationData</a>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Enums</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSContextKind" class="public" href="../vibe.stream.tls/TLSContextKind">TLSContextKind</a>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSPeerValidationMode" class="public" href="../vibe.stream.tls/TLSPeerValidationMode">TLSPeerValidationMode</a>
+									</code>
+								</td>
+								<td>Specifies how rigorously TLS peer certificates are validated.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSStreamState" class="public" href="../vibe.stream.tls/TLSStreamState">TLSStreamState</a>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="TLSVersion" class="public" href="../vibe.stream.tls/TLSVersion">TLSVersion</a>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="TLSALPNCallback" class="public" href="../vibe.stream.tls/TLSALPNCallback">
+										<code>TLSALPNCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">@safe</span> <span class="typ">string</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">string</span><span class="pun">[]</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="TLSPeerValidationCallback" class="public" href="../vibe.stream.tls/TLSPeerValidationCallback">
+										<code>TLSPeerValidationCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">@safe</span> <span class="typ">bool</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">scope</span> <a href="../vibe.stream.tls/TLSPeerValidationData"><span class="typ">TLSPeerValidationData</span></a><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a id="TLSServerNameCallback" class="public" href="../vibe.stream.tls/TLSServerNameCallback">
+										<code>TLSServerNameCallback</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">@safe</span> <a href="../vibe.stream.tls/TLSContext"><span class="typ">TLSContext</span></a> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">string</span><span class="pun">)</span></code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<footer>
+						<table class="license-info">
+							<tr>
+								<th>Authors</th>
+								<td>
+									<p>Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>Copyright</th>
+								<td>
+									<p>© 2012-2014 Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>License</th>
+								<td>
+									<p>Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+</p>
+
+								</td>
+							</tr>
+						</table>
+					</footer>
+					<script>prettyPrint();</script>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="copyright">Copyright © 2012-2026 Sönke Ludwig</div>
+			<div>
+				<a href="../../impressum">Impressum</a> –
+				<a href="../../about#license">License</a> –
+				<a href="../../contact">Contact</a>
+			</div>
+		</footer>
+		<div class="bs-fl"></div><div class="bs-fr"></div>
+	</body>
+</html>

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../../styles/normalize.css"/>
+		<link rel="stylesheet" href="../../styles/bootstrap.css"/>
+		<script src="../../scripts/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js"></script><script type="text/javascript" src="../../scripts/ddox.js"></script><title>Module vibe.data.serialization - vibe.d</title>
+		<link rel="stylesheet" href="../../styles/vibelog.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/default.css" type="text/css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/feed/rss"/>
+		<script src="../../prettify/prettify.js"></script>
+		<meta name="viewport" content="width = device-width"/>
+		<meta name="keywords" lang="en" content="vibe framework, asynchronous, event based, web framework, network library"/>
+		<meta name="keywords" lang="de" content="vibe framework, asynchron, ereignis-basiert, web framework, netzwerk-bibliothek"/>
+	</head>
+	<body class="bs-blue">
+		<div class="bs-hl"></div><div class="bs-hr"></div><header>
+			<div id="logo-line">
+				<a class="logo-title-link" href="https://vibed.org/">
+					<img id="title" src="../../images/title-new.png" width="262" height="97" alt="vibe.d beta banner"/>
+				</a>
+				<a class="download-button" href="https://code.dlang.org/packages/vibe-d/0.10.1">
+					<div class="bs-hbtn right black">
+						<div class="content">get <strong>vibe.d</strong><br><large>0.10.1</large></div>
+					</div><div class="bs-hbtn left red">
+						<div class="dub-logo"></div>
+					</div></a>
+				<p id="slogan">
+					Asynchronous I/O that doesn’t get in your way, written in <a href="https://dlang.org" target="_blank">D</a>
+				</p>
+			</div>
+		</header><div id="bs-main" class="bs-leftnav">
+			<nav>
+				<nav id="global-nav">
+					<ul>
+						<li class="nav-home">
+							<a class="" href="../../">Home</a>
+						</li>
+						<li class="nav-blog">
+							<a class="" href="../../blog">News</a>
+						</li>
+						<li class="nav-features">
+							<a class="" href="../../features">Features</a>
+						</li>
+						<li class="nav-tutorials">
+							<a class="" href="../../tutorials">Tutorials</a>
+						</li>
+						<li class="nav-docs">
+							<a class="" href="../../docs">Documentation</a>
+						</li>
+						<li class="nav-community">
+							<a class="" href="../../community">Community</a>
+						</li>
+						<li class="nav-get-involved">
+							<a class="" href="../../get-involved">Get involved</a>
+						</li>
+						<li class="nav-download">
+							<a class="" href="../../download">Download</a>
+						</li>
+						<li class="nav-about">
+							<a class="" href="../../about">About</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="document-nav" class="bs-local">
+					<noscript>
+						<p style="color: red">The search functionality needs JavaScript enabled</p>
+					</noscript>
+					<div id="symbolSearchPane" style="">
+						<form action="../search" method="GET">
+							<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+						</form>
+						<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+					</div>
+					<div class="bs-separator">
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">diet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../diet.defs/">defs</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.dom/">dom</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.input/">input</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.parser/">parser</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.traits/">traits</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">eventcore
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../eventcore.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.driver/">driver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.socket/">socket</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">
+									<a href="../taggedalgebraic/">taggedalgebraic</a>
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedalgebraic/">taggedalgebraic</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedunion/">taggedunion</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.visit/">visit</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">vibe
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">container
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.ringbuffer/">ringbuffer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.seahash/">seahash</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">core
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.internal.release/">release</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.args/">args</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.channel/">channel</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.concurrency/">concurrency</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.connectionpool/">connectionpool</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.file/">file</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.net/">net</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.parallelism/">parallelism</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.path/">path</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.process/">process</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.stream/">stream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.sync/">sync</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.task/">task</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.taskpool/">taskpool</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">crypto
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.crypto.cryptorand/">cryptorand</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">data
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.bson/">bson</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.json/">json</a>
+								</div>
+							</li>
+							<li>
+								<div class="module selected">
+									<a href="../vibe.data.serialization/">serialization</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">db
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">mongo
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">impl
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.crud/">crud</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.index/">index</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.collection/">collection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.connection/">connection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.cursor/">cursor</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.database/">database</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.flags/">flags</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.mongo/">mongo</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sasl/">sasl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.settings/">settings</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">redis
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.idioms/">idioms</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.redis/">redis</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.types/">types</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">http
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">auth
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.basic_auth/">basic_auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.digest_auth/">digest_auth</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.internal.basic_auth_client/">basic_auth_client</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.dist/">dist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.fileserver/">fileserver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.form/">form</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.proxy/">proxy</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.router/">router</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.server/">server</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.session/">session</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.status/">status</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.websockets/">websockets</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">inet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.message/">message</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.mimetypes/">mimetypes</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.url/">url</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.urltransfer/">urltransfer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.webform/">webform</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">mail
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.mail.smtp/">smtp</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">stream
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.base64/">base64</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.botan/">botan</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.bufferedstream/">bufferedstream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.cached/">cached</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.counting/">counting</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.memory/">memory</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.multicast/">multicast</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.openssl/">openssl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.operations/">operations</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.semaphore/">semaphore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.stdio/">stdio</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.taskpipe/">taskpipe</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.tls/">tls</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.wrapper/">wrapper</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.zlib/">zlib</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">textfilter
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.markdown/">markdown</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.urlencode/">urlencode</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">utils
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.array/">array</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.string/">string</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.validation/">validation</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">web
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.auth/">auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.i18n/">i18n</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rest/">rest</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rpc/">rpc</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.validation/">validation</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.web/">web</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.d/">d</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.vibe/">vibe</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+					</div>
+					<script>setupDdox();</script>
+					<div id="api-version-selector" class="bs-separator">
+						<ul>
+							<li class="selected"><a href="../../api/vibe.data.serialization/">current</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.9.8/vibe.data.serialization/">0.9.8</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.8.6/vibe.data.serialization/">0.8.6</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.10.1/vibe.data.serialization/">0.10.1</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+			<section>
+				<div id="maincontent">
+					<h1>Module vibe.data.serialization</h1><p>Generic serialization framework.
+</p><section><p>This module provides general means for implementing (de-)serialization with
+	a standardized behavior.
+</p>
+</section>
+
+					<section><section><h2>Supported types</h2>
+<p>The following rules are applied in order when serializing or
+		deserializing a certain type:
+</p>
+
+<p>		<ol>			<li>An <code class="lang-d"><span class="kwd">enum</span></code> type is serialized as its raw value, except if
+				<code class="lang-d"><span class="pun">@<a href="../vibe.data.serialization/byName"></span><span class="pln">byName</span></a></code> is used, in which case the name of the enum value
+				is serialized.</li>
+			<li>Any type that is specifically supported by the serializer
+				is directly serialized. For example, the BSON serializer
+				supports <code class="lang-d"><span class="typ">BsonObjectID</span></code> directly.</li>
+			<li>Arrays and tuples (<code class="lang-d"><span class="pln">std<wbr/></span><span class="pun">.</span><span class="pln">typecons<wbr/></span><span class="pun">.</span><span class="typ">Tuple</span></code>) are serialized
+				using the array serialization functions where each element is
+				serialized again according to these rules.</li>
+			<li>Associative arrays are serialized similar to arrays. The key
+				type of the AA must satisfy the <code class="lang-d"><a href="../vibe.data.serialization/isStringSerializable"><span class="pln">isStringSerializable</span></a></code> trait
+				and will always be serialized as a string.</li>
+			<li>Any <code class="lang-d"><span class="typ">Nullable</span><span class="pun">!</span><span class="pln">T</span></code> will be serialized as either <code class="lang-d"><span class="kwd">null</span></code>, or
+				as the contained value (subject to these rules again).</li>
+			<li>Any <code class="lang-d"><span class="typ">Typedef</span><span class="pun">!</span><span class="pln">T</span></code> will be serialized as if it were just <code class="lang-d"><span class="pln">T</span></code>.</li>
+			<li>Any <code class="lang-d"><span class="typ">BitFlags</span><span class="pun">!</span><span class="pln">T</span></code> value will be serialized as <code class="lang-d"><span class="pln">T</span><span class="pun">[]</span></code></li>
+			<li>Types satisfying the <code class="lang-d"><a href="../vibe.data.serialization/isPolicySerializable"><span class="pln">isPolicySerializable</span></a></code> trait for the
+				supplied <code class="lang-d"><span class="typ">Policy</span></code> will be serialized as the value returned
+				by the policy <code class="lang-d"><span class="pln">toRepresentation</span></code> function (again subject to
+				these rules).</li>
+			<li>Types satisfying the <code class="lang-d"><a href="../vibe.data.serialization/isCustomSerializable"><span class="pln">isCustomSerializable</span></a></code> trait will be
+				serialized as the value returned by their <code class="lang-d"><span class="pln">toRepresentation</span></code>
+				method (again subject to these rules).</li>
+			<li>Types satisfying the <code class="lang-d"><a href="../vibe.data.serialization/isISOExtStringSerializable"><span class="pln">isISOExtStringSerializable</span></a></code> trait will be
+				serialized as a string, as returned by their <code class="lang-d"><span class="pln">toISOExtString</span></code>
+				method. This causes types such as <code class="lang-d"><span class="typ">SysTime</span></code> to be serialized
+				as strings.</li>
+			<li>Types satisfying the <code class="lang-d"><a href="../vibe.data.serialization/isStringSinkSerializable"><span class="pln">isStringSinkSerializable</span></a></code> trait will be
+				serialized as a string using the <code class="lang-d"><span class="pln">toString</span><span class="pun">(</span><span class="pln">sink</span><span class="pun">)</span></code> method. <code class="lang-d"><span class="pln">sink</span></code>
+				can either be a delegate that takes a <code class="lang-d"><span class="typ">char</span></code> array argument, or
+				an output range of <code class="lang-d"><span class="typ">char</span></code>.</li>
+			<li>Types satisfying the <code class="lang-d"><a href="../vibe.data.serialization/isStringSerializable"><span class="pln">isStringSerializable</span></a></code> trait will be
+				serialized as a string, as returned by their <code class="lang-d"><span class="pln">toString</span></code>
+				method.</li>
+			<li>Struct and class types by default will be serialized as
+				associative arrays, where the key is the name of the
+				corresponding field (can be overridden using the <code class="lang-d"><span class="pun">@<a href="../vibe.data.serialization/name"></span><span class="pln">name</span></a></code>
+				attribute). If the struct/class is annotated with <code class="lang-d"><span class="pun">@<a href="../vibe.data.serialization/asArray"></span><span class="pln">asArray</span></a></code>,
+				it will instead be serialized as a flat array of values in the
+				order of declaration. Null class references will be serialized
+				as <code class="lang-d"><span class="kwd">null</span></code>.</li>
+			<li>Pointer types will be serialized as either <code class="lang-d"><span class="kwd">null</span></code>, or as
+				the value they point to.</li>
+			<li>Built-in integers and floating point values, as well as
+				boolean values will be converted to strings, if the serializer
+				doesn't support them directly.</li>
+		</ol>
+</p>
+
+<p>		Note that no aliasing detection is performed, so that pointers, class
+		references and arrays referencing the same memory will be serialized
+		as multiple copies. When in turn deserializing the data, they will also
+		end up as separate copies in memory.
+</p>
+</section>
+<section><h2>Field names</h2>
+<p>By default, the field name of the serialized D type (for <code class="lang-d"><span class="kwd">struct</span></code> and
+		<code class="lang-d"><span class="kwd">class</span></code> aggregates) is represented as-is in the serialized result. To
+		circumvent name clashes with D's keywords, a single trailing underscore of
+		any field name is stipped, so that a field name of <code class="lang-d"><span class="pln">version_</span></code> results in
+		just <code class="lang-d"><span class="str">"version"</span></code> as the serialized value. Names can also be freely
+		customized using the <code class="lang-d"><span class="pun">@<a href="../vibe.data.serialization/name"></span><span class="pln">name</span></a></code> annotation.
+</p>
+
+<p>		Associative array keys are always represented using their direct string
+		representation.
+</p>
+</section>
+<section><h2>Serializer implementation</h2>
+<p>Serializers are implemented in terms of a struct with template methods that
+		get called by the serialization framework:
+</p>
+
+<pre class="code"><code class="lang-d"><span class="kwd">struct </span><span class="typ">ExampleSerializer </span><span class="pun">{
+	</span><span class="kwd">enum </span><span class="pln">isSupportedValueType</span><span class="pun">(</span><span class="pln">T</span><span class="pun">) = </span><span class="kwd">is</span><span class="pun">(</span><span class="pln">T </span><span class="pun">== </span><span class="typ">string</span><span class="pun">) || </span><span class="kwd">is</span><span class="pun">(</span><span class="pln">T </span><span class="pun">== </span><span class="kwd">typeof</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">));
+
+	</span><span class="com">// serialization
+	</span><span class="kwd">auto </span><span class="pln">getSerializedResult</span><span class="pun">();
+	</span><span class="typ">void </span><span class="pln">beginWriteDocument</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+	</span><span class="typ">void </span><span class="pln">endWriteDocument</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+	</span><span class="typ">void </span><span class="pln">beginWriteDictionary</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)(</span><span class="pln">size_t length</span><span class="pun">); [</span><span class="pln">OR</span><span class="pun">] </span><span class="typ">void </span><span class="pln">beginWriteDictionary</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+	</span><span class="typ">void </span><span class="pln">endWriteDictionary</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+	</span><span class="typ">void </span><span class="pln">beginWriteDictionaryEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="typ">string </span><span class="pln">name</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">endWriteDictionaryEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="typ">string </span><span class="pln">name</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">beginWriteArray</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)(</span><span class="pln">size_t length</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">endWriteArray</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+	</span><span class="typ">void </span><span class="pln">beginWriteArrayEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="pln">size_t index</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">endWriteArrayEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="pln">size_t index</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">writeValue</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">, </span><span class="pln">T</span><span class="pun">)(</span><span class="pln">T value</span><span class="pun">);
+
+	</span><span class="com">// deserialization
+
+	</span><span class="typ">void </span><span class="pln">readDictionary</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)(</span><span class="kwd">scope </span><span class="typ">void </span><span class="kwd">delegate</span><span class="pun">(</span><span class="typ">string</span><span class="pun">) </span><span class="pln">entry_callback</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">beginReadDictionaryEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="typ">string</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">endReadDictionaryEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="typ">string</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">readArray</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)(</span><span class="kwd">scope </span><span class="typ">void </span><span class="kwd">delegate</span><span class="pun">(</span><span class="pln">size_t</span><span class="pun">) </span><span class="pln">size_callback</span><span class="pun">, </span><span class="kwd">scope </span><span class="typ">void </span><span class="kwd">delegate</span><span class="pun">() </span><span class="pln">entry_callback</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">beginReadArrayEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="pln">size_t index</span><span class="pun">);
+	</span><span class="typ">void </span><span class="pln">endReadArrayEntry</span><span class="pun">(</span><span class="typ">ElementTypeTraits</span><span class="pun">)(</span><span class="pln">size_t index</span><span class="pun">);
+	</span><span class="pln">T readValue</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">, </span><span class="pln">T</span><span class="pun">)();
+	</span><span class="typ">bool </span><span class="pln">tryReadNull</span><span class="pun">(</span><span class="typ">TypeTraits</span><span class="pun">)();
+
+	</span><span class="com">// skipValue() is optional. It will be called by the entry_callback in readDictionary
+	// whenever the key passed to the entry_callback cannot be found.
+	</span><span class="typ">void </span><span class="pln">skipValue</span><span class="pun">();
+}</span></code></pre>
+
+<p>		The <code class="lang-d"><span class="typ">TypeTraits</span></code> type passed to the individual methods has the following members:
+		<ul>			<li><code class="lang-d"><span class="typ">Type</span></code>: The original type of the field to serialize</li>
+			<li><code class="lang-d"><span class="typ">Attributes</span></code>: User defined attributes attached to the field</li>
+			<li><code class="lang-d"><span class="typ">Policy</span></code>: An alias to the policy used for the serialization process</li>
+		</ul>
+</p>
+
+<p>		<code class="lang-d"><span class="typ">ElementTypeTraits</span></code> have the following additional members:
+		<ul>			<li><code class="lang-d"><span class="typ">ContainerType</span></code>: The original type of the enclosing container type</li>
+			<li><code class="lang-d"><span class="typ">ContainerAttributes</span></code>: User defined attributes attached to the enclosing container</li>
+		</ul>
+</p>
+</section>
+</section>
+					<section>
+						<h2>Functions</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="asArray" class="public property" href="../vibe.data.serialization/asArray">asArray</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Attribute for representing a struct/class as an array instead of an object.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="byName" class="public property" href="../vibe.data.serialization/byName">byName</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Attribute for forcing serialization of enum fields by name instead of by value.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="deserialize" class="public" href="../vibe.data.serialization/deserialize">deserialize</a><span class="tableEntryAnnotation">(args)</span>
+									</code>
+								</td>
+								<td>Deserializes and returns a serialized value.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="deserializeWithPolicy" class="public" href="../vibe.data.serialization/deserializeWithPolicy">deserializeWithPolicy</a><span class="tableEntryAnnotation">(args)</span>
+									</code>
+								</td>
+								<td>Deserializes and returns a serialized value, interpreting values according to <code class="lang-d"><span class="typ">Policy</span></code> when possible.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="embedNullable" class="public property" href="../vibe.data.serialization/embedNullable">embedNullable</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Makes this nullable as if it is not a nullable to the serializer. Ignores the field completely when it is null.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="ignore" class="public property" href="../vibe.data.serialization/ignore">ignore</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Attribute for marking non-serialized fields.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="name" class="public" href="../vibe.data.serialization/name">name</a><span class="tableEntryAnnotation">(name)</span>
+									</code>
+								</td>
+								<td>Attribute for overriding the field name during (de-)serialization.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="optional" class="public property" href="../vibe.data.serialization/optional">optional</a><span class="tableEntryAnnotation">()</span>
+									</code>
+								</td>
+								<td>Attribute marking a field as optional during deserialization.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="serialize" class="public" href="../vibe.data.serialization/serialize">serialize</a><span class="tableEntryAnnotation">(value, args)</span>
+									</code>
+								</td>
+								<td>Serializes a value with the given serializer.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="serializeWithPolicy" class="public" href="../vibe.data.serialization/serializeWithPolicy">serializeWithPolicy</a><span class="tableEntryAnnotation">(value, args)</span>
+									</code>
+								</td>
+								<td>Serializes a value with the given serializer, representing values according to <code class="lang-d"><span class="typ">Policy</span></code> when possible.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Classes</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="Base64ArrayPolicy" class="public" href="../vibe.data.serialization/Base64ArrayPolicy">Base64ArrayPolicy</a>
+									</code>
+								</td>
+								<td>Uses Base64 representation for <code class="lang-d"><span class="typ">ubyte</span><span class="pun">[]</span></code> instead of <code class="lang-d"><span class="pln">to</span><span class="pun">!</span><span class="typ">string</span></code>
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Structs</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="AsArrayAttribute" class="public" href="../vibe.data.serialization/AsArrayAttribute">AsArrayAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="ByNameAttribute" class="public" href="../vibe.data.serialization/ByNameAttribute">ByNameAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="EmbedNullableIgnoreNullAttribute" class="public" href="../vibe.data.serialization/EmbedNullableIgnoreNullAttribute">EmbedNullableIgnoreNullAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="IgnoreAttribute" class="public" href="../vibe.data.serialization/IgnoreAttribute">IgnoreAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="NameAttribute" class="public" href="../vibe.data.serialization/NameAttribute">NameAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="OptionalAttribute" class="public" href="../vibe.data.serialization/OptionalAttribute">OptionalAttribute</a>
+									</code>
+								</td>
+								<td>User defined attribute (not intended for direct use)
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Enums</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="FieldExistence" class="public" href="../vibe.data.serialization/FieldExistence">FieldExistence</a>
+									</code>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Templates</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="DefaultPolicy" class="public" href="../vibe.data.serialization/DefaultPolicy">DefaultPolicy</a>
+									</code>
+								</td>
+								<td>Default policy (performs no customization).
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Manifest constants</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="isCustomSerializable" class="public" href="../vibe.data.serialization/isCustomSerializable">
+										<code>isCustomSerializable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td>Checks if a given type has a custom serialization representation.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isISOExtStringSerializable" class="public" href="../vibe.data.serialization/isISOExtStringSerializable">
+										<code>isISOExtStringSerializable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td>Checks if a given type has an ISO extended string serialization representation.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isPolicySerializable" class="public" href="../vibe.data.serialization/isPolicySerializable">
+										<code>isPolicySerializable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td>Checks if a given policy supports custom serialization for a given type.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isStringSerializable" class="public" href="../vibe.data.serialization/isStringSerializable">
+										<code>isStringSerializable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td>Checks if a given type has a string serialization representation.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="isStringSinkSerializable" class="public" href="../vibe.data.serialization/isStringSinkSerializable">
+										<code>isStringSinkSerializable</code>
+									</a>
+								</td>
+								<td>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="ChainedPolicy" class="public" href="../vibe.data.serialization/ChainedPolicy">
+										<code>ChainedPolicy</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="typ">Primary</span></code>
+								</td>
+								<td>Chains serialization policy.
+</td>
+							</tr>
+						</table>
+					</section>
+					<footer>
+						<table class="license-info">
+							<tr>
+								<th>Authors</th>
+								<td>
+									<p>Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>Copyright</th>
+								<td>
+									<p>© 2013-2016 rejectedsoftware e.K.
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>License</th>
+								<td>
+									<p>Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+</p>
+
+								</td>
+							</tr>
+						</table>
+					</footer>
+					<script>prettyPrint();</script>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="copyright">Copyright © 2012-2026 Sönke Ludwig</div>
+			<div>
+				<a href="../../impressum">Impressum</a> –
+				<a href="../../about#license">License</a> –
+				<a href="../../contact">Contact</a>
+			</div>
+		</footer>
+		<div class="bs-fl"></div><div class="bs-fr"></div>
+	</body>
+</html>

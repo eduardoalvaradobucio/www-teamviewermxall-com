@@ -1,0 +1,76 @@
+﻿.copyright { float: right; color: #666; }
+.copyright a { color: #666; }
+
+#title {
+	margin-left: 15pt;
+	margin-top: 8pt;
+}
+
+#slogan {
+	margin: 0;
+	margin-top: -2em;
+	margin-right: 15pt;
+	text-align: right;
+	color: #4c6c7d;
+	text-shadow: 0 1px #b0bccf;
+}
+#slogan a { color: inherit; }
+
+.logo-title-link {
+	text-decoration: none;
+}
+
+.dub-logo {
+	background-image: url(../images/dub-logo.png);
+	width: 56px;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.download-button .content {
+	padding: 0 6pt;
+	padding-top: 4pt;
+	font-size: 9pt;
+	line-height: 9pt;
+}
+
+.download-button large {
+	font-size: 16pt;
+	line-height: 16pt;
+}
+
+nav#global-nav li {
+	background-repeat: no-repeat;
+	padding-left: 28px;
+	padding-top: 2pt;
+}
+
+nav#document-nav li.active > a {
+	color: #d80;
+}
+
+li.nav-home { background-image: url(../images/ico_home.png); }
+li.nav-download { background-image: url(../images/ico_download.png); }
+li.nav-features { background-image: url(../images/ico_features.png); }
+li.nav-about { background-image: url(../images/ico_about.png); }
+li.nav-blog { background-image: url(../images/ico_blog.png); }
+li.nav-tutorials { background-image: url(../images/ico_tutorials.png); }
+li.nav-docs { background-image: url(../images/ico_docs.png); }
+li.nav-community { background-image: url(../images/ico_community.png); }
+li.nav-developer { background-image: url(../images/ico_developer.png); }
+li.nav-get-involved { background-image: url(../images/ico_developer.png); }
+
+.leftFlow { float: left; margin-right: 6pt; }
+.rightFlow { float: right; margin-left: 6pt; }
+
+
+@media screen and (max-width: 600px) {
+	#logo { max-height: 38pt;  padding-top: 8pt; }
+	#title { max-height: 32pt; padding-bottom: 1pt; }
+	body.bs-blue > header { height: 52pt; }
+}
+
+@media screen and (max-width: 450px) {
+	header .download-button { display: none; }
+}

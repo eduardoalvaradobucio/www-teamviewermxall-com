@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../../styles/normalize.css"/>
+		<link rel="stylesheet" href="../../styles/bootstrap.css"/>
+		<script src="../../scripts/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js"></script><script type="text/javascript" src="../../scripts/ddox.js"></script><title>Module vibe.web.rest - vibe.d</title>
+		<link rel="stylesheet" href="../../styles/vibelog.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/common.css" type="text/css"/>
+		<link rel="stylesheet" href="../../styles/default.css" type="text/css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<link rel="shortcut icon" href="../../favicon.ico"/>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="../../blog/feed/rss"/>
+		<script src="../../prettify/prettify.js"></script>
+		<meta name="viewport" content="width = device-width"/>
+		<meta name="keywords" lang="en" content="vibe framework, asynchronous, event based, web framework, network library"/>
+		<meta name="keywords" lang="de" content="vibe framework, asynchron, ereignis-basiert, web framework, netzwerk-bibliothek"/>
+	</head>
+	<body class="bs-blue">
+		<div class="bs-hl"></div><div class="bs-hr"></div><header>
+			<div id="logo-line">
+				<a class="logo-title-link" href="https://vibed.org/">
+					<img id="title" src="../../images/title-new.png" width="262" height="97" alt="vibe.d beta banner"/>
+				</a>
+				<a class="download-button" href="https://code.dlang.org/packages/vibe-d/0.10.1">
+					<div class="bs-hbtn right black">
+						<div class="content">get <strong>vibe.d</strong><br><large>0.10.1</large></div>
+					</div><div class="bs-hbtn left red">
+						<div class="dub-logo"></div>
+					</div></a>
+				<p id="slogan">
+					Asynchronous I/O that doesn’t get in your way, written in <a href="https://dlang.org" target="_blank">D</a>
+				</p>
+			</div>
+		</header><div id="bs-main" class="bs-leftnav">
+			<nav>
+				<nav id="global-nav">
+					<ul>
+						<li class="nav-home">
+							<a class="" href="../../">Home</a>
+						</li>
+						<li class="nav-blog">
+							<a class="" href="../../blog">News</a>
+						</li>
+						<li class="nav-features">
+							<a class="" href="../../features">Features</a>
+						</li>
+						<li class="nav-tutorials">
+							<a class="" href="../../tutorials">Tutorials</a>
+						</li>
+						<li class="nav-docs">
+							<a class="" href="../../docs">Documentation</a>
+						</li>
+						<li class="nav-community">
+							<a class="" href="../../community">Community</a>
+						</li>
+						<li class="nav-get-involved">
+							<a class="" href="../../get-involved">Get involved</a>
+						</li>
+						<li class="nav-download">
+							<a class="" href="../../download">Download</a>
+						</li>
+						<li class="nav-about">
+							<a class="" href="../../about">About</a>
+						</li>
+					</ul>
+				</nav>
+				<nav id="document-nav" class="bs-local">
+					<noscript>
+						<p style="color: red">The search functionality needs JavaScript enabled</p>
+					</noscript>
+					<div id="symbolSearchPane" style="">
+						<form action="../search" method="GET">
+							<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+						</form>
+						<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+					</div>
+					<div class="bs-separator">
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">diet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../diet.defs/">defs</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.dom/">dom</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.input/">input</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.parser/">parser</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../diet.traits/">traits</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">eventcore
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../eventcore.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.driver/">driver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../eventcore.socket/">socket</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">
+									<a href="../taggedalgebraic/">taggedalgebraic</a>
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedalgebraic/">taggedalgebraic</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.taggedunion/">taggedunion</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../taggedalgebraic.visit/">visit</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">vibe
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">container
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.ringbuffer/">ringbuffer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.container.seahash/">seahash</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">core
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.internal.release/">release</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.args/">args</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.channel/">channel</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.concurrency/">concurrency</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.connectionpool/">connectionpool</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.core/">core</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.file/">file</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.net/">net</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.parallelism/">parallelism</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.path/">path</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.process/">process</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.stream/">stream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.sync/">sync</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.task/">task</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.core.taskpool/">taskpool</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">crypto
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.crypto.cryptorand/">cryptorand</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">data
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.bson/">bson</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.json/">json</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.data.serialization/">serialization</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">db
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">mongo
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">impl
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.crud/">crud</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.impl.index/">index</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.collection/">collection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.connection/">connection</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.cursor/">cursor</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.database/">database</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.flags/">flags</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.mongo/">mongo</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sasl/">sasl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.mongo.settings/">settings</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">redis
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.idioms/">idioms</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.redis/">redis</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.sessionstore/">sessionstore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.db.redis.types/">types</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">http
+								</div>
+						<ul class="tree-view">
+							<li class="tree-view collapsed">
+								<div class="package ">auth
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.basic_auth/">basic_auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.auth.digest_auth/">digest_auth</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">internal
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.internal.basic_auth_client/">basic_auth_client</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.client/">client</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.dist/">dist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.fileserver/">fileserver</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.form/">form</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.log/">log</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.proxy/">proxy</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.router/">router</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.server/">server</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.session/">session</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.status/">status</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.http.websockets/">websockets</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">inet
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.message/">message</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.mimetypes/">mimetypes</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.url/">url</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.urltransfer/">urltransfer</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.inet.webform/">webform</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">mail
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.mail.smtp/">smtp</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">stream
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.base64/">base64</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.botan/">botan</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.bufferedstream/">bufferedstream</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.cached/">cached</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.counting/">counting</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.memory/">memory</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.multicast/">multicast</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.openssl/">openssl</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.operations/">operations</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.semaphore/">semaphore</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.stdio/">stdio</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.taskpipe/">taskpipe</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.tls/">tls</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.wrapper/">wrapper</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.stream.zlib/">zlib</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">textfilter
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.html/">html</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.markdown/">markdown</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.textfilter.urlencode/">urlencode</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view collapsed">
+								<div class="package ">utils
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.array/">array</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.dictionarylist/">dictionarylist</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.hashmap/">hashmap</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.string/">string</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.utils.validation/">validation</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li class="tree-view ">
+								<div class="package ">web
+								</div>
+						<ul class="tree-view">
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.auth/">auth</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.common/">common</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.i18n/">i18n</a>
+								</div>
+							</li>
+							<li>
+								<div class="module selected">
+									<a href="../vibe.web.rest/">rest</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.rpc/">rpc</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.validation/">validation</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.web.web/">web</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.d/">d</a>
+								</div>
+							</li>
+							<li>
+								<div class="module ">
+									<a href="../vibe.vibe/">vibe</a>
+								</div>
+							</li>
+						</ul>
+							</li>
+						</ul>
+					</div>
+					<script>setupDdox();</script>
+					<div id="api-version-selector" class="bs-separator">
+						<ul>
+							<li class="selected"><a href="../../api/vibe.web.rest/">current</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.9.8/vibe.web.rest/">0.9.8</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.8.6/vibe.web.rest/">0.8.6</a>
+							</li>
+							<li class="">
+								<a href="../../api-0.10.1/vibe.web.rest/">0.10.1</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+			<section>
+				<div id="maincontent">
+					<h1>Module vibe.web.rest</h1><p>Automatic high-level RESTful client/server interface generation facilities.
+</p><section><p>This modules aims to provide a typesafe way to deal with RESTful APIs. D's
+	<code class="lang-d"><span class="kwd">interface</span></code>s are used to define the behavior of the API, so that they can
+	be used transparently within the application. This module assumes that
+	HTTP is used as the underlying transport for the REST API.
+</p>
+
+<p>	While convenient means are provided for generating both, the server and the
+	client side, of the API from a single interface definition, it is also
+	possible to use as a pure client side implementation to target existing
+	web APIs.
+</p>
+
+<p>	The following paragraphs will explain in detail how the interface definition
+	is mapped to the RESTful API, without going into specifics about the client
+	or server side. Take a look at <code class="lang-d"><a href="../vibe.web.rest/registerRestInterface"><span class="pln">registerRestInterface</span></a></code> and
+	<code class="lang-d"><a href="../vibe.web.rest/RestInterfaceClient"><span class="typ">RestInterfaceClient</span></a></code> for more information in those areas.
+</p>
+
+<p>	These are the main adantages of using this module to define RESTful APIs
+	over defining them manually by registering request handlers in a
+	<code class="lang-d"><span class="typ">URLRouter</span></code>:
+</p>
+
+<p>	<ul>		<li>Automatic client generation: once the interface is defined, it can
+			be used both by the client side and the server side, which means
+			that there is no way to have a protocol mismatch between the two.</li>
+		<li>Automatic route generation for the server: one job of the REST
+			module is to generate the HTTP routes/endpoints for the API.</li>
+		<li>Automatic serialization/deserialization: Instead of doing manual
+	  		serialization and deserialization, just normal statically typed
+	  		member functions are defined and the code generator takes care of
+	  		converting to/from wire format. Custom serialization can be achieved
+	  		by defining <code class="lang-d"><span class="pln">JSON</span></code> or <code class="lang-d"><span class="typ">string</span></code> parameters/return values together
+	  		with the appropriate <code class="lang-d"><span class="pun">@</span><span class="pln">bodyParam</span></code> annotations.</li>
+		<li>Higher level representation integrated into D: Some concepts of the
+	  		interfaces, such as optional parameters or <code class="lang-d"><span class="kwd">in</span></code>/<code class="lang-d"><span class="kwd">out</span></code>/<code class="lang-d"><span class="kwd">ref</span></code>
+	  		parameters, as well as <code class="lang-d"><span class="typ">Nullable</span><span class="pun">!</span><span class="pln">T</span></code>, are translated naturally to the
+	  		RESTful protocol.</li>
+	</ul>
+</p>
+
+<p>	The most basic interface that can be defined is as follows:
+</p>
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/api/"</span><span class="pun">)
+</span><span class="kwd">interface </span><span class="typ">APIRoot </span><span class="pun">{
+    </span><span class="typ">string </span><span class="pln">get</span><span class="pun">();
+}</span></code></pre>
+
+<p>	This defines an API that has a single endpoint, 'GET /api/'. So if the
+	server is found at http://api.example.com, performing a GET request to
+	http://api.example.com/api/ will call the <code class="lang-d"><span class="pln">get</span><span class="pun">()</span></code> method and send
+	its return value verbatim as the response body.
+</p>
+</section>
+
+					<section><section><h2>Endpoint generation</h2>
+<p>An endpoint is a combination of an HTTP method and a local URI. For each
+		public method of the interface, one endpoint is registered in the
+		<code class="lang-d"><span class="typ">URLRouter</span></code>.
+</p>
+
+<p>		By default, the method and URI parts will be inferred from the method
+		name by looking for a known prefix. For example, a method called
+		<code class="lang-d"><span class="pln">getFoo</span></code> will automatically be mapped to a 'GET /foo' request. The
+		recognized prefixes are as follows:
+</p>
+
+<p>		<table>			<tr><th>Prefix</th> <th>HTTP verb</th></tr>
+			<tr><td>get</td>	  <td>GET</td></tr>
+			<tr><td>query</td>  <td>GET</td></tr>
+			<tr><td>set</td>    <td>PUT</td></tr>
+			<tr><td>put</td>    <td>PUT</td></tr>
+			<tr><td>update</td> <td>PATCH</td></tr>
+			<tr><td>patch</td>  <td>PATCH</td></tr>
+			<tr><td>add</td>    <td>POST</td></tr>
+			<tr><td>create</td> <td>POST</td></tr>
+			<tr><td>post</td>   <td>POST</td></tr>
+		</table>
+</p>
+
+<p>		Member functions that have no valid prefix default to 'POST'. Note that
+		any of the methods defined in <code class="lang-d"><a href="../vibe.http.common/HTTPMethod" title="vibe.http.common.HTTPMethod"><span class="typ">HTTPMethod</span></a></code> are
+		supported through manual endpoint specifications, as described in the
+		next section.
+</p>
+
+<p>		After determining the HTTP method, the rest of the method's name is
+		then treated as the local URI of the endpoint. It is expected to be in
+		standard D camel case style and will be transformed into the style that
+		is specified in the call to <code class="lang-d"><a href="../vibe.web.rest/registerRestInterface"><span class="pln">registerRestInterface</span></a></code>, which defaults to
+		<code class="lang-d"><span class="typ">MethodStyle<wbr/></span><span class="pun">.</span><span class="pln">lowerUnderscored</span></code>.
+</p>
+</section>
+<section><h2>Manual endpoint specification</h2>
+<p>Endpoints can be controlled manually through the use of <code class="lang-d"><span class="pun">@</span><span class="pln">path</span></code> and
+		<code class="lang-d"><span class="pun">@</span><span class="pln">method</span></code> annotations:
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/api/"</span><span class="pun">)
+</span><span class="kwd">interface </span><span class="typ">APIRoot </span><span class="pun">{
+    </span><span class="com">// Here we use a POST method
+    </span><span class="pun">@</span><span class="pln">method</span><span class="pun">(</span><span class="typ">HTTPMethod<wbr/></span><span class="pun">.</span><span class="pln">POST</span><span class="pun">)
+	</span><span class="com">// Our method will located at '/api/foo'
+	</span><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/foo"</span><span class="pun">)
+	</span><span class="typ">void </span><span class="pln">doSomething</span><span class="pun">();
+}</span></code></pre>
+
+<p>		Manual path annotations also allows defining custom path placeholders
+		that will be mapped to function parameters. Placeholders are path
+		segments that start with a colon:
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/users/"</span><span class="pun">)
+</span><span class="kwd">interface </span><span class="typ">UsersAPI </span><span class="pun">{
+    @</span><span class="pln">path</span><span class="pun">(</span><span class="str">":name"</span><span class="pun">)
+    </span><span class="typ">Json </span><span class="pln">getUserByName</span><span class="pun">(</span><span class="typ">string </span><span class="pln">_name</span><span class="pun">);
+}</span></code></pre>
+
+<p>		This will cause a request "GET /users/peter" to be mapped to the
+		<code class="lang-d"><span class="pln">getUserByName</span></code> method, with the <code class="lang-d"><span class="pln">_name</span></code> parameter receiving the string
+		"peter". Note that the matching parameter must have an underscore
+		prefixed so that it can be distinguished from normal form/query
+		parameters.
+</p>
+
+<p>		It is possible to partially rely on the default behavior and to only
+		customize either the method or the path of the endpoint:
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">method</span><span class="pun">(</span><span class="typ">HTTPMethod<wbr/></span><span class="pun">.</span><span class="pln">POST</span><span class="pun">)
+</span><span class="typ">void </span><span class="pln">getFoo</span><span class="pun">();</span></code></pre>
+
+<p>		In the above case, as 'POST' is set explicitly, the route would be
+		'POST /foo'. On the other hand, if the declaration had been:
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/bar"</span><span class="pun">)
+</span><span class="typ">void </span><span class="pln">getFoo</span><span class="pun">();</span></code></pre>
+
+<p>		The route generated would be 'GET /bar'.
+</p>
+</section>
+<section><h2>Properties</h2>
+<p><code class="lang-d"><span class="kwd">@property</span></code> functions have a special mapping: property getters (no
+		parameters and a non-void return value) are mapped as GET functions,
+		and property setters (a single parameter) are mapped as PUT. No prefix
+		recognition or trimming will be done for properties.
+</p>
+</section>
+<section><h2>Method style</h2>
+<p>Method names will be translated to the given 'MethodStyle'. The default
+		style is <code class="lang-d"><span class="typ">MethodStyle<wbr/></span><span class="pun">.</span><span class="pln">lowerUnderscored</span></code>, so that a function named
+		<code class="lang-d"><span class="pln">getFooBar</span></code> will match the route 'GET /foo_bar'. See
+		<code class="lang-d"><a href="../vibe.web.common/MethodStyle" title="vibe.web.common.MethodStyle"><span class="typ">MethodStyle</span></a></code> for more information about the available
+		styles.
+</p>
+</section>
+<section><h2>Serialization</h2>
+<p>By default the return values of the interface methods are serialized
+		as a JSON text and sent back to the REST client. To override this, you
+		can use the @resultSerializer attribute
+</p>
+
+<pre class="code"><code class="lang-d"><span class="kwd">struct </span><span class="typ">TestStruct </span><span class="pun">{</span><span class="typ">int </span><span class="pln">i</span><span class="pun">;}
+
+</span><span class="kwd">interface </span><span class="typ">IService </span><span class="pun">{
+</span><span class="kwd">@safe</span><span class="pun">:
+	@</span><span class="pln">resultSerializer</span><span class="pun">!(
+		</span><span class="com">// output_stream implements OutputRange
+		</span><span class="kwd">function </span><span class="pun">(</span><span class="pln">output_stream</span><span class="pun">, </span><span class="pln">test_struct</span><span class="pun">) {
+			</span><span class="pln">output_stream </span><span class="pun">~= </span><span class="pln">serializeToJsonString</span><span class="pun">(</span><span class="pln">test_struct</span><span class="pun">);
+		},
+		</span><span class="com">// input_stream implements InputStream
+		</span><span class="kwd">function </span><span class="pun">(</span><span class="pln">input_stream</span><span class="pun">) {
+			</span><span class="kwd">return </span><span class="pln">deserializeJson</span><span class="pun">!</span><span class="typ">TestStruct</span><span class="pun">(</span><span class="pln">input_stream<wbr/></span><span class="pun">.</span><span class="pln">readAllUTF8</span><span class="pun">());
+		},
+		</span><span class="str">"application/json"</span><span class="pun">)()
+	@</span><span class="pln">resultSerializer</span><span class="pun">!(
+		</span><span class="com">// output_stream implements OutputRange
+		</span><span class="kwd">function </span><span class="pun">(</span><span class="pln">output_stream</span><span class="pun">, </span><span class="pln">test_struct</span><span class="pun">) {
+			</span><span class="pln">output_stream </span><span class="pun">~= </span><span class="pln">test_struct<wbr/></span><span class="pun">.</span><span class="pln">i<wbr/></span><span class="pun">.</span><span class="pln">to</span><span class="pun">!</span><span class="typ">string</span><span class="pun">();
+		},
+		</span><span class="com">// input_stream implements InputStream
+		</span><span class="kwd">function </span><span class="pun">(</span><span class="pln">input_stream</span><span class="pun">) {
+			</span><span class="typ">TestStruct </span><span class="pln">test_struct</span><span class="pun">;
+			</span><span class="pln">test_struct<wbr/></span><span class="pun">.</span><span class="pln">i </span><span class="pun">= </span><span class="pln">input_stream<wbr/></span><span class="pun">.</span><span class="pln">readAllUTF8</span><span class="pun">()<wbr/>.</span><span class="pln">to</span><span class="pun">!</span><span class="typ">int</span><span class="pun">();
+			</span><span class="kwd">return </span><span class="pln">test_struct</span><span class="pun">;
+		},
+		</span><span class="str">"plain/text"</span><span class="pun">)()
+	</span><span class="typ">TestStruct </span><span class="pln">getTest</span><span class="pun">();
+}
+
+</span><span class="kwd">class </span><span class="typ">Service </span><span class="pun">: </span><span class="typ">IService </span><span class="pun">{
+</span><span class="kwd">@safe</span><span class="pun">:
+	</span><span class="typ">TestStruct </span><span class="pln">getTest</span><span class="pun">() {
+		</span><span class="typ">TestStruct </span><span class="pln">test_struct </span><span class="pun">= {</span><span class="lit">42</span><span class="pun">};
+		</span><span class="kwd">return </span><span class="pln">test_struct</span><span class="pun">;
+	}
+}</span></code></pre>
+</section>
+<section><h2>Serialization policies</h2>
+<p>You can customize the serialization of any type used by an interface
+		by using serialization policies. The following example is using
+		the <code class="lang-d"><span class="typ">Base64ArrayPolicy</span></code>, which means if <code class="lang-d"><span class="pln">X</span></code> contains any ubyte arrays,
+		they will be serialized to their base64 encoding instead of
+		their normal string representation (e.g. <code class="lang-d"><span class="str">"[1, 2, 255]"</span></code>).
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">serializationPolicy</span><span class="pun">!(</span><span class="typ">Base64ArrayPolicy</span><span class="pun">)
+</span><span class="kwd">interface </span><span class="typ">ITestBase64
+</span><span class="pun">{
+	</span><span class="kwd">@safe </span><span class="pln">X getTest</span><span class="pun">();
+}</span></code></pre>
+</section>
+<section><h2>Parameters</h2>
+<p>Function parameters may be populated from the route, query string,
+		request body, or headers. They may optionally affect the route URL itself.
+</p>
+
+<p>		By default, parameters are passed differently depending on the type of
+		request (i.e., HTTP method). For GET and PUT, parameters are passed
+		via the query string (<code class="lang-d"><span class="pun">&lt;</span><span class="pln">route</span><span class="pun">&gt;?</span><span class="pln">paramA</span><span class="pun">=</span><span class="pln">valueA</span><span class="pun">[?</span><span class="pln">paramB</span><span class="pun">=...]</span></code>),
+		while for POST and PATCH, they are passed via the request body
+		as a JSON object.
+</p>
+
+<p>		The default behavior can be overridden using one of the following
+		annotations, put as UDA on the relevant parameter:
+</p>
+
+<p>		<ul>			<li><code class="lang-d"><span class="pun">@</span><span class="pln">viaHeader</span><span class="pun">(</span><span class="str">"field"</span><span class="pun">)</span></code>: Will	source the parameter on which it is
+				applied from the request headers named "field". If the parameter
+				is <code class="lang-d"><span class="kwd">ref</span></code>, it will also be set as a response header. Parameters
+				declared as <code class="lang-d"><span class="kwd">out</span></code> will <i>only</i> be set as a response header.</li>
+			<li><code class="lang-d"><span class="pun">@</span><span class="pln">viaQuery</span><span class="pun">(</span><span class="str">"field"</span><span class="pun">)</span></code>: Will source the parameter on which it is
+				applied from a field named "field" of the query string.</li>
+			<li><code class="lang-d"><span class="pun">@</span><span class="pln">viaBody</span><span class="pun">(</span><span class="str">"field"</span><span class="pun">)</span></code>: Will source the parameter on which it is
+				applied from a field named "field" of the request body
+				in JSON format, or, if no field is passed, will represent the
+				whole body. Note that in the later case, there can be no other
+				<code class="lang-d"><span class="pln">viaBody</span></code> parameters.</li>
+		</ul>
+</p>
+
+<pre class="code"><code class="lang-d"><span class="pun">@</span><span class="pln">path</span><span class="pun">(</span><span class="str">"/api/"</span><span class="pun">)
+</span><span class="kwd">interface </span><span class="typ">APIRoot </span><span class="pun">{
+	</span><span class="com">// GET /api/header with 'Authorization' set
+	</span><span class="typ">string </span><span class="pln">getHeader</span><span class="pun">(@</span><span class="pln">viaHeader</span><span class="pun">(</span><span class="str">"Authorization"</span><span class="pun">) </span><span class="typ">string </span><span class="pln">param</span><span class="pun">);
+
+	</span><span class="com">// GET /api/foo?param=...
+	</span><span class="typ">string </span><span class="pln">getFoo</span><span class="pun">(@</span><span class="pln">viaQuery</span><span class="pun">(</span><span class="str">"param"</span><span class="pun">) </span><span class="typ">int </span><span class="pln">param</span><span class="pun">);
+
+	</span><span class="com">// GET /api/body with body set to { "myFoo": {...} }
+	</span><span class="typ">string </span><span class="pln">getBody</span><span class="pun">(@</span><span class="pln">viaBody</span><span class="pun">(</span><span class="str">"parameter"</span><span class="pun">) </span><span class="typ">FooType </span><span class="pln">myFoo</span><span class="pun">);
+
+	</span><span class="com">// GET /api/full_body with body set to {...}
+	</span><span class="typ">string </span><span class="pln">getFullBody</span><span class="pun">(@</span><span class="pln">viaBody</span><span class="pun">() </span><span class="typ">FooType </span><span class="pln">myFoo</span><span class="pun">);
+}</span></code></pre>
+
+<p>		Further, how function parameters are named may affect the route:
+</p>
+
+<p>		<ul>			<li><p>Parameters with leading underscores (e.g. <code class="lang-d"><span class="pln">_slug</span></code>) are also
+				interpreted as a route component, but only in the presence of
+				a <code class="lang-d"><span class="pun">@</span><span class="pln">path</span></code> UDA annotation. See Manual endpoint specification above.</p></li>
+			<li><p>Other function parameters do not affect or come from the path
+				 portion of the URL, and are are passed according to the default
+				 rules above: query string for GET and PUT; request body JSON
+				 for POST and PATCH.</p></li>
+			<li><p><b>Deprecated:</b> If the first parameter is named <code class="lang-d"><span class="pln">id</span></code>, this is
+				interpreted as a leading route component. For example,
+				<code class="lang-d"><span class="pln">getName</span><span class="pun">(</span><span class="typ">int </span><span class="pln">id</span><span class="pun">)</span></code> becomes <code class="lang-d"><span class="pun">/:</span><span class="pln">id</span><span class="pun">/</span><span class="pln">name</span></code>.</p>
+				<p>Note that this style of parameter-based URL routing is
+				different than in many other web frameworks, where instead
+				this example would be routed as <code class="lang-d"><span class="pun">/</span><span class="pln">name</span><span class="pun">/:</span><span class="pln">id</span></code>.</p>
+				<p>See <code class="lang-d"><a href="../vibe.web.rest/Collection"><span class="typ">Collection</span></a></code> for the preferred way to represent object
+				collections in REST interfaces</p></li>
+		</ul>
+</p>
+</section>
+<section><h2>Default values</h2>
+<p>Parameters with default values behave as optional parameters. If one is
+		set in the interface declaration of a method, the client can omit a
+		value for the corresponding field in the request and the default value
+		is used instead.
+</p>
+
+<p>		Note that if default parameters are not evaluable by CTFE, compilation
+		may fail due to DMD bug #14369 (Vibe.d tracking issue: #1043).
+</p>
+</section>
+<section><h2>Aggregates</h2>
+<p>When passing aggregates as parameters, those are serialized differently
+		depending on the way they are passed, which may be especially important
+		when interfacing with an existing RESTful API:
+</p>
+
+<p>		<ul>			<li>If the parameter is passed via the headers or the query, either
+				implicitly or explicitly, the aggregate is serialized to JSON.
+				If the JSON representation is a single string, the string value
+				will be used verbatim. Otherwise the JSON representation will be
+				used</li>
+			<li>If the parameter is passed via the body, the datastructure is
+				serialized to JSON and set as a field of the main JSON object
+				that is expected in the request body. Its field name equals the
+				parameter name, unless an explicit <code class="lang-d"><span class="pun">@</span><span class="pln">bodyParam</span></code> annotation is
+				used.</li>
+		</ul>
+</p>
+</section>
+<section><h2>See Also</h2>
+<p>To see how to implement the server side in detail, jump to
+		<code class="lang-d"><a href="../vibe.web.rest/registerRestInterface"><span class="pln">registerRestInterface</span></a></code>.
+</p>
+
+<p>		To see how to implement the client side in detail, jump to
+		the <code class="lang-d"><a href="../vibe.web.rest/RestInterfaceClient"><span class="typ">RestInterfaceClient</span></a></code> documentation.
+</p>
+</section>
+</section>
+					<section>
+						<h2>Functions</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="generateRestJSClient" class="public" href="../vibe.web.rest/generateRestJSClient">generateRestJSClient</a><span class="tableEntryAnnotation">(output, settings)</span>
+									</code>
+								</td>
+								<td>Generates JavaScript code to access a REST interface from the browser.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="registerRestInterface" class="public" href="../vibe.web.rest/registerRestInterface">registerRestInterface</a><span class="tableEntryAnnotation">(router, instance, settings)</span>
+									</code>
+								</td>
+								<td>Registers a server matching a certain REST interface.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="serveRestJSClient" class="public" href="../vibe.web.rest/serveRestJSClient">serveRestJSClient</a><span class="tableEntryAnnotation">(settings)</span>
+									</code>
+								</td>
+								<td>Returns a HTTP handler delegate that serves a JavaScript REST client.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Classes</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="RestInterfaceClient" class="public" href="../vibe.web.rest/RestInterfaceClient">RestInterfaceClient</a>
+									</code>
+								</td>
+								<td>Implements the given interface by forwarding all public methods to a REST server.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="RestInterfaceSettings" class="public" href="../vibe.web.rest/RestInterfaceSettings">RestInterfaceSettings</a>
+									</code>
+								</td>
+								<td>Encapsulates settings used to customize the generated REST interface.
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Structs</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="Collection" class="public" href="../vibe.web.rest/Collection">Collection</a>
+									</code>
+								</td>
+								<td>Models REST collection interfaces using natural D syntax.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<code>
+										<a id="RestErrorInformation" class="public" href="../vibe.web.rest/RestErrorInformation">RestErrorInformation</a>
+									</code>
+								</td>
+								<td>Contains detailed informations about the error
+</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th><th>Type</th><th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a id="after" class="public" href="../vibe.web.rest/after">
+										<code>after</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">meta<wbr/></span><span class="pun">.</span><span class="pln">funcattr<wbr/></span><span class="pun">.</span><span class="pln">after</span></code>
+								</td>
+								<td>Allows processing the return value of a handler method and the request/response objects.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="before" class="public" href="../vibe.web.rest/before">
+										<code>before</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="pln">vibe<wbr/></span><span class="pun">.</span><span class="pln">internal<wbr/></span><span class="pun">.</span><span class="pln">meta<wbr/></span><span class="pun">.</span><span class="pln">funcattr<wbr/></span><span class="pun">.</span><span class="pln">before</span></code>
+								</td>
+								<td>Allows processing the server request/response before the handler method is called.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a id="RestErrorHandler" class="public" href="../vibe.web.rest/RestErrorHandler">
+										<code>RestErrorHandler</code>
+									</a>
+								</td>
+								<td>
+									<code class="prettyprint lang-d"><span class="kwd">@safe</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><a href="../vibe.http.server/HTTPServerRequest"><span class="typ">HTTPServerRequest</span></a><span class="pun">, </span><a href="../vibe.http.server/HTTPServerResponse"><span class="typ">HTTPServerResponse</span></a><span class="pun">, </span><a href="../vibe.web.rest/RestErrorInformation"><span class="typ">RestErrorInformation</span></a><span class="pun">)</span></code>
+								</td>
+								<td>Type of the optional handler used to render custom replies in case of errors.
+</td>
+							</tr>
+						</table>
+					</section>
+					<footer>
+						<table class="license-info">
+							<tr>
+								<th>Authors</th>
+								<td>
+									<p>Sönke Ludwig, Михаил Страшун, Mathias 'Geod24' Lang
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>Copyright</th>
+								<td>
+									<p>© 2012-2018 Sönke Ludwig
+</p>
+
+								</td>
+							</tr>
+							<tr>
+								<th>License</th>
+								<td>
+									<p>Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+</p>
+
+								</td>
+							</tr>
+						</table>
+					</footer>
+					<script>prettyPrint();</script>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="copyright">Copyright © 2012-2026 Sönke Ludwig</div>
+			<div>
+				<a href="../../impressum">Impressum</a> –
+				<a href="../../about#license">License</a> –
+				<a href="../../contact">Contact</a>
+			</div>
+		</footer>
+		<div class="bs-fl"></div><div class="bs-fr"></div>
+	</body>
+</html>

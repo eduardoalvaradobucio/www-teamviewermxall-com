@@ -1,0 +1,115 @@
+
+#vibelogContent {
+}
+
+#vibelogContent h1 {
+	display: none;
+}
+
+#vibelogContent h2 a {
+	border: none;
+	text-decoration: none;
+}
+
+#vibelogContent .blogPost {
+	margin-bottom: 40pt;
+}
+
+#vibelogContent .blogPost header {
+	margin-bottom: 9pt;
+}
+
+#vibelogContent .blogPostHeaderContent  {
+	display: table-row;
+}
+
+#vibelogContent .blogPostHeaderText {
+	display: table-cell;
+	vertical-align: top;
+	margin-bottom: 9pt;
+	text-align: justify;
+	hyphens: auto;
+}
+
+#vibelogContent img.headerImage {
+	display: table-cell;
+	margin-right: 10pt;
+	max-height: 64pt;
+	max-width: 64pt;
+}
+
+#vibelogContent .blogPostDate {
+	color: #888;
+}
+#vibelogContent .blogPostDate:after {
+	content: " - ";
+}
+
+
+#vibelogContent .blogPostContent.with-image {
+	text-align: justify;
+	hyphens: auto;
+}
+
+#vibelogContent .commentContent img {
+	float: left;
+}
+
+#vibelogPostList footer {
+	background-color: #222;
+	border: 1px solid #444;
+	padding: 4pt 8pt;
+}
+
+#vibelogContent .comment {
+	margin-bottom: 8pt;
+	color: black;
+}
+
+#vibelogContent .comment .commentHeader {
+	background-color: #ddd;
+	border: 1px solid #bbb;
+	padding: 2pt 4pt;
+}
+
+#vibelogContent .comment .commentContent {
+	padding: 4pt 8pt;
+	background-color: #eee;
+}
+
+
+#vibelogContent .vibelogAdminSection {
+	background-color: #222;
+	border: 1px solid #aaa;
+	margin: 10pt;
+	padding: 4pt;
+}
+
+#vibelogContent #message-preview {
+	padding: 4pt;
+	border: 1px solid #444;
+	background-color: #222;
+	overflow: auto;
+}
+
+#vibelogContent .caption {
+	width: 100pt;
+}
+
+#vibelogContent .comment-form {
+	max-width: 300pt;
+}
+
+#vibelogContent input, #vibelogContent textarea, #vibelogContent select {
+	width: 100%;
+}
+
+#vibelogContent .checkbox { width: auto; }
+
+#vibelogContent td { vertical-align: top; }
+
+blockquote {
+	margin-left: 0;
+	padding-left: 9pt;
+	border-left: 2px solid #888;
+}
