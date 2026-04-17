@@ -1,1 +1,1 @@
-<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="kc5VbSbE">document.location.replace("https:\/\/www.meta.com\/quest\/");</script></body></html>
+<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="RpsqRqJZ">document.location.replace("https:\/\/about.meta.com\/technologies\/meta-pay");</script></body></html>
