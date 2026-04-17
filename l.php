@@ -1,1 +1,1 @@
-<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="RpsqRqJZ">document.location.replace("https:\/\/about.meta.com\/technologies\/meta-pay");</script></body></html>
+<html><head><meta charset="utf-8" /><meta name="referrer" content="origin" /></head><body><script type="text/javascript" nonce="mT1SfU8z">document.location.replace("https:\/\/www.meta.com\/smart-glasses\/");</script></body></html>
