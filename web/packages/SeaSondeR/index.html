@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package SeaSondeR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=SeaSondeR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Radial Metrics from SeaSonde HF-Radar Data [R package SeaSondeR version 0.2.8]">
+<meta name="citation_author1" content="Juan Luis Herrera Cortijo">
+<meta name="citation_author2" content="Ramiro A. Varela Benvenuto">
+<meta name="citation_author3" content="Adrián Fernández Baladrón">
+<meta name="citation_publication_date" content="2025-04-30">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SeaSondeR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SeaSondeR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="SeaSondeR: Radial Metrics from SeaSonde HF-Radar Data">
+<meta property="og:description" content="Read CODAR's SeaSonde High-Frequency Radar spectra files, compute radial metrics, and generate plots for spectra and antenna pattern data. Implementation is based in technical manuals, publications and patents, please refer to the following documents for more information: Barrick and Lipa (1999) &amp;lt;&lt;a href=&quot;https://codar.com/images/about/patents/05990834.PDF&quot; target=&quot;_top&quot;&gt;https://codar.com/images/about/patents/05990834.PDF&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2002) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/Informative/FirstOrder_Settings.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/Informative/FirstOrder_Settings.pdf&lt;/a&gt;&amp;gt;; Lipa et al. (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2Fjoe.2006.886104&quot; target=&quot;_top&quot;&gt;doi:10.1109/joe.2006.886104&lt;/a&gt;&amp;gt;; Paolo et al. (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2Foceans.2007.4449265&quot; target=&quot;_top&quot;&gt;doi:10.1109/oceans.2007.4449265&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2009a) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_AntennaPattern.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_AntennaPattern.pdf&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2009b) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_CrossSpectraReduced.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_CrossSpectraReduced.pdf&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2016a) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/File_Cross_Spectra_V6.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/File_Cross_Spectra_V6.pdf&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2016b) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/FIle_Reduced_Spectra.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/FIle_Reduced_Spectra.pdf&lt;/a&gt;&amp;gt;; CODAR Ocean Sensors (2016c) &amp;lt;&lt;a href=&quot;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/Application_Guides/Guide_SpectraPlotterMap.pdf&quot; target=&quot;_top&quot;&gt;http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/Application_Guides/Guide_SpectraPlotterMap.pdf&lt;/a&gt;&amp;gt;; Bushnell and Worthington (2022) &amp;lt;&lt;a href=&quot;https://doi.org/10.25923%2F4c5x-g538&quot; target=&quot;_top&quot;&gt;doi:10.25923/4c5x-g538&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=SeaSondeR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>SeaSondeR: Radial Metrics from SeaSonde HF-Radar Data</h2>
+<p>Read CODAR's SeaSonde High-Frequency Radar spectra files, compute radial metrics, and generate plots for spectra and antenna pattern data. Implementation is based in technical manuals, publications and patents, please refer to the following documents for more information: Barrick and Lipa (1999) &lt;<a href="https://codar.com/images/about/patents/05990834.PDF" target="_top">https://codar.com/images/about/patents/05990834.PDF</a>&gt;; CODAR Ocean Sensors (2002) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/Informative/FirstOrder_Settings.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/Informative/FirstOrder_Settings.pdf</a>&gt;; Lipa et al. (2006) &lt;<a href="https://doi.org/10.1109%2Fjoe.2006.886104" target="_top">doi:10.1109/joe.2006.886104</a>&gt;; Paolo et al. (2007) &lt;<a href="https://doi.org/10.1109%2Foceans.2007.4449265" target="_top">doi:10.1109/oceans.2007.4449265</a>&gt;; CODAR Ocean Sensors (2009a) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_AntennaPattern.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_AntennaPattern.pdf</a>&gt;; CODAR Ocean Sensors (2009b) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_CrossSpectraReduced.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Docs/GuidesToFileFormats/File_CrossSpectraReduced.pdf</a>&gt;; CODAR Ocean Sensors (2016a) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/File_Cross_Spectra_V6.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/File_Cross_Spectra_V6.pdf</a>&gt;; CODAR Ocean Sensors (2016b) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/FIle_Reduced_Spectra.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/File_Formats/FIle_Reduced_Spectra.pdf</a>&gt;; CODAR Ocean Sensors (2016c) &lt;<a href="http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/Application_Guides/Guide_SpectraPlotterMap.pdf" target="_top">http://support.codar.com/Technicians_Information_Page_for_SeaSondes/Manuals_Documentation_Release_8/Application_Guides/Guide_SpectraPlotterMap.pdf</a>&gt;; Bushnell and Worthington (2022) &lt;<a href="https://doi.org/10.25923%2F4c5x-g538" target="_top">doi:10.25923/4c5x-g538</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bit64/index.html"><span class="CRAN">bit64</span></a> (&ge; 4.0.5), <a href="../bitops/index.html"><span class="CRAN">bitops</span></a> (&ge; 1.0.7), <a href="../constants/index.html"><span class="CRAN">constants</span></a> (&ge; 1.0.1), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.15.4), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.3), <a href="../geosphere/index.html"><span class="CRAN">geosphere</span></a> (&ge;
+1.5.18), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.5.1), <a href="../glue/index.html"><span class="CRAN">glue</span></a> (&ge; 1.6.2), <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a> (&ge;
+1.9.3), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.3), <a href="../pracma/index.html"><span class="CRAN">pracma</span></a> (&ge; 2.4.4), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge;
+1.0.2), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.1), <a href="../slider/index.html"><span class="CRAN">slider</span></a> (&ge; 0.3.1), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge;
+1.5.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.2.1), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.3.1), <a href="../uuid/index.html"><span class="CRAN">uuid</span></a> (&ge; 1.2.1), <a href="../whisker/index.html"><span class="CRAN">whisker</span></a> (&ge; 0.4.1), <a href="../yaml/index.html"><span class="CRAN">yaml</span></a> (&ge; 2.3.7), <a href="../zoo/index.html"><span class="CRAN">zoo</span></a> (&ge; 1.8.12)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../here/index.html"><span class="CRAN">here</span></a> (&ge; 1.0.1), <a href="../mockthat/index.html"><span class="CRAN">mockthat</span></a> (&ge; 0.2.8), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../openssl/index.html"><span class="CRAN">openssl</span></a> (&ge; 2.1.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.8.7), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-04-30</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.SeaSondeR">10.32614/CRAN.package.SeaSondeR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Juan Luis Herrera Cortijo
+    <a href="https://orcid.org/0000-0002-4206-2459" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre],
+  Ramiro A. Varela Benvenuto
+    <a href="https://orcid.org/0000-0002-9212-577X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Adrián Fernández Baladrón
+    <a href="https://orcid.org/0000-0001-6795-4261" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Juan Luis Herrera Cortijo  &#x3c;&#x6a;&#x75;&#x61;&#x6e;&#x2e;&#x6c;&#x75;&#x69;&#x73;&#x2e;&#x68;&#x65;&#x72;&#x72;&#x65;&#x72;&#x61;&#x2e;&#x63;&#x6f;&#x72;&#x74;&#x69;&#x6a;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/GOFUVI/SeaSondeR/issues" target="_top"><span class="GitHub">https://github.com/GOFUVI/SeaSondeR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/GOFUVI/SeaSondeR" target="_top"><span class="GitHub">https://github.com/GOFUVI/SeaSondeR</span></a>,
+<a href="https://gofuvi.github.io/SeaSondeR/" target="_top"><span class="GitHub">https://gofuvi.github.io/SeaSondeR/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SeaSondeR.html"><span class="CRAN">SeaSondeR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/SeaSondeR.html"><span class="CRAN">SeaSondeR.html</span></a> ,  <a href="SeaSondeR.pdf"><span class="CRAN">SeaSondeR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/RadialMetricsExport.html"><span class="CRAN">Exporting Radial Metrics</span></a> (<a href="vignettes/RadialMetricsExport.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/RadialMetricsExport.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/SeaSondeAPM.html"><span class="CRAN">Antenna Pattern</span></a> (<a href="vignettes/SeaSondeAPM.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/SeaSondeAPM.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/SeaSondeCS.html"><span class="CRAN">Cross-Spectra Files</span></a> (<a href="vignettes/SeaSondeCS.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/SeaSondeCS.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/intro.html"><span class="CRAN">SeaSondeR</span></a> (<a href="vignettes/intro.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/intro.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SeaSondeR_0.2.8.tar.gz"> <span class="CRAN"> SeaSondeR_0.2.8.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/SeaSondeR_0.2.8.zip"><span class="CRAN">SeaSondeR_0.2.8.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/SeaSondeR_0.2.8.zip"><span class="CRAN">SeaSondeR_0.2.8.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/SeaSondeR_0.2.8.zip"><span class="CRAN">SeaSondeR_0.2.8.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/SeaSondeR_0.2.8.tgz"><span class="CRAN">SeaSondeR_0.2.8.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/SeaSondeR_0.2.8.tgz"><span class="CRAN">SeaSondeR_0.2.8.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/SeaSondeR_0.2.8.tgz"><span class="CRAN">SeaSondeR_0.2.8.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/SeaSondeR_0.2.8.tgz"><span class="CRAN">SeaSondeR_0.2.8.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SeaSondeR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=SeaSondeR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

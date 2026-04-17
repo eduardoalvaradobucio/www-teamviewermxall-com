@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package redcapAPI</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=redcapAPI">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interface to 'REDCap' [R package redcapAPI version 2.12.0]">
+<meta name="citation_author1" content="Benjamin Nutter">
+<meta name="citation_author2" content="Jeffrey Horner">
+<meta name="citation_publication_date" content="2026-03-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=redcapAPI">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=redcapAPI">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="redcapAPI: Interface to 'REDCap'">
+<meta property="og:description" content="Access data stored in 'REDCap' databases using the Application Programming Interface (API). 'REDCap' (Research Electronic Data CAPture; &amp;lt;&lt;a href=&quot;https://projectredcap.org&quot; target=&quot;_top&quot;&gt;https://projectredcap.org&lt;/a&gt;&amp;gt;, Harris, et al. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jbi.2008.08.010&quot; target=&quot;_top&quot;&gt;doi:10.1016/j.jbi.2008.08.010&lt;/a&gt;&amp;gt;, Harris, et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jbi.2019.103208&quot; target=&quot;_top&quot;&gt;doi:10.1016/j.jbi.2019.103208&lt;/a&gt;&amp;gt;) is a web application for building and managing online surveys and databases developed at Vanderbilt University. The API allows users to access data and project meta data (such as the data dictionary) from the web programmatically. The 'redcapAPI' package facilitates the process of accessing data with options to prepare an analysis-ready data set consistent with the definitions in a database's data dictionary.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=redcapAPI">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>redcapAPI: Interface to 'REDCap'</h2>
+<p>Access data stored in 'REDCap' databases using the Application
+    Programming Interface (API).  'REDCap' (Research Electronic Data CAPture;
+    &lt;<a href="https://projectredcap.org" target="_top">https://projectredcap.org</a>&gt;, Harris, et al. (2009) &lt;<a href="https://doi.org/10.1016%2Fj.jbi.2008.08.010" target="_top">doi:10.1016/j.jbi.2008.08.010</a>&gt;, 
+    Harris, et al. (2019) &lt;<a href="https://doi.org/10.1016%2Fj.jbi.2019.103208" target="_top">doi:10.1016/j.jbi.2019.103208</a>&gt;) is
+    a web application for building and managing online surveys and databases
+    developed at Vanderbilt University.  The API allows users to access data
+    and project meta data (such as the data dictionary) from the web
+    programmatically. The 'redcapAPI' package facilitates the process of
+    accessing data with options to prepare an analysis-ready data set
+    consistent with the definitions in a database's data dictionary.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.12.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../chron/index.html"><span class="CRAN">chron</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../labelVector/index.html"><span class="CRAN">labelVector</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../mime/index.html"><span class="CRAN">mime</span></a>, <a href="../shelter/index.html"><span class="CRAN">shelter</span></a> (&ge; 0.2.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../Hmisc/index.html"><span class="CRAN">Hmisc</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../R.rsp/index.html"><span class="CRAN">R.rsp</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.redcapAPI">10.32614/CRAN.package.redcapAPI</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Benjamin Nutter [ctb, aut],
+  Shawn Garbett <a href="https://orcid.org/0000-0003-4079-5621" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [cre, ctb],
+  Savannah Obregon [ctb],
+  Thomas Obadia [ctb],
+  Marcus Lehr [ctb],
+  Brian High [ctb],
+  Stephen Lane [ctb],
+  Will Beasley [ctb],
+  Will Gray [ctb],
+  Nick Kennedy [ctb],
+  Tan Hsi-Nien [ctb],
+  Jeffrey Horner [aut],
+  Jeremy Stephens [ctb],
+  Cole Beck [ctb],
+  Bradley Johnson [ctb],
+  Philip Chase [ctb],
+  Paddy Tobias [ctb],
+  Michael Chirico [ctb],
+  William Sharp [ctb],
+  Alexander Strübing [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Shawn Garbett  &#x3c;&#x73;&#x68;&#x61;&#x77;&#x6e;&#x2e;&#x67;&#x61;&#x72;&#x62;&#x65;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x76;&#x75;&#x6d;&#x63;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/vubiostat/redcapAPI/issues" target="_top"><span class="GitHub">https://github.com/vubiostat/redcapAPI/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2"><span class="CRAN">GPL-2</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/vubiostat/redcapAPI" target="_top"><span class="GitHub">https://github.com/vubiostat/redcapAPI</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">redcapAPI citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html"><span class="CRAN">WebTechnologies</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_redcapAPI.html"><span class="CRAN">redcapAPI results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/redcapAPI.html"><span class="CRAN">redcapAPI.html</span></a> ,  <a href="redcapAPI.pdf"><span class="CRAN">redcapAPI.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/redcapAPI-best-practices.pdf"><span class="CRAN">redcapAPI Best Practices</span></a> (<a href="vignettes/redcapAPI-best-practices.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-casting-data.pdf"><span class="CRAN">Casting Data</span></a> (<a href="vignettes/redcapAPI-casting-data.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-data-validation.pdf"><span class="CRAN">Data Validation with exportRecordsTyped</span></a> (<a href="vignettes/redcapAPI-data-validation.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-faq.pdf"><span class="CRAN">redcapAPI FAQ</span></a> (<a href="vignettes/redcapAPI-faq.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-getting-started-connecting.pdf"><span class="CRAN">Getting Started: Connecting to REDCap</span></a> (<a href="vignettes/redcapAPI-getting-started-connecting.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-missing-data-detection.pdf"><span class="CRAN">Missing Data Detection with exportRecordsTyped</span></a> (<a href="vignettes/redcapAPI-missing-data-detection.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/redcapAPI-offline-connection.pdf"><span class="CRAN">redcapAPI Offline Connections</span></a> (<a href="vignettes/redcapAPI-offline-connection.pdf.asis" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/redcapAPI_2.12.0.tar.gz"> <span class="CRAN"> redcapAPI_2.12.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/redcapAPI_2.12.0.zip"><span class="CRAN">redcapAPI_2.12.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/redcapAPI_2.12.0.zip"><span class="CRAN">redcapAPI_2.12.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/redcapAPI_2.12.0.zip"><span class="CRAN">redcapAPI_2.12.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/redcapAPI_2.12.0.tgz"><span class="CRAN">redcapAPI_2.12.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/redcapAPI_2.11.5.tgz"><span class="CRAN">redcapAPI_2.11.5.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/redcapAPI_2.12.0.tgz"><span class="CRAN">redcapAPI_2.12.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/redcapAPI_2.12.0.tgz"><span class="CRAN">redcapAPI_2.12.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/redcapAPI"> <span class="CRAN"> redcapAPI archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../rccola/index.html"><span class="CRAN">rccola</span></a>, <a href="../ReviewR/index.html"><span class="CRAN">ReviewR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../tidyREDCap/index.html"><span class="CRAN">tidyREDCap</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=redcapAPI"><span class="CRAN"><samp>https://CRAN.R-project.org/package=redcapAPI</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

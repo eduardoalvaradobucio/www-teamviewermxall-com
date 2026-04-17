@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package multiverse</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=multiverse">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Create 'multiverse analysis' in R [R package multiverse version 0.6.2]">
+<meta name="citation_author1" content="Abhraneel Sarma">
+<meta name="citation_author2" content="Matthew Kay">
+<meta name="citation_publication_date" content="2024-10-07">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=multiverse">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=multiverse">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="multiverse: Create 'multiverse analysis' in R">
+<meta property="og:description" content="Implement 'multiverse' style analyses (Steegen S., Tuerlinckx F, Gelman A., Vanpaemal, W., 2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F1745691616658637&quot; target=&quot;_top&quot;&gt;doi:10.1177/1745691616658637&lt;/a&gt;&amp;gt; to show the robustness of statistical inference. 'Multiverse analysis' is a philosophy of statistical reporting where paper authors report the outcomes of many different statistical analyses in order to show how fragile or robust their findings are. The 'multiverse' package (Sarma A., Kale A., Moon M., Taback N., Chevalier F., Hullman J., Kay M., 2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.31219%2Fosf.io%2Fyfbwm&quot; target=&quot;_top&quot;&gt;doi:10.31219/osf.io/yfbwm&lt;/a&gt;&amp;gt; allows users to concisely and flexibly implement 'multiverse-style' analysis, which involve declaring alternate ways of performing an analysis step, in R and R Notebooks.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=multiverse">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>multiverse: Create 'multiverse analysis' in R</h2>
+<p>Implement 'multiverse' style analyses (Steegen S., Tuerlinckx F, Gelman A., Vanpaemal, W., 2016)
+    &lt;<a href="https://doi.org/10.1177%2F1745691616658637" target="_top">doi:10.1177/1745691616658637</a>&gt; to show the robustness of statistical inference. 
+    'Multiverse analysis' is a philosophy of statistical reporting where paper authors 
+    report the outcomes of many different statistical analyses in order to show how 
+    fragile or robust their findings are. The 'multiverse' package 
+    (Sarma A., Kale A., Moon M., Taback N., Chevalier F., Hullman J., Kay M., 2021) 
+    &lt;<a href="https://doi.org/10.31219%2Fosf.io%2Fyfbwm" target="_top">doi:10.31219/osf.io/yfbwm</a>&gt; allows users to concisely and flexibly implement 'multiverse-style' 
+    analysis, which involve declaring alternate ways of performing an analysis step, in R and R Notebooks.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.6.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 0.8.1), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 0.3.4), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 0.4.0), <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, <a href="../formatR/index.html"><span class="CRAN">formatR</span></a>, <a href="../collections/index.html"><span class="CRAN">collections</span></a>, <a href="../evaluate/index.html"><span class="CRAN">evaluate</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../berryFunctions/index.html"><span class="CRAN">berryFunctions</span></a>, <a href="../furrr/index.html"><span class="CRAN">furrr</span></a>, <a href="../styler/index.html"><span class="CRAN">styler</span></a>, <a href="../distributional/index.html"><span class="CRAN">distributional</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.0.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../highr/index.html"><span class="CRAN">highr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../broom/index.html"><span class="CRAN">broom</span></a>, <a href="../boot/index.html"><span class="CRAN">boot</span></a>, <a href="../gganimate/index.html"><span class="CRAN">gganimate</span></a>, <a href="../gifski/index.html"><span class="CRAN">gifski</span></a>, <a href="../forcats/index.html"><span class="CRAN">forcats</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../cowplot/index.html"><span class="CRAN">cowplot</span></a>, <a href="../tidybayes/index.html"><span class="CRAN">tidybayes</span></a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../modelr/index.html"><span class="CRAN">modelr</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-10-07</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.multiverse">10.32614/CRAN.package.multiverse</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Abhraneel Sarma [aut, cre],
+  Matthew Kay [aut],
+  Michael Moon [ctb],
+  Mark Miller [ctb],
+  Kyle Hwang [ctb],
+  Hadley Wickham [ctb],
+  Alex Kale [ctb],
+  Nathan Taback [ctb],
+  Fanny Chevalier [ctb],
+  Jessica Hullman [ctb],
+  Pierre Dragicevic [ctb],
+  Yvonne Jansen [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Abhraneel Sarma  &#x3c;&#x61;&#x62;&#x68;&#x72;&#x61;&#x6e;&#x65;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x75;&#x2e;&#x6e;&#x6f;&#x72;&#x74;&#x68;&#x77;&#x65;&#x73;&#x74;&#x65;&#x72;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/MUCollective/multiverse/issues/" target="_top"><span class="GitHub">https://github.com/MUCollective/multiverse/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mucollective.github.io/multiverse/" target="_top"><span class="GitHub">https://mucollective.github.io/multiverse/</span></a>,
+<a href="https://github.com/mucollective/multiverse/" target="_top"><span class="GitHub">https://github.com/mucollective/multiverse/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">multiverse citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_multiverse.html"><span class="CRAN">multiverse results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/multiverse.html"><span class="CRAN">multiverse.html</span></a> ,  <a href="multiverse.pdf"><span class="CRAN">multiverse.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/branch.html"><span class="CRAN">A discussion on branches in the multiverse</span></a> (<a href="vignettes/branch.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/branch.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/conditions.html"><span class="CRAN">Declaring conditions in the multiverse</span></a> (<a href="vignettes/conditions.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/conditions.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-dance.html"><span class="CRAN">Example multiverse implementation: Recreating Adding inferential treatments to plots using Resampling and Animations using multiverse</span></a> (<a href="vignettes/example-dance.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-dance.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-durante.html"><span class="CRAN">Example multiverse implementation: Effect of fertility on religiosity and political attitudes</span></a> (<a href="vignettes/example-durante.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-durante.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-frequentist.html"><span class="CRAN">Example multiverse implementation: Re-evaluating the efficiency of physical visualizations</span></a> (<a href="vignettes/example-frequentist.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-frequentist.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/example-hurricane.html"><span class="CRAN">Example multiverse implementation: Female hurricanes are deadlier than male hurricanes</span></a> (<a href="vignettes/example-hurricane.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/example-hurricane.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/execution-multiverse.html"><span class="CRAN">Execution of multiverse analysis &mdash; Sequential and Parallel</span></a> (<a href="vignettes/execution-multiverse.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/execution-multiverse.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/multiverse-in-rmd.html"><span class="CRAN">Using the multiverse in RMarkdown: Introduction to multiverse code chunks</span></a> (<a href="vignettes/multiverse-in-rmd.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/multiverse-in-rmd.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/visualising-multiverse.html"><span class="CRAN">Extracting and Visualising the results of a multiverse analysis</span></a> (<a href="vignettes/visualising-multiverse.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/visualising-multiverse.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/multiverse_0.6.2.tar.gz"> <span class="CRAN"> multiverse_0.6.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/multiverse_0.6.2.zip"><span class="CRAN">multiverse_0.6.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/multiverse_0.6.2.zip"><span class="CRAN">multiverse_0.6.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/multiverse_0.6.2.zip"><span class="CRAN">multiverse_0.6.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/multiverse_0.6.2.tgz"><span class="CRAN">multiverse_0.6.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/multiverse_0.6.2.tgz"><span class="CRAN">multiverse_0.6.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/multiverse_0.6.2.tgz"><span class="CRAN">multiverse_0.6.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/multiverse_0.6.2.tgz"><span class="CRAN">multiverse_0.6.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/multiverse"> <span class="CRAN"> multiverse archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../mverse/index.html"><span class="CRAN">mverse</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=multiverse"><span class="CRAN"><samp>https://CRAN.R-project.org/package=multiverse</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

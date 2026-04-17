@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package mapgl</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=mapgl">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Interactive Maps with 'Mapbox GL JS' and 'MapLibre GL JS' [R package mapgl version 0.4.6]">
+<meta name="citation_author" content="Kyle Walker">
+<meta name="citation_publication_date" content="2026-04-14">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mapgl">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mapgl">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="mapgl: Interactive Maps with 'Mapbox GL JS' and 'MapLibre GL JS'">
+<meta property="og:description" content="Provides an interface to the 'Mapbox GL JS' (&amp;lt;&lt;a href=&quot;https://docs.mapbox.com/mapbox-gl-js/guides&quot; target=&quot;_top&quot;&gt;https://docs.mapbox.com/mapbox-gl-js/guides&lt;/a&gt;&amp;gt;) and the 'MapLibre GL JS' (&amp;lt;&lt;a href=&quot;https://maplibre.org/maplibre-gl-js/docs/&quot; target=&quot;_top&quot;&gt;https://maplibre.org/maplibre-gl-js/docs/&lt;/a&gt;&amp;gt;) interactive mapping libraries to help users create custom interactive maps in R. Users can create interactive globe visualizations; layer 'sf' objects to create filled maps, circle maps, 'heatmaps', and three-dimensional graphics; and customize map styles and views. The package also includes utilities to use 'Mapbox' and 'MapLibre' maps in 'Shiny' web applications.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=mapgl">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>mapgl: Interactive Maps with 'Mapbox GL JS' and 'MapLibre GL JS'</h2>
+<p>Provides an interface to the 'Mapbox GL JS' (&lt;<a href="https://docs.mapbox.com/mapbox-gl-js/guides" target="_top">https://docs.mapbox.com/mapbox-gl-js/guides</a>&gt;)
+    and the 'MapLibre GL JS' (&lt;<a href="https://maplibre.org/maplibre-gl-js/docs/" target="_top">https://maplibre.org/maplibre-gl-js/docs/</a>&gt;) interactive mapping libraries to help users
+    create custom interactive maps in R.  Users can create interactive globe visualizations; layer 'sf' objects to create
+    filled maps, circle maps, 'heatmaps', and three-dimensional graphics; and customize map styles and views.  The package
+    also includes utilities to use 'Mapbox' and 'MapLibre' maps in 'Shiny' web applications.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.4.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../geojsonsf/index.html"><span class="CRAN">geojsonsf</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../classInt/index.html"><span class="CRAN">classInt</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../viridisLite/index.html"><span class="CRAN">viridisLite</span></a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../chromote/index.html"><span class="CRAN">chromote</span></a>, <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mapboxapi/index.html"><span class="CRAN">mapboxapi</span></a>, <a href="../usethis/index.html"><span class="CRAN">usethis</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-14</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.mapgl">10.32614/CRAN.package.mapgl</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kyle Walker [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kyle Walker  &#x3c;&#x6b;&#x79;&#x6c;&#x65;&#x20;&#x61;&#x74;&#x20;&#x77;&#x61;&#x6c;&#x6b;&#x65;&#x72;&#x2d;&#x64;&#x61;&#x74;&#x61;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/walkerke/mapgl/issues" target="_top"><span class="GitHub">https://github.com/walkerke/mapgl/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://walker-data.com/mapgl/" target="_top">https://walker-data.com/mapgl/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mapgl.html"><span class="CRAN">mapgl results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/mapgl.html"><span class="CRAN">mapgl.html</span></a> ,  <a href="mapgl.pdf"><span class="CRAN">mapgl.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mapgl_0.4.6.tar.gz"> <span class="CRAN"> mapgl_0.4.6.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/mapgl_0.4.6.zip"><span class="CRAN">mapgl_0.4.6.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/mapgl_0.4.6.zip"><span class="CRAN">mapgl_0.4.6.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/mapgl_0.4.6.zip"><span class="CRAN">mapgl_0.4.6.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/mapgl_0.4.6.tgz"><span class="CRAN">mapgl_0.4.6.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/mapgl_0.4.5.tgz"><span class="CRAN">mapgl_0.4.5.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/mapgl_0.4.6.tgz"><span class="CRAN">mapgl_0.4.6.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/mapgl_0.4.6.tgz"><span class="CRAN">mapgl_0.4.6.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mapgl"> <span class="CRAN"> mapgl archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../r5rgui/index.html"><span class="CRAN">r5rgui</span></a>, <a href="../tmap.mapgl/index.html"><span class="CRAN">tmap.mapgl</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../BLSloadR/index.html"><span class="CRAN">BLSloadR</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mapgl"><span class="CRAN"><samp>https://CRAN.R-project.org/package=mapgl</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

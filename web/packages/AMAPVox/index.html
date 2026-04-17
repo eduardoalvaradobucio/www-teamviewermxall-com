@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package AMAPVox</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=AMAPVox">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="LiDAR Data Voxelisation [R package AMAPVox version 2.4.2]">
+<meta name="citation_author1" content="Grégoire Vincent">
+<meta name="citation_author2" content="Julien Heurtebize">
+<meta name="citation_author3" content="Philippe Verley">
+<meta name="citation_publication_date" content="2026-02-16">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=AMAPVox">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=AMAPVox">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="AMAPVox: LiDAR Data Voxelisation">
+<meta property="og:description" content="Read, manipulate and write voxel spaces. Voxel spaces are read from text-based output files of the 'AMAPVox' software. 'AMAPVox' is a LiDAR point cloud voxelisation software that aims at estimating leaf area through several theoretical/numerical approaches. See more in the article Vincent et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.23708%2F1AJNMP&quot; target=&quot;_top&quot;&gt;doi:10.23708/1AJNMP&lt;/a&gt;&amp;gt; and the technical note Vincent et al. (2021) &amp;lt;&lt;a href=&quot;https://doi.org/10.23708%2F1AJNMP&quot; target=&quot;_top&quot;&gt;doi:10.23708/1AJNMP&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=AMAPVox">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>AMAPVox: LiDAR Data Voxelisation</h2>
+<p>Read, manipulate and write voxel spaces. Voxel spaces are
+    read from text-based output files of the 'AMAPVox' software. 'AMAPVox'
+    is a LiDAR point cloud voxelisation software that aims at estimating
+    leaf area through several theoretical/numerical approaches. See more
+    in the article Vincent et al. (2017) &lt;<a href="https://doi.org/10.23708%2F1AJNMP" target="_top">doi:10.23708/1AJNMP</a>&gt; and the
+    technical note Vincent et al. (2021) &lt;<a href="https://doi.org/10.23708%2F1AJNMP" target="_top">doi:10.23708/1AJNMP</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>2.4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../fields/index.html"><span class="CRAN">fields</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../RANN/index.html"><span class="CRAN">RANN</span></a>, <a href="../rgl/index.html"><span class="CRAN">rgl</span></a>, <a href="../RefManageR/index.html"><span class="CRAN">RefManageR</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-02-16</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.AMAPVox">10.32614/CRAN.package.AMAPVox</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Grégoire Vincent [aut],
+  Julien Heurtebize [aut],
+  Philippe Verley [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Philippe Verley  &#x3c;&#x70;&#x68;&#x69;&#x6c;&#x69;&#x70;&#x70;&#x65;&#x2e;&#x76;&#x65;&#x72;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x69;&#x72;&#x64;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://forge.ird.fr/amap/amapvox/AMAPVox/-/issues" target="_top">https://forge.ird.fr/amap/amapvox/AMAPVox/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.cecill.info/licences/Licence_CeCILL_V2-en.txt"><span class="CRAN">CeCILL version 2</span></a> | <a href="https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.txt"><span class="CRAN">CECILL-2.1</span></a> [expanded from: CeCILL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://amapvox.org" target="_top">https://amapvox.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">AMAPVox citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_AMAPVox.html"><span class="CRAN">AMAPVox results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/AMAPVox.html"><span class="CRAN">AMAPVox.html</span></a> ,  <a href="AMAPVox.pdf"><span class="CRAN">AMAPVox.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AMAPVox.html"><span class="CRAN">AMAPVox</span></a> (<a href="vignettes/AMAPVox.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/AMAPVox.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Installation.html"><span class="CRAN">Installation</span></a> (<a href="vignettes/Installation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Installation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Publications.html"><span class="CRAN">Publications</span></a> (<a href="vignettes/Publications.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Publications.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Voxelization.html"><span class="CRAN">Voxelization</span></a> (<a href="vignettes/Voxelization.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Voxelization.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/amapvox-gui.html"><span class="CRAN">amapvox-gui</span></a> (<a href="vignettes/amapvox-gui.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/amapvox-gui.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/AMAPVox_2.4.2.tar.gz"> <span class="CRAN"> AMAPVox_2.4.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/AMAPVox_2.4.2.zip"><span class="CRAN">AMAPVox_2.4.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/AMAPVox_2.4.2.zip"><span class="CRAN">AMAPVox_2.4.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/AMAPVox_2.4.2.zip"><span class="CRAN">AMAPVox_2.4.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/AMAPVox_2.4.2.tgz"><span class="CRAN">AMAPVox_2.4.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/AMAPVox_2.4.2.tgz"><span class="CRAN">AMAPVox_2.4.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/AMAPVox_2.4.2.tgz"><span class="CRAN">AMAPVox_2.4.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/AMAPVox_2.4.2.tgz"><span class="CRAN">AMAPVox_2.4.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/AMAPVox"> <span class="CRAN"> AMAPVox archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=AMAPVox"><span class="CRAN"><samp>https://CRAN.R-project.org/package=AMAPVox</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package polmineR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=polmineR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Verbs and Nouns for Corpus Analysis [R package polmineR version 0.8.9]">
+<meta name="citation_author" content="Andreas Blaette">
+<meta name="citation_publication_date" content="2023-10-29">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=polmineR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=polmineR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="polmineR: Verbs and Nouns for Corpus Analysis">
+<meta property="og:description" content="Package for corpus analysis using the Corpus Workbench ('CWB', &amp;lt;&lt;a href=&quot;https://cwb.sourceforge.io&quot; target=&quot;_top&quot;&gt;https://cwb.sourceforge.io&lt;/a&gt;&amp;gt;) as an efficient back end for indexing and querying large corpora. The package offers functionality to flexibly create subcorpora and to carry out basic statistical operations (count, co-occurrences etc.). The original full text of documents can be reconstructed and inspected at any time. Beyond that, the package is intended to serve as an interface to packages implementing advanced statistical procedures. Respective data structures (document-term matrices, term-co-occurrence matrices etc.) can be created based on the indexed corpora.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=polmineR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>polmineR: Verbs and Nouns for Corpus Analysis</h2>
+<p>Package for corpus analysis using the Corpus Workbench 
+    ('CWB', &lt;<a href="https://cwb.sourceforge.io" target="_top">https://cwb.sourceforge.io</a>&gt;) as an efficient back end for indexing
+    and querying large corpora. The package offers functionality to flexibly create
+    subcorpora and to carry out basic statistical operations (count, co-occurrences
+    etc.). The original full text of documents can be reconstructed and inspected at
+    any time. Beyond that, the package is intended to serve as an interface to 
+    packages implementing advanced statistical procedures. Respective data structures
+    (document-term matrices, term-co-occurrence matrices etc.) can be created based 
+    on the indexed corpora.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.8.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.12.2), <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../slam/index.html"><span class="CRAN">slam</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../tm/index.html"><span class="CRAN">tm</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../pbapply/index.html"><span class="CRAN">pbapply</span></a>, <a href="../RcppCWB/index.html"><span class="CRAN">RcppCWB</span></a> (&ge;
+0.6.2), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../markdown/index.html"><span class="CRAN">markdown</span></a> (&ge; 1.5), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a> (&ge; 0.4.0), <a href="../highlight/index.html"><span class="CRAN">highlight</span></a>, <a href="../sendmailR/index.html"><span class="CRAN">sendmailR</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinythemes/index.html"><span class="CRAN">shinythemes</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../miniUI/index.html"><span class="CRAN">miniUI</span></a>, <a href="../rhandsontable/index.html"><span class="CRAN">rhandsontable</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../tidytext/index.html"><span class="CRAN">tidytext</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../NLP/index.html"><span class="CRAN">NLP</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../protolite/index.html"><span class="CRAN">protolite</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2023-10-29</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.polmineR">10.32614/CRAN.package.polmineR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Andreas Blaette <a href="https://orcid.org/0000-0001-8970-8010" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Christoph Leonhardt [ctb],
+  Marius Bertram [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andreas Blaette  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x61;&#x73;&#x2e;&#x62;&#x6c;&#x61;&#x65;&#x74;&#x74;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x64;&#x75;&#x65;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/PolMine/polmineR/issues" target="_top"><span class="GitHub">https://github.com/PolMine/polmineR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/PolMine/polmineR" target="_top"><span class="GitHub">https://github.com/PolMine/polmineR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">polmineR citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_polmineR.html"><span class="CRAN">polmineR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/polmineR.html"><span class="CRAN">polmineR.html</span></a> ,  <a href="polmineR.pdf"><span class="CRAN">polmineR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/OpenCPU.html"><span class="CRAN">OpenCPU</span></a> (<a href="vignettes/OpenCPU.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/OpenCPU.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/encodings.html"><span class="CRAN">Encodings</span></a> (<a href="vignettes/encodings.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/vignette.html"><span class="CRAN">Introduction to polmineR</span></a> (<a href="vignettes/vignette.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/vignette.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/polmineR_0.8.9.tar.gz"> <span class="CRAN"> polmineR_0.8.9.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/polmineR_0.8.9.zip"><span class="CRAN">polmineR_0.8.9.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/polmineR_0.8.9.zip"><span class="CRAN">polmineR_0.8.9.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/polmineR_0.8.9.zip"><span class="CRAN">polmineR_0.8.9.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/polmineR_0.8.9.tgz"><span class="CRAN">polmineR_0.8.9.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/polmineR_0.8.9.tgz"><span class="CRAN">polmineR_0.8.9.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/polmineR_0.8.9.tgz"><span class="CRAN">polmineR_0.8.9.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/polmineR_0.8.9.tgz"><span class="CRAN">polmineR_0.8.9.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/polmineR"> <span class="CRAN"> polmineR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=polmineR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=polmineR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

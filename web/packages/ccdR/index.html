@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package ccdR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=ccdR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Utilities for Interacting with the 'CTX' APIs [R package ccdR version 1.1.0]">
+<meta name="citation_author1" content="Paul Kruse">
+<meta name="citation_author2" content="Caroline Ring">
+<meta name="citation_publication_date" content="2024-07-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ccdR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ccdR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="ccdR: Utilities for Interacting with the 'CTX' APIs">
+<meta property="og:description" content="Access chemical, hazard, bioactivity, and exposure data from the Computational Toxicology and Exposure ('CTX') APIs &amp;lt;&lt;a href=&quot;https://api-ccte.epa.gov/docs/&quot; target=&quot;_top&quot;&gt;https://api-ccte.epa.gov/docs/&lt;/a&gt;&amp;gt;. 'ccdR' was developed to streamline the process of accessing the information available through the 'CTX' APIs without requiring prior knowledge of how to use APIs. Most data is also available on the CompTox Chemical Dashboard ('CCD') &amp;lt;&lt;a href=&quot;https://comptox.epa.gov/dashboard/&quot; target=&quot;_top&quot;&gt;https://comptox.epa.gov/dashboard/&lt;/a&gt;&amp;gt; and other resources found at the EPA Computational Toxicology and Exposure Online Resources &amp;lt;&lt;a href=&quot;https://www.epa.gov/comptox-tools&quot; target=&quot;_top&quot;&gt;https://www.epa.gov/comptox-tools&lt;/a&gt;&amp;gt;. ">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=ccdR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>ccdR: Utilities for Interacting with the 'CTX' APIs</h2>
+<p>Access chemical, hazard, bioactivity, and exposure data from the 
+   Computational Toxicology and Exposure ('CTX') APIs 
+   &lt;<a href="https://api-ccte.epa.gov/docs/" target="_top">https://api-ccte.epa.gov/docs/</a>&gt;. 'ccdR' was developed to streamline the 
+   process of accessing the information available through the 'CTX' APIs 
+   without requiring prior knowledge of how to use APIs. Most data is also 
+   available on the CompTox Chemical Dashboard ('CCD') 
+   &lt;<a href="https://comptox.epa.gov/dashboard/" target="_top">https://comptox.epa.gov/dashboard/</a>&gt; and other resources found at the 
+   EPA Computational Toxicology and Exposure Online Resources 
+   &lt;<a href="https://www.epa.gov/comptox-tools" target="_top">https://www.epa.gov/comptox-tools</a>&gt;. </p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../urltools/index.html"><span class="CRAN">urltools</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../countcolors/index.html"><span class="CRAN">countcolors</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../httptest/index.html"><span class="CRAN">httptest</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../prettydoc/index.html"><span class="CRAN">prettydoc</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../XML/index.html"><span class="CRAN">XML</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2024-07-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.ccdR">10.32614/CRAN.package.ccdR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Paul Kruse <a href="https://orcid.org/0000-0001-5516-9717" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre],
+  Caroline Ring <a href="https://orcid.org/0000-0002-0463-1251" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Madison Feshuk <a href="https://orcid.org/0000-0002-1390-6405" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Carter Thunes [ctb],
+  Jason Brown [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Paul Kruse  &#x3c;&#x6b;&#x72;&#x75;&#x73;&#x65;&#x2e;&#x70;&#x61;&#x75;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x65;&#x70;&#x61;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USEPA/ccdR/issues" target="_top"><span class="GitHub">https://github.com/USEPA/ccdR/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/USEPA/ccdR" target="_top"><span class="GitHub">https://github.com/USEPA/ccdR</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ccdR.html"><span class="CRAN">ccdR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/ccdR.html"><span class="CRAN">ccdR.html</span></a> ,  <a href="ccdR.pdf"><span class="CRAN">ccdR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Bioactivity.html"><span class="CRAN">Bioactivity</span></a> (<a href="vignettes/Bioactivity.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Bioactivity.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Chemical.html"><span class="CRAN">Chemical</span></a> (<a href="vignettes/Chemical.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Chemical.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Exposure.html"><span class="CRAN">Exposure</span></a> (<a href="vignettes/Exposure.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Exposure.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Hazard.html"><span class="CRAN">Hazard</span></a> (<a href="vignettes/Hazard.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Hazard.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/Introduction.html"><span class="CRAN">"Getting started with ccdR: Introduction Vignette"</span></a> (<a href="vignettes/Introduction.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Introduction.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ccdR_1.1.0.tar.gz"> <span class="CRAN"> ccdR_1.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/ccdR_1.1.0.zip"><span class="CRAN">ccdR_1.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/ccdR_1.1.0.zip"><span class="CRAN">ccdR_1.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/ccdR_1.1.0.zip"><span class="CRAN">ccdR_1.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/ccdR_1.1.0.tgz"><span class="CRAN">ccdR_1.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/ccdR_1.1.0.tgz"><span class="CRAN">ccdR_1.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/ccdR_1.1.0.tgz"><span class="CRAN">ccdR_1.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/ccdR_1.1.0.tgz"><span class="CRAN">ccdR_1.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ccdR"> <span class="CRAN"> ccdR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ccdR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=ccdR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

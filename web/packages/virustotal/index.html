@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package virustotal</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=virustotal">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="R Client for the 'VirusTotal' API [R package virustotal version 0.6.0]">
+<meta name="citation_author" content="Gaurav Sood">
+<meta name="citation_publication_date" content="2026-04-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=virustotal">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=virustotal">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="virustotal: R Client for the 'VirusTotal' API">
+<meta property="og:description" content="Provides a comprehensive R interface to the 'VirusTotal' API v3.0 &amp;lt;&lt;a href=&quot;https://docs.virustotal.com/&quot; target=&quot;_top&quot;&gt;https://docs.virustotal.com/&lt;/a&gt;&amp;gt;, a Google service that analyzes files and URLs for viruses, worms, trojans and other malware. Features include file/URL scanning, domain categorization, passive DNS information, IP reputation analysis, IoC relationships, sandbox analysis, and comment/voting systems. Implements rate limiting, error handling, and response validation for robust security analysis workflows.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=virustotal">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>virustotal: R Client for the 'VirusTotal' API</h2>
+<p>Provides a comprehensive R interface to the 'VirusTotal' API v3.0
+    &lt;<a href="https://docs.virustotal.com/" target="_top">https://docs.virustotal.com/</a>&gt;, a Google service that analyzes files and
+    URLs for viruses, worms, trojans and other malware. Features include
+    file/URL scanning, domain categorization, passive DNS information, IP
+    reputation analysis, IoC relationships, sandbox analysis, and
+    comment/voting systems. Implements rate limiting, error handling, and
+    response validation for robust security analysis workflows.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../httr/index.html"><span class="CRAN">httr</span></a> (&ge; 1.4.0), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.0), <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a> (&ge; 0.1-3), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.7.0), <a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a> (&ge; 2.0.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.30), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../lintr/index.html"><span class="CRAN">lintr</span></a> (&ge; 3.0.0), <a href="../httptest/index.html"><span class="CRAN">httptest</span></a> (&ge; 4.0.0), <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.virustotal">10.32614/CRAN.package.virustotal</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gaurav Sood [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gaurav Sood  &#x3c;&#x67;&#x73;&#x6f;&#x6f;&#x64;&#x30;&#x37;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/themains/virustotal/issues" target="_top"><span class="GitHub">https://github.com/themains/virustotal/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/themains/virustotal" target="_top"><span class="GitHub">https://github.com/themains/virustotal</span></a>,
+<a href="https://themains.github.io/virustotal/" target="_top"><span class="GitHub">https://themains.github.io/virustotal/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">virustotal citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_virustotal.html"><span class="CRAN">virustotal results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/virustotal.html"><span class="CRAN">virustotal.html</span></a> ,  <a href="virustotal.pdf"><span class="CRAN">virustotal.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/using_virustotal.html"><span class="CRAN">Using virustotal</span></a> (<a href="vignettes/using_virustotal.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/using_virustotal.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/virustotal_0.6.0.tar.gz"> <span class="CRAN"> virustotal_0.6.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/virustotal_0.6.0.zip"><span class="CRAN">virustotal_0.6.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/virustotal_0.6.0.zip"><span class="CRAN">virustotal_0.6.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/virustotal_0.6.0.zip"><span class="CRAN">virustotal_0.6.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/virustotal_0.6.0.tgz"><span class="CRAN">virustotal_0.6.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/virustotal_0.5.0.tgz"><span class="CRAN">virustotal_0.5.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/virustotal_0.6.0.tgz"><span class="CRAN">virustotal_0.6.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/virustotal_0.6.0.tgz"><span class="CRAN">virustotal_0.6.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/virustotal"> <span class="CRAN"> virustotal archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../rdomains/index.html"><span class="CRAN">rdomains</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=virustotal"><span class="CRAN"><samp>https://CRAN.R-project.org/package=virustotal</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

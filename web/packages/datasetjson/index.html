@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package datasetjson</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=datasetjson">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Read and Write CDISC Dataset JSON Files [R package datasetjson version 0.3.0]">
+<meta name="citation_author1" content="Mike Stackhouse">
+<meta name="citation_author2" content="Nicholas Masel">
+<meta name="citation_publication_date" content="2025-01-30">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=datasetjson">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=datasetjson">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="datasetjson: Read and Write CDISC Dataset JSON Files">
+<meta property="og:description" content="Read, construct and write CDISC (Clinical Data Interchange Standards Consortium) Dataset JSON (JavaScript Object Notation) files, while validating per the Dataset JSON schema file, as described in CDISC (2023) &amp;lt;&lt;a href=&quot;https://www.cdisc.org/standards/data-exchange/dataset-json&quot; target=&quot;_top&quot;&gt;https://www.cdisc.org/standards/data-exchange/dataset-json&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=datasetjson">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>datasetjson: Read and Write CDISC Dataset JSON Files</h2>
+<p>Read, construct and write CDISC (Clinical Data Interchange Standards Consortium) Dataset JSON (JavaScript Object Notation) files, while validating per the Dataset JSON schema file, as described in CDISC (2023) &lt;<a href="https://www.cdisc.org/standards/data-exchange/dataset-json" target="_top">https://www.cdisc.org/standards/data-exchange/dataset-json</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../yyjsonr/index.html"><span class="CRAN">yyjsonr</span></a> (&ge; 0.1.18), <a href="../jsonvalidate/index.html"><span class="CRAN">jsonvalidate</span></a> (&ge; 1.3.1), <a href="../hms/index.html"><span class="CRAN">hms</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.1.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.8.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-01-30</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.datasetjson">10.32614/CRAN.package.datasetjson</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mike Stackhouse <a href="https://orcid.org/0000-0001-6030-723X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Nicholas Masel [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mike Stackhouse  &#x3c;&#x6d;&#x69;&#x6b;&#x65;&#x2e;&#x73;&#x74;&#x61;&#x63;&#x6b;&#x68;&#x6f;&#x75;&#x73;&#x65;&#x20;&#x61;&#x74;&#x20;&#x61;&#x74;&#x6f;&#x72;&#x75;&#x73;&#x72;&#x65;&#x73;&#x65;&#x61;&#x72;&#x63;&#x68;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/atorus-research/datasetjson/issues/" target="_top"><span class="GitHub">https://github.com/atorus-research/datasetjson/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://atorus-research.github.io/datasetjson/" target="_top"><span class="GitHub">https://atorus-research.github.io/datasetjson/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_datasetjson.html"><span class="CRAN">datasetjson results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/datasetjson.html"><span class="CRAN">datasetjson.html</span></a> ,  <a href="datasetjson.pdf"><span class="CRAN">datasetjson.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/converting_files.html"><span class="CRAN">Converting from XPT</span></a> (<a href="vignettes/converting_files.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/converting_files.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/datasetjson.html"><span class="CRAN">Getting Started</span></a> (<a href="vignettes/datasetjson.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/datasetjson.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/date_time_datetime.html"><span class="CRAN">date_time_datetime</span></a> (<a href="vignettes/date_time_datetime.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/date_time_datetime.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/odm_details.html"><span class="CRAN">Notes on ODM V2</span></a> (<a href="vignettes/odm_details.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/odm_details.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/precision.html"><span class="CRAN">precision</span></a> (<a href="vignettes/precision.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/precision.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/datasetjson_0.3.0.tar.gz"> <span class="CRAN"> datasetjson_0.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/datasetjson_0.3.0.zip"><span class="CRAN">datasetjson_0.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/datasetjson_0.3.0.zip"><span class="CRAN">datasetjson_0.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/datasetjson_0.3.0.zip"><span class="CRAN">datasetjson_0.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/datasetjson_0.3.0.tgz"><span class="CRAN">datasetjson_0.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/datasetjson_0.3.0.tgz"><span class="CRAN">datasetjson_0.3.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/datasetjson_0.3.0.tgz"><span class="CRAN">datasetjson_0.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/datasetjson_0.3.0.tgz"><span class="CRAN">datasetjson_0.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/datasetjson"> <span class="CRAN"> datasetjson archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=datasetjson"><span class="CRAN"><samp>https://CRAN.R-project.org/package=datasetjson</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

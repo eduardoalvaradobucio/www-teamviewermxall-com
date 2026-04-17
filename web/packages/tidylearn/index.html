@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package tidylearn</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=tidylearn">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="A Unified Tidy Interface to R's Machine Learning Ecosystem [R package tidylearn version 0.3.0]">
+<meta name="citation_author" content="Cesaire Tobias">
+<meta name="citation_publication_date" content="2026-04-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tidylearn">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tidylearn">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="tidylearn: A Unified Tidy Interface to R's Machine Learning Ecosystem">
+<meta property="og:description" content="Provides a unified tidyverse-compatible interface to R's machine learning ecosystem - from data ingestion to model publishing. The tl_read() family reads data from files ('CSV', 'Excel', 'Parquet', 'JSON'), databases ('SQLite', 'PostgreSQL', 'MySQL', 'BigQuery'), and cloud sources ('S3', 'GitHub', 'Kaggle'). The tl_model() function wraps established implementations from 'glmnet', 'randomForest', 'xgboost', 'e1071', 'rpart', 'gbm', 'nnet', 'cluster', 'dbscan', and others with consistent function signatures and tidy tibble output. Results flow into unified 'ggplot2'-based visualization and optional formatted 'gt' tables via the tl_table() family. The underlying algorithms are unchanged; 'tidylearn' simply makes them easier to use together. Access raw model objects via the $fit slot for package-specific functionality. Methods include random forests Breiman (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1010933404324&quot; target=&quot;_top&quot;&gt;doi:10.1023/A:1010933404324&lt;/a&gt;&amp;gt;, LASSO regression Tibshirani (1996) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.2517-6161.1996.tb02080.x&quot; target=&quot;_top&quot;&gt;doi:10.1111/j.2517-6161.1996.tb02080.x&lt;/a&gt;&amp;gt;, elastic net Zou and Hastie (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1467-9868.2005.00503.x&quot; target=&quot;_top&quot;&gt;doi:10.1111/j.1467-9868.2005.00503.x&lt;/a&gt;&amp;gt;, support vector machines Cortes and Vapnik (1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00994018&quot; target=&quot;_top&quot;&gt;doi:10.1007/BF00994018&lt;/a&gt;&amp;gt;, and gradient boosting Friedman (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2Faos%2F1013203451&quot; target=&quot;_top&quot;&gt;doi:10.1214/aos/1013203451&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=tidylearn">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>tidylearn: A Unified Tidy Interface to R's Machine Learning Ecosystem</h2>
+<p>Provides a unified tidyverse-compatible interface to R's machine
+    learning ecosystem - from data ingestion to model publishing. The tl_read()
+    family reads data from files ('CSV', 'Excel', 'Parquet', 'JSON'), databases
+    ('SQLite', 'PostgreSQL', 'MySQL', 'BigQuery'), and cloud sources ('S3',
+    'GitHub', 'Kaggle'). The tl_model() function wraps established
+    implementations from 'glmnet', 'randomForest', 'xgboost', 'e1071', 'rpart',
+    'gbm', 'nnet', 'cluster', 'dbscan', and others with consistent function
+    signatures and tidy tibble output. Results flow into unified 'ggplot2'-based
+    visualization and optional formatted 'gt' tables via the tl_table() family.
+    The underlying algorithms are unchanged; 'tidylearn' simply makes them
+    easier to use together. Access raw model objects via the $fit slot for
+    package-specific functionality.
+    Methods include random forests Breiman (2001) &lt;<a href="https://doi.org/10.1023%2FA%3A1010933404324" target="_top">doi:10.1023/A:1010933404324</a>&gt;,
+    LASSO regression Tibshirani (1996) &lt;<a href="https://doi.org/10.1111%2Fj.2517-6161.1996.tb02080.x" target="_top">doi:10.1111/j.2517-6161.1996.tb02080.x</a>&gt;,
+    elastic net Zou and Hastie (2005) &lt;<a href="https://doi.org/10.1111%2Fj.1467-9868.2005.00503.x" target="_top">doi:10.1111/j.1467-9868.2005.00503.x</a>&gt;,
+    support vector machines Cortes and Vapnik (1995) &lt;<a href="https://doi.org/10.1007%2FBF00994018" target="_top">doi:10.1007/BF00994018</a>&gt;,
+    and gradient boosting Friedman (2001) &lt;<a href="https://doi.org/10.1214%2Faos%2F1013203451" target="_top">doi:10.1214/aos/1013203451</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.0), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.3.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.0.0), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 1.0.0), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a> (&ge; 0.3.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 0.4.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../e1071/index.html"><span class="CRAN">e1071</span></a>, <a href="../gbm/index.html"><span class="CRAN">gbm</span></a>, <a href="../glmnet/index.html"><span class="CRAN">glmnet</span></a>, <a href="../nnet/index.html"><span class="CRAN">nnet</span></a>, <a href="../randomForest/index.html"><span class="CRAN">randomForest</span></a>, <a href="../rpart/index.html"><span class="CRAN">rpart</span></a>, <a href="../rsample/index.html"><span class="CRAN">rsample</span></a>, <a href="../ROCR/index.html"><span class="CRAN">ROCR</span></a>, <a href="../yardstick/index.html"><span class="CRAN">yardstick</span></a>, <a href="../cluster/index.html"><span class="CRAN">cluster</span></a> (&ge; 2.1.0), <a href="../dbscan/index.html"><span class="CRAN">dbscan</span></a> (&ge; 1.1.0), <a href="../MASS/index.html"><span class="CRAN">MASS</span></a>, <a href="../smacof/index.html"><span class="CRAN">smacof</span></a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arules/index.html"><span class="CRAN">arules</span></a>, <a href="../arulesViz/index.html"><span class="CRAN">arulesViz</span></a>, <a href="../bigrquery/index.html"><span class="CRAN">bigrquery</span></a>, <a href="../car/index.html"><span class="CRAN">car</span></a>, <a href="../caret/index.html"><span class="CRAN">caret</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../GGally/index.html"><span class="CRAN">GGally</span></a>, <a href="../ggforce/index.html"><span class="CRAN">ggforce</span></a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../gt/index.html"><span class="CRAN">gt</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../keras/index.html"><span class="CRAN">keras</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lmtest/index.html"><span class="CRAN">lmtest</span></a>, <a href="../mclust/index.html"><span class="CRAN">mclust</span></a>, <a href="../moments/index.html"><span class="CRAN">moments</span></a>, <a href="../nanoparquet/index.html"><span class="CRAN">nanoparquet</span></a>, <a href="../NeuralNetTools/index.html"><span class="CRAN">NeuralNetTools</span></a>, <a href="../onnx/index.html"><span class="CRAN">onnx</span></a>, <a href="../parsnip/index.html"><span class="CRAN">parsnip</span></a>, <a href="../paws.storage/index.html"><span class="CRAN">paws.storage</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../recipes/index.html"><span class="CRAN">recipes</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a>, <a href="../RMariaDB/index.html"><span class="CRAN">RMariaDB</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a>, <a href="../rpart.plot/index.html"><span class="CRAN">rpart.plot</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinydashboard/index.html"><span class="CRAN">shinydashboard</span></a>, <a href="../tensorflow/index.html"><span class="CRAN">tensorflow</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../workflows/index.html"><span class="CRAN">workflows</span></a>, <a href="../xgboost/index.html"><span class="CRAN">xgboost</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.tidylearn">10.32614/CRAN.package.tidylearn</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Cesaire Tobias [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Cesaire Tobias  &#x3c;&#x63;&#x65;&#x73;&#x61;&#x69;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x73;&#x68;&#x65;&#x65;&#x74;&#x73;&#x6f;&#x6c;&#x76;&#x65;&#x64;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ces0491/tidylearn/issues" target="_top"><span class="GitHub">https://github.com/ces0491/tidylearn/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ces0491/tidylearn" target="_top"><span class="GitHub">https://github.com/ces0491/tidylearn</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">tidylearn citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tidylearn.html"><span class="CRAN">tidylearn results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/tidylearn.html"><span class="CRAN">tidylearn.html</span></a> ,  <a href="tidylearn.pdf"><span class="CRAN">tidylearn.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/automl.html"><span class="CRAN">Automated Machine Learning with tidylearn</span></a> (<a href="vignettes/automl.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/automl.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/data-ingestion.html"><span class="CRAN">Data Ingestion with tidylearn</span></a> (<a href="vignettes/data-ingestion.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/data-ingestion.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting-started.html"><span class="CRAN">Getting Started with tidylearn</span></a> (<a href="vignettes/getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/integration-workflows.html"><span class="CRAN">Integration Workflows: Combining Supervised and Unsupervised Learning</span></a> (<a href="vignettes/integration-workflows.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/integration-workflows.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/reporting.html"><span class="CRAN">Reporting with tidylearn</span></a> (<a href="vignettes/reporting.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/reporting.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/supervised-learning.html"><span class="CRAN">Supervised Learning with tidylearn</span></a> (<a href="vignettes/supervised-learning.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/supervised-learning.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/unsupervised-learning.html"><span class="CRAN">Unsupervised Learning with tidylearn</span></a> (<a href="vignettes/unsupervised-learning.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/unsupervised-learning.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tidylearn_0.3.0.tar.gz"> <span class="CRAN"> tidylearn_0.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/tidylearn_0.3.0.zip"><span class="CRAN">tidylearn_0.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/tidylearn_0.3.0.zip"><span class="CRAN">tidylearn_0.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/tidylearn_0.3.0.zip"><span class="CRAN">tidylearn_0.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/tidylearn_0.3.0.tgz"><span class="CRAN">tidylearn_0.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/tidylearn_0.2.0.tgz"><span class="CRAN">tidylearn_0.2.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/tidylearn_0.3.0.tgz"><span class="CRAN">tidylearn_0.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/tidylearn_0.3.0.tgz"><span class="CRAN">tidylearn_0.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tidylearn"> <span class="CRAN"> tidylearn archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tidylearn"><span class="CRAN"><samp>https://CRAN.R-project.org/package=tidylearn</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

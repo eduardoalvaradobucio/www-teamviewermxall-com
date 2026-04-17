@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package lightgbm</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=lightgbm">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Light Gradient Boosting Machine [R package lightgbm version 4.6.0]">
+<meta name="citation_author1" content="Yu Shi">
+<meta name="citation_author2" content="Guolin Ke">
+<meta name="citation_author3" content="Damien Soukhavong">
+<meta name="citation_author4" content="James Lamb">
+<meta name="citation_author5" content="Qi Meng">
+<meta name="citation_author6" content="Thomas Finley">
+<meta name="citation_author7" content="Taifeng Wang">
+<meta name="citation_author8" content="Wei Chen">
+<meta name="citation_author9" content="Weidong Ma">
+<meta name="citation_author10" content="Qiwei Ye">
+<meta name="citation_author11" content="Tie-Yan Liu">
+<meta name="citation_author12" content="Nikita Titov">
+<meta name="citation_author13" content="David Cortes">
+<meta name="citation_publication_date" content="2025-02-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lightgbm">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lightgbm">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="lightgbm: Light Gradient Boosting Machine">
+<meta property="og:description" content="Tree based algorithms can be improved by introducing boosting frameworks. 'LightGBM' is one such framework, based on Ke, Guolin et al. (2017) &amp;lt;&lt;a href=&quot;https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision&quot; target=&quot;_top&quot;&gt;https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision&lt;/a&gt;&amp;gt;. This package offers an R interface to work with it. It is designed to be distributed and efficient with the following advantages: 1. Faster training speed and higher efficiency. 2. Lower memory usage. 3. Better accuracy. 4. Parallel learning supported. 5. Capable of handling large-scale data. In recognition of these advantages, 'LightGBM' has been widely-used in many winning solutions of machine learning competitions. Comparison experiments on public datasets suggest that 'LightGBM' can outperform existing boosting frameworks on both efficiency and accuracy, with significantly lower memory consumption. In addition, parallel experiments suggest that in certain circumstances, 'LightGBM' can achieve a linear speed-up in training time by using multiple machines.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=lightgbm">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>lightgbm: Light Gradient Boosting Machine</h2>
+<p>Tree based algorithms can be improved by introducing boosting frameworks.
+    'LightGBM' is one such framework, based on Ke, Guolin et al. (2017) &lt;<a href="https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision" target="_top">https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision</a>&gt;.
+    This package offers an R interface to work with it.
+    It is designed to be distributed and efficient with the following advantages:
+        1. Faster training speed and higher efficiency.
+        2. Lower memory usage.
+        3. Better accuracy.
+        4. Parallel learning supported.
+        5. Capable of handling large-scale data.
+    In recognition of these advantages, 'LightGBM' has been widely-used in many winning solutions of machine learning competitions.
+    Comparison experiments on public datasets suggest that 'LightGBM' can outperform existing boosting frameworks on both efficiency and accuracy, with significantly lower memory consumption. In addition, parallel experiments suggest that in certain circumstances, 'LightGBM' can achieve a linear speed-up in training time by using multiple machines.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>4.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../R6/index.html"><span class="CRAN">R6</span></a> (&ge; 2.0), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.9.6), <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge;
+1.0), <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a> (&ge; 1.1-0), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../RhpcBLASctl/index.html"><span class="CRAN">RhpcBLASctl</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-02-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.lightgbm">10.32614/CRAN.package.lightgbm</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yu Shi [aut],
+  Guolin Ke [aut],
+  Damien Soukhavong [aut],
+  James Lamb [aut, cre],
+  Qi Meng [aut],
+  Thomas Finley [aut],
+  Taifeng Wang [aut],
+  Wei Chen [aut],
+  Weidong Ma [aut],
+  Qiwei Ye [aut],
+  Tie-Yan Liu [aut],
+  Nikita Titov [aut],
+  Yachen Yan [ctb],
+  Microsoft Corporation [cph],
+  Dropbox, Inc. [cph],
+  Alberto Ferreira [ctb],
+  Daniel Lemire [ctb],
+  Victor Zverovich [cph],
+  IBM Corporation [ctb],
+  David Cortes [aut],
+  Michael Mayer [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>James Lamb  &#x3c;&#x6a;&#x61;&#x79;&#x6c;&#x61;&#x6d;&#x62;&#x32;&#x30;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Microsoft/LightGBM/issues" target="_top"><span class="GitHub">https://github.com/Microsoft/LightGBM/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Microsoft/LightGBM" target="_top"><span class="GitHub">https://github.com/Microsoft/LightGBM</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++17</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MachineLearning.html"><span class="CRAN">MachineLearning</span></a>, <a href="../../views/ModelDeployment.html"><span class="CRAN">ModelDeployment</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lightgbm.html"><span class="CRAN">lightgbm results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/lightgbm.html"><span class="CRAN">lightgbm.html</span></a> ,  <a href="lightgbm.pdf"><span class="CRAN">lightgbm.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/basic_walkthrough.html"><span class="CRAN">Basic Walkthrough</span></a> (<a href="vignettes/basic_walkthrough.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/basic_walkthrough.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lightgbm_4.6.0.tar.gz"> <span class="CRAN"> lightgbm_4.6.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/lightgbm_4.6.0.zip"><span class="CRAN">lightgbm_4.6.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/lightgbm_4.6.0.zip"><span class="CRAN">lightgbm_4.6.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/lightgbm_4.6.0.zip"><span class="CRAN">lightgbm_4.6.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/lightgbm_4.6.0.tgz"><span class="CRAN">lightgbm_4.6.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/lightgbm_4.6.0.tgz"><span class="CRAN">lightgbm_4.6.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/lightgbm_4.6.0.tgz"><span class="CRAN">lightgbm_4.6.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/lightgbm_4.6.0.tgz"><span class="CRAN">lightgbm_4.6.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lightgbm"> <span class="CRAN"> lightgbm archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../cbl/index.html"><span class="CRAN">cbl</span></a>, <a href="../MFF/index.html"><span class="CRAN">MFF</span></a>, <a href="../misspi/index.html"><span class="CRAN">misspi</span></a>, <a href="../predhy/index.html"><span class="CRAN">predhy</span></a>, <a href="../predhy.GUI/index.html"><span class="CRAN">predhy.GUI</span></a>, <a href="../qshap/index.html"><span class="CRAN">qshap</span></a>, <a href="../sae.projection/index.html"><span class="CRAN">sae.projection</span></a>, <a href="../ubair/index.html"><span class="CRAN">ubair</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bonsai/index.html"><span class="CRAN">bonsai</span></a>, <a href="../BORG/index.html"><span class="CRAN">BORG</span></a>, <a href="../comets/index.html"><span class="CRAN">comets</span></a>, <a href="../EIX/index.html"><span class="CRAN">EIX</span></a>, <a href="../fastml/index.html"><span class="CRAN">fastml</span></a>, <a href="../interflex/index.html"><span class="CRAN">interflex</span></a>, <a href="../ml/index.html"><span class="CRAN">ml</span></a>, <a href="../mllrnrs/index.html"><span class="CRAN">mllrnrs</span></a>, <a href="../orbital/index.html"><span class="CRAN">orbital</span></a>, <a href="../PatientLevelPrediction/index.html"><span class="CRAN">PatientLevelPrediction</span></a>, <a href="../qeML/index.html"><span class="CRAN">qeML</span></a>, <a href="../r2pmml/index.html"><span class="CRAN">r2pmml</span></a>, <a href="../rtemis/index.html"><span class="CRAN">rtemis</span></a>, <a href="../SHAPforxgboost/index.html"><span class="CRAN">SHAPforxgboost</span></a>, <a href="../sits/index.html"><span class="CRAN">sits</span></a>, <a href="../stackgbm/index.html"><span class="CRAN">stackgbm</span></a>, <a href="../tidypredict/index.html"><span class="CRAN">tidypredict</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../fastshap/index.html"><span class="CRAN">fastshap</span></a>, <a href="../shapviz/index.html"><span class="CRAN">shapviz</span></a>, <a href="../vip/index.html"><span class="CRAN">vip</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lightgbm"><span class="CRAN"><samp>https://CRAN.R-project.org/package=lightgbm</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

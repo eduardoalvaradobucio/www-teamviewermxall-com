@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package RDesk</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=RDesk">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Native Desktop App Framework for 'R' [R package RDesk version 1.0.4]">
+<meta name="citation_author" content="Janakiraman G">
+<meta name="citation_publication_date" content="2026-03-31">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RDesk">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RDesk">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="RDesk: Native Desktop App Framework for 'R'">
+<meta property="og:description" content="Build native Windows desktop applications using 'R' and 'WebView2'. Provides a robust 'R6'-based event loop, asynchronous background task management via 'mirai' and 'callr', and a native 'Win32' message bridge for seamless 'R'-to-user-interface communication without listening ports or network overhead. Allows 'R' developers to create professional, standalone desktop tools with modern web-based user interfaces while maintaining a pure 'R' backend.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=RDesk">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>RDesk: Native Desktop App Framework for 'R'</h2>
+<p>Build native Windows desktop applications using 'R' and 
+    'WebView2'. Provides a robust 'R6'-based event loop, asynchronous 
+    background task management via 'mirai' and 'callr', and a native 
+    'Win32' message bridge for seamless 'R'-to-user-interface 
+    communication without listening ports or network overhead. Allows 'R' 
+    developers to create professional, standalone desktop tools with modern 
+    web-based user interfaces while maintaining a pure 'R' backend.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.4</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../processx/index.html"><span class="CRAN">processx</span></a>, <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../mirai/index.html"><span class="CRAN">mirai</span></a> (&ge; 1.0.0), <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../zip/index.html"><span class="CRAN">zip</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/parallel/refman/parallel.html" target="_top">parallel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a>, <a href="../renv/index.html"><span class="CRAN">renv</span></a>, <a href="../broom/index.html"><span class="CRAN">broom</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a>, <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a></td>
+</tr>
+<tr>
+<td>OS_type:</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-31</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.RDesk">10.32614/CRAN.package.RDesk</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Janakiraman G <a href="https://orcid.org/0000-0001-6050-2318" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Serge Zaitsev [cph] (Author of webview library (src/webview/webview.h)),
+  Niels Lohmann [cph] (Author of nlohmann/json
+    (inst/include/nlohmann/json.hpp)),
+  Microsoft Corporation [cph] (WebView2 SDK (src/webview2_sdk/))</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Janakiraman G  &#x3c;&#x6a;&#x61;&#x6e;&#x61;&#x6b;&#x69;&#x72;&#x61;&#x6d;&#x61;&#x6e;&#x2e;&#x62;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Janakiraman-311/RDesk/issues" target="_top"><span class="GitHub">https://github.com/Janakiraman-311/RDesk/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS"><span class="CRAN">COPYRIGHTS</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Janakiraman-311/RDesk" target="_top"><span class="GitHub">https://github.com/Janakiraman-311/RDesk</span></a>,
+<a href="https://janakiraman-311.github.io/RDesk/" target="_top"><span class="GitHub">https://janakiraman-311.github.io/RDesk/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Windows 10 or later, 'Rtools44' or later
+(https://cran.r-project.org/bin/windows/Rtools/), Microsoft
+'WebView2' Runtime
+(https://developer.microsoft.com/microsoft-edge/webview2/)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RDesk.html"><span class="CRAN">RDesk results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/RDesk.html"><span class="CRAN">RDesk.html</span></a> ,  <a href="RDesk.pdf"><span class="CRAN">RDesk.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/architecture.html"><span class="CRAN">Architecture</span></a> (<a href="vignettes/architecture.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/architecture.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/async-guide.html"><span class="CRAN">Async &amp; Background Tasks in RDesk</span></a> (<a href="vignettes/async-guide.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/async-guide.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/cookbook.html"><span class="CRAN">Cookbook</span></a> (<a href="vignettes/cookbook.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/cookbook.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting-started.html"><span class="CRAN">Getting Started with RDesk</span></a> (<a href="vignettes/getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ipc-contract.html"><span class="CRAN">RDesk IPC Message Contract</span></a> (<a href="vignettes/ipc-contract.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ipc-contract.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/shiny-migration.html"><span class="CRAN">Coming from Shiny</span></a> (<a href="vignettes/shiny-migration.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/shiny-migration.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RDesk_1.0.4.tar.gz"> <span class="CRAN"> RDesk_1.0.4.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/RDesk_1.0.4.zip"><span class="CRAN">RDesk_1.0.4.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/RDesk_1.0.4.zip"><span class="CRAN">RDesk_1.0.4.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/RDesk_1.0.4.zip"><span class="CRAN">RDesk_1.0.4.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): not available, r-oldrel (arm64): not available, r-release (x86_64): not available, r-oldrel (x86_64): not available </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RDesk"><span class="CRAN"><samp>https://CRAN.R-project.org/package=RDesk</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

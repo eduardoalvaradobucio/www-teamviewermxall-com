@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package hereR</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=hereR">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="'sf'-Based Interface to the 'HERE' REST APIs [R package hereR version 1.1.0]">
+<meta name="citation_author" content="Merlin Unterfinger">
+<meta name="citation_publication_date" content="2025-02-20">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hereR">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hereR">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="hereR: 'sf'-Based Interface to the 'HERE' REST APIs">
+<meta property="og:description" content="Interface to the 'HERE' REST APIs &amp;lt;&lt;a href=&quot;https://developer.here.com/develop/rest-apis&quot; target=&quot;_top&quot;&gt;https://developer.here.com/develop/rest-apis&lt;/a&gt;&amp;gt;: (1) geocode and autosuggest addresses or reverse geocode POIs using the 'Geocoder' API; (2) route directions, travel distance or time matrices and isolines using the 'Routing', 'Matrix Routing' and 'Isoline Routing' APIs; (3) request real-time traffic flow and incident information from the 'Traffic' API; (4) find request public transport connections and nearby stations from the 'Public Transit' API; (5) request intermodal routes using the 'Intermodal Routing' API; (6) get weather forecasts, reports on current weather conditions, astronomical information and alerts at a specific location from the 'Destination Weather' API. Locations, routes and isolines are returned as 'sf' objects.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=hereR">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>hereR: 'sf'-Based Interface to the 'HERE' REST APIs</h2>
+<p>Interface to the 'HERE' REST APIs &lt;<a href="https://developer.here.com/develop/rest-apis" target="_top">https://developer.here.com/develop/rest-apis</a>&gt;:
+  (1) geocode and autosuggest addresses or reverse geocode POIs using the 'Geocoder' API;
+  (2) route directions, travel distance or time matrices and isolines using the 'Routing', 'Matrix Routing' and 'Isoline Routing' APIs;
+  (3) request real-time traffic flow and incident information from the 'Traffic' API;
+  (4) find request public transport connections and nearby stations from the 'Public Transit' API;
+  (5) request intermodal routes using the 'Intermodal Routing' API;
+  (6) get weather forecasts, reports on current weather conditions, astronomical
+  information and alerts at a specific location from the 'Destination Weather' API.
+  Locations, routes and isolines are returned as 'sf' objects.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../crul/index.html"><span class="CRAN">crul</span></a> (&ge; 1.1.0), <a href="../curl/index.html"><span class="CRAN">curl</span></a> (&ge; 4.3), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge; 1.13.0), <a href="../flexpolyline/index.html"><span class="CRAN">flexpolyline</span></a> (&ge; 0.2.0), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.7.0), <a href="../sf/index.html"><span class="CRAN">sf</span></a> (&ge; 0.9-0), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge; 1.4.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a> (&ge; 3.5.0), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.3.2), <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a> (&ge; 1.5.1), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.29), <a href="../leafpop/index.html"><span class="CRAN">leafpop</span></a> (&ge; 0.0.5), <a href="../lwgeom/index.html"><span class="CRAN">lwgeom</span></a> (&ge; 0.2-5), <a href="../mapview/index.html"><span class="CRAN">mapview</span></a> (&ge; 2.9.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.3), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.3.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-02-20</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.hereR">10.32614/CRAN.package.hereR</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Merlin Unterfinger
+    <a href="https://orcid.org/0000-0003-2020-2366" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre],
+  Daniel Possenriede
+    <a href="https://orcid.org/0000-0002-6738-9845" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Merlin Unterfinger  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x75;&#x6e;&#x74;&#x65;&#x72;&#x66;&#x69;&#x6e;&#x67;&#x65;&#x72;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/munterfi/hereR/issues/" target="_top"><span class="GitHub">https://github.com/munterfi/hereR/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://munterfi.github.io/hereR/" target="_top"><span class="GitHub">https://munterfi.github.io/hereR/</span></a>,
+<a href="https://github.com/munterfi/hereR/" target="_top"><span class="GitHub">https://github.com/munterfi/hereR/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hereR.html"><span class="CRAN">hereR results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/hereR.html"><span class="CRAN">hereR.html</span></a> ,  <a href="hereR.pdf"><span class="CRAN">hereR.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/authentication.html"><span class="CRAN">Authentication &amp; Options</span></a> (<a href="vignettes/authentication.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/authentication.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/geocoder.html"><span class="CRAN">Geocoding &amp; Search API</span></a> (<a href="vignettes/geocoder.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/geocoder.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/intermodal.html"><span class="CRAN">Intermodal Routing API</span></a> (<a href="vignettes/intermodal.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/intermodal.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/routing.html"><span class="CRAN">Routing APIs</span></a> (<a href="vignettes/routing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/routing.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/traffic.html"><span class="CRAN">Traffic API</span></a> (<a href="vignettes/traffic.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/traffic.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/transit.html"><span class="CRAN">Public Transit API</span></a> (<a href="vignettes/transit.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/transit.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/weather.html"><span class="CRAN">Destination Weather API</span></a> (<a href="vignettes/weather.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/weather.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hereR_1.1.0.tar.gz"> <span class="CRAN"> hereR_1.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/hereR_1.1.0.zip"><span class="CRAN">hereR_1.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/hereR_1.1.0.zip"><span class="CRAN">hereR_1.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/hereR_1.1.0.zip"><span class="CRAN">hereR_1.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/hereR_1.1.0.tgz"><span class="CRAN">hereR_1.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/hereR_1.1.0.tgz"><span class="CRAN">hereR_1.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/hereR_1.1.0.tgz"><span class="CRAN">hereR_1.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/hereR_1.1.0.tgz"><span class="CRAN">hereR_1.1.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hereR"> <span class="CRAN"> hereR archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hereR"><span class="CRAN"><samp>https://CRAN.R-project.org/package=hereR</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

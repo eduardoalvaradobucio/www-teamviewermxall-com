@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package osmdata</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=osmdata">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Import 'OpenStreetMap' Data as Simple Features or Spatial Objects [R package osmdata version 0.3.0]">
+<meta name="citation_author1" content="Joan Maspons">
+<meta name="citation_author2" content="Mark Padgham">
+<meta name="citation_author3" content="Bob Rudis">
+<meta name="citation_author4" content="Robin Lovelace">
+<meta name="citation_author5" content="Maëlle Salmon">
+<meta name="citation_publication_date" content="2025-08-23">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=osmdata">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=osmdata">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="osmdata: Import 'OpenStreetMap' Data as Simple Features or Spatial Objects">
+<meta property="og:description" content="Download and import of 'OpenStreetMap' ('OSM') data as 'sf' or 'sp' objects. 'OSM' data are extracted from the 'Overpass' web server (&amp;lt;&lt;a href=&quot;https://overpass-api.de/&quot; target=&quot;_top&quot;&gt;https://overpass-api.de/&lt;/a&gt;&amp;gt;) and processed with very fast 'C++' routines for return to 'R'.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=osmdata">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>osmdata: Import 'OpenStreetMap' Data as Simple Features or Spatial
+Objects</h2>
+<p>Download and import of 'OpenStreetMap' ('OSM') data as 'sf'
+    or 'sp' objects.  'OSM' data are extracted from the 'Overpass' web
+    server (&lt;<a href="https://overpass-api.de/" target="_top">https://overpass-api.de/</a>&gt;) and processed with very fast 'C++'
+    routines for return to 'R'.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 0.12.4), <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../httptest2/index.html"><span class="CRAN">httptest2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../sp/index.html"><span class="CRAN">sp</span></a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-23</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.osmdata">10.32614/CRAN.package.osmdata</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joan Maspons <a href="https://orcid.org/0000-0003-2286-8727" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Mark Padgham [aut],
+  Bob Rudis [aut],
+  Robin Lovelace [aut],
+  Maëlle Salmon [aut],
+  Andrew Smith [ctb],
+  James Smith [ctb],
+  Andrea Gilardi [ctb],
+  Enrico Spinielli [ctb],
+  Anthony North [ctb],
+  Martin Machyna [ctb],
+  Marcin Kalicinski [ctb, cph] (Author of included RapidXML code),
+  Eli Pousson <a href="https://orcid.org/0000-0001-8280-1706" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joan Maspons  &#x3c;&#x6a;&#x6f;&#x61;&#x6e;&#x6d;&#x61;&#x73;&#x70;&#x6f;&#x6e;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/osmdata/issues" target="_top"><span class="GitHub">https://github.com/ropensci/osmdata/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/osmdata/" target="_top">https://docs.ropensci.org/osmdata/</a>,
+<a href="https://github.com/ropensci/osmdata" target="_top"><span class="GitHub">https://github.com/ropensci/osmdata</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">osmdata citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html"><span class="CRAN">Spatial</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_osmdata.html"><span class="CRAN">osmdata results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/osmdata.html"><span class="CRAN">osmdata.html</span></a> ,  <a href="osmdata.pdf"><span class="CRAN">osmdata.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/osm-sf-translation.html"><span class="CRAN">3. OSM to Simple Features</span></a> (<a href="vignettes/osm-sf-translation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/osm-sf-translation.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/osmdata-sc.html"><span class="CRAN">2. osmdata_sc</span></a> (<a href="vignettes/osmdata-sc.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/osmdata-sc.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/osmdata.html"><span class="CRAN">1. osmdata</span></a> (<a href="vignettes/osmdata.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/osmdata.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/query-split.html"><span class="CRAN">4. query-split</span></a> (<a href="vignettes/query-split.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/query-split.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/osmdata_0.3.0.tar.gz"> <span class="CRAN"> osmdata_0.3.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/osmdata_0.3.0.zip"><span class="CRAN">osmdata_0.3.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/osmdata_0.3.0.zip"><span class="CRAN">osmdata_0.3.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/osmdata_0.3.0.zip"><span class="CRAN">osmdata_0.3.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/osmdata_0.3.0.tgz"><span class="CRAN">osmdata_0.3.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/osmdata_0.3.0.tgz"><span class="CRAN">osmdata_0.3.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/osmdata_0.3.0.tgz"><span class="CRAN">osmdata_0.3.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/osmdata_0.3.0.tgz"><span class="CRAN">osmdata_0.3.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/osmdata"> <span class="CRAN"> osmdata archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../cft/index.html"><span class="CRAN">cft</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../cartographr/index.html"><span class="CRAN">cartographr</span></a>, <a href="../dodgr/index.html"><span class="CRAN">dodgr</span></a>, <a href="../greenR/index.html"><span class="CRAN">greenR</span></a>, <a href="../lakefetch/index.html"><span class="CRAN">lakefetch</span></a>, <a href="../populR/index.html"><span class="CRAN">populR</span></a>, <a href="../rcrisp/index.html"><span class="CRAN">rcrisp</span></a>, <a href="../streetscape/index.html"><span class="CRAN">streetscape</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../mapscanner/index.html"><span class="CRAN">mapscanner</span></a>, <a href="../MetricGraph/index.html"><span class="CRAN">MetricGraph</span></a>, <a href="../ohsome/index.html"><span class="CRAN">ohsome</span></a>, <a href="../rayshader/index.html"><span class="CRAN">rayshader</span></a>, <a href="../stats19/index.html"><span class="CRAN">stats19</span></a>, <a href="../tmaptools/index.html"><span class="CRAN">tmaptools</span></a>, <a href="../trafficCAR/index.html"><span class="CRAN">trafficCAR</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=osmdata"><span class="CRAN"><samp>https://CRAN.R-project.org/package=osmdata</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

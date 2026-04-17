@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package aNCA</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=aNCA">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="(Pre-)Clinical NCA in a Dynamic Shiny App [R package aNCA version 0.1.0]">
+<meta name="citation_author1" content="Ercan Suekuer">
+<meta name="citation_author2" content="Gerardo Jose Rodriguez">
+<meta name="citation_author3" content="Pascal Baertschi">
+<meta name="citation_author4" content="Jana Spinner">
+<meta name="citation_author5" content="Mateusz Kolomanski">
+<meta name="citation_author6" content="Lucy Aspridis">
+<meta name="citation_author7" content="Valentin Legras">
+<meta name="citation_publication_date" content="2025-12-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=aNCA">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=aNCA">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="aNCA: (Pre-)Clinical NCA in a Dynamic Shiny App">
+<meta property="og:description" content="An interactive 'shiny' application for performing non-compartmental analysis (NCA) on pre-clinical and clinical pharmacokinetic data. The package builds on 'PKNCA' for core estimators and provides interactive visualizations, CDISC outputs ('ADNCA', 'PP', 'ADPP') and configurable TLGs (tables, listings, and graphs). Typical use cases include exploratory analysis, validation, reporting or teaching/demonstration of NCA methods. Methods and core estimators are described in Denney, Duvvuri, and Buckeridge (2015) &quot;Simple, Automatic Noncompartmental Analysis: The PKNCA R Package&quot; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10928-015-9432-2&quot; target=&quot;_top&quot;&gt;doi:10.1007/s10928-015-9432-2&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=aNCA">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>aNCA: (Pre-)Clinical NCA in a Dynamic Shiny App</h2>
+<p>An interactive 'shiny' application for performing non-compartmental analysis (NCA) on
+  pre-clinical and clinical pharmacokinetic data. The package builds on 'PKNCA' for core estimators and provides interactive visualizations, CDISC
+  outputs ('ADNCA', 'PP', 'ADPP') and configurable TLGs (tables, listings, and graphs). Typical use cases include exploratory
+  analysis, validation, reporting or teaching/demonstration of NCA methods. Methods and core
+  estimators are described in Denney, Duvvuri, and Buckeridge (2015) "Simple, Automatic
+  Noncompartmental Analysis: The PKNCA R Package" &lt;<a href="https://doi.org/10.1007%2Fs10928-015-9432-2" target="_top">doi:10.1007/s10928-015-9432-2</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../formatters/index.html"><span class="CRAN">formatters</span></a>, <a href="../flextable/index.html"><span class="CRAN">flextable</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../officer/index.html"><span class="CRAN">officer</span></a>, <a href="../PKNCA/index.html"><span class="CRAN">PKNCA</span></a> (&ge; 0.12.1), <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../rlistings/index.html"><span class="CRAN">rlistings</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tern/index.html"><span class="CRAN">tern</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../units/index.html"><span class="CRAN">units</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../ggh4x/index.html"><span class="CRAN">ggh4x</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lintr/index.html"><span class="CRAN">lintr</span></a> (&ge; 3.1.2), <a href="../logger/index.html"><span class="CRAN">logger</span></a>, <a href="../markdown/index.html"><span class="CRAN">markdown</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../nestcolor/index.html"><span class="CRAN">nestcolor</span></a>, <a href="../openxlsx2/index.html"><span class="CRAN">openxlsx2</span></a>, <a href="../pak/index.html"><span class="CRAN">pak</span></a>, <a href="../reactable/index.html"><span class="CRAN">reactable</span></a>, <a href="../reactable.extras/index.html"><span class="CRAN">reactable.extras</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../sass/index.html"><span class="CRAN">sass</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../shinycssloaders/index.html"><span class="CRAN">shinycssloaders</span></a>, <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../shinyjqui/index.html"><span class="CRAN">shinyjqui</span></a>, <a href="../shinytest2/index.html"><span class="CRAN">shinytest2</span></a>, <a href="../shinyWidgets/index.html"><span class="CRAN">shinyWidgets</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../quarto/index.html"><span class="CRAN">quarto</span></a>, <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.aNCA">10.32614/CRAN.package.aNCA</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ercan Suekuer <a href="https://orcid.org/0009-0001-1626-1526" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Gerardo Jose Rodriguez
+    <a href="https://orcid.org/0000-0003-1413-0060" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Pascal Baertschi <a href="https://orcid.org/0000-0002-6533-0399" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Jana Spinner <a href="https://orcid.org/0009-0009-2197-9530" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Mateusz Kolomanski
+    <a href="https://orcid.org/0000-0001-7424-3919" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Lucy Aspridis <a href="https://orcid.org/0009-0003-1300-3622" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Valentin Legras [aut, cre],
+  F. Hoffmann-La Roche AG [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Valentin Legras  &#x3c;&#x61;&#x6e;&#x63;&#x61;&#x2e;&#x70;&#x68;&#x61;&#x72;&#x6d;&#x61;&#x76;&#x65;&#x72;&#x73;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/pharmaverse/aNCA/issues" target="_top"><span class="GitHub">https://github.com/pharmaverse/aNCA/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://pharmaverse.github.io/aNCA/" target="_top"><span class="GitHub">https://pharmaverse.github.io/aNCA/</span></a>,
+<a href="https://github.com/pharmaverse/aNCA" target="_top"><span class="GitHub">https://github.com/pharmaverse/aNCA</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_aNCA.html"><span class="CRAN">aNCA results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/aNCA.html"><span class="CRAN">aNCA.html</span></a> ,  <a href="aNCA.pdf"><span class="CRAN">aNCA.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/aNCA.html"><span class="CRAN">aNCA Shiny App User Guide</span></a> (<a href="vignettes/aNCA.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/adding_tlg.html"><span class="CRAN">Adding new TLGs to the package</span></a> (<a href="vignettes/adding_tlg.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/contributing.html"><span class="CRAN">Contributing to aNCA</span></a> (<a href="vignettes/contributing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/aNCA_0.1.0.tar.gz"> <span class="CRAN"> aNCA_0.1.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/aNCA_0.1.0.zip"><span class="CRAN">aNCA_0.1.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/aNCA_0.1.0.zip"><span class="CRAN">aNCA_0.1.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/aNCA_0.1.0.zip"><span class="CRAN">aNCA_0.1.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/aNCA_0.1.0.tgz"><span class="CRAN">aNCA_0.1.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/aNCA_0.1.0.tgz"><span class="CRAN">aNCA_0.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/aNCA_0.1.0.tgz"><span class="CRAN">aNCA_0.1.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/aNCA_0.1.0.tgz"><span class="CRAN">aNCA_0.1.0.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=aNCA"><span class="CRAN"><samp>https://CRAN.R-project.org/package=aNCA</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

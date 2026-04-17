@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package abn</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=abn">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Modelling Multivariate Data with Additive Bayesian Networks [R package abn version 3.1.13]">
+<meta name="citation_author1" content="Matteo Delucchi">
+<meta name="citation_author2" content="Reinhard Furrer">
+<meta name="citation_author3" content="Gilles Kratzer">
+<meta name="citation_author4" content="Fraser Iain Lewis">
+<meta name="citation_publication_date" content="2025-12-19">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=abn">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=abn">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="abn: Modelling Multivariate Data with Additive Bayesian Networks">
+<meta property="og:description" content="The 'abn' R package facilitates Bayesian network analysis, a probabilistic graphical model that derives from empirical data a directed acyclic graph (DAG). This DAG describes the dependency structure between random variables. The R package 'abn' provides routines to help determine optimal Bayesian network models for a given data set. These models are used to identify statistical dependencies in messy, complex data. Their additive formulation is equivalent to multivariate generalised linear modelling, including mixed models with independent and identically distributed (iid) random effects. The core functionality of the 'abn' package revolves around model selection, also known as structure discovery. It supports both exact and heuristic structure learning algorithms and does not restrict the data distribution of parent-child combinations, providing flexibility in model creation and analysis. The 'abn' package uses Laplace approximations for metric estimation and includes wrappers to the 'INLA' package. It also employs 'JAGS' for data simulation purposes. For more resources and information, visit the 'abn' website.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=abn">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>abn: Modelling Multivariate Data with Additive Bayesian Networks</h2>
+<p>The 'abn' R package facilitates Bayesian network analysis, a
+    probabilistic graphical model that derives from empirical data a
+    directed acyclic graph (DAG). This DAG describes the dependency
+    structure between random variables. The R package 'abn' provides
+    routines to help determine optimal Bayesian network models for a given
+    data set. These models are used to identify statistical dependencies
+    in messy, complex data. Their additive formulation is equivalent to
+    multivariate generalised linear modelling, including mixed models with
+    independent and identically distributed (iid) random effects. The core
+    functionality of the 'abn' package revolves around model selection,
+    also known as structure discovery. It supports both exact and
+    heuristic structure learning algorithms and does not restrict the data
+    distribution of parent-child combinations, providing flexibility in
+    model creation and analysis. The 'abn' package uses Laplace
+    approximations for metric estimation and includes wrappers to the
+    'INLA' package. It also employs 'JAGS' for data simulation purposes.
+    For more resources and information, visit the 'abn' website.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.1.13</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../doParallel/index.html"><span class="CRAN">doParallel</span></a>, <a href="../foreach/index.html"><span class="CRAN">foreach</span></a>, <a href="../glmmTMB/index.html"><span class="CRAN">glmmTMB</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/graph.html" target="_top"><span class="BioC">graph</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lme4/index.html"><span class="CRAN">lme4</span></a>, <a href="../mclogit/index.html"><span class="CRAN">mclogit</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../nnet/index.html"><span class="CRAN">nnet</span></a>, <a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html" target="_top"><span class="BioC">Rgraphviz</span></a>, <a href="../rjags/index.html"><span class="CRAN">rjags</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../RcppArmadillo/index.html"><span class="CRAN">RcppArmadillo</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bookdown/index.html"><span class="CRAN">bookdown</span></a>, <a href="../boot/index.html"><span class="CRAN">boot</span></a>, <a href="../brglm/index.html"><span class="CRAN">brglm</span></a>, <a href="../devtools/index.html"><span class="CRAN">devtools</span></a> (&ge; 2.4.5), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, INLA, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../Matrix/index.html"><span class="CRAN">Matrix</span></a>, <a href="../MatrixModels/index.html"><span class="CRAN">MatrixModels</span></a> (&ge; 0.5.3), <a href="../microbenchmark/index.html"><span class="CRAN">microbenchmark</span></a>, <a href="../R.rsp/index.html"><span class="CRAN">R.rsp</span></a>, <a href="../RhpcBLASctl/index.html"><span class="CRAN">RhpcBLASctl</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.0.0), <a href="../entropy/index.html"><span class="CRAN">entropy</span></a>, <a href="../moments/index.html"><span class="CRAN">moments</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-19</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.abn">10.32614/CRAN.package.abn</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matteo Delucchi <a href="https://orcid.org/0000-0002-9327-1496" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Reinhard Furrer <a href="https://orcid.org/0000-0002-6319-2332" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Gilles Kratzer <a href="https://orcid.org/0000-0002-5929-8935" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Fraser Iain Lewis <a href="https://orcid.org/0000-0003-4580-2712" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Jonas I. Liechti <a href="https://orcid.org/0000-0003-3447-3060" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Marta Pittavino <a href="https://orcid.org/0000-0002-1232-1034" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Kalina Cherneva [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matteo Delucchi  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x65;&#x6f;&#x2e;&#x64;&#x65;&#x6c;&#x75;&#x63;&#x63;&#x68;&#x69;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x75;&#x7a;&#x68;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/furrer-lab/abn/issues" target="_top"><span class="GitHub">https://github.com/furrer-lab/abn/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-bayesian-networks.org/" target="_top">https://r-bayesian-networks.org/</a>,
+<a href="https://github.com/furrer-lab/abn" target="_top"><span class="GitHub">https://github.com/furrer-lab/abn</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pkg-config, cmake, gsl, jpeg, gdal, geos, proj,
+udunits-2, openssl, libcurl, jags</td>
+</tr>
+<tr>
+<td>Additional_repositories:</td>
+<td><a href="https://inla.r-inla-download.org/R/stable/" target="_top">https://inla.r-inla-download.org/R/stable/</a></td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">abn citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/GraphicalModels.html"><span class="CRAN">GraphicalModels</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_abn.html"><span class="CRAN">abn results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/abn.html"><span class="CRAN">abn.html</span></a> ,  <a href="abn.pdf"><span class="CRAN">abn.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/data_simulation.html"><span class="CRAN">Data Simulation</span></a> (<a href="vignettes/data_simulation.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/mixed_effect_BN_model.html"><span class="CRAN">Mixed-effect Bayesian Network Model</span></a> (<a href="vignettes/mixed_effect_BN_model.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/mixed_effect_BN_model.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/model_specification.html"><span class="CRAN">Model Specification: Build a Cache of Scores</span></a> (<a href="vignettes/model_specification.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/model_specification.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/multiprocessing.html"><span class="CRAN">Parallelisation</span></a> (<a href="vignettes/multiprocessing.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/parameter_learning.html"><span class="CRAN">Parameter Learning</span></a> (<a href="vignettes/parameter_learning.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/quick_start_example.html"><span class="CRAN">Quick Start Example</span></a> (<a href="vignettes/quick_start_example.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/quick_start_example.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/structure_learning.html"><span class="CRAN">Bayesian Network Structure Learning</span></a> (<a href="vignettes/structure_learning.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/structure_learning.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/abn_3.1.13.tar.gz"> <span class="CRAN"> abn_3.1.13.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/abn_3.1.13.zip"><span class="CRAN">abn_3.1.13.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/abn_3.1.13.zip"><span class="CRAN">abn_3.1.13.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/abn_3.1.13.zip"><span class="CRAN">abn_3.1.13.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/abn_3.1.13.tgz"><span class="CRAN">abn_3.1.13.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/abn_3.1.13.tgz"><span class="CRAN">abn_3.1.13.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/abn_3.1.13.tgz"><span class="CRAN">abn_3.1.13.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/abn_3.1.13.tgz"><span class="CRAN">abn_3.1.13.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/abn"> <span class="CRAN"> abn archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=abn"><span class="CRAN"><samp>https://CRAN.R-project.org/package=abn</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package Rgff</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=Rgff">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="R Utilities for GFF Files [R package Rgff version 0.1.7]">
+<meta name="citation_author1" content="Juan Antonio Garcia-Martin">
+<meta name="citation_author2" content="Juan Carlos Oliveros">
+<meta name="citation_author3" content="Rafael Torres-Perez">
+<meta name="citation_publication_date" content="2025-05-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=Rgff">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Rgff">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Rgff: R Utilities for GFF Files">
+<meta property="og:description" content="R utilities for gff files, either general feature format (GFF3) or gene transfer format (GTF) formatted files. This package includes functions for producing summary stats, check for consistency and sorting errors, conversion from GTF to GFF3 format, file sorting, visualization and plotting of feature hierarchy, and exporting user defined feature subsets to SAF format. This tool was developed by the BioinfoGP core facility at CNB-CSIC. ">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=Rgff">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Rgff: R Utilities for GFF Files</h2>
+<p>R utilities for gff files, either general feature format (GFF3) or gene transfer format (GTF) formatted files. This package includes functions for producing summary stats, check for consistency and sorting errors, conversion from GTF to GFF3 format, file sorting, visualization and plotting of feature hierarchy, and exporting user defined feature subsets to SAF format. This tool was developed by the BioinfoGP core facility at CNB-CSIC. </p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.7</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../withr/index.html"><span class="CRAN">withr</span></a> (&ge; 2.4.3), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 0.4.12), <a href="../stringi/index.html"><span class="CRAN">stringi</span></a> (&ge; 1.7.6), <a href="../data.tree/index.html"><span class="CRAN">data.tree</span></a> (&ge; 1.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 3.1.6), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.0.7), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.7.2), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 2.0.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DiagrammeR/index.html"><span class="CRAN">DiagrammeR</span></a> (&ge; 1.0.6.1), <a href="../DiagrammeRsvg/index.html"><span class="CRAN">DiagrammeRsvg</span></a> (&ge; 0.1), <a href="../rsvg/index.html"><span class="CRAN">rsvg</span></a> (&ge;
+2.2.0), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.11), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.36), <a href="https://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html" target="_top"><span class="BioC">GenomicRanges</span></a> (&ge;
+1.46.1), <a href="https://www.bioconductor.org/packages/release/bioc/html/rtracklayer.html" target="_top"><span class="BioC">rtracklayer</span></a> (&ge; 1.54.0), <a href="https://www.bioconductor.org/packages/release/bioc/html/S4Vectors.html" target="_top"><span class="BioC">S4Vectors</span></a> (&ge; 0.32.3)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-05-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.Rgff">10.32614/CRAN.package.Rgff</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Juan Antonio Garcia-Martin
+    <a href="https://orcid.org/0000-0003-0993-4064" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cre, aut],
+  Juan Carlos Oliveros
+    <a href="https://orcid.org/0000-0002-4520-0853" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, ctb],
+  Rafael Torres-Perez
+    <a href="https://orcid.org/0000-0002-3696-4720" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Juan Antonio Garcia-Martin  &#x3c;&#x6a;&#x61;&#x2e;&#x67;&#x61;&#x72;&#x63;&#x69;&#x61;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6e;&#x62;&#x2e;&#x63;&#x73;&#x69;&#x63;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Rgff.html"><span class="CRAN">Rgff results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/Rgff.html"><span class="CRAN">Rgff.html</span></a> ,  <a href="Rgff.pdf"><span class="CRAN">Rgff.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Using_Rgff.html"><span class="CRAN">Using Rgff</span></a> (<a href="vignettes/Using_Rgff.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Using_Rgff.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Rgff_0.1.7.tar.gz"> <span class="CRAN"> Rgff_0.1.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/Rgff_0.1.7.zip"><span class="CRAN">Rgff_0.1.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/Rgff_0.1.7.zip"><span class="CRAN">Rgff_0.1.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/Rgff_0.1.7.zip"><span class="CRAN">Rgff_0.1.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/Rgff_0.1.7.tgz"><span class="CRAN">Rgff_0.1.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/Rgff_0.1.7.tgz"><span class="CRAN">Rgff_0.1.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/Rgff_0.1.7.tgz"><span class="CRAN">Rgff_0.1.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/Rgff_0.1.7.tgz"><span class="CRAN">Rgff_0.1.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Rgff"> <span class="CRAN"> Rgff archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Rgff"><span class="CRAN"><samp>https://CRAN.R-project.org/package=Rgff</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

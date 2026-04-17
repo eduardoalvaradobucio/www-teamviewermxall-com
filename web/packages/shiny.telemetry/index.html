@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package shiny.telemetry</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=shiny.telemetry">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="'Shiny' App Usage Telemetry [R package shiny.telemetry version 0.3.2]">
+<meta name="citation_author1" content="André Veríssimo">
+<meta name="citation_author2" content="Kamil Żyła">
+<meta name="citation_author3" content="Krystian Igras">
+<meta name="citation_author4" content="Recle Vibal">
+<meta name="citation_author5" content="Arun Kodati">
+<meta name="citation_author6" content="Wahaduzzaman Khan">
+<meta name="citation_publication_date" content="2025-08-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=shiny.telemetry">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=shiny.telemetry">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="shiny.telemetry: 'Shiny' App Usage Telemetry">
+<meta property="og:description" content="Enables instrumentation of 'Shiny' apps for tracking user session events such as input changes, browser type, and session duration. These events can be sent to any of the available storage backends and analyzed using the included 'Shiny' app to gain insights about app usage and adoption.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=shiny.telemetry">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>shiny.telemetry: 'Shiny' App Usage Telemetry</h2>
+<p>Enables instrumentation of 'Shiny' apps for tracking
+    user session events such as input changes, browser type, and session
+    duration.  These events can be sent to any of the available storage
+    backends and analyzed using the included 'Shiny' app to gain insights
+    about app usage and adoption.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a>, <a href="../digest/index.html"><span class="CRAN">digest</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.0), <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../logger/index.html"><span class="CRAN">logger</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../odbc/index.html"><span class="CRAN">odbc</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../box/index.html"><span class="CRAN">box</span></a>, <a href="../config/index.html"><span class="CRAN">config</span></a>, <a href="../DT/index.html"><span class="CRAN">DT</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../mongolite/index.html"><span class="CRAN">mongolite</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../plumber/index.html"><span class="CRAN">plumber</span></a>, <a href="../RColorBrewer/index.html"><span class="CRAN">RColorBrewer</span></a>, <a href="../RMariaDB/index.html"><span class="CRAN">RMariaDB</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a>, <a href="../RPostgreSQL/index.html"><span class="CRAN">RPostgreSQL</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../semantic.dashboard/index.html"><span class="CRAN">semantic.dashboard</span></a> (&ge; 0.1.1), <a href="../shiny.semantic/index.html"><span class="CRAN">shiny.semantic</span></a> (&ge;
+0.2.0), <a href="../shinyjs/index.html"><span class="CRAN">shinyjs</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.7), <a href="../timevis/index.html"><span class="CRAN">timevis</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-08-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.shiny.telemetry">10.32614/CRAN.package.shiny.telemetry</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>André Veríssimo [aut, cre],
+  Kamil Żyła [aut],
+  Krystian Igras [aut],
+  Recle Vibal [aut],
+  Arun Kodati [aut],
+  Wahaduzzaman Khan [aut],
+  Appsilon Sp. z o.o. [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>André Veríssimo  &#x3c;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x6f;&#x75;&#x72;&#x63;&#x65;&#x2b;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x61;&#x70;&#x70;&#x73;&#x69;&#x6c;&#x6f;&#x6e;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Appsilon/shiny.telemetry/issues" target="_top"><span class="GitHub">https://github.com/Appsilon/shiny.telemetry/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3"><span class="CRAN">LGPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://appsilon.github.io/shiny.telemetry/" target="_top"><span class="GitHub">https://appsilon.github.io/shiny.telemetry/</span></a>,
+<a href="https://github.com/Appsilon/shiny.telemetry" target="_top"><span class="GitHub">https://github.com/Appsilon/shiny.telemetry</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_shiny.telemetry.html"><span class="CRAN">shiny.telemetry results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/shiny.telemetry.html"><span class="CRAN">shiny.telemetry.html</span></a> ,  <a href="shiny.telemetry.pdf"><span class="CRAN">shiny.telemetry.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/databases.html"><span class="CRAN">Use External Databases with shiny.telemetry</span></a> (<a href="vignettes/databases.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/databases.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/rhino.html"><span class="CRAN">Setup shiny.telemetry in a Rhino application</span></a> (<a href="vignettes/rhino.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/rhino.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/tracking-specific-input-id.html"><span class="CRAN">Track a Subset of Inputs to Improve Performance</span></a> (<a href="vignettes/tracking-specific-input-id.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/tracking-specific-input-id.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/shiny.telemetry_0.3.2.tar.gz"> <span class="CRAN"> shiny.telemetry_0.3.2.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/shiny.telemetry_0.3.2.zip"><span class="CRAN">shiny.telemetry_0.3.2.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/shiny.telemetry_0.3.2.zip"><span class="CRAN">shiny.telemetry_0.3.2.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/shiny.telemetry_0.3.2.zip"><span class="CRAN">shiny.telemetry_0.3.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/shiny.telemetry_0.3.2.tgz"><span class="CRAN">shiny.telemetry_0.3.2.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/shiny.telemetry_0.3.2.tgz"><span class="CRAN">shiny.telemetry_0.3.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/shiny.telemetry_0.3.2.tgz"><span class="CRAN">shiny.telemetry_0.3.2.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/shiny.telemetry_0.3.2.tgz"><span class="CRAN">shiny.telemetry_0.3.2.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/shiny.telemetry"> <span class="CRAN"> shiny.telemetry archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=shiny.telemetry"><span class="CRAN"><samp>https://CRAN.R-project.org/package=shiny.telemetry</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

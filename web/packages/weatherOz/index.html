@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package weatherOz</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=weatherOz">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="An API Client for Australian Weather and Climate Data Resources [R package weatherOz version 3.0.0]">
+<meta name="citation_author1" content="Rodrigo Pires">
+<meta name="citation_author2" content="Anna Hepworth">
+<meta name="citation_author3" content="Rebecca O'Leary">
+<meta name="citation_author4" content="Jonathan Carroll">
+<meta name="citation_author5" content="James Goldie">
+<meta name="citation_author6" content="Dean Marchiori">
+<meta name="citation_author7" content="Paul Melloy">
+<meta name="citation_author8" content="Mark Padgham">
+<meta name="citation_author9" content="Hugh Parsonage">
+<meta name="citation_author10" content="Adam H. Sparks">
+<meta name="citation_publication_date" content="2026-04-08">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=weatherOz">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=weatherOz">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="weatherOz: An API Client for Australian Weather and Climate Data Resources">
+<meta property="og:description" content="Provides automated downloading, parsing and formatting of weather data for Australia through API endpoints provided by the Department of Primary Industries and Regional Development (DPIRD) of Western Australia and by the Science and Technology Division of the Queensland Government's Department of Environment and Science (DES). As well as the Bureau of Meteorology (BOM) of the Australian government precis and coastal forecasts, and downloading and importing radar and satellite imagery files. DPIRD weather data are accessed through public APIs provided by DPIRD, &amp;lt;&lt;a href=&quot;https://www.dpird.wa.gov.au/online-tools/apis/&quot; target=&quot;_top&quot;&gt;https://www.dpird.wa.gov.au/online-tools/apis/&lt;/a&gt;&amp;gt;, providing access to weather station data from the DPIRD weather station network. Australia-wide weather data are based on data from the Australian Bureau of Meteorology (BOM) data and accessed through SILO (Scientific Information for Land Owners) Jeffrey et al. (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS1364-8152%2801%2900008-1&quot; target=&quot;_top&quot;&gt;doi:10.1016/S1364-8152(01)00008-1&lt;/a&gt;&amp;gt;. DPIRD data are made available under a Creative Commons Attribution 3.0 Licence (CC BY 3.0 AU) license &amp;lt;&lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/au/deed.en&quot; target=&quot;_top&quot;&gt;https://creativecommons.org/licenses/by/3.0/au/deed.en&lt;/a&gt;&amp;gt;. SILO data are released under a Creative Commons Attribution 4.0 International licence (CC BY 4.0) &amp;lt;&lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/&quot; target=&quot;_top&quot;&gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt;&amp;gt;. BOM data are (c) Australian Government Bureau of Meteorology and released under a Creative Commons (CC) Attribution 3.0 licence or Public Access Licence (PAL) as appropriate, see &amp;lt;&lt;a href=&quot;https://www.bom.gov.au/copyright&quot; target=&quot;_top&quot;&gt;https://www.bom.gov.au/copyright&lt;/a&gt;&amp;gt; for further details.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=weatherOz">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>weatherOz: An API Client for Australian Weather and Climate Data Resources</h2>
+<p>Provides automated downloading, parsing and formatting of
+    weather data for Australia through API endpoints provided by the
+    Department of Primary Industries and Regional Development (DPIRD) of
+    Western Australia and by the Science and Technology Division of the
+    Queensland Government's Department of Environment and Science (DES).
+    As well as the Bureau of Meteorology (BOM) of the Australian
+    government precis and coastal forecasts,
+    and downloading and importing radar and satellite imagery files.
+    DPIRD weather data are accessed through public APIs provided by
+    DPIRD, &lt;<a href="https://www.dpird.wa.gov.au/online-tools/apis/" target="_top">https://www.dpird.wa.gov.au/online-tools/apis/</a>&gt;, providing
+    access to weather station data from the DPIRD weather station
+    network.  Australia-wide weather data are based on data from the
+    Australian Bureau of Meteorology (BOM) data and accessed through
+    SILO (Scientific Information for Land Owners) Jeffrey et al. (2001)
+    &lt;<a href="https://doi.org/10.1016%2FS1364-8152%2801%2900008-1" target="_top">doi:10.1016/S1364-8152(01)00008-1</a>&gt;.  DPIRD data are made available
+    under a Creative Commons Attribution 3.0 Licence (CC BY 3.0 AU)
+    license &lt;<a href="https://creativecommons.org/licenses/by/3.0/au/deed.en" target="_top">https://creativecommons.org/licenses/by/3.0/au/deed.en</a>&gt;.
+    SILO data are released under a Creative Commons Attribution 4.0
+    International licence (CC BY 4.0)
+    &lt;<a href="https://creativecommons.org/licenses/by/4.0/" target="_top">https://creativecommons.org/licenses/by/4.0/</a>&gt;. BOM data are (c)
+    Australian Government Bureau of Meteorology and released under a
+    Creative Commons (CC) Attribution 3.0 licence or Public Access Licence
+    (PAL) as appropriate, see
+    &lt;<a href="https://www.bom.gov.au/copyright" target="_top">https://www.bom.gov.au/copyright</a>&gt; for further details.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../apsimx/index.html"><span class="CRAN">apsimx</span></a>, <a href="../clock/index.html"><span class="CRAN">clock</span></a>, <a href="../crayon/index.html"><span class="CRAN">crayon</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../crul/index.html"><span class="CRAN">crul</span></a> (&ge; 1.6.0), <a href="../data.table/index.html"><span class="CRAN">data.table</span></a> (&ge;
+1.1.5), <a href="../foreign/index.html"><span class="CRAN">foreign</span></a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../magick/index.html"><span class="CRAN">magick</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../stars/index.html"><span class="CRAN">stars</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../terra/index.html"><span class="CRAN">terra</span></a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../ggthemes/index.html"><span class="CRAN">ggthemes</span></a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../gridExtra/index.html"><span class="CRAN">gridExtra</span></a>, <a href="../mailR/index.html"><span class="CRAN">mailR</span></a>, <a href="../mapproj/index.html"><span class="CRAN">mapproj</span></a>, <a href="../maps/index.html"><span class="CRAN">maps</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../roxyglobals/index.html"><span class="CRAN">roxyglobals</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge;
+3.0.0), <a href="../usethis/index.html"><span class="CRAN">usethis</span></a>, <a href="../vcr/index.html"><span class="CRAN">vcr</span></a> (&ge; 2.0.0), <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-08</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.weatherOz">10.32614/CRAN.package.weatherOz</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rodrigo Pires <a href="https://orcid.org/0000-0001-7384-6849" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Anna Hepworth <a href="https://orcid.org/0000-0003-0204-6347" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Rebecca O'Leary [aut],
+  Jonathan Carroll <a href="https://orcid.org/0000-0002-1404-5264" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  James Goldie <a href="https://orcid.org/0000-0002-5024-6207" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Dean Marchiori <a href="https://orcid.org/0000-0002-3430-7225" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Paul Melloy <a href="https://orcid.org/0000-0003-4253-7167" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut],
+  Mark Padgham <a href="https://orcid.org/0000-0003-2172-5265" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Hugh Parsonage <a href="https://orcid.org/0000-0003-4055-0835" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Keith Pembleton <a href="https://orcid.org/0000-0002-1896-4516" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Contributed code and ideas for original bomrang package that
+    was used in the creation of weatherOz.),
+  Maëlle Salmon <a href="https://orcid.org/0000-0002-2815-0399" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Contributed to debugging a nasty little bug with CI where
+    timezones caused tests to fail due to vcr not recognising the URL
+    when run outside of Australia-Perth TZ! Suggested the use of
+    local_timzeone().),
+  Max Moldovan <a href="https://orcid.org/0000-0001-9680-8474" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Contributed valuable feedback on package usage leading to
+    improvements in the package structure and functionality.),
+  Stephen Bradshaw <a href="https://orcid.org/0000-0003-3096-8787" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb] (Identified data structure issues and provided insights that
+    improved package data quality and usability.),
+  Jimmy Ng [ctb],
+  Steve Collins [ctb] (Designed the hex logo for 'weatherOz' hex logo.),
+  Adam H. Sparks <a href="https://orcid.org/0000-0002-0061-8359" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Laurens Geffert [rev],
+  Sam Rogers [rev],
+  Western Australia Agriculture Authority (WAAA) [cph],
+  Curtin University [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rodrigo Pires  &#x3c;&#x72;&#x6f;&#x64;&#x72;&#x69;&#x67;&#x6f;&#x2e;&#x70;&#x69;&#x72;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x64;&#x70;&#x69;&#x72;&#x64;&#x2e;&#x77;&#x61;&#x2e;&#x67;&#x6f;&#x76;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/weatherOz/issues" target="_top"><span class="GitHub">https://github.com/ropensci/weatherOz/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/weatherOz/" target="_top"><span class="GitHub">https://github.com/ropensci/weatherOz/</span></a>,
+<a href="https://docs.ropensci.org/weatherOz/" target="_top">https://docs.ropensci.org/weatherOz/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">weatherOz citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html"><span class="CRAN">Hydrology</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_weatherOz.html"><span class="CRAN">weatherOz results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/weatherOz.html"><span class="CRAN">weatherOz.html</span></a> ,  <a href="weatherOz.pdf"><span class="CRAN">weatherOz.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/use_case.html"><span class="CRAN">weatherOz Use Case</span></a> (<a href="vignettes/use_case.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/weatherOz.html"><span class="CRAN">weatherOz</span></a> (<a href="vignettes/weatherOz.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/weatherOz_for_BOM.html"><span class="CRAN">weatherOz for BOM</span></a> (<a href="vignettes/weatherOz_for_BOM.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/weatherOz_for_DPIRD.html"><span class="CRAN">weatherOz for DPIRD</span></a> (<a href="vignettes/weatherOz_for_DPIRD.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/weatherOz_for_SILO.html"><span class="CRAN">weatherOz for SILO</span></a> (<a href="vignettes/weatherOz_for_SILO.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+<a href="vignettes/weatherOz_for_metno.html"><span class="CRAN">weatherOz for met.no</span></a> (<a href="vignettes/weatherOz_for_metno.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/weatherOz_3.0.0.tar.gz"> <span class="CRAN"> weatherOz_3.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/weatherOz_3.0.0.zip"><span class="CRAN">weatherOz_3.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/weatherOz_3.0.0.zip"><span class="CRAN">weatherOz_3.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/weatherOz_2.0.2.zip"><span class="CRAN">weatherOz_2.0.2.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/weatherOz_3.0.0.tgz"><span class="CRAN">weatherOz_3.0.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/weatherOz_2.0.2.tgz"><span class="CRAN">weatherOz_2.0.2.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/weatherOz_3.0.0.tgz"><span class="CRAN">weatherOz_3.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/weatherOz_3.0.0.tgz"><span class="CRAN">weatherOz_3.0.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/weatherOz"> <span class="CRAN"> weatherOz archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=weatherOz"><span class="CRAN"><samp>https://CRAN.R-project.org/package=weatherOz</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

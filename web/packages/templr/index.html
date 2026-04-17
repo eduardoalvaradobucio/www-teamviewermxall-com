@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package templr</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=templr">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="MASCOTNUM / RT-UQ Algorithms Template Tools [R package templr version 0.2-3]">
+<meta name="citation_author" content="Yann Richet">
+<meta name="citation_publication_date" content="2026-01-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=templr">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=templr">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="templr: MASCOTNUM / RT-UQ Algorithms Template Tools">
+<meta property="og:description" content="Helper functions for MASCOTNUM / RT-UQ &amp;lt;&lt;a href=&quot;https://uq.math.cnrs.fr/&quot; target=&quot;_top&quot;&gt;https://uq.math.cnrs.fr/&lt;/a&gt;&amp;gt; algorithm template, for design of numerical experiments practice: algorithm template parser to support MASCOTNUM specification &amp;lt;&lt;a href=&quot;https://github.com/MASCOTNUM/algorithms&quot; target=&quot;_top&quot;&gt;https://github.com/MASCOTNUM/algorithms&lt;/a&gt;&amp;gt;, 'ask &amp;amp; tell' decoupling injection (inspired by &amp;lt;&lt;a href=&quot;https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html&quot; target=&quot;_top&quot;&gt;https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html&lt;/a&gt;&amp;gt;) to use &quot;crimped&quot; algorithms (like uniroot(), optim(), ...) from outside R, basic template examples: Brent algorithm for 1 dim root finding and L-BFGS-B from base optim().">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=templr">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>templr: MASCOTNUM / RT-UQ Algorithms Template Tools</h2>
+<p>Helper functions for MASCOTNUM / RT-UQ &lt;<a href="https://uq.math.cnrs.fr/" target="_top">https://uq.math.cnrs.fr/</a>&gt; algorithm template, for design of numerical experiments practice:
+    algorithm template parser to support MASCOTNUM specification &lt;<a href="https://github.com/MASCOTNUM/algorithms" target="_top">https://github.com/MASCOTNUM/algorithms</a>&gt;, 
+    'ask &amp; tell' decoupling injection (inspired by &lt;<a href="https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html" target="_top">https://search.r-project.org/CRAN/refmans/sensitivity/html/decoupling.html</a>&gt;) 
+    to use "crimped" algorithms (like uniroot(), optim(), ...) from outside R,
+    basic template examples: Brent algorithm for 1 dim root finding and L-BFGS-B from base optim().</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2-3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../remotes/index.html"><span class="CRAN">remotes</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.templr">10.32614/CRAN.package.templr</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yann Richet <a href="https://orcid.org/0000-0002-5677-8458" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yann Richet  &#x3c;&#x79;&#x61;&#x6e;&#x6e;&#x2e;&#x72;&#x69;&#x63;&#x68;&#x65;&#x74;&#x20;&#x61;&#x74;&#x20;&#x61;&#x73;&#x6e;&#x72;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0"><span class="CRAN">Apache License (&ge; 2)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/MASCOTNUM/templr" target="_top"><span class="GitHub">https://github.com/MASCOTNUM/templr</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_templr.html"><span class="CRAN">templr results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/templr.html"><span class="CRAN">templr.html</span></a> ,  <a href="templr.pdf"><span class="CRAN">templr.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/templr_0.2-3.tar.gz"> <span class="CRAN"> templr_0.2-3.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/templr_0.2-3.zip"><span class="CRAN">templr_0.2-3.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/templr_0.2-3.zip"><span class="CRAN">templr_0.2-3.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/templr_0.2-3.zip"><span class="CRAN">templr_0.2-3.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/templr_0.2-3.tgz"><span class="CRAN">templr_0.2-3.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/templr_0.2-3.tgz"><span class="CRAN">templr_0.2-3.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/templr_0.2-3.tgz"><span class="CRAN">templr_0.2-3.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/templr_0.2-3.tgz"><span class="CRAN">templr_0.2-3.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/templr"> <span class="CRAN"> templr archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=templr"><span class="CRAN"><samp>https://CRAN.R-project.org/package=templr</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

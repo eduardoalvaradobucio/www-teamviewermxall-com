@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package sd2R</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=sd2R">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Stable Diffusion Image Generation [R package sd2R version 0.1.9]">
+<meta name="citation_author" content="Yuri Baramykov">
+<meta name="citation_publication_date" content="2026-04-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sd2R">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sd2R">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="sd2R: Stable Diffusion Image Generation">
+<meta property="og:description" content="Provides Stable Diffusion image generation in R using the 'ggmlR' tensor library. Supports text-to-image and image-to-image generation with multiple model versions (SD 1.x, SD 2.x, 'SDXL', Flux). Implements the full inference pipeline including CLIP text encoding, 'UNet' noise removal, and 'VAE' encoding/decoding. Unified sd_generate() entry point with automatic strategy selection (direct, tiled sampling, high-resolution fix) based on output resolution and available 'VRAM'. High-resolution generation (2K, 4K+) via tiled 'VAE' decoding, tiled diffusion sampling ('MultiDiffusion'), and classic two-pass refinement (text-to-image, then upscale with image-to-image). Multi-GPU parallel generation via sd_generate_multi_gpu(). Multi-GPU model parallelism via 'device_layout' in sd_ctx(): distribute diffusion, text encoders, and 'VAE' across separate 'Vulkan' devices. Built-in profiling (sd_profile_start(), sd_profile_summary()) for per-stage timing of text encoding, sampling, and 'VAE' decode. Interactive Shiny GUI via sd_app() with non-blocking asynchronous generation (C++ std::thread), live progress bar, auto-detection of model architecture, and ETA display. Supports CPU and 'Vulkan' GPU. No 'Python' or external API dependencies required. Cross-platform: Linux, macOS, Windows.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=sd2R">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>sd2R: Stable Diffusion Image Generation</h2>
+<p>Provides Stable Diffusion image generation in R using the 'ggmlR'
+    tensor library. Supports text-to-image and image-to-image generation with
+    multiple model versions (SD 1.x, SD 2.x, 'SDXL', Flux). Implements the
+    full inference pipeline including CLIP text encoding, 'UNet' noise removal,
+    and 'VAE' encoding/decoding. Unified sd_generate() entry point with
+    automatic strategy selection (direct, tiled sampling, high-resolution fix)
+    based on output resolution and available 'VRAM'. High-resolution generation
+    (2K, 4K+) via tiled 'VAE' decoding, tiled diffusion sampling
+    ('MultiDiffusion'), and classic two-pass refinement (text-to-image, then
+    upscale with image-to-image). Multi-GPU parallel generation via
+    sd_generate_multi_gpu(). Multi-GPU model parallelism via 'device_layout'
+    in sd_ctx(): distribute diffusion, text encoders, and 'VAE' across
+    separate 'Vulkan' devices. Built-in profiling (sd_profile_start(),
+    sd_profile_summary()) for per-stage timing of text encoding, sampling,
+    and 'VAE' decode. Interactive Shiny GUI via sd_app() with non-blocking
+    asynchronous generation (C++ std::thread), live progress bar, auto-detection
+    of model architecture, and ETA display. Supports CPU and 'Vulkan' GPU.
+    No 'Python' or external API dependencies required.
+    Cross-platform: Linux, macOS, Windows.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a> (&ge; 1.0.0), <a href="../ggmlR/index.html"><span class="CRAN">ggmlR</span></a> (&ge; 0.5.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html"><span class="CRAN">Rcpp</span></a>, <a href="../ggmlR/index.html"><span class="CRAN">ggmlR</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a>, <a href="../plumber/index.html"><span class="CRAN">plumber</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.sd2R">10.32614/CRAN.package.sd2R</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yuri Baramykov [aut, cre],
+  Georgi Gerganov [ctb, cph] (Author of the GGML library),
+  leejet [ctb, cph] (Author of stable-diffusion.cpp),
+  stduhpf [ctb] (Core contributor to stable-diffusion.cpp),
+  Green-Sky [ctb] (Contributor to stable-diffusion.cpp),
+  wbruna [ctb] (Contributor to stable-diffusion.cpp),
+  akleine [ctb] (Contributor to stable-diffusion.cpp),
+  Martin Raiber [cph] (Copyright holder in miniz.h),
+  Rich Geldreich [cph] (Author of miniz.h),
+  RAD Game Tools [cph] (Copyright holder in miniz.h),
+  Valve Software [cph] (Copyright holder in miniz.h),
+  Alex Evans [cph] (PNG writing code in miniz.h),
+  Sean Barrett [cph] (Author of stb_image.h),
+  Jorge L Rodriguez [cph] (Author of stb_image_resize.h),
+  Niels Lohmann [cph] (Author of json.hpp (nlohmann/json)),
+  Susumu Yata [cph] (Author of darts.h (darts-clone)),
+  Kuba Podgorski [cph] (Author of zip.h/zip.c (kuba--/zip)),
+  Meta Platforms Inc. [cph] (rng_mt19937.hpp (ported from PyTorch)),
+  Google Inc. [cph] (Sentencepiece tokenizer code in t5.hpp)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yuri Baramykov  &#x3c;&#x6c;&#x62;&#x73;&#x62;&#x6d;&#x73;&#x75;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x72;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Zabis13/sd2R/issues" target="_top"><span class="GitHub">https://github.com/Zabis13/sd2R/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Zabis13/sd2R" target="_top"><span class="GitHub">https://github.com/Zabis13/sd2R</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, curl or wget (for downloading vocabulary
+files during installation)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sd2R.html"><span class="CRAN">sd2R results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/sd2R.html"><span class="CRAN">sd2R.html</span></a> ,  <a href="sd2R.pdf"><span class="CRAN">sd2R.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sd2R_0.1.9.tar.gz"> <span class="CRAN"> sd2R_0.1.9.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/sd2R_0.1.9.zip"><span class="CRAN">sd2R_0.1.9.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/sd2R_0.1.9.zip"><span class="CRAN">sd2R_0.1.9.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/sd2R_0.1.9.zip"><span class="CRAN">sd2R_0.1.9.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/sd2R_0.1.9.tgz"><span class="CRAN">sd2R_0.1.9.tgz</span></a>, r-oldrel (arm64): not available, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/sd2R_0.1.9.tgz"><span class="CRAN">sd2R_0.1.9.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/sd2R_0.1.9.tgz"><span class="CRAN">sd2R_0.1.9.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sd2R"> <span class="CRAN"> sd2R archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sd2R"><span class="CRAN"><samp>https://CRAN.R-project.org/package=sd2R</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

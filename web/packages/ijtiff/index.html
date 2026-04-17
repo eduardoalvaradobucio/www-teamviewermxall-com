@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package ijtiff</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=ijtiff">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Comprehensive TIFF I/O with Full Support for 'ImageJ' TIFF Files [R package ijtiff version 3.2.0]">
+<meta name="citation_author1" content="Rory Nolan">
+<meta name="citation_author2" content="Kent Johnson">
+<meta name="citation_publication_date" content="2026-01-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ijtiff">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ijtiff">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="ijtiff: Comprehensive TIFF I/O with Full Support for 'ImageJ' TIFF Files">
+<meta property="og:description" content="General purpose TIFF file I/O for R users. Currently the only such package with read and write support for TIFF files with floating point (real-numbered) pixels, and the only package that can correctly import TIFF files that were saved from 'ImageJ' and write TIFF files than can be correctly read by 'ImageJ' &amp;lt;&lt;a href=&quot;https://imagej.net/ij/&quot; target=&quot;_top&quot;&gt;https://imagej.net/ij/&lt;/a&gt;&amp;gt;. Also supports text image I/O.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=ijtiff">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>ijtiff: Comprehensive TIFF I/O with Full Support for 'ImageJ' TIFF Files</h2>
+<p>General purpose TIFF file I/O for R users.  Currently the
+    only such package with read and write support for TIFF files with
+    floating point (real-numbered) pixels, and the only package that can
+    correctly import TIFF files that were saved from 'ImageJ' and write
+    TIFF files than can be correctly read by 'ImageJ'
+    &lt;<a href="https://imagej.net/ij/" target="_top">https://imagej.net/ij/</a>&gt;. Also supports text image I/O.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>3.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html"><span class="CRAN">checkmate</span></a> (&ge; 1.9.3), <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a> (&ge; 1.5), <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 1.5), <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.0), <a href="../strex/index.html"><span class="CRAN">strex</span></a> (&ge; 1.5), <a href="../stringr/index.html"><span class="CRAN">stringr</span></a> (&ge; 1.4)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../abind/index.html"><span class="CRAN">abind</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="https://www.bioconductor.org/packages/release/bioc/html/EBImage.html" target="_top"><span class="BioC">EBImage</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../spelling/index.html"><span class="CRAN">spelling</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0), <a href="../tiff/index.html"><span class="CRAN">tiff</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.ijtiff">10.32614/CRAN.package.ijtiff</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rory Nolan <a href="https://orcid.org/0000-0002-5239-4043" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre],
+  Kent Johnson [aut],
+  Simon Urbanek [ctb],
+  Sergi Padilla-Parra
+    <a href="https://orcid.org/0000-0002-8010-9481" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ths],
+  Jeroen Ooms <a href="https://orcid.org/0000-0002-4035-0289" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [rev,
+    ctb],
+  Jon Clayden <a href="https://orcid.org/0000-0002-6608-0619" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [rev]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rory Nolan  &#x3c;&#x72;&#x6f;&#x72;&#x79;&#x6e;&#x6f;&#x6f;&#x6c;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/ijtiff/issues" target="_top"><span class="GitHub">https://github.com/ropensci/ijtiff/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL-3</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/ijtiff/" target="_top">https://docs.ropensci.org/ijtiff/</a>,
+<a href="https://github.com/ropensci/ijtiff" target="_top"><span class="GitHub">https://github.com/ropensci/ijtiff</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>fftw3, libtiff, libbz2, libdeflate, libjpeg,
+liblzma, libwebp, libzstd, X11, zlib</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">ijtiff citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ijtiff.html"><span class="CRAN">ijtiff results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/ijtiff.html"><span class="CRAN">ijtiff.html</span></a> ,  <a href="ijtiff.pdf"><span class="CRAN">ijtiff.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/reading-and-writing-images.html"><span class="CRAN">Reading and Writing Images</span></a> (<a href="vignettes/reading-and-writing-images.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/reading-and-writing-images.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/text-images.html"><span class="CRAN">Text Images</span></a> (<a href="vignettes/text-images.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/text-images.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/the-imagej-problem.html"><span class="CRAN">The ImageJ Problem</span></a> (<a href="vignettes/the-imagej-problem.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/the-imagej-problem.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/tiff-tags.html"><span class="CRAN">Working with TIFF Tags</span></a> (<a href="vignettes/tiff-tags.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/tiff-tags.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ijtiff_3.2.0.tar.gz"> <span class="CRAN"> ijtiff_3.2.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/ijtiff_3.2.0.zip"><span class="CRAN">ijtiff_3.2.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/ijtiff_3.2.0.zip"><span class="CRAN">ijtiff_3.2.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/ijtiff_3.2.0.zip"><span class="CRAN">ijtiff_3.2.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/ijtiff_3.2.0.tgz"><span class="CRAN">ijtiff_3.2.0.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/ijtiff_3.2.0.tgz"><span class="CRAN">ijtiff_3.2.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/ijtiff_3.2.0.tgz"><span class="CRAN">ijtiff_3.2.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/ijtiff_3.2.0.tgz"><span class="CRAN">ijtiff_3.2.0.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ijtiff"> <span class="CRAN"> ijtiff archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../autothresholdr/index.html"><span class="CRAN">autothresholdr</span></a>, <a href="../detrendr/index.html"><span class="CRAN">detrendr</span></a>, <a href="../nandb/index.html"><span class="CRAN">nandb</span></a>, <a href="../slendr/index.html"><span class="CRAN">slendr</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../BoneProfileR/index.html"><span class="CRAN">BoneProfileR</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ijtiff"><span class="CRAN"><samp>https://CRAN.R-project.org/package=ijtiff</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

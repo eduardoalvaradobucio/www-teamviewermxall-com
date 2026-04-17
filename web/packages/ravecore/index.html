@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package ravecore</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=ravecore">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Core File Structures and Workflows for 'RAVE' [R package ravecore version 0.1.1]">
+<meta name="citation_author1" content="Zhengjia Wang">
+<meta name="citation_author2" content="Xiang Zhang">
+<meta name="citation_author3" content="John Magnotti">
+<meta name="citation_author4" content="Michael Beauchamp">
+<meta name="citation_publication_date" content="2026-04-02">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ravecore">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ravecore">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="ravecore: Core File Structures and Workflows for 'RAVE'">
+<meta property="og:description" content="Defines storage standard for Read, process, and analyze intracranial electroencephalography and deep-brain stimulation in 'RAVE', a reproducible framework for analysis and visualization of iEEG by Magnotti, Wang, and Beauchamp, (2020, &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.neuroimage.2020.117341&quot; target=&quot;_top&quot;&gt;doi:10.1016/j.neuroimage.2020.117341&lt;/a&gt;&amp;gt;). Supports brain imaging data structure (BIDS) &amp;lt;&lt;a href=&quot;https://bids.neuroimaging.io&quot; target=&quot;_top&quot;&gt;https://bids.neuroimaging.io&lt;/a&gt;&amp;gt; and native file structure to ingest signals from 'Matlab' data files, hierarchical data format 5 (HDF5), European data format (EDF), BrainVision core data format (BVCDF), or BlackRock Microsystem (NEV/NSx); process images in Neuroimaging informatics technology initiative (NIfTI) and 'FreeSurfer' formats, providing brain imaging normalization to template brain, facilitating 'threeBrain' package for comprehensive electrode localization via 'YAEL' (your advanced electrode localizer) by Wang, Magnotti, Zhang, and Beauchamp (2023, &amp;lt;&lt;a href=&quot;https://doi.org/10.1523%2FENEURO.0328-23.2023&quot; target=&quot;_top&quot;&gt;doi:10.1523/ENEURO.0328-23.2023&lt;/a&gt;&amp;gt;).">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=ravecore">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>ravecore: Core File Structures and Workflows for 'RAVE'</h2>
+<p>Defines storage standard for Read, process, and analyze 
+    intracranial electroencephalography and deep-brain stimulation in 'RAVE', 
+    a reproducible framework for analysis and visualization of iEEG
+    by Magnotti, Wang, and Beauchamp, (2020, 
+    &lt;<a href="https://doi.org/10.1016%2Fj.neuroimage.2020.117341" target="_top">doi:10.1016/j.neuroimage.2020.117341</a>&gt;). 
+    Supports brain imaging data structure (BIDS) 
+    &lt;<a href="https://bids.neuroimaging.io" target="_top">https://bids.neuroimaging.io</a>&gt; and native file structure to
+    ingest signals from 'Matlab' data files, hierarchical data format 5 (HDF5), 
+    European data format (EDF), BrainVision core data format (BVCDF), or 
+    BlackRock Microsystem (NEV/NSx); process images in 
+    Neuroimaging informatics technology initiative (NIfTI) and 
+    'FreeSurfer' formats, providing brain imaging normalization to template 
+    brain, facilitating 'threeBrain' package for comprehensive electrode 
+    localization via 'YAEL' (your advanced electrode localizer) by Wang, 
+    Magnotti, Zhang, and Beauchamp 
+    (2023, &lt;<a href="https://doi.org/10.1523%2FENEURO.0328-23.2023" target="_top">doi:10.1523/ENEURO.0328-23.2023</a>&gt;).</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/tools/refman/tools.html" target="_top">tools</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../bidsr/index.html"><span class="CRAN">bidsr</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../filearray/index.html"><span class="CRAN">filearray</span></a> (&ge; 0.2.0), <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../ieegio/index.html"><span class="CRAN">ieegio</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../R6/index.html"><span class="CRAN">R6</span></a>, <a href="../ravepipeline/index.html"><span class="CRAN">ravepipeline</span></a> (&ge; 0.0.2), <a href="../ravetools/index.html"><span class="CRAN">ravetools</span></a>, <a href="../S7/index.html"><span class="CRAN">S7</span></a>, <a href="../threeBrain/index.html"><span class="CRAN">threeBrain</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rpyANTs/index.html"><span class="CRAN">rpyANTs</span></a>, <a href="../rpymat/index.html"><span class="CRAN">rpymat</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../RNifti/index.html"><span class="CRAN">RNifti</span></a>, <a href="../RNiftyReg/index.html"><span class="CRAN">RNiftyReg</span></a>, <a href="../shiny/index.html"><span class="CRAN">shiny</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-02</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.ravecore">10.32614/CRAN.package.ravecore</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Zhengjia Wang <a href="https://orcid.org/0000-0001-5629-1116" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre],
+  Xiang Zhang [aut],
+  John Magnotti [aut],
+  Michael Beauchamp [aut],
+  Trustees of the University of Pennsylvania [cph] (All files in this
+    package unless explicitly stated in the file)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Zhengjia Wang  &#x3c;&#x64;&#x69;&#x70;&#x74;&#x65;&#x72;&#x69;&#x78;&#x2e;&#x77;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rave-ieeg/ravecore/issues" target="_top"><span class="GitHub">https://github.com/rave-ieeg/ravecore/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rave.wiki" target="_top">https://rave.wiki</a>, <a href="http://rave.wiki/ravecore/" target="_top">http://rave.wiki/ravecore/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">ravecore citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ravecore.html"><span class="CRAN">ravecore results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/ravecore.html"><span class="CRAN">ravecore.html</span></a> ,  <a href="ravecore.pdf"><span class="CRAN">ravecore.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ravecore_0.1.1.tar.gz"> <span class="CRAN"> ravecore_0.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/ravecore_0.1.1.zip"><span class="CRAN">ravecore_0.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/ravecore_0.1.1.zip"><span class="CRAN">ravecore_0.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/ravecore_0.1.1.zip"><span class="CRAN">ravecore_0.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/ravecore_0.1.1.tgz"><span class="CRAN">ravecore_0.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/ravecore_0.1.0.tgz"><span class="CRAN">ravecore_0.1.0.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/ravecore_0.1.1.tgz"><span class="CRAN">ravecore_0.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/ravecore_0.1.1.tgz"><span class="CRAN">ravecore_0.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ravecore"> <span class="CRAN"> ravecore archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ravecore"><span class="CRAN"><samp>https://CRAN.R-project.org/package=ravecore</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

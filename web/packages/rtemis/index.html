@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package rtemis</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=rtemis">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Machine Learning and Visualization [R package rtemis version 1.0.0]">
+<meta name="citation_author" content="E.D. Gennatas">
+<meta name="citation_publication_date" content="2026-03-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rtemis">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rtemis">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="rtemis: Machine Learning and Visualization">
+<meta property="og:description" content="Machine learning and visualization package with an 'S7' backend featuring comprehensive type checking and validation, paired with an efficient functional user-facing API. train(), cluster(), and decomp() provide one-call access to supervised and unsupervised learning. All configuration steps are performed using setup functions and validated. A single call to train() handles preprocessing, hyperparameter tuning, and testing with nested resampling. Supports 'data.frame', 'data.table', and 'tibble' inputs, parallel execution, and interactive visualizations. The package first appeared in E.D. Gennatas (2017) &amp;lt;&lt;a href=&quot;https://repository.upenn.edu/entities/publication/d81892ea-3087-4b71-a6f5-739c58626d64&quot; target=&quot;_top&quot;&gt;https://repository.upenn.edu/entities/publication/d81892ea-3087-4b71-a6f5-739c58626d64&lt;/a&gt;&amp;gt;.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=rtemis">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>rtemis: Machine Learning and Visualization</h2>
+<p>Machine learning and visualization package with an 'S7' backend 
+    featuring comprehensive type checking and validation, paired with an efficient functional
+    user-facing API. train(), cluster(), and decomp() provide one-call access to supervised and 
+    unsupervised learning. All configuration steps are performed using setup functions and 
+    validated. A single call to train() handles preprocessing, hyperparameter tuning, and testing 
+    with nested resampling. Supports 'data.frame', 'data.table', and 'tibble' inputs, parallel 
+    execution, and interactive visualizations. The package first appeared in E.D. Gennatas (2017)
+    &lt;<a href="https://repository.upenn.edu/entities/publication/d81892ea-3087-4b71-a6f5-739c58626d64" target="_top">https://repository.upenn.edu/entities/publication/d81892ea-3087-4b71-a6f5-739c58626d64</a>&gt;.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../../../doc/manuals/r-patched/packages/grDevices/refman/grDevices.html" target="_top">grDevices</a>, <a href="../../../doc/manuals/r-patched/packages/graphics/refman/graphics.html" target="_top">graphics</a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../../../doc/manuals/r-patched/packages/utils/refman/utils.html" target="_top">utils</a>, <a href="../S7/index.html"><span class="CRAN">S7</span></a>, <a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../bit64/index.html"><span class="CRAN">bit64</span></a>, <a href="../car/index.html"><span class="CRAN">car</span></a>, <a href="../colorspace/index.html"><span class="CRAN">colorspace</span></a>, <a href="../DBI/index.html"><span class="CRAN">DBI</span></a>, <a href="../dbscan/index.html"><span class="CRAN">dbscan</span></a>, <a href="../dendextend/index.html"><span class="CRAN">dendextend</span></a> (&ge;
+0.18.0), <a href="../duckdb/index.html"><span class="CRAN">duckdb</span></a>, <a href="../e1071/index.html"><span class="CRAN">e1071</span></a>, <a href="../farff/index.html"><span class="CRAN">farff</span></a>, <a href="../fastICA/index.html"><span class="CRAN">fastICA</span></a>, <a href="../flexclust/index.html"><span class="CRAN">flexclust</span></a>, <a href="../future.apply/index.html"><span class="CRAN">future.apply</span></a>, <a href="../future.mirai/index.html"><span class="CRAN">future.mirai</span></a>, <a href="../futurize/index.html"><span class="CRAN">futurize</span></a>, <a href="../geosphere/index.html"><span class="CRAN">geosphere</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../glmnet/index.html"><span class="CRAN">glmnet</span></a>, <a href="../geojsonio/index.html"><span class="CRAN">geojsonio</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../../../doc/manuals/r-patched/packages/grid/refman/grid.html" target="_top">grid</a>, <a href="../gsubfn/index.html"><span class="CRAN">gsubfn</span></a>, <a href="../haven/index.html"><span class="CRAN">haven</span></a>, <a href="../heatmaply/index.html"><span class="CRAN">heatmaply</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../leaflet/index.html"><span class="CRAN">leaflet</span></a>, <a href="../leaps/index.html"><span class="CRAN">leaps</span></a>, <a href="../lightAUC/index.html"><span class="CRAN">lightAUC</span></a>, <a href="../lightgbm/index.html"><span class="CRAN">lightgbm</span></a>, <a href="../matrixStats/index.html"><span class="CRAN">matrixStats</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../mice/index.html"><span class="CRAN">mice</span></a>, <a href="../mirai/index.html"><span class="CRAN">mirai</span></a>, <a href="../missRanger/index.html"><span class="CRAN">missRanger</span></a>, <a href="../networkD3/index.html"><span class="CRAN">networkD3</span></a>, <a href="../NMF/index.html"><span class="CRAN">NMF</span></a>, <a href="../openxlsx/index.html"><span class="CRAN">openxlsx</span></a>, <a href="../parallelly/index.html"><span class="CRAN">parallelly</span></a>, <a href="../partykit/index.html"><span class="CRAN">partykit</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../pROC/index.html"><span class="CRAN">pROC</span></a>, <a href="../progressr/index.html"><span class="CRAN">progressr</span></a>, <a href="../psych/index.html"><span class="CRAN">psych</span></a>, <a href="../pvclust/index.html"><span class="CRAN">pvclust</span></a>, <a href="../ranger/index.html"><span class="CRAN">ranger</span></a>, <a href="../reactable/index.html"><span class="CRAN">reactable</span></a>, <a href="../readxl/index.html"><span class="CRAN">readxl</span></a>, <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a>, <a href="../ROCR/index.html"><span class="CRAN">ROCR</span></a>, <a href="../rpart/index.html"><span class="CRAN">rpart</span></a>, <a href="../Rtsne/index.html"><span class="CRAN">Rtsne</span></a>, <a href="../seqinr/index.html"><span class="CRAN">seqinr</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../shapr/index.html"><span class="CRAN">shapr</span></a>, <a href="../survival/index.html"><span class="CRAN">survival</span></a>, <a href="../tabnet/index.html"><span class="CRAN">tabnet</span></a>, <a href="../threejs/index.html"><span class="CRAN">threejs</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../timeDate/index.html"><span class="CRAN">timeDate</span></a>, <a href="../toml/index.html"><span class="CRAN">toml</span></a>, <a href="../torch/index.html"><span class="CRAN">torch</span></a>, <a href="../uwot/index.html"><span class="CRAN">uwot</span></a>, <a href="../vegan/index.html"><span class="CRAN">vegan</span></a>, <a href="../vroom/index.html"><span class="CRAN">vroom</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-03-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.rtemis">10.32614/CRAN.package.rtemis</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>E.D. Gennatas <a href="https://orcid.org/0000-0001-9280-3609" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>E.D. Gennatas  &#x3c;&#x67;&#x65;&#x6e;&#x6e;&#x61;&#x74;&#x61;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rtemis-org/rtemis/issues" target="_top"><span class="GitHub">https://github.com/rtemis-org/rtemis/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.rtemis.org" target="_top">https://www.rtemis.org</a>, <a href="https://docs.rtemis.org/r/" target="_top">https://docs.rtemis.org/r/</a>,
+<a href="https://docs.rtemis.org/r-api/" target="_top">https://docs.rtemis.org/r-api/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">rtemis citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rtemis.html"><span class="CRAN">rtemis results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/rtemis.html"><span class="CRAN">rtemis.html</span></a> ,  <a href="rtemis.pdf"><span class="CRAN">rtemis.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rtemis_1.0.0.tar.gz"> <span class="CRAN"> rtemis_1.0.0.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/rtemis_1.0.0.zip"><span class="CRAN">rtemis_1.0.0.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/rtemis_1.0.0.zip"><span class="CRAN">rtemis_1.0.0.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/rtemis_1.0.0.zip"><span class="CRAN">rtemis_1.0.0.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/rtemis_1.0.0.tgz"><span class="CRAN">rtemis_1.0.0.tgz</span></a>, r-oldrel (arm64): not available, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/rtemis_1.0.0.tgz"><span class="CRAN">rtemis_1.0.0.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/rtemis_1.0.0.tgz"><span class="CRAN">rtemis_1.0.0.tgz</span></a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rtemis"><span class="CRAN"><samp>https://CRAN.R-project.org/package=rtemis</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

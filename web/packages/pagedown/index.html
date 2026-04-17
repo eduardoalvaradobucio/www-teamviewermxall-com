@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package pagedown</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=pagedown">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Paginate the HTML Output of R Markdown with CSS for Print [R package pagedown version 0.24]">
+<meta name="citation_author1" content="Yihui Xie">
+<meta name="citation_author2" content="Romain Lesur">
+<meta name="citation_author3" content="Brent Thorne">
+<meta name="citation_author4" content="Xianying Tan">
+<meta name="citation_publication_date" content="2026-04-09">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pagedown">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pagedown">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="pagedown: Paginate the HTML Output of R Markdown with CSS for Print">
+<meta property="og:description" content="Use the paged media properties in CSS and the JavaScript library 'paged.js' to split the content of an HTML document into discrete pages. Each page can have its page size, page numbers, margin boxes, and running headers, etc. Applications of this package include books, letters, reports, papers, business cards, resumes, and posters.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=pagedown">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>pagedown: Paginate the HTML Output of R Markdown with CSS for Print</h2>
+<p>Use the paged media properties in CSS and the JavaScript
+  library 'paged.js' to split the content of an HTML document into discrete
+  pages. Each page can have its page size, page numbers, margin boxes, and
+  running headers, etc. Applications of this package include books, letters,
+  reports, papers, business cards, resumes, and posters.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.24</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge; 2.13), <a href="../bookdown/index.html"><span class="CRAN">bookdown</span></a> (&ge; 0.8), <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../later/index.html"><span class="CRAN">later</span></a> (&ge; 1.0.0), <a href="../processx/index.html"><span class="CRAN">processx</span></a>, <a href="../servr/index.html"><span class="CRAN">servr</span></a> (&ge; 0.31), <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../xfun/index.html"><span class="CRAN">xfun</span></a>, <a href="../websocket/index.html"><span class="CRAN">websocket</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../promises/index.html"><span class="CRAN">promises</span></a>, <a href="../testit/index.html"><span class="CRAN">testit</span></a>, <a href="../xaringan/index.html"><span class="CRAN">xaringan</span></a>, <a href="../pdftools/index.html"><span class="CRAN">pdftools</span></a>, <a href="../revealjs/index.html"><span class="CRAN">revealjs</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-04-09</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.pagedown">10.32614/CRAN.package.pagedown</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yihui Xie <a href="https://orcid.org/0000-0003-0645-5666" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut,
+    cre],
+  Romain Lesur <a href="https://orcid.org/0000-0002-0721-5595" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut, cph],
+  Christophe Dervieux
+    <a href="https://orcid.org/0000-0003-4474-2498" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [ctb],
+  Brent Thorne <a href="https://orcid.org/0000-0002-1099-3857" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Xianying Tan <a href="https://orcid.org/0000-0002-6072-3521" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Atsushi Yasumoto <a href="https://orcid.org/0000-0002-8335-495X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [ctb],
+  Posit Software, PBC [cph, fnd],
+  Adam Hyde [ctb] (paged.js in resources/js/),
+  Min-Zhong Lu [ctb] (resume.css in resources/css/),
+  Zulko [ctb] (poster-relaxed.css in resources/css/)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yihui Xie  &#x3c;&#x78;&#x69;&#x65;&#x20;&#x61;&#x74;&#x20;&#x79;&#x69;&#x68;&#x75;&#x69;&#x2e;&#x6e;&#x61;&#x6d;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rstudio/pagedown/issues" target="_top"><span class="GitHub">https://github.com/rstudio/pagedown/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rstudio/pagedown" target="_top"><span class="GitHub">https://github.com/rstudio/pagedown</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Pandoc (&gt;= 2.2.3)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pagedown.html"><span class="CRAN">pagedown results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/pagedown.html"><span class="CRAN">pagedown.html</span></a> ,  <a href="pagedown.pdf"><span class="CRAN">pagedown.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pagedown_0.24.tar.gz"> <span class="CRAN"> pagedown_0.24.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/pagedown_0.24.zip"><span class="CRAN">pagedown_0.24.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/pagedown_0.24.zip"><span class="CRAN">pagedown_0.24.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/pagedown_0.24.zip"><span class="CRAN">pagedown_0.24.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/pagedown_0.24.tgz"><span class="CRAN">pagedown_0.24.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/pagedown_0.23.tgz"><span class="CRAN">pagedown_0.23.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/pagedown_0.24.tgz"><span class="CRAN">pagedown_0.24.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/pagedown_0.24.tgz"><span class="CRAN">pagedown_0.24.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pagedown"> <span class="CRAN"> pagedown archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../dlookr/index.html"><span class="CRAN">dlookr</span></a>, <a href="../iheiddown/index.html"><span class="CRAN">iheiddown</span></a>, <a href="../Spectran/index.html"><span class="CRAN">Spectran</span></a>, <a href="../tall/index.html"><span class="CRAN">tall</span></a>, <a href="../unhcrdown/index.html"><span class="CRAN">unhcrdown</span></a>, <a href="../valdrViz/index.html"><span class="CRAN">valdrViz</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../accessr/index.html"><span class="CRAN">accessr</span></a>, <a href="../chronicle/index.html"><span class="CRAN">chronicle</span></a>, <a href="../mlr3fairness/index.html"><span class="CRAN">mlr3fairness</span></a>, <a href="../pcutils/index.html"><span class="CRAN">pcutils</span></a>, <a href="../roughnet/index.html"><span class="CRAN">roughnet</span></a>, <a href="../roughsf/index.html"><span class="CRAN">roughsf</span></a>, <a href="../trackdown/index.html"><span class="CRAN">trackdown</span></a>, <a href="../ukbflow/index.html"><span class="CRAN">ukbflow</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pagedown"><span class="CRAN"><samp>https://CRAN.R-project.org/package=pagedown</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

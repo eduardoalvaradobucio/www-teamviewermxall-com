@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package vosonSML</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=vosonSML">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Collecting Social Media Data and Generating Networks for Analysis [R package vosonSML version 0.35.1]">
+<meta name="citation_author1" content="Bryan Gertzel">
+<meta name="citation_author2" content="Robert Ackland">
+<meta name="citation_author3" content="Timothy Graham">
+<meta name="citation_publication_date" content="2025-07-04">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=vosonSML">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=vosonSML">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="vosonSML: Collecting Social Media Data and Generating Networks for Analysis">
+<meta property="og:description" content="A suite of easy to use functions for collecting social media data and generating networks for analysis. Supports Mastodon, YouTube, Reddit and Web 1.0 data sources.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=vosonSML">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>vosonSML: Collecting Social Media Data and Generating Networks for
+Analysis</h2>
+<p>A suite of easy to use functions for collecting social media
+    data and generating networks for analysis. Supports Mastodon, YouTube,
+    Reddit and Web 1.0 data sources.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.35.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html"><span class="CRAN">data.table</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a>, <a href="../../../doc/manuals/r-patched/packages/methods/refman/methods.html" target="_top">methods</a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rlang/index.html"><span class="CRAN">rlang</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../textutils/index.html"><span class="CRAN">textutils</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../igraph/index.html"><span class="CRAN">igraph</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../robotstxt/index.html"><span class="CRAN">robotstxt</span></a>, <a href="../rtoot/index.html"><span class="CRAN">rtoot</span></a>, <a href="../rvest/index.html"><span class="CRAN">rvest</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a>, <a href="../urltools/index.html"><span class="CRAN">urltools</span></a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a>, <a href="../xml2/index.html"><span class="CRAN">xml2</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-07-04</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.vosonSML">10.32614/CRAN.package.vosonSML</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bryan Gertzel [aut, cre],
+  Robert Ackland <a href="https://orcid.org/0000-0002-0008-1766" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Timothy Graham <a href="https://orcid.org/0000-0002-4053-9313" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a>
+    [aut],
+  Francisca Borquez [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bryan Gertzel  &#x3c;&#x62;&#x72;&#x79;&#x61;&#x6e;&#x2e;&#x67;&#x65;&#x72;&#x74;&#x7a;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x61;&#x6e;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/vosonlab/vosonSML/issues/" target="_top"><span class="GitHub">https://github.com/vosonlab/vosonSML/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3"><span class="CRAN">GPL (&ge; 3)</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://vosonlab.github.io/vosonSML/" target="_top"><span class="GitHub">https://vosonlab.github.io/vosonSML/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">vosonSML citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_vosonSML.html"><span class="CRAN">vosonSML results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/vosonSML.html"><span class="CRAN">vosonSML.html</span></a> ,  <a href="vosonSML.pdf"><span class="CRAN">vosonSML.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Intro-to-vosonSML.html"><span class="CRAN">Introduction to vosonSML</span></a> (<a href="vignettes/Intro-to-vosonSML.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/Intro-to-vosonSML.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/vosonSML_0.35.1.tar.gz"> <span class="CRAN"> vosonSML_0.35.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/vosonSML_0.35.1.zip"><span class="CRAN">vosonSML_0.35.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/vosonSML_0.35.1.zip"><span class="CRAN">vosonSML_0.35.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/vosonSML_0.35.1.zip"><span class="CRAN">vosonSML_0.35.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/vosonSML_0.35.1.tgz"><span class="CRAN">vosonSML_0.35.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/vosonSML_0.35.1.tgz"><span class="CRAN">vosonSML_0.35.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/vosonSML_0.35.1.tgz"><span class="CRAN">vosonSML_0.35.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/vosonSML_0.35.1.tgz"><span class="CRAN">vosonSML_0.35.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/vosonSML"> <span class="CRAN"> vosonSML archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../VOSONDash/index.html"><span class="CRAN">VOSONDash</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=vosonSML"><span class="CRAN"><samp>https://CRAN.R-project.org/package=vosonSML</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
