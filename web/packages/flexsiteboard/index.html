@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package flexsiteboard</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=flexsiteboard">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Breaks Single Page Applications from 'flexdashboard' in Multiple Files [R package flexsiteboard version 0.0.7]">
+<meta name="citation_author" content="Stephan Struckmann">
+<meta name="citation_publication_date" content="2022-11-15">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=flexsiteboard">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=flexsiteboard">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="flexsiteboard: Breaks Single Page Applications from 'flexdashboard' in Multiple Files">
+<meta property="og:description" content="A drop-in replacement for 'flexdashboard' 'Rmd' documents, which implements an after-knit-hook to split the generated single page application in one document per main section to reduce rendering load in the web browser displaying the document. Put all 'JavaScript' stuff needed in all sections before the first headline featuring navigation menu attributes. This package is experimental and maybe replaced by a solution inside 'flexdashboard'.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=flexsiteboard">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>flexsiteboard: Breaks Single Page Applications from 'flexdashboard' in Multiple
+Files</h2>
+<p>A drop-in replacement for 'flexdashboard' 'Rmd' documents, which
+  implements an after-knit-hook to split the generated single page application
+  in one document per main section to reduce rendering load in the web browser
+  displaying the document. Put all 'JavaScript' stuff needed in all sections 
+  before the first headline featuring navigation menu attributes. This package 
+  is experimental and maybe replaced by a solution inside 'flexdashboard'.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.0.7</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../flexdashboard/index.html"><span class="CRAN">flexdashboard</span></a>, <a href="../htmltools/index.html"><span class="CRAN">htmltools</span></a>, <a href="../htmlwidgets/index.html"><span class="CRAN">htmlwidgets</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../../../doc/manuals/r-patched/packages/stats/refman/stats.html" target="_top">stats</a>, <a href="../yaml/index.html"><span class="CRAN">yaml</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../withr/index.html"><span class="CRAN">withr</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../spelling/index.html"><span class="CRAN">spelling</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2022-11-15</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.flexsiteboard">10.32614/CRAN.package.flexsiteboard</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>University Medicine Greifswald [cph],
+  Stephan Struckmann
+    <a href="https://orcid.org/0000-0002-8565-7962" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Stephan Struckmann  &#x3c;&#x73;&#x74;&#x65;&#x70;&#x68;&#x61;&#x6e;&#x2e;&#x73;&#x74;&#x72;&#x75;&#x63;&#x6b;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x67;&#x72;&#x65;&#x69;&#x66;&#x73;&#x77;&#x61;&#x6c;&#x64;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.com/libreumg/flexsiteboard/-/issues" target="_top">https://gitlab.com/libreumg/flexsiteboard/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause"><span class="CRAN">BSD_2_clause</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.com/libreumg/flexsiteboard/" target="_top">https://gitlab.com/libreumg/flexsiteboard/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 2.4) - http://pandoc.org</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_flexsiteboard.html"><span class="CRAN">flexsiteboard results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/flexsiteboard.html"><span class="CRAN">flexsiteboard.html</span></a> ,  <a href="flexsiteboard.pdf"><span class="CRAN">flexsiteboard.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/intro.html"><span class="CRAN">Short introduction</span></a> (<a href="vignettes/intro.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/intro.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/flexsiteboard_0.0.7.tar.gz"> <span class="CRAN"> flexsiteboard_0.0.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/flexsiteboard_0.0.7.zip"><span class="CRAN">flexsiteboard_0.0.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/flexsiteboard_0.0.7.zip"><span class="CRAN">flexsiteboard_0.0.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/flexsiteboard_0.0.7.zip"><span class="CRAN">flexsiteboard_0.0.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/flexsiteboard_0.0.7.tgz"><span class="CRAN">flexsiteboard_0.0.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/flexsiteboard_0.0.7.tgz"><span class="CRAN">flexsiteboard_0.0.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/flexsiteboard_0.0.7.tgz"><span class="CRAN">flexsiteboard_0.0.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/flexsiteboard_0.0.7.tgz"><span class="CRAN">flexsiteboard_0.0.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/flexsiteboard"> <span class="CRAN"> flexsiteboard archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=flexsiteboard"><span class="CRAN"><samp>https://CRAN.R-project.org/package=flexsiteboard</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

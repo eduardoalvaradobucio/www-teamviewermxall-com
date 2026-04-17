@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package mongolstats</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=mongolstats">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Mongolian 'NSO' 'PXWeb' Data and Boundaries (Tidy Client) [R package mongolstats version 0.1.1]">
+<meta name="citation_author" content="Temuulen Enebish">
+<meta name="citation_publication_date" content="2026-01-26">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mongolstats">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mongolstats">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="mongolstats: Mongolian 'NSO' 'PXWeb' Data and Boundaries (Tidy Client)">
+<meta property="og:description" content="A 'tidyverse'-friendly client for the National Statistics Office of Mongolia 'PXWeb' API &amp;lt;&lt;a href=&quot;https://data.1212.mn/&quot; target=&quot;_top&quot;&gt;https://data.1212.mn/&lt;/a&gt;&amp;gt; with helpers to discover tables, variables, and fetch statistical data. Also includes utilities to retrieve Mongolia administrative boundaries (ADM0-ADM2) as 'sf' objects from open sources for mapping and spatial analysis.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=mongolstats">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>mongolstats: Mongolian 'NSO' 'PXWeb' Data and Boundaries (Tidy Client)</h2>
+<p>A 'tidyverse'-friendly client for the National Statistics Office of Mongolia
+    'PXWeb' API &lt;<a href="https://data.1212.mn/" target="_top">https://data.1212.mn/</a>&gt; with helpers to discover tables, variables, and fetch
+    statistical data. Also includes utilities to retrieve Mongolia administrative boundaries
+    (ADM0-ADM2) as 'sf' objects from open sources for mapping and spatial analysis.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../httr2/index.html"><span class="CRAN">httr2</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../stringr/index.html"><span class="CRAN">stringr</span></a>, <a href="../sf/index.html"><span class="CRAN">sf</span></a>, <a href="../memoise/index.html"><span class="CRAN">memoise</span></a>, <a href="../cachem/index.html"><span class="CRAN">cachem</span></a>, <a href="../rappdirs/index.html"><span class="CRAN">rappdirs</span></a>, <a href="../stringi/index.html"><span class="CRAN">stringi</span></a>, <a href="../stringdist/index.html"><span class="CRAN">stringdist</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.0.0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a>, <a href="../roxygen2/index.html"><span class="CRAN">roxygen2</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../pxweb/index.html"><span class="CRAN">pxweb</span></a>, <a href="../remotes/index.html"><span class="CRAN">remotes</span></a>, <a href="../httptest2/index.html"><span class="CRAN">httptest2</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../lintr/index.html"><span class="CRAN">lintr</span></a>, <a href="../styler/index.html"><span class="CRAN">styler</span></a>, <a href="../future/index.html"><span class="CRAN">future</span></a>, <a href="../future.apply/index.html"><span class="CRAN">future.apply</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../scales/index.html"><span class="CRAN">scales</span></a>, <a href="../forcats/index.html"><span class="CRAN">forcats</span></a>, <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a>, <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2026-01-26</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.mongolstats">10.32614/CRAN.package.mongolstats</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Temuulen Enebish [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Temuulen Enebish  &#x3c;&#x74;&#x65;&#x6d;&#x75;&#x75;&#x6c;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/temuulene/mongolstats/issues" target="_top"><span class="GitHub">https://github.com/temuulene/mongolstats/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://temuulene.github.io/mongolstats/" target="_top"><span class="GitHub">https://temuulene.github.io/mongolstats/</span></a>,
+<a href="https://data.1212.mn/pxweb/" target="_top">https://data.1212.mn/pxweb/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html"><span class="CRAN">mongolstats citation info</span></a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mongolstats.html"><span class="CRAN">mongolstats results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/mongolstats.html"><span class="CRAN">mongolstats.html</span></a> ,  <a href="mongolstats.pdf"><span class="CRAN">mongolstats.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/discovery.html"><span class="CRAN">Discovering Public Health Data</span></a> (<a href="vignettes/discovery.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/discovery.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/environmental-surveillance.html"><span class="CRAN">Environmental Data Analysis</span></a> (<a href="vignettes/environmental-surveillance.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/environmental-surveillance.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/getting-started.html"><span class="CRAN">Getting Started</span></a> (<a href="vignettes/getting-started.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/getting-started.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/mapping.html"><span class="CRAN">Spatial Epidemiology with mongolstats</span></a> (<a href="vignettes/mapping.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/mapping.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+<a href="vignettes/ub-health-environment.html"><span class="CRAN">Ulaanbaatar District-Level Analysis</span></a> (<a href="vignettes/ub-health-environment.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/ub-health-environment.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mongolstats_0.1.1.tar.gz"> <span class="CRAN"> mongolstats_0.1.1.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/mongolstats_0.1.1.zip"><span class="CRAN">mongolstats_0.1.1.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/mongolstats_0.1.1.zip"><span class="CRAN">mongolstats_0.1.1.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/mongolstats_0.1.1.zip"><span class="CRAN">mongolstats_0.1.1.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/mongolstats_0.1.1.tgz"><span class="CRAN">mongolstats_0.1.1.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/mongolstats_0.1.1.tgz"><span class="CRAN">mongolstats_0.1.1.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/mongolstats_0.1.1.tgz"><span class="CRAN">mongolstats_0.1.1.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/mongolstats_0.1.1.tgz"><span class="CRAN">mongolstats_0.1.1.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mongolstats"> <span class="CRAN"> mongolstats archive </span> </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mongolstats"><span class="CRAN"><samp>https://CRAN.R-project.org/package=mongolstats</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

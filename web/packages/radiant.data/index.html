@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package radiant.data</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=radiant.data">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Data Menu for Radiant: Business Analytics using R and Shiny [R package radiant.data version 1.6.8]">
+<meta name="citation_author1" content="Vincent Nijs">
+<meta name="citation_author2" content="Niklas von Hertzen">
+<meta name="citation_publication_date" content="2025-09-16">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=radiant.data">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=radiant.data">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="radiant.data: Data Menu for Radiant: Business Analytics using R and Shiny">
+<meta property="og:description" content="The Radiant Data menu includes interfaces for loading, saving, viewing, visualizing, summarizing, transforming, and combining data. It also contains functionality to generate reproducible reports of the analyses conducted in the application.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=radiant.data">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>radiant.data: Data Menu for Radiant: Business Analytics using R and Shiny</h2>
+<p>The Radiant Data menu includes interfaces for loading, saving,
+    viewing, visualizing, summarizing, transforming, and combining data. It also
+    contains functionality to generate reproducible reports of the analyses
+    conducted in the application.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>1.6.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.3.0), <a href="../magrittr/index.html"><span class="CRAN">magrittr</span></a> (&ge; 1.5), <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a> (&ge; 3.4.2), <a href="../lubridate/index.html"><span class="CRAN">lubridate</span></a> (&ge; 1.7.4), <a href="../tidyr/index.html"><span class="CRAN">tidyr</span></a> (&ge; 0.8.2), <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a> (&ge; 1.1.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../tibble/index.html"><span class="CRAN">tibble</span></a> (&ge; 1.4.2), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 0.4.10), <a href="../broom/index.html"><span class="CRAN">broom</span></a> (&ge; 0.5.2), <a href="../car/index.html"><span class="CRAN">car</span></a> (&ge; 3.0-0), <a href="../knitr/index.html"><span class="CRAN">knitr</span></a> (&ge; 1.20), <a href="../markdown/index.html"><span class="CRAN">markdown</span></a> (&ge; 1.7), <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a> (&ge;
+2.22), <a href="../shiny/index.html"><span class="CRAN">shiny</span></a> (&ge; 1.8.1), <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a> (&ge; 1.0), <a href="../shinyAce/index.html"><span class="CRAN">shinyAce</span></a> (&ge;
+0.4.1), <a href="../psych/index.html"><span class="CRAN">psych</span></a> (&ge; 1.8.4), <a href="../DT/index.html"><span class="CRAN">DT</span></a> (&ge; 0.28), <a href="../readr/index.html"><span class="CRAN">readr</span></a> (&ge; 1.1.1), <a href="../readxl/index.html"><span class="CRAN">readxl</span></a> (&ge; 1.0.0), <a href="../writexl/index.html"><span class="CRAN">writexl</span></a> (&ge; 0.2), <a href="../scales/index.html"><span class="CRAN">scales</span></a> (&ge; 0.4.0), <a href="../curl/index.html"><span class="CRAN">curl</span></a> (&ge; 2.5), <a href="../rstudioapi/index.html"><span class="CRAN">rstudioapi</span></a> (&ge; 0.7), <a href="../import/index.html"><span class="CRAN">import</span></a> (&ge; 1.1.0), <a href="../plotly/index.html"><span class="CRAN">plotly</span></a> (&ge;
+4.7.1), <a href="../glue/index.html"><span class="CRAN">glue</span></a> (&ge; 1.3.0), <a href="../shinyFiles/index.html"><span class="CRAN">shinyFiles</span></a> (&ge; 0.9.1), <a href="../stringi/index.html"><span class="CRAN">stringi</span></a> (&ge;
+1.2.4), <a href="../randomizr/index.html"><span class="CRAN">randomizr</span></a> (&ge; 0.20.0), <a href="../patchwork/index.html"><span class="CRAN">patchwork</span></a> (&ge; 1.0.0), <a href="../bslib/index.html"><span class="CRAN">bslib</span></a> (&ge;
+0.5.0), <a href="../png/index.html"><span class="CRAN">png</span></a>, <a href="../MASS/index.html"><span class="CRAN">MASS</span></a>, <a href="../base64enc/index.html"><span class="CRAN">base64enc</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a> (&ge; 12.0.1), <a href="../dbplyr/index.html"><span class="CRAN">dbplyr</span></a> (&ge; 2.1.1), <a href="../DBI/index.html"><span class="CRAN">DBI</span></a> (&ge; 0.7), <a href="../RSQLite/index.html"><span class="CRAN">RSQLite</span></a> (&ge; 2.0), <a href="../RPostgres/index.html"><span class="CRAN">RPostgres</span></a> (&ge; 1.4.4), <a href="../webshot/index.html"><span class="CRAN">webshot</span></a> (&ge; 0.5.0), <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 2.0.0), <a href="../pkgdown/index.html"><span class="CRAN">pkgdown</span></a> (&ge; 1.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-09-16</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.radiant.data">10.32614/CRAN.package.radiant.data</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Vincent Nijs [aut, cre],
+  Niklas von Hertzen [aut] (html2canvas library)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Vincent Nijs  &#x3c;&#x72;&#x61;&#x64;&#x69;&#x61;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x61;&#x64;&#x79;&#x2e;&#x75;&#x63;&#x73;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/radiant-rstats/radiant.data/issues/" target="_top"><span class="GitHub">https://github.com/radiant-rstats/radiant.data/issues/</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3"><span class="CRAN">AGPL-3</span></a> | file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/radiant-rstats/radiant.data/" target="_top"><span class="GitHub">https://github.com/radiant-rstats/radiant.data/</span></a>,
+<a href="https://radiant-rstats.github.io/radiant.data/" target="_top"><span class="GitHub">https://radiant-rstats.github.io/radiant.data/</span></a>,
+<a href="https://radiant-rstats.github.io/docs/" target="_top"><span class="GitHub">https://radiant-rstats.github.io/docs/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_radiant.data.html"><span class="CRAN">radiant.data results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/radiant.data.html"><span class="CRAN">radiant.data.html</span></a> ,  <a href="radiant.data.pdf"><span class="CRAN">radiant.data.pdf</span></a> 
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/radiant.data_1.6.8.tar.gz"> <span class="CRAN"> radiant.data_1.6.8.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/radiant.data_1.6.8.zip"><span class="CRAN">radiant.data_1.6.8.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/radiant.data_1.6.8.zip"><span class="CRAN">radiant.data_1.6.8.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/radiant.data_1.6.8.zip"><span class="CRAN">radiant.data_1.6.8.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/radiant.data_1.6.8.tgz"><span class="CRAN">radiant.data_1.6.8.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/radiant.data_1.6.8.tgz"><span class="CRAN">radiant.data_1.6.8.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/radiant.data_1.6.8.tgz"><span class="CRAN">radiant.data_1.6.8.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/radiant.data_1.6.8.tgz"><span class="CRAN">radiant.data_1.6.8.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/radiant.data"> <span class="CRAN"> radiant.data archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="https://www.bioconductor.org/packages/release/bioc/html/bioCancer.html" target="_top"><span class="BioC">bioCancer</span></a>, <a href="../radiant/index.html"><span class="CRAN">radiant</span></a>, <a href="../radiant.basics/index.html"><span class="CRAN">radiant.basics</span></a>, <a href="../radiant.design/index.html"><span class="CRAN">radiant.design</span></a>, <a href="../radiant.model/index.html"><span class="CRAN">radiant.model</span></a>, <a href="../radiant.multivariate/index.html"><span class="CRAN">radiant.multivariate</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=radiant.data"><span class="CRAN"><samp>https://CRAN.R-project.org/package=radiant.data</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRAN: Package vetiver</title>
+<link rel="canonical" href="https://CRAN.R-project.org/package=vetiver">
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="citation_title" content="Version, Share, Deploy, and Monitor Models [R package vetiver version 0.2.7]">
+<meta name="citation_author" content="Julia Silge">
+<meta name="citation_publication_date" content="2025-12-13">
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=vetiver">
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=vetiver">
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)">
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="vetiver: Version, Share, Deploy, and Monitor Models">
+<meta property="og:description" content="The goal of 'vetiver' is to provide fluent tooling to version, share, deploy, and monitor a trained model. Functions handle both recording and checking the model's input data prototype, and predicting from a remote API endpoint. The 'vetiver' package is extensible, with generics that can support many kinds of models.">
+<meta property="og:image" content="https://CRAN.R-project.org/CRANlogo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://CRAN.R-project.org/package=vetiver">
+<style>
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>vetiver: Version, Share, Deploy, and Monitor Models</h2>
+<p>The goal of 'vetiver' is to provide fluent tooling to
+    version, share, deploy, and monitor a trained model. Functions handle
+    both recording and checking the model's input data prototype, and
+    predicting from a remote API endpoint. The 'vetiver' package is
+    extensible, with generics that can support many kinds of models.</p>
+<table>
+<tr>
+<td>Version:</td>
+<td>0.2.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bundle/index.html"><span class="CRAN">bundle</span></a> (&ge; 0.1.3), <a href="../butcher/index.html"><span class="CRAN">butcher</span></a> (&ge; 0.4.0), <a href="../cereal/index.html"><span class="CRAN">cereal</span></a>, <a href="../cli/index.html"><span class="CRAN">cli</span></a>, <a href="../fs/index.html"><span class="CRAN">fs</span></a>, <a href="../generics/index.html"><span class="CRAN">generics</span></a>, <a href="../glue/index.html"><span class="CRAN">glue</span></a>, <a href="../hardhat/index.html"><span class="CRAN">hardhat</span></a>, <a href="../lifecycle/index.html"><span class="CRAN">lifecycle</span></a>, <a href="../pins/index.html"><span class="CRAN">pins</span></a> (&ge; 1.3.0), <a href="../purrr/index.html"><span class="CRAN">purrr</span></a>, <a href="../rapidoc/index.html"><span class="CRAN">rapidoc</span></a>, <a href="../readr/index.html"><span class="CRAN">readr</span></a> (&ge; 1.4.0), <a href="../rlang/index.html"><span class="CRAN">rlang</span></a> (&ge; 1.1.0), <a href="../tibble/index.html"><span class="CRAN">tibble</span></a>, <a href="../vctrs/index.html"><span class="CRAN">vctrs</span></a>, <a href="../withr/index.html"><span class="CRAN">withr</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html"><span class="CRAN">arrow</span></a>, <a href="../callr/index.html"><span class="CRAN">callr</span></a>, <a href="../caret/index.html"><span class="CRAN">caret</span></a>, <a href="../clustMixType/index.html"><span class="CRAN">clustMixType</span></a>, <a href="../covr/index.html"><span class="CRAN">covr</span></a>, <a href="../curl/index.html"><span class="CRAN">curl</span></a>, <a href="../dplyr/index.html"><span class="CRAN">dplyr</span></a>, <a href="../flexdashboard/index.html"><span class="CRAN">flexdashboard</span></a>, <a href="../ggplot2/index.html"><span class="CRAN">ggplot2</span></a>, <a href="../httpuv/index.html"><span class="CRAN">httpuv</span></a>, <a href="../httr/index.html"><span class="CRAN">httr</span></a>, <a href="../jsonlite/index.html"><span class="CRAN">jsonlite</span></a>, <a href="../keras/index.html"><span class="CRAN">keras</span></a>, <a href="../knitr/index.html"><span class="CRAN">knitr</span></a>, <a href="../LiblineaR/index.html"><span class="CRAN">LiblineaR</span></a>, <a href="../luz/index.html"><span class="CRAN">luz</span></a>, <a href="../mgcv/index.html"><span class="CRAN">mgcv</span></a>, <a href="../mlr3/index.html"><span class="CRAN">mlr3</span></a> (&ge; 0.17.0), <a href="../mlr3data/index.html"><span class="CRAN">mlr3data</span></a>, <a href="../mlr3learners/index.html"><span class="CRAN">mlr3learners</span></a>, <a href="../mockery/index.html"><span class="CRAN">mockery</span></a>, <a href="../modeldata/index.html"><span class="CRAN">modeldata</span></a>, <a href="../parsnip/index.html"><span class="CRAN">parsnip</span></a>, <a href="../paws.machine.learning/index.html"><span class="CRAN">paws.machine.learning</span></a> (&ge; 0.2.0), <a href="../pingr/index.html"><span class="CRAN">pingr</span></a>, <a href="../plotly/index.html"><span class="CRAN">plotly</span></a>, <a href="../plumber/index.html"><span class="CRAN">plumber</span></a> (&ge; 1.0.0), <a href="../probably/index.html"><span class="CRAN">probably</span></a> (&ge; 1.2.0), <a href="../quantregForest/index.html"><span class="CRAN">quantregForest</span></a>, <a href="../ranger/index.html"><span class="CRAN">ranger</span></a>, <a href="../recipes/index.html"><span class="CRAN">recipes</span></a> (&ge; 1.1.0), <a href="../reticulate/index.html"><span class="CRAN">reticulate</span></a>, <a href="../rmarkdown/index.html"><span class="CRAN">rmarkdown</span></a>, <a href="../rpart/index.html"><span class="CRAN">rpart</span></a>, <a href="../rsample/index.html"><span class="CRAN">rsample</span></a>, <a href="../rsconnect/index.html"><span class="CRAN">rsconnect</span></a>, <a href="../slider/index.html"><span class="CRAN">slider</span></a> (&ge; 0.2.2), <a href="../smdocker/index.html"><span class="CRAN">smdocker</span></a> (&ge; 0.1.2), <a href="../stacks/index.html"><span class="CRAN">stacks</span></a>, <a href="../tensorflow/index.html"><span class="CRAN">tensorflow</span></a>, <a href="../testthat/index.html"><span class="CRAN">testthat</span></a> (&ge; 3.1.8), <a href="../tidyselect/index.html"><span class="CRAN">tidyselect</span></a>, <a href="../torch/index.html"><span class="CRAN">torch</span></a>, <a href="../tune/index.html"><span class="CRAN">tune</span></a>, <a href="../vdiffr/index.html"><span class="CRAN">vdiffr</span></a>, <a href="../workflows/index.html"><span class="CRAN">workflows</span></a>, <a href="../xgboost/index.html"><span class="CRAN">xgboost</span></a>, <a href="../yardstick/index.html"><span class="CRAN">yardstick</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2025-12-13</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td><a href="https://doi.org/10.32614/CRAN.package.vetiver">10.32614/CRAN.package.vetiver</a></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Julia Silge <a href="https://orcid.org/0000-0002-3671-836X" target="_top"><img alt="ORCID iD" src="../../orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cre,
+    aut],
+  Posit Software, PBC <a href="https://ror.org/03wc8by49" target="_top"><img alt="ROR ID" src="../../ror.svg" style="width:20px; height:20px; margin-left:4px; margin-right:4px; vertical-align:middle"></a> [cph,
+    fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Julia Silge  &#x3c;&#x6a;&#x75;&#x6c;&#x69;&#x61;&#x2e;&#x73;&#x69;&#x6c;&#x67;&#x65;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rstudio/vetiver-r/issues" target="_top"><span class="GitHub">https://github.com/rstudio/vetiver-r/issues</span></a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT"><span class="CRAN">MIT</span></a> + file <a href="LICENSE"><span class="CRAN">LICENSE</span></a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://vetiver.posit.co" target="_top">https://vetiver.posit.co</a>, <a href="https://rstudio.github.io/vetiver-r/" target="_top"><span class="GitHub">https://rstudio.github.io/vetiver-r/</span></a>,
+<a href="https://github.com/rstudio/vetiver-r/" target="_top"><span class="GitHub">https://github.com/rstudio/vetiver-r/</span></a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html"><span class="CRAN">README</span></a>, <a href="news/news.html"><span class="CRAN">NEWS</span></a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ModelDeployment.html"><span class="CRAN">ModelDeployment</span></a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_vetiver.html"><span class="CRAN">vetiver results</span></a></td>
+</tr>
+</table>
+<h4>Documentation:</h4>
+<table>
+<tr>
+<td>Reference&nbsp;manual:</td>
+<td>
+ <a href="refman/vetiver.html"><span class="CRAN">vetiver.html</span></a> ,  <a href="vetiver.pdf"><span class="CRAN">vetiver.pdf</span></a> 
+</td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vetiver.html"><span class="CRAN">vetiver</span></a> (<a href="vignettes/vetiver.Rmd" type="text/plain; charset=utf-8"><span class="CRAN">source</span></a>, <a href="vignettes/vetiver.R" type="text/plain; charset=utf-8"><span class="CRAN">R code</span></a>)<br>
+</td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/vetiver_0.2.7.tar.gz"> <span class="CRAN"> vetiver_0.2.7.tar.gz </span> </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.6/vetiver_0.2.7.zip"><span class="CRAN">vetiver_0.2.7.zip</span></a>, r-release: <a href="../../../bin/windows/contrib/4.5/vetiver_0.2.7.zip"><span class="CRAN">vetiver_0.2.7.zip</span></a>, r-oldrel: <a href="../../../bin/windows/contrib/4.4/vetiver_0.2.7.zip"><span class="CRAN">vetiver_0.2.7.zip</span></a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.5/vetiver_0.2.7.tgz"><span class="CRAN">vetiver_0.2.7.tgz</span></a>, r-oldrel (arm64): <a href="../../../bin/macosx/big-sur-arm64/contrib/4.4/vetiver_0.2.7.tgz"><span class="CRAN">vetiver_0.2.7.tgz</span></a>, r-release (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.5/vetiver_0.2.7.tgz"><span class="CRAN">vetiver_0.2.7.tgz</span></a>, r-oldrel (x86_64): <a href="../../../bin/macosx/big-sur-x86_64/contrib/4.4/vetiver_0.2.7.tgz"><span class="CRAN">vetiver_0.2.7.tgz</span></a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/vetiver"> <span class="CRAN"> vetiver archive </span> </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../accept/index.html"><span class="CRAN">accept</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bundle/index.html"><span class="CRAN">bundle</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=vetiver"><span class="CRAN"><samp>https://CRAN.R-project.org/package=vetiver</samp></span></a>
+to link to this page.</p>
+</div>
+</body>
+</html>
